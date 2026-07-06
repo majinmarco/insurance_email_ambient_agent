@@ -15,3 +15,10 @@ dependencies = [
     "pydantic>=2.13.4",
     "trustcall>=0.0.39",
 ]
+
+
+[tool.pyright]
+venvPath = "."
+venv = ".venv"
+# src-layout: let pyright resolve first-party imports
+extraPaths = ["src"]
