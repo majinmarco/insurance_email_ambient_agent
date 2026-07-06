@@ -8,7 +8,12 @@ from uuid import uuid4
 
 from langchain_core.messages.utils import AnyMessage
 
-from insurance_email_agent.schemas import Email, EmailClassification, Segment
+from insurance_email_agent.schemas import (
+    Attachment,
+    Email,
+    EmailClassification,
+    Segment,
+)
 
 # TODO - import email type
 # TODO - import attachment type
@@ -17,9 +22,7 @@ from insurance_email_agent.schemas import Email, EmailClassification, Segment
 class OverallState(TypedDict):
     email: Email
     classification: EmailClassification
-    document_data: Annotated[
-        list[Attachment], operator.add
-    ]  # TODO - add attachment extraction schema - multiple types if possible; each has extractions and attachment "type"
+    document_data: Annotated[list[Attachment], operator.add]
 
 
 class SegmentationState(TypedDict):
@@ -32,5 +35,4 @@ class SegmentationState(TypedDict):
 
 
 class ExtractionState(TypedDict):
-    segmentation_data: Segment
-    extraction_data: Extraction
+    segment_data: Segment

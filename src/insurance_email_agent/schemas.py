@@ -21,7 +21,7 @@ class Email(TypedDict):
     body: str
     sender: str
     recipient: str
-    attachments: dict[str, bytes]
+    attachments: dict[str, bytes] | None
 
 
 class EmailCategory(str, Enum):
@@ -88,20 +88,6 @@ class DocumentClassification(BaseModel):
     )
 
 
-class Segment(BaseModel):
-    """
-    Classification and segmentation data from an attachment for a specific segment
-    """
-
-    category: DocumentClassification = Field(description="Document class of segment")
-    filename: str = Field(
-        description="Filename corresponding to attachment that this segment belongs to"
-    )
-    page_indices: list[int] = Field(
-        description="List of page indices corresponding to this segment"
-    )
-
-
 # --- one concrete schema per document type ---
 
 
@@ -150,3 +136,26 @@ Extraction = Annotated[  # Pipes are for "Union" type
     | EndorsementExtraction,
     Field(discriminator="doc_type"),
 ]
+
+
+class Segment(BaseModel):
+    """
+    Classification and segmentation data from an attachment for a specific segment
+    """
+
+    category: DocumentClassification = Field(description="Document class of segment")
+    filename: str = Field(
+        description="Filename corresponding to attachment that this segment belongs to"
+    )
+    page_indices: list[int] = Field(
+        description="List of page indices corresponding to this segment"
+    )
+    extraction: Extraction | None = Field(
+        None, description="Extraction result for this segment"
+    )
+
+
+class Attachment(TypedDict):
+    filename: str
+    content: bytes
+    segments: list[Segment]
