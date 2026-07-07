@@ -10,9 +10,13 @@ import mimetypes
 import os
 from typing import Literal
 
+import tiktoken
 from langchain_core.messages import HumanMessage, SystemMessage
 from langchain_openai import ChatOpenAI
-from langchain_text_splitters import MarkdownHeaderTextSplitter
+from langchain_text_splitters import (
+    MarkdownHeaderTextSplitter,
+    RecursiveCharacterTextSplitter,
+)
 from langgraph.constants import END, START, StateGraph
 from langgraph.types import Send
 from markitdown import MarkItDown, StreamInfo
@@ -81,6 +85,20 @@ classes_verbalized = [
     DocumentCategory.INVOICE,
     DocumentCategory.NEEDS_REVIEW,
 ]
+
+### HELPERS ###
+tokenizer = tiktoken.encoding_for_model("gpt-4o")
+
+
+def get_token_length(text: str) -> int:
+    return len(tokenizer.encode(text))
+
+
+token_text_splitter = RecursiveCharacterTextSplitter(
+    chunk_size=4096, chunk_overlap=0, length_function=get_token_length
+)
+
+### NODES/ROUTERS ###
 
 
 def email_classification(state: OverallState):
@@ -162,6 +180,13 @@ def document_segmentation(state: SegmentationState):
     chunks = markdown_splitter.split_text(md_text)
     chunks_text = [chunk.page_content for chunk in chunks]
 
+    # Further split large chunks and insert in-place in original spot
+    for txt in chunks_text:
+        if get_token_length(txt) > 8192:
+            chunks_text.remove(txt)
+
+            # split into chunks of <=8192/2 tokens
+
     # zeroshot classification for every chunk (parallelized)
     labels = [c.value for c in classes_verbalized]
     outputs = zeroshot_classifier(
@@ -174,6 +199,7 @@ def document_segmentation(state: SegmentationState):
 
     # Attach text to results
     categorized_chunks = []
+    categories_found = set()
     for i, o in enumerate(outputs):
         text = chunks_text[i]
 
@@ -196,3 +222,41 @@ def document_segmentation(state: SegmentationState):
                 #     }
             }
         )
+
+    # Join together chunks of equal category unless OTHER/NEEDS_REVIEW
+    segments: list[Segment] = []
+    for i, chunk in enumerate(categorized_chunks):
+        category = chunk["category"]
+        if category == DocumentCategory.NEEDS_REVIEW:
+            continue  # TODO: add some HITL functionality
+
+        if segments:
+            added = False
+            for seg in segments:
+                if category == seg.category:
+                    seg.text = seg.text + "\n------\n" + chunk["text"]
+                    seg.page_indices.append(i)
+                    added = True
+
+            if not added:
+                segments.append(
+                    Segment(
+                        category=category,
+                        filename=attachment["filename"],
+                        page_indices=[i],
+                        text=chunk["text"],
+                        extraction=None,
+                    )
+                )
+        else:
+            segments.append(
+                Segment(
+                    category=category,
+                    filename=attachment["filename"],
+                    page_indices=[i],
+                    text=chunk["text"],
+                    extraction=None,
+                )
+            )
+
+    # TODO - save data to attachment state and send to extraction state? (one segment per state instance)

@@ -156,7 +156,7 @@ class Segment(BaseModel):
     Classification and segmentation data from an attachment for a specific segment
     """
 
-    category: DocumentClassification = Field(description="Document class of segment")
+    category: DocumentCategory = Field(description="Document class of segment")
     filename: str = Field(
         description="Filename corresponding to attachment that this segment belongs to"
     )
