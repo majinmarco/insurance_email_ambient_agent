@@ -14,16 +14,6 @@ from typing import Annotated, Literal, TypedDict, Union
 from pydantic import BaseModel, Field
 
 
-class Email(TypedDict):
-    id: str  # randomly generated uuid
-    subject: str
-    date_received: datetime
-    body: str
-    sender: str
-    recipient: str
-    attachments: dict[str, bytes] | None
-
-
 class EmailCategory(str, Enum):
     """
     Custom class for EmailCategory to maintain consistent category naming across the codebase
@@ -56,6 +46,9 @@ class EmailClassification(BaseModel):
             "instead of guessing so a human can triage."
         )
     )
+    rationale: str = Field(
+        description="Describe your reasoning for the chosen category in 2-3 sentences."
+    )
 
 
 class DocumentCategory(str, Enum):
@@ -63,11 +56,11 @@ class DocumentCategory(str, Enum):
     Custom class for DocumentCategory to maintain consistent category naming across the codebase
     """
 
-    CERTIFICATE = "certificate"
-    INVOICE = "invoice"
-    DECLARATIONS = "declarations"
-    ENDORSEMENT = "endorsement"
-    NEEDS_REVIEW = "needs_review"
+    CERTIFICATE = "certificate of insurance"
+    INVOICE = "insurance invoice"
+    DECLARATIONS = "insurance declaration"
+    ENDORSEMENT = "insurance endorsement"
+    NEEDS_REVIEW = "unrelated or unclear document"
 
 
 class DocumentClassification(BaseModel):
@@ -93,6 +86,9 @@ class DocumentClassification(BaseModel):
 
 class CertificateExtraction(BaseModel):
     doc_type: Literal[DocumentCategory.CERTIFICATE] = DocumentCategory.CERTIFICATE
+    named_insured: str | None = Field(
+        None, description="Named insured / policyholder shown on the document"
+    )
     policy_number: str | None = Field(
         None, description="Policy number shown on the ACORD 25"
     )
@@ -108,6 +104,12 @@ class CertificateExtraction(BaseModel):
 
 class InvoiceExtraction(BaseModel):
     doc_type: Literal[DocumentCategory.INVOICE] = DocumentCategory.INVOICE
+    named_insured: str | None = Field(
+        None, description="Named insured / policyholder shown on the document"
+    )
+    policy_number: str | None = Field(
+        None, description="Policy number shown on the document"
+    )
     amount_due: float | None = Field(None, description="Total premium due")
     billing_period: str | None = None
     policy_reference: str | None = None
@@ -116,13 +118,24 @@ class InvoiceExtraction(BaseModel):
 
 class DeclarationsExtraction(BaseModel):
     doc_type: Literal[DocumentCategory.DECLARATIONS] = DocumentCategory.DECLARATIONS
-    named_insured: str | None = None
+    named_insured: str | None = Field(
+        None, description="Named insured / policyholder shown on the document"
+    )
+    policy_number: str | None = Field(
+        None, description="Policy number shown on the document"
+    )
     coverages: dict[str, str] = Field(default_factory=dict)
     total_premium: float | None = None
 
 
 class EndorsementExtraction(BaseModel):
     doc_type: Literal[DocumentCategory.ENDORSEMENT] = DocumentCategory.ENDORSEMENT
+    named_insured: str | None = Field(
+        None, description="Named insured / policyholder shown on the document"
+    )
+    policy_number: str | None = Field(
+        None, description="Policy number shown on the document"
+    )
     change_description: str | None = None
     effective_date: datetime | None = None
 
@@ -150,6 +163,7 @@ class Segment(BaseModel):
     page_indices: list[int] = Field(
         description="List of page indices corresponding to this segment"
     )
+    text: str = Field(description="Text turned to markdown from the segment of text")
     extraction: Extraction | None = Field(
         None, description="Extraction result for this segment"
     )
@@ -159,3 +173,60 @@ class Attachment(TypedDict):
     filename: str
     content: bytes
     segments: list[Segment]
+
+
+class Email(TypedDict):
+    id: str  # randomly generated uuid
+    subject: str
+    date_received: datetime
+    body: str
+    sender: str
+    recipient: str
+    attachments: list[Attachment]
+
+
+class EmailExtraction(BaseModel):
+    """
+    Structured details extracted from the email body itself (as opposed to
+    attachments). All fields are optional — populate only what the sender
+    explicitly states, leave the rest null.
+    """
+
+    named_insured: str | None = Field(
+        None,
+        description=(
+            "The named insured / applicant the email concerns, exactly as written "
+            "(company or person). Null if not stated."
+        ),
+    )
+    policy_number: str | None = Field(
+        None,
+        description=(
+            "An existing policy number referenced in the email (for renewals, "
+            "endorsements, or claims). Null for brand-new submissions or if absent."
+        ),
+    )
+    requested_effective_date: datetime | None = Field(
+        None,
+        description=(
+            "The effective date the sender is requesting for the new policy, "
+            "renewal, or endorsement change. Only populate when an absolute date "
+            "can be determined; leave null for vague phrasing like 'asap'."
+        ),
+    )
+    requested_changes: str | None = Field(
+        None,
+        description=(
+            "A concise summary of what the sender is asking for — e.g. the "
+            "endorsement change, the coverage requested, or the reason for the "
+            "email. Null if the email states no actionable request."
+        ),
+    )
+    contact_name: str | None = Field(
+        None,
+        description="Name of the person to contact about this email, if stated.",
+    )
+    contact_phone: str | None = Field(
+        None,
+        description="Phone number provided for follow-up contact, if stated.",
+    )

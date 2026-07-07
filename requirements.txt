@@ -8,3 +8,7 @@ trustcall
 langsmith>=0.7.31
 aiohttp>=3.13.4
 pydantic
+markitdown[all]==0.1.5
+transformers
+langchain_text_splitters
+torch
