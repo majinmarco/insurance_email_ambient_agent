@@ -4,3 +4,8 @@ uv.lock
 __pycache__
 .langgraph_api
 .claude
+
+# Python build metadata
+*.egg-info/
+__pycache__/
+*.pyc
