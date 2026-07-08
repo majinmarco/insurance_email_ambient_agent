@@ -11,6 +11,7 @@ dependencies = [
     "langchain-openai>=1.1.14",
     "langchain-text-splitters>=1.1.2",
     "langgraph>=1.2.7",
+    "langgraph-sdk>=0.4.2",
     "langsmith>=0.7.31",
     "markitdown[all]==0.1.5",
     "pydantic>=2.13.4",
