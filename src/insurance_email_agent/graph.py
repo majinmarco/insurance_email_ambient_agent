@@ -8,6 +8,8 @@ Insurance Email Ambient Agent
 import io
 import mimetypes
 import os
+from concurrent.futures import ThreadPoolExecutor, as_completed
+from this import s
 from typing import Literal
 
 import tiktoken
@@ -17,35 +19,37 @@ from langchain_text_splitters import (
     MarkdownHeaderTextSplitter,
     RecursiveCharacterTextSplitter,
 )
-from langgraph.constants import END, START, StateGraph
+from langgraph.graph import END, START, StateGraph
 from langgraph.types import Send
 from markitdown import MarkItDown, StreamInfo
+from pydantic import BaseModel
 from transformers import pipeline
 from trustcall import create_extractor
 
 from insurance_email_agent.prompts import (
-    ATTACHMENT_EXTRACTION_SYSTEM,
-    ATTACHMENT_SEGMENTATION_SYSTEM,
     EMAIL_CLASSIFICATION_SYSTEM,
     EMAIL_EXTRACTION_SYSTEM,
+    attachment_extraction_system,
     attachment_extraction_user,
-    attachment_segmentation_user,
     email_classification_user,
     email_extraction_user,
 )
 from insurance_email_agent.schemas import (
     Attachment,
+    CertificateExtraction,
+    DeclarationsExtraction,
     DocumentCategory,
     DocumentClassification,
     Email,
     EmailCategory,
     EmailClassification,
     EmailExtraction,
+    EndorsementExtraction,
     Extraction,
+    InvoiceExtraction,
     Segment,
 )
 from insurance_email_agent.states import (
-    ExtractionState,
     OverallState,
     SegmentationState,
 )
@@ -54,7 +58,19 @@ from insurance_email_agent.states import (
 llm = ChatOpenAI(model="gpt-5.4-mini", temperature=0)
 email_classification_llm = llm.with_structured_output(EmailClassification)
 email_extraction_llm = llm.with_structured_output(EmailExtraction)
-# document_extraction_llm = llm.bind_tools([Extraction], tool_choice="Extraction")
+
+SCHEMA_BY_CATEGORY: dict[DocumentCategory, type[BaseModel]] = {
+    DocumentCategory.CERTIFICATE: CertificateExtraction,
+    DocumentCategory.INVOICE: InvoiceExtraction,
+    DocumentCategory.DECLARATIONS: DeclarationsExtraction,
+    DocumentCategory.ENDORSEMENT: EndorsementExtraction,
+}
+
+# one llm, N lightweight extractors — built once at import
+EXTRACTOR_BY_CATEGORY = {
+    cat: create_extractor(llm, tools=[schema], tool_choice=schema.__name__)
+    for cat, schema in SCHEMA_BY_CATEGORY.items()
+}
 
 micro_llm = ChatOpenAI(model="gpt-5.4-nano-2026-03-17", temperature=0)
 document_classification_llm = micro_llm.bind_tools(
@@ -70,7 +86,7 @@ markdown_splitter = MarkdownHeaderTextSplitter(
     headers_to_split_on=headers, strip_headers=False
 )
 
-DEVICE = os.getenv("DEVICE", -1)
+DEVICE = int(os.getenv("DEVICE", -1))
 
 zeroshot_classifier = pipeline(
     "zero-shot-classification",
@@ -97,6 +113,37 @@ def get_token_length(text: str) -> int:
 token_text_splitter = RecursiveCharacterTextSplitter(
     chunk_size=4096, chunk_overlap=0, length_function=get_token_length
 )
+
+
+def get_extension_mime_type(name: str) -> tuple[str, str]:
+    """
+    Get the MIME type of a file based on its extension.
+    """
+    _, ext = os.path.splitext(name)
+    return ext, mimetypes.types_map.get(ext.lower(), "application/octet-stream")
+
+
+def extract_segment(seg: Segment) -> Extraction | None:
+    extractor = EXTRACTOR_BY_CATEGORY.get(seg.category)
+    if extractor is None:  # NEEDS_REVIEW → no schema
+        return None
+
+    system_msg = attachment_extraction_system(seg.category)
+
+    result = extractor.invoke(
+        {
+            "messages": [
+                SystemMessage(content=system_msg),
+                HumanMessage(
+                    content=attachment_extraction_user(
+                        seg.filename, seg.category, seg.text
+                    )
+                ),
+            ]
+        }
+    )
+    return result["responses"][0]
+
 
 ### NODES/ROUTERS ###
 
@@ -130,7 +177,9 @@ def email_extraction(state: OverallState):
     return {"email_extraction": result}
 
 
-def attachment_existence_router(state: OverallState) -> Literal[END, "segmentation"]:
+def attachment_existence_router(
+    state: OverallState,
+) -> Literal[END] | list[Send]:
     attachments = state["email"].get("attachments")
 
     if not attachments:
@@ -144,7 +193,7 @@ def attachment_existence_router(state: OverallState) -> Literal[END, "segmentati
     """
     return [
         Send(
-            "document_segmentation",
+            "document_segmentation_extraction",
             {
                 "attachment": {
                     "filename": att["filename"],
@@ -157,15 +206,7 @@ def attachment_existence_router(state: OverallState) -> Literal[END, "segmentati
     ]
 
 
-def get_extension_mime_type(name: str) -> tuple[str, str]:
-    """
-    Get the MIME type of a file based on its extension.
-    """
-    _, ext = os.path.splitext(name)
-    return ext, mimetypes.types_map.get(ext.lower(), "application/octet-stream")
-
-
-def document_segmentation(state: SegmentationState):
+def document_segmentation_extraction(state: SegmentationState):
     attachment = state["attachment"]
     content = attachment["content"]
     ext, mtype = get_extension_mime_type(attachment["filename"])
@@ -199,7 +240,6 @@ def document_segmentation(state: SegmentationState):
 
     # Attach text to results
     categorized_chunks = []
-    categories_found = set()
     for i, o in enumerate(outputs):
         text = chunks_text[i]
 
@@ -259,4 +299,54 @@ def document_segmentation(state: SegmentationState):
                 )
             )
 
-    # TODO - save data to attachment state and send to extraction state? (one segment per state instance)
+    # Execute extractions here
+    # --- map: extract every segment in parallel ---
+    if segments:
+        with ThreadPoolExecutor(max_workers=min(8, len(segments))) as pool:
+            future_to_seg = {pool.submit(extract_segment, seg): seg for seg in segments}
+            for future in as_completed(future_to_seg):
+                seg = future_to_seg[future]
+                try:
+                    seg.extraction = future.result()
+                except Exception as exc:
+                    seg.extraction = None
+                    # isolate failure — don't lose the other segments' work
+                    print(
+                        f"extraction failed for {seg.filename} {seg.page_indices}: {exc}"
+                    )
+
+    return {
+        "document_data": [{**attachment, "segments": segments}]
+    }  # return existing attachment properties + add segments with extractions to it
+
+
+## BUILD SEGMENTATION GRAPH (different state) ##
+segment_builder = StateGraph(SegmentationState, output=OverallState)
+
+segment_builder.add_node(
+    "document_segmentation_extraction", document_segmentation_extraction
+)
+
+segment_builder.add_edge(START, "document_segmentation_extraction")
+segment_builder.add_edge("document_segmentation_extraction", END)
+
+segment_subgraph = segment_builder.compile()
+
+## BUILD OVERALL GRAPH ##
+
+overall_builder = StateGraph(OverallState)
+
+overall_builder.add_node("email_classification", email_classification)
+overall_builder.add_node("email_extraction", email_extraction)
+overall_builder.add_node("document_segmentation_extraction", segment_subgraph)
+
+overall_builder.add_edge(START, "email_classification")
+overall_builder.add_edge("email_classification", "email_extraction")
+overall_builder.add_conditional_edges(
+    "email_extraction",
+    attachment_existence_router,
+    ["document_segmentation_extraction"],
+)
+overall_builder.add_edge("document_segmentation_extraction", END)
+
+graph = overall_builder.compile()

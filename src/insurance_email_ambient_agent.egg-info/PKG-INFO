@@ -1,0 +1,19 @@
+Metadata-Version: 2.4
+Name: insurance-email-ambient-agent
+Version: 0.1.0
+Summary: Add your description here
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: aiohttp>=3.13.4
+Requires-Dist: langchain-community>=0.4.2
+Requires-Dist: langchain-core>=1.2.28
+Requires-Dist: langchain-openai>=1.1.14
+Requires-Dist: langchain-text-splitters>=1.1.2
+Requires-Dist: langgraph>=1.2.7
+Requires-Dist: langsmith>=0.7.31
+Requires-Dist: markitdown[all]==0.1.5
+Requires-Dist: pydantic>=2.13.4
+Requires-Dist: tiktoken>=0.13.0
+Requires-Dist: torch>=2.12.1
+Requires-Dist: transformers>=5.13.0
+Requires-Dist: trustcall>=0.0.39

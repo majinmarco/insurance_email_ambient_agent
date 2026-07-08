@@ -24,7 +24,8 @@ class OverallState(TypedDict):
     email: Email
     email_extraction: EmailExtraction
     classification: EmailClassification
-    document_data: Annotated[list[Attachment], operator.add]
+    extracted_segments: Annotated[list[Segment], operator.add]
+    document_data: list[Attachment]
 
 
 class SegmentationState(TypedDict):
@@ -33,11 +34,3 @@ class SegmentationState(TypedDict):
     """
 
     attachment: Attachment
-
-
-class ExtractionState(TypedDict):
-    """
-    Per-segment extraction data
-    """
-
-    segment_data: Segment

@@ -225,11 +225,9 @@ def attachment_extraction_system(doc_type: DocumentCategory) -> str:
 
 
 def attachment_extraction_user(
-    filename: str, doc_type: DocumentCategory, page_texts: list[str]
+    filename: str, doc_type: DocumentCategory, page_text: str
 ) -> str:
     """Render the segment's pages for the extraction model."""
-    pages = "\n\n".join(
-        f"===== PAGE {i} =====\n{text.strip() or '(no extractable text on this page)'}"
-        for i, text in enumerate(page_texts)
+    return (
+        f"Source attachment: {filename}\nDocument type: {doc_type.value}\n\n{page_text}"
     )
-    return f"Source attachment: {filename}\nDocument type: {doc_type.value}\n\n{pages}"
