@@ -199,7 +199,7 @@ def extract_attachments_with_content(
 
         if att_info is not None and content is not None:
             attachments.append(att_info)
-            attachment_contents[att_info["s3_key"]] = content
+            attachment_contents[att_info["filename"]] = content
 
     return attachments, attachment_contents
 
