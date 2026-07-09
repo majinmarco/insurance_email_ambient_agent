@@ -5,11 +5,11 @@ Insurance Email Ambient Agent
 3. Classifies each received document; extracts data from each document
 """
 
+import base64
 import io
 import mimetypes
 import os
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from this import s
 from typing import Literal
 
 import tiktoken
@@ -209,6 +209,11 @@ def attachment_existence_router(
 def document_segmentation_extraction(state: SegmentationState):
     attachment = state["attachment"]
     content = attachment["content"]
+    # Input arriving over the langgraph HTTP API is JSON, which has no bytes
+    # type, so callers pass attachment content as a base64 string. Decode it
+    # back to bytes for MarkItDown. In-process callers may still pass raw bytes.
+    if isinstance(content, str):
+        content = base64.b64decode(content)
     ext, mtype = get_extension_mime_type(attachment["filename"])
 
     # convert each page to md using markitdown
@@ -345,7 +350,10 @@ overall_builder.add_edge("email_classification", "email_extraction")
 overall_builder.add_conditional_edges(
     "email_extraction",
     attachment_existence_router,
-    ["document_segmentation_extraction"],
+    # END must be listed: the router returns END when there are no attachments,
+    # and a value returned from a conditional edge must be a declared destination
+    # (otherwise LangGraph raises KeyError: '__end__').
+    [END, "document_segmentation_extraction"],
 )
 overall_builder.add_edge("document_segmentation_extraction", END)
 

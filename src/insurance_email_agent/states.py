@@ -25,7 +25,10 @@ class OverallState(TypedDict):
     email_extraction: EmailExtraction
     classification: EmailClassification
     extracted_segments: Annotated[list[Segment], operator.add]
-    document_data: list[Attachment]
+    # operator.add reducer: the router fans out one Send per attachment, so
+    # several segmentation subgraph runs write document_data concurrently.
+    # Without a reducer LangGraph raises InvalidUpdateError on the collision.
+    document_data: Annotated[list[Attachment], operator.add]
 
 
 class SegmentationState(TypedDict):

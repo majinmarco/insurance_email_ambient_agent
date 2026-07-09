@@ -62,8 +62,8 @@ the deciding phrase) that drove your choice.\
 
 def email_classification_user(email: Email) -> str:
     """Render the incoming email for the classification model."""
-    attachments = email.get("attachments") or {}
-    names = ", ".join(attachments.keys()) if attachments else "(none)"
+    attachments = email.get("attachments") or []
+    names = ", ".join(a["filename"] for a in attachments) if attachments else "(none)"
     return (
         f"Date received: {email['date_received']}\n"
         f"From: {email['sender']}\n"
