@@ -4,7 +4,6 @@ Functions used to ingest emails and convert to `Email` type
 from email.message import EmailMessage
 from email.utils import parsedate_to_datetime
 from insurance_email_agent.schemas import Email, Attachment
-import base64
 from email import policy
 from email.parser import BytesParser
 from typing import Any
@@ -14,12 +13,11 @@ from uuid import uuid4
 from html.parser import HTMLParser
 import mimetypes
 
-def to_email(raw: base64) -> Email:
+def to_email(raw: bytes) -> Email:
     """
     Function that receives a base64-encoded string and converts to Email type
     """
-
-    msg = BytesParser(policy=policy.default).parse(base64.b64decode(raw)) # TODO - get the typing right
+    msg = BytesParser(policy=policy.default).parsebytes(raw)
 
     # obtain body
     # Requires complex parsing due to variation in formatting among different email providers

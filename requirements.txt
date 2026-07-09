@@ -13,3 +13,4 @@ transformers
 langchain_text_splitters
 torch
 tiktoken
+imap_tools
