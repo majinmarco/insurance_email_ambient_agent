@@ -6,13 +6,21 @@ types in one attachment" case. Templates mimic real ACORD / carrier documents
 (dense boxed grids, letterheads, legal boilerplate, forms schedules, remittance
 stubs) via nested reportlab tables.
 
-SEGMENTATION INVARIANT (do not break):
-- Each document begins with exactly ONE literal ``# {TITLE}`` line, a standalone
-  full-width Paragraph — never nested in a table. MarkItDown's PDF→text preserves
-  it and the graph splits bundled PDFs on single-``#`` H1 lines.
-- No other rendered line may start with ``# `` (hash+space). Section headers are
-  bold bars, never H1; render "Invoice No." not "Invoice #". ``_txt`` strips any
-  leading ``#`` from every dynamic/LLM string.
+DOCUMENT TITLE / SEGMENTATION (tier-controlled — see ``realism.py``):
+- Each document begins with ONE title line via ``_title_flowable(title, mode)``.
+  ``mode="hash"`` emits the literal ``# {TITLE}`` boundary the graph splits bundled
+  PDFs on (``graph.py`` splits only single-``#`` H1 lines) — this is the ``clean``
+  tier and preserves today's byte-identical rendering.
+- The realistic modes (``bold_caps``/``plain``) emit an ordinary title with NO
+  leading ``#`` — what real carrier PDFs look like; pdfminer/MarkItDown never turn
+  it back into a markdown header. A *single-doc* PDF is one chunk either way, so it
+  still segments correctly; a *multi-doc* bundle loses its boundaries and collapses
+  to one segment. That collapse is the intended honest signal (``messy`` tier), and
+  ``verify.py`` reports it as a ``graph_limitation`` rather than a failure.
+- No OTHER rendered line may start with ``# `` (hash+space), in any mode. Section
+  headers are bold bars, never H1; render "Invoice No." not "Invoice #". ``_txt``
+  strips any leading ``#`` from every dynamic/LLM string, so ``hash`` mode keeps
+  exactly one boundary per document.
 - Faux logos are vector table cells, never raster Images (avoids MarkItDown's LLM
   image captioner injecting a stray line).
 """
@@ -98,9 +106,19 @@ def _txt(s: str | None, style: ParagraphStyle = _CELL, placeholder: str = "—")
     return Paragraph(_sanitize(str(raw)).replace("\n", "<br/>"), style)
 
 
-def _h1_line(title: str) -> Paragraph:
-    """The single '# TITLE' boundary line — the only hash-space line in a doc."""
-    return Paragraph("# " + _sanitize(title), _H1)
+def _title_flowable(title: str, mode: str = "hash") -> Paragraph:
+    """The per-document title line — the ONLY place a '# ' boundary may appear.
+
+    ``mode``: ``"hash"`` → the splittable ``# TITLE`` H1 (today's behavior);
+    ``"bold_caps"``/``"plain"`` → a realistic title with NO leading ``#`` (real
+    carrier PDFs have no markdown header). See the module docstring / ``realism.py``.
+    """
+    t = _sanitize(title)
+    if mode == "hash":
+        return Paragraph("# " + t, _H1)
+    if mode == "bold_caps":
+        return Paragraph(f"<b>{t.upper()}</b>", _H1)
+    return Paragraph(t, _H1)  # "plain"
 
 
 def _mdy(iso: str | None) -> str:
@@ -404,15 +422,40 @@ class _FooterCue(Flowable):
         self.canv._doc_key = self.doc_key
 
 
+class _WatermarkCue(Flowable):
+    """Zero-size flowable that sets (or clears) the owning doc's watermark text.
+
+    Emitted once at the start of every document so a watermark never bleeds into the
+    next document's pages. Drawn as vector text (see ``_draw_watermark``) so it stays
+    in the extracted markdown as realistic classifier noise and never triggers
+    MarkItDown's image captioner.
+    """
+
+    def __init__(self, text: str | None):
+        super().__init__()
+        self.text = text
+
+    def wrap(self, *_):
+        return (0, 0)
+
+    def draw(self):
+        self.canv._doc_watermark = self.text
+
+
 class NumberedCanvas(canvas.Canvas):
-    """Two-pass canvas: per-document 'Page i of n' + form-number footers."""
+    """Two-pass canvas: per-document 'Page i of n' + form-number footers + watermark."""
 
     def __init__(self, *a, **k):
         super().__init__(*a, **k)
         self._saved = []
 
     def showPage(self):
-        self._saved.append({**self.__dict__, "_form": getattr(self, "_doc_form", ""), "_key": getattr(self, "_doc_key", 0)})
+        self._saved.append({
+            **self.__dict__,
+            "_form": getattr(self, "_doc_form", ""),
+            "_key": getattr(self, "_doc_key", 0),
+            "_wm": getattr(self, "_doc_watermark", None),
+        })
         self._startPage()
 
     def save(self):
@@ -422,9 +465,25 @@ class NumberedCanvas(canvas.Canvas):
             self.__dict__.update(st)
             k = st["_key"]
             seen[k] = seen.get(k, 0) + 1
+            if st.get("_wm"):
+                self._draw_watermark(st["_wm"])
             self._draw_footer(st["_form"], seen[k], totals[k])
             super().showPage()
         super().save()
+
+    def _draw_watermark(self, text: str):
+        # Horizontal (not rotated): a 45° stamp is extracted glyph-by-glyph by pdfminer
+        # (each rotated glyph lands on its own baseline), which loses the word. Drawn
+        # flat, the whole token survives into the markdown as realistic classifier noise.
+        self.saveState()
+        self.setFont("Helvetica-Bold", 60)
+        self.setFillColor(colors.HexColor("#9a9a9a"))
+        try:
+            self.setFillAlpha(0.13)
+        except Exception:  # noqa: BLE001 — older reportlab without alpha; light grey still reads
+            pass
+        self.drawCentredString(letter[0] / 2, letter[1] / 2, text)
+        self.restoreState()
 
     def _draw_footer(self, form: str, i: int, n: int):
         y = 0.32 * inch
@@ -440,7 +499,7 @@ class NumberedCanvas(canvas.Canvas):
 
 
 # --------------------------------------------------------------------------- #
-# Per-doc-type templates  (each: _FooterCue → _h1_line → body)
+# Per-doc-type templates  (each: _FooterCue → _title_flowable → body)
 # --------------------------------------------------------------------------- #
 def _producer_para(shared: SharedFacts) -> Paragraph:
     p = shared.producer
@@ -479,7 +538,7 @@ def _insurers_para(shared: SharedFacts) -> Paragraph:
     return Paragraph("<br/>".join(lines), _CELL)
 
 
-def render_certificate(shared: SharedFacts, doc: DocumentContent, doc_index: int = 0) -> list:
+def render_certificate(shared: SharedFacts, doc: DocumentContent, doc_index: int = 0, *, title_mode: str = "hash", layout: int = 0) -> list:
     covs = doc.coverage_lines or [
         CoverageLine(insurer_letter="A", coverage_type="Commercial General Liability",
                      policy_number=shared.policy_number, effective_date=_mdy(shared.effective_date),
@@ -511,7 +570,7 @@ def render_certificate(shared: SharedFacts, doc: DocumentContent, doc_index: int
 
     return [
         _FooterCue("ACORD 25 (2016/03)  ·  © 1988-2015 ACORD CORPORATION. All rights reserved.", doc_index),
-        _h1_line("CERTIFICATE OF LIABILITY INSURANCE"),
+        _title_flowable("CERTIFICATE OF LIABILITY INSURANCE", title_mode),
         top,
         Spacer(1, 3),
         _disclaimer(_ACORD_DISCLAIMER),
@@ -528,7 +587,7 @@ def render_certificate(shared: SharedFacts, doc: DocumentContent, doc_index: int
     ]
 
 
-def render_declarations(shared: SharedFacts, doc: DocumentContent, doc_index: int = 0) -> list:
+def render_declarations(shared: SharedFacts, doc: DocumentContent, doc_index: int = 0, *, title_mode: str = "hash", layout: int = 0) -> list:
     period = f"{_mdy(doc.effective_date or shared.effective_date)} to {_mdy(doc.expiration_date or shared.expiration_date)}, 12:01 A.M. Standard Time at the mailing address of the Named Insured"
     info = _grid(
         [
@@ -540,10 +599,11 @@ def render_declarations(shared: SharedFacts, doc: DocumentContent, doc_index: in
         font_size=7.5,
     )
     parts = doc.coverage_parts or []
+    tagline = ("Commercial Lines Division", "Commercial Lines Underwriting", "Business Insurance Division")[layout % 3]
     story = [
         _FooterCue(f"POLICY NO. {shared.policy_number or 'PENDING'}  ·  COMMERCIAL PACKAGE DECLARATIONS", doc_index),
-        _h1_line("COMMERCIAL PACKAGE POLICY DECLARATIONS"),
-        _letterhead(shared.carrier_name, tagline="Commercial Lines Division", address="A Stock Insurance Company · 151 N Franklin St, Chicago, IL 60606"),
+        _title_flowable("COMMERCIAL PACKAGE POLICY DECLARATIONS", title_mode),
+        _letterhead(shared.carrier_name, tagline=tagline, address="A Stock Insurance Company · 151 N Franklin St, Chicago, IL 60606"),
         Spacer(1, 5),
         info,
         Spacer(1, 6),
@@ -551,10 +611,16 @@ def render_declarations(shared: SharedFacts, doc: DocumentContent, doc_index: in
         _coverage_parts_table(parts, total=_sum_money([p.premium for p in parts]) if parts else doc.total_premium),
         Spacer(1, 6),
     ]
-    if doc.premium_summary:
-        story += [_section("PREMIUM SUMMARY"), _charges_table(doc.premium_summary, total_label="Total Amount", total_amount=doc.total_premium), Spacer(1, 6)]
-    if doc.forms_schedule:
-        story += [_section("SCHEDULE OF FORMS AND ENDORSEMENTS"), _forms_table(doc.forms_schedule), Spacer(1, 6)]
+    premium_block = (
+        [_section("PREMIUM SUMMARY"), _charges_table(doc.premium_summary, total_label="Total Amount", total_amount=doc.total_premium), Spacer(1, 6)]
+        if doc.premium_summary else []
+    )
+    forms_block = (
+        [_section("SCHEDULE OF FORMS AND ENDORSEMENTS"), _forms_table(doc.forms_schedule), Spacer(1, 6)]
+        if doc.forms_schedule else []
+    )
+    # layout variant changes the section order (a real text-order change downstream).
+    story += (forms_block + premium_block) if layout == 1 else (premium_block + forms_block)
     countersig = Paragraph(
         f"Countersigned by: <b>{_sanitize(doc.countersignature or shared.carrier_name)}</b><br/>"
         f"Date: {_sanitize(doc.countersignature_date or shared.effective_date)}<br/>"
@@ -565,7 +631,7 @@ def render_declarations(shared: SharedFacts, doc: DocumentContent, doc_index: in
     return story
 
 
-def render_invoice(shared: SharedFacts, doc: DocumentContent, doc_index: int = 0) -> list:
+def render_invoice(shared: SharedFacts, doc: DocumentContent, doc_index: int = 0, *, title_mode: str = "hash", layout: int = 0) -> list:
     info = _grid(
         [
             [_txt("INVOICE NO.", _LABEL), _txt(doc.invoice_number, _CELL_B), _txt("INVOICE DATE", _LABEL), _txt(doc.invoice_date, _CELL)],
@@ -581,7 +647,7 @@ def render_invoice(shared: SharedFacts, doc: DocumentContent, doc_index: int = 0
         remit = remit[len(shared.carrier_name):].strip("\n ,") or "PO Box 74007619, Chicago, IL 60674"
     return [
         _FooterCue(f"BILLING STATEMENT  ·  INVOICE {doc.invoice_number or ''}", doc_index),
-        _h1_line("PREMIUM INVOICE"),
+        _title_flowable("PREMIUM INVOICE", title_mode),
         _letterhead(shared.carrier_name, tagline="Billing Department", address="Remittance: " + remit),
         Spacer(1, 5),
         info,
@@ -601,7 +667,7 @@ def render_invoice(shared: SharedFacts, doc: DocumentContent, doc_index: int = 0
     ]
 
 
-def render_endorsement(shared: SharedFacts, doc: DocumentContent, doc_index: int = 0) -> list:
+def render_endorsement(shared: SharedFacts, doc: DocumentContent, doc_index: int = 0, *, title_mode: str = "hash", layout: int = 0) -> list:
     info = _grid(
         [
             [_txt("ENDORSEMENT EFFECTIVE DATE", _LABEL), _txt(doc.effective_date or shared.effective_date, _CELL_B), _txt("ENDORSEMENT NO.", _LABEL), _txt(doc.endorsement_number, _CELL)],
@@ -613,7 +679,7 @@ def render_endorsement(shared: SharedFacts, doc: DocumentContent, doc_index: int
     )
     story = [
         _FooterCue(f"{doc.form_number or 'CHANGE ENDORSEMENT'}  ·  POLICY NO. {shared.policy_number or 'PENDING'}", doc_index),
-        _h1_line("POLICY CHANGE ENDORSEMENT"),
+        _title_flowable("POLICY CHANGE ENDORSEMENT", title_mode),
         _endorsement_banner(),
         Spacer(1, 5),
         Paragraph(f"<b>{_sanitize(doc.endorsement_title or 'Policy Change')}</b>", _SECTION),
@@ -647,14 +713,14 @@ def _data_table(columns: list[str] | None, rows: list[TableRow] | None) -> Table
     return _grid(data, [_USABLE_W / n] * n, header_rows=1, font_size=7.0, split=True)
 
 
-def render_needs_review(shared: SharedFacts, doc: DocumentContent, doc_index: int = 0) -> list:
+def render_needs_review(shared: SharedFacts, doc: DocumentContent, doc_index: int = 0, *, title_mode: str = "hash", layout: int = 0) -> list:
     """A structured, insurance-adjacent document that is NOT one of the four modeled
     doctypes (loss run, application, statement of values, cover letter) — should route
     to needs_review."""
     title = doc.nr_kind or doc.title or "Supplemental Insurance Document"
     story = [
         _FooterCue((doc.nr_kind or "SUPPLEMENTAL DOCUMENT").upper(), doc_index),
-        _h1_line(title),
+        _title_flowable(title, title_mode),
         _letterhead(
             shared.producer.agency if shared.producer else shared.carrier_name,
             tagline="Underwriting / Loss Control",
@@ -709,11 +775,29 @@ _CANCELLATION_TEXT = (
 )
 
 
-def build_pdf(shared: SharedFacts, typed_docs: list[tuple[DocumentCategory, DocumentContent]]) -> bytes:
-    """Render one PDF containing every ``(doc_type, content)`` in order."""
+def build_pdf(
+    shared: SharedFacts,
+    typed_docs: list[tuple[DocumentCategory, DocumentContent]],
+    *,
+    doc_modes: list[str] | None = None,
+    watermarks: list[str | None] | None = None,
+    layouts: list[int] | None = None,
+) -> bytes:
+    """Render one PDF containing every ``(doc_type, content)`` in order.
+
+    Per-document realism knobs (all default to today's behavior when omitted):
+      * ``doc_modes[i]`` — title/boundary mode (see ``_title_flowable``); default
+        ``"hash"`` (the splittable ``# TITLE``).
+      * ``watermarks[i]`` — diagonal DRAFT/COPY/… stamp, or ``None``.
+      * ``layouts[i]`` — layout variant int (section order / letterhead tagline).
+    """
     story: list = []
     for i, (doc_type, doc) in enumerate(typed_docs):
-        story += _DISPATCH[doc_type](shared, doc, doc_index=i)
+        mode = doc_modes[i] if doc_modes else "hash"
+        wm = watermarks[i] if watermarks else None
+        layout = layouts[i] if layouts else 0
+        story.append(_WatermarkCue(wm))  # set/clear the watermark for this doc's pages
+        story += _DISPATCH[doc_type](shared, doc, doc_index=i, title_mode=mode, layout=layout)
         if i != len(typed_docs) - 1:
             story.append(PageBreak())
 
@@ -727,4 +811,74 @@ def build_pdf(shared: SharedFacts, typed_docs: list[tuple[DocumentCategory, Docu
         topMargin=0.5 * inch,
         bottomMargin=0.55 * inch,
     ).build(story, canvasmaker=NumberedCanvas)
+    return buf.getvalue()
+
+
+# --------------------------------------------------------------------------- #
+# Deferred track: non-PDF and scanned (image-only) single-document renderers.
+# Off by default; enabled per-doc via realism.DocNoise.render_format. Heavy deps
+# (pdfminer, Pillow) are imported lazily so the default PDF path stays light.
+# --------------------------------------------------------------------------- #
+def _single_doc_text(shared: SharedFacts, doc_type: DocumentCategory, doc: DocumentContent) -> str:
+    """The plain text of a single document (as pdfminer would extract it) — reused as
+    the source for both the HTML and the scanned-image renderers so content stays
+    coherent with the PDF path."""
+    pdf = build_pdf(shared, [(doc_type, doc)], doc_modes=["plain"])
+    try:
+        from pdfminer.high_level import extract_text
+
+        return extract_text(io.BytesIO(pdf)) or (doc.title or "Insurance Document")
+    except Exception:  # noqa: BLE001 — never let a scan/html render kill a run
+        return doc.title or "Insurance Document"
+
+
+def build_html(shared: SharedFacts, doc_type: DocumentCategory, doc: DocumentContent) -> bytes:
+    """A single document as an HTML attachment. Still text-extractable (MarkItDown
+    parses HTML), so it classifies normally — it just exercises a non-PDF format."""
+    title = _esc(doc.title or "Insurance Document")
+    paras = "".join(f"<p>{_esc(ln)}</p>\n" for ln in _single_doc_text(shared, doc_type, doc).splitlines() if ln.strip())
+    # <h2> not <h1>: avoids MarkItDown emitting a single-'#' boundary line.
+    html = (
+        "<!DOCTYPE html><html><head><meta charset='utf-8'>"
+        f"<title>{title}</title></head><body><h2>{title}</h2>\n{paras}</body></html>"
+    )
+    return html.encode("utf-8")
+
+
+def build_scanned_pdf(shared: SharedFacts, doc_type: DocumentCategory, doc: DocumentContent) -> bytes:
+    """A single document as an image-only PDF (no text layer), simulating a scanned or
+    faxed submission. pdfminer extracts nothing from it, so the graph — which has no
+    OCR — routes it to needs_review. That is the intended honest signal."""
+    from PIL import Image, ImageDraw, ImageFont
+
+    text = "[SCANNED COPY]\n\n" + _single_doc_text(shared, doc_type, doc)
+    try:
+        font = ImageFont.truetype("DejaVuSans.ttf", 13)
+    except Exception:  # noqa: BLE001 — DejaVu not always present; bitmap default still has no text layer
+        font = ImageFont.load_default()
+
+    W, H, margin, line_h, max_chars = 850, 1100, 60, 15, 95
+    lines: list[str] = []
+    for raw in text.splitlines():
+        raw = raw.rstrip()
+        while len(raw) > max_chars:
+            lines.append(raw[:max_chars])
+            raw = raw[max_chars:]
+        lines.append(raw)
+
+    per_page = max(1, (H - 2 * margin) // line_h)
+    pages = []
+    for start in range(0, max(1, len(lines)), per_page):
+        img = Image.new("RGB", (W, H), "white")
+        draw = ImageDraw.Draw(img)
+        y = margin
+        for ln in lines[start:start + per_page]:
+            draw.text((margin, y), ln, fill=(25, 25, 25), font=font)
+            y += line_h
+        pages.append(img)
+    if not pages:
+        pages = [Image.new("RGB", (W, H), "white")]
+
+    buf = io.BytesIO()
+    pages[0].save(buf, format="PDF", save_all=True, append_images=pages[1:])
     return buf.getvalue()

@@ -11,8 +11,12 @@ from __future__ import annotations
 
 import random
 from dataclasses import dataclass
+from typing import TYPE_CHECKING
 
 from insurance_email_agent.schemas import DocumentCategory, EmailCategory
+
+if TYPE_CHECKING:
+    from .realism import NoisePlan, Realism
 
 EC = EmailCategory
 DC = DocumentCategory
@@ -55,6 +59,9 @@ class Skeleton:
 
     email_type: EmailCategory
     attachments: list[AttachmentPlan]
+    #: Seeded realism overlay (personas, delimiter modes, filenames, expected outcomes).
+    #: ``None`` at the ``clean`` tier — the structural blueprint alone is ground truth.
+    noise: "NoisePlan | None" = None
 
     @property
     def flat_doc_types(self) -> list[DocumentCategory]:
@@ -83,11 +90,17 @@ def build_skeleton(
     attachments_mode: str = "auto",
     max_attachments: int = 3,
     max_docs_per_attachment: int = 2,
+    realism: "Realism | None" = None,
 ) -> Skeleton:
     """Draw a random scenario shape.
 
     ``attachments_mode``: ``"off"`` → 0 attachments, ``"on"`` → 1..N,
     ``"auto"`` → ~30% get 0 else 1..N.
+
+    All *structural* draws happen first (unchanged order), so the ``clean`` tier's
+    RNG stream is identical to the pre-realism pipeline. The seeded noise overlay is
+    then drawn from ``realism``'s own path-addressed RNGs (never off ``rng``), so it
+    never perturbs structure and is a strict no-op for ``clean``.
     """
     if email_type is None:
         email_type = rng.choice(list(EmailCategory))
@@ -106,4 +119,7 @@ def build_skeleton(
         docs = [_weighted_pick(rng, weights) for _ in range(n_docs)]
         attachments.append(AttachmentPlan(docs=docs))
 
-    return Skeleton(email_type=email_type, attachments=attachments)
+    skeleton = Skeleton(email_type=email_type, attachments=attachments)
+    if realism is not None and realism.active:
+        skeleton.noise = realism.draw_noise_plan(skeleton)
+    return skeleton

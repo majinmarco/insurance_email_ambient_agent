@@ -16,9 +16,11 @@ import sys
 
 from insurance_email_agent.schemas import EmailCategory
 
+from . import results
 from .client_run import make_client, run_graph, studio_url
 from .payload import build_email_payload, decode_attachments
-from .scenario import generate_scenario
+from .realism import Realism
+from .scenario import augment_scenario, generate_scenario
 from .taxonomy import build_skeleton
 from .verify import verify
 
@@ -44,6 +46,23 @@ def parse_args(argv=None) -> argparse.Namespace:
     p.add_argument("--no-verify", action="store_true")
     p.add_argument("--no-smoke", action="store_true", help="skip the 0-attachment model gate")
     p.add_argument("--keep-pdfs", metavar="DIR", default=None, help="also write generated PDFs")
+    # -- realism knobs --
+    p.add_argument(
+        "--realism",
+        choices=["clean", "mixed", "messy"],
+        default="clean",
+        help="clean=today's pristine baseline; mixed=realistic (graph-safe); messy=realistic + exposes graph limits",
+    )
+    p.add_argument(
+        "--delimiter",
+        choices=["auto", "keep", "drop"],
+        default="auto",
+        help="override the '# TITLE' page-boundary: auto follows the tier, keep/drop force it (A/B testing)",
+    )
+    p.add_argument("--scanned", action="store_true", help="allow image-only 'scanned' PDFs (no text layer; messy)")
+    p.add_argument("--nonpdf", action="store_true", help="allow non-PDF attachments (HTML/XLSX; single-doc; messy)")
+    p.add_argument("--results-dir", metavar="DIR", default=None, help="persist per-run results (runs.jsonl + summary.json)")
+    p.add_argument("--run-label", default=None, help="optional label recorded with persisted results")
     return p.parse_args(argv)
 
 
@@ -68,7 +87,7 @@ def _print_result(result: dict | None) -> None:
         for seg in segs:
             extr = seg.get("extraction")
             extr_type = extr.get("doc_type") if isinstance(extr, dict) else None
-            print(f"       [{seg.get('category')}] pages={seg.get('page_indices')} "
+            print(f"       [{seg.get('category')}] chunks={seg.get('chunk_indices')} "
                   f"extraction={'yes' if extr else 'none'}{f' ({extr_type})' if extr_type else ''}")
 
 
@@ -120,8 +139,13 @@ def _load_env() -> None:
 def main(argv=None) -> int:
     args = parse_args(argv)
     _load_env()
-    rng = random.Random(args.seed)
+    realism = Realism.resolve(args)
+    # Use the *effective* seed for structure too, so an omitted --seed is still
+    # reproducible via the printed value (clean+--seed N is unchanged from before).
+    rng = random.Random(realism.seed)
     client = make_client(args.url)
+    print(f"realism={realism.tier}  seed={realism.seed}"
+          + (f"  delimiter={realism.delimiter_override}" if realism.delimiter_override != "auto" else ""))
 
     if not args.no_smoke:
         if not smoke_gate(client, args):
@@ -130,6 +154,7 @@ def main(argv=None) -> int:
 
     forced_type = EmailCategory(args.email_type) if args.email_type else None
     passed = 0
+    records: list = []
     for i in range(1, args.n + 1):
         print(f"== run {i}/{args.n} ==")
         skeleton = build_skeleton(
@@ -137,41 +162,72 @@ def main(argv=None) -> int:
             email_type=forced_type,
             attachments_mode=args.attachments,
             max_docs_per_attachment=args.max_docs,
+            realism=realism,
         )
         scenario = generate_scenario(
-            skeleton, provider=args.provider, model=args.model, use_llm=not args.no_llm
+            skeleton, provider=args.provider, model=args.model, use_llm=not args.no_llm, realism=realism
         )
+        scenario = augment_scenario(scenario, skeleton, realism)
         _print_scenario(skeleton, scenario)
-        payload = build_email_payload(skeleton, scenario)
+        payload = build_email_payload(skeleton, scenario, realism=realism)
         if args.keep_pdfs:
             _write_pdfs(args.keep_pdfs, i, payload)
 
         metadata = {
             "smoke_test": True,
+            "realism": realism.tier,
+            "effective_seed": realism.seed,
             "expected_email_type": skeleton.email_type.value,
             "expected_doc_types": [d.value for d in skeleton.flat_doc_types],
         }
+
+        tid = result = err = run_error = None
+        checks: list = []
+        findings: list = []
         try:
             tid, result, err = run_graph(
                 client, args.assistant_id, payload, metadata, verbose=args.verbose
             )
         except Exception as exc:  # noqa: BLE001
-            print(f"  ! run errored: {exc!r}")
-            continue
+            run_error = repr(exc)
+            print(f"  ! run errored: {run_error}")
 
-        print(f"  studio: {studio_url(args.url, tid)}")
+        if tid:
+            print(f"  studio: {studio_url(args.url, tid)}")
         if err:
             print(f"  ! run failed: {err}")
-            continue
-        _print_result(result)
 
-        if not args.no_verify:
-            checks = verify(skeleton, result)
-            for c in checks:
-                print(f"  [{'PASS' if c.ok else 'FAIL'}] {c.name}: {c.detail}")
-            if all(c.ok for c in checks):
-                passed += 1
+        run_ok = not run_error and not err
+        if run_ok:
+            _print_result(result)
+            if not args.no_verify:
+                checks, findings = verify(skeleton, result, realism)
+                for c in checks:
+                    print(f"  [{'PASS' if c.ok else 'FAIL'}] {c.name}: {c.detail}")
+                for f in findings:
+                    tag = "GRAPH-LIMIT" if f.kind == "graph_limitation" else "INFO"
+                    print(f"  [{tag}] {f.name}: {f.detail}")
+
+        run_passed = run_ok and all(c.ok for c in checks)
+        if not args.no_verify and run_passed:
+            passed += 1
+
+        if args.results_dir:
+            records.append(
+                results.build_record(
+                    run_index=i, realism=realism, skeleton=skeleton, thread_id=tid,
+                    studio_url=studio_url(args.url, tid) if tid else None,
+                    result=result, checks=checks, findings=findings,
+                    error=(run_error or (repr(err) if err else None)),
+                    passed=run_passed, run_label=args.run_label,
+                )
+            )
         print()
+
+    if args.results_dir and records:
+        summary = results.write_summary(args.results_dir, records)
+        rate = ", ".join(f"{t}={v['passed']}/{v['runs']}" for t, v in summary["by_tier"].items())
+        print(f"== results → {args.results_dir}/ ({len(records)} runs)  pass-by-tier: {rate} ==")
 
     if not args.no_verify:
         print(f"== {passed}/{args.n} runs passed all checks ==")

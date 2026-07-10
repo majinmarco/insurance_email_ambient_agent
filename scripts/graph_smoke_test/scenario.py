@@ -23,6 +23,7 @@ from pydantic import BaseModel, Field
 
 from insurance_email_agent.schemas import DocumentCategory, EmailCategory
 
+from . import personas
 from .taxonomy import Skeleton
 
 EC = EmailCategory
@@ -283,10 +284,26 @@ def _doc_slot_lines(skeleton: Skeleton) -> str:
     return "\n".join(lines) or "  (no attachments)"
 
 
-def _build_prompt(skeleton: Skeleton) -> str:
+def _build_prompt(skeleton: Skeleton, persona: "personas.Persona | None" = None) -> str:
     n_docs = len(skeleton.flat_doc_types)
+    persona_line = ""
+    if persona is not None:
+        pol = (
+            "This is a brand-new account with NO existing policy number."
+            if skeleton.email_type == EC.NEW_SUBMISSION
+            else f"Existing policy number: {persona.policy_number}."
+        )
+        persona_line = (
+            "Use these EXACT identity facts in `shared` (do not invent the insured or producer): "
+            f"named insured '{persona.named_insured}' ({persona.entity_type}), a "
+            f"{persona.business_description} at {persona.insured_address}; contact "
+            f"{persona.contact_name} <{persona.contact_email}> {persona.contact_phone}; producer "
+            f"'{persona.producer_agency}' <{persona.producer_email}>; carrier {persona.carrier_name}. "
+            f"{pol} Invent the remaining fields (insurers A–F, form numbers, limits) consistently.\n\n"
+        )
     return (
-        f"Email intent to write: {skeleton.email_type.value} — {_EMAIL_GUIDANCE[skeleton.email_type]}.\n\n"
+        persona_line
+        + f"Email intent to write: {skeleton.email_type.value} — {_EMAIL_GUIDANCE[skeleton.email_type]}.\n\n"
         "First invent `shared`: the named insured + address, the producer (agency, address, contact, "
         "phone, email), the insurers A–F (name + NAIC) affording coverage, business_description, "
         "entity_type, fein, carrier, policy number, and policy dates. Keep these CONSISTENT across every "
@@ -320,13 +337,20 @@ def generate_scenario(
     model: str | None = None,
     temperature: float = 0.7,
     use_llm: bool = True,
+    realism=None,
 ) -> Scenario:
-    """Generate content for ``skeleton``; deterministic fallback on any failure."""
+    """Generate content for ``skeleton``; deterministic fallback on any failure.
+
+    When the realism overlay chose a persona (``skeleton.noise``), it drives the
+    offline fallback identity and nudges the LLM prompt so identities rotate. This
+    only affects *content*; the skeleton remains the structural ground truth.
+    """
+    persona = personas.get(skeleton.noise.email.persona_index) if skeleton.noise else None
     if not use_llm:
-        return _fallback_scenario(skeleton)
+        return _fallback_scenario(skeleton, persona=persona)
 
     n_docs = len(skeleton.flat_doc_types)
-    prompt = _build_prompt(skeleton)
+    prompt = _build_prompt(skeleton, persona=persona)
     structured = _make_llm(provider, model, temperature).with_structured_output(Scenario)
 
     for _ in range(2):
@@ -336,7 +360,7 @@ def generate_scenario(
                 return sc
         except Exception as exc:  # noqa: BLE001 — any LLM/transport failure → fallback
             print(f"  [scenario] LLM generation failed ({exc!r}); retrying/falling back")
-    return _fallback_scenario(skeleton)
+    return _fallback_scenario(skeleton, persona=persona)
 
 
 # --------------------------------------------------------------------------- #
@@ -596,7 +620,66 @@ def _fallback_doc(doc_type: DocumentCategory, shared: SharedFacts) -> DocumentCo
     )
 
 
-def _fallback_scenario(skeleton: Skeleton) -> Scenario:
+def _exp_mmdd(iso: str) -> str:
+    parts = iso.split("-")
+    return f"{parts[1]}/{parts[2]}" if len(parts) == 3 else iso
+
+
+def _persona_subject(p: "personas.Persona", et: EmailCategory) -> str:
+    if et == EC.NEW_SUBMISSION:
+        return f"New submission — commercial package quote for {p.named_insured}"
+    if et == EC.RENEWAL:
+        return f"Renewal — {p.policy_number} expiring {_exp_mmdd(p.expiration_date)}, please quote"
+    if et == EC.ENDORSEMENT:
+        return f"Endorsement request — mid-term change to {p.policy_number}"
+    if et == EC.CLAIM_FNOL:
+        return f"FNOL — new loss under {p.policy_number} ({p.named_insured})"
+    return f"Following up — {p.named_insured} account, plus a couple questions"
+
+
+def _persona_body(p: "personas.Persona", et: EmailCategory) -> str:
+    if et == EC.NEW_SUBMISSION:
+        return (
+            f"Hi team,\n\nWe'd like to quote a new commercial package for {p.named_insured} "
+            f"({p.insured_address}). Requested effective date is {p.effective_date}. Application "
+            f"materials are attached.\n\nThanks,\n{p.contact_name}\n{p.contact_phone}"
+        )
+    if et == EC.RENEWAL:
+        return (
+            f"Hello,\n\nPolicy {p.policy_number} for {p.named_insured} expires {p.expiration_date}. "
+            f"Please prepare a renewal quote; the expiring declarations and latest invoice are "
+            f"attached.\n\nBest,\n{p.contact_name}"
+        )
+    if et == EC.ENDORSEMENT:
+        return (
+            f"Hi,\n\nPlease endorse policy {p.policy_number} for {p.named_insured} effective "
+            f"{p.effective_date}. The signed change request is attached.\n\nThanks,\n{p.contact_name}"
+        )
+    if et == EC.CLAIM_FNOL:
+        return (
+            f"Reporting a new loss under {p.policy_number} for {p.named_insured}. The incident "
+            f"occurred earlier this week; details are attached. Please open a claim and reach "
+            f"{p.contact_name} at {p.contact_phone}."
+        )
+    return (
+        f"Hey — circling back on the {p.named_insured} account. Also, did last month's endorsement "
+        f"get issued, and can you confirm our current billing balance? Attaching a doc, not sure it's "
+        f"the right one.\n\n{p.contact_name}"
+    )
+
+
+def _fallback_scenario(skeleton: Skeleton, persona: "personas.Persona | None" = None) -> Scenario:
+    if persona is not None:
+        shared = persona.to_shared_facts(new_submission=(skeleton.email_type == EC.NEW_SUBMISSION))
+        email = GeneratedEmail(
+            subject=_persona_subject(persona, skeleton.email_type),
+            body=_persona_body(persona, skeleton.email_type),
+            sender=f"{persona.contact_name} <{persona.contact_email}>",
+            recipient=persona.intake_recipient,
+        )
+        documents = [_fallback_doc(dt, shared) for dt in skeleton.flat_doc_types]
+        return Scenario(shared=shared, email=email, documents=documents)
+
     shared = SharedFacts(
         named_insured="Northgate Logistics LLC",
         policy_number=None if skeleton.email_type == EC.NEW_SUBMISSION else "CPP-2291043",
@@ -639,3 +722,163 @@ def _fallback_scenario(skeleton: Skeleton) -> Scenario:
     )
     documents = [_fallback_doc(dt, shared) for dt in skeleton.flat_doc_types]
     return Scenario(shared=shared, email=email, documents=documents)
+
+
+# --------------------------------------------------------------------------- #
+# Content overlay — realistic messiness applied on top of generated content.
+# Seeded (via ``realism.rng``), so identical under a fixed --seed; a no-op for the
+# clean tier. Email-level here; document content noise is layered in payload/render.
+# --------------------------------------------------------------------------- #
+_BODY_ONLY = ("See attached.", "Please see attached — thanks.", "Attached.", "Docs attached.", "FYI, see attached below.")
+
+
+def _thread_prefix(r) -> str:
+    return r.choice(("RE: ", "Re: ", "FW: ", "Fwd: ", "RE: RE: "))
+
+
+def _quoted_history(r, shared: SharedFacts) -> str:
+    who = (shared.producer.contact_name if shared.producer and shared.producer.contact_name else "Underwriting")
+    addr = (shared.producer.email if shared.producer and shared.producer.email else "underwriting@carrier.com")
+    when = r.choice(("Mon, Jul 6, 2026 at 9:14 AM", "Jun 30, 2026, 4:02 PM", "Wed, Jul 1, 2026 11:47 AM", "last Tuesday"))
+    prior = r.choice((
+        "Thanks for sending this over — can you confirm the requested effective date and whether any "
+        "additional insureds are needed?",
+        "Received, thank you. We'll need the current loss runs before we can release terms.",
+        "Following up on the below — please advise on the outstanding items when you have a moment.",
+    ))
+    return f"On {when}, {who} <{addr}> wrote:\n> {prior}\n>\n> Regards,\n> {who}"
+
+
+def _signature(r, shared: SharedFacts) -> str:
+    contact, phone, company = shared.contact_name or "Accounts", shared.contact_phone or "", shared.named_insured
+    return r.choice((
+        f"--\n{contact}\n{company}\n{phone}",
+        f"Best regards,\n{contact}\n{company} | {phone}",
+        "Sent from my iPhone",
+        f"{contact}\n{company}\n\nCONFIDENTIALITY NOTICE: This message and any attachments are intended "
+        "solely for the addressee and may contain confidential information.",
+    ))
+
+
+def _typo(s: str, r) -> str:
+    words = s.split()
+    long_ix = [i for i, w in enumerate(words) if len(w) > 3]
+    if not long_ix:
+        return s
+    i = r.choice(long_ix)
+    w = words[i]
+    j = r.randrange(len(w) - 1)
+    words[i] = w[:j] + w[j + 1] + w[j] + w[j + 2:]  # transpose two letters
+    return " ".join(words)
+
+
+def _apply_subject_style(style: str, subject: str, r) -> str:
+    if style == "allcaps":
+        return subject.upper()
+    if style == "urgent":
+        return r.choice(("URGENT: ", "[URGENT] ", "URGENT - ")) + subject
+    if style == "ticket":
+        return f"{subject} [Ref# {r.randrange(10000, 99999)}]"
+    if style == "empty":
+        return ""
+    if style == "typo":
+        return _typo(subject, r)
+    return subject
+
+
+def _multi_recipient(r, recipient: str, sender: str, shared: SharedFacts) -> tuple[str, str]:
+    domain = recipient.split("@")[-1].strip("> ") if "@" in recipient else "carrierintake.com"
+    extra = r.choice(("underwriting", "newbusiness", "submissions", "accounts"))
+    new_recipient = f"{recipient}, {extra}@{domain}"
+    if r.random() < 0.5 and shared.producer and shared.producer.contact_name:
+        sender = f"{shared.producer.contact_name}'s Assistant <assistant@{domain}> on behalf of {sender}"
+    return new_recipient, sender
+
+
+def _inject_inconsistency(r, body: str, shared: SharedFacts) -> str:
+    note = r.choice((
+        "\n\nP.S. Please use effective date 07/15 rather than what's printed on the form — we moved it up.",
+        "\n\nNote: the policy number on the attachment may be off by a digit; the correct one ends in 9.",
+        "\n\nCorrection: the total premium should read slightly lower than the attached invoice; we're reconciling.",
+    ))
+    return body + note
+
+
+# Prose/label fields safe to corrupt. Deliberately excludes every money/amount, id,
+# policy/invoice/account number, date, and limit field so invoice totals still
+# reconcile (_sum_money) and structured extraction targets stay intact.
+_PROSE_FIELDS = (
+    "certificate_holder", "description_of_operations", "authorized_representative",
+    "payment_methods", "remit_to", "endorsement_title", "change_description",
+    "unrelated_subtitle", "unrelated_body",
+)
+_OCR_MAP = {"o": "0", "0": "o", "i": "1", "l": "1", "5": "s", "s": "5", "b": "6"}
+
+
+def _noise_text(s: str, r, level: float) -> str:
+    """Sprinkle sparse OCR-like artifacts (substitution / dropout / doubling) into a
+    string; rate scales with ``level`` and stays low so the document still reads as its
+    true type."""
+    if not s or level <= 0:
+        return s
+    out: list[str] = []
+    for ch in s:
+        if ch.isalnum() and r.random() < level * 0.10:
+            roll = r.random()
+            if roll < 0.4 and ch.lower() in _OCR_MAP:
+                out.append(_OCR_MAP[ch.lower()])
+                continue
+            if roll < 0.7:
+                continue  # OCR dropout
+            out.append(ch)  # OCR doubling
+        out.append(ch)
+    return "".join(out)
+
+
+def _noise_document(doc: DocumentContent, r, level: float) -> DocumentContent:
+    update: dict = {}
+    for f in _PROSE_FIELDS:
+        v = getattr(doc, f, None)
+        if isinstance(v, str) and v.strip():
+            update[f] = _noise_text(v, r, level)
+    if doc.provisions:
+        update["provisions"] = [_noise_text(p, r, level) for p in doc.provisions]
+    return doc.model_copy(update=update) if update else doc
+
+
+def augment_scenario(scenario: Scenario, skeleton: Skeleton, realism=None) -> Scenario:
+    """Overlay realistic messiness onto generated content: email threading, signatures,
+    subject noise, multi-recipient, body-only, mild inconsistency, plus sparse OCR-like
+    typos in document prose. No-op for the clean tier or when there is no overlay;
+    deterministic under ``realism``'s seed."""
+    if realism is None or not realism.active or skeleton.noise is None:
+        return scenario
+    en = skeleton.noise.email
+    r = realism.rng("augment", "email")
+    subject, body = scenario.email.subject, scenario.email.body
+    sender, recipient = scenario.email.sender, scenario.email.recipient
+
+    if en.body_only:
+        body = r.choice(_BODY_ONLY)
+    elif en.inconsistency:
+        body = _inject_inconsistency(r, body, scenario.shared)
+    if en.thread:
+        subject = _thread_prefix(r) + subject
+        body = body + "\n\n" + _quoted_history(r, scenario.shared)
+    if en.signature:
+        body = body + "\n\n" + _signature(r, scenario.shared)
+    if en.subject_style:
+        subject = _apply_subject_style(en.subject_style, subject, r)
+    if en.multi_recipient:
+        recipient, sender = _multi_recipient(r, recipient, sender, scenario.shared)
+
+    new_email = scenario.email.model_copy(
+        update={"subject": subject, "body": body, "sender": sender, "recipient": recipient}
+    )
+
+    docs = list(scenario.documents)
+    for i, dn in enumerate(skeleton.noise.docs):
+        if i < len(docs) and dn.content_noise:
+            docs[i] = _noise_document(docs[i], realism.rng("augment", "doc", i), dn.content_noise_level)
+
+    return scenario.model_copy(update={"email": new_email, "documents": docs})
