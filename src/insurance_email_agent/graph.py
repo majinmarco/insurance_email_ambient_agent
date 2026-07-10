@@ -227,16 +227,21 @@ def document_segmentation_extraction(state: SegmentationState):
     chunks_text = [chunk.page_content for chunk in chunks]
 
     # Further split large chunks and insert in-place in original spot
+    chunks_text_remade: list[str] = []
     for txt in chunks_text:
+        chunks_to_add: list[str] = []
         if get_token_length(txt) > 8192:
-            chunks_text.remove(txt)
-
             # split into chunks of <=8192/2 tokens
+            chunks_to_add = token_text_splitter.split_text(txt)
+            chunks_text_remade.extend(chunks_to_add)
+        else:
+            chunks_text_remade.append(txt)
+
 
     # zeroshot classification for every chunk (parallelized)
     labels = [c.value for c in classes_verbalized]
     outputs = zeroshot_classifier(
-        chunks_text,
+        chunks_text_remade,
         candidate_labels=labels,
         hypothesis_template=hypothesis_template,
         multi_label=False,
