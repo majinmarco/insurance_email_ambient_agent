@@ -1,0 +1,50 @@
+name: Daily Multi-README Sync (Claude-5-Sonnet)
+
+on:
+  schedule:
+    # Runs automatically every 24 hours at 00:00 UTC
+    - cron: '0 0 * * *'
+  workflow_dispatch: # Allows you to manually trigger via the Actions dashboard
+
+jobs:
+  sync-readmes:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write        # Required to push README modifications back to the repo
+      pull-requests: write   # Necessary if Claude manages branches or PR elements
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0     # Pulls full git log history so we can accurately check timeframes
+
+      - name: Check for commits in past 24 hours
+        id: commit_check
+        run: |
+          # Count commits in the last 24 hours
+          COMMIT_COUNT=$(git log --since="24 hours ago" --oneline | wc -l)
+          echo "Commits found in the last 24 hours: $COMMIT_COUNT"
+
+          # If count is greater than 0, set should_run to true
+          if [ "$COMMIT_COUNT" -gt 0 ]; then
+            echo "should_run=true" >> $GITHUB_OUTPUT
+          else
+            echo "should_run=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Run Claude Code Action
+        # This condition forces the step to execute ONLY if commits exist
+        if: steps.commit_check.outputs.should_run == 'true'
+        uses: anthropics/claude-code-action@v1
+        with:
+          # Sequential agent directives
+          prompt: |
+            You are tasked with maintaining all README documentation across the entire repository. Follow these steps sequentially:
+            1. Review all recent git commits from the past 24 hours to identify changed features, directories, and structural updates.
+            2. Locate all associated README.md files across the entire repository workspace that correspond to these changes.
+            3. Evaluate if the READMEs are already updated. IF AND ONLY IF they lack the new commit details or architectural changes, modify them. Avoid redundant edits if the content is already accurate.
+
+          # Enforce Claude 5 Sonnet & bypass interactive confirmation prompts
+          claude_args: "--model claude-5-sonnet --dangerously-skip-permissions"
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
