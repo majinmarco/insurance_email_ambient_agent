@@ -305,27 +305,27 @@ def document_segmentation_extraction(state: SegmentationState):
     segments: list[Segment] = []
     for i, chunk in enumerate(categorized_chunks):
         category = chunk["category"]
-        if category == DocumentCategory.NEEDS_REVIEW:
-            request: HumanInterrupt = {
-                "action_request": {
-                    "action": "DocumentClassification",
-                    "args": {
-                        "Category": DocumentCategory.NEEDS_REVIEW
-                    }
-                },
-                "config": {
-                    "allow_ignore": False,
-                    "allow_respond": False,
-                    "allow_edit": True,
-                    "allow_accept": False
-                },
-                "description": chunk_cat_interrupt_description(attachment, chunk["text"], chunk["cls_metadata"]) # Generate a detailed markdown description.
-            }
+        # if category == DocumentCategory.NEEDS_REVIEW:
+        #     request: HumanInterrupt = {
+        #         "action_request": {
+        #             "action": "DocumentClassification",
+        #             "args": {
+        #                 "Category": DocumentCategory.NEEDS_REVIEW
+        #             }
+        #         },
+        #         "config": {
+        #             "allow_ignore": False,
+        #             "allow_respond": False,
+        #             "allow_edit": True,
+        #             "allow_accept": False
+        #         },
+        #         "description": chunk_cat_interrupt_description(attachment, chunk["text"], chunk["cls_metadata"]) # Generate a detailed markdown description.
+        #     }
 
-            # Send the interrupt request, and extract the first response.
-            # The Agent Inbox will always respond with a list of `HumanResponse` objects, although
-            # at this time only a single object will be returned.
-            response = interrupt(request)[0]
+        #     # Send the interrupt request, and extract the first response.
+        #     # The Agent Inbox will always respond with a list of `HumanResponse` objects, although
+        #     # at this time only a single object will be returned.
+        #     response = interrupt(request)[0]
 
         # Only the most recent (current) segment can be continued — stitching is
         # sequential, so compare this chunk against the previous chunk.
@@ -340,6 +340,7 @@ def document_segmentation_extraction(state: SegmentationState):
             if not stitch_status.new_document:
                 last.text = last.text + "\n------\n" + chunk["text"]
                 last.chunk_indices.append(i)
+                last.cls_metadata.append(chunk["cls_metadata"])
                 continue
 
         # new document, different category, or no segment yet → start a new one
@@ -350,6 +351,7 @@ def document_segmentation_extraction(state: SegmentationState):
                 chunk_indices=[i],
                 text=chunk["text"],
                 extraction=None,
+                cls_metadata=[chunk["cls_metadata"]]
             )
         )
 

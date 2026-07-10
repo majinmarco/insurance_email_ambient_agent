@@ -167,6 +167,9 @@ class Segment(BaseModel):
     extraction: Extraction | None = Field(
         None, description="Extraction result for this segment"
     )
+    cls_metadata: list[dict[str, float]] = Field(
+        description = "pair of cls label and confidence for every chunk, in order"
+    )
 
 
 class Attachment(TypedDict):
