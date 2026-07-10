@@ -9,7 +9,7 @@ Storage of pydantic/typing data schemas for:
 
 from datetime import datetime
 from enum import Enum
-from typing import Annotated, Literal, TypedDict, Union
+from typing import Annotated, Literal, TypedDict
 
 from pydantic import BaseModel, Field
 
@@ -241,3 +241,28 @@ class SegmentStitch(BaseModel):
     confidence: float = Field(
         description="Confidence score (0.0-1.0) of the model's prediction for the new_document field"
     )
+
+### INTERRUPT SCHEMAS FOR AGENT INBOX HITL ###
+class HumanInterruptConfig(TypedDict):
+    allow_ignore: bool
+    allow_respond: bool
+    allow_edit: bool
+    allow_accept: bool
+
+
+class ActionRequest(TypedDict):
+    action: str
+    args: Literal[DocumentCategory.CERTIFICATE,
+        DocumentCategory.DECLARATIONS,
+        DocumentCategory.ENDORSEMENT,
+        DocumentCategory.INVOICE,]
+
+class HumanInterrupt(TypedDict):
+    action_request: ActionRequest
+    config: HumanInterruptConfig
+    description: str | None
+
+
+class HumanResponse(TypedDict):
+    type: Literal['accept', 'ignore', 'response', 'edit']
+    args: None | str | ActionRequest

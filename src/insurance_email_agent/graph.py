@@ -20,7 +20,7 @@ from langchain_text_splitters import (
     RecursiveCharacterTextSplitter,
 )
 from langgraph.graph import END, START, StateGraph
-from langgraph.types import Send
+from langgraph.types import Send, interrupt
 from markitdown import MarkItDown, StreamInfo
 from pydantic import BaseModel
 from transformers import pipeline
@@ -37,6 +37,7 @@ from insurance_email_agent.prompts import (
     email_extraction_user,
 )
 from insurance_email_agent.schemas import (
+    Attachment,
     CertificateExtraction,
     DeclarationsExtraction,
     DocumentCategory,
@@ -47,6 +48,8 @@ from insurance_email_agent.schemas import (
     Extraction,
     InvoiceExtraction,
     Segment,
+    HumanInterrupt,
+    HumanResponse,
 )
 from insurance_email_agent.states import (
     OverallState,
@@ -149,6 +152,27 @@ def stitch_or_divide_segments(seg_A: str, seg_B: str) -> SegmentStitch:
     result: SegmentStitch = segment_stitching_llm.invoke([SystemMessage(content=sys_msg), HumanMessage(content=user_msg)])
 
     return result
+
+def chunk_cat_interrupt_description(
+    attachment: Attachment, chunk_text: str, cls_metadata: dict[str, float]
+) -> str:
+    scores = "\n".join(
+        f"- {cls}: {score:.2%}" for cls, score in cls_metadata.items()
+    )
+    return f"""
+    **Filename:** {attachment['filename']}
+
+    ------
+    **Text chunk:**
+    {chunk_text}
+
+    ------
+    **Classification scores:**
+    {scores}
+
+    ______
+
+    """
 
 ### NODES/ROUTERS ###
 
@@ -269,12 +293,11 @@ def document_segmentation_extraction(state: SegmentationState):
             {
                 "text": text,
                 "category": category,
-                # TODO: add metadata for classes
-                # "cls_metadata":
-                #     {
-                #         k:v
-                #         for k,v in o.items()
-                #     }
+                "cls_metadata":
+                    {
+                        k:v
+                        for k,v in zip(o["labels"], o["scores"])
+                    }
             }
         )
 
@@ -283,7 +306,26 @@ def document_segmentation_extraction(state: SegmentationState):
     for i, chunk in enumerate(categorized_chunks):
         category = chunk["category"]
         if category == DocumentCategory.NEEDS_REVIEW:
-            continue  # TODO: add some HITL functionality
+            request: HumanInterrupt = {
+                "action_request": {
+                    "action": "DocumentClassification",
+                    "args": {
+                        "Category": DocumentCategory.NEEDS_REVIEW
+                    }
+                },
+                "config": {
+                    "allow_ignore": False,
+                    "allow_respond": False,
+                    "allow_edit": True,
+                    "allow_accept": False
+                },
+                "description": chunk_cat_interrupt_description(attachment, chunk["text"], chunk["cls_metadata"]) # Generate a detailed markdown description.
+            }
+
+            # Send the interrupt request, and extract the first response.
+            # The Agent Inbox will always respond with a list of `HumanResponse` objects, although
+            # at this time only a single object will be returned.
+            response = interrupt(request)[0]
 
         # Only the most recent (current) segment can be continued — stitching is
         # sequential, so compare this chunk against the previous chunk.
