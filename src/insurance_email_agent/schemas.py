@@ -160,7 +160,7 @@ class Segment(BaseModel):
     filename: str = Field(
         description="Filename corresponding to attachment that this segment belongs to"
     )
-    page_indices: list[int] = Field(
+    chunk_indices: list[int] = Field(
         description="List of page indices corresponding to this segment"
     )
     text: str = Field(description="Text turned to markdown from the segment of text")
@@ -229,4 +229,15 @@ class EmailExtraction(BaseModel):
     contact_phone: str | None = Field(
         None,
         description="Phone number provided for follow-up contact, if stated.",
+    )
+
+class SegmentStitch(BaseModel):
+    """
+    Determines whether two document segments are related to each other or not
+    """
+    new_document: bool = Field(
+        description="Whether page B continues to the same document as page A (False) or B is a new document (True)"
+    )
+    confidence: float = Field(
+        description="Confidence score (0.0-1.0) of the model's prediction for the new_document field"
     )

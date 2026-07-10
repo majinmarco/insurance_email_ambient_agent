@@ -29,19 +29,18 @@ from trustcall import create_extractor
 from insurance_email_agent.prompts import (
     EMAIL_CLASSIFICATION_SYSTEM,
     EMAIL_EXTRACTION_SYSTEM,
+    SEGMENT_STITCH_SYSTEM,
+    segment_stitch_user,
     attachment_extraction_system,
     attachment_extraction_user,
     email_classification_user,
     email_extraction_user,
 )
 from insurance_email_agent.schemas import (
-    Attachment,
     CertificateExtraction,
     DeclarationsExtraction,
     DocumentCategory,
-    DocumentClassification,
-    Email,
-    EmailCategory,
+    SegmentStitch,
     EmailClassification,
     EmailExtraction,
     EndorsementExtraction,
@@ -73,8 +72,8 @@ EXTRACTOR_BY_CATEGORY = {
 }
 
 micro_llm = ChatOpenAI(model="gpt-5.4-nano-2026-03-17", temperature=0)
-document_classification_llm = micro_llm.bind_tools(
-    [DocumentClassification], tool_choice="DocumentClassification"
+segment_stitching_llm = micro_llm.with_structured_output(
+    SegmentStitch
 )
 
 ### Attachment classification/extraction utils ###
@@ -99,7 +98,6 @@ classes_verbalized = [
     DocumentCategory.DECLARATIONS,
     DocumentCategory.ENDORSEMENT,
     DocumentCategory.INVOICE,
-    DocumentCategory.NEEDS_REVIEW,
 ]
 
 ### HELPERS ###
@@ -144,6 +142,13 @@ def extract_segment(seg: Segment) -> Extraction | None:
     )
     return result["responses"][0]
 
+def stitch_or_divide_segments(seg_A: str, seg_B: str) -> SegmentStitch:
+    sys_msg = SEGMENT_STITCH_SYSTEM
+    user_msg = segment_stitch_user(seg_A, seg_B)
+
+    result: SegmentStitch = segment_stitching_llm.invoke([SystemMessage(content=sys_msg), HumanMessage(content=user_msg)])
+
+    return result
 
 ### NODES/ROUTERS ###
 
@@ -251,7 +256,7 @@ def document_segmentation_extraction(state: SegmentationState):
     # Attach text to results
     categorized_chunks = []
     for i, o in enumerate(outputs):
-        text = chunks_text[i]
+        text = chunks_text_remade[i]
 
         # redefine as category enum
         category = (
@@ -280,34 +285,31 @@ def document_segmentation_extraction(state: SegmentationState):
         if category == DocumentCategory.NEEDS_REVIEW:
             continue  # TODO: add some HITL functionality
 
-        if segments:
-            added = False
-            for seg in segments:
-                if category == seg.category:
-                    seg.text = seg.text + "\n------\n" + chunk["text"]
-                    seg.page_indices.append(i)
-                    added = True
+        # Only the most recent (current) segment can be continued — stitching is
+        # sequential, so compare this chunk against the previous chunk.
+        last = segments[-1] if segments else None
+        if last is not None and last.category == category:
+            # analyze whether pages are connected or different
+            stitch_status: SegmentStitch = stitch_or_divide_segments(
+                categorized_chunks[i - 1]["text"], chunk["text"]
+            )  # prev vs current chunk
 
-            if not added:
-                segments.append(
-                    Segment(
-                        category=category,
-                        filename=attachment["filename"],
-                        page_indices=[i],
-                        text=chunk["text"],
-                        extraction=None,
-                    )
-                )
-        else:
-            segments.append(
-                Segment(
-                    category=category,
-                    filename=attachment["filename"],
-                    page_indices=[i],
-                    text=chunk["text"],
-                    extraction=None,
-                )
+            # chunk part of same document (add to current segment)
+            if not stitch_status.new_document:
+                last.text = last.text + "\n------\n" + chunk["text"]
+                last.chunk_indices.append(i)
+                continue
+
+        # new document, different category, or no segment yet → start a new one
+        segments.append(
+            Segment(
+                category=category,
+                filename=attachment["filename"],
+                chunk_indices=[i],
+                text=chunk["text"],
+                extraction=None,
             )
+        )
 
     # Execute extractions here
     # --- map: extract every segment in parallel ---
@@ -322,7 +324,7 @@ def document_segmentation_extraction(state: SegmentationState):
                     seg.extraction = None
                     # isolate failure — don't lose the other segments' work
                     print(
-                        f"extraction failed for {seg.filename} {seg.page_indices}: {exc}"
+                        f"extraction failed for {seg.filename} {seg.chunk_indices}: {exc}"
                     )
 
     return {

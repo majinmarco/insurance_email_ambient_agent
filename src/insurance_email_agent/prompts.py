@@ -18,9 +18,9 @@ Design notes
 
 Covers:
 1. Email classification
-2. Email body extraction        (NOTE: schema not yet defined — see below)
-3. Attachment segmentation + classification
-4. Attachment (per-segment) extraction
+2. Email body extraction
+3. Attachment (per-segment) extraction
+4. Equal-category segment stitching
 """
 
 from __future__ import annotations
@@ -112,63 +112,7 @@ def email_extraction_user(email: Email) -> str:
 
 
 # ---------------------------------------------------------------------------
-# 3. ATTACHMENT SEGMENTATION + CLASSIFICATION
-# ---------------------------------------------------------------------------
-# Produces a list[Segment]: contiguous page ranges, each labeled with a
-# DocumentCategory. A single attachment (e.g. a scanned PDF) may bundle several
-# logically distinct documents stacked together.
-
-ATTACHMENT_SEGMENTATION_SYSTEM = """\
-You are an expert at reading commercial insurance document packets. You are \
-given the extracted text of a single attachment, page by page, with explicit \
-page-index markers. A single attachment often bundles MULTIPLE distinct \
-documents stacked together (for example: a declarations page, followed by an \
-invoice, followed by an endorsement).
-
-Your task: split the attachment into segments, where each segment is one \
-logically-distinct document, and classify each segment.
-
-Rules for segmentation:
-- Each segment is a set of CONTIGUOUS page indices. Documents do not interleave.
-- Segments must NOT overlap: every page index belongs to exactly one segment.
-- Cover EVERY page — the union of all segments' page indices must equal the full \
-  set of pages provided. Do not drop pages.
-- Use document boundaries as cues: a new letterhead/form number (e.g. ACORD 25 \
-  vs ACORD 125), a new "Page 1 of N", a change in named insured or policy number, \
-  a shift from coverage summary to billing to amendment language.
-- When several consecutive pages clearly belong to one document (a multi-page \
-  declarations page), keep them in a single segment.
-
-Rules for classification:
-- Assign each segment exactly one document type. The type definitions are given \
-  in the output schema — apply them precisely.
-- If a segment does not clearly match a known type, or a page range is too \
-  ambiguous to split confidently, classify it as `needs_review` rather than \
-  guessing. Preserve its page range regardless.
-- Set `filename` on every segment to the attachment filename given below.
-
-Return the segments in page order.\
-"""
-
-
-def attachment_segmentation_user(filename: str, page_texts: list[str]) -> str:
-    """Render an attachment's per-page text with page-index markers.
-
-    ``page_texts[i]`` is the extracted text of page index ``i``.
-    """
-    pages = "\n\n".join(
-        f"===== PAGE {i} =====\n{text.strip() or '(no extractable text on this page)'}"
-        for i, text in enumerate(page_texts)
-    )
-    return (
-        f"Attachment filename: {filename}\n"
-        f"Total pages: {len(page_texts)} (page indices 0..{len(page_texts) - 1})\n\n"
-        f"{pages}"
-    )
-
-
-# ---------------------------------------------------------------------------
-# 4. PER-SEGMENT EXTRACTION
+# 3. PER-SEGMENT EXTRACTION
 # ---------------------------------------------------------------------------
 # Because segmentation already determined each segment's DocumentCategory, the
 # extraction node knows the type up front and binds the matching concrete schema
@@ -231,3 +175,34 @@ def attachment_extraction_user(
     return (
         f"Source attachment: {filename}\nDocument type: {doc_type.value}\n\n{page_text}"
     )
+
+
+# ---------------------------------------------------------------------------
+# 4. EQUAL-CATEGORY SEGMENT STITCHING
+# ---------------------------------------------------------------------------
+# Attachments may contain multiple document types. We need to be able to separate or join chunks intelligently.
+
+SEGMENT_STITCH_SYSTEM = """
+You are receiving segments from an insurance document in a sequential order. Each segment is of the same document type
+but may belong to a different individual, policynumber, or account.
+
+Your job is to determine whether page B continues the same document as page A or begin a new one.
+
+Analyze both pages. Determine if there is any identifying data that can stitch both together,
+create a division, or none of the above.
+
+Identifying data can be policynumber, account number, insured name, etc.
+"""
+
+SEGMENT_STITCH_USER = """
+Below are the end of one page and the start of the next, from a PDF
+that may contain several stacked insurance documents.
+
+--- END OF PAGE A ---
+{tail_a}
+--- START OF PAGE B ---
+{head_b}
+"""
+
+def segment_stitch_user(tail_a: str, head_b: str) -> str:
+    return SEGMENT_STITCH_USER.format(tail_a=tail_a, head_b=head_b)
