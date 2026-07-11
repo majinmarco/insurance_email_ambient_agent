@@ -12,6 +12,7 @@ jobs:
     permissions:
       contents: write        # Required to push README modifications back to the repo
       pull-requests: write   # Necessary if Claude manages branches or PR elements
+      id-token: write        # Required for the action to request an OIDC token
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
