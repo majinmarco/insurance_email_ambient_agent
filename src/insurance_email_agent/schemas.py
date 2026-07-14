@@ -9,7 +9,7 @@ Storage of pydantic/typing data schemas for:
 
 from datetime import datetime
 from enum import Enum
-from typing import Annotated, Literal, TypedDict
+from typing import Annotated, Literal, TypedDict, Any
 
 from pydantic import BaseModel, Field
 
@@ -255,10 +255,7 @@ class HumanInterruptConfig(TypedDict):
 
 class ActionRequest(TypedDict):
     action: str
-    args: Literal[DocumentCategory.CERTIFICATE,
-        DocumentCategory.DECLARATIONS,
-        DocumentCategory.ENDORSEMENT,
-        DocumentCategory.INVOICE,]
+    args: dict[str, Any]
 
 class HumanInterrupt(TypedDict):
     action_request: ActionRequest

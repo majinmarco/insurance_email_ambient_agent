@@ -103,6 +103,8 @@ classes_verbalized = [
     DocumentCategory.INVOICE,
 ]
 
+MAX_REVIEW_RETRIES = 2
+
 ### HELPERS ###
 tokenizer = tiktoken.encoding_for_model("gpt-4o")
 
@@ -160,19 +162,58 @@ def chunk_cat_interrupt_description(
         f"- {cls}: {score:.2%}" for cls, score in cls_metadata.items()
     )
     return f"""
-    **Filename:** {attachment['filename']}
+    ## Please review the below data and assign the correct category (categories listed under "Classification scores")
+
+    # **Filename:** {attachment['filename']}
 
     ------
-    **Text chunk:**
+    # **Text chunk:**
     {chunk_text}
 
     ------
-    **Classification scores:**
+    # **Classification scores:**
     {scores}
 
     ______
 
     """
+
+
+def _coerce_category(raw: str | None) -> DocumentCategory | None:
+    """Normalize free text; return the matching assignable category or None."""
+    if not raw:
+        return None
+    norm = raw.strip().lower()
+    return next((c for c in classes_verbalized if norm == c.value.lower()), None)
+
+def review_chunk_category(request: HumanInterrupt,
+                          best_guess: DocumentCategory) -> DocumentCategory:
+    """Drive one NEEDS_REVIEW interrupt to a concrete category.
+    accept -> best_guess; edit -> validated category (re-interrupt if invalid);
+    ignore -> NEEDS_REVIEW; bounded retry then fall back to NEEDS_REVIEW."""
+    current = request
+    for _ in range(MAX_REVIEW_RETRIES + 1):
+        response: HumanResponse = interrupt(current)[0]   # inbox returns a list
+        rtype = response.get("type")
+        if rtype == "ignore":
+            return DocumentCategory.NEEDS_REVIEW
+        if rtype == "accept":
+            ar = response.get("args") or {}
+            return _coerce_category((ar.get("args") or {}).get("category")) or best_guess
+        if rtype == "edit":
+            ar = response.get("args") or {}
+            edited = (ar.get("args") or {}).get("category")
+            resolved = _coerce_category(edited)
+            if resolved is not None:
+                return resolved
+            # invalid -> re-interrupt with a corrective description next iteration
+            valid = "\n".join(f"- `{v}`" for v in [c.value for c in classes_verbalized])
+            current = {**request, "description":
+                       f"**`{edited}` is not a valid category.** Type EXACTLY one of:\n"
+                       f"{valid}\n\n" + (request.get("description") or "")}
+            continue
+        return DocumentCategory.NEEDS_REVIEW
+    return DocumentCategory.NEEDS_REVIEW
 
 ### NODES/ROUTERS ###
 
@@ -305,27 +346,20 @@ def document_segmentation_extraction(state: SegmentationState):
     segments: list[Segment] = []
     for i, chunk in enumerate(categorized_chunks):
         category = chunk["category"]
-        # if category == DocumentCategory.NEEDS_REVIEW:
-        #     request: HumanInterrupt = {
-        #         "action_request": {
-        #             "action": "DocumentClassification",
-        #             "args": {
-        #                 "Category": DocumentCategory.NEEDS_REVIEW
-        #             }
-        #         },
-        #         "config": {
-        #             "allow_ignore": False,
-        #             "allow_respond": False,
-        #             "allow_edit": True,
-        #             "allow_accept": False
-        #         },
-        #         "description": chunk_cat_interrupt_description(attachment, chunk["text"], chunk["cls_metadata"]) # Generate a detailed markdown description.
-        #     }
-
-        #     # Send the interrupt request, and extract the first response.
-        #     # The Agent Inbox will always respond with a list of `HumanResponse` objects, although
-        #     # at this time only a single object will be returned.
-        #     response = interrupt(request)[0]
+        if category == DocumentCategory.NEEDS_REVIEW:
+            best_guess = DocumentCategory(next(iter(chunk["cls_metadata"])))
+            request: HumanInterrupt = {
+                "action_request": {
+                    "action": "DocumentClassificationCorrection",
+                    "args": {"category": best_guess.value},   # lowercase key, string value
+                },
+                "config": {"allow_ignore": True, "allow_respond": False,
+                        "allow_edit": True, "allow_accept": True},
+                "description": chunk_cat_interrupt_description(
+                    attachment, chunk["text"], chunk["cls_metadata"]),
+            }
+            category = review_chunk_category(request, best_guess)
+            chunk["category"] = category
 
         # Only the most recent (current) segment can be continued — stitching is
         # sequential, so compare this chunk against the previous chunk.
