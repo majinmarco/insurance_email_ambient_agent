@@ -5,7 +5,7 @@ Executed by poller/webhook, calls graph
 import os
 from typing import Any
 
-from insurance_email_agent.schemas import Email, HumanResponse
+from insurance_email_agent.schemas import Email, HumanResponse, EmailCategory, DocumentCategory
 from insurance_email_agent.states import OverallState
 from insurance_email_agent.graph import build_local_graph
 from insurance_email_agent.handler import sink
@@ -71,6 +71,21 @@ def shape_results(result: OverallState):
             final_results["document_data"].append(attachment_data)
 
     return final_results
+
+def _needs_review(result: dict) -> bool:
+    """True if the result should be routed to the review queue: the email was
+    classified NEEDS_REVIEW, any attachment segment is NEEDS_REVIEW, or the run
+    is still paused on an unresolved interrupt."""
+    if "__interrupt__" in result:
+        return True
+    if (result.get("classification") or {}).get("category") == EmailCategory.NEEDS_REVIEW.value:
+        return True
+    for att in result.get("document_data") or []:
+        for seg in att.get("segments") or []:
+            if seg.get("category") == DocumentCategory.NEEDS_REVIEW.value:
+                return True
+    return False
+
 
 def default_review_response() -> HumanResponse:
     """Non-interactive auto-response for a NEEDS_REVIEW interrupt.
@@ -219,5 +234,10 @@ def run(
         sink.persist_exception([{"email_id": email.get("id"), "error": repr(exc)}])
         raise
 
-    sink.persist([result])
+    # Route needs-review outcomes to the exceptions/review queue; clean results
+    # go to the normal data sink.
+    if _needs_review(result):
+        sink.persist_exception([result])
+    else:
+        sink.persist([result])
     return result
