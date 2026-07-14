@@ -17,7 +17,7 @@ import sys
 from insurance_email_agent.schemas import EmailCategory
 
 from . import results
-from .client_run import make_client, run_graph, studio_url
+from .client_run import run_graph
 from .payload import build_email_payload, decode_attachments
 from .realism import Realism
 from .scenario import augment_scenario, generate_scenario
@@ -29,8 +29,6 @@ def parse_args(argv=None) -> argparse.Namespace:
     p = argparse.ArgumentParser(prog="scripts.graph_smoke_test", description=__doc__)
     p.add_argument("--n", "--runs", dest="n", type=int, default=1, help="number of scenarios")
     p.add_argument("--seed", type=int, default=None, help="seed structural randomness")
-    p.add_argument("--url", default="http://127.0.0.1:2024", help="langgraph dev URL")
-    p.add_argument("--assistant-id", default="insurance_email_agent")
     p.add_argument("--attachments", choices=["on", "off", "auto"], default="auto")
     p.add_argument(
         "--email-type",
@@ -43,6 +41,11 @@ def parse_args(argv=None) -> argparse.Namespace:
     p.add_argument("--model", default=None, help="override generation model")
     p.add_argument("--no-llm", action="store_true", help="use deterministic content (no API call)")
     p.add_argument("--verbose", action="store_true", help="stream node-by-node updates")
+    p.add_argument("--remote", action="store_true",
+                   help="run against a 'uv run langgraph dev' server over the SDK instead of in-process")
+    p.add_argument("--manual-review", action="store_true",
+                   help="wait for human input on NEEDS_REVIEW interrupts instead of auto-resolving "
+                        "(local: console prompt; remote: poll the Agent Inbox)")
     p.add_argument("--no-verify", action="store_true")
     p.add_argument("--no-smoke", action="store_true", help="skip the 0-attachment model gate")
     p.add_argument("--keep-pdfs", metavar="DIR", default=None, help="also write generated PDFs")
@@ -100,7 +103,7 @@ def _write_pdfs(directory: str, run_idx: int, payload: dict) -> None:
         print(f"  wrote {path} ({len(data)} bytes)")
 
 
-def smoke_gate(client, args) -> bool:
+def smoke_gate(args) -> bool:
     """One deterministic 0-attachment run to prove the graph + models resolve."""
     print("== smoke gate: 0-attachment run ==")
     sk = build_skeleton(random.Random(0), email_type=EmailCategory.RENEWAL, attachments_mode="off")
@@ -108,20 +111,22 @@ def smoke_gate(client, args) -> bool:
     payload = build_email_payload(sk, sc)
     try:
         tid, result, err = run_graph(
-            client, args.assistant_id, payload, {"smoke_test": True, "phase": "gate"},
+            payload,
             verbose=args.verbose,
+            remote=args.remote,
+            auto_resume=not args.manual_review,
         )
     except Exception as exc:  # noqa: BLE001
-        print(f"  ! could not reach the dev server at {args.url}: {exc!r}")
-        print("    Start it with:  uv run langgraph dev")
+        print(f"  ! graph execution failed: {exc!r}")
+        if args.remote:
+            print("    Remote mode: is 'uv run langgraph dev' running?")
         return False
     if err:
         print(f"  ! gate run failed: {err}")
         print("    Most likely the graph's model IDs (gpt-5.4-*) don't resolve on your")
-        print("    OPENAI_API_KEY. Check src/insurance_email_agent/graph.py lines 58/75/82.")
+        print("    OPENAI_API_KEY. Check src/insurance_email_agent/graph.py lines 61/78/85/94.")
         return False
     print(f"  ok — classification={result.get('classification', {}).get('category')}")
-    print(f"  studio: {studio_url(args.url, tid)}")
     return True
 
 
@@ -143,12 +148,11 @@ def main(argv=None) -> int:
     # Use the *effective* seed for structure too, so an omitted --seed is still
     # reproducible via the printed value (clean+--seed N is unchanged from before).
     rng = random.Random(realism.seed)
-    client = make_client(args.url)
     print(f"realism={realism.tier}  seed={realism.seed}"
           + (f"  delimiter={realism.delimiter_override}" if realism.delimiter_override != "auto" else ""))
 
     if not args.no_smoke:
-        if not smoke_gate(client, args):
+        if not smoke_gate(args):
             return 1
         print()
 
@@ -173,27 +177,20 @@ def main(argv=None) -> int:
         if args.keep_pdfs:
             _write_pdfs(args.keep_pdfs, i, payload)
 
-        metadata = {
-            "smoke_test": True,
-            "realism": realism.tier,
-            "effective_seed": realism.seed,
-            "expected_email_type": skeleton.email_type.value,
-            "expected_doc_types": [d.value for d in skeleton.flat_doc_types],
-        }
-
         tid = result = err = run_error = None
         checks: list = []
         findings: list = []
         try:
             tid, result, err = run_graph(
-                client, args.assistant_id, payload, metadata, verbose=args.verbose
+                payload, verbose=args.verbose, remote=args.remote,
+                auto_resume=not args.manual_review,
             )
         except Exception as exc:  # noqa: BLE001
             run_error = repr(exc)
             print(f"  ! run errored: {run_error}")
 
         if tid:
-            print(f"  studio: {studio_url(args.url, tid)}")
+            print(f"  thread_id: {tid}")
         if err:
             print(f"  ! run failed: {err}")
 
@@ -216,7 +213,7 @@ def main(argv=None) -> int:
             records.append(
                 results.build_record(
                     run_index=i, realism=realism, skeleton=skeleton, thread_id=tid,
-                    studio_url=studio_url(args.url, tid) if tid else None,
+                    studio_url=None,
                     result=result, checks=checks, findings=findings,
                     error=(run_error or (repr(err) if err else None)),
                     passed=run_passed, run_label=args.run_label,

@@ -20,6 +20,8 @@ from langchain_text_splitters import (
     RecursiveCharacterTextSplitter,
 )
 from langgraph.graph import END, START, StateGraph
+from langgraph.checkpoint.memory import MemorySaver
+from langgraph.store.memory import InMemoryStore
 from langgraph.types import Send, interrupt
 from markitdown import MarkItDown, StreamInfo
 from pydantic import BaseModel
@@ -442,4 +444,19 @@ overall_builder.add_conditional_edges(
 )
 overall_builder.add_edge("document_segmentation_extraction", END)
 
+# Graph exported for the LangGraph API / Studio (see langgraph.json). The
+# platform provides persistence automatically, so passing a custom checkpointer
+# or store here raises at load time ("...includes a custom checkpointer... isn't
+# necessary and will be ignored when deployed"). Leave them out.
 graph = overall_builder.compile()
+
+
+def build_local_graph():
+    """Compile the graph for in-process use (poller/webhook/smoke test).
+
+    Unlike the API-hosted ``graph``, an in-process run has no platform-provided
+    persistence, so it needs its own checkpointer (and store) for the
+    ``interrupt()`` / ``Command(resume=...)`` HITL loop to pause and resume
+    across ``invoke()`` calls.
+    """
+    return overall_builder.compile(checkpointer=MemorySaver(), store=InMemoryStore())

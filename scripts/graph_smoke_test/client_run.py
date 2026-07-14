@@ -1,22 +1,14 @@
-"""Drive the running ``langgraph dev`` graph over the SDK so runs show in Studio.
+"""Dispatch a smoke-test payload to the graph and normalize the outcome.
 
-We always create an explicit thread (stable Studio URL), then either stream
-node-by-node updates (``--verbose``) or wait for the final state.
+``run_graph`` delegates to ``handler.runner.run`` — the same entry point the poller
+uses — running the graph **in-process** (``graph.invoke``/``graph.stream``) or, with
+``remote=True``, against a running ``uv run langgraph dev`` server over the SDK. It
+returns ``(thread_id, result, error)`` so the caller stays agnostic to the mode.
 """
 
 from __future__ import annotations
 
 from typing import Any
-
-from langgraph_sdk import get_sync_client
-
-
-def make_client(url: str):
-    return get_sync_client(url=url)
-
-
-def studio_url(url: str, thread_id: str) -> str:
-    return f"https://smith.langchain.com/studio/thread/{thread_id}?baseUrl={url}"
 
 
 def _extract_error(result: Any) -> str | None:
@@ -24,8 +16,6 @@ def _extract_error(result: Any) -> str | None:
     if result is None:
         return "no result returned"
     if isinstance(result, dict):
-        if "__error__" in result:
-            return str(result["__error__"])
         # A completed run of this graph always has a classification.
         if "classification" not in result:
             return f"unexpected result shape (keys={list(result.keys())})"
@@ -33,42 +23,16 @@ def _extract_error(result: Any) -> str | None:
 
 
 def run_graph(
-    client,
-    assistant_id: str,
-    payload: dict,
-    metadata: dict,
+    payload: dict[str, dict],
     *,
     verbose: bool = False,
-) -> tuple[str, Any, str | None]:
-    """Create a thread, run the graph, return ``(thread_id, final_state, error)``."""
-    thread = client.threads.create(metadata=metadata)
-    tid = thread["thread_id"]
+    remote: bool = False,
+    auto_resume: bool = True,
+) -> tuple[str | None, Any, str | None]:
+    # Lazy import: keeps ``--help`` fast and lets ``main()`` load ``.env`` before
+    # ``graph.py`` constructs its models at import time.
+    from insurance_email_agent.handler import runner
 
-    if verbose:
-        final: dict = {}
-        err: str | None = None
-        for part in client.runs.stream(
-            tid,
-            assistant_id,
-            input=payload,
-            metadata=metadata,
-            stream_mode=["updates", "values"],
-        ):
-            event = getattr(part, "event", None)
-            data = getattr(part, "data", None)
-            if event == "updates" and isinstance(data, dict):
-                for node, upd in data.items():
-                    keys = list(upd.keys()) if isinstance(upd, dict) else upd
-                    print(f"    · {node}: {keys}")
-            elif event == "values":
-                final = data
-            elif event and event.startswith("error"):
-                err = str(data)
-                print(f"    ! error event: {data}")
-        result = final or client.threads.get_state(tid).get("values")
-        return tid, result, err or _extract_error(result)
-
-    result = client.runs.wait(
-        tid, assistant_id, input=payload, metadata=metadata, raise_error=False
-    )
-    return tid, result, _extract_error(result)
+    email = payload["email"]
+    result = runner.run(email, local=not remote, stream=verbose, auto_resume=auto_resume)
+    return email.get("id"), result, _extract_error(result)
