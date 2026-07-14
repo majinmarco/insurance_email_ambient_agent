@@ -8,6 +8,7 @@ from typing import Any
 from insurance_email_agent.schemas import Email, HumanResponse
 from insurance_email_agent.states import OverallState
 from insurance_email_agent.graph import build_local_graph
+from insurance_email_agent.handler import sink
 from uuid import uuid4
 from langgraph.types import Command
 
@@ -212,7 +213,11 @@ def run(
             if local
             else _drive_remote(email, response, stream)
         )
-        return shape_results(state)
-    except:
+        result = shape_results(state)
+    except Exception as exc:
         print("Invocation failed!")
+        sink.persist_exception([{"email_id": email.get("id"), "error": repr(exc)}])
         raise
+
+    sink.persist([result])
+    return result
