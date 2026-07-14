@@ -32,7 +32,7 @@ This is a deliberate **hybrid pipeline** — the right model for each job, not o
 ### Zero-shot document classification with NLI ⭐
 The heart of the attachment pipeline. Instead of training a document classifier (and needing labeled data for every new document type), each chunk of a PDF is classified **zero-shot** using a **Natural Language Inference** model — [`MoritzLaurer/deberta-v3-large-zeroshot-v2.0`](https://huggingface.co/MoritzLaurer/deberta-v3-large-zeroshot-v2.0).
 
-NLI reframes classification as **entailment**: the document text is the *premise*, and each candidate label becomes a *hypothesis* — `"This document is a certificate of insurance"`. The model scores how strongly the text entails each hypothesis, and the top label wins. Add a new document type? Just add a string to the label list — **no retraining, no labeled data**. Low-confidence chunks (< 0.5) fall back to `needs_review` instead of guessing.
+NLI reframes classification as **entailment**: the document text is the *premise*, and each candidate label becomes a *hypothesis* — `"This document is a certificate of insurance"`. The model scores how strongly the text entails each hypothesis, and the top label wins. Add a new document type? Just add a string to the label list — **no retraining, no labeled data**. Low-confidence chunks (< 0.5) fall back to `needs_review` instead of guessing — surfaced as a LangGraph `interrupt` for **human-in-the-loop** review (Agent Inbox / Studio), or auto-resolved to the model's best guess for unattended runs.
 
 ### Intelligent segment stitching
 One PDF often contains several documents back-to-back. Consecutive chunks of the *same* type are compared by a tiny, cheap LLM (`gpt-5.4-nano`) that decides — from policy numbers, insured names, account numbers — whether chunk B **continues** chunk A's document or **starts a new one**. This is how a 12-page bundle becomes the correct *N* separate records.
@@ -84,7 +84,7 @@ src/insurance_email_agent/
 ├── prompts.py        # System / user prompts for each LLM task
 ├── handler/
 │   ├── ingest.py     # Raw RFC822 email → typed Email (body, HTML, attachments)
-│   └── runner.py     # Invokes the graph, assembles the JSON result
+│   └── runner.py     # Runs the graph (in-process or via langgraph dev), drives HITL interrupts, assembles JSON
 └── app/
     └── poller.py     # IMAP IDLE listener — the "ambient" front door
 scripts/graph_smoke_test/   # Generates realistic insurance emails + PDFs and fires them at the graph
@@ -98,14 +98,15 @@ scripts/graph_smoke_test/   # Generates realistic insurance emails + PDFs and fi
 # install
 pip install -e .          # or: uv sync
 
-# run the graph in LangGraph Studio
-langgraph dev             # serves at http://127.0.0.1:2024
-
-# smoke-test it with generated insurance emails + PDFs
+# smoke-test the graph with generated insurance emails + PDFs (runs in-process)
 python -m scripts.graph_smoke_test --n 5 --seed 42
+
+# optional: run the graph in LangGraph Studio, then smoke-test against it
+langgraph dev             # serves at http://127.0.0.1:2024
+python -m scripts.graph_smoke_test --n 5 --seed 42 --remote
 ```
 
-Set `OPENAI_API_KEY` (and IMAP credentials for the live poller) in `.env`. See [`scripts/graph_smoke_test/README.md`](scripts/graph_smoke_test/README.md) for the full test harness — it generates coherent, reportlab-rendered PDFs (including multi-document bundles) and checks the graph's output end-to-end.
+Set `OPENAI_API_KEY` (and IMAP credentials for the live poller) in `.env`. The smoke harness runs the graph **in-process through the same handler the poller uses** (`handler/runner.py`); pass `--remote` to drive a `langgraph dev` server over the SDK instead. See [`scripts/graph_smoke_test/README.md`](scripts/graph_smoke_test/README.md) for the full test harness — it generates coherent, reportlab-rendered PDFs (including multi-document bundles) and checks the graph's output end-to-end.
 
 ---
 
