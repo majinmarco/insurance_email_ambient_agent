@@ -1,0 +1,135 @@
+{
+  "case_id": "messy-renewal-emailonly",
+  "tier": "messy",
+  "seed": 412,
+  "email_type": "renewal",
+  "attachments_mode": "off",
+  "max_docs_per_attachment": 2,
+  "max_attachments": 3,
+  "force_format": null,
+  "persona_index": 2,
+  "content_source": "llm",
+  "noise_manifest": {
+    "email": {
+      "persona_index": 2,
+      "thread": true,
+      "signature": false,
+      "subject_style": null,
+      "multi_recipient": true,
+      "body_only": false,
+      "inconsistency": false,
+      "date_received": "2026-07-13T16:38:00+00:00"
+    },
+    "attachments": [],
+    "docs": [],
+    "expected": {
+      "email_type_hard": true,
+      "per_attachment_collapse": [],
+      "per_attachment_scanned": [],
+      "per_attachment_expect_interrupt": []
+    }
+  },
+  "raw_scenario": {
+    "shared": {
+      "named_insured": "Summit Ridge Construction Inc.",
+      "policy_number": "CPP-6612078",
+      "insured_address": "9400 E Arapahoe Rd, Centennial, CO 80112",
+      "contact_name": "Derek Olsson",
+      "contact_email": "dolsson@summitridgegc.com",
+      "contact_phone": "(303) 555-0188",
+      "carrier_name": "Travelers Indemnity Company",
+      "effective_date": "2025-08-01",
+      "expiration_date": "2026-08-01",
+      "coverage_limits": [
+        {
+          "coverage": "Commercial General Liability",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "General Aggregate",
+          "limit": "$2,000,000"
+        },
+        {
+          "coverage": "Products-Completed Operations Aggregate",
+          "limit": "$2,000,000"
+        },
+        {
+          "coverage": "Personal and Advertising Injury",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Damage to Premises Rented to You",
+          "limit": "$300,000"
+        },
+        {
+          "coverage": "Workers Compensation",
+          "limit": "Statutory"
+        },
+        {
+          "coverage": "Employers Liability Each Accident",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Automobile Liability Combined Single Limit",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Umbrella Liability Each Occurrence",
+          "limit": "$5,000,000"
+        }
+      ],
+      "total_premium": "$48,750",
+      "producer": {
+        "agency": "Front Range Commercial Insurance",
+        "address": "1501 Wynkoop St, Suite 250, Denver, CO 80202",
+        "contact_name": "Maya Chen",
+        "phone": "(303) 555-0144",
+        "fax": "(303) 555-0145",
+        "email": "newbusiness@frontrangeins.com"
+      },
+      "insurers": [
+        {
+          "letter": "A",
+          "name": "Travelers Indemnity Company",
+          "naic": "25658"
+        },
+        {
+          "letter": "B",
+          "name": "Travelers Casualty and Surety Company of America",
+          "naic": "31194"
+        },
+        {
+          "letter": "C",
+          "name": "Travelers Property Casualty Company of America",
+          "naic": "25674"
+        },
+        {
+          "letter": "D",
+          "name": "The Charter Oak Fire Insurance Company",
+          "naic": "25615"
+        },
+        {
+          "letter": "E",
+          "name": "The Phoenix Insurance Company",
+          "naic": "25623"
+        },
+        {
+          "letter": "F",
+          "name": "Travelers Personal Insurance Company",
+          "naic": "27120"
+        }
+      ],
+      "business_description": "Commercial general contractor; ground-up construction, tenant improvements, and site work",
+      "entity_type": "Corporation",
+      "fein": "84-2164937",
+      "naic_carrier": "25658"
+    },
+    "email": {
+      "subject": "Re: Renewal quote request for Summit Ridge Construction Inc. \u2014 Policy CPP-6612078",
+      "body": "Good morning Maya,\n\nPlease prepare the renewal quote for Summit Ridge Construction Inc. (policy CPP-6612078) ahead of the upcoming expiration date. The account is a commercial general contractor handling ground-up construction, tenant improvements, and site work at 9400 E Arapahoe Rd, Centennial, CO 80112.\n\nIf possible, please keep the renewal effective date at 08/01/2025 and let us know if you need any updated underwriting information from Derek Olsson.\n\nThank you,\nDerek Olsson\nSummit Ridge Construction Inc.\n\nOn Wed, Jul 1, 2026 11:47 AM, Maya Chen <newbusiness@frontrangeins.com> wrote:\n> Thanks for sending this over \u2014 can you confirm the requested effective date and whether any additional insureds are needed?\n>\n> Regards,\n> Maya Chen",
+      "sender": "Derek Olsson <dolsson@summitridgegc.com>",
+      "recipient": "Maya Chen <newbusiness@frontrangeins.com>, newbusiness@frontrangeins.com"
+    },
+    "documents": []
+  }
+}

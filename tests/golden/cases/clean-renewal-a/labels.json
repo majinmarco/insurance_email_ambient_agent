@@ -1,0 +1,67 @@
+{
+  "case_id": "clean-renewal-a",
+  "tier": "clean",
+  "email": {
+    "email_type": "renewal",
+    "email_type_hard": true,
+    "extraction": {
+      "named_insured": "Blue Harbor Restaurant Group LLC",
+      "policy_number": "BOP-7789341",
+      "requested_effective_date": null,
+      "requested_changes": "Prepare a renewal quote for the expiring policy.",
+      "contact_name": "Marco Bianchi",
+      "contact_phone": "(617) 555-0146"
+    }
+  },
+  "attachments": [
+    {
+      "filename": "attachment_1.pdf",
+      "render_format": "pdf",
+      "n_pages": 2,
+      "documents": [
+        {
+          "index": 0,
+          "doc_type": "insurance declaration",
+          "page_start": 0,
+          "page_end": 0,
+          "extraction": {
+            "named_insured": "Blue Harbor Restaurant Group LLC",
+            "policy_number": "BOP-7789341",
+            "coverages": {
+              "Commercial General Liability": "$7,250",
+              "Business Personal Property": "$4,180",
+              "Business Income and Extra Expense": "$2,760",
+              "Liquor Liability": "$2,950"
+            },
+            "total_premium": 18940.0
+          }
+        },
+        {
+          "index": 1,
+          "doc_type": "insurance invoice",
+          "page_start": 1,
+          "page_end": 1,
+          "extraction": {
+            "named_insured": "Blue Harbor Restaurant Group LLC",
+            "policy_number": "BOP-7789341",
+            "amount_due": 19125.0,
+            "billing_period": "02/01/2026 - 02/01/2027",
+            "policy_reference": "BOP-7789341",
+            "due_date": "2026-02-01"
+          }
+        }
+      ],
+      "boundary_page_offsets": [
+        1
+      ],
+      "n_documents": 2,
+      "expected_segment_types": [
+        "insurance declaration",
+        "insurance invoice"
+      ],
+      "expected_collapse": false,
+      "expected_scanned": false,
+      "expected_interrupt": false
+    }
+  ]
+}

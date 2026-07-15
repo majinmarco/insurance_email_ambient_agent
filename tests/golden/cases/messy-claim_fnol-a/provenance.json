@@ -1,0 +1,277 @@
+{
+  "case_id": "messy-claim_fnol-a",
+  "tier": "messy",
+  "seed": 304,
+  "email_type": "claim_fnol",
+  "attachments_mode": "on",
+  "max_docs_per_attachment": 2,
+  "max_attachments": 3,
+  "force_format": null,
+  "persona_index": 8,
+  "content_source": "llm",
+  "noise_manifest": {
+    "email": {
+      "persona_index": 8,
+      "thread": false,
+      "signature": false,
+      "subject_style": "urgent",
+      "multi_recipient": true,
+      "body_only": false,
+      "inconsistency": false,
+      "date_received": "2026-06-28T09:33:00+00:00"
+    },
+    "attachments": [
+      {
+        "filename": "ACORD 25 - Certificate of Insurance.pdf"
+      }
+    ],
+    "docs": [
+      {
+        "delimiter_mode": "bold_caps",
+        "layout_variant": 2,
+        "watermark": null,
+        "content_noise": false,
+        "content_noise_level": 0.35,
+        "is_scanned": false,
+        "render_format": "pdf"
+      }
+    ],
+    "expected": {
+      "email_type_hard": true,
+      "per_attachment_collapse": [
+        false
+      ],
+      "per_attachment_scanned": [
+        false
+      ],
+      "per_attachment_expect_interrupt": [
+        false
+      ]
+    }
+  },
+  "raw_scenario": {
+    "shared": {
+      "named_insured": "Golden Gate Hospitality Group LLC",
+      "policy_number": "CPP-8830471",
+      "insured_address": "655 Montgomery St, San Francisco, CA 94111",
+      "contact_name": "Olivia Bennett",
+      "contact_email": "obennett@gghospitality.com",
+      "contact_phone": "(415) 555-0169",
+      "carrier_name": "Chubb Group",
+      "effective_date": "2026-03-01",
+      "expiration_date": "2027-03-01",
+      "coverage_limits": [
+        {
+          "coverage": "Commercial General Liability",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Automobile Liability",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Umbrella Liability",
+          "limit": "$5,000,000"
+        },
+        {
+          "coverage": "Workers Compensation",
+          "limit": "Statutory"
+        }
+      ],
+      "total_premium": "$48,725",
+      "producer": {
+        "agency": "Pacific Union Insurance Services",
+        "address": "100 California St, Suite 700, San Francisco, CA 94111",
+        "contact_name": "Marisol Chen",
+        "phone": "(415) 555-0288",
+        "fax": "(415) 555-0299",
+        "email": "submissions@pacunionins.com"
+      },
+      "insurers": [
+        {
+          "letter": "A",
+          "name": "Federal Insurance Company",
+          "naic": "20281"
+        },
+        {
+          "letter": "B",
+          "name": "Vigilant Insurance Company",
+          "naic": "20397"
+        },
+        {
+          "letter": "C",
+          "name": "Chubb Indemnity Insurance Company",
+          "naic": "12777"
+        },
+        {
+          "letter": "D",
+          "name": "Chubb National Insurance Company",
+          "naic": "10003"
+        },
+        {
+          "letter": "E",
+          "name": "Chubb Custom Insurance Company",
+          "naic": "44792"
+        },
+        {
+          "letter": "F",
+          "name": "Westchester Fire Insurance Company",
+          "naic": "13188"
+        }
+      ],
+      "business_description": "Boutique hotel operator (3 properties)",
+      "entity_type": "Limited Liability Company",
+      "fein": "94-3821746",
+      "naic_carrier": "20281"
+    },
+    "email": {
+      "subject": "URGENT: FNOL Notice - Golden Gate Hospitality Group LLC / Policy CPP-8830471",
+      "body": "Good morning,\n\nPlease accept this email as first notice of loss for Golden Gate Hospitality Group LLC under policy CPP-8830471 with Chubb Group.\n\nIncident details:\n- Date of loss: 02/27/2026\n- Location: 655 Montgomery St, San Francisco, CA 94111\n- Reported issue: Water intrusion from a sprinkler line rupture affecting guest-room flooring and corridor finishes on the 7th floor\n- Claimant/contacts: Olivia Bennett, (415) 555-0169, obennett@gghospitality.com\n\nPlease confirm receipt and advise the claim number and any next steps. If a requested effective date is needed for handling, please use 02/27/2026 as the loss effective date.\n\nThank you,\nMarisol Chen\nPacific Union Insurance Services",
+      "sender": "Marisol Chen <submissions@pacunionins.com>",
+      "recipient": "claims@chubb.com, accounts@chubb.com"
+    },
+    "documents": [
+      {
+        "title": "ACORD 25 Certificate of Liability Insurance",
+        "certificate_holder": "Bayside Development Partners LP",
+        "coverage_lines": [
+          {
+            "insurer_letter": "A",
+            "coverage_type": "Commercial General Liability",
+            "policy_number": "CPP-8830471",
+            "effective_date": "03/01/2026",
+            "expiration_date": "03/01/2027",
+            "addl_insured": true,
+            "subro_waived": true,
+            "limits": [
+              {
+                "coverage": "Each Occurrence",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "Damage to Rented Premises",
+                "limit": "$300,000"
+              },
+              {
+                "coverage": "Med Exp",
+                "limit": "$5,000"
+              },
+              {
+                "coverage": "Personal & Adv Injury",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "General Aggregate",
+                "limit": "$2,000,000"
+              },
+              {
+                "coverage": "Products-Comp/Op Agg",
+                "limit": "$2,000,000"
+              }
+            ],
+            "premium": null
+          },
+          {
+            "insurer_letter": "B",
+            "coverage_type": "Automobile Liability",
+            "policy_number": "CPP-8830471",
+            "effective_date": "03/01/2026",
+            "expiration_date": "03/01/2027",
+            "addl_insured": false,
+            "subro_waived": false,
+            "limits": [
+              {
+                "coverage": "Combined Single Limit",
+                "limit": "$1,000,000"
+              }
+            ],
+            "premium": null
+          },
+          {
+            "insurer_letter": "E",
+            "coverage_type": "Umbrella Liability",
+            "policy_number": "CPP-8830471",
+            "effective_date": "03/01/2026",
+            "expiration_date": "03/01/2027",
+            "addl_insured": true,
+            "subro_waived": true,
+            "limits": [
+              {
+                "coverage": "Each Occurrence",
+                "limit": "$5,000,000"
+              },
+              {
+                "coverage": "Aggregate",
+                "limit": "$5,000,000"
+              }
+            ],
+            "premium": null
+          },
+          {
+            "insurer_letter": "F",
+            "coverage_type": "Workers Compensation",
+            "policy_number": "CPP-8830471",
+            "effective_date": "03/01/2026",
+            "expiration_date": "03/01/2027",
+            "addl_insured": false,
+            "subro_waived": false,
+            "limits": [
+              {
+                "coverage": "E.L. Each Accident",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "E.L. Disease-Ea Employee",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "E.L. Disease-Policy Limit",
+                "limit": "$1,000,000"
+              }
+            ],
+            "premium": null
+          }
+        ],
+        "description_of_operations": "Bayside Development Partners LP is named as certificate holder only. Commercial General Liability is written on a primary and non-contributory basis as respects CG 20 10 04 13 and CG 20 37 04 13 where required, with waiver of subrogation applying per CG 24 04 05 09. Additional insured status and waiver of subrogation are provided only where endorsed by policy form. This certificate is issued as a matter of information only and confers no rights upon the certificate holder.",
+        "authorized_representative": "Marisol Chen, Senior Account Manager",
+        "certificate_number": "CC-7483921",
+        "revision_number": "01",
+        "invoice_number": null,
+        "invoice_date": null,
+        "account_number": null,
+        "line_items": null,
+        "subtotal": null,
+        "taxes": null,
+        "fees": null,
+        "prior_balance": null,
+        "amount_due": null,
+        "billing_period": null,
+        "due_date": null,
+        "payment_methods": null,
+        "remit_to": null,
+        "coverage_parts": null,
+        "forms_schedule": null,
+        "premium_summary": null,
+        "countersignature": null,
+        "countersignature_date": null,
+        "form_number": null,
+        "endorsement_title": null,
+        "endorsement_number": null,
+        "schedule_rows": null,
+        "provisions": null,
+        "additional_premium": null,
+        "change_description": null,
+        "coverages": null,
+        "total_premium": null,
+        "effective_date": null,
+        "expiration_date": null,
+        "nr_kind": null,
+        "nr_header_rows": null,
+        "nr_columns": null,
+        "nr_rows": null,
+        "unrelated_subtitle": null,
+        "unrelated_body": null
+      }
+    ]
+  }
+}

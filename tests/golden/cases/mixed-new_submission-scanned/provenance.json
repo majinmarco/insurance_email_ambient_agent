@@ -1,0 +1,277 @@
+{
+  "case_id": "mixed-new_submission-scanned",
+  "tier": "mixed",
+  "seed": 501,
+  "email_type": "new_submission",
+  "attachments_mode": "on",
+  "max_docs_per_attachment": 1,
+  "max_attachments": 1,
+  "force_format": "scanned_pdf",
+  "persona_index": 2,
+  "content_source": "llm",
+  "noise_manifest": {
+    "email": {
+      "persona_index": 2,
+      "thread": false,
+      "signature": false,
+      "subject_style": null,
+      "multi_recipient": false,
+      "body_only": false,
+      "inconsistency": false,
+      "date_received": "2026-07-05T10:00:00+00:00"
+    },
+    "attachments": [
+      {
+        "filename": "ACORD 25 - Certificate of Insurance.pdf"
+      }
+    ],
+    "docs": [
+      {
+        "delimiter_mode": "plain",
+        "layout_variant": 0,
+        "watermark": null,
+        "content_noise": true,
+        "content_noise_level": 0.15,
+        "is_scanned": true,
+        "render_format": "scanned_pdf"
+      }
+    ],
+    "expected": {
+      "email_type_hard": true,
+      "per_attachment_collapse": [
+        false
+      ],
+      "per_attachment_scanned": [
+        true
+      ],
+      "per_attachment_expect_interrupt": [
+        true
+      ]
+    }
+  },
+  "raw_scenario": {
+    "shared": {
+      "named_insured": "Summit Ridge Construction Inc.",
+      "policy_number": "TRV-CGC-4829167-01",
+      "insured_address": "9400 E Arapahoe Rd, Centennial, CO 80112",
+      "contact_name": "Derek Olsson",
+      "contact_email": "dolsson@summitridgegc.com",
+      "contact_phone": "(303) 555-0188",
+      "carrier_name": "Travelers Indemnity Company",
+      "effective_date": "2026-08-01",
+      "expiration_date": "2027-08-01",
+      "coverage_limits": [
+        {
+          "coverage": "Commercial General Liability",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Automobile Liability",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Umbrella Liability",
+          "limit": "$5,000,000"
+        },
+        {
+          "coverage": "Workers Compensation",
+          "limit": "Statutory"
+        }
+      ],
+      "total_premium": "$18,450",
+      "producer": {
+        "agency": "Front Range Commercial Insurance",
+        "address": "1550 S Broadway, Suite 250, Denver, CO 80210",
+        "contact_name": "Megan Rios",
+        "phone": "(303) 555-4420",
+        "fax": "(303) 555-4421",
+        "email": "newbusiness@frontrangeins.com"
+      },
+      "insurers": [
+        {
+          "letter": "A",
+          "name": "Travelers Indemnity Company",
+          "naic": "25658"
+        },
+        {
+          "letter": "B",
+          "name": "Travelers Property Casualty Company of America",
+          "naic": "25674"
+        },
+        {
+          "letter": "C",
+          "name": "Travelers Casualty Company of Connecticut",
+          "naic": "25038"
+        },
+        {
+          "letter": "D",
+          "name": "Travelers Casualty and Surety Company",
+          "naic": "19038"
+        },
+        {
+          "letter": "E",
+          "name": "Travelers Personal Insurance Company",
+          "naic": "36170"
+        },
+        {
+          "letter": "F",
+          "name": "Travelers Excess and Surplus Lines Company",
+          "naic": "25054"
+        }
+      ],
+      "business_description": "Commercial general contractor (ground-up)",
+      "entity_type": "Corporation",
+      "fein": "84-2167395",
+      "naic_carrier": "25658"
+    },
+    "email": {
+      "subject": "New submission request for Summit Ridge Construction Inc. effective 08/01/2026",
+      "body": "Good morning,\n\nPlease submit this new business account for quote and possible bind for Summit Ridge Construction Inc., a commercial general contractor (ground-up) located at 9400 E Arapahoe Rd, Centennial, CO 80112.\n\nRequested effective date is 08/01/2026. This is a brand-new policy with no existing policy number.\n\nInsured contact:\nDerek Olsson\nDolsson@summitridgegc.com\n(303) 555-0188\n\nPlease provide indications for the package and issue the ACORD certificate once bound.\n\nThank you,\nFront Range Commercial Insurance",
+      "sender": "Megan Rios <newbusiness@frontrangeins.com>",
+      "recipient": "Underwriting <underwriting@travelers.com>"
+    },
+    "documents": [
+      {
+        "title": "ACORD 25 Certificate of Liability Insurance",
+        "certificate_holder": "Project Owners Alliance, LLC\n2001 Market St, Suite 1800\nPhiladelphia, PA 19103",
+        "coverage_lines": [
+          {
+            "insurer_letter": "A",
+            "coverage_type": "Commercial General Liability",
+            "policy_number": "TRV-CGC-4829167-01",
+            "effective_date": "08/01/2026",
+            "expiration_date": "08/01/2027",
+            "addl_insured": true,
+            "subro_waived": true,
+            "limits": [
+              {
+                "coverage": "Each Occurrence",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "Damage to Rented Premises",
+                "limit": "$300,000"
+              },
+              {
+                "coverage": "Med Exp",
+                "limit": "$5,000"
+              },
+              {
+                "coverage": "Personal & Adv Injury",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "General Aggregate",
+                "limit": "$2,000,000"
+              },
+              {
+                "coverage": "Products-Comp/Op Agg",
+                "limit": "$2,000,000"
+              }
+            ],
+            "premium": null
+          },
+          {
+            "insurer_letter": "B",
+            "coverage_type": "Automobile Liability",
+            "policy_number": "TRV-CGC-4829167-01",
+            "effective_date": "08/01/2026",
+            "expiration_date": "08/01/2027",
+            "addl_insured": true,
+            "subro_waived": true,
+            "limits": [
+              {
+                "coverage": "Combined Single Limit",
+                "limit": "$1,000,000"
+              }
+            ],
+            "premium": null
+          },
+          {
+            "insurer_letter": "C",
+            "coverage_type": "Umbrella Liability",
+            "policy_number": "TRV-CGC-4829167-01",
+            "effective_date": "08/01/2026",
+            "expiration_date": "08/01/2027",
+            "addl_insured": true,
+            "subro_waived": true,
+            "limits": [
+              {
+                "coverage": "Each Occurrence",
+                "limit": "$5,000,000"
+              },
+              {
+                "coverage": "Aggregate",
+                "limit": "$5,000,000"
+              }
+            ],
+            "premium": null
+          },
+          {
+            "insurer_letter": "D",
+            "coverage_type": "Workers Compensation",
+            "policy_number": "TRV-CGC-4829167-01",
+            "effective_date": "08/01/2026",
+            "expiration_date": "08/01/2027",
+            "addl_insured": false,
+            "subro_waived": true,
+            "limits": [
+              {
+                "coverage": "E.L. Each Accident",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "E.L. Disease-Ea Employee",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "E.L. Disease-Policy Limit",
+                "limit": "$1,000,000"
+              }
+            ],
+            "premium": null
+          }
+        ],
+        "description_of_operations": "Certifiate holdr is iincluded as additional insured where required by writtten contract per CG 20 10 04 13 and CG 20 37 04 13. Coverage is primary and non-contributory where required by written contract per CG 20 01 04 13. Waiver of subrogation applies where required by written cotract for ommercial General Liabilityy, Auomobile Liability, and Workers Compensation per CG 24 04 05 09 and applicable state endorsement. Umbrella follows form.",
+        "authorized_representative": "Megan ios, Commercial Liness Broker",
+        "certificate_number": "COI-TRV-260801-001",
+        "revision_number": "0",
+        "invoice_number": null,
+        "invoice_date": null,
+        "account_number": null,
+        "line_items": null,
+        "subtotal": null,
+        "taxes": null,
+        "fees": null,
+        "prior_balance": null,
+        "amount_due": null,
+        "billing_period": null,
+        "due_date": null,
+        "payment_methods": null,
+        "remit_to": null,
+        "coverage_parts": null,
+        "forms_schedule": null,
+        "premium_summary": null,
+        "countersignature": null,
+        "countersignature_date": null,
+        "form_number": null,
+        "endorsement_title": null,
+        "endorsement_number": null,
+        "schedule_rows": null,
+        "provisions": null,
+        "additional_premium": null,
+        "change_description": null,
+        "coverages": null,
+        "total_premium": null,
+        "effective_date": null,
+        "expiration_date": null,
+        "nr_kind": null,
+        "nr_header_rows": null,
+        "nr_columns": null,
+        "nr_rows": null,
+        "unrelated_subtitle": null,
+        "unrelated_body": null
+      }
+    ]
+  }
+}

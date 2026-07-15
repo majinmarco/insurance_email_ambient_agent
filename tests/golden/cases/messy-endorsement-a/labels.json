@@ -1,0 +1,38 @@
+{
+  "case_id": "messy-endorsement-a",
+  "tier": "messy",
+  "email": {
+    "email_type": "endorsement",
+    "email_type_hard": false,
+    "extraction": {
+      "named_insured": null,
+      "policy_number": null,
+      "requested_effective_date": null,
+      "requested_changes": null,
+      "contact_name": null,
+      "contact_phone": null
+    }
+  },
+  "attachments": [
+    {
+      "filename": "Loss Run Report.pdf",
+      "render_format": "pdf",
+      "n_pages": 1,
+      "documents": [
+        {
+          "index": 0,
+          "doc_type": "unrelated or unclear document",
+          "page_start": 0,
+          "page_end": 0,
+          "extraction": null
+        }
+      ],
+      "boundary_page_offsets": [],
+      "n_documents": 1,
+      "expected_segment_types": [],
+      "expected_collapse": false,
+      "expected_scanned": false,
+      "expected_interrupt": true
+    }
+  ]
+}

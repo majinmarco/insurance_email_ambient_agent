@@ -1,0 +1,734 @@
+{
+  "case_id": "messy-new_submission-a",
+  "tier": "messy",
+  "seed": 301,
+  "email_type": "new_submission",
+  "attachments_mode": "on",
+  "max_docs_per_attachment": 2,
+  "max_attachments": 3,
+  "force_format": null,
+  "persona_index": 2,
+  "content_source": "llm",
+  "noise_manifest": {
+    "email": {
+      "persona_index": 2,
+      "thread": true,
+      "signature": false,
+      "subject_style": "empty",
+      "multi_recipient": true,
+      "body_only": true,
+      "inconsistency": false,
+      "date_received": "2026-07-02T09:26:00+00:00"
+    },
+    "attachments": [
+      {
+        "filename": "Insurance Documents.pdf"
+      },
+      {
+        "filename": "scan6349.pdf"
+      }
+    ],
+    "docs": [
+      {
+        "delimiter_mode": "bold_caps",
+        "layout_variant": 0,
+        "watermark": "DUPLICATE",
+        "content_noise": false,
+        "content_noise_level": 0.35,
+        "is_scanned": false,
+        "render_format": "pdf"
+      },
+      {
+        "delimiter_mode": "bold_caps",
+        "layout_variant": 2,
+        "watermark": null,
+        "content_noise": true,
+        "content_noise_level": 0.35,
+        "is_scanned": false,
+        "render_format": "pdf"
+      },
+      {
+        "delimiter_mode": "plain",
+        "layout_variant": 2,
+        "watermark": null,
+        "content_noise": true,
+        "content_noise_level": 0.35,
+        "is_scanned": false,
+        "render_format": "pdf"
+      },
+      {
+        "delimiter_mode": "bold_caps",
+        "layout_variant": 2,
+        "watermark": null,
+        "content_noise": true,
+        "content_noise_level": 0.35,
+        "is_scanned": false,
+        "render_format": "pdf"
+      }
+    ],
+    "expected": {
+      "email_type_hard": false,
+      "per_attachment_collapse": [
+        true,
+        true
+      ],
+      "per_attachment_scanned": [
+        false,
+        false
+      ],
+      "per_attachment_expect_interrupt": [
+        false,
+        false
+      ]
+    }
+  },
+  "raw_scenario": {
+    "shared": {
+      "named_insured": "Summit Ridge Construction Inc.",
+      "policy_number": "No.",
+      "insured_address": "9400 E Arapahoe Rd, Centennial, CO 80112",
+      "contact_name": "Derek Olsson",
+      "contact_email": "dolsson@summitridgegc.com",
+      "contact_phone": "(303) 555-0188",
+      "carrier_name": "Travelers Indemnity Company",
+      "effective_date": "2026-02-01",
+      "expiration_date": "2027-02-01",
+      "coverage_limits": [
+        {
+          "coverage": "Commercial General Liability",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Automobile Liability",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Umbrella Liability",
+          "limit": "$5,000,000"
+        },
+        {
+          "coverage": "Workers Compensation",
+          "limit": "Statutory"
+        }
+      ],
+      "total_premium": "$42,580",
+      "producer": {
+        "agency": "Front Range Commercial Insurance",
+        "address": "1345 Market St, Suite 210, Denver, CO 80202",
+        "contact_name": "New Business Desk",
+        "phone": "(303) 555-4420",
+        "fax": "(303) 555-4421",
+        "email": "newbusiness@frontrangeins.com"
+      },
+      "insurers": [
+        {
+          "letter": "A",
+          "name": "Travelers Indemnity Company",
+          "naic": "25658"
+        },
+        {
+          "letter": "B",
+          "name": "Travelers Property Casualty Company of America",
+          "naic": "25674"
+        },
+        {
+          "letter": "C",
+          "name": "Travelers Casualty and Surety Company",
+          "naic": "19038"
+        },
+        {
+          "letter": "D",
+          "name": "Travelers Casualty Insurance Company of America",
+          "naic": "25682"
+        },
+        {
+          "letter": "E",
+          "name": "The Travelers Indemnity Company of Connecticut",
+          "naic": "39640"
+        },
+        {
+          "letter": "F",
+          "name": "Travelers Personal Security Insurance Company",
+          "naic": "36161"
+        }
+      ],
+      "business_description": "Commercial general contractor (ground-up)",
+      "entity_type": "Corporation",
+      "fein": "84-2163907",
+      "naic_carrier": "25658"
+    },
+    "email": {
+      "subject": "",
+      "body": "Attached.\n\nOn Mon, Jul 6, 2026 at 9:14 AM, New Business Desk <newbusiness@frontrangeins.com> wrote:\n> Received, thank you. We'll need the current loss runs before we can release terms.\n>\n> Regards,\n> New Business Desk",
+      "sender": "New Business Desk's Assistant <assistant@summitridgegc.com> on behalf of New Business Desk <newbusiness@frontrangeins.com>",
+      "recipient": "dolsson@summitridgegc.com, underwriting@summitridgegc.com"
+    },
+    "documents": [
+      {
+        "title": "Commercial Package Policy Declarations",
+        "certificate_holder": null,
+        "coverage_lines": null,
+        "description_of_operations": null,
+        "authorized_representative": null,
+        "certificate_number": null,
+        "revision_number": null,
+        "invoice_number": null,
+        "invoice_date": null,
+        "account_number": null,
+        "line_items": null,
+        "subtotal": null,
+        "taxes": null,
+        "fees": null,
+        "prior_balance": null,
+        "amount_due": null,
+        "billing_period": null,
+        "due_date": null,
+        "payment_methods": null,
+        "remit_to": null,
+        "coverage_parts": [
+          {
+            "insurer_letter": "A",
+            "coverage_type": "Commercial General Liability",
+            "policy_number": "No.",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": null,
+            "subro_waived": null,
+            "limits": [
+              {
+                "coverage": "Each Occurrence",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "Damage to Rented Premises",
+                "limit": "$100,000"
+              },
+              {
+                "coverage": "Medical Expense",
+                "limit": "$5,000"
+              },
+              {
+                "coverage": "Personal & Advertising Injury",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "General Aggregate",
+                "limit": "$2,000,000"
+              },
+              {
+                "coverage": "Products-Completed Operations Aggregate",
+                "limit": "$2,000,000"
+              }
+            ],
+            "premium": "$14,250"
+          },
+          {
+            "insurer_letter": "A",
+            "coverage_type": "Commercial Automobile Liability",
+            "policy_number": "No.",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": null,
+            "subro_waived": null,
+            "limits": [
+              {
+                "coverage": "Combined Single Limit",
+                "limit": "$1,000,000"
+              }
+            ],
+            "premium": "$7,880"
+          },
+          {
+            "insurer_letter": "A",
+            "coverage_type": "Umbrella Liability",
+            "policy_number": "No.",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": null,
+            "subro_waived": null,
+            "limits": [
+              {
+                "coverage": "Each Occurrence",
+                "limit": "$5,000,000"
+              },
+              {
+                "coverage": "Aggregate",
+                "limit": "$5,000,000"
+              }
+            ],
+            "premium": "$8,960"
+          },
+          {
+            "insurer_letter": "A",
+            "coverage_type": "Workers Compensation",
+            "policy_number": "No.",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": null,
+            "subro_waived": null,
+            "limits": [
+              {
+                "coverage": "E.L. Each Accident",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "E.L. Disease - Ea Employee",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "E.L. Disease - Policy Limit",
+                "limit": "$1,000,000"
+              }
+            ],
+            "premium": "$9,900"
+          }
+        ],
+        "forms_schedule": [
+          {
+            "form_number": "CG 00 01 04 13",
+            "title": "Commercial General Liability Coverage Form"
+          },
+          {
+            "form_number": "CG 00 17 11 85",
+            "title": "General Liability Coverage Form - Occurrence"
+          },
+          {
+            "form_number": "CA 00 01 11 20",
+            "title": "Business Auto Coverage Form"
+          },
+          {
+            "form_number": "CA 20 48 03 06",
+            "title": "Designated Uninsured Motor Vehicle Coverage"
+          },
+          {
+            "form_number": "WC 00 00 00 B",
+            "title": "Workers Compensation and Employers Liability Insurance Policy"
+          },
+          {
+            "form_number": "U 00 01 01 20",
+            "title": "Commercial Umbrella Liability Coverage Form"
+          },
+          {
+            "form_number": "IL 00 17 11 98",
+            "title": "Common Policy Conditions"
+          },
+          {
+            "form_number": "CG 20 10 04 13",
+            "title": "Additional Insured - Owners, Lessees or Contractors - Scheduled Person or Organization"
+          }
+        ],
+        "premium_summary": [
+          {
+            "description": "Package Policy Premium",
+            "amount": "$41,0"
+          }
+        ],
+        "countersignature": "Travelers Indemnity Company by Front Range Commercial Insurance, Authorized Representative",
+        "countersignature_date": "01/15/2026",
+        "form_number": null,
+        "endorsement_title": null,
+        "endorsement_number": null,
+        "schedule_rows": null,
+        "provisions": null,
+        "additional_premium": null,
+        "change_description": null,
+        "coverages": null,
+        "total_premium": "$42,580",
+        "effective_date": "02/01/2026",
+        "expiration_date": "02/01/2027",
+        "nr_kind": null,
+        "nr_header_rows": null,
+        "nr_columns": null,
+        "nr_rows": null,
+        "unrelated_subtitle": null,
+        "unrelated_body": null
+      },
+      {
+        "title": "Commercial Package Policy Declarations",
+        "certificate_holder": null,
+        "coverage_lines": null,
+        "description_of_operations": null,
+        "authorized_representative": null,
+        "certificate_number": null,
+        "revision_number": null,
+        "invoice_number": null,
+        "invoice_date": null,
+        "account_number": null,
+        "line_items": null,
+        "subtotal": null,
+        "taxes": null,
+        "fees": null,
+        "prior_balance": null,
+        "amount_due": null,
+        "billing_period": null,
+        "due_date": null,
+        "payment_methods": null,
+        "remit_to": null,
+        "coverage_parts": [
+          {
+            "insurer_letter": "A",
+            "coverage_type": "Commercial General Liability",
+            "policy_number": "No.",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": null,
+            "subro_waived": null,
+            "limits": [
+              {
+                "coverage": "Each Occurrence",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "Damage to Rented Premises",
+                "limit": "$100,000"
+              },
+              {
+                "coverage": "Medical Expense",
+                "limit": "$5,000"
+              },
+              {
+                "coverage": "Personal & Advertising Injury",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "General Aggregate",
+                "limit": "$2,000,000"
+              },
+              {
+                "coverage": "Products-Completed Operations Aggregate",
+                "limit": "$2,000,000"
+              }
+            ],
+            "premium": "$14,250"
+          },
+          {
+            "insurer_letter": "A",
+            "coverage_type": "Commercial Automobile Liability",
+            "policy_number": "No.",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": null,
+            "subro_waived": null,
+            "limits": [
+              {
+                "coverage": "Combined Single Limit",
+                "limit": "$1,000,000"
+              }
+            ],
+            "premium": "$7,880"
+          },
+          {
+            "insurer_letter": "A",
+            "coverage_type": "Umbrella Liability",
+            "policy_number": "No.",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": null,
+            "subro_waived": null,
+            "limits": [
+              {
+                "coverage": "Each Occurrence",
+                "limit": "$5,000,000"
+              },
+              {
+                "coverage": "Aggregate",
+                "limit": "$5,000,000"
+              }
+            ],
+            "premium": "$8,960"
+          },
+          {
+            "insurer_letter": "A",
+            "coverage_type": "Workers Compensation",
+            "policy_number": "No.",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": null,
+            "subro_waived": null,
+            "limits": [
+              {
+                "coverage": "E.L. Each Accident",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "E.L. Disease - Ea Employee",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "E.L. Disease - Policy Limit",
+                "limit": "$1,000,000"
+              }
+            ],
+            "premium": "$9,900"
+          }
+        ],
+        "forms_schedule": [
+          {
+            "form_number": "CG 00 01 04 13",
+            "title": "Commercial General Liability Coverage Form"
+          },
+          {
+            "form_number": "CG 00 17 11 85",
+            "title": "General Liability Coverage Form - Occurrence"
+          },
+          {
+            "form_number": "CA 00 01 11 20",
+            "title": "Business Auto Coverage Form"
+          },
+          {
+            "form_number": "CA 20 48 03 06",
+            "title": "Designated Uninsured Motor Vehicle Coverage"
+          },
+          {
+            "form_number": "WC 00 00 00 B",
+            "title": "Workers Compensation and Employers Liability Insurance Policy"
+          },
+          {
+            "form_number": "U 00 01 01 20",
+            "title": "Commercial Umbrella Liability Coverage Form"
+          },
+          {
+            "form_number": "IL 00 17 11 98",
+            "title": "Common Policy Conditions"
+          },
+          {
+            "form_number": "CG 20 10 04 13",
+            "title": "Additional Insured - Owners, Lessees or Contractors - Scheduled Person or Organization"
+          }
+        ],
+        "premium_summary": [
+          {
+            "description": "Package Policy Premium",
+            "amount": "$41,0"
+          }
+        ],
+        "countersignature": "Travelers Indemnity Company by Front Range Commercial Insurance, Authorized Representative",
+        "countersignature_date": "01/15/2026",
+        "form_number": null,
+        "endorsement_title": null,
+        "endorsement_number": null,
+        "schedule_rows": null,
+        "provisions": null,
+        "additional_premium": null,
+        "change_description": null,
+        "coverages": null,
+        "total_premium": "$42,580",
+        "effective_date": "02/01/2026",
+        "expiration_date": "02/01/2027",
+        "nr_kind": null,
+        "nr_header_rows": null,
+        "nr_columns": null,
+        "nr_rows": null,
+        "unrelated_subtitle": null,
+        "unrelated_body": null
+      },
+      {
+        "title": "ACORD 25 Certificate of Liability Insurance",
+        "certificate_holder": "Parker Development Group LLC, 1550 Wewata St, Suite 40o, Denver, CO 8022",
+        "coverage_lines": [
+          {
+            "insurer_letter": "A",
+            "coverage_type": "Commercial General Liability",
+            "policy_number": "No.",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": true,
+            "subro_waived": true,
+            "limits": [
+              {
+                "coverage": "Each Occurrence",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "Damage to Rented Premises",
+                "limit": "$100,000"
+              },
+              {
+                "coverage": "Medical Expense",
+                "limit": "$5,000"
+              },
+              {
+                "coverage": "Personal & Advertising Injury",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "General Aggregate",
+                "limit": "$2,000,000"
+              },
+              {
+                "coverage": "Products-Completed Operations Aggregate",
+                "limit": "$2,000,000"
+              }
+            ],
+            "premium": null
+          },
+          {
+            "insurer_letter": "A",
+            "coverage_type": "Automobile Liability",
+            "policy_number": "No.",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": false,
+            "subro_waived": true,
+            "limits": [
+              {
+                "coverage": "Combined Single Limit",
+                "limit": "$1,000,000"
+              }
+            ],
+            "premium": null
+          },
+          {
+            "insurer_letter": "A",
+            "coverage_type": "Umbrella Liability",
+            "policy_number": "No.",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": false,
+            "subro_waived": false,
+            "limits": [
+              {
+                "coverage": "Each Occurrence",
+                "limit": "$5,000,000"
+              },
+              {
+                "coverage": "Aggregate",
+                "limit": "$5,000,000"
+              }
+            ],
+            "premium": null
+          },
+          {
+            "insurer_letter": "A",
+            "coverage_type": "Workers Compensation",
+            "policy_number": "No.",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": false,
+            "subro_waived": false,
+            "limits": [
+              {
+                "coverage": "E.L. Each Accident",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "E.L. Disease-Ea Employee",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "E.L. Disease-Policy Limit",
+                "limit": "$1,000,000"
+              }
+            ],
+            "premium": null
+          }
+        ],
+        "description_of_operations": "Parker Development Group LLLC is included as additionaal innsured as required by written contract with respect o oongoing and completed operations onl where required by and pursuant too CG 20 10 04 133 nd C 20 37 04 13, subject to the polic termms and onditions. Coverage is primary and non-contributory here required by written contract. aiver of subrogation applies where required by written ccontract and where endosd by CG 24 04 05 09 and/or CA 04 44 12 19 as applicable.",
+        "authorized_representative": "Megan A. Torres, CIC",
+        "certificate_number": "TRV-COI-260215-0147",
+        "revision_number": null,
+        "invoice_number": null,
+        "invoice_date": null,
+        "account_number": null,
+        "line_items": null,
+        "subtotal": null,
+        "taxes": null,
+        "fees": null,
+        "prior_balance": null,
+        "amount_due": null,
+        "billing_period": null,
+        "due_date": null,
+        "payment_methods": null,
+        "remit_to": null,
+        "coverage_parts": null,
+        "forms_schedule": null,
+        "premium_summary": null,
+        "countersignature": null,
+        "countersignature_date": null,
+        "form_number": null,
+        "endorsement_title": null,
+        "endorsement_number": null,
+        "schedule_rows": null,
+        "provisions": null,
+        "additional_premium": null,
+        "change_description": null,
+        "coverages": null,
+        "total_premium": null,
+        "effective_date": null,
+        "expiration_date": null,
+        "nr_kind": null,
+        "nr_header_rows": null,
+        "nr_columns": null,
+        "nr_rows": null,
+        "unrelated_subtitle": null,
+        "unrelated_body": null
+      },
+      {
+        "title": "Commercial Auto Endorsement",
+        "certificate_holder": null,
+        "coverage_lines": null,
+        "description_of_operations": null,
+        "authorized_representative": null,
+        "certificate_number": null,
+        "revision_number": null,
+        "invoice_number": null,
+        "invoice_date": null,
+        "account_number": null,
+        "line_items": null,
+        "subtotal": null,
+        "taxes": null,
+        "fees": null,
+        "prior_balance": null,
+        "amount_due": null,
+        "billing_period": null,
+        "due_date": null,
+        "payment_methods": null,
+        "remit_to": null,
+        "coverage_parts": null,
+        "forms_schedule": null,
+        "premium_summary": null,
+        "countersignature": null,
+        "countersignature_date": null,
+        "form_number": "CA 20 48 03 06",
+        "endorsement_title": "Designatd Uninsured Motor Vehiclle Coverage",
+        "endorsement_number": "TRV-CA-014",
+        "schedule_rows": [
+          {
+            "label": "Vehicle Added",
+            "value": "2024 Ford F-350 XL Crew Cab 4x4"
+          },
+          {
+            "label": "VIN",
+            "value": "1FT8W3BT9RED12345"
+          },
+          {
+            "label": "Garaging Location",
+            "value": "9400 E Arapahoe Rd, Centennial, CO 80112"
+          },
+          {
+            "label": "Use",
+            "value": "Contractor use - service and material hauling"
+          }
+        ],
+        "provisions": [
+          "Section II - Liabil1ty Coverage is amended to include the designated vehicle described in the Declaration5 and Schedule of Covered Auos You Own.",
+          "The Schedule of Covred Autos is amended to addd the following vehicle as a covered auto f0r Liability Coverage only, subject to all terms, coonditions, limitations and exclusions of the policy.",
+          "Premiuum for this endorsement is additinal to the poliy premium and is fully earned upon inception of the endorsement.",
+          "All 0ther term5 and conditions of this olicy remain changed."
+        ],
+        "additional_premium": "$285",
+        "change_description": "Adds one designated comercial vehicle t0 the auto schedule effective 02/01/2026.",
+        "coverages": null,
+        "total_premium": null,
+        "effective_date": "02/01/2026",
+        "expiration_date": null,
+        "nr_kind": null,
+        "nr_header_rows": null,
+        "nr_columns": null,
+        "nr_rows": null,
+        "unrelated_subtitle": null,
+        "unrelated_body": null
+      }
+    ]
+  }
+}

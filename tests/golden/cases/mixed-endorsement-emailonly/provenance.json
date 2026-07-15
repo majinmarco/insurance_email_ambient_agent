@@ -1,0 +1,127 @@
+{
+  "case_id": "mixed-endorsement-emailonly",
+  "tier": "mixed",
+  "seed": 414,
+  "email_type": "endorsement",
+  "attachments_mode": "off",
+  "max_docs_per_attachment": 2,
+  "max_attachments": 3,
+  "force_format": null,
+  "persona_index": 2,
+  "content_source": "llm",
+  "noise_manifest": {
+    "email": {
+      "persona_index": 2,
+      "thread": false,
+      "signature": false,
+      "subject_style": "urgent",
+      "multi_recipient": false,
+      "body_only": false,
+      "inconsistency": true,
+      "date_received": "2026-07-04T09:59:00+00:00"
+    },
+    "attachments": [],
+    "docs": [],
+    "expected": {
+      "email_type_hard": false,
+      "per_attachment_collapse": [],
+      "per_attachment_scanned": [],
+      "per_attachment_expect_interrupt": []
+    }
+  },
+  "raw_scenario": {
+    "shared": {
+      "named_insured": "Summit Ridge Construction Inc.",
+      "policy_number": "CPP-6612078",
+      "insured_address": "9400 E Arapahoe Rd, Centennial, CO 80112",
+      "contact_name": "Derek Olsson",
+      "contact_email": "dolsson@summitridgegc.com",
+      "contact_phone": "(303) 555-0188",
+      "carrier_name": "Travelers Indemnity Company",
+      "effective_date": "2026-01-01",
+      "expiration_date": "2027-01-01",
+      "coverage_limits": [
+        {
+          "coverage": "Commercial General Liability Each Occurrence",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Commercial General Liability General Aggregate",
+          "limit": "$2,000,000"
+        },
+        {
+          "coverage": "Personal and Advertising Injury",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Products-Completed Operations Aggregate",
+          "limit": "$2,000,000"
+        },
+        {
+          "coverage": "Damage to Premises Rented to You",
+          "limit": "$300,000"
+        },
+        {
+          "coverage": "Business Auto Liability Combined Single Limit",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Umbrella Liability Each Occurrence",
+          "limit": "$5,000,000"
+        }
+      ],
+      "total_premium": "$48,750",
+      "producer": {
+        "agency": "Front Range Commercial Insurance",
+        "address": "1550 W 8th Ave, Suite 220, Denver, CO 80204",
+        "contact_name": "Megan Hart",
+        "phone": "(303) 555-0144",
+        "fax": "(303) 555-0145",
+        "email": "newbusiness@frontrangeins.com"
+      },
+      "insurers": [
+        {
+          "letter": "A",
+          "name": "Travelers Indemnity Company",
+          "naic": "25682"
+        },
+        {
+          "letter": "B",
+          "name": "The Charter Oak Fire Insurance Company",
+          "naic": "25615"
+        },
+        {
+          "letter": "C",
+          "name": "Travelers Property Casualty Company of America",
+          "naic": "25674"
+        },
+        {
+          "letter": "D",
+          "name": "Travelers Casualty Insurance Company of America",
+          "naic": "25666"
+        },
+        {
+          "letter": "E",
+          "name": "Farmington Casualty Company",
+          "naic": "41483"
+        },
+        {
+          "letter": "F",
+          "name": "Travelers Personal Insurance Company",
+          "naic": "41769"
+        }
+      ],
+      "business_description": "Commercial general contractor (ground-up)",
+      "entity_type": "Corporation",
+      "fein": "84-2197645",
+      "naic_carrier": "25682"
+    },
+    "email": {
+      "subject": "URGENT: CPP-6612078 Endorsement Request for Summit Ridge Construction Inc.",
+      "body": "Hello,\n\nPlease process a mid-term endorsement for Summit Ridge Construction Inc. on policy CPP-6612078. We are requesting the change be effective 03/15/2026.\n\nPlease update the policy to reflect the requested endorsement change and advise if any additional information or signed forms are needed to bind the revision.\n\nThank you,\nDerek Olsson\nSummit Ridge Construction Inc.\n\nNote: the policy number on the attachment may be off by a digit; the correct one ends in 9.",
+      "sender": "Derek Olsson <dolsson@summitridgegc.com>",
+      "recipient": "Front Range Commercial Insurance <newbusiness@frontrangeins.com>"
+    },
+    "documents": []
+  }
+}

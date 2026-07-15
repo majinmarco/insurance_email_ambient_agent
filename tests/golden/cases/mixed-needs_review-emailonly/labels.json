@@ -1,0 +1,17 @@
+{
+  "case_id": "mixed-needs_review-emailonly",
+  "tier": "mixed",
+  "email": {
+    "email_type": "needs_review",
+    "email_type_hard": true,
+    "extraction": {
+      "named_insured": "Evergreen Home Health Services LLC",
+      "policy_number": "HMP-3320815",
+      "requested_effective_date": null,
+      "requested_changes": null,
+      "contact_name": "Priya Raman",
+      "contact_phone": "(503) 555-0159"
+    }
+  },
+  "attachments": []
+}

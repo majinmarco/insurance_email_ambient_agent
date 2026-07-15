@@ -1,0 +1,47 @@
+{
+  "case_id": "mixed-endorsement-a",
+  "tier": "mixed",
+  "email": {
+    "email_type": "endorsement",
+    "email_type_hard": false,
+    "extraction": {
+      "named_insured": "Riverside Manufacturing Co.",
+      "policy_number": "SBA-4471902",
+      "requested_effective_date": "2026-03-01",
+      "requested_changes": "Endorse the in-force policy (mid-term change).",
+      "contact_name": "Karen Delgado",
+      "contact_phone": "(216) 555-0173"
+    }
+  },
+  "attachments": [
+    {
+      "filename": "IMG_7308.pdf",
+      "render_format": "pdf",
+      "n_pages": 1,
+      "documents": [
+        {
+          "index": 0,
+          "doc_type": "insurance invoice",
+          "page_start": 0,
+          "page_end": 0,
+          "extraction": {
+            "named_insured": "Riverside Manufacturing Co.",
+            "policy_number": "SBA-4471902",
+            "amount_due": 18407.5,
+            "billing_period": "03/01/2026 - 03/01/2027",
+            "policy_reference": "SBA-4471902",
+            "due_date": "2026-03-15"
+          }
+        }
+      ],
+      "boundary_page_offsets": [],
+      "n_documents": 1,
+      "expected_segment_types": [
+        "insurance invoice"
+      ],
+      "expected_collapse": false,
+      "expected_scanned": false,
+      "expected_interrupt": false
+    }
+  ]
+}

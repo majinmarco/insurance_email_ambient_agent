@@ -1,0 +1,11 @@
+{
+  "email": {
+    "id": "mixed-needs_review-emailonly",
+    "subject": "Review requested for Evergreen Home Health Services LLC policy HMP-3320815 [Ref# 62873]",
+    "date_received": "2026-07-10T07:42:00+00:00",
+    "body": "Hi Priya,\n\nWe received a note tied to Evergreen Home Health Services LLC and policy HMP-3320815, but it is not clear whether this should be treated as a certificate update, endorsement request, or billing item. Could you please review and confirm the intended handling?\n\nIf there is a requested effective date or specific change, please include that in your reply.\n\nThank you,\nCascade Professional Insurance\n\nBest regards,\nPriya Raman\nEvergreen Home Health Services LLC | (503) 555-0159",
+    "sender": "Morgan Lee <submissions@cascadepro.com>",
+    "recipient": "praman@evergreenhh.com",
+    "attachments": []
+  }
+}

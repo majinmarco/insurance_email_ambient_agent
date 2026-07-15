@@ -1,0 +1,51 @@
+{
+  "case_id": "mixed-renewal-html",
+  "tier": "mixed",
+  "email": {
+    "email_type": "renewal",
+    "email_type_hard": true,
+    "extraction": {
+      "named_insured": "Golden Gate Hospitality Group LLC",
+      "policy_number": "CPP-8830471",
+      "requested_effective_date": null,
+      "requested_changes": "Prepare a renewal quote for the expiring policy.",
+      "contact_name": "Olivia Bennett",
+      "contact_phone": "(415) 555-0169"
+    }
+  },
+  "attachments": [
+    {
+      "filename": "Policy Declarations (2).html",
+      "render_format": "html",
+      "n_pages": 1,
+      "documents": [
+        {
+          "index": 0,
+          "doc_type": "insurance declaration",
+          "page_start": 0,
+          "page_end": 0,
+          "extraction": {
+            "named_insured": "Golden Gate Hospitality Group LLC",
+            "policy_number": "CPP-8830471",
+            "coverages": {
+              "Commercial Property": "$28,750",
+              "Commercial General Liability": "$19,400",
+              "Commercial Inland Marine": "$4,100",
+              "Workers Compensation": "$21,350",
+              "Umbrella Liability": "$10,250"
+            },
+            "total_premium": 84650.0
+          }
+        }
+      ],
+      "boundary_page_offsets": [],
+      "n_documents": 1,
+      "expected_segment_types": [
+        "insurance declaration"
+      ],
+      "expected_collapse": false,
+      "expected_scanned": false,
+      "expected_interrupt": false
+    }
+  ]
+}

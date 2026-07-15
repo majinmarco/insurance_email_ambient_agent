@@ -1,0 +1,59 @@
+{
+  "case_id": "mixed-new_submission-scanned",
+  "tier": "mixed",
+  "email": {
+    "email_type": "new_submission",
+    "email_type_hard": true,
+    "extraction": {
+      "named_insured": "Summit Ridge Construction Inc.",
+      "policy_number": null,
+      "requested_effective_date": "2026-08-01",
+      "requested_changes": "Quote/bind a new commercial package policy.",
+      "contact_name": "Derek Olsson",
+      "contact_phone": "(303) 555-0188"
+    }
+  },
+  "attachments": [
+    {
+      "filename": "ACORD 25 - Certificate of Insurance.pdf",
+      "render_format": "scanned_pdf",
+      "n_pages": 4,
+      "documents": [
+        {
+          "index": 0,
+          "doc_type": "certificate of insurance",
+          "page_start": 0,
+          "page_end": 3,
+          "extraction": {
+            "named_insured": "Summit Ridge Construction Inc.",
+            "policy_number": "TRV-CGC-4829167-01",
+            "certificate_holder": "Project Owners Alliance, LLC\n2001 Market St, Suite 1800\nPhiladelphia, PA 19103",
+            "effective_date": "2026-08-01",
+            "expiration_date": "2027-08-01",
+            "limits": {
+              "Each Occurrence": "$1,000,000",
+              "Damage to Rented Premises": "$300,000",
+              "Med Exp": "$5,000",
+              "Personal & Adv Injury": "$1,000,000",
+              "General Aggregate": "$2,000,000",
+              "Products-Comp/Op Agg": "$2,000,000",
+              "Combined Single Limit": "$1,000,000",
+              "Aggregate": "$5,000,000",
+              "E.L. Each Accident": "$1,000,000",
+              "E.L. Disease-Ea Employee": "$1,000,000",
+              "E.L. Disease-Policy Limit": "$1,000,000"
+            }
+          }
+        }
+      ],
+      "boundary_page_offsets": [],
+      "n_documents": 1,
+      "expected_segment_types": [
+        "certificate of insurance"
+      ],
+      "expected_collapse": false,
+      "expected_scanned": true,
+      "expected_interrupt": true
+    }
+  ]
+}

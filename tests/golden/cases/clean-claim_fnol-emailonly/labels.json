@@ -1,0 +1,17 @@
+{
+  "case_id": "clean-claim_fnol-emailonly",
+  "tier": "clean",
+  "email": {
+    "email_type": "claim_fnol",
+    "email_type_hard": true,
+    "extraction": {
+      "named_insured": "Riverside Manufacturing Co.",
+      "policy_number": "SBA-4471902",
+      "requested_effective_date": null,
+      "requested_changes": "Report a new loss / open a claim.",
+      "contact_name": "Karen Delgado",
+      "contact_phone": "(216) 555-0173"
+    }
+  },
+  "attachments": []
+}

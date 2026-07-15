@@ -1,0 +1,633 @@
+{
+  "schema_version": 1,
+  "builder_git_sha": "90f0a335d06c2158c8fe4675285a484bc03a7ee7",
+  "content_source": "llm",
+  "n_cases": 30,
+  "email_categories": [
+    "new_submission",
+    "renewal",
+    "endorsement",
+    "claim_fnol",
+    "needs_review"
+  ],
+  "cases": [
+    {
+      "case_id": "clean-new_submission-a",
+      "tier": "clean",
+      "seed": 101,
+      "email_type": "new_submission",
+      "n_attachments": 3,
+      "attachment_doc_types": [
+        [
+          "insurance endorsement"
+        ],
+        [
+          "insurance declaration",
+          "insurance declaration"
+        ],
+        [
+          "insurance declaration"
+        ]
+      ],
+      "has_multidoc": true,
+      "render_formats": [
+        "pdf",
+        "pdf",
+        "pdf"
+      ],
+      "content_source": "llm",
+      "dir": "cases/clean-new_submission-a"
+    },
+    {
+      "case_id": "clean-renewal-a",
+      "tier": "clean",
+      "seed": 102,
+      "email_type": "renewal",
+      "n_attachments": 1,
+      "attachment_doc_types": [
+        [
+          "insurance declaration",
+          "insurance invoice"
+        ]
+      ],
+      "has_multidoc": true,
+      "render_formats": [
+        "pdf"
+      ],
+      "content_source": "llm",
+      "dir": "cases/clean-renewal-a"
+    },
+    {
+      "case_id": "clean-endorsement-a",
+      "tier": "clean",
+      "seed": 103,
+      "email_type": "endorsement",
+      "n_attachments": 3,
+      "attachment_doc_types": [
+        [
+          "unrelated or unclear document",
+          "insurance declaration"
+        ],
+        [
+          "insurance declaration"
+        ],
+        [
+          "insurance declaration"
+        ]
+      ],
+      "has_multidoc": true,
+      "render_formats": [
+        "pdf",
+        "pdf",
+        "pdf"
+      ],
+      "content_source": "llm",
+      "dir": "cases/clean-endorsement-a"
+    },
+    {
+      "case_id": "clean-claim_fnol-a",
+      "tier": "clean",
+      "seed": 104,
+      "email_type": "claim_fnol",
+      "n_attachments": 1,
+      "attachment_doc_types": [
+        [
+          "insurance declaration"
+        ]
+      ],
+      "has_multidoc": false,
+      "render_formats": [
+        "pdf"
+      ],
+      "content_source": "llm",
+      "dir": "cases/clean-claim_fnol-a"
+    },
+    {
+      "case_id": "clean-needs_review-a",
+      "tier": "clean",
+      "seed": 105,
+      "email_type": "needs_review",
+      "n_attachments": 3,
+      "attachment_doc_types": [
+        [
+          "insurance endorsement",
+          "certificate of insurance"
+        ],
+        [
+          "insurance declaration"
+        ],
+        [
+          "insurance declaration",
+          "unrelated or unclear document"
+        ]
+      ],
+      "has_multidoc": true,
+      "render_formats": [
+        "pdf",
+        "pdf",
+        "pdf"
+      ],
+      "content_source": "llm",
+      "dir": "cases/clean-needs_review-a"
+    },
+    {
+      "case_id": "mixed-new_submission-a",
+      "tier": "mixed",
+      "seed": 201,
+      "email_type": "new_submission",
+      "n_attachments": 1,
+      "attachment_doc_types": [
+        [
+          "insurance declaration",
+          "insurance invoice"
+        ]
+      ],
+      "has_multidoc": true,
+      "render_formats": [
+        "pdf"
+      ],
+      "content_source": "llm",
+      "dir": "cases/mixed-new_submission-a"
+    },
+    {
+      "case_id": "mixed-renewal-a",
+      "tier": "mixed",
+      "seed": 202,
+      "email_type": "renewal",
+      "n_attachments": 2,
+      "attachment_doc_types": [
+        [
+          "insurance invoice",
+          "insurance declaration"
+        ],
+        [
+          "unrelated or unclear document",
+          "insurance invoice"
+        ]
+      ],
+      "has_multidoc": true,
+      "render_formats": [
+        "pdf",
+        "pdf"
+      ],
+      "content_source": "llm",
+      "dir": "cases/mixed-renewal-a"
+    },
+    {
+      "case_id": "mixed-endorsement-a",
+      "tier": "mixed",
+      "seed": 203,
+      "email_type": "endorsement",
+      "n_attachments": 1,
+      "attachment_doc_types": [
+        [
+          "insurance invoice"
+        ]
+      ],
+      "has_multidoc": false,
+      "render_formats": [
+        "pdf"
+      ],
+      "content_source": "llm",
+      "dir": "cases/mixed-endorsement-a"
+    },
+    {
+      "case_id": "mixed-claim_fnol-a",
+      "tier": "mixed",
+      "seed": 204,
+      "email_type": "claim_fnol",
+      "n_attachments": 2,
+      "attachment_doc_types": [
+        [
+          "insurance endorsement"
+        ],
+        [
+          "unrelated or unclear document"
+        ]
+      ],
+      "has_multidoc": false,
+      "render_formats": [
+        "pdf",
+        "pdf"
+      ],
+      "content_source": "llm",
+      "dir": "cases/mixed-claim_fnol-a"
+    },
+    {
+      "case_id": "mixed-needs_review-a",
+      "tier": "mixed",
+      "seed": 205,
+      "email_type": "needs_review",
+      "n_attachments": 2,
+      "attachment_doc_types": [
+        [
+          "unrelated or unclear document",
+          "insurance endorsement"
+        ],
+        [
+          "insurance invoice",
+          "unrelated or unclear document"
+        ]
+      ],
+      "has_multidoc": true,
+      "render_formats": [
+        "pdf",
+        "pdf"
+      ],
+      "content_source": "fallback",
+      "dir": "cases/mixed-needs_review-a"
+    },
+    {
+      "case_id": "messy-new_submission-a",
+      "tier": "messy",
+      "seed": 301,
+      "email_type": "new_submission",
+      "n_attachments": 2,
+      "attachment_doc_types": [
+        [
+          "insurance declaration",
+          "insurance declaration"
+        ],
+        [
+          "certificate of insurance",
+          "insurance endorsement"
+        ]
+      ],
+      "has_multidoc": true,
+      "render_formats": [
+        "pdf",
+        "pdf"
+      ],
+      "content_source": "llm",
+      "dir": "cases/messy-new_submission-a"
+    },
+    {
+      "case_id": "messy-renewal-a",
+      "tier": "messy",
+      "seed": 302,
+      "email_type": "renewal",
+      "n_attachments": 3,
+      "attachment_doc_types": [
+        [
+          "insurance invoice",
+          "insurance declaration"
+        ],
+        [
+          "insurance invoice"
+        ],
+        [
+          "insurance invoice"
+        ]
+      ],
+      "has_multidoc": true,
+      "render_formats": [
+        "pdf",
+        "pdf",
+        "pdf"
+      ],
+      "content_source": "llm",
+      "dir": "cases/messy-renewal-a"
+    },
+    {
+      "case_id": "messy-endorsement-a",
+      "tier": "messy",
+      "seed": 303,
+      "email_type": "endorsement",
+      "n_attachments": 1,
+      "attachment_doc_types": [
+        [
+          "unrelated or unclear document"
+        ]
+      ],
+      "has_multidoc": false,
+      "render_formats": [
+        "pdf"
+      ],
+      "content_source": "llm",
+      "dir": "cases/messy-endorsement-a"
+    },
+    {
+      "case_id": "messy-claim_fnol-a",
+      "tier": "messy",
+      "seed": 304,
+      "email_type": "claim_fnol",
+      "n_attachments": 1,
+      "attachment_doc_types": [
+        [
+          "certificate of insurance"
+        ]
+      ],
+      "has_multidoc": false,
+      "render_formats": [
+        "pdf"
+      ],
+      "content_source": "llm",
+      "dir": "cases/messy-claim_fnol-a"
+    },
+    {
+      "case_id": "messy-needs_review-a",
+      "tier": "messy",
+      "seed": 305,
+      "email_type": "needs_review",
+      "n_attachments": 1,
+      "attachment_doc_types": [
+        [
+          "insurance endorsement",
+          "insurance declaration"
+        ]
+      ],
+      "has_multidoc": true,
+      "render_formats": [
+        "pdf"
+      ],
+      "content_source": "llm",
+      "dir": "cases/messy-needs_review-a"
+    },
+    {
+      "case_id": "clean-new_submission-multi",
+      "tier": "clean",
+      "seed": 11,
+      "email_type": "new_submission",
+      "n_attachments": 2,
+      "attachment_doc_types": [
+        [
+          "insurance invoice",
+          "insurance invoice",
+          "insurance declaration"
+        ],
+        [
+          "certificate of insurance",
+          "insurance invoice",
+          "insurance declaration"
+        ]
+      ],
+      "has_multidoc": true,
+      "render_formats": [
+        "pdf",
+        "pdf"
+      ],
+      "content_source": "llm",
+      "dir": "cases/clean-new_submission-multi"
+    },
+    {
+      "case_id": "clean-renewal-multi",
+      "tier": "clean",
+      "seed": 5,
+      "email_type": "renewal",
+      "n_attachments": 3,
+      "attachment_doc_types": [
+        [
+          "insurance invoice",
+          "certificate of insurance"
+        ],
+        [
+          "insurance invoice",
+          "insurance invoice",
+          "certificate of insurance"
+        ],
+        [
+          "insurance invoice"
+        ]
+      ],
+      "has_multidoc": true,
+      "render_formats": [
+        "pdf",
+        "pdf",
+        "pdf"
+      ],
+      "content_source": "llm",
+      "dir": "cases/clean-renewal-multi"
+    },
+    {
+      "case_id": "mixed-new_submission-multi",
+      "tier": "mixed",
+      "seed": 11,
+      "email_type": "new_submission",
+      "n_attachments": 2,
+      "attachment_doc_types": [
+        [
+          "insurance invoice",
+          "insurance invoice",
+          "insurance declaration"
+        ],
+        [
+          "certificate of insurance",
+          "insurance invoice",
+          "insurance declaration"
+        ]
+      ],
+      "has_multidoc": true,
+      "render_formats": [
+        "pdf",
+        "pdf"
+      ],
+      "content_source": "llm",
+      "dir": "cases/mixed-new_submission-multi"
+    },
+    {
+      "case_id": "messy-new_submission-multi",
+      "tier": "messy",
+      "seed": 11,
+      "email_type": "new_submission",
+      "n_attachments": 2,
+      "attachment_doc_types": [
+        [
+          "insurance invoice",
+          "insurance invoice",
+          "insurance declaration"
+        ],
+        [
+          "certificate of insurance",
+          "insurance invoice",
+          "insurance declaration"
+        ]
+      ],
+      "has_multidoc": true,
+      "render_formats": [
+        "pdf",
+        "pdf"
+      ],
+      "content_source": "llm",
+      "dir": "cases/messy-new_submission-multi"
+    },
+    {
+      "case_id": "messy-renewal-multi",
+      "tier": "messy",
+      "seed": 5,
+      "email_type": "renewal",
+      "n_attachments": 3,
+      "attachment_doc_types": [
+        [
+          "insurance invoice",
+          "certificate of insurance"
+        ],
+        [
+          "insurance invoice",
+          "insurance invoice",
+          "certificate of insurance"
+        ],
+        [
+          "insurance invoice"
+        ]
+      ],
+      "has_multidoc": true,
+      "render_formats": [
+        "pdf",
+        "pdf",
+        "pdf"
+      ],
+      "content_source": "llm",
+      "dir": "cases/messy-renewal-multi"
+    },
+    {
+      "case_id": "clean-claim_fnol-emailonly",
+      "tier": "clean",
+      "seed": 410,
+      "email_type": "claim_fnol",
+      "n_attachments": 0,
+      "attachment_doc_types": [],
+      "has_multidoc": false,
+      "render_formats": [],
+      "content_source": "llm",
+      "dir": "cases/clean-claim_fnol-emailonly"
+    },
+    {
+      "case_id": "mixed-needs_review-emailonly",
+      "tier": "mixed",
+      "seed": 411,
+      "email_type": "needs_review",
+      "n_attachments": 0,
+      "attachment_doc_types": [],
+      "has_multidoc": false,
+      "render_formats": [],
+      "content_source": "llm",
+      "dir": "cases/mixed-needs_review-emailonly"
+    },
+    {
+      "case_id": "messy-renewal-emailonly",
+      "tier": "messy",
+      "seed": 412,
+      "email_type": "renewal",
+      "n_attachments": 0,
+      "attachment_doc_types": [],
+      "has_multidoc": false,
+      "render_formats": [],
+      "content_source": "llm",
+      "dir": "cases/messy-renewal-emailonly"
+    },
+    {
+      "case_id": "clean-new_submission-emailonly",
+      "tier": "clean",
+      "seed": 413,
+      "email_type": "new_submission",
+      "n_attachments": 0,
+      "attachment_doc_types": [],
+      "has_multidoc": false,
+      "render_formats": [],
+      "content_source": "llm",
+      "dir": "cases/clean-new_submission-emailonly"
+    },
+    {
+      "case_id": "mixed-endorsement-emailonly",
+      "tier": "mixed",
+      "seed": 414,
+      "email_type": "endorsement",
+      "n_attachments": 0,
+      "attachment_doc_types": [],
+      "has_multidoc": false,
+      "render_formats": [],
+      "content_source": "llm",
+      "dir": "cases/mixed-endorsement-emailonly"
+    },
+    {
+      "case_id": "mixed-new_submission-scanned",
+      "tier": "mixed",
+      "seed": 501,
+      "email_type": "new_submission",
+      "n_attachments": 1,
+      "attachment_doc_types": [
+        [
+          "certificate of insurance"
+        ]
+      ],
+      "has_multidoc": false,
+      "render_formats": [
+        "scanned_pdf"
+      ],
+      "content_source": "llm",
+      "dir": "cases/mixed-new_submission-scanned"
+    },
+    {
+      "case_id": "messy-claim_fnol-scanned",
+      "tier": "messy",
+      "seed": 502,
+      "email_type": "claim_fnol",
+      "n_attachments": 1,
+      "attachment_doc_types": [
+        [
+          "insurance declaration"
+        ]
+      ],
+      "has_multidoc": false,
+      "render_formats": [
+        "scanned_pdf"
+      ],
+      "content_source": "llm",
+      "dir": "cases/messy-claim_fnol-scanned"
+    },
+    {
+      "case_id": "messy-renewal-scanned",
+      "tier": "messy",
+      "seed": 503,
+      "email_type": "renewal",
+      "n_attachments": 1,
+      "attachment_doc_types": [
+        [
+          "insurance declaration"
+        ]
+      ],
+      "has_multidoc": false,
+      "render_formats": [
+        "scanned_pdf"
+      ],
+      "content_source": "llm",
+      "dir": "cases/messy-renewal-scanned"
+    },
+    {
+      "case_id": "mixed-renewal-html",
+      "tier": "mixed",
+      "seed": 601,
+      "email_type": "renewal",
+      "n_attachments": 1,
+      "attachment_doc_types": [
+        [
+          "insurance declaration"
+        ]
+      ],
+      "has_multidoc": false,
+      "render_formats": [
+        "html"
+      ],
+      "content_source": "llm",
+      "dir": "cases/mixed-renewal-html"
+    },
+    {
+      "case_id": "messy-endorsement-html",
+      "tier": "messy",
+      "seed": 602,
+      "email_type": "endorsement",
+      "n_attachments": 1,
+      "attachment_doc_types": [
+        [
+          "insurance endorsement"
+        ]
+      ],
+      "has_multidoc": false,
+      "render_formats": [
+        "html"
+      ],
+      "content_source": "llm",
+      "dir": "cases/messy-endorsement-html"
+    }
+  ]
+}

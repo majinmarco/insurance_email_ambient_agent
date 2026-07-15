@@ -1,0 +1,105 @@
+{
+  "case_id": "mixed-renewal-a",
+  "tier": "mixed",
+  "email": {
+    "email_type": "renewal",
+    "email_type_hard": false,
+    "extraction": {
+      "named_insured": "Summit Ridge Construction Inc.",
+      "policy_number": "CPP-6612078",
+      "requested_effective_date": null,
+      "requested_changes": "Prepare a renewal quote for the expiring policy.",
+      "contact_name": "Derek Olsson",
+      "contact_phone": "(303) 555-0188"
+    }
+  },
+  "attachments": [
+    {
+      "filename": "Insurance Documents.pdf",
+      "render_format": "pdf",
+      "n_pages": 2,
+      "documents": [
+        {
+          "index": 0,
+          "doc_type": "insurance invoice",
+          "page_start": 0,
+          "page_end": 0,
+          "extraction": {
+            "named_insured": "Summit Ridge Construction Inc.",
+            "policy_number": "CPP-6612078",
+            "amount_due": 50844.0,
+            "billing_period": "08/01/2026 - 08/01/2027",
+            "policy_reference": "CPP-6612078",
+            "due_date": "2026-08-01"
+          }
+        },
+        {
+          "index": 1,
+          "doc_type": "insurance declaration",
+          "page_start": 1,
+          "page_end": 1,
+          "extraction": {
+            "named_insured": "Summit Ridge Construction Inc.",
+            "policy_number": "CPP-6612078",
+            "coverages": {
+              "Commercial General Liability": "$28,400",
+              "Commercial Inland Marine": "$7,850",
+              "Commercial Automobile Liability": "$9,100",
+              "Umbrella Liability": "$3,400"
+            },
+            "total_premium": 50844.0
+          }
+        }
+      ],
+      "boundary_page_offsets": [
+        1
+      ],
+      "n_documents": 2,
+      "expected_segment_types": [
+        "insurance invoice",
+        "insurance declaration"
+      ],
+      "expected_collapse": false,
+      "expected_scanned": false,
+      "expected_interrupt": false
+    },
+    {
+      "filename": "Scan_6520.pdf",
+      "render_format": "pdf",
+      "n_pages": 2,
+      "documents": [
+        {
+          "index": 0,
+          "doc_type": "unrelated or unclear document",
+          "page_start": 0,
+          "page_end": 0,
+          "extraction": null
+        },
+        {
+          "index": 1,
+          "doc_type": "insurance invoice",
+          "page_start": 1,
+          "page_end": 1,
+          "extraction": {
+            "named_insured": "Summit Ridge Construction Inc.",
+            "policy_number": "CPP-6612078",
+            "amount_due": 50844.0,
+            "billing_period": "08/01/2026 - 08/01/2027",
+            "policy_reference": "CPP-6612078",
+            "due_date": "2026-08-15"
+          }
+        }
+      ],
+      "boundary_page_offsets": [
+        1
+      ],
+      "n_documents": 2,
+      "expected_segment_types": [
+        "insurance invoice"
+      ],
+      "expected_collapse": false,
+      "expected_scanned": false,
+      "expected_interrupt": true
+    }
+  ]
+}

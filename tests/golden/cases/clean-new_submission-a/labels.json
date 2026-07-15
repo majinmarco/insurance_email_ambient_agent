@@ -1,0 +1,127 @@
+{
+  "case_id": "clean-new_submission-a",
+  "tier": "clean",
+  "email": {
+    "email_type": "new_submission",
+    "email_type_hard": true,
+    "extraction": {
+      "named_insured": "Riverside Manufacturing Co.",
+      "policy_number": null,
+      "requested_effective_date": "2026-08-01",
+      "requested_changes": "Quote/bind a new commercial package policy.",
+      "contact_name": "Karen Delgado",
+      "contact_phone": "(216) 555-0173"
+    }
+  },
+  "attachments": [
+    {
+      "filename": "attachment_1.pdf",
+      "render_format": "pdf",
+      "n_pages": 1,
+      "documents": [
+        {
+          "index": 0,
+          "doc_type": "insurance endorsement",
+          "page_start": 0,
+          "page_end": 0,
+          "extraction": {
+            "named_insured": "Riverside Manufacturing Co.",
+            "policy_number": null,
+            "change_description": "Adds the Cleveland facility and scheduled CNC press brake equipment to the policy.",
+            "effective_date": "2026-08-01"
+          }
+        }
+      ],
+      "boundary_page_offsets": [],
+      "n_documents": 1,
+      "expected_segment_types": [
+        "insurance endorsement"
+      ],
+      "expected_collapse": false,
+      "expected_scanned": false,
+      "expected_interrupt": false
+    },
+    {
+      "filename": "attachment_2.pdf",
+      "render_format": "pdf",
+      "n_pages": 2,
+      "documents": [
+        {
+          "index": 0,
+          "doc_type": "insurance declaration",
+          "page_start": 0,
+          "page_end": 0,
+          "extraction": {
+            "named_insured": "Riverside Manufacturing Co.",
+            "policy_number": null,
+            "coverages": {
+              "Commercial General Liability": "$6,450",
+              "Business Auto": "$4,380",
+              "Workers Compensation and Employers Liability": "$5,890",
+              "Umbrella Liability": "$1,540"
+            },
+            "total_premium": 18960.0
+          }
+        },
+        {
+          "index": 1,
+          "doc_type": "insurance declaration",
+          "page_start": 1,
+          "page_end": 1,
+          "extraction": {
+            "named_insured": "Riverside Manufacturing Co.",
+            "policy_number": null,
+            "coverages": {
+              "Building and Personal Property": "$5,120",
+              "Equipment Breakdown": "$1,080",
+              "Inland Marine - Contractor's Equipment": "$760"
+            },
+            "total_premium": 7260.0
+          }
+        }
+      ],
+      "boundary_page_offsets": [
+        1
+      ],
+      "n_documents": 2,
+      "expected_segment_types": [
+        "insurance declaration",
+        "insurance declaration"
+      ],
+      "expected_collapse": false,
+      "expected_scanned": false,
+      "expected_interrupt": false
+    },
+    {
+      "filename": "attachment_3.pdf",
+      "render_format": "pdf",
+      "n_pages": 1,
+      "documents": [
+        {
+          "index": 0,
+          "doc_type": "insurance declaration",
+          "page_start": 0,
+          "page_end": 0,
+          "extraction": {
+            "named_insured": "Riverside Manufacturing Co.",
+            "policy_number": null,
+            "coverages": {
+              "Installation Floater": "$1,260",
+              "Tools and Equipment": "$540",
+              "Motor Truck Cargo": "$440"
+            },
+            "total_premium": 2360.0
+          }
+        }
+      ],
+      "boundary_page_offsets": [],
+      "n_documents": 1,
+      "expected_segment_types": [
+        "insurance declaration"
+      ],
+      "expected_collapse": false,
+      "expected_scanned": false,
+      "expected_interrupt": false
+    }
+  ]
+}

@@ -1,0 +1,338 @@
+{
+  "case_id": "messy-needs_review-a",
+  "tier": "messy",
+  "seed": 305,
+  "email_type": "needs_review",
+  "attachments_mode": "on",
+  "max_docs_per_attachment": 2,
+  "max_attachments": 3,
+  "force_format": null,
+  "persona_index": 4,
+  "content_source": "llm",
+  "noise_manifest": {
+    "email": {
+      "persona_index": 4,
+      "thread": true,
+      "signature": true,
+      "subject_style": "allcaps",
+      "multi_recipient": false,
+      "body_only": true,
+      "inconsistency": false,
+      "date_received": "2026-07-11T07:52:00+00:00"
+    },
+    "attachments": [
+      {
+        "filename": "IMG_4534.pdf"
+      }
+    ],
+    "docs": [
+      {
+        "delimiter_mode": "bold_caps",
+        "layout_variant": 1,
+        "watermark": null,
+        "content_noise": true,
+        "content_noise_level": 0.35,
+        "is_scanned": false,
+        "render_format": "pdf"
+      },
+      {
+        "delimiter_mode": "plain",
+        "layout_variant": 0,
+        "watermark": "DUPLICATE",
+        "content_noise": false,
+        "content_noise_level": 0.35,
+        "is_scanned": false,
+        "render_format": "pdf"
+      }
+    ],
+    "expected": {
+      "email_type_hard": false,
+      "per_attachment_collapse": [
+        true
+      ],
+      "per_attachment_scanned": [
+        false
+      ],
+      "per_attachment_expect_interrupt": [
+        false
+      ]
+    }
+  },
+  "raw_scenario": {
+    "shared": {
+      "named_insured": "Lone Star Freight Systems LP",
+      "policy_number": "CA-9948120",
+      "insured_address": "4500 Irving Blvd, Dallas, TX 75247",
+      "contact_name": "Wade Carrington",
+      "contact_email": "wcarrington@lonestarfreight.com",
+      "contact_phone": "(214) 555-0191",
+      "carrier_name": "Great West Casualty Company",
+      "effective_date": "2026-01-01",
+      "expiration_date": "2027-01-01",
+      "coverage_limits": [
+        {
+          "coverage": "Combined Single Limit",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Trailer Interchange",
+          "limit": "$50,000"
+        },
+        {
+          "coverage": "Motor Truck Cargo",
+          "limit": "$100,000"
+        },
+        {
+          "coverage": "General Aggregate",
+          "limit": "$2,000,000"
+        }
+      ],
+      "total_premium": "$18,740",
+      "producer": {
+        "agency": "Southwest Transportation Insurance",
+        "address": "8111 Preston Rd, Suite 250, Dallas, TX 75225",
+        "contact_name": "Megan Alvarez",
+        "phone": "(214) 555-0188",
+        "fax": "(214) 555-0189",
+        "email": "trucking@swtransins.com"
+      },
+      "insurers": [
+        {
+          "letter": "A",
+          "name": "Great West Casualty Company",
+          "naic": "22225"
+        },
+        {
+          "letter": "B",
+          "name": "Old Republic Insurance Company",
+          "naic": "24147"
+        },
+        {
+          "letter": "C",
+          "name": "Hartford Fire Insurance Company",
+          "naic": "19682"
+        },
+        {
+          "letter": "D",
+          "name": "Zurich American Insurance Company",
+          "naic": "16535"
+        },
+        {
+          "letter": "E",
+          "name": "Liberty Mutual Fire Insurance Company",
+          "naic": "23035"
+        },
+        {
+          "letter": "F",
+          "name": "Travelers Property Casualty Company of America",
+          "naic": "25674"
+        }
+      ],
+      "business_description": "Regional less-than-truckload motor carrier",
+      "entity_type": "Limited Partnership",
+      "fein": "84-2179634",
+      "naic_carrier": "22225"
+    },
+    "email": {
+      "subject": "RE: RE: LONE STAR FREIGHT SYSTEMS LP / CA-9948120 \u2014 REVIEW REQUESTED",
+      "body": "Docs attached.\n\nOn Mon, Jul 6, 2026 at 9:14 AM, Megan Alvarez <trucking@swtransins.com> wrote:\n> Thanks for sending this over \u2014 can you confirm the requested effective date and whether any additional insureds are needed?\n>\n> Regards,\n> Megan Alvarez\n\n--\nWade Carrington\nLone Star Freight Systems LP\n(214) 555-0191",
+      "sender": "Megan Alvarez <trucking@swtransins.com>",
+      "recipient": "Wade Carrington <wcarrington@lonestarfreight.com>"
+    },
+    "documents": [
+      {
+        "title": "POLICY CHANGE ENDORSEMENT",
+        "certificate_holder": null,
+        "coverage_lines": null,
+        "description_of_operations": null,
+        "authorized_representative": null,
+        "certificate_number": null,
+        "revision_number": null,
+        "invoice_number": null,
+        "invoice_date": null,
+        "account_number": null,
+        "line_items": null,
+        "subtotal": null,
+        "taxes": null,
+        "fees": null,
+        "prior_balance": null,
+        "amount_due": null,
+        "billing_period": null,
+        "due_date": null,
+        "payment_methods": null,
+        "remit_to": null,
+        "coverage_parts": null,
+        "forms_schedule": null,
+        "premium_summary": null,
+        "countersignature": null,
+        "countersignature_date": null,
+        "form_number": "CA 20 48 01 23",
+        "endorsement_title": "Scheduled Equipment and Driver Change Endorsemet",
+        "endorsement_number": "Endorsement No. 3",
+        "schedule_rows": [
+          {
+            "label": "Scheduled Vehicle No. 7",
+            "value": "2025 Freightliner Cascadia, VIN 1FUJGLDR4SLBM1234, Unit No. 7"
+          },
+          {
+            "label": "Scheduled Vehicle No. 8",
+            "value": "2024 Kenworth T680, VIN 1XKYD49X9RJ123456, Unit No. 8"
+          },
+          {
+            "label": "Driver Eligibility",
+            "value": "Add Maria Torres, CDL No. T-4829167, effective 01/01/2026"
+          }
+        ],
+        "provisions": [
+          "Paraggraph 1 is amended to inlude the scheduled vehicle5 shown in th Schedule above, subject to all term, connitions, exclusions, and limitaions o the policy.",
+          "The premium or th1s endorseent is calculated on the basis of he additional exposure described above and is payable at the fir5t named insured's rquest.",
+          "This endorsement applies only as of the effective date shown below and does not imply any other change in underwriting classification, territory, or radius of operations.",
+          "All other terms and connditions of this pollicy remain unchanged."
+        ],
+        "additional_premium": "$425",
+        "change_description": "Adds two scheduled tractors and one rated driver to the olicy effective 01/01/2026.",
+        "coverages": null,
+        "total_premium": null,
+        "effective_date": "01/01/2026",
+        "expiration_date": null,
+        "nr_kind": null,
+        "nr_header_rows": null,
+        "nr_columns": null,
+        "nr_rows": null,
+        "unrelated_subtitle": null,
+        "unrelated_body": null
+      },
+      {
+        "title": "COMMERCIAL AUTO POLICY DECLARATIONS",
+        "certificate_holder": null,
+        "coverage_lines": null,
+        "description_of_operations": null,
+        "authorized_representative": null,
+        "certificate_number": null,
+        "revision_number": null,
+        "invoice_number": null,
+        "invoice_date": null,
+        "account_number": null,
+        "line_items": null,
+        "subtotal": null,
+        "taxes": null,
+        "fees": null,
+        "prior_balance": null,
+        "amount_due": null,
+        "billing_period": null,
+        "due_date": null,
+        "payment_methods": null,
+        "remit_to": null,
+        "coverage_parts": [
+          {
+            "insurer_letter": "A",
+            "coverage_type": "Business Auto Liability",
+            "policy_number": "CA-9948120",
+            "effective_date": "01/01/2026",
+            "expiration_date": "01/01/2027",
+            "addl_insured": false,
+            "subro_waived": false,
+            "limits": [
+              {
+                "coverage": "Combined Single Limit",
+                "limit": "$1,000,000"
+              }
+            ],
+            "premium": "$11,200"
+          },
+          {
+            "insurer_letter": "A",
+            "coverage_type": "Trailer Interchange",
+            "policy_number": "CA-9948120",
+            "effective_date": "01/01/2026",
+            "expiration_date": "01/01/2027",
+            "addl_insured": false,
+            "subro_waived": false,
+            "limits": [
+              {
+                "coverage": "Trailer Interchange Limit",
+                "limit": "$50,000"
+              }
+            ],
+            "premium": "$1,350"
+          },
+          {
+            "insurer_letter": "A",
+            "coverage_type": "Motor Truck Cargo",
+            "policy_number": "CA-9948120",
+            "effective_date": "01/01/2026",
+            "expiration_date": "01/01/2027",
+            "addl_insured": false,
+            "subro_waived": false,
+            "limits": [
+              {
+                "coverage": "Limit Per Vehicle",
+                "limit": "$100,000"
+              }
+            ],
+            "premium": "$4,850"
+          }
+        ],
+        "forms_schedule": [
+          {
+            "form_number": "CA 00 01 11 20",
+            "title": "Business Auto Coverage Form"
+          },
+          {
+            "form_number": "CA 99 17 11 20",
+            "title": "Motor Carrier Coverage Form"
+          },
+          {
+            "form_number": "CA 20 48 01 23",
+            "title": "Scheduled Equipment and Driver Change Endorsement"
+          },
+          {
+            "form_number": "CA 20 48 01 23",
+            "title": "Texas Amendatory Endorsement"
+          },
+          {
+            "form_number": "IL 00 17 11 98",
+            "title": "Common Policy Conditions"
+          }
+        ],
+        "premium_summary": [
+          {
+            "description": "Policy Premium",
+            "amount": "$17,400"
+          },
+          {
+            "description": "Terrorism (TRIA)",
+            "amount": "$125"
+          },
+          {
+            "description": "State Taxes",
+            "amount": "$860"
+          },
+          {
+            "description": "Policy Fees",
+            "amount": "$355"
+          }
+        ],
+        "countersignature": "Great West Casualty Company, authorized representative",
+        "countersignature_date": "12/15/2025",
+        "form_number": null,
+        "endorsement_title": null,
+        "endorsement_number": null,
+        "schedule_rows": null,
+        "provisions": null,
+        "additional_premium": null,
+        "change_description": null,
+        "coverages": null,
+        "total_premium": "$18,740",
+        "effective_date": "01/01/2026",
+        "expiration_date": "01/01/2027",
+        "nr_kind": null,
+        "nr_header_rows": null,
+        "nr_columns": null,
+        "nr_rows": null,
+        "unrelated_subtitle": null,
+        "unrelated_body": null
+      }
+    ]
+  }
+}

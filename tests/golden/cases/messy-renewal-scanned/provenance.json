@@ -1,0 +1,363 @@
+{
+  "case_id": "messy-renewal-scanned",
+  "tier": "messy",
+  "seed": 503,
+  "email_type": "renewal",
+  "attachments_mode": "on",
+  "max_docs_per_attachment": 1,
+  "max_attachments": 1,
+  "force_format": "scanned_pdf",
+  "persona_index": 0,
+  "content_source": "llm",
+  "noise_manifest": {
+    "email": {
+      "persona_index": 0,
+      "thread": false,
+      "signature": true,
+      "subject_style": null,
+      "multi_recipient": true,
+      "body_only": false,
+      "inconsistency": true,
+      "date_received": "2026-06-24T17:32:00+00:00"
+    },
+    "attachments": [
+      {
+        "filename": "IMG_6622.pdf"
+      }
+    ],
+    "docs": [
+      {
+        "delimiter_mode": "bold_caps",
+        "layout_variant": 1,
+        "watermark": null,
+        "content_noise": true,
+        "content_noise_level": 0.35,
+        "is_scanned": true,
+        "render_format": "scanned_pdf"
+      }
+    ],
+    "expected": {
+      "email_type_hard": false,
+      "per_attachment_collapse": [
+        false
+      ],
+      "per_attachment_scanned": [
+        true
+      ],
+      "per_attachment_expect_interrupt": [
+        true
+      ]
+    }
+  },
+  "raw_scenario": {
+    "shared": {
+      "named_insured": "Riverside Manufacturing Co.",
+      "policy_number": "SBA-4471902",
+      "insured_address": "2200 Foundry Road, Cleveland, OH 44115",
+      "contact_name": "Karen Delgado",
+      "contact_email": "kdelgado@riversidemfg.com",
+      "contact_phone": "(216) 555-0173",
+      "carrier_name": "The Hartford",
+      "effective_date": "2025-08-01",
+      "expiration_date": "2026-08-01",
+      "coverage_limits": [
+        {
+          "coverage": "Building Limit",
+          "limit": "$2,500,000"
+        },
+        {
+          "coverage": "Business Personal Property Limit",
+          "limit": "$1,250,000"
+        },
+        {
+          "coverage": "Each Occurrence",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "General Aggregate",
+          "limit": "$2,000,000"
+        },
+        {
+          "coverage": "Products-Completed Operations Aggregate",
+          "limit": "$2,000,000"
+        },
+        {
+          "coverage": "Personal and Advertising Injury",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Each Accident",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Disease - Policy Limit",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Disease - Each Employee",
+          "limit": "$1,000,000"
+        }
+      ],
+      "total_premium": "$18,640",
+      "producer": {
+        "agency": "Great Lakes Insurance Advisors",
+        "address": "600 Superior Avenue East, Suite 1200, Cleveland, OH 44114",
+        "contact_name": "Megan Hart",
+        "phone": "(216) 555-0144",
+        "fax": "(216) 555-0199",
+        "email": "submissions@greatlakesins.com"
+      },
+      "insurers": [
+        {
+          "letter": "A",
+          "name": "The Hartford",
+          "naic": "19682"
+        },
+        {
+          "letter": "B",
+          "name": "Hartford Fire Insurance Company",
+          "naic": "19682"
+        },
+        {
+          "letter": "C",
+          "name": "Hartford Casualty Insurance Company",
+          "naic": "29424"
+        },
+        {
+          "letter": "D",
+          "name": "Hartford Accident & Indemnity Company",
+          "naic": "22357"
+        },
+        {
+          "letter": "E",
+          "name": "Twin City Fire Insurance Company",
+          "naic": "29459"
+        },
+        {
+          "letter": "F",
+          "name": "Trumbull Insurance Company",
+          "naic": "27120"
+        }
+      ],
+      "business_description": "Sheet-metal fabrication and industrial machining",
+      "entity_type": "Corporation",
+      "fein": "34-1287742",
+      "naic_carrier": "19682"
+    },
+    "email": {
+      "subject": "Renewal request \u2014 Riverside Manufacturing Co. policy SBA-4471902",
+      "body": "Good morning,\n\nPlease prepare the renewal quotation for Riverside Manufacturing Co. policy SBA-4471902, currently expiring on 08/01/2026. We would like to keep the same effective date of 08/01/2025 for the renewal term and review any updated pricing, forms, or underwriting requirements.\n\nPlease send the renewal proposal and declarations when available. Thank you.\n\nKaren Delgado\nRiverside Manufacturing Co.\n\nCorrection: the total premium should read slightly lower than the attached invoice; we're reconciling.\n\nKaren Delgado\nRiverside Manufacturing Co.\n\nCONFIDENTIALITY NOTICE: This message and any attachments are intended solely for the addressee and may contain confidential information.",
+      "sender": "Megan Hart's Assistant <assistant@greatlakesins.com> on behalf of Karen Delgado <kdelgado@riversidemfg.com>",
+      "recipient": "Great Lakes Insurance Advisors <submissions@greatlakesins.com>, underwriting@greatlakesins.com"
+    },
+    "documents": [
+      {
+        "title": "Commercial Package Policy Declarations",
+        "certificate_holder": null,
+        "coverage_lines": null,
+        "description_of_operations": null,
+        "authorized_representative": null,
+        "certificate_number": null,
+        "revision_number": null,
+        "invoice_number": null,
+        "invoice_date": null,
+        "account_number": "SBA-4471902",
+        "line_items": null,
+        "subtotal": null,
+        "taxes": null,
+        "fees": null,
+        "prior_balance": null,
+        "amount_due": null,
+        "billing_period": null,
+        "due_date": null,
+        "payment_methods": null,
+        "remit_to": null,
+        "coverage_parts": [
+          {
+            "insurer_letter": "A",
+            "coverage_type": "Building and Business Personal Property",
+            "policy_number": "SBA-4471902",
+            "effective_date": "08/01/2025",
+            "expiration_date": "08/01/2026",
+            "addl_insured": false,
+            "subro_waived": false,
+            "limits": [
+              {
+                "coverage": "Building Limit",
+                "limit": "$2,500,000"
+              },
+              {
+                "coverage": "Business Personal Property Limit",
+                "limit": "$1,250,000"
+              },
+              {
+                "coverage": "Ordinance or Law",
+                "limit": "$250,000"
+              }
+            ],
+            "premium": "$7,480"
+          },
+          {
+            "insurer_letter": "A",
+            "coverage_type": "Commercial General Liability",
+            "policy_number": "SBA-4471902",
+            "effective_date": "08/01/2025",
+            "expiration_date": "08/01/2026",
+            "addl_insured": false,
+            "subro_waived": false,
+            "limits": [
+              {
+                "coverage": "Each Occurrence",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "General Aggregate",
+                "limit": "$2,000,000"
+              },
+              {
+                "coverage": "Products-Completed Operations Aggregate",
+                "limit": "$2,000,000"
+              },
+              {
+                "coverage": "Personal and Advertising Injury",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "Damage to Premises Rented to You",
+                "limit": "$300,000"
+              }
+            ],
+            "premium": "$4,620"
+          },
+          {
+            "insurer_letter": "A",
+            "coverage_type": "Business Auto Liability",
+            "policy_number": "SBA-4471902",
+            "effective_date": "08/01/2025",
+            "expiration_date": "08/01/2026",
+            "addl_insured": false,
+            "subro_waived": false,
+            "limits": [
+              {
+                "coverage": "Combined Single Limit",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "Medical Expense Limit",
+                "limit": "$5,000"
+              }
+            ],
+            "premium": "$2,915"
+          },
+          {
+            "insurer_letter": "A",
+            "coverage_type": "Workers Compensation",
+            "policy_number": "SBA-4471902",
+            "effective_date": "08/01/2025",
+            "expiration_date": "08/01/2026",
+            "addl_insured": false,
+            "subro_waived": false,
+            "limits": [
+              {
+                "coverage": "Each Accident",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "Disease - Policy Limit",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "Disease - Each Employee",
+                "limit": "$1,000,000"
+              }
+            ],
+            "premium": "$2,775"
+          }
+        ],
+        "forms_schedule": [
+          {
+            "form_number": "CP 00 10 10 12",
+            "title": "Building and Personal Property Coverage Form"
+          },
+          {
+            "form_number": "CP 00 20 10 12",
+            "title": "Business Income (and Extra Expense) Coverage Form"
+          },
+          {
+            "form_number": "CG 00 01 04 13",
+            "title": "Commercial General Liability Coverage Form"
+          },
+          {
+            "form_number": "CA 00 01 11 20",
+            "title": "Business Auto Coverage Form"
+          },
+          {
+            "form_number": "WC 00 00 00 B",
+            "title": "Workers Compensation and Employers Liability Insurance Policy"
+          },
+          {
+            "form_number": "IL 00 17 11 98",
+            "title": "Common Policy Conditions"
+          },
+          {
+            "form_number": "IL 00 03 07 02",
+            "title": "Schedule of Premiums (if applicable)"
+          },
+          {
+            "form_number": "CP 10 30 09 17",
+            "title": "Causes of Loss - Special Form"
+          }
+        ],
+        "premium_summary": [
+          {
+            "description": "Property Premium",
+            "amount": "$7,480.00"
+          },
+          {
+            "description": "General Liability Premium",
+            "amount": "$4,620.00"
+          },
+          {
+            "description": "Business Auto Premium",
+            "amount": "$2,915.00"
+          },
+          {
+            "description": "Workers Compensation Premium",
+            "amount": "$2,775.00"
+          },
+          {
+            "description": "Terrorism (TRIA)",
+            "amount": "$215.00"
+          },
+          {
+            "description": "State Premium Tax",
+            "amount": "$410.00"
+          },
+          {
+            "description": "Policy Fee",
+            "amount": "$225.00"
+          }
+        ],
+        "countersignature": "Megan Hart, Authorized Representative",
+        "countersignature_date": "07/18/2025",
+        "form_number": null,
+        "endorsement_title": null,
+        "endorsement_number": null,
+        "schedule_rows": null,
+        "provisions": null,
+        "additional_premium": null,
+        "change_description": null,
+        "coverages": null,
+        "total_premium": "$18,640.00",
+        "effective_date": "08/01/2025",
+        "expiration_date": "08/01/2026",
+        "nr_kind": null,
+        "nr_header_rows": null,
+        "nr_columns": null,
+        "nr_rows": null,
+        "unrelated_subtitle": null,
+        "unrelated_body": null
+      }
+    ]
+  }
+}

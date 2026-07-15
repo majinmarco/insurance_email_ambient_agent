@@ -1,0 +1,917 @@
+{
+  "case_id": "messy-new_submission-multi",
+  "tier": "messy",
+  "seed": 11,
+  "email_type": "new_submission",
+  "attachments_mode": "on",
+  "max_docs_per_attachment": 3,
+  "max_attachments": 3,
+  "force_format": null,
+  "persona_index": 6,
+  "content_source": "llm",
+  "noise_manifest": {
+    "email": {
+      "persona_index": 6,
+      "thread": false,
+      "signature": true,
+      "subject_style": "typo",
+      "multi_recipient": true,
+      "body_only": true,
+      "inconsistency": false,
+      "date_received": "2026-06-25T12:54:00+00:00"
+    },
+    "attachments": [
+      {
+        "filename": "Insurance Documents.pdf"
+      },
+      {
+        "filename": "Insurance Documents.pdf"
+      }
+    ],
+    "docs": [
+      {
+        "delimiter_mode": "plain",
+        "layout_variant": 1,
+        "watermark": null,
+        "content_noise": false,
+        "content_noise_level": 0.35,
+        "is_scanned": false,
+        "render_format": "pdf"
+      },
+      {
+        "delimiter_mode": "bold_caps",
+        "layout_variant": 0,
+        "watermark": null,
+        "content_noise": true,
+        "content_noise_level": 0.35,
+        "is_scanned": false,
+        "render_format": "pdf"
+      },
+      {
+        "delimiter_mode": "bold_caps",
+        "layout_variant": 1,
+        "watermark": "SPECIMEN",
+        "content_noise": false,
+        "content_noise_level": 0.35,
+        "is_scanned": false,
+        "render_format": "pdf"
+      },
+      {
+        "delimiter_mode": "bold_caps",
+        "layout_variant": 0,
+        "watermark": "DUPLICATE",
+        "content_noise": true,
+        "content_noise_level": 0.35,
+        "is_scanned": false,
+        "render_format": "pdf"
+      },
+      {
+        "delimiter_mode": "bold_caps",
+        "layout_variant": 2,
+        "watermark": null,
+        "content_noise": false,
+        "content_noise_level": 0.35,
+        "is_scanned": false,
+        "render_format": "pdf"
+      },
+      {
+        "delimiter_mode": "bold_caps",
+        "layout_variant": 2,
+        "watermark": null,
+        "content_noise": false,
+        "content_noise_level": 0.35,
+        "is_scanned": false,
+        "render_format": "pdf"
+      }
+    ],
+    "expected": {
+      "email_type_hard": false,
+      "per_attachment_collapse": [
+        true,
+        true
+      ],
+      "per_attachment_scanned": [
+        false,
+        false
+      ],
+      "per_attachment_expect_interrupt": [
+        false,
+        false
+      ]
+    }
+  },
+  "raw_scenario": {
+    "shared": {
+      "named_insured": "Coastal Property Management LLC",
+      "policy_number": "CPM-2026-1001",
+      "insured_address": "500 N Westshore Blvd, Tampa, FL 33609",
+      "contact_name": "Hector Ramos",
+      "contact_email": "hramos@coastalpm.com",
+      "contact_phone": "(813) 555-0177",
+      "carrier_name": "Nationwide Mutual Insurance Company",
+      "effective_date": "2026-02-01",
+      "expiration_date": "2027-02-01",
+      "coverage_limits": [
+        {
+          "coverage": "Commercial General Liability",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Business Auto Liability",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Umbrella Liability",
+          "limit": "$5,000,000"
+        },
+        {
+          "coverage": "Workers Compensation",
+          "limit": "Statutory"
+        }
+      ],
+      "total_premium": "$18,745",
+      "producer": {
+        "agency": "Gulf Coast Insurance Group",
+        "address": "2202 N Westshore Blvd, Suite 300, Tampa, FL 33607",
+        "contact_name": "Mia Chen",
+        "phone": "(813) 555-0412",
+        "fax": "(813) 555-0413",
+        "email": "submissions@gulfcoastig.com"
+      },
+      "insurers": [
+        {
+          "letter": "A",
+          "name": "Nationwide Mutual Insurance Company",
+          "naic": "23787"
+        },
+        {
+          "letter": "B",
+          "name": "Nationwide Affinity Insurance Company of America",
+          "naic": "26093"
+        },
+        {
+          "letter": "C",
+          "name": "Nationwide Property and Casualty Insurance Company",
+          "naic": "23760"
+        },
+        {
+          "letter": "D",
+          "name": "Allied Property and Casualty Insurance Company",
+          "naic": "42579"
+        },
+        {
+          "letter": "E",
+          "name": "Country Mutual Insurance Company",
+          "naic": "14249"
+        },
+        {
+          "letter": "F",
+          "name": "Agribusiness Insurance Company",
+          "naic": "22136"
+        }
+      ],
+      "business_description": "Commercial real estate management (retail centers)",
+      "entity_type": "Limited Liability Company",
+      "fein": "83-4179621",
+      "naic_carrier": "23787"
+    },
+    "email": {
+      "subject": "New submission for Coatsal Property Management LLC effective 02/01/2026",
+      "body": "Attached.\n\n--\nHector Ramos\nCoastal Property Management LLC\n(813) 555-0177",
+      "sender": "Mia Chen <submissions@gulfcoastig.com>",
+      "recipient": "Hector Ramos <hramos@coastalpm.com>, newbusiness@coastalpm.com"
+    },
+    "documents": [
+      {
+        "title": "Premium Invoice - Coastal Property Management LLC",
+        "certificate_holder": null,
+        "coverage_lines": null,
+        "description_of_operations": null,
+        "authorized_representative": null,
+        "certificate_number": null,
+        "revision_number": null,
+        "invoice_number": "INV-260201-01",
+        "invoice_date": "02/01/2026",
+        "account_number": "CPM-2026-1001",
+        "line_items": [
+          {
+            "description": "Policy Premium",
+            "amount": "$16,950.00"
+          },
+          {
+            "description": "Terrorism (TRIA)",
+            "amount": "$145.00"
+          },
+          {
+            "description": "Florida surplus lines tax / surcharge",
+            "amount": "$1,352.00"
+          },
+          {
+            "description": "Broker Fee",
+            "amount": "$298.00"
+          },
+          {
+            "description": "Prior Balance",
+            "amount": "$0.00"
+          }
+        ],
+        "subtotal": "$16,950.00",
+        "taxes": "$1,352.00",
+        "fees": "$443.00",
+        "prior_balance": "$0.00",
+        "amount_due": "$18,745.00",
+        "billing_period": "02/01/2026 to 02/01/2027",
+        "due_date": "02/15/2026",
+        "payment_methods": "ACH, check, or wire transfer",
+        "remit_to": "Nationwide Mutual Insurance Company, P.O. Box 742523, Cincinnati, OH 45274-2523, Attn: Commercial Billing",
+        "coverage_parts": null,
+        "forms_schedule": null,
+        "premium_summary": null,
+        "countersignature": null,
+        "countersignature_date": null,
+        "form_number": null,
+        "endorsement_title": null,
+        "endorsement_number": null,
+        "schedule_rows": null,
+        "provisions": null,
+        "additional_premium": null,
+        "change_description": null,
+        "coverages": null,
+        "total_premium": null,
+        "effective_date": null,
+        "expiration_date": null,
+        "nr_kind": null,
+        "nr_header_rows": null,
+        "nr_columns": null,
+        "nr_rows": null,
+        "unrelated_subtitle": null,
+        "unrelated_body": null
+      },
+      {
+        "title": "Premium Invoice - Coastal Property Management LLC",
+        "certificate_holder": null,
+        "coverage_lines": null,
+        "description_of_operations": null,
+        "authorized_representative": null,
+        "certificate_number": null,
+        "revision_number": null,
+        "invoice_number": "INV-260201-02",
+        "invoice_date": "02/01/2026",
+        "account_number": "CPM-2026-1001",
+        "line_items": [
+          {
+            "description": "Policy Premium",
+            "amount": "$16,950.00"
+          },
+          {
+            "description": "Terrorism (TRIA)",
+            "amount": "$145.00"
+          },
+          {
+            "description": "Florida surplus lines tax / surcharge",
+            "amount": "$1,352.00"
+          },
+          {
+            "description": "Broker Fee",
+            "amount": "$298.00"
+          },
+          {
+            "description": "Prior Balance",
+            "amount": "$0.00"
+          }
+        ],
+        "subtotal": "$16,950.00",
+        "taxes": "$1,352.00",
+        "fees": "$443.00",
+        "prior_balance": "$0.00",
+        "amount_due": "$18,745.00",
+        "billing_period": "02/01/2026 to 02/01/2027",
+        "due_date": "02/15/2026",
+        "payment_methods": "ACH, cheeck, or wire trasfer",
+        "remit_to": "Nationwide Mutual Insuranc Company, P.O. Box 7422, Cincinnati, OH 45274-2523, Attn: Commercial Billing",
+        "coverage_parts": null,
+        "forms_schedule": null,
+        "premium_summary": null,
+        "countersignature": null,
+        "countersignature_date": null,
+        "form_number": null,
+        "endorsement_title": null,
+        "endorsement_number": null,
+        "schedule_rows": null,
+        "provisions": null,
+        "additional_premium": null,
+        "change_description": null,
+        "coverages": null,
+        "total_premium": null,
+        "effective_date": null,
+        "expiration_date": null,
+        "nr_kind": null,
+        "nr_header_rows": null,
+        "nr_columns": null,
+        "nr_rows": null,
+        "unrelated_subtitle": null,
+        "unrelated_body": null
+      },
+      {
+        "title": "Commercial Package Declarations - Coastal Property Management LLC",
+        "certificate_holder": null,
+        "coverage_lines": null,
+        "description_of_operations": null,
+        "authorized_representative": null,
+        "certificate_number": null,
+        "revision_number": null,
+        "invoice_number": null,
+        "invoice_date": null,
+        "account_number": null,
+        "line_items": null,
+        "subtotal": null,
+        "taxes": null,
+        "fees": null,
+        "prior_balance": null,
+        "amount_due": null,
+        "billing_period": null,
+        "due_date": null,
+        "payment_methods": null,
+        "remit_to": null,
+        "coverage_parts": [
+          {
+            "insurer_letter": "A",
+            "coverage_type": "Commercial General Liability",
+            "policy_number": "CPM-2026-1001",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": false,
+            "subro_waived": false,
+            "limits": [
+              {
+                "coverage": "Each Occurrence",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "Damage to Rented Premises",
+                "limit": "$300,000"
+              },
+              {
+                "coverage": "Medical Expense",
+                "limit": "$5,000"
+              },
+              {
+                "coverage": "Personal & Advertising Injury",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "General Aggregate",
+                "limit": "$2,000,000"
+              },
+              {
+                "coverage": "Products-Comp/Op Aggregate",
+                "limit": "$2,000,000"
+              }
+            ],
+            "premium": "$6,250"
+          },
+          {
+            "insurer_letter": "C",
+            "coverage_type": "Business Auto Liability",
+            "policy_number": "CPM-2026-1001",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": false,
+            "subro_waived": false,
+            "limits": [
+              {
+                "coverage": "Combined Single Limit",
+                "limit": "$1,000,000"
+              }
+            ],
+            "premium": "$3,450"
+          },
+          {
+            "insurer_letter": "D",
+            "coverage_type": "Umbrella Liability",
+            "policy_number": "CPM-2026-1001",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": false,
+            "subro_waived": false,
+            "limits": [
+              {
+                "coverage": "Each Occurrence",
+                "limit": "$5,000,000"
+              },
+              {
+                "coverage": "General Aggregate",
+                "limit": "$5,000,000"
+              }
+            ],
+            "premium": "$2,100"
+          },
+          {
+            "insurer_letter": "E",
+            "coverage_type": "Workers Compensation",
+            "policy_number": "CPM-2026-1001",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": false,
+            "subro_waived": false,
+            "limits": [
+              {
+                "coverage": "E.L. Each Accident",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "E.L. Disease-Ea Employee",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "E.L. Disease-Policy Limit",
+                "limit": "$1,000,000"
+              }
+            ],
+            "premium": "$5,150"
+          }
+        ],
+        "forms_schedule": [
+          {
+            "form_number": "CG 00 01 04 13",
+            "title": "Commercial General Liability Coverage Form"
+          },
+          {
+            "form_number": "CG 21 39 12 19",
+            "title": "Contractual Liability Limitation"
+          },
+          {
+            "form_number": "CG 20 10 04 13",
+            "title": "Additional Insured - Owners, Lessees or Contractors - Scheduled Person or Organization"
+          },
+          {
+            "form_number": "CG 20 37 04 13",
+            "title": "Additional Insured - Owners, Lessees or Contractors - Completed Operations"
+          },
+          {
+            "form_number": "CA 00 01 11 20",
+            "title": "Business Auto Coverage Form"
+          },
+          {
+            "form_number": "CA 20 48 10 13",
+            "title": "Designated Insured Endorsement"
+          },
+          {
+            "form_number": "CA 99 48 10 13",
+            "title": "Broadened Coverage - Garbage and Refuse Collection Vehicles"
+          },
+          {
+            "form_number": "CU 00 01 11 15",
+            "title": "Commercial Umbrella Coverage Form"
+          },
+          {
+            "form_number": "WC 00 00 00 C",
+            "title": "Workers Compensation and Employers Liability Insurance Policy"
+          },
+          {
+            "form_number": "IL 00 17 11 98",
+            "title": "Common Policy Conditions"
+          }
+        ],
+        "premium_summary": [
+          {
+            "description": "Policy Premium",
+            "amount": "$16,950.00"
+          },
+          {
+            "description": "Terrorism (TRIA)",
+            "amount": "$145.00"
+          },
+          {
+            "description": "Taxes and Fees",
+            "amount": "$1,650.00"
+          },
+          {
+            "description": "Total Premium",
+            "amount": "$18,745.00"
+          }
+        ],
+        "countersignature": "Nationwide Mutual Insurance Company by Gulf Coast Insurance Group, Authorized Representative",
+        "countersignature_date": "02/01/2026",
+        "form_number": null,
+        "endorsement_title": null,
+        "endorsement_number": null,
+        "schedule_rows": null,
+        "provisions": null,
+        "additional_premium": null,
+        "change_description": null,
+        "coverages": null,
+        "total_premium": "$18,745.00",
+        "effective_date": "02/01/2026",
+        "expiration_date": "02/01/2027",
+        "nr_kind": null,
+        "nr_header_rows": null,
+        "nr_columns": null,
+        "nr_rows": null,
+        "unrelated_subtitle": null,
+        "unrelated_body": null
+      },
+      {
+        "title": "ACORD 25 Certificate of Liability Insurance",
+        "certificate_holder": "Bayview Retal Center, LLC 1101 S. Dale Mabry Hwy, Suite 200, Tampa, FL 62",
+        "coverage_lines": [
+          {
+            "insurer_letter": "A",
+            "coverage_type": "Commercial General Liability",
+            "policy_number": "CPM-2026-1001",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": true,
+            "subro_waived": true,
+            "limits": [
+              {
+                "coverage": "Each Occurrence",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "Damage to Rented Premises",
+                "limit": "$300,000"
+              },
+              {
+                "coverage": "Med Exp",
+                "limit": "$5,000"
+              },
+              {
+                "coverage": "Personal & Adv Injury",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "General Aggregate",
+                "limit": "$2,000,000"
+              },
+              {
+                "coverage": "Products-Comp/Op Agg",
+                "limit": "$2,000,000"
+              }
+            ],
+            "premium": null
+          },
+          {
+            "insurer_letter": "C",
+            "coverage_type": "Automobile Liability",
+            "policy_number": "CPM-2026-1001",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": true,
+            "subro_waived": true,
+            "limits": [
+              {
+                "coverage": "Combined Single Limit",
+                "limit": "$1,000,000"
+              }
+            ],
+            "premium": null
+          },
+          {
+            "insurer_letter": "D",
+            "coverage_type": "Umbrella Liability",
+            "policy_number": "CPM-2026-1001",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": true,
+            "subro_waived": true,
+            "limits": [
+              {
+                "coverage": "Each Occurrence",
+                "limit": "$5,000,000"
+              },
+              {
+                "coverage": "General Aggregate",
+                "limit": "$5,000,000"
+              }
+            ],
+            "premium": null
+          },
+          {
+            "insurer_letter": "E",
+            "coverage_type": "Workers Compensation",
+            "policy_number": "CPM-2026-1001",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": false,
+            "subro_waived": true,
+            "limits": [
+              {
+                "coverage": "E.L. Each Accident",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "E.L. Disease-Ea Employee",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "E.L. Disease-Policy Limit",
+                "limit": "$1,000,000"
+              }
+            ],
+            "premium": null
+          }
+        ],
+        "description_of_operations": "Coasstal Property Management LLC is named insured for commercial real esttate management operations. Bayview Retail Center, LLC is inluddedd as certificate holder on1y. Coverage evidenced herrein is subject to ppolicy terms and conditons. Additional insured status applies where required b written contract and is provided fo Commercial General Liability aand Auomobile Liability whee endorsed by CG 20 10 04 13 / CG 20 37 04 13 and CA 20 48 10 13. Coverage is primary and no-contributory where required by endorsement. Waiver of subrogati0n applies when endorsed by CG 24 04 05 09, CG 24 05 055 09, CA 04 44 10 13, or applicable workers compensation endorsemnt.",
+        "authorized_representative": "Mia Chen, Authorized Representative",
+        "certificate_number": "CERT-260201-8841",
+        "revision_number": null,
+        "invoice_number": null,
+        "invoice_date": null,
+        "account_number": null,
+        "line_items": null,
+        "subtotal": null,
+        "taxes": null,
+        "fees": null,
+        "prior_balance": null,
+        "amount_due": null,
+        "billing_period": null,
+        "due_date": null,
+        "payment_methods": null,
+        "remit_to": null,
+        "coverage_parts": null,
+        "forms_schedule": null,
+        "premium_summary": null,
+        "countersignature": null,
+        "countersignature_date": null,
+        "form_number": null,
+        "endorsement_title": null,
+        "endorsement_number": null,
+        "schedule_rows": null,
+        "provisions": null,
+        "additional_premium": null,
+        "change_description": null,
+        "coverages": null,
+        "total_premium": null,
+        "effective_date": null,
+        "expiration_date": null,
+        "nr_kind": null,
+        "nr_header_rows": null,
+        "nr_columns": null,
+        "nr_rows": null,
+        "unrelated_subtitle": null,
+        "unrelated_body": null
+      },
+      {
+        "title": "Premium Invoice - Coastal Property Management LLC",
+        "certificate_holder": null,
+        "coverage_lines": null,
+        "description_of_operations": null,
+        "authorized_representative": null,
+        "certificate_number": null,
+        "revision_number": null,
+        "invoice_number": "INV-260201-03",
+        "invoice_date": "02/01/2026",
+        "account_number": "CPM-2026-1001",
+        "line_items": [
+          {
+            "description": "Policy Premium",
+            "amount": "$16,950.00"
+          },
+          {
+            "description": "Terrorism (TRIA)",
+            "amount": "$145.00"
+          },
+          {
+            "description": "Florida surplus lines tax / surcharge",
+            "amount": "$1,352.00"
+          },
+          {
+            "description": "Broker Fee",
+            "amount": "$298.00"
+          },
+          {
+            "description": "Prior Balance",
+            "amount": "$0.00"
+          }
+        ],
+        "subtotal": "$16,950.00",
+        "taxes": "$1,352.00",
+        "fees": "$443.00",
+        "prior_balance": "$0.00",
+        "amount_due": "$18,745.00",
+        "billing_period": "02/01/2026 to 02/01/2027",
+        "due_date": "02/15/2026",
+        "payment_methods": "ACH, check, or wire transfer",
+        "remit_to": "Nationwide Mutual Insurance Company, P.O. Box 742523, Cincinnati, OH 45274-2523, Attn: Commercial Billing",
+        "coverage_parts": null,
+        "forms_schedule": null,
+        "premium_summary": null,
+        "countersignature": null,
+        "countersignature_date": null,
+        "form_number": null,
+        "endorsement_title": null,
+        "endorsement_number": null,
+        "schedule_rows": null,
+        "provisions": null,
+        "additional_premium": null,
+        "change_description": null,
+        "coverages": null,
+        "total_premium": null,
+        "effective_date": null,
+        "expiration_date": null,
+        "nr_kind": null,
+        "nr_header_rows": null,
+        "nr_columns": null,
+        "nr_rows": null,
+        "unrelated_subtitle": null,
+        "unrelated_body": null
+      },
+      {
+        "title": "Commercial Package Declarations - Coastal Property Management LLC",
+        "certificate_holder": null,
+        "coverage_lines": null,
+        "description_of_operations": null,
+        "authorized_representative": null,
+        "certificate_number": null,
+        "revision_number": null,
+        "invoice_number": null,
+        "invoice_date": null,
+        "account_number": null,
+        "line_items": null,
+        "subtotal": null,
+        "taxes": null,
+        "fees": null,
+        "prior_balance": null,
+        "amount_due": null,
+        "billing_period": null,
+        "due_date": null,
+        "payment_methods": null,
+        "remit_to": null,
+        "coverage_parts": [
+          {
+            "insurer_letter": "A",
+            "coverage_type": "Commercial General Liability",
+            "policy_number": "CPM-2026-1001",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": false,
+            "subro_waived": false,
+            "limits": [
+              {
+                "coverage": "Each Occurrence",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "Damage to Rented Premises",
+                "limit": "$300,000"
+              },
+              {
+                "coverage": "Medical Expense",
+                "limit": "$5,000"
+              },
+              {
+                "coverage": "Personal & Advertising Injury",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "General Aggregate",
+                "limit": "$2,000,000"
+              },
+              {
+                "coverage": "Products-Comp/Op Aggregate",
+                "limit": "$2,000,000"
+              }
+            ],
+            "premium": "$6,250"
+          },
+          {
+            "insurer_letter": "C",
+            "coverage_type": "Business Auto Liability",
+            "policy_number": "CPM-2026-1001",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": false,
+            "subro_waived": false,
+            "limits": [
+              {
+                "coverage": "Combined Single Limit",
+                "limit": "$1,000,000"
+              }
+            ],
+            "premium": "$3,450"
+          },
+          {
+            "insurer_letter": "D",
+            "coverage_type": "Umbrella Liability",
+            "policy_number": "CPM-2026-1001",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": false,
+            "subro_waived": false,
+            "limits": [
+              {
+                "coverage": "Each Occurrence",
+                "limit": "$5,000,000"
+              },
+              {
+                "coverage": "General Aggregate",
+                "limit": "$5,000,000"
+              }
+            ],
+            "premium": "$2,100"
+          },
+          {
+            "insurer_letter": "E",
+            "coverage_type": "Workers Compensation",
+            "policy_number": "CPM-2026-1001",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": false,
+            "subro_waived": false,
+            "limits": [
+              {
+                "coverage": "E.L. Each Accident",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "E.L. Disease-Ea Employee",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "E.L. Disease-Policy Limit",
+                "limit": "$1,000,000"
+              }
+            ],
+            "premium": "$5,150"
+          }
+        ],
+        "forms_schedule": [
+          {
+            "form_number": "CG 00 01 04 13",
+            "title": "Commercial General Liability Coverage Form"
+          },
+          {
+            "form_number": "CG 20 10 04 13",
+            "title": "Additional Insured - Owners, Lessees or Contractors - Scheduled Person or Organization"
+          },
+          {
+            "form_number": "CG 24 04 05 09",
+            "title": "Waiver of Transfer of Rights of Recovery Against Others To Us"
+          },
+          {
+            "form_number": "CA 00 01 11 20",
+            "title": "Business Auto Coverage Form"
+          },
+          {
+            "form_number": "CA 20 48 10 13",
+            "title": "Designated Insured Endorsement"
+          },
+          {
+            "form_number": "CA 04 44 10 13",
+            "title": "Waiver of Transfer of Rights of Recovery Against Others To Us"
+          },
+          {
+            "form_number": "CU 00 01 11 15",
+            "title": "Commercial Umbrella Coverage Form"
+          },
+          {
+            "form_number": "WC 00 00 00 C",
+            "title": "Workers Compensation and Employers Liability Insurance Policy"
+          },
+          {
+            "form_number": "IL 00 17 11 98",
+            "title": "Common Policy Conditions"
+          }
+        ],
+        "premium_summary": [
+          {
+            "description": "Policy Premium",
+            "amount": "$16,950.00"
+          },
+          {
+            "description": "Terrorism (TRIA)",
+            "amount": "$145.00"
+          },
+          {
+            "description": "Taxes and Fees",
+            "amount": "$1,650.00"
+          },
+          {
+            "description": "Total Premium",
+            "amount": "$18,745.00"
+          }
+        ],
+        "countersignature": "Nationwide Mutual Insurance Company by Gulf Coast Insurance Group, Authorized Representative",
+        "countersignature_date": "02/01/2026",
+        "form_number": null,
+        "endorsement_title": null,
+        "endorsement_number": null,
+        "schedule_rows": null,
+        "provisions": null,
+        "additional_premium": null,
+        "change_description": null,
+        "coverages": null,
+        "total_premium": "$18,745.00",
+        "effective_date": "02/01/2026",
+        "expiration_date": "02/01/2027",
+        "nr_kind": null,
+        "nr_header_rows": null,
+        "nr_columns": null,
+        "nr_rows": null,
+        "unrelated_subtitle": null,
+        "unrelated_body": null
+      }
+    ]
+  }
+}

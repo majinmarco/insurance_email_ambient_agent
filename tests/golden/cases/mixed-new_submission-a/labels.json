@@ -1,0 +1,68 @@
+{
+  "case_id": "mixed-new_submission-a",
+  "tier": "mixed",
+  "email": {
+    "email_type": "new_submission",
+    "email_type_hard": true,
+    "extraction": {
+      "named_insured": "Riverside Manufacturing Co.",
+      "policy_number": null,
+      "requested_effective_date": "2026-02-01",
+      "requested_changes": "Quote/bind a new commercial package policy.",
+      "contact_name": "Karen Delgado",
+      "contact_phone": "(216) 555-0173"
+    }
+  },
+  "attachments": [
+    {
+      "filename": "Scan_6088.pdf",
+      "render_format": "pdf",
+      "n_pages": 2,
+      "documents": [
+        {
+          "index": 0,
+          "doc_type": "insurance declaration",
+          "page_start": 0,
+          "page_end": 0,
+          "extraction": {
+            "named_insured": "Riverside Manufacturing Co.",
+            "policy_number": null,
+            "coverages": {
+              "Commercial General Liability": "$12,450",
+              "Business Personal Property": "$8,760",
+              "Commercial Automobile Liability": "$11,840",
+              "Workers Compensation": "$9,925",
+              "Umbrella Liability": "$3,650"
+            },
+            "total_premium": 48625.0
+          }
+        },
+        {
+          "index": 1,
+          "doc_type": "insurance invoice",
+          "page_start": 1,
+          "page_end": 1,
+          "extraction": {
+            "named_insured": "Riverside Manufacturing Co.",
+            "policy_number": null,
+            "amount_due": 48775.0,
+            "billing_period": "02/01/2026 to 02/01/2027",
+            "policy_reference": null,
+            "due_date": "2026-02-01"
+          }
+        }
+      ],
+      "boundary_page_offsets": [
+        1
+      ],
+      "n_documents": 2,
+      "expected_segment_types": [
+        "insurance declaration",
+        "insurance invoice"
+      ],
+      "expected_collapse": false,
+      "expected_scanned": false,
+      "expected_interrupt": false
+    }
+  ]
+}

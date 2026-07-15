@@ -1,0 +1,218 @@
+{
+  "case_id": "messy-endorsement-html",
+  "tier": "messy",
+  "seed": 602,
+  "email_type": "endorsement",
+  "attachments_mode": "on",
+  "max_docs_per_attachment": 1,
+  "max_attachments": 1,
+  "force_format": "html",
+  "persona_index": 6,
+  "content_source": "llm",
+  "noise_manifest": {
+    "email": {
+      "persona_index": 6,
+      "thread": true,
+      "signature": true,
+      "subject_style": null,
+      "multi_recipient": true,
+      "body_only": false,
+      "inconsistency": false,
+      "date_received": "2026-06-24T12:03:00+00:00"
+    },
+    "attachments": [
+      {
+        "filename": "202607086987.html"
+      }
+    ],
+    "docs": [
+      {
+        "delimiter_mode": "bold_caps",
+        "layout_variant": 2,
+        "watermark": null,
+        "content_noise": false,
+        "content_noise_level": 0.35,
+        "is_scanned": false,
+        "render_format": "html"
+      }
+    ],
+    "expected": {
+      "email_type_hard": true,
+      "per_attachment_collapse": [
+        false
+      ],
+      "per_attachment_scanned": [
+        false
+      ],
+      "per_attachment_expect_interrupt": [
+        false
+      ]
+    }
+  },
+  "raw_scenario": {
+    "shared": {
+      "named_insured": "Coastal Property Management LLC",
+      "policy_number": "CPP-2214569",
+      "insured_address": "500 N Westshore Blvd, Tampa, FL 33609",
+      "contact_name": "Hector Ramos",
+      "contact_email": "hramos@coastalpm.com",
+      "contact_phone": "(813) 555-0177",
+      "carrier_name": "Nationwide Mutual Insurance Company",
+      "effective_date": "2026-02-15",
+      "expiration_date": "2027-02-15",
+      "coverage_limits": [
+        {
+          "coverage": "Each Occurrence",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "General Aggregate",
+          "limit": "$2,000,000"
+        },
+        {
+          "coverage": "Personal and Advertising Injury",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Damage to Premises Rented to You",
+          "limit": "$300,000"
+        },
+        {
+          "coverage": "Medical Expense Limit",
+          "limit": "$5,000"
+        },
+        {
+          "coverage": "Combined Single Limit",
+          "limit": "$1,000,000"
+        }
+      ],
+      "total_premium": "$18,740",
+      "producer": {
+        "agency": "Gulf Coast Insurance Group",
+        "address": "1001 S Dale Mabry Hwy, Suite 300, Tampa, FL 33629",
+        "contact_name": "Marissa Cole",
+        "phone": "(813) 555-0842",
+        "fax": "(813) 555-0843",
+        "email": "submissions@gulfcoastig.com"
+      },
+      "insurers": [
+        {
+          "letter": "A",
+          "name": "Nationwide Mutual Insurance Company",
+          "naic": "23787"
+        },
+        {
+          "letter": "B",
+          "name": "Nationwide Property and Casualty Insurance Company",
+          "naic": "37877"
+        },
+        {
+          "letter": "C",
+          "name": "Nationwide Affinity Insurance Company of America",
+          "naic": "26093"
+        },
+        {
+          "letter": "D",
+          "name": "Nationwide General Insurance Company",
+          "naic": "25453"
+        },
+        {
+          "letter": "E",
+          "name": "Allied Property and Casualty Insurance Company",
+          "naic": "42579"
+        },
+        {
+          "letter": "F",
+          "name": "Farmland Mutual Insurance Company",
+          "naic": "13897"
+        }
+      ],
+      "business_description": "Commercial real estate management (retail centers)",
+      "entity_type": "Limited Liability Company",
+      "fein": "47-2861943",
+      "naic_carrier": "23787"
+    },
+    "email": {
+      "subject": "Fwd: Request for mid-term endorsement to CPP-2214569 for Coastal Property Management LLC",
+      "body": "Good morning,\n\nPlease process the attached mid-term endorsement for Coastal Property Management LLC, policy number CPP-2214569, effective 02/15/2026.\n\nRequested change: add one owned service vehicle to the policy schedule effective 02/15/2026, with the corresponding coverage and premium adjustment reflected on the endorsement.\n\nPlease confirm once the endorsement has been issued and advise if you need any additional information to complete the transaction.\n\nThank you,\nHector Ramos\nCoastal Property Management LLC\n\nOn last Tuesday, Marissa Cole <submissions@gulfcoastig.com> wrote:\n> Thanks for sending this over \u2014 can you confirm the requested effective date and whether any additional insureds are needed?\n>\n> Regards,\n> Marissa Cole\n\n--\nHector Ramos\nCoastal Property Management LLC\n(813) 555-0177",
+      "sender": "Marissa Cole <submissions@gulfcoastig.com>",
+      "recipient": "Hector Ramos <hramos@coastalpm.com>, submissions@coastalpm.com"
+    },
+    "documents": [
+      {
+        "title": "Policy Change Endorsement",
+        "certificate_holder": null,
+        "coverage_lines": null,
+        "description_of_operations": null,
+        "authorized_representative": null,
+        "certificate_number": null,
+        "revision_number": null,
+        "invoice_number": null,
+        "invoice_date": null,
+        "account_number": null,
+        "line_items": null,
+        "subtotal": null,
+        "taxes": null,
+        "fees": null,
+        "prior_balance": null,
+        "amount_due": null,
+        "billing_period": null,
+        "due_date": null,
+        "payment_methods": null,
+        "remit_to": null,
+        "coverage_parts": null,
+        "forms_schedule": null,
+        "premium_summary": null,
+        "countersignature": null,
+        "countersignature_date": null,
+        "form_number": "CP 04 17 06 15",
+        "endorsement_title": "Business Auto Coverage Form \u2014 Schedule Change Endorsement",
+        "endorsement_number": "CP 04 17",
+        "schedule_rows": [
+          {
+            "label": "Named Insured",
+            "value": "Coastal Property Management LLC"
+          },
+          {
+            "label": "Policy Number",
+            "value": "CPP-2214569"
+          },
+          {
+            "label": "Effective Date",
+            "value": "02/15/2026"
+          },
+          {
+            "label": "Vehicle Added",
+            "value": "2022 Ford F-150 XL; VIN 1FTMF1CB2NKE12345; Unit No. 5; Garage Location: 500 N Westshore Blvd, Tampa, FL 33609"
+          },
+          {
+            "label": "Coverage",
+            "value": "Symbol 7 - Specifically Described Autos; Liability Coverage"
+          },
+          {
+            "label": "Premium Impact",
+            "value": "Additional premium $275"
+          }
+        ],
+        "provisions": [
+          "Schedule of Covered Autos is amended to include the vehicle described below, subject to the declarations and all other terms, conditions, exclusions and endorsements of the policy.",
+          "The following vehicle is added as a covered auto under this policy effective 02/15/2026: 2022 Ford F-150 XL, VIN 1FTMF1CB2NKE12345, Unit No. 5, garaged at 500 N Westshore Blvd, Tampa, FL 33609.",
+          "If applicable, premium for this change is based upon the addition of the vehicle and related exposure and is due and payable in accordance with the policy billing terms.",
+          "All other terms and conditions of this policy remain unchanged."
+        ],
+        "additional_premium": "$275",
+        "change_description": "Adds one owned service vehicle to the Business Auto schedule effective 02/15/2026.",
+        "coverages": null,
+        "total_premium": null,
+        "effective_date": "02/15/2026",
+        "expiration_date": null,
+        "nr_kind": null,
+        "nr_header_rows": null,
+        "nr_columns": null,
+        "nr_rows": null,
+        "unrelated_subtitle": null,
+        "unrelated_body": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "case_id": "mixed-claim_fnol-a",
+  "tier": "mixed",
+  "email": {
+    "email_type": "claim_fnol",
+    "email_type_hard": true,
+    "extraction": {
+      "named_insured": "Coastal Property Management LLC",
+      "policy_number": "CPP-2214569",
+      "requested_effective_date": null,
+      "requested_changes": "Report a new loss / open a claim.",
+      "contact_name": "Hector Ramos",
+      "contact_phone": "(813) 555-0177"
+    }
+  },
+  "attachments": [
+    {
+      "filename": "scan1615.pdf",
+      "render_format": "pdf",
+      "n_pages": 1,
+      "documents": [
+        {
+          "index": 0,
+          "doc_type": "insurance endorsement",
+          "page_start": 0,
+          "page_end": 0,
+          "extraction": {
+            "named_insured": "Coastal Property Management LLC",
+            "policy_number": "CPP-2214569",
+            "change_description": "Adds building and business personal property coverage for the Westshore Plaza retail center location effective 02/01/2026.",
+            "effective_date": "2026-02-01"
+          }
+        }
+      ],
+      "boundary_page_offsets": [],
+      "n_documents": 1,
+      "expected_segment_types": [
+        "insurance endorsement"
+      ],
+      "expected_collapse": false,
+      "expected_scanned": false,
+      "expected_interrupt": false
+    },
+    {
+      "filename": "scan8685.pdf",
+      "render_format": "pdf",
+      "n_pages": 1,
+      "documents": [
+        {
+          "index": 0,
+          "doc_type": "unrelated or unclear document",
+          "page_start": 0,
+          "page_end": 0,
+          "extraction": null
+        }
+      ],
+      "boundary_page_offsets": [],
+      "n_documents": 1,
+      "expected_segment_types": [],
+      "expected_collapse": false,
+      "expected_scanned": false,
+      "expected_interrupt": true
+    }
+  ]
+}

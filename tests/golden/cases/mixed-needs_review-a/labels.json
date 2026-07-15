@@ -1,0 +1,92 @@
+{
+  "case_id": "mixed-needs_review-a",
+  "tier": "mixed",
+  "email": {
+    "email_type": "needs_review",
+    "email_type_hard": true,
+    "extraction": {
+      "named_insured": "Riverside Manufacturing Co.",
+      "policy_number": "SBA-4471902",
+      "requested_effective_date": null,
+      "requested_changes": null,
+      "contact_name": "Karen Delgado",
+      "contact_phone": "(216) 555-0173"
+    }
+  },
+  "attachments": [
+    {
+      "filename": "scan1884.pdf",
+      "render_format": "pdf",
+      "n_pages": 2,
+      "documents": [
+        {
+          "index": 0,
+          "doc_type": "unrelated or unclear document",
+          "page_start": 0,
+          "page_end": 0,
+          "extraction": null
+        },
+        {
+          "index": 1,
+          "doc_type": "insurance endorsement",
+          "page_start": 1,
+          "page_end": 1,
+          "extraction": {
+            "named_insured": "Riverside Manufacturing Co.",
+            "policy_number": "SBA-4471902",
+            "change_description": "Add 2025 Freightliner Cascadia (VIN 3AKJHHDR9PSNL1234) as a scheduled Covered Auto; Combined Single Limit $1,000,000 each accident.",
+            "effective_date": "2026-08-15"
+          }
+        }
+      ],
+      "boundary_page_offsets": [
+        1
+      ],
+      "n_documents": 2,
+      "expected_segment_types": [
+        "insurance endorsement"
+      ],
+      "expected_collapse": false,
+      "expected_scanned": false,
+      "expected_interrupt": true
+    },
+    {
+      "filename": "Insurance Documents.pdf",
+      "render_format": "pdf",
+      "n_pages": 2,
+      "documents": [
+        {
+          "index": 0,
+          "doc_type": "insurance invoice",
+          "page_start": 0,
+          "page_end": 0,
+          "extraction": {
+            "named_insured": "Riverside Manufacturing Co.",
+            "policy_number": "SBA-4471902",
+            "amount_due": 19194.38,
+            "billing_period": "2026-08-01 to 2027-08-01",
+            "policy_reference": "SBA-4471902",
+            "due_date": "2026-07-25"
+          }
+        },
+        {
+          "index": 1,
+          "doc_type": "unrelated or unclear document",
+          "page_start": 1,
+          "page_end": 1,
+          "extraction": null
+        }
+      ],
+      "boundary_page_offsets": [
+        1
+      ],
+      "n_documents": 2,
+      "expected_segment_types": [
+        "insurance invoice"
+      ],
+      "expected_collapse": false,
+      "expected_scanned": false,
+      "expected_interrupt": true
+    }
+  ]
+}

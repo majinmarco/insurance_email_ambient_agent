@@ -1,0 +1,617 @@
+{
+  "case_id": "mixed-renewal-a",
+  "tier": "mixed",
+  "seed": 202,
+  "email_type": "renewal",
+  "attachments_mode": "on",
+  "max_docs_per_attachment": 2,
+  "max_attachments": 3,
+  "force_format": null,
+  "persona_index": 2,
+  "content_source": "llm",
+  "noise_manifest": {
+    "email": {
+      "persona_index": 2,
+      "thread": false,
+      "signature": false,
+      "subject_style": null,
+      "multi_recipient": false,
+      "body_only": false,
+      "inconsistency": true,
+      "date_received": "2026-06-26T11:06:00+00:00"
+    },
+    "attachments": [
+      {
+        "filename": "Insurance Documents.pdf"
+      },
+      {
+        "filename": "Scan_6520.pdf"
+      }
+    ],
+    "docs": [
+      {
+        "delimiter_mode": "hash",
+        "layout_variant": 0,
+        "watermark": null,
+        "content_noise": true,
+        "content_noise_level": 0.15,
+        "is_scanned": false,
+        "render_format": "pdf"
+      },
+      {
+        "delimiter_mode": "hash",
+        "layout_variant": 0,
+        "watermark": null,
+        "content_noise": false,
+        "content_noise_level": 0.15,
+        "is_scanned": false,
+        "render_format": "pdf"
+      },
+      {
+        "delimiter_mode": "hash",
+        "layout_variant": 0,
+        "watermark": null,
+        "content_noise": false,
+        "content_noise_level": 0.15,
+        "is_scanned": false,
+        "render_format": "pdf"
+      },
+      {
+        "delimiter_mode": "hash",
+        "layout_variant": 0,
+        "watermark": null,
+        "content_noise": true,
+        "content_noise_level": 0.15,
+        "is_scanned": false,
+        "render_format": "pdf"
+      }
+    ],
+    "expected": {
+      "email_type_hard": false,
+      "per_attachment_collapse": [
+        false,
+        false
+      ],
+      "per_attachment_scanned": [
+        false,
+        false
+      ],
+      "per_attachment_expect_interrupt": [
+        false,
+        true
+      ]
+    }
+  },
+  "raw_scenario": {
+    "shared": {
+      "named_insured": "Summit Ridge Construction Inc.",
+      "policy_number": "CPP-6612078",
+      "insured_address": "9400 E Arapahoe Rd, Centennial, CO 80112",
+      "contact_name": "Derek Olsson",
+      "contact_email": "dolsson@summitridgegc.com",
+      "contact_phone": "(303) 555-0188",
+      "carrier_name": "Travelers Indemnity Company",
+      "effective_date": "2026-08-01",
+      "expiration_date": "2027-08-01",
+      "coverage_limits": [
+        {
+          "coverage": "General Aggregate",
+          "limit": "$2,000,000"
+        },
+        {
+          "coverage": "Products-Completed Operations Aggregate",
+          "limit": "$2,000,000"
+        },
+        {
+          "coverage": "Each Occurrence",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Personal and Advertising Injury",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Damage to Premises Rented to You",
+          "limit": "$300,000"
+        },
+        {
+          "coverage": "Medical Expense Limit",
+          "limit": "$10,000"
+        }
+      ],
+      "total_premium": "$48,750",
+      "producer": {
+        "agency": "Front Range Commercial Insurance",
+        "address": "1801 California St, Suite 2700, Denver, CO 80202",
+        "contact_name": "Maya Whitaker",
+        "phone": "(303) 555-0441",
+        "fax": "(303) 555-0442",
+        "email": "newbusiness@frontrangeins.com"
+      },
+      "insurers": [
+        {
+          "letter": "A",
+          "name": "Travelers Indemnity Company",
+          "naic": "25658"
+        },
+        {
+          "letter": "B",
+          "name": "The Phoenix Insurance Company",
+          "naic": "25623"
+        },
+        {
+          "letter": "C",
+          "name": "The Charter Oak Fire Insurance Company",
+          "naic": "25615"
+        },
+        {
+          "letter": "D",
+          "name": "Travelers Casualty and Surety Company",
+          "naic": "19038"
+        },
+        {
+          "letter": "E",
+          "name": "Travelers Property Casualty Company of America",
+          "naic": "25674"
+        },
+        {
+          "letter": "F",
+          "name": "Travelers Personal Insurance Company",
+          "naic": "25135"
+        }
+      ],
+      "business_description": "Commercial general contractor (ground-up)",
+      "entity_type": "Corporation",
+      "fein": "84-2176934",
+      "naic_carrier": "25658"
+    },
+    "email": {
+      "subject": "Renewal quote request for Summit Ridge Construction Inc. policy CPP-6612078",
+      "body": "Hi Derek,\n\nWe are approaching the expiration of Summit Ridge Construction Inc.'s current Travelers policy CPP-6612078 and would like to request the renewal quote with an effective date of 08/01/2026.\n\nPlease confirm any updated exposure information needed for the renewal, including completed operations, subcontracted work, payroll, and any scheduled equipment changes. Once available, please send the renewal indications and any carrier requirements so we can review promptly.\n\nThank you,\nFront Range Commercial Insurance\n\nNote: the policy number on the attachment may be off by a digit; the correct one ends in 9.",
+      "sender": "Maya Whitaker <newbusiness@frontrangeins.com>",
+      "recipient": "Derek Olsson <dolsson@summitridgegc.com>"
+    },
+    "documents": [
+      {
+        "title": "Travelers Premium Invoice",
+        "certificate_holder": null,
+        "coverage_lines": null,
+        "description_of_operations": null,
+        "authorized_representative": null,
+        "certificate_number": null,
+        "revision_number": null,
+        "invoice_number": "TRV-INV-884217",
+        "invoice_date": "07/10/2026",
+        "account_number": "AC-6612078",
+        "line_items": [
+          {
+            "description": "Policy Premium",
+            "amount": "$48,750.00"
+          },
+          {
+            "description": "Terrorism (TRIA)",
+            "amount": "$325.00"
+          },
+          {
+            "description": "Colorado premium tax and surcharge",
+            "amount": "$1,294.00"
+          },
+          {
+            "description": "Broker Fee",
+            "amount": "$150.00"
+          },
+          {
+            "description": "Prior Balance",
+            "amount": "$0.00"
+          }
+        ],
+        "subtotal": "$48,750.00",
+        "taxes": "$1,294.00",
+        "fees": "$475.00",
+        "prior_balance": "$0.00",
+        "amount_due": "$50,844.00",
+        "billing_period": "08/01/2026 - 08/01/2027",
+        "due_date": "08/01/2026",
+        "payment_methods": "Check, ACH, or wire transfer",
+        "remit_to": "Travelrs Insurance, P.O. Box 660307, Dallas, TX 75266-0307",
+        "coverage_parts": null,
+        "forms_schedule": null,
+        "premium_summary": null,
+        "countersignature": null,
+        "countersignature_date": null,
+        "form_number": null,
+        "endorsement_title": null,
+        "endorsement_number": null,
+        "schedule_rows": null,
+        "provisions": null,
+        "additional_premium": null,
+        "change_description": null,
+        "coverages": null,
+        "total_premium": null,
+        "effective_date": null,
+        "expiration_date": null,
+        "nr_kind": null,
+        "nr_header_rows": null,
+        "nr_columns": null,
+        "nr_rows": null,
+        "unrelated_subtitle": null,
+        "unrelated_body": null
+      },
+      {
+        "title": "Commercial Package Declarations",
+        "certificate_holder": null,
+        "coverage_lines": null,
+        "description_of_operations": null,
+        "authorized_representative": null,
+        "certificate_number": null,
+        "revision_number": null,
+        "invoice_number": null,
+        "invoice_date": null,
+        "account_number": null,
+        "line_items": null,
+        "subtotal": null,
+        "taxes": null,
+        "fees": null,
+        "prior_balance": null,
+        "amount_due": null,
+        "billing_period": null,
+        "due_date": null,
+        "payment_methods": null,
+        "remit_to": null,
+        "coverage_parts": [
+          {
+            "insurer_letter": "A",
+            "coverage_type": "Commercial General Liability",
+            "policy_number": "CPP-6612078",
+            "effective_date": "08/01/2026",
+            "expiration_date": "08/01/2027",
+            "addl_insured": null,
+            "subro_waived": null,
+            "limits": [
+              {
+                "coverage": "Each Occurrence",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "General Aggregate",
+                "limit": "$2,000,000"
+              },
+              {
+                "coverage": "Products-Completed Operations Aggregate",
+                "limit": "$2,000,000"
+              },
+              {
+                "coverage": "Personal and Advertising Injury",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "Damage to Premises Rented to You",
+                "limit": "$300,000"
+              },
+              {
+                "coverage": "Medical Expense Limit",
+                "limit": "$10,000"
+              }
+            ],
+            "premium": "$28,400"
+          },
+          {
+            "insurer_letter": "B",
+            "coverage_type": "Commercial Inland Marine",
+            "policy_number": "CPP-6612078",
+            "effective_date": "08/01/2026",
+            "expiration_date": "08/01/2027",
+            "addl_insured": null,
+            "subro_waived": null,
+            "limits": [
+              {
+                "coverage": "Scheduled Property",
+                "limit": "$1,250,000"
+              },
+              {
+                "coverage": "Deductible",
+                "limit": "$5,000"
+              }
+            ],
+            "premium": "$7,850"
+          },
+          {
+            "insurer_letter": "C",
+            "coverage_type": "Commercial Automobile Liability",
+            "policy_number": "CPP-6612078",
+            "effective_date": "08/01/2026",
+            "expiration_date": "08/01/2027",
+            "addl_insured": null,
+            "subro_waived": null,
+            "limits": [
+              {
+                "coverage": "Combined Single Limit",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "Uninsured Motorists",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "Medical Payments",
+                "limit": "$5,000"
+              }
+            ],
+            "premium": "$9,100"
+          },
+          {
+            "insurer_letter": "D",
+            "coverage_type": "Umbrella Liability",
+            "policy_number": "CPP-6612078",
+            "effective_date": "08/01/2026",
+            "expiration_date": "08/01/2027",
+            "addl_insured": null,
+            "subro_waived": null,
+            "limits": [
+              {
+                "coverage": "Each Occurrence",
+                "limit": "$5,000,000"
+              },
+              {
+                "coverage": "General Aggregate",
+                "limit": "$5,000,000"
+              }
+            ],
+            "premium": "$3,400"
+          }
+        ],
+        "forms_schedule": [
+          {
+            "form_number": "CG 00 01 04 13",
+            "title": "Commercial General Liability Coverage Form"
+          },
+          {
+            "form_number": "CG 00 17 04 13",
+            "title": "General Liability Declarations Supplement"
+          },
+          {
+            "form_number": "CA 00 01 11 20",
+            "title": "Business Auto Coverage Form"
+          },
+          {
+            "form_number": "CA 00 20 01 18",
+            "title": "Colorado Changes - Business Auto Coverage Form"
+          },
+          {
+            "form_number": "CP 00 10 10 12",
+            "title": "Building and Personal Property Coverage Form"
+          },
+          {
+            "form_number": "CP 00 90 07 88",
+            "title": "Commercial Property Conditions"
+          },
+          {
+            "form_number": "CU 00 01 11 85",
+            "title": "Commercial Umbrella Coverage Form"
+          },
+          {
+            "form_number": "IL 00 17 11 98",
+            "title": "Common Policy Conditions"
+          }
+        ],
+        "premium_summary": [
+          {
+            "description": "Policy Premium",
+            "amount": "$48,750.00"
+          },
+          {
+            "description": "Terrorism (TRIA)",
+            "amount": "$325.00"
+          },
+          {
+            "description": "Taxes and Fees",
+            "amount": "$1,769.00"
+          },
+          {
+            "description": "Total Premium",
+            "amount": "$50,844.00"
+          }
+        ],
+        "countersignature": "Maya Whitaker, Authorized Representative",
+        "countersignature_date": "07/10/2026",
+        "form_number": null,
+        "endorsement_title": null,
+        "endorsement_number": null,
+        "schedule_rows": null,
+        "provisions": null,
+        "additional_premium": null,
+        "change_description": null,
+        "coverages": null,
+        "total_premium": "$50,844.00",
+        "effective_date": "08/01/2026",
+        "expiration_date": "08/01/2027",
+        "nr_kind": null,
+        "nr_header_rows": null,
+        "nr_columns": null,
+        "nr_rows": null,
+        "unrelated_subtitle": null,
+        "unrelated_body": null
+      },
+      {
+        "title": "Loss Run Report",
+        "certificate_holder": null,
+        "coverage_lines": null,
+        "description_of_operations": null,
+        "authorized_representative": null,
+        "certificate_number": null,
+        "revision_number": null,
+        "invoice_number": null,
+        "invoice_date": null,
+        "account_number": null,
+        "line_items": null,
+        "subtotal": null,
+        "taxes": null,
+        "fees": null,
+        "prior_balance": null,
+        "amount_due": null,
+        "billing_period": null,
+        "due_date": null,
+        "payment_methods": null,
+        "remit_to": null,
+        "coverage_parts": null,
+        "forms_schedule": null,
+        "premium_summary": null,
+        "countersignature": null,
+        "countersignature_date": null,
+        "form_number": null,
+        "endorsement_title": null,
+        "endorsement_number": null,
+        "schedule_rows": null,
+        "provisions": null,
+        "additional_premium": null,
+        "change_description": null,
+        "coverages": null,
+        "total_premium": null,
+        "effective_date": null,
+        "expiration_date": null,
+        "nr_kind": "Loss Run Report",
+        "nr_header_rows": [
+          {
+            "label": "Insured",
+            "value": "Summit Ridge Construction Inc."
+          },
+          {
+            "label": "Policy No.",
+            "value": "CPP-6612078"
+          },
+          {
+            "label": "Carrier",
+            "value": "Travelers Indemnity Company"
+          },
+          {
+            "label": "Valuation Date",
+            "value": "07/01/2026"
+          },
+          {
+            "label": "Prepared By",
+            "value": "Front Range Commercial Insurance"
+          }
+        ],
+        "nr_columns": [
+          "Policy Year",
+          "Coverage",
+          "Claim No.",
+          "Loss Date",
+          "Reported",
+          "Status",
+          "Paid",
+          "Reserved",
+          "Incurred"
+        ],
+        "nr_rows": [
+          {
+            "cells": [
+              "2025-2026",
+              "General Liability",
+              "GL-240118",
+              "11/14/2025",
+              "11/18/2025",
+              "Open",
+              "$12,500",
+              "$18,000",
+              "$30,500"
+            ]
+          },
+          {
+            "cells": [
+              "2025-2026",
+              "Commercial Auto",
+              "CA-240044",
+              "02/03/2026",
+              "02/04/2026",
+              "Closed",
+              "$4,200",
+              "$0",
+              "$4,200"
+            ]
+          },
+          {
+            "cells": [
+              "2025-2026",
+              "Umbrella",
+              "UM-240009",
+              "05/22/2026",
+              "05/23/2026",
+              "Open",
+              "$0",
+              "$9,750",
+              "$9,750"
+            ]
+          }
+        ],
+        "unrelated_subtitle": "Internal claims activity summary for renewal underwriting review",
+        "unrelated_body": "This report summarizes reported losses and open reserves for Summit Ridge Construction Inc. on policy CPP-6612078. It is provided for underwriting and account review only and is not a certificate of insurance, invoice, declaration, or endorsement."
+      },
+      {
+        "title": "Travelers Premium Invoice",
+        "certificate_holder": null,
+        "coverage_lines": null,
+        "description_of_operations": null,
+        "authorized_representative": null,
+        "certificate_number": null,
+        "revision_number": null,
+        "invoice_number": "TRV-INV-884218",
+        "invoice_date": "07/25/2026",
+        "account_number": "AC-6612078",
+        "line_items": [
+          {
+            "description": "Policy Premium",
+            "amount": "$48,750.00"
+          },
+          {
+            "description": "Terrorism (TRIA)",
+            "amount": "$325.00"
+          },
+          {
+            "description": "Colorado premium tax and surcharge",
+            "amount": "$1,294.00"
+          },
+          {
+            "description": "Broker Fee",
+            "amount": "$150.00"
+          },
+          {
+            "description": "Prior Balance",
+            "amount": "$0.00"
+          }
+        ],
+        "subtotal": "$48,750.00",
+        "taxes": "$1,294.00",
+        "fees": "$475.00",
+        "prior_balance": "$0.00",
+        "amount_due": "$50,844.00",
+        "billing_period": "08/01/2026 - 08/01/2027",
+        "due_date": "08/15/2026",
+        "payment_methods": "Check, ACH, or wire transfer",
+        "remit_to": "Travelers Insurance, P.O. Box 660307, Dallas, TX 75266-03307",
+        "coverage_parts": null,
+        "forms_schedule": null,
+        "premium_summary": null,
+        "countersignature": null,
+        "countersignature_date": null,
+        "form_number": null,
+        "endorsement_title": null,
+        "endorsement_number": null,
+        "schedule_rows": null,
+        "provisions": null,
+        "additional_premium": null,
+        "change_description": null,
+        "coverages": null,
+        "total_premium": null,
+        "effective_date": null,
+        "expiration_date": null,
+        "nr_kind": null,
+        "nr_header_rows": null,
+        "nr_columns": null,
+        "nr_rows": null,
+        "unrelated_subtitle": null,
+        "unrelated_body": null
+      }
+    ]
+  }
+}
