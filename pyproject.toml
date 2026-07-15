@@ -23,12 +23,24 @@ dependencies = [
     "trustcall>=0.0.39",
 ]
 
+[dependency-groups]
+dev = [
+    "pytest>=8.0.0",
+]
+
 [build-system]
 requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+# Put the repo root on sys.path so `import tests.golden` and `import scripts...` resolve
+# (src-layout keeps first-party `insurance_email_agent` importable from the installed pkg).
+pythonpath = ["."]
+addopts = "-q"
 
 
 [tool.pyright]

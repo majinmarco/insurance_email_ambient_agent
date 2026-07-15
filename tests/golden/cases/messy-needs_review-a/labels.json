@@ -1,0 +1,64 @@
+{
+  "case_id": "messy-needs_review-a",
+  "tier": "messy",
+  "email": {
+    "email_type": "needs_review",
+    "email_type_hard": false,
+    "extraction": {
+      "named_insured": null,
+      "policy_number": null,
+      "requested_effective_date": null,
+      "requested_changes": null,
+      "contact_name": null,
+      "contact_phone": null
+    }
+  },
+  "attachments": [
+    {
+      "filename": "IMG_4534.pdf",
+      "render_format": "pdf",
+      "n_pages": 2,
+      "documents": [
+        {
+          "index": 0,
+          "doc_type": "insurance endorsement",
+          "page_start": 0,
+          "page_end": 0,
+          "extraction": {
+            "named_insured": "Lone Star Freight Systems LP",
+            "policy_number": "CA-9948120",
+            "change_description": "Adds two scheduled tractors and one rated driver to the olicy effective 01/01/2026.",
+            "effective_date": "2026-01-01"
+          }
+        },
+        {
+          "index": 1,
+          "doc_type": "insurance declaration",
+          "page_start": 1,
+          "page_end": 1,
+          "extraction": {
+            "named_insured": "Lone Star Freight Systems LP",
+            "policy_number": "CA-9948120",
+            "coverages": {
+              "Business Auto Liability": "$11,200",
+              "Trailer Interchange": "$1,350",
+              "Motor Truck Cargo": "$4,850"
+            },
+            "total_premium": 18740.0
+          }
+        }
+      ],
+      "boundary_page_offsets": [
+        1
+      ],
+      "n_documents": 2,
+      "expected_segment_types": [
+        "insurance endorsement",
+        "insurance declaration"
+      ],
+      "expected_collapse": true,
+      "expected_scanned": false,
+      "expected_interrupt": false
+    }
+  ]
+}

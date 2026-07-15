@@ -1,0 +1,291 @@
+{
+  "case_id": "messy-claim_fnol-scanned",
+  "tier": "messy",
+  "seed": 502,
+  "email_type": "claim_fnol",
+  "attachments_mode": "on",
+  "max_docs_per_attachment": 1,
+  "max_attachments": 1,
+  "force_format": "scanned_pdf",
+  "persona_index": 2,
+  "content_source": "llm",
+  "noise_manifest": {
+    "email": {
+      "persona_index": 2,
+      "thread": false,
+      "signature": false,
+      "subject_style": "empty",
+      "multi_recipient": false,
+      "body_only": false,
+      "inconsistency": true,
+      "date_received": "2026-06-26T16:34:00+00:00"
+    },
+    "attachments": [
+      {
+        "filename": "Policy Declarations.pdf.pdf"
+      }
+    ],
+    "docs": [
+      {
+        "delimiter_mode": "bold_caps",
+        "layout_variant": 2,
+        "watermark": null,
+        "content_noise": true,
+        "content_noise_level": 0.35,
+        "is_scanned": true,
+        "render_format": "scanned_pdf"
+      }
+    ],
+    "expected": {
+      "email_type_hard": false,
+      "per_attachment_collapse": [
+        false
+      ],
+      "per_attachment_scanned": [
+        true
+      ],
+      "per_attachment_expect_interrupt": [
+        true
+      ]
+    }
+  },
+  "raw_scenario": {
+    "shared": {
+      "named_insured": "Summit Ridge Construction Inc.",
+      "policy_number": "CPP-6612078",
+      "insured_address": "9400 E Arapahoe Rd, Centennial, CO 80112",
+      "contact_name": "Derek Olsson",
+      "contact_email": "dolsson@summitridgegc.com",
+      "contact_phone": "(303) 555-0188",
+      "carrier_name": "Travelers Indemnity Company",
+      "effective_date": "2026-01-15",
+      "expiration_date": "2027-01-15",
+      "coverage_limits": [
+        {
+          "coverage": "Commercial General Liability",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Business Auto Liability",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Umbrella Liability",
+          "limit": "$5,000,000"
+        }
+      ],
+      "total_premium": "$18,450",
+      "producer": {
+        "agency": "Front Range Commercial Insurance",
+        "address": "400 S. Colorado Blvd., Suite 720, Denver, CO 80246",
+        "contact_name": "New Business Desk",
+        "phone": "(303) 555-1048",
+        "fax": "(303) 555-1049",
+        "email": "newbusiness@frontrangeins.com"
+      },
+      "insurers": [
+        {
+          "letter": "A",
+          "name": "Travelers Indemnity Company",
+          "naic": "25658"
+        },
+        {
+          "letter": "B",
+          "name": "Travelers Casualty and Surety Company",
+          "naic": "19038"
+        },
+        {
+          "letter": "C",
+          "name": "Travelers Property Casualty Company of America",
+          "naic": "25674"
+        },
+        {
+          "letter": "D",
+          "name": "The Charter Oak Fire Insurance Company",
+          "naic": "25615"
+        },
+        {
+          "letter": "E",
+          "name": "Phoenix Insurance Company",
+          "naic": "25623"
+        },
+        {
+          "letter": "F",
+          "name": "Travelers Indemnity Company of Connecticut",
+          "naic": "25682"
+        }
+      ],
+      "business_description": "Commercial general contractor (ground-up)",
+      "entity_type": "Corporation",
+      "fein": "84-2198765",
+      "naic_carrier": "25658"
+    },
+    "email": {
+      "subject": "",
+      "body": "Good morning,\n\nPlease accept this as the first notice of loss for Summit Ridge Construction Inc. under policy CPP-6612078.\n\nReported incident: water intrusion and resulting interior damage discovered at a project site while work was in progress. Please advise on claim assignment, any immediate next steps, and whether you need photos, site address, or preliminary estimates. The loss is being reported as soon as practicable after discovery.\n\nNamed insured: Summit Ridge Construction Inc.\nPolicy number: CPP-6612078\nRequested effective date for claim handling: 01/15/2026\n\nThank you,\nDerek Olsson\nSummit Ridge Construction Inc.\n\nNote: the policy number on the attachment may be off by a digit; the correct one ends in 9.",
+      "sender": "Derek Olsson <dolsson@summitridgegc.com>",
+      "recipient": "claims@travelers.com"
+    },
+    "documents": [
+      {
+        "title": "Commercial Package Policy Declarations - Summit Ridge Construction Inc.",
+        "certificate_holder": null,
+        "coverage_lines": null,
+        "description_of_operations": null,
+        "authorized_representative": null,
+        "certificate_number": null,
+        "revision_number": null,
+        "invoice_number": null,
+        "invoice_date": null,
+        "account_number": null,
+        "line_items": null,
+        "subtotal": null,
+        "taxes": null,
+        "fees": null,
+        "prior_balance": null,
+        "amount_due": null,
+        "billing_period": null,
+        "due_date": null,
+        "payment_methods": null,
+        "remit_to": null,
+        "coverage_parts": [
+          {
+            "insurer_letter": "A",
+            "coverage_type": "Commercial General Liability",
+            "policy_number": "CPP-6612078",
+            "effective_date": "01/15/2026",
+            "expiration_date": "01/15/2027",
+            "addl_insured": null,
+            "subro_waived": null,
+            "limits": [
+              {
+                "coverage": "Each Occurrence",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "Personal and Advertising Injury",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "General Aggregate",
+                "limit": "$2,000,000"
+              },
+              {
+                "coverage": "Products-Completed Operations Aggregate",
+                "limit": "$2,000,000"
+              },
+              {
+                "coverage": "Damage To Premises Rented To You",
+                "limit": "$300,000"
+              }
+            ],
+            "premium": "$9,875"
+          },
+          {
+            "insurer_letter": "A",
+            "coverage_type": "Business Auto Liability",
+            "policy_number": "CPP-6612078",
+            "effective_date": "01/15/2026",
+            "expiration_date": "01/15/2027",
+            "addl_insured": null,
+            "subro_waived": null,
+            "limits": [
+              {
+                "coverage": "Combined Single Limit",
+                "limit": "$1,000,000"
+              }
+            ],
+            "premium": "$3,125"
+          },
+          {
+            "insurer_letter": "A",
+            "coverage_type": "Umbrella Liability",
+            "policy_number": "CPP-6612078",
+            "effective_date": "01/15/2026",
+            "expiration_date": "01/15/2027",
+            "addl_insured": null,
+            "subro_waived": null,
+            "limits": [
+              {
+                "coverage": "Each Occurrence",
+                "limit": "$5,000,000"
+              },
+              {
+                "coverage": "General Aggregate",
+                "limit": "$5,000,000"
+              }
+            ],
+            "premium": "$4,400"
+          }
+        ],
+        "forms_schedule": [
+          {
+            "form_number": "CP 00 10 10 12",
+            "title": "Building and Personal Property Coverage Form"
+          },
+          {
+            "form_number": "CG 00 01 04 13",
+            "title": "Commercial General Liability Coverage Form"
+          },
+          {
+            "form_number": "CA 00 01 11 20",
+            "title": "Business Auto Coverage Form"
+          },
+          {
+            "form_number": "CU 00 01 04 13",
+            "title": "Commercial Umbrella Coverage Form"
+          },
+          {
+            "form_number": "IL 00 17 11 98",
+            "title": "Common Policy Conditions"
+          }
+        ],
+        "premium_summary": [
+          {
+            "description": "Commercial General Liability",
+            "amount": "$9,875"
+          },
+          {
+            "description": "Business Auto Liability",
+            "amount": "$3,125"
+          },
+          {
+            "description": "Umbrella Liability",
+            "amount": "$4,400"
+          },
+          {
+            "description": "Terrorism (TRIA)",
+            "amount": "$210"
+          },
+          {
+            "description": "Colorado Premium Tax",
+            "amount": "$403"
+          },
+          {
+            "description": "Policy Fee",
+            "amount": "$75"
+          }
+        ],
+        "countersignature": "Travelers Indemnity Company, By Authorized Representative",
+        "countersignature_date": "01/10/2026",
+        "form_number": null,
+        "endorsement_title": null,
+        "endorsement_number": null,
+        "schedule_rows": null,
+        "provisions": null,
+        "additional_premium": null,
+        "change_description": null,
+        "coverages": null,
+        "total_premium": "$18,450",
+        "effective_date": "01/15/2026",
+        "expiration_date": "01/15/2027",
+        "nr_kind": null,
+        "nr_header_rows": null,
+        "nr_columns": null,
+        "nr_rows": null,
+        "unrelated_subtitle": null,
+        "unrelated_body": null
+      }
+    ]
+  }
+}

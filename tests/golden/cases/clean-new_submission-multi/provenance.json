@@ -1,0 +1,835 @@
+{
+  "case_id": "clean-new_submission-multi",
+  "tier": "clean",
+  "seed": 11,
+  "email_type": "new_submission",
+  "attachments_mode": "on",
+  "max_docs_per_attachment": 3,
+  "max_attachments": 3,
+  "force_format": null,
+  "persona_index": 5,
+  "content_source": "llm",
+  "noise_manifest": null,
+  "raw_scenario": {
+    "shared": {
+      "named_insured": "Pinnacle Staffing Solutions Inc.",
+      "policy_number": "PSI-240001",
+      "insured_address": "303 Peachtree St NE, Atlanta, GA 30308",
+      "contact_name": "Danielle Foster",
+      "contact_email": "dfoster@pinnaclestaffing.com",
+      "contact_phone": "404-555-0163",
+      "carrier_name": "AmTrust Financial",
+      "effective_date": "2026-02-01",
+      "expiration_date": "2027-02-01",
+      "coverage_limits": [
+        {
+          "coverage": "Commercial General Liability - Each Occurrence",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Commercial General Liability - General Aggregate",
+          "limit": "$2,000,000"
+        },
+        {
+          "coverage": "Business Auto - Combined Single Limit",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Umbrella Liability - Each Occurrence",
+          "limit": "$2,000,000"
+        },
+        {
+          "coverage": "Workers Compensation - Employer's Liability Each Accident",
+          "limit": "$1,000,000"
+        }
+      ],
+      "total_premium": "$18,750",
+      "producer": {
+        "agency": "Peachtree Commercial Brokers",
+        "address": "2470 Peachtree Rd NE, Suite 600, Atlanta, GA 30305",
+        "contact_name": "Marcus Bell",
+        "phone": "404-555-0198",
+        "fax": "404-555-0199",
+        "email": "accounts@peachtreebrokers.com"
+      },
+      "insurers": [
+        {
+          "letter": "A",
+          "name": "AmTrust Financial Services, Inc.",
+          "naic": "15954"
+        },
+        {
+          "letter": "B",
+          "name": "AmTrust Insurance Company of Kansas, Inc.",
+          "naic": "15952"
+        },
+        {
+          "letter": "C",
+          "name": "Technology Insurance Company, Inc.",
+          "naic": "42376"
+        },
+        {
+          "letter": "D",
+          "name": "Pennsylvania Manufacturers' Association Insurance Company",
+          "naic": "14990"
+        },
+        {
+          "letter": "E",
+          "name": "Wesco Insurance Company",
+          "naic": "25011"
+        },
+        {
+          "letter": "F",
+          "name": "Sequoia Insurance Company",
+          "naic": "37952"
+        }
+      ],
+      "business_description": "Temporary clerical and light-industrial staffing",
+      "entity_type": "Corporation",
+      "fein": "84-2179654",
+      "naic_carrier": "15954"
+    },
+    "email": {
+      "subject": "New submission for Pinnacle Staffing Solutions Inc. - effective 02/01/2026",
+      "body": "Good morning,\n\nPlease find attached a new business submission for Pinnacle Staffing Solutions Inc. for a proposed effective date of 02/01/2026. This is a brand-new account with no prior policy number on file. The insured is a temporary clerical and light-industrial staffing operation at 303 Peachtree St NE, Atlanta, GA 30308.\n\nPlease quote and advise bind terms for the package, including General Liability, Business Auto, Umbrella, and Workers Compensation. Contact Danielle Foster at dfoster@pinnaclestaffing.com or 404-555-0163 if any underwriting questions arise.\n\nThank you,\nPeachtree Commercial Brokers",
+      "sender": "Marcus Bell <accounts@peachtreebrokers.com>",
+      "recipient": "Underwriting <uw@amtrustfinancial.com>"
+    },
+    "documents": [
+      {
+        "title": "Premium Invoice - Pinnacle Staffing Solutions Inc.",
+        "certificate_holder": null,
+        "coverage_lines": null,
+        "description_of_operations": null,
+        "authorized_representative": null,
+        "certificate_number": null,
+        "revision_number": null,
+        "invoice_number": "INV-240001",
+        "invoice_date": "01/12/2026",
+        "account_number": "ACCT-PSI-240001",
+        "line_items": [
+          {
+            "description": "Policy Premium",
+            "amount": "$17,500.00"
+          },
+          {
+            "description": "Terrorism (TRIA)",
+            "amount": "$250.00"
+          },
+          {
+            "description": "Georgia surplus lines tax / surcharge",
+            "amount": "$700.00"
+          },
+          {
+            "description": "Broker Fee",
+            "amount": "$300.00"
+          },
+          {
+            "description": "Prior Balance",
+            "amount": "$0.00"
+          }
+        ],
+        "subtotal": "$17,750.00",
+        "taxes": "$700.00",
+        "fees": "$550.00",
+        "prior_balance": "$0.00",
+        "amount_due": "$18,750.00",
+        "billing_period": "02/01/2026 - 02/01/2027",
+        "due_date": "02/01/2026",
+        "payment_methods": "ACH, check, or wire transfer",
+        "remit_to": "Peachtree Commercial Brokers, Attn: Accounting, 2470 Peachtree Rd NE, Suite 600, Atlanta, GA 30305",
+        "coverage_parts": null,
+        "forms_schedule": null,
+        "premium_summary": null,
+        "countersignature": null,
+        "countersignature_date": null,
+        "form_number": null,
+        "endorsement_title": null,
+        "endorsement_number": null,
+        "schedule_rows": null,
+        "provisions": null,
+        "additional_premium": null,
+        "change_description": null,
+        "coverages": null,
+        "total_premium": null,
+        "effective_date": null,
+        "expiration_date": null,
+        "nr_kind": null,
+        "nr_header_rows": null,
+        "nr_columns": null,
+        "nr_rows": null,
+        "unrelated_subtitle": null,
+        "unrelated_body": null
+      },
+      {
+        "title": "Premium Invoice - Pinnacle Staffing Solutions Inc. Duplicate",
+        "certificate_holder": null,
+        "coverage_lines": null,
+        "description_of_operations": null,
+        "authorized_representative": null,
+        "certificate_number": null,
+        "revision_number": null,
+        "invoice_number": "INV-240002",
+        "invoice_date": "01/12/2026",
+        "account_number": "ACCT-PSI-240001",
+        "line_items": [
+          {
+            "description": "Policy Premium",
+            "amount": "$17,500.00"
+          },
+          {
+            "description": "Terrorism (TRIA)",
+            "amount": "$250.00"
+          },
+          {
+            "description": "Georgia surplus lines tax / surcharge",
+            "amount": "$700.00"
+          },
+          {
+            "description": "Broker Fee",
+            "amount": "$300.00"
+          },
+          {
+            "description": "Prior Balance",
+            "amount": "$0.00"
+          }
+        ],
+        "subtotal": "$17,750.00",
+        "taxes": "$700.00",
+        "fees": "$550.00",
+        "prior_balance": "$0.00",
+        "amount_due": "$18,750.00",
+        "billing_period": "02/01/2026 - 02/01/2027",
+        "due_date": "02/01/2026",
+        "payment_methods": "ACH, check, or wire transfer",
+        "remit_to": "Peachtree Commercial Brokers, Attn: Accounting, 2470 Peachtree Rd NE, Suite 600, Atlanta, GA 30305",
+        "coverage_parts": null,
+        "forms_schedule": null,
+        "premium_summary": null,
+        "countersignature": null,
+        "countersignature_date": null,
+        "form_number": null,
+        "endorsement_title": null,
+        "endorsement_number": null,
+        "schedule_rows": null,
+        "provisions": null,
+        "additional_premium": null,
+        "change_description": null,
+        "coverages": null,
+        "total_premium": null,
+        "effective_date": null,
+        "expiration_date": null,
+        "nr_kind": null,
+        "nr_header_rows": null,
+        "nr_columns": null,
+        "nr_rows": null,
+        "unrelated_subtitle": null,
+        "unrelated_body": null
+      },
+      {
+        "title": "Commercial Package Declarations - Pinnacle Staffing Solutions Inc.",
+        "certificate_holder": null,
+        "coverage_lines": null,
+        "description_of_operations": null,
+        "authorized_representative": null,
+        "certificate_number": null,
+        "revision_number": null,
+        "invoice_number": null,
+        "invoice_date": null,
+        "account_number": null,
+        "line_items": null,
+        "subtotal": null,
+        "taxes": null,
+        "fees": null,
+        "prior_balance": null,
+        "amount_due": null,
+        "billing_period": null,
+        "due_date": null,
+        "payment_methods": null,
+        "remit_to": null,
+        "coverage_parts": [
+          {
+            "insurer_letter": "A",
+            "coverage_type": "Commercial General Liability",
+            "policy_number": "PSI-240001",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": null,
+            "subro_waived": null,
+            "limits": [
+              {
+                "coverage": "Each Occurrence",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "Damage to Rented Premises",
+                "limit": "$100,000"
+              },
+              {
+                "coverage": "Medical Expense",
+                "limit": "$5,000"
+              },
+              {
+                "coverage": "Personal & Advertising Injury",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "General Aggregate",
+                "limit": "$2,000,000"
+              },
+              {
+                "coverage": "Products-Comp/Op Aggregate",
+                "limit": "$2,000,000"
+              }
+            ],
+            "premium": "$6,250"
+          },
+          {
+            "insurer_letter": "C",
+            "coverage_type": "Automobile Liability",
+            "policy_number": "PSI-240001",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": null,
+            "subro_waived": null,
+            "limits": [
+              {
+                "coverage": "Combined Single Limit",
+                "limit": "$1,000,000"
+              }
+            ],
+            "premium": "$4,100"
+          },
+          {
+            "insurer_letter": "E",
+            "coverage_type": "Umbrella Liability",
+            "policy_number": "PSI-240001",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": null,
+            "subro_waived": null,
+            "limits": [
+              {
+                "coverage": "Each Occurrence",
+                "limit": "$2,000,000"
+              },
+              {
+                "coverage": "General Aggregate",
+                "limit": "$2,000,000"
+              }
+            ],
+            "premium": "$3,400"
+          },
+          {
+            "insurer_letter": "B",
+            "coverage_type": "Workers Compensation",
+            "policy_number": "PSI-240001",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": null,
+            "subro_waived": null,
+            "limits": [
+              {
+                "coverage": "E.L. Each Accident",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "E.L. Disease-Ea Employee",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "E.L. Disease-Policy Limit",
+                "limit": "$1,000,000"
+              }
+            ],
+            "premium": "$3,750"
+          }
+        ],
+        "forms_schedule": [
+          {
+            "form_number": "CG 00 01 04 13",
+            "title": "Commercial General Liability Coverage Form"
+          },
+          {
+            "form_number": "CG 21 47 12 19",
+            "title": "Employment-Related Practices Exclusion"
+          },
+          {
+            "form_number": "CG 20 10 04 13",
+            "title": "Additional Insured - Owners, Lessees Or Contractors - Scheduled Person Or Organization"
+          },
+          {
+            "form_number": "CA 00 01 11 20",
+            "title": "Business Auto Coverage Form"
+          },
+          {
+            "form_number": "CA 20 48 10 13",
+            "title": "Designated Insured Endorsement"
+          },
+          {
+            "form_number": "CA 99 48 11 20",
+            "title": "Trailer Interchange Coverage"
+          },
+          {
+            "form_number": "WC 00 00 00 B",
+            "title": "Workers Compensation And Employers Liability Insurance Policy"
+          },
+          {
+            "form_number": "WC 42 03 04 84",
+            "title": "Waiver Of Our Right To Recover From Others Endorsement"
+          },
+          {
+            "form_number": "UMB 00 01 01 15",
+            "title": "Commercial Umbrella Liability Coverage Form"
+          },
+          {
+            "form_number": "IL 00 17 11 98",
+            "title": "Common Policy Conditions"
+          }
+        ],
+        "premium_summary": [
+          {
+            "description": "Policy Premium",
+            "amount": "$17,500.00"
+          },
+          {
+            "description": "Terrorism (TRIA)",
+            "amount": "$250.00"
+          },
+          {
+            "description": "Taxes and Fees",
+            "amount": "$1,000.00"
+          },
+          {
+            "description": "Total Premium",
+            "amount": "$18,750.00"
+          }
+        ],
+        "countersignature": "Marcus Bell, Authorized Representative",
+        "countersignature_date": "01/12/2026",
+        "form_number": null,
+        "endorsement_title": null,
+        "endorsement_number": null,
+        "schedule_rows": null,
+        "provisions": null,
+        "additional_premium": null,
+        "change_description": null,
+        "coverages": null,
+        "total_premium": "$18,750.00",
+        "effective_date": "02/01/2026",
+        "expiration_date": "02/01/2027",
+        "nr_kind": null,
+        "nr_header_rows": null,
+        "nr_columns": null,
+        "nr_rows": null,
+        "unrelated_subtitle": null,
+        "unrelated_body": null
+      },
+      {
+        "title": "ACORD 25 Certificate of Liability Insurance - Pinnacle Staffing Solutions Inc.",
+        "certificate_holder": "Georgia Tech Research Corporation, 926 Dalney St NW, Atlanta, GA 30332",
+        "coverage_lines": [
+          {
+            "insurer_letter": "A",
+            "coverage_type": "Commercial General Liability",
+            "policy_number": "PSI-240001",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": true,
+            "subro_waived": true,
+            "limits": [
+              {
+                "coverage": "Each Occurrence",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "Damage to Rented Premises",
+                "limit": "$100,000"
+              },
+              {
+                "coverage": "Med Exp",
+                "limit": "$5,000"
+              },
+              {
+                "coverage": "Personal & Adv Injury",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "General Aggregate",
+                "limit": "$2,000,000"
+              },
+              {
+                "coverage": "Products-Comp/Op Agg",
+                "limit": "$2,000,000"
+              }
+            ],
+            "premium": null
+          },
+          {
+            "insurer_letter": "C",
+            "coverage_type": "Automobile Liability",
+            "policy_number": "PSI-240001",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": true,
+            "subro_waived": true,
+            "limits": [
+              {
+                "coverage": "Combined Single Limit",
+                "limit": "$1,000,000"
+              }
+            ],
+            "premium": null
+          },
+          {
+            "insurer_letter": "E",
+            "coverage_type": "Umbrella Liability",
+            "policy_number": "PSI-240001",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": true,
+            "subro_waived": true,
+            "limits": [
+              {
+                "coverage": "Each Occurrence",
+                "limit": "$2,000,000"
+              },
+              {
+                "coverage": "General Aggregate",
+                "limit": "$2,000,000"
+              }
+            ],
+            "premium": null
+          },
+          {
+            "insurer_letter": "B",
+            "coverage_type": "Workers Compensation",
+            "policy_number": "PSI-240001",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": false,
+            "subro_waived": true,
+            "limits": [
+              {
+                "coverage": "E.L. Each Accident",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "E.L. Disease-Ea Employee",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "E.L. Disease-Policy Limit",
+                "limit": "$1,000,000"
+              }
+            ],
+            "premium": null
+          }
+        ],
+        "description_of_operations": "Pinnacle Staffing Solutions Inc. is included as insured where required by written contract. Additional insured status applies to the extent required by CG 20 10 04 13 and CG 20 37 04 13 for ongoing and completed operations, where applicable. Coverage is primary and non-contributory when required by contract, and waiver of subrogation applies where endorsed by form WC 42 03 04 84 and applicable auto and liability endorsements.",
+        "authorized_representative": "Marcus Bell",
+        "certificate_number": "COI-PSI-240001",
+        "revision_number": null,
+        "invoice_number": null,
+        "invoice_date": null,
+        "account_number": null,
+        "line_items": null,
+        "subtotal": null,
+        "taxes": null,
+        "fees": null,
+        "prior_balance": null,
+        "amount_due": null,
+        "billing_period": null,
+        "due_date": null,
+        "payment_methods": null,
+        "remit_to": null,
+        "coverage_parts": null,
+        "forms_schedule": null,
+        "premium_summary": null,
+        "countersignature": null,
+        "countersignature_date": null,
+        "form_number": null,
+        "endorsement_title": null,
+        "endorsement_number": null,
+        "schedule_rows": null,
+        "provisions": null,
+        "additional_premium": null,
+        "change_description": null,
+        "coverages": null,
+        "total_premium": null,
+        "effective_date": null,
+        "expiration_date": null,
+        "nr_kind": null,
+        "nr_header_rows": null,
+        "nr_columns": null,
+        "nr_rows": null,
+        "unrelated_subtitle": null,
+        "unrelated_body": null
+      },
+      {
+        "title": "Premium Invoice - Pinnacle Staffing Solutions Inc. Installment Notice",
+        "certificate_holder": null,
+        "coverage_lines": null,
+        "description_of_operations": null,
+        "authorized_representative": null,
+        "certificate_number": null,
+        "revision_number": null,
+        "invoice_number": "INV-240003",
+        "invoice_date": "02/01/2026",
+        "account_number": "ACCT-PSI-240001",
+        "line_items": [
+          {
+            "description": "Policy Premium",
+            "amount": "$17,500.00"
+          },
+          {
+            "description": "Terrorism (TRIA)",
+            "amount": "$250.00"
+          },
+          {
+            "description": "Georgia surplus lines tax / surcharge",
+            "amount": "$700.00"
+          },
+          {
+            "description": "Broker Fee",
+            "amount": "$300.00"
+          },
+          {
+            "description": "Prior Balance",
+            "amount": "$0.00"
+          }
+        ],
+        "subtotal": "$17,750.00",
+        "taxes": "$700.00",
+        "fees": "$550.00",
+        "prior_balance": "$0.00",
+        "amount_due": "$18,750.00",
+        "billing_period": "02/01/2026 - 02/01/2027",
+        "due_date": "02/01/2026",
+        "payment_methods": "ACH, check, or wire transfer",
+        "remit_to": "Peachtree Commercial Brokers, Attn: Accounting, 2470 Peachtree Rd NE, Suite 600, Atlanta, GA 30305",
+        "coverage_parts": null,
+        "forms_schedule": null,
+        "premium_summary": null,
+        "countersignature": null,
+        "countersignature_date": null,
+        "form_number": null,
+        "endorsement_title": null,
+        "endorsement_number": null,
+        "schedule_rows": null,
+        "provisions": null,
+        "additional_premium": null,
+        "change_description": null,
+        "coverages": null,
+        "total_premium": null,
+        "effective_date": null,
+        "expiration_date": null,
+        "nr_kind": null,
+        "nr_header_rows": null,
+        "nr_columns": null,
+        "nr_rows": null,
+        "unrelated_subtitle": null,
+        "unrelated_body": null
+      },
+      {
+        "title": "Commercial Package Declarations - Pinnacle Staffing Solutions Inc. Copy",
+        "certificate_holder": null,
+        "coverage_lines": null,
+        "description_of_operations": null,
+        "authorized_representative": null,
+        "certificate_number": null,
+        "revision_number": null,
+        "invoice_number": null,
+        "invoice_date": null,
+        "account_number": null,
+        "line_items": null,
+        "subtotal": null,
+        "taxes": null,
+        "fees": null,
+        "prior_balance": null,
+        "amount_due": null,
+        "billing_period": null,
+        "due_date": null,
+        "payment_methods": null,
+        "remit_to": null,
+        "coverage_parts": [
+          {
+            "insurer_letter": "A",
+            "coverage_type": "Commercial General Liability",
+            "policy_number": "PSI-240001",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": null,
+            "subro_waived": null,
+            "limits": [
+              {
+                "coverage": "Each Occurrence",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "Damage to Rented Premises",
+                "limit": "$100,000"
+              },
+              {
+                "coverage": "Medical Expense",
+                "limit": "$5,000"
+              },
+              {
+                "coverage": "Personal & Advertising Injury",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "General Aggregate",
+                "limit": "$2,000,000"
+              },
+              {
+                "coverage": "Products-Comp/Op Aggregate",
+                "limit": "$2,000,000"
+              }
+            ],
+            "premium": "$6,250"
+          },
+          {
+            "insurer_letter": "C",
+            "coverage_type": "Automobile Liability",
+            "policy_number": "PSI-240001",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": null,
+            "subro_waived": null,
+            "limits": [
+              {
+                "coverage": "Combined Single Limit",
+                "limit": "$1,000,000"
+              }
+            ],
+            "premium": "$4,100"
+          },
+          {
+            "insurer_letter": "E",
+            "coverage_type": "Umbrella Liability",
+            "policy_number": "PSI-240001",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": null,
+            "subro_waived": null,
+            "limits": [
+              {
+                "coverage": "Each Occurrence",
+                "limit": "$2,000,000"
+              },
+              {
+                "coverage": "General Aggregate",
+                "limit": "$2,000,000"
+              }
+            ],
+            "premium": "$3,400"
+          },
+          {
+            "insurer_letter": "B",
+            "coverage_type": "Workers Compensation",
+            "policy_number": "PSI-240001",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": null,
+            "subro_waived": null,
+            "limits": [
+              {
+                "coverage": "E.L. Each Accident",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "E.L. Disease-Ea Employee",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "E.L. Disease-Policy Limit",
+                "limit": "$1,000,000"
+              }
+            ],
+            "premium": "$3,750"
+          }
+        ],
+        "forms_schedule": [
+          {
+            "form_number": "CG 00 01 04 13",
+            "title": "Commercial General Liability Coverage Form"
+          },
+          {
+            "form_number": "CG 21 47 12 19",
+            "title": "Employment-Related Practices Exclusion"
+          },
+          {
+            "form_number": "CG 20 10 04 13",
+            "title": "Additional Insured - Owners, Lessees Or Contractors - Scheduled Person Or Organization"
+          },
+          {
+            "form_number": "CA 00 01 11 20",
+            "title": "Business Auto Coverage Form"
+          },
+          {
+            "form_number": "CA 20 48 10 13",
+            "title": "Designated Insured Endorsement"
+          },
+          {
+            "form_number": "CA 99 48 11 20",
+            "title": "Trailer Interchange Coverage"
+          },
+          {
+            "form_number": "WC 00 00 00 B",
+            "title": "Workers Compensation And Employers Liability Insurance Policy"
+          },
+          {
+            "form_number": "WC 42 03 04 84",
+            "title": "Waiver Of Our Right To Recover From Others Endorsement"
+          },
+          {
+            "form_number": "UMB 00 01 01 15",
+            "title": "Commercial Umbrella Liability Coverage Form"
+          },
+          {
+            "form_number": "IL 00 17 11 98",
+            "title": "Common Policy Conditions"
+          }
+        ],
+        "premium_summary": [
+          {
+            "description": "Policy Premium",
+            "amount": "$17,500.00"
+          },
+          {
+            "description": "Terrorism (TRIA)",
+            "amount": "$250.00"
+          },
+          {
+            "description": "Taxes and Fees",
+            "amount": "$1,000.00"
+          },
+          {
+            "description": "Total Premium",
+            "amount": "$18,750.00"
+          }
+        ],
+        "countersignature": "Marcus Bell, Authorized Representative",
+        "countersignature_date": "01/12/2026",
+        "form_number": null,
+        "endorsement_title": null,
+        "endorsement_number": null,
+        "schedule_rows": null,
+        "provisions": null,
+        "additional_premium": null,
+        "change_description": null,
+        "coverages": null,
+        "total_premium": "$18,750.00",
+        "effective_date": "02/01/2026",
+        "expiration_date": "02/01/2027",
+        "nr_kind": null,
+        "nr_header_rows": null,
+        "nr_columns": null,
+        "nr_rows": null,
+        "unrelated_subtitle": null,
+        "unrelated_body": null
+      }
+    ]
+  }
+}

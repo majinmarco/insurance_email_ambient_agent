@@ -1,0 +1,117 @@
+{
+  "case_id": "clean-endorsement-a",
+  "tier": "clean",
+  "email": {
+    "email_type": "endorsement",
+    "email_type_hard": true,
+    "extraction": {
+      "named_insured": "Summit Ridge Construction Inc.",
+      "policy_number": "CPP-6612078",
+      "requested_effective_date": "2025-08-01",
+      "requested_changes": "Endorse the in-force policy (mid-term change).",
+      "contact_name": "Derek Olsson",
+      "contact_phone": "(303) 555-0188"
+    }
+  },
+  "attachments": [
+    {
+      "filename": "attachment_1.pdf",
+      "render_format": "pdf",
+      "n_pages": 2,
+      "documents": [
+        {
+          "index": 0,
+          "doc_type": "unrelated or unclear document",
+          "page_start": 0,
+          "page_end": 0,
+          "extraction": null
+        },
+        {
+          "index": 1,
+          "doc_type": "insurance declaration",
+          "page_start": 1,
+          "page_end": 1,
+          "extraction": {
+            "named_insured": "Summit Ridge Construction Inc.",
+            "policy_number": "CPP-6612078",
+            "coverages": {
+              "Commercial General Liability": "$21,450",
+              "Business Auto Liability": "$9,875",
+              "Umbrella Liability": "$7,950"
+            },
+            "total_premium": 40730.0
+          }
+        }
+      ],
+      "boundary_page_offsets": [
+        1
+      ],
+      "n_documents": 2,
+      "expected_segment_types": [
+        "insurance declaration"
+      ],
+      "expected_collapse": false,
+      "expected_scanned": false,
+      "expected_interrupt": false
+    },
+    {
+      "filename": "attachment_2.pdf",
+      "render_format": "pdf",
+      "n_pages": 1,
+      "documents": [
+        {
+          "index": 0,
+          "doc_type": "insurance declaration",
+          "page_start": 0,
+          "page_end": 0,
+          "extraction": {
+            "named_insured": "Summit Ridge Construction Inc.",
+            "policy_number": "CPP-6612078",
+            "coverages": {
+              "Workers Compensation": "$8,150"
+            },
+            "total_premium": 8885.0
+          }
+        }
+      ],
+      "boundary_page_offsets": [],
+      "n_documents": 1,
+      "expected_segment_types": [
+        "insurance declaration"
+      ],
+      "expected_collapse": false,
+      "expected_scanned": false,
+      "expected_interrupt": false
+    },
+    {
+      "filename": "attachment_3.pdf",
+      "render_format": "pdf",
+      "n_pages": 1,
+      "documents": [
+        {
+          "index": 0,
+          "doc_type": "insurance declaration",
+          "page_start": 0,
+          "page_end": 0,
+          "extraction": {
+            "named_insured": "Summit Ridge Construction Inc.",
+            "policy_number": "CPP-6612078",
+            "coverages": {
+              "Contractors Equipment": "$5,320",
+              "Blanket Property Floater": "$3,420"
+            },
+            "total_premium": 9039.0
+          }
+        }
+      ],
+      "boundary_page_offsets": [],
+      "n_documents": 1,
+      "expected_segment_types": [
+        "insurance declaration"
+      ],
+      "expected_collapse": false,
+      "expected_scanned": false,
+      "expected_interrupt": false
+    }
+  ]
+}

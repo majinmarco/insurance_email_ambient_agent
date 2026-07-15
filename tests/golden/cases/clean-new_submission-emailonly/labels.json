@@ -1,0 +1,17 @@
+{
+  "case_id": "clean-new_submission-emailonly",
+  "tier": "clean",
+  "email": {
+    "email_type": "new_submission",
+    "email_type_hard": true,
+    "extraction": {
+      "named_insured": "Evergreen Home Health Services LLC",
+      "policy_number": null,
+      "requested_effective_date": "2026-08-01",
+      "requested_changes": "Quote/bind a new commercial package policy.",
+      "contact_name": "Priya Raman",
+      "contact_phone": "(503) 555-0159"
+    }
+  },
+  "attachments": []
+}

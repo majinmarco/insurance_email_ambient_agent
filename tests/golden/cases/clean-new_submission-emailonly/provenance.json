@@ -1,0 +1,128 @@
+{
+  "case_id": "clean-new_submission-emailonly",
+  "tier": "clean",
+  "seed": 413,
+  "email_type": "new_submission",
+  "attachments_mode": "off",
+  "max_docs_per_attachment": 2,
+  "max_attachments": 3,
+  "force_format": null,
+  "persona_index": 3,
+  "content_source": "llm",
+  "noise_manifest": null,
+  "raw_scenario": {
+    "shared": {
+      "named_insured": "Evergreen Home Health Services LLC",
+      "policy_number": null,
+      "insured_address": "1201 SW Fifth Ave, Portland, OR 97204",
+      "contact_name": "Priya Raman",
+      "contact_email": "praman@evergreenhh.com",
+      "contact_phone": "(503) 555-0159",
+      "carrier_name": "CNA Financial",
+      "effective_date": "2026-08-01",
+      "expiration_date": "2027-08-01",
+      "coverage_limits": [
+        {
+          "coverage": "Each Occurrence",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "General Aggregate",
+          "limit": "$2,000,000"
+        },
+        {
+          "coverage": "Products-Completed Operations Aggregate",
+          "limit": "$2,000,000"
+        },
+        {
+          "coverage": "Personal and Advertising Injury",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Damage to Premises Rented to You",
+          "limit": "$300,000"
+        },
+        {
+          "coverage": "Medical Expense Limit",
+          "limit": "$10,000"
+        },
+        {
+          "coverage": "Combined Single Limit",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Business Personal Property",
+          "limit": "$250,000"
+        },
+        {
+          "coverage": "Business Income and Extra Expense",
+          "limit": "$150,000"
+        },
+        {
+          "coverage": "Each Accident",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Disease - Each Employee",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Disease - Policy Limit",
+          "limit": "$1,000,000"
+        }
+      ],
+      "total_premium": "$18,450",
+      "producer": {
+        "agency": "Cascade Professional Insurance",
+        "address": "1000 SW Broadway, Suite 1800, Portland, OR 97205",
+        "contact_name": "Megan Torres",
+        "phone": "(503) 555-0198",
+        "fax": "(503) 555-0199",
+        "email": "submissions@cascadepro.com"
+      },
+      "insurers": [
+        {
+          "letter": "A",
+          "name": "CNA Insurance Company",
+          "naic": "12655"
+        },
+        {
+          "letter": "B",
+          "name": "Continental Casualty Company",
+          "naic": "20443"
+        },
+        {
+          "letter": "C",
+          "name": "The Continental Insurance Company",
+          "naic": "35289"
+        },
+        {
+          "letter": "D",
+          "name": "Transportation Insurance Company",
+          "naic": "20494"
+        },
+        {
+          "letter": "E",
+          "name": "Valley Forge Insurance Company",
+          "naic": "20508"
+        },
+        {
+          "letter": "F",
+          "name": "National Fire Insurance Company of Hartford",
+          "naic": "20478"
+        }
+      ],
+      "business_description": "In-home nursing and personal care services",
+      "entity_type": "Limited Liability Company",
+      "fein": "93-4187625",
+      "naic_carrier": "CNA Financial"
+    },
+    "email": {
+      "subject": "New business submission for Evergreen Home Health Services LLC - effective 08/01/2026",
+      "body": "Good morning,\n\nPlease quote and bind, if acceptable, the new business account for Evergreen Home Health Services LLC located at 1201 SW Fifth Ave, Portland, OR 97204.\n\nRequested effective date is 08/01/2026. This is a brand-new submission with no prior policy number.\n\nNamed insured contact is Priya Raman, praman@evergreenhh.com, (503) 555-0159.\n\nPlease advise on appetite, any underwriting questions, and issuance requirements.\n\nThank you,\nCascade Professional Insurance\nSubmissions Team",
+      "sender": "Megan Torres <submissions@cascadepro.com>",
+      "recipient": "praman@evergreenhh.com"
+    },
+    "documents": []
+  }
+}

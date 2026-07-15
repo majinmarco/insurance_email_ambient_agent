@@ -1,0 +1,50 @@
+{
+  "case_id": "messy-renewal-scanned",
+  "tier": "messy",
+  "email": {
+    "email_type": "renewal",
+    "email_type_hard": false,
+    "extraction": {
+      "named_insured": "Riverside Manufacturing Co.",
+      "policy_number": "SBA-4471902",
+      "requested_effective_date": null,
+      "requested_changes": "Prepare a renewal quote for the expiring policy.",
+      "contact_name": "Karen Delgado",
+      "contact_phone": "(216) 555-0173"
+    }
+  },
+  "attachments": [
+    {
+      "filename": "IMG_6622.pdf",
+      "render_format": "scanned_pdf",
+      "n_pages": 3,
+      "documents": [
+        {
+          "index": 0,
+          "doc_type": "insurance declaration",
+          "page_start": 0,
+          "page_end": 2,
+          "extraction": {
+            "named_insured": "Riverside Manufacturing Co.",
+            "policy_number": "SBA-4471902",
+            "coverages": {
+              "Building and Business Personal Property": "$7,480",
+              "Commercial General Liability": "$4,620",
+              "Business Auto Liability": "$2,915",
+              "Workers Compensation": "$2,775"
+            },
+            "total_premium": 18640.0
+          }
+        }
+      ],
+      "boundary_page_offsets": [],
+      "n_documents": 1,
+      "expected_segment_types": [
+        "insurance declaration"
+      ],
+      "expected_collapse": false,
+      "expected_scanned": true,
+      "expected_interrupt": true
+    }
+  ]
+}

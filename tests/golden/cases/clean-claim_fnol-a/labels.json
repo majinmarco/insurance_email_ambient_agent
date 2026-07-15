@@ -1,0 +1,50 @@
+{
+  "case_id": "clean-claim_fnol-a",
+  "tier": "clean",
+  "email": {
+    "email_type": "claim_fnol",
+    "email_type_hard": true,
+    "extraction": {
+      "named_insured": "Evergreen Home Health Services LLC",
+      "policy_number": "HMP-3320815",
+      "requested_effective_date": null,
+      "requested_changes": "Report a new loss / open a claim.",
+      "contact_name": "Priya Raman",
+      "contact_phone": "(503) 555-0159"
+    }
+  },
+  "attachments": [
+    {
+      "filename": "attachment_1.pdf",
+      "render_format": "pdf",
+      "n_pages": 1,
+      "documents": [
+        {
+          "index": 0,
+          "doc_type": "insurance declaration",
+          "page_start": 0,
+          "page_end": 0,
+          "extraction": {
+            "named_insured": "Evergreen Home Health Services LLC",
+            "policy_number": "HMP-3320815",
+            "coverages": {
+              "Commercial General Liability": "$7,250",
+              "Business Automobile Liability": "$4,150",
+              "Workers Compensation": "$6,100",
+              "Commercial Umbrella Liability": "$1,150"
+            },
+            "total_premium": 18650.0
+          }
+        }
+      ],
+      "boundary_page_offsets": [],
+      "n_documents": 1,
+      "expected_segment_types": [
+        "insurance declaration"
+      ],
+      "expected_collapse": false,
+      "expected_scanned": false,
+      "expected_interrupt": false
+    }
+  ]
+}

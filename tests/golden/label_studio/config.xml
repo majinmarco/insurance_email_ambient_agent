@@ -1,0 +1,40 @@
+<View>
+  <Header value="$case_id  ·  tier: $tier"/>
+
+  <View style="background:#f8f9fb;padding:1em;border-radius:6px">
+    <Header value="Email"/>
+    <Text name="email_subject" value="$email_subject"/>
+    <Text name="email_body" value="$email_body"/>
+  </View>
+
+  <Header value="Email intent"/>
+  <Choices name="email_type" toName="email_body" choice="single" showInLine="true">
+      <Choice value="new_submission"/>
+      <Choice value="renewal"/>
+      <Choice value="endorsement"/>
+      <Choice value="claim_fnol"/>
+      <Choice value="needs_review"/>
+  </Choices>
+
+  <Header value="Email extraction (edit JSON to correct)"/>
+  <TextArea name="email_extraction" toName="email_body" rows="7"
+            editable="true" maxSubmissions="1"/>
+
+  <Header value="Documents"/>
+  <Repeater on="$documents" indexFlag="{{idx}}">
+    <View style="border:1px solid #dcdce3;border-radius:6px;padding:1em;margin-bottom:1em">
+      <Text name="doc_file_{{idx}}" value="$documents[{{idx}}].filename"/>
+      <Text name="doc_meta_{{idx}}" value="$documents[{{idx}}].meta"/>
+      <Text name="doc_text_{{idx}}" value="$documents[{{idx}}].text"/>
+      <Choices name="doc_type_{{idx}}" toName="doc_text_{{idx}}" choice="single" showInLine="true">
+          <Choice value="certificate of insurance"/>
+          <Choice value="insurance invoice"/>
+          <Choice value="insurance declaration"/>
+          <Choice value="insurance endorsement"/>
+          <Choice value="unrelated or unclear document"/>
+      </Choices>
+      <TextArea name="doc_extraction_{{idx}}" toName="doc_text_{{idx}}" rows="6"
+                editable="true" maxSubmissions="1"/>
+    </View>
+  </Repeater>
+</View>

@@ -1,0 +1,369 @@
+{
+  "case_id": "clean-renewal-a",
+  "tier": "clean",
+  "seed": 102,
+  "email_type": "renewal",
+  "attachments_mode": "on",
+  "max_docs_per_attachment": 2,
+  "max_attachments": 3,
+  "force_format": null,
+  "persona_index": 1,
+  "content_source": "llm",
+  "noise_manifest": null,
+  "raw_scenario": {
+    "shared": {
+      "named_insured": "Blue Harbor Restaurant Group LLC",
+      "policy_number": "BOP-7789341",
+      "insured_address": "18 Commercial Wharf, Boston, MA 02110",
+      "contact_name": "Marco Bianchi",
+      "contact_email": "marco@blueharborgroup.com",
+      "contact_phone": "(617) 555-0146",
+      "carrier_name": "Liberty Mutual Insurance",
+      "effective_date": "2026-02-01",
+      "expiration_date": "2027-02-01",
+      "coverage_limits": [
+        {
+          "coverage": "Commercial General Liability",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Business Personal Property",
+          "limit": "$750,000"
+        },
+        {
+          "coverage": "Business Income and Extra Expense",
+          "limit": "$500,000"
+        },
+        {
+          "coverage": "Liquor Liability",
+          "limit": "$1,000,000"
+        }
+      ],
+      "total_premium": "$18,940",
+      "producer": {
+        "agency": "Beacon Hill Risk Partners",
+        "address": "75 Federal Street, Boston, MA 02110",
+        "contact_name": "Erin Callahan",
+        "phone": "(617) 555-4810",
+        "fax": "(617) 555-4811",
+        "email": "intake@beaconhillrisk.com"
+      },
+      "insurers": [
+        {
+          "letter": "A",
+          "name": "Liberty Mutual Fire Insurance Company",
+          "naic": "23035"
+        },
+        {
+          "letter": "B",
+          "name": "Liberty Insurance Corporation",
+          "naic": "42404"
+        },
+        {
+          "letter": "C",
+          "name": "Liberty Mutual Personal Insurance Company",
+          "naic": "23043"
+        },
+        {
+          "letter": "D",
+          "name": "LM Insurance Corporation",
+          "naic": "33600"
+        },
+        {
+          "letter": "E",
+          "name": "West American Insurance Company",
+          "naic": "19704"
+        },
+        {
+          "letter": "F",
+          "name": "Helmsman Insurance Company",
+          "naic": "23582"
+        }
+      ],
+      "business_description": "Full-service seafood restaurants (4 locations)",
+      "entity_type": "Limited Liability Company",
+      "fein": "84-2167395",
+      "naic_carrier": "23035"
+    },
+    "email": {
+      "subject": "Blue Harbor Restaurant Group LLC \u2014 Renewal Quote Request for Policy BOP-7789341",
+      "body": "Hi Beacon Hill Risk Partners,\n\nPlease prepare the renewal quote for Blue Harbor Restaurant Group LLC, policy BOP-7789341, expiring on 02/01/2027. We would like to renew coverage with Liberty Mutual Insurance for the upcoming term effective 02/01/2027.\n\nIf you need any updated payroll, sales, or location information to finalize the renewal, please let me know.\n\nThank you,\nMarco Bianchi",
+      "sender": "Marco Bianchi <marco@blueharborgroup.com>",
+      "recipient": "intake@beaconhillrisk.com"
+    },
+    "documents": [
+      {
+        "title": "Commercial Package Policy Declarations \u2014 Blue Harbor Restaurant Group LLC",
+        "certificate_holder": null,
+        "coverage_lines": null,
+        "description_of_operations": null,
+        "authorized_representative": null,
+        "certificate_number": null,
+        "revision_number": null,
+        "invoice_number": null,
+        "invoice_date": null,
+        "account_number": null,
+        "line_items": null,
+        "subtotal": null,
+        "taxes": null,
+        "fees": null,
+        "prior_balance": null,
+        "amount_due": null,
+        "billing_period": null,
+        "due_date": null,
+        "payment_methods": null,
+        "remit_to": null,
+        "coverage_parts": [
+          {
+            "insurer_letter": "A",
+            "coverage_type": "Commercial General Liability",
+            "policy_number": "BOP-7789341",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": false,
+            "subro_waived": false,
+            "limits": [
+              {
+                "coverage": "Each Occurrence",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "General Aggregate",
+                "limit": "$2,000,000"
+              },
+              {
+                "coverage": "Products-Completed Operations Aggregate",
+                "limit": "$2,000,000"
+              },
+              {
+                "coverage": "Personal and Advertising Injury",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "Damage to Premises Rented to You",
+                "limit": "$300,000"
+              }
+            ],
+            "premium": "$7,250"
+          },
+          {
+            "insurer_letter": "A",
+            "coverage_type": "Business Personal Property",
+            "policy_number": "BOP-7789341",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": false,
+            "subro_waived": false,
+            "limits": [
+              {
+                "coverage": "Business Personal Property Limit",
+                "limit": "$750,000"
+              },
+              {
+                "coverage": "Equipment Breakdown Sublimit",
+                "limit": "$100,000"
+              },
+              {
+                "coverage": "Valuable Papers and Records",
+                "limit": "$25,000"
+              }
+            ],
+            "premium": "$4,180"
+          },
+          {
+            "insurer_letter": "A",
+            "coverage_type": "Business Income and Extra Expense",
+            "policy_number": "BOP-7789341",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": false,
+            "subro_waived": false,
+            "limits": [
+              {
+                "coverage": "Business Income Limit",
+                "limit": "$500,000"
+              },
+              {
+                "coverage": "Extra Expense Limit",
+                "limit": "$250,000"
+              }
+            ],
+            "premium": "$2,760"
+          },
+          {
+            "insurer_letter": "A",
+            "coverage_type": "Liquor Liability",
+            "policy_number": "BOP-7789341",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": false,
+            "subro_waived": false,
+            "limits": [
+              {
+                "coverage": "Each Common Cause",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "Aggregate",
+                "limit": "$2,000,000"
+              }
+            ],
+            "premium": "$2,950"
+          }
+        ],
+        "forms_schedule": [
+          {
+            "form_number": "IL 00 17 11 98",
+            "title": "Common Policy Conditions"
+          },
+          {
+            "form_number": "IL 00 21 09 08",
+            "title": "Nuclear Energy Liability Exclusion Endorsement"
+          },
+          {
+            "form_number": "CG 00 01 04 13",
+            "title": "Commercial General Liability Coverage Form"
+          },
+          {
+            "form_number": "CG 21 47 12 19",
+            "title": "Employment-Related Practices Exclusion"
+          },
+          {
+            "form_number": "CG 20 10 04 13",
+            "title": "Additional Insured \u2014 Owners, Lessees or Contractors \u2014 Scheduled Person or Organization"
+          },
+          {
+            "form_number": "CP 00 10 10 12",
+            "title": "Building and Personal Property Coverage Form"
+          },
+          {
+            "form_number": "CP 00 30 10 12",
+            "title": "Business Income (and Extra Expense) Coverage Form"
+          },
+          {
+            "form_number": "CA 00 01 11 20",
+            "title": "Business Auto Coverage Form"
+          },
+          {
+            "form_number": "CG 21 60 05 14",
+            "title": "Liquor Liability Exclusion"
+          }
+        ],
+        "premium_summary": [
+          {
+            "description": "Commercial General Liability",
+            "amount": "$7,250.00"
+          },
+          {
+            "description": "Business Personal Property",
+            "amount": "$4,180.00"
+          },
+          {
+            "description": "Business Income and Extra Expense",
+            "amount": "$2,760.00"
+          },
+          {
+            "description": "Liquor Liability",
+            "amount": "$2,950.00"
+          },
+          {
+            "description": "Terrorism (TRIA)",
+            "amount": "$185.00"
+          },
+          {
+            "description": "Surplus Lines Tax",
+            "amount": "$1,346.00"
+          },
+          {
+            "description": "Policy Fee",
+            "amount": "$269.00"
+          }
+        ],
+        "countersignature": "Liberty Mutual Insurance, Authorized Representative",
+        "countersignature_date": "01/12/2026",
+        "form_number": null,
+        "endorsement_title": null,
+        "endorsement_number": null,
+        "schedule_rows": null,
+        "provisions": null,
+        "additional_premium": null,
+        "change_description": null,
+        "coverages": null,
+        "total_premium": "$18,940",
+        "effective_date": "02/01/2026",
+        "expiration_date": "02/01/2027",
+        "nr_kind": null,
+        "nr_header_rows": null,
+        "nr_columns": null,
+        "nr_rows": null,
+        "unrelated_subtitle": null,
+        "unrelated_body": null
+      },
+      {
+        "title": "Premium Invoice \u2014 Blue Harbor Restaurant Group LLC Policy BOP-7789341",
+        "certificate_holder": null,
+        "coverage_lines": null,
+        "description_of_operations": null,
+        "authorized_representative": null,
+        "certificate_number": null,
+        "revision_number": null,
+        "invoice_number": "INV-264118",
+        "invoice_date": "01/15/2026",
+        "account_number": "BOP-7789341",
+        "line_items": [
+          {
+            "description": "Policy Premium",
+            "amount": "$17,140.00"
+          },
+          {
+            "description": "Terrorism/TRIA",
+            "amount": "$185.00"
+          },
+          {
+            "description": "Massachusetts State Tax/Surcharge",
+            "amount": "$1,346.00"
+          },
+          {
+            "description": "Broker Fee",
+            "amount": "$269.00"
+          },
+          {
+            "description": "Prior Balance",
+            "amount": "$0.00"
+          }
+        ],
+        "subtotal": "$17,325.00",
+        "taxes": "$1,346.00",
+        "fees": "$454.00",
+        "prior_balance": "$0.00",
+        "amount_due": "$19,125.00",
+        "billing_period": "02/01/2026 - 02/01/2027",
+        "due_date": "02/01/2026",
+        "payment_methods": "ACH, check, or credit card via the Liberty Mutual billing portal",
+        "remit_to": "Liberty Mutual Insurance, P.O. Box 84088, Boston, MA 02284-4088",
+        "coverage_parts": null,
+        "forms_schedule": null,
+        "premium_summary": null,
+        "countersignature": null,
+        "countersignature_date": null,
+        "form_number": null,
+        "endorsement_title": null,
+        "endorsement_number": null,
+        "schedule_rows": null,
+        "provisions": null,
+        "additional_premium": null,
+        "change_description": null,
+        "coverages": null,
+        "total_premium": null,
+        "effective_date": null,
+        "expiration_date": null,
+        "nr_kind": null,
+        "nr_header_rows": null,
+        "nr_columns": null,
+        "nr_rows": null,
+        "unrelated_subtitle": null,
+        "unrelated_body": null
+      }
+    ]
+  }
+}

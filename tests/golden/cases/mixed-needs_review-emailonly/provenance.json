@@ -1,0 +1,119 @@
+{
+  "case_id": "mixed-needs_review-emailonly",
+  "tier": "mixed",
+  "seed": 411,
+  "email_type": "needs_review",
+  "attachments_mode": "off",
+  "max_docs_per_attachment": 2,
+  "max_attachments": 3,
+  "force_format": null,
+  "persona_index": 3,
+  "content_source": "llm",
+  "noise_manifest": {
+    "email": {
+      "persona_index": 3,
+      "thread": false,
+      "signature": true,
+      "subject_style": "ticket",
+      "multi_recipient": false,
+      "body_only": false,
+      "inconsistency": false,
+      "date_received": "2026-07-10T07:42:00+00:00"
+    },
+    "attachments": [],
+    "docs": [],
+    "expected": {
+      "email_type_hard": true,
+      "per_attachment_collapse": [],
+      "per_attachment_scanned": [],
+      "per_attachment_expect_interrupt": []
+    }
+  },
+  "raw_scenario": {
+    "shared": {
+      "named_insured": "Evergreen Home Health Services LLC",
+      "policy_number": "HMP-3320815",
+      "insured_address": "1201 SW Fifth Ave, Portland, OR 97204",
+      "contact_name": "Priya Raman",
+      "contact_email": "praman@evergreenhh.com",
+      "contact_phone": "(503) 555-0159",
+      "carrier_name": "CNA Financial",
+      "effective_date": "2026-02-01",
+      "expiration_date": "2027-02-01",
+      "coverage_limits": [
+        {
+          "coverage": "Commercial General Liability",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "General Aggregate",
+          "limit": "$2,000,000"
+        },
+        {
+          "coverage": "Professional Liability",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Umbrella Liability",
+          "limit": "$5,000,000"
+        },
+        {
+          "coverage": "Workers Compensation",
+          "limit": "Statutory"
+        }
+      ],
+      "total_premium": "$18,750",
+      "producer": {
+        "agency": "Cascade Professional Insurance",
+        "address": "410 SW Washington St, Suite 600, Portland, OR 97204",
+        "contact_name": "Morgan Lee",
+        "phone": "(503) 555-0198",
+        "fax": "(503) 555-0199",
+        "email": "submissions@cascadepro.com"
+      },
+      "insurers": [
+        {
+          "letter": "A",
+          "name": "CNA Financial",
+          "naic": "80808"
+        },
+        {
+          "letter": "B",
+          "name": "Continental Casualty Company",
+          "naic": "20443"
+        },
+        {
+          "letter": "C",
+          "name": "The Continental Insurance Company",
+          "naic": "35289"
+        },
+        {
+          "letter": "D",
+          "name": "CNA Insurance Company",
+          "naic": "27855"
+        },
+        {
+          "letter": "E",
+          "name": "Transportation Insurance Company",
+          "naic": "20494"
+        },
+        {
+          "letter": "F",
+          "name": "Valley Forge Insurance Company",
+          "naic": "20508"
+        }
+      ],
+      "business_description": "In-home nursing and personal care services",
+      "entity_type": "Limited Liability Company",
+      "fein": "92-7845610",
+      "naic_carrier": "80808"
+    },
+    "email": {
+      "subject": "Review requested for Evergreen Home Health Services LLC policy HMP-3320815 [Ref# 62873]",
+      "body": "Hi Priya,\n\nWe received a note tied to Evergreen Home Health Services LLC and policy HMP-3320815, but it is not clear whether this should be treated as a certificate update, endorsement request, or billing item. Could you please review and confirm the intended handling?\n\nIf there is a requested effective date or specific change, please include that in your reply.\n\nThank you,\nCascade Professional Insurance\n\nBest regards,\nPriya Raman\nEvergreen Home Health Services LLC | (503) 555-0159",
+      "sender": "Morgan Lee <submissions@cascadepro.com>",
+      "recipient": "praman@evergreenhh.com"
+    },
+    "documents": []
+  }
+}

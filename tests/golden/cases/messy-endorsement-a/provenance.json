@@ -1,0 +1,243 @@
+{
+  "case_id": "messy-endorsement-a",
+  "tier": "messy",
+  "seed": 303,
+  "email_type": "endorsement",
+  "attachments_mode": "on",
+  "max_docs_per_attachment": 2,
+  "max_attachments": 3,
+  "force_format": null,
+  "persona_index": 9,
+  "content_source": "llm",
+  "noise_manifest": {
+    "email": {
+      "persona_index": 9,
+      "thread": true,
+      "signature": true,
+      "subject_style": "ticket",
+      "multi_recipient": true,
+      "body_only": true,
+      "inconsistency": false,
+      "date_received": "2026-07-11T13:52:00+00:00"
+    },
+    "attachments": [
+      {
+        "filename": "Loss Run Report.pdf"
+      }
+    ],
+    "docs": [
+      {
+        "delimiter_mode": "bold_caps",
+        "layout_variant": 2,
+        "watermark": "DUPLICATE",
+        "content_noise": false,
+        "content_noise_level": 0.35,
+        "is_scanned": false,
+        "render_format": "pdf"
+      }
+    ],
+    "expected": {
+      "email_type_hard": false,
+      "per_attachment_collapse": [
+        false
+      ],
+      "per_attachment_scanned": [
+        false
+      ],
+      "per_attachment_expect_interrupt": [
+        true
+      ]
+    }
+  },
+  "raw_scenario": {
+    "shared": {
+      "named_insured": "Midwest AgriSupply Cooperative",
+      "policy_number": "FARM-1120934",
+      "insured_address": "1750 NE Broadway Ave, Des Moines, IA 50313",
+      "contact_name": "Roger Halvorsen",
+      "contact_email": "rhalvorsen@midwestagri.coop",
+      "contact_phone": "(515) 555-0182",
+      "carrier_name": "Nationwide Agribusiness",
+      "effective_date": "2026-03-01",
+      "expiration_date": "2027-03-01",
+      "coverage_limits": [
+        {
+          "coverage": "Commercial General Liability",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Business Personal Property",
+          "limit": "$2,500,000"
+        },
+        {
+          "coverage": "Commercial Auto Liability",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Umbrella Liability",
+          "limit": "$5,000,000"
+        },
+        {
+          "coverage": "Workers Compensation",
+          "limit": "Statutory"
+        }
+      ],
+      "total_premium": "$48,750",
+      "producer": {
+        "agency": "Prairie States Insurance Cooperative",
+        "address": "1201 Grand Avenue, Suite 210, Des Moines, IA 50309",
+        "contact_name": "Commercial Lines Team",
+        "phone": "(515) 555-0248",
+        "fax": "(515) 555-0249",
+        "email": "commercial@prairiestatesins.com"
+      },
+      "insurers": [
+        {
+          "letter": "A",
+          "name": "Nationwide Agribusiness Insurance Company",
+          "naic": "28223"
+        },
+        {
+          "letter": "B",
+          "name": "Allied Property & Casualty Insurance Company",
+          "naic": "42579"
+        },
+        {
+          "letter": "C",
+          "name": "Nationwide Mutual Insurance Company",
+          "naic": "23787"
+        },
+        {
+          "letter": "D",
+          "name": "Cincinnati Insurance Company",
+          "naic": "76236"
+        },
+        {
+          "letter": "E",
+          "name": "Westfield Insurance Company",
+          "naic": "24112"
+        },
+        {
+          "letter": "F",
+          "name": "Acadia Insurance Company",
+          "naic": "31325"
+        }
+      ],
+      "business_description": "Farm supply, grain handling, and agronomy services",
+      "entity_type": "Cooperative",
+      "fein": "47-2864913",
+      "naic_carrier": "28223"
+    },
+    "email": {
+      "subject": "Re: Request for mid-term endorsement: Midwest AgriSupply Cooperative - Policy FARM-1120934 [Ref# 87794]",
+      "body": "Please see attached \u2014 thanks.\n\nOn Wed, Jul 1, 2026 11:47 AM, Commercial Lines Team <commercial@prairiestatesins.com> wrote:\n> Received, thank you. We'll need the current loss runs before we can release terms.\n>\n> Regards,\n> Commercial Lines Team\n\nRoger Halvorsen\nMidwest AgriSupply Cooperative\n\nCONFIDENTIALITY NOTICE: This message and any attachments are intended solely for the addressee and may contain confidential information.",
+      "sender": "Roger Halvorsen <rhalvorsen@midwestagri.coop>",
+      "recipient": "commercial@prairiestatesins.com, newbusiness@prairiestatesins.com"
+    },
+    "documents": [
+      {
+        "title": "Submission Cover Letter - Mid-Term Change Request",
+        "certificate_holder": null,
+        "coverage_lines": null,
+        "description_of_operations": null,
+        "authorized_representative": null,
+        "certificate_number": null,
+        "revision_number": null,
+        "invoice_number": null,
+        "invoice_date": null,
+        "account_number": null,
+        "line_items": null,
+        "subtotal": null,
+        "taxes": null,
+        "fees": null,
+        "prior_balance": null,
+        "amount_due": null,
+        "billing_period": null,
+        "due_date": null,
+        "payment_methods": null,
+        "remit_to": null,
+        "coverage_parts": null,
+        "forms_schedule": null,
+        "premium_summary": null,
+        "countersignature": null,
+        "countersignature_date": null,
+        "form_number": null,
+        "endorsement_title": null,
+        "endorsement_number": null,
+        "schedule_rows": null,
+        "provisions": null,
+        "additional_premium": null,
+        "change_description": null,
+        "coverages": null,
+        "total_premium": null,
+        "effective_date": null,
+        "expiration_date": null,
+        "nr_kind": "Submission Cover Letter",
+        "nr_header_rows": [
+          {
+            "label": "Insured",
+            "value": "Midwest AgriSupply Cooperative"
+          },
+          {
+            "label": "Policy No.",
+            "value": "FARM-1120934"
+          },
+          {
+            "label": "Carrier",
+            "value": "Nationwide Agribusiness"
+          },
+          {
+            "label": "Requested Effective Date",
+            "value": "04/15/2026"
+          },
+          {
+            "label": "Prepared By",
+            "value": "Prairie States Insurance Cooperative"
+          },
+          {
+            "label": "Prepared For",
+            "value": "Roger Halvorsen"
+          }
+        ],
+        "nr_columns": [
+          "Line No.",
+          "Item",
+          "Current Status",
+          "Requested Change",
+          "Remarks"
+        ],
+        "nr_rows": [
+          {
+            "cells": [
+              "1",
+              "Commercial auto schedule",
+              "In force",
+              "Add 2025 Ford F-550 delivery truck, VIN 1FD0W5HT3SED12345",
+              "Vehicle to be garaged at 1750 NE Broadway Ave, Des Moines, IA 50313"
+            ]
+          },
+          {
+            "cells": [
+              "2",
+              "Agronomy operations location",
+              "In force",
+              "Update location description",
+              "Confirm service and storage use at west lot entrance"
+            ]
+          },
+          {
+            "cells": [
+              "3",
+              "Named insured",
+              "In force",
+              "No change requested",
+              "Maintain Midwest AgriSupply Cooperative as named insured"
+            ]
+          }
+        ],
+        "unrelated_subtitle": "Mid-Term Change Submission for Review",
+        "unrelated_body": "Please review the enclosed change request summary for the in-force commercial package issued to Midwest AgriSupply Cooperative. This submission is being provided to document the requested mid-term updates and to support underwriting review prior to endorsement issuance."
+      }
+    ]
+  }
+}

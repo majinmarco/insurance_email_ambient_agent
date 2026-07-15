@@ -1,0 +1,177 @@
+{
+  "case_id": "messy-renewal-multi",
+  "tier": "messy",
+  "email": {
+    "email_type": "renewal",
+    "email_type_hard": false,
+    "extraction": {
+      "named_insured": "Midwest AgriSupply Cooperative",
+      "policy_number": "FARM-1120934",
+      "requested_effective_date": null,
+      "requested_changes": "Prepare a renewal quote for the expiring policy.",
+      "contact_name": "Roger Halvorsen",
+      "contact_phone": "(515) 555-0182"
+    }
+  },
+  "attachments": [
+    {
+      "filename": "Insurance Documents.pdf",
+      "render_format": "pdf",
+      "n_pages": 2,
+      "documents": [
+        {
+          "index": 0,
+          "doc_type": "insurance invoice",
+          "page_start": 0,
+          "page_end": 0,
+          "extraction": {
+            "named_insured": "Midwest AgriSupply Cooperative",
+            "policy_number": "FARM-1120934",
+            "amount_due": 42412.0,
+            "billing_period": "01/01/2027 - 01/01/2028",
+            "policy_reference": "FARM-1120934",
+            "due_date": "2027-01-01"
+          }
+        },
+        {
+          "index": 1,
+          "doc_type": "certificate of insurance",
+          "page_start": 1,
+          "page_end": 1,
+          "extraction": {
+            "named_insured": "Midwest AgriSupply Cooperative",
+            "policy_number": "FARM-1120934",
+            "certificate_holder": "Heartland Grain Terminal, LLC, 2210 River Road, Council Bluffs, IA 51501",
+            "effective_date": "2027-01-01",
+            "expiration_date": "2028-01-01",
+            "limits": {
+              "Each Occurrence": "$1,000,000",
+              "Damage to Rented Premises": "$300,000",
+              "Med Exp": "$5,000",
+              "Personal & Adv Injury": "$1,000,000",
+              "General Aggregate": "$2,000,000",
+              "Products-Comp/Op Agg": "$2,000,000",
+              "Combined Single Limit": "$1,000,000",
+              "E.L. Each Accident": "$1,000,000",
+              "E.L. Disease-Ea Employee": "$1,000,000",
+              "E.L. Disease-Policy Limit": "$1,000,000"
+            }
+          }
+        }
+      ],
+      "boundary_page_offsets": [
+        1
+      ],
+      "n_documents": 2,
+      "expected_segment_types": [
+        "insurance invoice",
+        "certificate of insurance"
+      ],
+      "expected_collapse": true,
+      "expected_scanned": false,
+      "expected_interrupt": false
+    },
+    {
+      "filename": "Insurance Documents.pdf",
+      "render_format": "pdf",
+      "n_pages": 3,
+      "documents": [
+        {
+          "index": 0,
+          "doc_type": "insurance invoice",
+          "page_start": 0,
+          "page_end": 0,
+          "extraction": {
+            "named_insured": "Midwest AgriSupply Cooperative",
+            "policy_number": "FARM-1120934",
+            "amount_due": 42664.0,
+            "billing_period": "01/01/2027 - 01/01/2028",
+            "policy_reference": "FARM-1120934",
+            "due_date": "2027-01-01"
+          }
+        },
+        {
+          "index": 1,
+          "doc_type": "insurance invoice",
+          "page_start": 1,
+          "page_end": 1,
+          "extraction": {
+            "named_insured": "Midwest AgriSupply Cooperative",
+            "policy_number": "FARM-1120934",
+            "amount_due": 42152.0,
+            "billing_period": "01/01/2027 - 01/01/2028",
+            "policy_reference": "FARM-1120934",
+            "due_date": "2027-01-01"
+          }
+        },
+        {
+          "index": 2,
+          "doc_type": "certificate of insurance",
+          "page_start": 2,
+          "page_end": 2,
+          "extraction": {
+            "named_insured": "Midwest AgriSupply Cooperative",
+            "policy_number": "FARM-1120934",
+            "certificate_holder": "Praiie View Feed Mill, Inc., 89o0 Commeerce arkwa, nkeny, IA 50021",
+            "effective_date": "2027-01-01",
+            "expiration_date": "2028-01-01",
+            "limits": {
+              "Each Occurrence": "$1,000,000",
+              "Damage to Rented Premises": "$300,000",
+              "Med Exp": "$5,000",
+              "Personal & Adv Injury": "$1,000,000",
+              "General Aggregate": "$2,000,000",
+              "Products-Comp/Op Agg": "$2,000,000",
+              "Combined Single Limit": "$1,000,000",
+              "E.L. Each Accident": "$1,000,000",
+              "E.L. Disease-Ea Employee": "$1,000,000",
+              "E.L. Disease-Policy Limit": "$1,000,000"
+            }
+          }
+        }
+      ],
+      "boundary_page_offsets": [
+        1,
+        2
+      ],
+      "n_documents": 3,
+      "expected_segment_types": [
+        "insurance invoice",
+        "insurance invoice",
+        "certificate of insurance"
+      ],
+      "expected_collapse": true,
+      "expected_scanned": false,
+      "expected_interrupt": false
+    },
+    {
+      "filename": "Premium Invoice.pdf",
+      "render_format": "pdf",
+      "n_pages": 1,
+      "documents": [
+        {
+          "index": 0,
+          "doc_type": "insurance invoice",
+          "page_start": 0,
+          "page_end": 0,
+          "extraction": {
+            "named_insured": "Midwest AgriSupply Cooperative",
+            "policy_number": "FARM-1120934",
+            "amount_due": 42483.0,
+            "billing_period": "01/01/2027 - 01/01/2028",
+            "policy_reference": "FARM-1120934",
+            "due_date": "2027-01-01"
+          }
+        }
+      ],
+      "boundary_page_offsets": [],
+      "n_documents": 1,
+      "expected_segment_types": [
+        "insurance invoice"
+      ],
+      "expected_collapse": false,
+      "expected_scanned": false,
+      "expected_interrupt": false
+    }
+  ]
+}

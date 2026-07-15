@@ -1,0 +1,128 @@
+{
+  "case_id": "clean-claim_fnol-emailonly",
+  "tier": "clean",
+  "seed": 410,
+  "email_type": "claim_fnol",
+  "attachments_mode": "off",
+  "max_docs_per_attachment": 2,
+  "max_attachments": 3,
+  "force_format": null,
+  "persona_index": 0,
+  "content_source": "llm",
+  "noise_manifest": null,
+  "raw_scenario": {
+    "shared": {
+      "named_insured": "Riverside Manufacturing Co.",
+      "policy_number": "SBA-4471902",
+      "insured_address": "2200 Foundry Road, Cleveland, OH 44115",
+      "contact_name": "Karen Delgado",
+      "contact_email": "kdelgado@riversidemfg.com",
+      "contact_phone": "(216) 555-0173",
+      "carrier_name": "The Hartford",
+      "effective_date": "2025-07-15",
+      "expiration_date": "2026-07-15",
+      "coverage_limits": [
+        {
+          "coverage": "General Aggregate",
+          "limit": "$2,000,000"
+        },
+        {
+          "coverage": "Each Occurrence",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Personal and Advertising Injury",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Products-Completed Operations Aggregate",
+          "limit": "$2,000,000"
+        },
+        {
+          "coverage": "Damage to Premises Rented to You",
+          "limit": "$300,000"
+        },
+        {
+          "coverage": "Medical Expense (Any One Person)",
+          "limit": "$5,000"
+        },
+        {
+          "coverage": "Combined Single Limit",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Auto Liability Combined Single Limit",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Employers Liability - Each Accident",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Employers Liability - Disease Each Employee",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Employers Liability - Disease Policy Limit",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Umbrella Each Occurrence",
+          "limit": "$5,000,000"
+        }
+      ],
+      "total_premium": "$18,750",
+      "producer": {
+        "agency": "Great Lakes Insurance Advisors",
+        "address": "1350 W. 9th Street, Suite 410, Cleveland, OH 44113",
+        "contact_name": "Megan Holt",
+        "phone": "(216) 555-0148",
+        "fax": "(216) 555-0199",
+        "email": "submissions@greatlakesins.com"
+      },
+      "insurers": [
+        {
+          "letter": "A",
+          "name": "The Hartford",
+          "naic": "19682"
+        },
+        {
+          "letter": "B",
+          "name": "Hartford Fire Insurance Company",
+          "naic": "19682"
+        },
+        {
+          "letter": "C",
+          "name": "Hartford Casualty Insurance Company",
+          "naic": "29424"
+        },
+        {
+          "letter": "D",
+          "name": "Hartford Underwriters Insurance Company",
+          "naic": "30104"
+        },
+        {
+          "letter": "E",
+          "name": "Twin City Fire Insurance Company",
+          "naic": "29459"
+        },
+        {
+          "letter": "F",
+          "name": "Hartford Accident and Indemnity Company",
+          "naic": "22357"
+        }
+      ],
+      "business_description": "Sheet-metal fabrication and industrial machining",
+      "entity_type": "Corporation",
+      "fein": "31-2847190",
+      "naic_carrier": "19682"
+    },
+    "email": {
+      "subject": "FNOL Notice - Riverside Manufacturing Co. / Policy SBA-4471902",
+      "body": "Karen,\n\nPlease treat this as first notice of loss for Riverside Manufacturing Co. under policy SBA-4471902 with The Hartford.\n\nWe are reporting a new claim involving damage that occurred on the insured premises at 2200 Foundry Road, Cleveland, OH 44115. Please confirm claim setup and advise the claim number, assigned adjuster, and any documentation needed to support the loss.\n\nIf you need a requested loss date or additional incident details, reply and we will provide them immediately.\n\nThank you,\nGreat Lakes Insurance Advisors",
+      "sender": "Megan Holt <submissions@greatlakesins.com>",
+      "recipient": "Karen Delgado <kdelgado@riversidemfg.com>"
+    },
+    "documents": []
+  }
+}

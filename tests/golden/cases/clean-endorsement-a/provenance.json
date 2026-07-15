@@ -1,0 +1,641 @@
+{
+  "case_id": "clean-endorsement-a",
+  "tier": "clean",
+  "seed": 103,
+  "email_type": "endorsement",
+  "attachments_mode": "on",
+  "max_docs_per_attachment": 2,
+  "max_attachments": 3,
+  "force_format": null,
+  "persona_index": 2,
+  "content_source": "llm",
+  "noise_manifest": null,
+  "raw_scenario": {
+    "shared": {
+      "named_insured": "Summit Ridge Construction Inc.",
+      "policy_number": "CPP-6612078",
+      "insured_address": "9400 E Arapahoe Rd, Centennial, CO 80112",
+      "contact_name": "Derek Olsson",
+      "contact_email": "dolsson@summitridgegc.com",
+      "contact_phone": "(303) 555-0188",
+      "carrier_name": "Travelers Indemnity Company",
+      "effective_date": "2025-08-01",
+      "expiration_date": "2026-08-01",
+      "coverage_limits": [
+        {
+          "coverage": "General Aggregate",
+          "limit": "$2,000,000"
+        },
+        {
+          "coverage": "Each Occurrence",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Personal and Advertising Injury",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Products-Completed Operations Aggregate",
+          "limit": "$2,000,000"
+        },
+        {
+          "coverage": "Damage to Premises Rented to You",
+          "limit": "$300,000"
+        },
+        {
+          "coverage": "Medical Expense Limit",
+          "limit": "$10,000"
+        },
+        {
+          "coverage": "Business Auto Liability Combined Single Limit",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Umbrella Liability Each Occurrence",
+          "limit": "$5,000,000"
+        },
+        {
+          "coverage": "Workers Compensation Employer's Liability - Each Accident",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Workers Compensation Employer's Liability - Disease Each Employee",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Workers Compensation Employer's Liability - Disease Policy Limit",
+          "limit": "$1,000,000"
+        }
+      ],
+      "total_premium": "$48,975",
+      "producer": {
+        "agency": "Front Range Commercial Insurance",
+        "address": "11250 E Caley Ave, Suite 110, Centennial, CO 80111",
+        "contact_name": "Megan Hart",
+        "phone": "(303) 555-0144",
+        "fax": "(303) 555-0145",
+        "email": "newbusiness@frontrangeins.com"
+      },
+      "insurers": [
+        {
+          "letter": "A",
+          "name": "Travelers Indemnity Company",
+          "naic": "25666"
+        },
+        {
+          "letter": "B",
+          "name": "Travelers Property Casualty Company of America",
+          "naic": "25674"
+        },
+        {
+          "letter": "C",
+          "name": "The Travelers Indemnity Company of Connecticut",
+          "naic": "25232"
+        },
+        {
+          "letter": "D",
+          "name": "The Charter Oak Fire Insurance Company",
+          "naic": "25615"
+        },
+        {
+          "letter": "E",
+          "name": "Travelers Casualty Company of America",
+          "naic": "19038"
+        },
+        {
+          "letter": "F",
+          "name": "Travelers Casualty and Surety Company",
+          "naic": "31194"
+        }
+      ],
+      "business_description": "Commercial general contractor (ground-up)",
+      "entity_type": "Corporation",
+      "fein": "84-2176039",
+      "naic_carrier": "25666"
+    },
+    "email": {
+      "subject": "Summit Ridge Construction Inc. \u2014 Mid-term endorsement request for policy CPP-6612078",
+      "body": "Hi Derek,\n\nPlease process a mid-term endorsement request for Summit Ridge Construction Inc. on policy CPP-6612078, effective 09/15/2025. We need to update the active policy to reflect the requested change and issue revised documents once bound.\n\nPlease confirm receipt and let us know if you need any supporting paperwork.\n\nThank you,\nFront Range Commercial Insurance",
+      "sender": "Megan Hart <newbusiness@frontrangeins.com>",
+      "recipient": "Derek Olsson <dolsson@summitridgegc.com>"
+    },
+    "documents": [
+      {
+        "title": "Commercial Insurance Submission Cover Letter",
+        "certificate_holder": null,
+        "coverage_lines": null,
+        "description_of_operations": null,
+        "authorized_representative": null,
+        "certificate_number": null,
+        "revision_number": null,
+        "invoice_number": null,
+        "invoice_date": null,
+        "account_number": null,
+        "line_items": null,
+        "subtotal": null,
+        "taxes": null,
+        "fees": null,
+        "prior_balance": null,
+        "amount_due": null,
+        "billing_period": null,
+        "due_date": null,
+        "payment_methods": null,
+        "remit_to": null,
+        "coverage_parts": null,
+        "forms_schedule": null,
+        "premium_summary": null,
+        "countersignature": null,
+        "countersignature_date": null,
+        "form_number": null,
+        "endorsement_title": null,
+        "endorsement_number": null,
+        "schedule_rows": null,
+        "provisions": null,
+        "additional_premium": null,
+        "change_description": null,
+        "coverages": null,
+        "total_premium": null,
+        "effective_date": null,
+        "expiration_date": null,
+        "nr_kind": "Submission Cover Letter",
+        "nr_header_rows": [
+          {
+            "label": "Insured",
+            "value": "Summit Ridge Construction Inc."
+          },
+          {
+            "label": "Policy No.",
+            "value": "CPP-6612078"
+          },
+          {
+            "label": "Requested Effective Date",
+            "value": "09/15/2025"
+          },
+          {
+            "label": "Prepared By",
+            "value": "Front Range Commercial Insurance"
+          },
+          {
+            "label": "Carrier",
+            "value": "Travelers Indemnity Company"
+          }
+        ],
+        "nr_columns": [
+          "Reference",
+          "Description",
+          "Status",
+          "Notes"
+        ],
+        "nr_rows": [
+          {
+            "cells": [
+              "Project Schedule",
+              "Updated COI and vehicle schedule requested",
+              "Open",
+              "Awaiting carrier review"
+            ]
+          },
+          {
+            "cells": [
+              "Named Insured",
+              "Legal entity update / endorsement instruction",
+              "Open",
+              "Use exact legal name on declarations"
+            ]
+          },
+          {
+            "cells": [
+              "Auto Schedule",
+              "Add/replace contractor truck",
+              "Open",
+              "VIN and garaging address to be confirmed"
+            ]
+          },
+          {
+            "cells": [
+              "Locations",
+              "No change to primary location",
+              "N/A",
+              "Centennial office remains scheduled"
+            ]
+          }
+        ],
+        "unrelated_subtitle": "Submission for mid-term policy change review",
+        "unrelated_body": "Please review the enclosed submission materials for a mid-term endorsement on the above-captioned account. The request is limited to an administrative policy change and supporting underwriting review; this is not a certificate of insurance, invoice, declarations page, or endorsement form."
+      },
+      {
+        "title": "Travelers Commercial Package Declarations",
+        "certificate_holder": null,
+        "coverage_lines": null,
+        "description_of_operations": null,
+        "authorized_representative": null,
+        "certificate_number": null,
+        "revision_number": null,
+        "invoice_number": null,
+        "invoice_date": null,
+        "account_number": null,
+        "line_items": null,
+        "subtotal": null,
+        "taxes": null,
+        "fees": null,
+        "prior_balance": null,
+        "amount_due": null,
+        "billing_period": null,
+        "due_date": null,
+        "payment_methods": null,
+        "remit_to": null,
+        "coverage_parts": [
+          {
+            "insurer_letter": "A",
+            "coverage_type": "Commercial General Liability",
+            "policy_number": "CPP-6612078",
+            "effective_date": "08/01/2025",
+            "expiration_date": "08/01/2026",
+            "addl_insured": null,
+            "subro_waived": null,
+            "limits": [
+              {
+                "coverage": "General Aggregate",
+                "limit": "$2,000,000"
+              },
+              {
+                "coverage": "Each Occurrence",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "Personal and Advertising Injury",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "Products-Completed Operations Aggregate",
+                "limit": "$2,000,000"
+              },
+              {
+                "coverage": "Damage to Premises Rented to You",
+                "limit": "$300,000"
+              },
+              {
+                "coverage": "Medical Expense Limit",
+                "limit": "$10,000"
+              }
+            ],
+            "premium": "$21,450"
+          },
+          {
+            "insurer_letter": "B",
+            "coverage_type": "Business Auto Liability",
+            "policy_number": "CPP-6612078",
+            "effective_date": "08/01/2025",
+            "expiration_date": "08/01/2026",
+            "addl_insured": null,
+            "subro_waived": null,
+            "limits": [
+              {
+                "coverage": "Combined Single Limit",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "Hired Auto Liability",
+                "limit": "Included"
+              },
+              {
+                "coverage": "Non-Owned Auto Liability",
+                "limit": "Included"
+              }
+            ],
+            "premium": "$9,875"
+          },
+          {
+            "insurer_letter": "C",
+            "coverage_type": "Umbrella Liability",
+            "policy_number": "CPP-6612078",
+            "effective_date": "08/01/2025",
+            "expiration_date": "08/01/2026",
+            "addl_insured": null,
+            "subro_waived": null,
+            "limits": [
+              {
+                "coverage": "Each Occurrence",
+                "limit": "$5,000,000"
+              },
+              {
+                "coverage": "General Aggregate",
+                "limit": "$5,000,000"
+              }
+            ],
+            "premium": "$7,950"
+          }
+        ],
+        "forms_schedule": [
+          {
+            "form_number": "CG 00 01 04 13",
+            "title": "Commercial General Liability Coverage Form"
+          },
+          {
+            "form_number": "CG 20 10 04 13",
+            "title": "Additional Insured - Owners, Lessees or Contractors - Scheduled Person or Organization"
+          },
+          {
+            "form_number": "CG 21 09 05 14",
+            "title": "Exclusion - Designated Work"
+          },
+          {
+            "form_number": "CA 00 01 11 20",
+            "title": "Business Auto Coverage Form"
+          },
+          {
+            "form_number": "CA 20 48 10 13",
+            "title": "Designated Autos Coverage Form"
+          },
+          {
+            "form_number": "UM 00 01 01 20",
+            "title": "Commercial Umbrella Coverage Form"
+          },
+          {
+            "form_number": "IL 00 17 11 98",
+            "title": "Common Policy Conditions"
+          }
+        ],
+        "premium_summary": [
+          {
+            "description": "Policy Premium",
+            "amount": "$39,275"
+          },
+          {
+            "description": "Terrorism (TRIA)",
+            "amount": "$295"
+          },
+          {
+            "description": "State Premium Tax",
+            "amount": "$1,110"
+          },
+          {
+            "description": "Policy Fee",
+            "amount": "$50"
+          },
+          {
+            "description": "Surplus Lines / Regulatory Fee",
+            "amount": "$0"
+          }
+        ],
+        "countersignature": "Travelers Indemnity Company, by authorized representative",
+        "countersignature_date": "08/01/2025",
+        "form_number": null,
+        "endorsement_title": null,
+        "endorsement_number": null,
+        "schedule_rows": null,
+        "provisions": null,
+        "additional_premium": null,
+        "change_description": null,
+        "coverages": null,
+        "total_premium": "$40,730",
+        "effective_date": "08/01/2025",
+        "expiration_date": "08/01/2026",
+        "nr_kind": null,
+        "nr_header_rows": null,
+        "nr_columns": null,
+        "nr_rows": null,
+        "unrelated_subtitle": null,
+        "unrelated_body": null
+      },
+      {
+        "title": "Travelers Workers Compensation Declarations",
+        "certificate_holder": null,
+        "coverage_lines": null,
+        "description_of_operations": null,
+        "authorized_representative": null,
+        "certificate_number": null,
+        "revision_number": null,
+        "invoice_number": null,
+        "invoice_date": null,
+        "account_number": null,
+        "line_items": null,
+        "subtotal": null,
+        "taxes": null,
+        "fees": null,
+        "prior_balance": null,
+        "amount_due": null,
+        "billing_period": null,
+        "due_date": null,
+        "payment_methods": null,
+        "remit_to": null,
+        "coverage_parts": [
+          {
+            "insurer_letter": "D",
+            "coverage_type": "Workers Compensation",
+            "policy_number": "CPP-6612078",
+            "effective_date": "08/01/2025",
+            "expiration_date": "08/01/2026",
+            "addl_insured": null,
+            "subro_waived": null,
+            "limits": [
+              {
+                "coverage": "Part One - Workers Compensation",
+                "limit": "Statutory"
+              },
+              {
+                "coverage": "Part Two - Employer's Liability - Each Accident",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "Part Two - Employer's Liability - Disease Each Employee",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "Part Two - Employer's Liability - Disease Policy Limit",
+                "limit": "$1,000,000"
+              }
+            ],
+            "premium": "$8,150"
+          }
+        ],
+        "forms_schedule": [
+          {
+            "form_number": "WC 00 00 01 A",
+            "title": "Workers Compensation and Employers Liability Insurance Policy"
+          },
+          {
+            "form_number": "WC 00 03 13",
+            "title": "Workers Compensation Coverage Part Information Page"
+          },
+          {
+            "form_number": "WC 42 03 04 22",
+            "title": "Schedule of Classification Codes and Rates"
+          },
+          {
+            "form_number": "IL 00 17 11 98",
+            "title": "Common Policy Conditions"
+          }
+        ],
+        "premium_summary": [
+          {
+            "description": "Policy Premium",
+            "amount": "$8,150"
+          },
+          {
+            "description": "Terrorism (TRIA)",
+            "amount": "$85"
+          },
+          {
+            "description": "State Assessments / Taxes",
+            "amount": "$610"
+          },
+          {
+            "description": "Policy Fee",
+            "amount": "$40"
+          },
+          {
+            "description": "Inspection Fee",
+            "amount": "$0"
+          }
+        ],
+        "countersignature": "Travelers Indemnity Company, by authorized representative",
+        "countersignature_date": "08/01/2025",
+        "form_number": null,
+        "endorsement_title": null,
+        "endorsement_number": null,
+        "schedule_rows": null,
+        "provisions": null,
+        "additional_premium": null,
+        "change_description": null,
+        "coverages": null,
+        "total_premium": "$8,885",
+        "effective_date": "08/01/2025",
+        "expiration_date": "08/01/2026",
+        "nr_kind": null,
+        "nr_header_rows": null,
+        "nr_columns": null,
+        "nr_rows": null,
+        "unrelated_subtitle": null,
+        "unrelated_body": null
+      },
+      {
+        "title": "Travelers Inland Marine Declarations",
+        "certificate_holder": null,
+        "coverage_lines": null,
+        "description_of_operations": null,
+        "authorized_representative": null,
+        "certificate_number": null,
+        "revision_number": null,
+        "invoice_number": null,
+        "invoice_date": null,
+        "account_number": null,
+        "line_items": null,
+        "subtotal": null,
+        "taxes": null,
+        "fees": null,
+        "prior_balance": null,
+        "amount_due": null,
+        "billing_period": null,
+        "due_date": null,
+        "payment_methods": null,
+        "remit_to": null,
+        "coverage_parts": [
+          {
+            "insurer_letter": "E",
+            "coverage_type": "Contractors Equipment",
+            "policy_number": "CPP-6612078",
+            "effective_date": "08/01/2025",
+            "expiration_date": "08/01/2026",
+            "addl_insured": null,
+            "subro_waived": null,
+            "limits": [
+              {
+                "coverage": "Scheduled Property Limit",
+                "limit": "$1,500,000"
+              },
+              {
+                "coverage": "Deductible",
+                "limit": "$2,500"
+              }
+            ],
+            "premium": "$5,320"
+          },
+          {
+            "insurer_letter": "F",
+            "coverage_type": "Blanket Property Floater",
+            "policy_number": "CPP-6612078",
+            "effective_date": "08/01/2025",
+            "expiration_date": "08/01/2026",
+            "addl_insured": null,
+            "subro_waived": null,
+            "limits": [
+              {
+                "coverage": "Blanket Limit",
+                "limit": "$750,000"
+              },
+              {
+                "coverage": "Deductible",
+                "limit": "$1,000"
+              }
+            ],
+            "premium": "$3,420"
+          }
+        ],
+        "forms_schedule": [
+          {
+            "form_number": "CP 00 10 10 12",
+            "title": "Building and Personal Property Coverage Form"
+          },
+          {
+            "form_number": "CP 00 90 07 88",
+            "title": "Commercial Property Conditions"
+          },
+          {
+            "form_number": "CP 19 17 10 12",
+            "title": "Utility Services - Direct Damage"
+          },
+          {
+            "form_number": "IM 00 01 01 15",
+            "title": "Inland Marine Conditions"
+          },
+          {
+            "form_number": "IL 00 17 11 98",
+            "title": "Common Policy Conditions"
+          }
+        ],
+        "premium_summary": [
+          {
+            "description": "Policy Premium",
+            "amount": "$8,740"
+          },
+          {
+            "description": "Terrorism (TRIA)",
+            "amount": "$64"
+          },
+          {
+            "description": "State Premium Tax",
+            "amount": "$205"
+          },
+          {
+            "description": "Policy Fee",
+            "amount": "$30"
+          },
+          {
+            "description": "Inspection Surcharge",
+            "amount": "$0"
+          }
+        ],
+        "countersignature": "Travelers Indemnity Company, by authorized representative",
+        "countersignature_date": "08/01/2025",
+        "form_number": null,
+        "endorsement_title": null,
+        "endorsement_number": null,
+        "schedule_rows": null,
+        "provisions": null,
+        "additional_premium": null,
+        "change_description": null,
+        "coverages": null,
+        "total_premium": "$9,039",
+        "effective_date": "08/01/2025",
+        "expiration_date": "08/01/2026",
+        "nr_kind": null,
+        "nr_header_rows": null,
+        "nr_columns": null,
+        "nr_rows": null,
+        "unrelated_subtitle": null,
+        "unrelated_body": null
+      }
+    ]
+  }
+}

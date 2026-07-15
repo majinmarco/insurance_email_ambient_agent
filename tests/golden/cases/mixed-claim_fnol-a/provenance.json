@@ -1,0 +1,344 @@
+{
+  "case_id": "mixed-claim_fnol-a",
+  "tier": "mixed",
+  "seed": 204,
+  "email_type": "claim_fnol",
+  "attachments_mode": "on",
+  "max_docs_per_attachment": 2,
+  "max_attachments": 3,
+  "force_format": null,
+  "persona_index": 6,
+  "content_source": "llm",
+  "noise_manifest": {
+    "email": {
+      "persona_index": 6,
+      "thread": false,
+      "signature": true,
+      "subject_style": null,
+      "multi_recipient": true,
+      "body_only": false,
+      "inconsistency": false,
+      "date_received": "2026-07-07T17:35:00+00:00"
+    },
+    "attachments": [
+      {
+        "filename": "scan1615.pdf"
+      },
+      {
+        "filename": "scan8685.pdf"
+      }
+    ],
+    "docs": [
+      {
+        "delimiter_mode": "plain",
+        "layout_variant": 0,
+        "watermark": null,
+        "content_noise": false,
+        "content_noise_level": 0.15,
+        "is_scanned": false,
+        "render_format": "pdf"
+      },
+      {
+        "delimiter_mode": "bold_caps",
+        "layout_variant": 0,
+        "watermark": null,
+        "content_noise": false,
+        "content_noise_level": 0.15,
+        "is_scanned": false,
+        "render_format": "pdf"
+      }
+    ],
+    "expected": {
+      "email_type_hard": true,
+      "per_attachment_collapse": [
+        false,
+        false
+      ],
+      "per_attachment_scanned": [
+        false,
+        false
+      ],
+      "per_attachment_expect_interrupt": [
+        false,
+        true
+      ]
+    }
+  },
+  "raw_scenario": {
+    "shared": {
+      "named_insured": "Coastal Property Management LLC",
+      "policy_number": "CPP-2214569",
+      "insured_address": "500 N Westshore Blvd, Tampa, FL 33609",
+      "contact_name": "Hector Ramos",
+      "contact_email": "hramos@coastalpm.com",
+      "contact_phone": "(813) 555-0177",
+      "carrier_name": "Nationwide Mutual Insurance Company",
+      "effective_date": "2026-02-01",
+      "expiration_date": "2027-02-01",
+      "coverage_limits": [
+        {
+          "coverage": "Commercial General Liability",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Business Personal Property",
+          "limit": "$250,000"
+        },
+        {
+          "coverage": "Commercial Property - Building",
+          "limit": "$2,500,000"
+        },
+        {
+          "coverage": "Umbrella Liability",
+          "limit": "$5,000,000"
+        }
+      ],
+      "total_premium": "$18,450",
+      "producer": {
+        "agency": "Gulf Coast Insurance Group",
+        "address": "120 S Dale Mabry Hwy, Suite 210, Tampa, FL 33609",
+        "contact_name": "Megan Lawson",
+        "phone": "(813) 555-2400",
+        "fax": "(813) 555-2401",
+        "email": "submissions@gulfcoastig.com"
+      },
+      "insurers": [
+        {
+          "letter": "A",
+          "name": "Nationwide Mutual Insurance Company",
+          "naic": "23779"
+        },
+        {
+          "letter": "B",
+          "name": "Allied Property & Casualty Insurance Company",
+          "naic": "10127"
+        },
+        {
+          "letter": "C",
+          "name": "Nationwide Affinity Insurance Company of America",
+          "naic": "26093"
+        },
+        {
+          "letter": "D",
+          "name": "Nationwide General Insurance Company",
+          "naic": "25453"
+        },
+        {
+          "letter": "E",
+          "name": "Nationwide Assurance Company",
+          "naic": "42307"
+        },
+        {
+          "letter": "F",
+          "name": "Nationwide Property and Casualty Insurance Company",
+          "naic": "37877"
+        }
+      ],
+      "business_description": "Commercial real estate management (retail centers)",
+      "entity_type": "Limited Liability Company",
+      "fein": "59-2847716",
+      "naic_carrier": "23779"
+    },
+    "email": {
+      "subject": "FNOL Notice \u2014 Coastal Property Management LLC / Policy CPP-2214569",
+      "body": "Good morning,\n\nPlease accept this email as first notice of loss for Coastal Property Management LLC under policy CPP-2214569 issued by Nationwide Mutual Insurance Company.\n\nReported loss details:\n\u2022 Date of loss: 01/28/2026\n\u2022 Type of loss: Water damage from a tenant-suite plumbing leak\n\u2022 Location: Westshore Plaza retail center, 500 N Westshore Blvd, Tampa, FL 33609\n\u2022 Areas affected: Common-area corridor and adjacent storage room\n\u2022 Immediate action taken: Water was shut off, area was mitigated, and a restoration vendor was engaged\n\nPlease acknowledge receipt and advise the claim number, assigned adjuster, and any next steps. If you need photographs, invoices, or additional statements, Hector Ramos is available at (813) 555-0177 or hramos@coastalpm.com.\n\nThank you,\n\nGulf Coast Insurance Group\n\nSent from my iPhone",
+      "sender": "Megan Lawson's Assistant <assistant@nationwide.com> on behalf of Megan Lawson <submissions@gulfcoastig.com>",
+      "recipient": "claims@nationwide.com, underwriting@nationwide.com"
+    },
+    "documents": [
+      {
+        "title": "Commercial Property Policy Change Endorsement",
+        "certificate_holder": null,
+        "coverage_lines": null,
+        "description_of_operations": null,
+        "authorized_representative": null,
+        "certificate_number": null,
+        "revision_number": null,
+        "invoice_number": null,
+        "invoice_date": null,
+        "account_number": null,
+        "line_items": null,
+        "subtotal": null,
+        "taxes": null,
+        "fees": null,
+        "prior_balance": null,
+        "amount_due": null,
+        "billing_period": null,
+        "due_date": null,
+        "payment_methods": null,
+        "remit_to": null,
+        "coverage_parts": null,
+        "forms_schedule": null,
+        "premium_summary": null,
+        "countersignature": null,
+        "countersignature_date": null,
+        "form_number": "CP 04 17 11 15",
+        "endorsement_title": "Policy Change Endorsement",
+        "endorsement_number": "E-07",
+        "schedule_rows": [
+          {
+            "label": "Named Insured",
+            "value": "Coastal Property Management LLC"
+          },
+          {
+            "label": "Policy Number",
+            "value": "CPP-2214569"
+          },
+          {
+            "label": "Location No.",
+            "value": "001"
+          },
+          {
+            "label": "Description of Premises",
+            "value": "Westshore Plaza retail center, 500 N Westshore Blvd, Tampa, FL 33609"
+          },
+          {
+            "label": "Item Changed",
+            "value": "Additional Building and Business Personal Property coverage applied to tenant improvements and common-area contents"
+          },
+          {
+            "label": "Coverage Part",
+            "value": "Commercial Property Coverage Part"
+          }
+        ],
+        "provisions": [
+          "It is agreed that the Commercial Property Coverage Part is amended to include the additional insured premises and related covered property described in this endorsement, subject to all terms, conditions, limitations, and exclusions of the policy.",
+          "The Limits of Insurance and/or schedule of covered property are amended as shown in this endorsement. Any premium shown is pro rata from the effective date of this endorsement.",
+          "This endorsement does not increase the insurer's obligation beyond the applicable Limit of Insurance for any one occurrence, loss, or coverage extension, and all other policy forms and endorsements remain in full force and effect.",
+          "All other terms and conditions of this policy remain unchanged."
+        ],
+        "additional_premium": "$425",
+        "change_description": "Adds building and business personal property coverage for the Westshore Plaza retail center location effective 02/01/2026.",
+        "coverages": null,
+        "total_premium": null,
+        "effective_date": "02/01/2026",
+        "expiration_date": null,
+        "nr_kind": null,
+        "nr_header_rows": null,
+        "nr_columns": null,
+        "nr_rows": null,
+        "unrelated_subtitle": null,
+        "unrelated_body": null
+      },
+      {
+        "title": "Loss Run Report - Coastal Property Management LLC",
+        "certificate_holder": null,
+        "coverage_lines": null,
+        "description_of_operations": null,
+        "authorized_representative": null,
+        "certificate_number": null,
+        "revision_number": null,
+        "invoice_number": null,
+        "invoice_date": null,
+        "account_number": null,
+        "line_items": null,
+        "subtotal": null,
+        "taxes": null,
+        "fees": null,
+        "prior_balance": null,
+        "amount_due": null,
+        "billing_period": null,
+        "due_date": null,
+        "payment_methods": null,
+        "remit_to": null,
+        "coverage_parts": null,
+        "forms_schedule": null,
+        "premium_summary": null,
+        "countersignature": null,
+        "countersignature_date": null,
+        "form_number": null,
+        "endorsement_title": null,
+        "endorsement_number": null,
+        "schedule_rows": null,
+        "provisions": null,
+        "additional_premium": null,
+        "change_description": null,
+        "coverages": null,
+        "total_premium": null,
+        "effective_date": null,
+        "expiration_date": null,
+        "nr_kind": "Loss Run Report",
+        "nr_header_rows": [
+          {
+            "label": "Insured",
+            "value": "Coastal Property Management LLC"
+          },
+          {
+            "label": "Policy No.",
+            "value": "CPP-2214569"
+          },
+          {
+            "label": "Carrier",
+            "value": "Nationwide Mutual Insurance Company"
+          },
+          {
+            "label": "Prepared By",
+            "value": "Gulf Coast Insurance Group"
+          },
+          {
+            "label": "Valuation Date",
+            "value": "01/31/2026"
+          },
+          {
+            "label": "Loss Run Period",
+            "value": "02/01/2025 to 01/31/2026"
+          }
+        ],
+        "nr_columns": [
+          "Loss Date",
+          "Claim No.",
+          "Coverage",
+          "Location",
+          "Cause of Loss",
+          "Status",
+          "Paid",
+          "Reserve",
+          "Incurred"
+        ],
+        "nr_rows": [
+          {
+            "cells": [
+              "03/14/2025",
+              "NAT-CLM-250314-01",
+              "Commercial General Liability",
+              "500 N Westshore Blvd, Tampa, FL 33609",
+              "Slip and fall allegation",
+              "Closed",
+              "$4,250",
+              "$0",
+              "$4,250"
+            ]
+          },
+          {
+            "cells": [
+              "08/22/2025",
+              "NAT-CLM-250822-02",
+              "Commercial Property",
+              "Westshore Plaza retail center",
+              "Water damage from sprinkler discharge",
+              "Open",
+              "$12,800",
+              "$18,200",
+              "$31,000"
+            ]
+          },
+          {
+            "cells": [
+              "11/09/2025",
+              "NAT-CLM-251109-03",
+              "Commercial Property",
+              "500 N Westshore Blvd, Tampa, FL 33609",
+              "Wind-driven rain",
+              "Closed",
+              "$6,480",
+              "$0",
+              "$6,480"
+            ]
+          }
+        ],
+        "unrelated_subtitle": "Claims history summary prepared for underwriting review only",
+        "unrelated_body": "This report is provided as a summary of reported losses and reserves for the insured during the stated loss run period. It is not a declaration page, invoice, certificate, or policy endorsement, and should be reviewed together with the underlying claim notes and policy forms."
+      }
+    ]
+  }
+}

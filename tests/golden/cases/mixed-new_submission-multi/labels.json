@@ -1,0 +1,159 @@
+{
+  "case_id": "mixed-new_submission-multi",
+  "tier": "mixed",
+  "email": {
+    "email_type": "new_submission",
+    "email_type_hard": true,
+    "extraction": {
+      "named_insured": "Coastal Property Management LLC",
+      "policy_number": null,
+      "requested_effective_date": "2026-02-01",
+      "requested_changes": "Quote/bind a new commercial package policy.",
+      "contact_name": "Hector Ramos",
+      "contact_phone": "(813) 555-0177"
+    }
+  },
+  "attachments": [
+    {
+      "filename": "Insurance Documents.pdf",
+      "render_format": "pdf",
+      "n_pages": 3,
+      "documents": [
+        {
+          "index": 0,
+          "doc_type": "insurance invoice",
+          "page_start": 0,
+          "page_end": 0,
+          "extraction": {
+            "named_insured": "Coastal Property Management LLC",
+            "policy_number": "CPM-2026-001",
+            "amount_due": 18035.0,
+            "billing_period": "02/01/2026 - 02/01/2027",
+            "policy_reference": "CPM-2026-001",
+            "due_date": "2026-02-01"
+          }
+        },
+        {
+          "index": 1,
+          "doc_type": "insurance invoice",
+          "page_start": 1,
+          "page_end": 1,
+          "extraction": {
+            "named_insured": "Coastal Property Management LLC",
+            "policy_number": "CPM-2026-001",
+            "amount_due": 18035.0,
+            "billing_period": "02/01/2026 - 02/01/2027",
+            "policy_reference": "CPM-2026-001",
+            "due_date": "2026-02-15"
+          }
+        },
+        {
+          "index": 2,
+          "doc_type": "insurance declaration",
+          "page_start": 2,
+          "page_end": 2,
+          "extraction": {
+            "named_insured": "Coastal Property Management LLC",
+            "policy_number": "CPM-2026-001",
+            "coverages": {
+              "Commercial General Liability": "$8,950",
+              "Business Automobile Liability": "$2,150",
+              "Commercial Umbrella Liability": "$1,900",
+              "Workers Compensation": "$3,250"
+            },
+            "total_premium": 18035.0
+          }
+        }
+      ],
+      "boundary_page_offsets": [
+        1,
+        2
+      ],
+      "n_documents": 3,
+      "expected_segment_types": [
+        "insurance invoice",
+        "insurance invoice",
+        "insurance declaration"
+      ],
+      "expected_collapse": false,
+      "expected_scanned": false,
+      "expected_interrupt": false
+    },
+    {
+      "filename": "Insurance Documents.pdf",
+      "render_format": "pdf",
+      "n_pages": 3,
+      "documents": [
+        {
+          "index": 0,
+          "doc_type": "certificate of insurance",
+          "page_start": 0,
+          "page_end": 0,
+          "extraction": {
+            "named_insured": "Coastal Property Management LLC",
+            "policy_number": "CPM-2026-001",
+            "certificate_holder": "Bayview Retail Center Owners Association, Inc. 2201 W Kennedy Blvd, Tampa, FL 33606",
+            "effective_date": "2026-02-01",
+            "expiration_date": "2027-02-01",
+            "limits": {
+              "Each Occurrence": "$1,000,000",
+              "Damage to Rented Premises": "$300,000",
+              "Medical Exp": "$5,000",
+              "Personal & Adv Injury": "$1,000,000",
+              "General Aggregate": "$2,000,000",
+              "Products-Comp/Op Agg": "$2,000,000",
+              "Combined Single Limit": "$1,000,000",
+              "E.L. Each Accident": "$1,000,000",
+              "E.L. Disease-Ea Employee": "$1,000,000",
+              "E.L. Disease-Policy Limit": "$1,000,000"
+            }
+          }
+        },
+        {
+          "index": 1,
+          "doc_type": "insurance invoice",
+          "page_start": 1,
+          "page_end": 1,
+          "extraction": {
+            "named_insured": "Coastal Property Management LLC",
+            "policy_number": "CPM-2026-001",
+            "amount_due": 18035.0,
+            "billing_period": "02/01/2026 - 02/01/2027",
+            "policy_reference": "CPM-2026-001",
+            "due_date": "2026-03-15"
+          }
+        },
+        {
+          "index": 2,
+          "doc_type": "insurance declaration",
+          "page_start": 2,
+          "page_end": 2,
+          "extraction": {
+            "named_insured": "Coastal Property Management LLC",
+            "policy_number": "CPM-2026-001",
+            "coverages": {
+              "Commercial General Liability": "$8,950",
+              "Business Automobile Liability": "$2,150",
+              "Commercial Umbrella Liability": "$1,900",
+              "Workers Compensation": "$3,250"
+            },
+            "total_premium": 18035.0
+          }
+        }
+      ],
+      "boundary_page_offsets": [
+        1,
+        2
+      ],
+      "n_documents": 3,
+      "expected_segment_types": [
+        "certificate of insurance",
+        "insurance invoice",
+        "insurance declaration"
+      ],
+      "expected_collapse": false,
+      "expected_scanned": false,
+      "expected_interrupt": false
+    }
+  ]
+}

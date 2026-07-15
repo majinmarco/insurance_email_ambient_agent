@@ -1,0 +1,177 @@
+{
+  "case_id": "clean-renewal-multi",
+  "tier": "clean",
+  "email": {
+    "email_type": "renewal",
+    "email_type_hard": true,
+    "extraction": {
+      "named_insured": "Coastal Property Management LLC",
+      "policy_number": "CPP-2214569",
+      "requested_effective_date": null,
+      "requested_changes": "Prepare a renewal quote for the expiring policy.",
+      "contact_name": "Hector Ramos",
+      "contact_phone": "(813) 555-0177"
+    }
+  },
+  "attachments": [
+    {
+      "filename": "attachment_1.pdf",
+      "render_format": "pdf",
+      "n_pages": 2,
+      "documents": [
+        {
+          "index": 0,
+          "doc_type": "insurance invoice",
+          "page_start": 0,
+          "page_end": 0,
+          "extraction": {
+            "named_insured": "Coastal Property Management LLC",
+            "policy_number": "CPP-2214569",
+            "amount_due": 18940.0,
+            "billing_period": "08/15/2026 to 08/15/2027",
+            "policy_reference": "CPP-2214569",
+            "due_date": "2026-08-15"
+          }
+        },
+        {
+          "index": 1,
+          "doc_type": "certificate of insurance",
+          "page_start": 1,
+          "page_end": 1,
+          "extraction": {
+            "named_insured": "Coastal Property Management LLC",
+            "policy_number": "CPP-2214569",
+            "certificate_holder": "Bay Harbor Retail Center, LLC, 1201 N Dale Mabry Hwy, Tampa, FL 33607",
+            "effective_date": "2025-08-15",
+            "expiration_date": "2026-08-15",
+            "limits": {
+              "Each Occurrence": "$1,000,000",
+              "Damage to Rented Premises": "$300,000",
+              "Med Exp": "$5,000",
+              "Personal & Adv Injury": "$1,000,000",
+              "General Aggregate": "$2,000,000",
+              "Products-Comp/Op Agg": "$2,000,000",
+              "Combined Single Limit": "$1,000,000",
+              "E.L. Each Accident": "$1,000,000",
+              "E.L. Disease-Ea Employee": "$1,000,000",
+              "E.L. Disease-Policy Limit": "$1,000,000"
+            }
+          }
+        }
+      ],
+      "boundary_page_offsets": [
+        1
+      ],
+      "n_documents": 2,
+      "expected_segment_types": [
+        "insurance invoice",
+        "certificate of insurance"
+      ],
+      "expected_collapse": false,
+      "expected_scanned": false,
+      "expected_interrupt": false
+    },
+    {
+      "filename": "attachment_2.pdf",
+      "render_format": "pdf",
+      "n_pages": 3,
+      "documents": [
+        {
+          "index": 0,
+          "doc_type": "insurance invoice",
+          "page_start": 0,
+          "page_end": 0,
+          "extraction": {
+            "named_insured": "Coastal Property Management LLC",
+            "policy_number": "CPP-2214569",
+            "amount_due": 18940.0,
+            "billing_period": "08/15/2026 to 08/15/2027",
+            "policy_reference": "CPP-2214569",
+            "due_date": "2026-08-15"
+          }
+        },
+        {
+          "index": 1,
+          "doc_type": "insurance invoice",
+          "page_start": 1,
+          "page_end": 1,
+          "extraction": {
+            "named_insured": "Coastal Property Management LLC",
+            "policy_number": "CPP-2214569",
+            "amount_due": 18940.0,
+            "billing_period": "08/15/2026 to 08/15/2027",
+            "policy_reference": "CPP-2214569",
+            "due_date": "2026-08-15"
+          }
+        },
+        {
+          "index": 2,
+          "doc_type": "certificate of insurance",
+          "page_start": 2,
+          "page_end": 2,
+          "extraction": {
+            "named_insured": "Coastal Property Management LLC",
+            "policy_number": "CPP-2214569",
+            "certificate_holder": "Westshore Business Association, 2202 N Westshore Blvd, Tampa, FL 33607",
+            "effective_date": "2025-08-15",
+            "expiration_date": "2026-08-15",
+            "limits": {
+              "Each Occurrence": "$1,000,000",
+              "Damage to Rented Premises": "$300,000",
+              "Med Exp": "$5,000",
+              "Personal & Adv Injury": "$1,000,000",
+              "General Aggregate": "$2,000,000",
+              "Products-Comp/Op Agg": "$2,000,000",
+              "Combined Single Limit": "$1,000,000",
+              "E.L. Each Accident": "$1,000,000",
+              "E.L. Disease-Ea Employee": "$1,000,000",
+              "E.L. Disease-Policy Limit": "$1,000,000"
+            }
+          }
+        }
+      ],
+      "boundary_page_offsets": [
+        1,
+        2
+      ],
+      "n_documents": 3,
+      "expected_segment_types": [
+        "insurance invoice",
+        "insurance invoice",
+        "certificate of insurance"
+      ],
+      "expected_collapse": false,
+      "expected_scanned": false,
+      "expected_interrupt": false
+    },
+    {
+      "filename": "attachment_3.pdf",
+      "render_format": "pdf",
+      "n_pages": 1,
+      "documents": [
+        {
+          "index": 0,
+          "doc_type": "insurance invoice",
+          "page_start": 0,
+          "page_end": 0,
+          "extraction": {
+            "named_insured": "Coastal Property Management LLC",
+            "policy_number": "CPP-2214569",
+            "amount_due": 18940.0,
+            "billing_period": "08/15/2026 to 08/15/2027",
+            "policy_reference": "CPP-2214569",
+            "due_date": "2026-08-15"
+          }
+        }
+      ],
+      "boundary_page_offsets": [],
+      "n_documents": 1,
+      "expected_segment_types": [
+        "insurance invoice"
+      ],
+      "expected_collapse": false,
+      "expected_scanned": false,
+      "expected_interrupt": false
+    }
+  ]
+}
