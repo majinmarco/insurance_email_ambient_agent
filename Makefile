@@ -3,12 +3,13 @@
 # Golden dataset for evals (MAR-9). See tests/golden/README.md.
 
 # Rebuild the frozen fixtures with LLM content (needs OPENAI_API_KEY; resumable).
+# Add more volume beyond the pinned 30:  make golden EXTRA=20
 golden:
-	uv run python -m scripts.build_golden_dataset
+	uv run python -m scripts.build_golden_dataset $(if $(EXTRA),--extra $(EXTRA))
 
-# Rebuild with deterministic offline content (no API key).
+# Rebuild with deterministic offline content (no API key).  make golden-offline EXTRA=20
 golden-offline:
-	uv run python -m scripts.build_golden_dataset --no-llm
+	uv run python -m scripts.build_golden_dataset --no-llm $(if $(EXTRA),--extra $(EXTRA))
 
 # Dump frozen PDFs, wire local-file serving, and launch Label Studio for review.
 golden-labelstudio:

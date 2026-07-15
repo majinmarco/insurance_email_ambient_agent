@@ -80,6 +80,30 @@ derived by `scripts/golden/labels.py` from the generator's known structure. Rebu
 overwrites `cases/` and `manifest.json`; **re-run the hand-correction audit** afterward,
 since new content changes the derived values.
 
+### Generating more than 30 cases
+
+Two ways to grow the set:
+
+- **Auto-generate extra volume** — append `N` cases beyond the pinned matrix, balanced across
+  tiers × email types (every 3rd a multi-doc bundle), with deterministic ids/seeds
+  (`extra-000-…`, seeds from `100000`):
+
+  ```
+  make golden EXTRA=20                                        # 30 pinned + 20 extra (LLM)
+  make golden-offline EXTRA=50                                # + 50 extra, offline
+  uv run python -m scripts.build_golden_dataset --extra 20    # raw equivalent
+  ```
+
+  The build is **resumable** — existing cases are skipped, so raising `EXTRA` only builds the
+  new ones. (Lowering it leaves the old `extra-*` dirs on disk but drops them from
+  `manifest.json`, so the loader ignores them; `--clean` removes them.)
+
+- **Add curated cases** — edit the `CASES` list in `scripts/build_golden_dataset.py` (pin a
+  specific tier/seed/email-type/structure, e.g. more scanned or multi-doc edges), then rebuild.
+
+Either way the extra fixtures carry the same labels + provenance and load through the same
+`load_cases()` loader; run `uv run pytest tests/golden` to validate them.
+
 ## Hand-correction
 
 Labels are machine-derived from the generator's ground truth, so they start correct — but
