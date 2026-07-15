@@ -49,6 +49,21 @@ DOC_CHOICES = [d.value for d in DocumentCategory]
 MODEL_VERSION = "golden-derived"
 _MAX_DOC_TEXT_CHARS = 6000  # keep tasks light; enough to judge type + key fields
 
+# PDF display modes for the rendered attachment viewer.
+#   localfiles — reference a served file URL (needs LABEL_STUDIO_LOCAL_FILES_SERVING_ENABLED);
+#                tiny task, robust rendering. The launcher (--serve) wires this up.
+#   embed      — self-contained base64 data: URI (zero setup, may be blocked by the sanitizer).
+#   none       — no viewer field (text-only review).
+PDF_MODES = ("localfiles", "embed", "none")
+DEFAULT_PDF_MODE = "localfiles"
+#: Sub-path under LABEL_STUDIO_LOCAL_FILES_DOCUMENT_ROOT where --serve dumps the PDFs, and the
+#: prefix the localfiles ``?d=`` URLs point at. Keep the two in sync.
+LOCALFILES_PREFIX = "golden_pdfs"
+#: Where --serve dumps the frozen attachments (== the Local Storage document root to register).
+SERVE_DOC_ROOT = LS_DIR / "_localfiles"
+
+_MIME_BY_FORMAT = {"pdf": "application/pdf", "scanned_pdf": "application/pdf", "html": "text/html"}
+
 
 # --------------------------------------------------------------------------- #
 # Labeling interface (project config)
@@ -84,7 +99,14 @@ def labeling_config() -> str:
     <View style="border:1px solid #dcdce3;border-radius:6px;padding:1em;margin-bottom:1em">
       <Text name="doc_file_{{{{idx}}}}" value="$documents[{{{{idx}}}}].filename"/>
       <Text name="doc_meta_{{{{idx}}}}" value="$documents[{{{{idx}}}}].meta"/>
-      <Text name="doc_text_{{{{idx}}}}" value="$documents[{{{{idx}}}}].text"/>
+      <!-- Rendered source document (PDF/scanned image/HTML). inline HyperText renders the
+           embed HTML in $documents[i].pdf for both localfiles and base64 modes. -->
+      <HyperText name="doc_pdf_{{{{idx}}}}" value="$documents[{{{{idx}}}}].pdf" inline="true"/>
+      <Collapse>
+        <Panel value="Extracted text (what the graph sees)">
+          <Text name="doc_text_{{{{idx}}}}" value="$documents[{{{{idx}}}}].text"/>
+        </Panel>
+      </Collapse>
       <Choices name="doc_type_{{{{idx}}}}" toName="doc_text_{{{{idx}}}}" choice="single" showInLine="true">
           {doc_choices}
       </Choices>
@@ -120,6 +142,30 @@ def _document_display_text(payload_email: dict, att_index: int, att_label: dict,
     return text[:_MAX_DOC_TEXT_CHARS]
 
 
+def _document_pdf_embed(
+    payload_email: dict, case_id: str, att_index: int, att_label: dict, doc_label: dict, pdf_mode: str
+) -> str:
+    """An ``<embed>`` HTML string that renders one document's attachment inside a Label Studio
+    ``<HyperText inline>`` viewer. Opens at the document's first page via ``#page=``.
+
+    * ``localfiles`` — src is a served-file URL (``/data/local-files/?d=…``); tiny, robust.
+    * ``embed`` — src is a self-contained ``data:`` URI carrying the frozen bytes.
+    """
+    fmt = att_label["render_format"]
+    mime = _MIME_BY_FORMAT.get(fmt, "application/pdf")
+    page = doc_label["page_start"] + 1  # PDF viewers are 1-indexed
+    frag = f"#page={page}" if mime == "application/pdf" else ""
+    if pdf_mode == "embed":
+        b64 = payload_email["attachments"][att_index]["content"]  # already base64
+        src = f"data:{mime};base64,{b64}{frag}"
+    else:  # localfiles
+        from urllib.parse import quote
+
+        rel = quote(f"{LOCALFILES_PREFIX}/{case_id}/{att_label['filename']}", safe="/")
+        src = f"/data/local-files/?d={rel}{frag}"
+    return f'<embed src="{src}" width="100%" height="700px" type="{mime}"/>'
+
+
 def _flat_documents(labels: dict) -> list[tuple[int, int, dict, dict]]:
     """Flatten to ``(attachment_index, doc_index, attachment_label, doc_label)`` in payload
     order — the stable index the Repeater / control names use."""
@@ -134,9 +180,10 @@ def _dumps(obj: Any) -> str:
     return json.dumps(obj, indent=2, sort_keys=True)
 
 
-def case_to_task(payload: dict, labels: dict) -> dict:
+def case_to_task(payload: dict, labels: dict, *, pdf_mode: str = DEFAULT_PDF_MODE) -> dict:
     """Build one Label Studio task (``data`` + pre-annotated ``predictions``) for a case."""
     email = payload["email"]
+    case_id = labels["case_id"]
     flat = _flat_documents(labels)
 
     documents_data: list[dict] = []
@@ -159,13 +206,16 @@ def case_to_task(payload: dict, labels: dict) -> dict:
             f"pages {doc['page_start']}–{doc['page_end']}  ·  "
             f"expected_collapse={att['expected_collapse']} expected_scanned={att['expected_scanned']}]"
         )
-        documents_data.append({
+        doc_datum = {
             "filename": att["filename"],
             "meta": meta,
             "text": _document_display_text(email, ai, att, doc),
             "attachment_index": ai,
             "doc_index": di,
-        })
+        }
+        if pdf_mode != "none":
+            doc_datum["pdf"] = _document_pdf_embed(email, case_id, ai, att, doc, pdf_mode)
+        documents_data.append(doc_datum)
         result.append({
             "from_name": f"doc_type_{idx}", "to_name": f"doc_text_{idx}", "type": "choices",
             "value": {"choices": [doc["doc_type"]]},
@@ -187,9 +237,9 @@ def case_to_task(payload: dict, labels: dict) -> dict:
     }
 
 
-def export_tasks(cases: list[tuple[dict, dict]]) -> list[dict]:
+def export_tasks(cases: list[tuple[dict, dict]], *, pdf_mode: str = DEFAULT_PDF_MODE) -> list[dict]:
     """``[(payload, labels), ...]`` -> list of Label Studio tasks."""
-    return [case_to_task(payload, labels) for payload, labels in cases]
+    return [case_to_task(payload, labels, pdf_mode=pdf_mode) for payload, labels in cases]
 
 
 # --------------------------------------------------------------------------- #
@@ -262,14 +312,75 @@ def _load_committed_pairs() -> list[tuple[str, dict, dict]]:
     return out
 
 
-def write_import_files() -> Path:
+def write_import_files(pdf_mode: str = DEFAULT_PDF_MODE) -> Path:
     """Generate ``tests/golden/label_studio/{tasks.json,config.xml}`` from the fixtures."""
     LS_DIR.mkdir(parents=True, exist_ok=True)
     pairs = _load_committed_pairs()
-    tasks = export_tasks([(p, l) for _, p, l in pairs])
+    tasks = export_tasks([(p, l) for _, p, l in pairs], pdf_mode=pdf_mode)
     (LS_DIR / "tasks.json").write_text(json.dumps(tasks, indent=2) + "\n")
     (LS_DIR / "config.xml").write_text(labeling_config())
     return LS_DIR
+
+
+def dump_pdfs(dest: Path) -> int:
+    """Decode every case's frozen attachments to ``<dest>/<case_id>/<filename>`` (pdf/scanned/
+    html) for viewing in any PDF viewer or for Label Studio local-file serving. Returns the
+    number of files written."""
+    dest = Path(dest)
+    n = 0
+    for cid, payload, _labels in _load_committed_pairs():
+        cdir = dest / cid
+        cdir.mkdir(parents=True, exist_ok=True)
+        for att in payload["email"]["attachments"]:
+            (cdir / att["filename"]).write_bytes(base64.b64decode(att["content"]))
+            n += 1
+    return n
+
+
+def serve(pdf_mode: str = "localfiles") -> int:
+    """Dump the frozen PDFs, regenerate the import files, and launch Label Studio (via
+    ``uvx``) with local-file serving enabled. Prints the exact project-setup steps, then
+    blocks on the server."""
+    import os
+    import subprocess
+
+    doc_root = SERVE_DOC_ROOT
+    n = dump_pdfs(doc_root / LOCALFILES_PREFIX)
+    write_import_files(pdf_mode=pdf_mode)
+
+    tasks_path = LS_DIR / "tasks.json"
+    config_path = LS_DIR / "config.xml"
+    print("\n" + "=" * 78)
+    print(" Golden dataset → Label Studio")
+    print("=" * 78)
+    print(f" dumped {n} attachment file(s) under: {doc_root / LOCALFILES_PREFIX}")
+    print(f" import file : {tasks_path}")
+    print(f" config file : {config_path}")
+    print("\n Once the UI opens (http://localhost:8080), do this ONCE:")
+    print("   1. Create a project.")
+    print(f"   2. Settings → Labeling Interface → Code → paste:\n        {config_path}")
+    if pdf_mode == "localfiles":
+        print("   3. Settings → Cloud Storage → Add Source Storage → Local files:")
+        print(f"        Absolute local path = {doc_root}")
+        print("        (Save — do NOT 'Save & Sync', which would create one task per file.)")
+    print(f"   4. Import → upload {tasks_path.name} (from {tasks_path.parent}).")
+    print("\n Correct labels, then Export as JSON and run:")
+    print("   uv run python -m scripts.golden.label_studio --reimport <export.json>")
+    print("=" * 78 + "\n")
+
+    env = {
+        **os.environ,
+        "LABEL_STUDIO_LOCAL_FILES_SERVING_ENABLED": "true",
+        "LABEL_STUDIO_LOCAL_FILES_DOCUMENT_ROOT": str(doc_root),
+    }
+    try:
+        return subprocess.run(["uvx", "label-studio", "start"], env=env).returncode
+    except FileNotFoundError:
+        print("! 'uvx' not found. Install uv (https://docs.astral.sh/uv/) or run Label Studio")
+        print("  yourself: pip install label-studio && \\")
+        print(f"    LABEL_STUDIO_LOCAL_FILES_SERVING_ENABLED=true \\")
+        print(f"    LABEL_STUDIO_LOCAL_FILES_DOCUMENT_ROOT={doc_root} label-studio start")
+        return 1
 
 
 def reimport_corrections(export_path: str) -> int:
@@ -295,15 +406,29 @@ def main(argv=None) -> int:
     import argparse
 
     ap = argparse.ArgumentParser(prog="scripts.golden.label_studio", description=__doc__)
+    ap.add_argument("--pdf-mode", choices=PDF_MODES, default=DEFAULT_PDF_MODE,
+                    help="how the rendered PDFs are referenced in tasks.json (default: localfiles)")
     ap.add_argument("--reimport", metavar="EXPORT_JSON", default=None,
                     help="merge a Label Studio export back into labels.json instead of exporting")
+    ap.add_argument("--dump-pdfs", metavar="DIR", nargs="?", const=str(SERVE_DOC_ROOT / LOCALFILES_PREFIX),
+                    default=None, help="decode frozen attachments to DIR/<case_id>/<filename> and exit")
+    ap.add_argument("--serve", action="store_true",
+                    help="dump PDFs, regenerate import files, and launch Label Studio (uvx)")
     args = ap.parse_args(argv)
+
     if args.reimport:
         n = reimport_corrections(args.reimport)
         print(f"re-imported corrections into {n} labels.json file(s)")
         return 0
-    path = write_import_files()
-    print(f"wrote {path}/tasks.json + config.xml")
+    if args.dump_pdfs is not None:
+        n = dump_pdfs(Path(args.dump_pdfs))
+        print(f"dumped {n} attachment file(s) to {args.dump_pdfs}")
+        return 0
+    if args.serve:
+        return serve(pdf_mode=args.pdf_mode)
+
+    path = write_import_files(pdf_mode=args.pdf_mode)
+    print(f"wrote {path}/tasks.json + config.xml  (pdf-mode={args.pdf_mode})")
     return 0
 
 

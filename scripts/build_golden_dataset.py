@@ -108,6 +108,34 @@ CASES: list[Case] = [
          max_docs=1, max_att=1, force_format="html"),
 ]
 
+#: Seed floor for auto-generated ``--extra`` cases, kept clear of the pinned seeds above
+#: so an extra case never collides with a curated one.
+_EXTRA_SEED_BASE = 100_000
+
+
+def extra_cases(n: int, *, seed_base: int = _EXTRA_SEED_BASE) -> list[Case]:
+    """Generate ``n`` additional cases beyond the pinned matrix, for more eval volume.
+
+    Deterministic: the id/seed/tier/email-type of extra case *i* depend only on *i*, so the
+    set is reproducible in shape (LLM prose still varies). Tiers rotate fastest and email
+    types on a co-prime cycle, so coverage stays balanced across ``clean/mixed/messy`` x the
+    five intents. All are attachment-bearing PDFs (the pinned set already covers the
+    scanned/HTML/email-only edges)."""
+    tiers = ("clean", "mixed", "messy")
+    out: list[Case] = []
+    for i in range(max(0, n)):
+        tier = tiers[i % 3]
+        email_type = _ET[i % len(_ET)]
+        # Vary structure a little so extras aren't all identical shape: every 3rd is a
+        # multi-doc bundle (more boundary-metric material).
+        max_docs = 3 if i % 3 == 2 else 2
+        out.append(Case(
+            id=f"extra-{i:03d}-{tier}-{email_type}",
+            tier=tier, seed=seed_base + i, email_type=email_type,
+            attachments="on", max_docs=max_docs,
+        ))
+    return out
+
 
 # --------------------------------------------------------------------------- #
 # Content generation with an explicit persona (so identities vary across ALL
@@ -280,6 +308,8 @@ def main(argv=None) -> int:
     ap = argparse.ArgumentParser(prog="scripts.build_golden_dataset", description=__doc__)
     ap.add_argument("--no-llm", action="store_true", help="deterministic offline content (no API call)")
     ap.add_argument("--limit", type=int, default=None, help="only build the first N cases (smoke)")
+    ap.add_argument("--extra", type=int, default=0, metavar="N",
+                    help="append N auto-generated cases beyond the pinned matrix (more eval volume)")
     ap.add_argument("--clean", action="store_true", help="wipe tests/golden/cases before building")
     args = ap.parse_args(argv)
     _load_env()
@@ -289,7 +319,8 @@ def main(argv=None) -> int:
         print("! OPENAI_API_KEY not set; falling back to --no-llm deterministic content.")
         use_llm = False
 
-    cases = CASES[: args.limit] if args.limit else CASES
+    all_cases = list(CASES) + extra_cases(args.extra)
+    cases = all_cases[: args.limit] if args.limit else all_cases
     if args.clean and CASES_DIR.exists():
         shutil.rmtree(CASES_DIR)
     CASES_DIR.mkdir(parents=True, exist_ok=True)
