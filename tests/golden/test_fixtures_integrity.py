@@ -131,6 +131,7 @@ def test_label_studio_roundtrip_is_lossless(case: GoldenCase) -> None:
 def test_label_studio_config_and_export_valid() -> None:
     config = ls.labeling_config()
     assert "<Repeater" in config and "email_type" in config
+    assert "<HyperText" in config and "doc_pdf_{{idx}}" in config  # per-document PDF viewer
     for choice in ("new_submission", "renewal", "certificate of insurance"):
         assert choice in config
     # every task is JSON-serializable and carries derived pre-annotations
@@ -140,3 +141,23 @@ def test_label_studio_config_and_export_valid() -> None:
         task = ls.case_to_task(case.input, case.labels.model_dump())
         json.dumps(task)
         assert task["predictions"][0]["result"], case.case_id
+
+
+@pytest.mark.parametrize("case", CASES, ids=CASE_IDS)
+def test_label_studio_pdf_embed_present_and_wellformed(case: GoldenCase) -> None:
+    """Every task document carries a rendered-PDF embed so a reviewer can eyeball the source
+    against the labels. localfiles URLs must be well-formed and point at the dumped path."""
+    for mode in ("localfiles", "embed"):
+        task = ls.case_to_task(case.input, case.labels.model_dump(), pdf_mode=mode)
+        docs = task["data"]["documents"]
+        assert len(docs) == sum(len(a.documents) for a in case.labels.attachments)
+        for datum in docs:
+            embed = datum.get("pdf", "")
+            assert embed.startswith("<embed src=") and "width=" in embed
+            if mode == "localfiles":
+                assert f"/data/local-files/?d={ls.LOCALFILES_PREFIX}/{case.case_id}/" in embed
+            else:
+                assert "src=\"data:" in embed and ";base64," in embed
+    # 'none' mode omits the viewer entirely
+    task_none = ls.case_to_task(case.input, case.labels.model_dump(), pdf_mode="none")
+    assert all("pdf" not in d for d in task_none["data"]["documents"])

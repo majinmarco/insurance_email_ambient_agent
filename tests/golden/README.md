@@ -93,28 +93,54 @@ separate from the base64-heavy `input.json`). Pay closest attention to:
 Edit `labels.json` directly, **or** use Label Studio (below). After any edit,
 `uv run pytest tests/golden` re-checks structural invariants.
 
-### Label Studio round-trip
+### Label Studio round-trip (with rendered PDFs)
 
-The set ships as a Label Studio import in `label_studio/`, regenerated on every build:
+The set projects into a Label Studio import in `label_studio/`:
 
-- `label_studio/config.xml` — the project's labeling interface (email intent + per-document
-  type as single-choice controls; email/document extraction as editable JSON blocks; a
-  `<Repeater>` handles the variable document count). Paste it into
-  *Project → Settings → Labeling Interface*.
-- `label_studio/tasks.json` — one task per case, with the current labels pre-loaded as
-  `predictions` so you correct pre-annotations instead of labeling from scratch. Each task
-  shows the email and the per-document source text (extracted from the frozen attachment).
+- `label_studio/config.xml` (committed) — the project's labeling interface. Email intent +
+  per-document type as single-choice controls; email/document extraction as editable JSON
+  blocks; **each document's rendered PDF shown inline** via a `<HyperText>` viewer; the
+  extracted text tucked in a collapsible panel. A `<Repeater>` handles the variable document
+  count. Paste it into *Project → Settings → Labeling Interface*.
+- `label_studio/tasks.json` (generated, git-ignored) — one task per case, current labels
+  pre-loaded as `predictions` so you correct pre-annotations instead of labeling from scratch.
 
-Workflow: create a project with `config.xml`, import `tasks.json`, correct, then
-*Export* as JSON and merge the corrections back into `labels.json`:
+**Fastest path — the launcher** (dumps PDFs, wires local-file serving, starts Label Studio):
 
 ```
-uv run python -m scripts.golden.label_studio --reimport path/to/export.json
+make golden-labelstudio          # = uv run python -m scripts.golden.label_studio --serve
 ```
 
-Re-import is **lossless** and only overwrites the Label-Studio-editable fields (intent,
-doc type, extraction); boundaries, page spans and `expected_*` flags are preserved. Run
-`uv run python -m scripts.golden.label_studio` on its own to regenerate the import files
-from the current fixtures without rebuilding.
+It prints the one-time project setup (paste `config.xml`; add a **Local files** source =
+the printed document root; import `tasks.json`). Then every case shows its real PDF next to
+the labels — scanned cases show the image pages, so you can eyeball the source against the
+ground truth.
+
+**Correcting & merging back.** Correct labels in the UI → *Export* as JSON → merge:
+
+```
+make golden-reimport EXPORT=path/to/export.json
+# = uv run python -m scripts.golden.label_studio --reimport path/to/export.json
+```
+
+Re-import is **lossless** and only overwrites the editable fields (intent, doc type,
+extraction); boundaries, page spans and `expected_*` flags are preserved.
+
+**PDF display modes** (`--pdf-mode`, default `localfiles`):
+
+- `localfiles` — PDFs served from disk (`--serve` sets this up). Reliable rendering; tiny
+  `tasks.json`. This is what the launcher uses.
+- `embed` — PDFs travel inside `tasks.json` as base64 `data:` URIs; zero setup, works on a
+  plain import, but Label Studio's HTML sanitizer may block it in some versions.
+- `none` — text-only review (no PDF viewer).
+
+**Other commands:**
+
+```
+uv run python -m scripts.golden.label_studio                 # regenerate config.xml + tasks.json
+uv run python -m scripts.golden.label_studio --pdf-mode embed  # self-contained tasks.json
+uv run python -m scripts.golden.label_studio --dump-pdfs DIR    # decode frozen PDFs to DIR/<case>/<file>
+make golden-pdfs                                             # dump PDFs for viewing in any viewer
+```
 
 [MAR-10]: https://linear.app/marco-nardone-guerra/issue/MAR-10

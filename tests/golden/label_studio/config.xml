@@ -25,7 +25,14 @@
     <View style="border:1px solid #dcdce3;border-radius:6px;padding:1em;margin-bottom:1em">
       <Text name="doc_file_{{idx}}" value="$documents[{{idx}}].filename"/>
       <Text name="doc_meta_{{idx}}" value="$documents[{{idx}}].meta"/>
-      <Text name="doc_text_{{idx}}" value="$documents[{{idx}}].text"/>
+      <!-- Rendered source document (PDF/scanned image/HTML). inline HyperText renders the
+           embed HTML in $documents[i].pdf for both localfiles and base64 modes. -->
+      <HyperText name="doc_pdf_{{idx}}" value="$documents[{{idx}}].pdf" inline="true"/>
+      <Collapse>
+        <Panel value="Extracted text (what the graph sees)">
+          <Text name="doc_text_{{idx}}" value="$documents[{{idx}}].text"/>
+        </Panel>
+      </Collapse>
       <Choices name="doc_type_{{idx}}" toName="doc_text_{{idx}}" choice="single" showInLine="true">
           <Choice value="certificate of insurance"/>
           <Choice value="insurance invoice"/>
