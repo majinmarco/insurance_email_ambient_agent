@@ -1,0 +1,106 @@
+{
+  "case_id": "extra-006-clean-renewal",
+  "tier": "clean",
+  "email": {
+    "email_type": "renewal",
+    "email_type_hard": true,
+    "extraction": {
+      "named_insured": "Coastal Property Management LLC",
+      "policy_number": "CPP-2214569",
+      "requested_effective_date": null,
+      "requested_changes": "Prepare a renewal quote for the expiring policy.",
+      "contact_name": "Hector Ramos",
+      "contact_phone": "813-555-0177"
+    }
+  },
+  "attachments": [
+    {
+      "filename": "attachment_1.pdf",
+      "render_format": "pdf",
+      "n_pages": 1,
+      "documents": [
+        {
+          "index": 0,
+          "doc_type": "insurance invoice",
+          "page_start": 0,
+          "page_end": 0,
+          "extraction": {
+            "named_insured": "Coastal Property Management LLC",
+            "policy_number": "CPP-2214569",
+            "amount_due": 18750.0,
+            "billing_period": "01/15/2026 - 01/15/2027",
+            "policy_reference": "CPP-2214569",
+            "due_date": "2026-01-15"
+          }
+        }
+      ],
+      "boundary_page_offsets": [],
+      "n_documents": 1,
+      "expected_segment_types": [
+        "insurance invoice"
+      ],
+      "expected_collapse": false,
+      "expected_scanned": false,
+      "expected_interrupt": false
+    },
+    {
+      "filename": "attachment_2.pdf",
+      "render_format": "pdf",
+      "n_pages": 1,
+      "documents": [
+        {
+          "index": 0,
+          "doc_type": "insurance endorsement",
+          "page_start": 0,
+          "page_end": 0,
+          "extraction": {
+            "named_insured": "Coastal Property Management LLC",
+            "policy_number": "CPP-2214569",
+            "change_description": "Adds a scheduled retail premises location at 6801 N Dale Mabry Hwy, Tampa, FL 33614, with associated property limits.",
+            "effective_date": "2026-01-15"
+          }
+        }
+      ],
+      "boundary_page_offsets": [],
+      "n_documents": 1,
+      "expected_segment_types": [
+        "insurance endorsement"
+      ],
+      "expected_collapse": false,
+      "expected_scanned": false,
+      "expected_interrupt": false
+    },
+    {
+      "filename": "attachment_3.pdf",
+      "render_format": "pdf",
+      "n_pages": 1,
+      "documents": [
+        {
+          "index": 0,
+          "doc_type": "insurance declaration",
+          "page_start": 0,
+          "page_end": 0,
+          "extraction": {
+            "named_insured": "Coastal Property Management LLC",
+            "policy_number": "CPP-2214569",
+            "coverages": {
+              "Commercial General Liability": "$8,950.00",
+              "Commercial Property": "$4,625.00",
+              "Commercial Umbrella Liability": "$2,950.00",
+              "Employment Practices Liability": "$1,175.00"
+            },
+            "total_premium": 18750.0
+          }
+        }
+      ],
+      "boundary_page_offsets": [],
+      "n_documents": 1,
+      "expected_segment_types": [
+        "insurance declaration"
+      ],
+      "expected_collapse": false,
+      "expected_scanned": false,
+      "expected_interrupt": false
+    }
+  ]
+}

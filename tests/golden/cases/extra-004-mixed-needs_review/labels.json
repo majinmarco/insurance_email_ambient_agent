@@ -1,0 +1,59 @@
+{
+  "case_id": "extra-004-mixed-needs_review",
+  "tier": "mixed",
+  "email": {
+    "email_type": "needs_review",
+    "email_type_hard": true,
+    "extraction": {
+      "named_insured": "Summit Ridge Construction Inc.",
+      "policy_number": "CPP-6612078",
+      "requested_effective_date": null,
+      "requested_changes": null,
+      "contact_name": "Derek Olsson",
+      "contact_phone": "(303) 555-0188"
+    }
+  },
+  "attachments": [
+    {
+      "filename": "Insurance Documents.pdf",
+      "render_format": "pdf",
+      "n_pages": 2,
+      "documents": [
+        {
+          "index": 0,
+          "doc_type": "unrelated or unclear document",
+          "page_start": 0,
+          "page_end": 0,
+          "extraction": null
+        },
+        {
+          "index": 1,
+          "doc_type": "insurance declaration",
+          "page_start": 1,
+          "page_end": 1,
+          "extraction": {
+            "named_insured": "Summit Ridge Construction Inc.",
+            "policy_number": "CPP-6612078",
+            "coverages": {
+              "Commercial General Liability": "$14,850",
+              "Commercial Umbrella Liability": "$6,400",
+              "Commercial Automobile Liability": "$4,200",
+              "Workers Compensation and Employers Liability": "$2,000"
+            },
+            "total_premium": 28450.0
+          }
+        }
+      ],
+      "boundary_page_offsets": [
+        1
+      ],
+      "n_documents": 2,
+      "expected_segment_types": [
+        "insurance declaration"
+      ],
+      "expected_collapse": false,
+      "expected_scanned": false,
+      "expected_interrupt": true
+    }
+  ]
+}

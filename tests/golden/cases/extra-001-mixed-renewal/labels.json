@@ -1,0 +1,76 @@
+{
+  "case_id": "extra-001-mixed-renewal",
+  "tier": "mixed",
+  "email": {
+    "email_type": "renewal",
+    "email_type_hard": true,
+    "extraction": {
+      "named_insured": "Riverside Manufacturing Co.",
+      "policy_number": "SBA-4471902",
+      "requested_effective_date": null,
+      "requested_changes": "Prepare a renewal quote for the expiring policy.",
+      "contact_name": "Karen Delgado",
+      "contact_phone": "(216) 555-0173"
+    }
+  },
+  "attachments": [
+    {
+      "filename": "Premium Invoice.pdf",
+      "render_format": "pdf",
+      "n_pages": 1,
+      "documents": [
+        {
+          "index": 0,
+          "doc_type": "insurance invoice",
+          "page_start": 0,
+          "page_end": 0,
+          "extraction": {
+            "named_insured": "Riverside Manufacturing Co.",
+            "policy_number": "SBA-4471902",
+            "amount_due": 18738.0,
+            "billing_period": "01/01/2027 - 01/01/2028",
+            "policy_reference": "SBA-4471902",
+            "due_date": "2027-01-15"
+          }
+        }
+      ],
+      "boundary_page_offsets": [],
+      "n_documents": 1,
+      "expected_segment_types": [
+        "insurance invoice"
+      ],
+      "expected_collapse": false,
+      "expected_scanned": false,
+      "expected_interrupt": false
+    },
+    {
+      "filename": "scan6322.pdf",
+      "render_format": "pdf",
+      "n_pages": 1,
+      "documents": [
+        {
+          "index": 0,
+          "doc_type": "insurance invoice",
+          "page_start": 0,
+          "page_end": 0,
+          "extraction": {
+            "named_insured": "Riverside Manufacturing Co.",
+            "policy_number": "SBA-4471902",
+            "amount_due": 18710.0,
+            "billing_period": "01/01/2027 - 01/01/2028",
+            "policy_reference": "SBA-4471902",
+            "due_date": "2027-01-15"
+          }
+        }
+      ],
+      "boundary_page_offsets": [],
+      "n_documents": 1,
+      "expected_segment_types": [
+        "insurance invoice"
+      ],
+      "expected_collapse": false,
+      "expected_scanned": false,
+      "expected_interrupt": false
+    }
+  ]
+}

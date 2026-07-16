@@ -1,0 +1,98 @@
+{
+  "case_id": "extra-018-clean-claim_fnol",
+  "tier": "clean",
+  "email": {
+    "email_type": "claim_fnol",
+    "email_type_hard": true,
+    "extraction": {
+      "named_insured": "Golden Gate Hospitality Group LLC",
+      "policy_number": "CPP-8830471",
+      "requested_effective_date": null,
+      "requested_changes": "Report a new loss / open a claim.",
+      "contact_name": "Olivia Bennett",
+      "contact_phone": "(415) 555-0169"
+    }
+  },
+  "attachments": [
+    {
+      "filename": "attachment_1.pdf",
+      "render_format": "pdf",
+      "n_pages": 1,
+      "documents": [
+        {
+          "index": 0,
+          "doc_type": "unrelated or unclear document",
+          "page_start": 0,
+          "page_end": 0,
+          "extraction": null
+        }
+      ],
+      "boundary_page_offsets": [],
+      "n_documents": 1,
+      "expected_segment_types": [],
+      "expected_collapse": false,
+      "expected_scanned": false,
+      "expected_interrupt": false
+    },
+    {
+      "filename": "attachment_2.pdf",
+      "render_format": "pdf",
+      "n_pages": 1,
+      "documents": [
+        {
+          "index": 0,
+          "doc_type": "certificate of insurance",
+          "page_start": 0,
+          "page_end": 0,
+          "extraction": {
+            "named_insured": "Golden Gate Hospitality Group LLC",
+            "policy_number": "CPP-8830471",
+            "certificate_holder": "Bayside Event Center LLC",
+            "effective_date": "2025-08-01",
+            "expiration_date": "2026-08-01",
+            "limits": {
+              "Each Occurrence": "$1,000,000",
+              "Damage to Rented Premises": "$300,000",
+              "Med Exp": "$5,000",
+              "Personal & Adv Injury": "$1,000,000",
+              "General Aggregate": "$2,000,000",
+              "Products-Comp/Op Agg": "$2,000,000",
+              "Combined Single Limit": "$1,000,000",
+              "E.L. Each Accident": "$1,000,000",
+              "E.L. Disease-Ea Employee": "$1,000,000",
+              "E.L. Disease-Policy Limit": "$1,000,000"
+            }
+          }
+        }
+      ],
+      "boundary_page_offsets": [],
+      "n_documents": 1,
+      "expected_segment_types": [
+        "certificate of insurance"
+      ],
+      "expected_collapse": false,
+      "expected_scanned": false,
+      "expected_interrupt": false
+    },
+    {
+      "filename": "attachment_3.pdf",
+      "render_format": "pdf",
+      "n_pages": 1,
+      "documents": [
+        {
+          "index": 0,
+          "doc_type": "unrelated or unclear document",
+          "page_start": 0,
+          "page_end": 0,
+          "extraction": null
+        }
+      ],
+      "boundary_page_offsets": [],
+      "n_documents": 1,
+      "expected_segment_types": [],
+      "expected_collapse": false,
+      "expected_scanned": false,
+      "expected_interrupt": false
+    }
+  ]
+}

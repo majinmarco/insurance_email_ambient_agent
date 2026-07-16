@@ -1,0 +1,662 @@
+{
+  "case_id": "extra-002-messy-endorsement",
+  "tier": "messy",
+  "seed": 100002,
+  "email_type": "endorsement",
+  "attachments_mode": "on",
+  "max_docs_per_attachment": 3,
+  "max_attachments": 3,
+  "force_format": null,
+  "persona_index": 6,
+  "content_source": "llm",
+  "noise_manifest": {
+    "email": {
+      "persona_index": 6,
+      "thread": false,
+      "signature": false,
+      "subject_style": null,
+      "multi_recipient": true,
+      "body_only": false,
+      "inconsistency": false,
+      "date_received": "2026-07-12T11:51:00+00:00"
+    },
+    "attachments": [
+      {
+        "filename": "Policy Documents.pdf"
+      },
+      {
+        "filename": "scan4287.pdf"
+      }
+    ],
+    "docs": [
+      {
+        "delimiter_mode": "bold_caps",
+        "layout_variant": 1,
+        "watermark": null,
+        "content_noise": false,
+        "content_noise_level": 0.35,
+        "is_scanned": false,
+        "render_format": "pdf"
+      },
+      {
+        "delimiter_mode": "bold_caps",
+        "layout_variant": 2,
+        "watermark": null,
+        "content_noise": true,
+        "content_noise_level": 0.35,
+        "is_scanned": false,
+        "render_format": "pdf"
+      },
+      {
+        "delimiter_mode": "bold_caps",
+        "layout_variant": 1,
+        "watermark": null,
+        "content_noise": true,
+        "content_noise_level": 0.35,
+        "is_scanned": false,
+        "render_format": "pdf"
+      },
+      {
+        "delimiter_mode": "plain",
+        "layout_variant": 2,
+        "watermark": null,
+        "content_noise": true,
+        "content_noise_level": 0.35,
+        "is_scanned": false,
+        "render_format": "pdf"
+      }
+    ],
+    "expected": {
+      "email_type_hard": true,
+      "per_attachment_collapse": [
+        true,
+        true
+      ],
+      "per_attachment_scanned": [
+        false,
+        false
+      ],
+      "per_attachment_expect_interrupt": [
+        false,
+        false
+      ]
+    }
+  },
+  "raw_scenario": {
+    "shared": {
+      "named_insured": "Coastal Property Management LLC",
+      "policy_number": "CPP-2214569",
+      "insured_address": "500 N Westshore Blvd, Tampa, FL 33609",
+      "contact_name": "Hector Ramos",
+      "contact_email": "hramos@coastalpm.com",
+      "contact_phone": "813-555-0177",
+      "carrier_name": "Nationwide Mutual Insurance Company",
+      "effective_date": "2026-02-01",
+      "expiration_date": "2027-02-01",
+      "coverage_limits": [
+        {
+          "coverage": "Commercial General Liability Each Occurrence",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Commercial General Liability General Aggregate",
+          "limit": "$2,000,000"
+        },
+        {
+          "coverage": "Business Personal Property Limit",
+          "limit": "$250,000"
+        },
+        {
+          "coverage": "Commercial Auto Liability Combined Single Limit",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Commercial Umbrella Liability Each Occurrence",
+          "limit": "$5,000,000"
+        }
+      ],
+      "total_premium": "$18,640",
+      "producer": {
+        "agency": "Gulf Coast Insurance Group",
+        "address": "1207 N Franklin St, Suite 300, Tampa, FL 33602",
+        "contact_name": "Marissa Ellison",
+        "phone": "(813) 555-8844",
+        "fax": "(813) 555-8845",
+        "email": "submissions@gulfcoastig.com"
+      },
+      "insurers": [
+        {
+          "letter": "A",
+          "name": "Nationwide Mutual Insurance Company",
+          "naic": "23787"
+        },
+        {
+          "letter": "B",
+          "name": "Nationwide Property and Casualty Insurance Company",
+          "naic": "23728"
+        },
+        {
+          "letter": "C",
+          "name": "Allied Property and Casualty Insurance Company",
+          "naic": "42579"
+        },
+        {
+          "letter": "D",
+          "name": "Scottsdale Insurance Company",
+          "naic": "41297"
+        },
+        {
+          "letter": "E",
+          "name": "Nationwide General Insurance Company",
+          "naic": "25453"
+        },
+        {
+          "letter": "F",
+          "name": "Nationwide Assurance Company",
+          "naic": "25623"
+        }
+      ],
+      "business_description": "Commercial real estate management (retail centers)",
+      "entity_type": "Limited Liability Company",
+      "fein": "83-2468197",
+      "naic_carrier": "23787"
+    },
+    "email": {
+      "subject": "Endorsement Request \u2013 Coastal Property Management LLC \u2013 Policy CPP-2214569",
+      "body": "Good morning,\n\nPlease process a mid-term endorsement for Coastal Property Management LLC on policy CPP-2214569 effective 04/15/2026. We are requesting a change to the insured schedule to reflect an updated named insured and to confirm the current account details remain in force as revised.\n\nPlease let us know if you need any supporting documentation or a signed request form.\n\nThank you,\nHector Ramos\nCoastal Property Management LLC",
+      "sender": "Hector Ramos <hramos@coastalpm.com>",
+      "recipient": "submissions@gulfcoastig.com, submissions@gulfcoastig.com"
+    },
+    "documents": [
+      {
+        "title": "Commercial Insurance Premium Invoice",
+        "certificate_holder": null,
+        "coverage_lines": null,
+        "description_of_operations": null,
+        "authorized_representative": null,
+        "certificate_number": null,
+        "revision_number": null,
+        "invoice_number": "INV-784512",
+        "invoice_date": "03/01/2026",
+        "account_number": "ACCT-558214",
+        "line_items": [
+          {
+            "description": "Policy Premium",
+            "amount": "$17,850.00"
+          },
+          {
+            "description": "Terrorism (TRIA)",
+            "amount": "$75.00"
+          },
+          {
+            "description": "Florida Surplus Lines Tax",
+            "amount": "$534.00"
+          },
+          {
+            "description": "Broker Fee",
+            "amount": "$181.00"
+          },
+          {
+            "description": "Prior Balance",
+            "amount": "$0.00"
+          }
+        ],
+        "subtotal": "$17,925.00",
+        "taxes": "$534.00",
+        "fees": "$181.00",
+        "prior_balance": "$0.00",
+        "amount_due": "$18,640.00",
+        "billing_period": "02/01/2026 - 02/01/2027",
+        "due_date": "03/31/2026",
+        "payment_methods": "ACH, check, or wire transfer",
+        "remit_to": "Nationwide Mutual Insurance Company, P.O. Box 182069, Columbus, OH 43218-2069",
+        "coverage_parts": null,
+        "forms_schedule": null,
+        "premium_summary": null,
+        "countersignature": null,
+        "countersignature_date": null,
+        "form_number": null,
+        "endorsement_title": null,
+        "endorsement_number": null,
+        "schedule_rows": null,
+        "provisions": null,
+        "additional_premium": null,
+        "change_description": null,
+        "coverages": null,
+        "total_premium": null,
+        "effective_date": null,
+        "expiration_date": null,
+        "nr_kind": null,
+        "nr_header_rows": null,
+        "nr_columns": null,
+        "nr_rows": null,
+        "unrelated_subtitle": null,
+        "unrelated_body": null
+      },
+      {
+        "title": "Commercial Package Policy Declarations",
+        "certificate_holder": null,
+        "coverage_lines": null,
+        "description_of_operations": null,
+        "authorized_representative": null,
+        "certificate_number": null,
+        "revision_number": null,
+        "invoice_number": null,
+        "invoice_date": null,
+        "account_number": null,
+        "line_items": null,
+        "subtotal": null,
+        "taxes": null,
+        "fees": null,
+        "prior_balance": null,
+        "amount_due": null,
+        "billing_period": null,
+        "due_date": null,
+        "payment_methods": null,
+        "remit_to": null,
+        "coverage_parts": [
+          {
+            "insurer_letter": "A",
+            "coverage_type": "Commercial General Liability",
+            "policy_number": "CPP-2214569",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": false,
+            "subro_waived": false,
+            "limits": [
+              {
+                "coverage": "Each Occurrence",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "General Aggregate",
+                "limit": "$2,000,000"
+              },
+              {
+                "coverage": "Products-Completed Operations Aggregate",
+                "limit": "$2,000,000"
+              },
+              {
+                "coverage": "Personal and Advertising Injury",
+                "limit": "$1,000,000"
+              }
+            ],
+            "premium": "$6,250"
+          },
+          {
+            "insurer_letter": "B",
+            "coverage_type": "Business Personal Property",
+            "policy_number": "CPP-2214569",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": false,
+            "subro_waived": false,
+            "limits": [
+              {
+                "coverage": "Business Personal Property Limit",
+                "limit": "$250,000"
+              },
+              {
+                "coverage": "Business Income and Extra Expense",
+                "limit": "$100,000"
+              }
+            ],
+            "premium": "$2,100"
+          },
+          {
+            "insurer_letter": "E",
+            "coverage_type": "Commercial Automobile Liability",
+            "policy_number": "CPP-2214569",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": false,
+            "subro_waived": false,
+            "limits": [
+              {
+                "coverage": "Combined Single Limit",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "Medical Payments",
+                "limit": "$5,000"
+              }
+            ],
+            "premium": "$3,860"
+          },
+          {
+            "insurer_letter": "D",
+            "coverage_type": "Commercial Umbrella Liability",
+            "policy_number": "CPP-2214569",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": false,
+            "subro_waived": false,
+            "limits": [
+              {
+                "coverage": "Each Occurrence",
+                "limit": "$5,000,000"
+              },
+              {
+                "coverage": "General Aggregate",
+                "limit": "$5,000,000"
+              }
+            ],
+            "premium": "$5,640"
+          }
+        ],
+        "forms_schedule": [
+          {
+            "form_number": "CPP 100 01 20",
+            "title": "Commercial Package Policy Declarations"
+          },
+          {
+            "form_number": "CG 00 01 04 13",
+            "title": "Commercial General Liability Coverage Form"
+          },
+          {
+            "form_number": "CP 00 10 10 12",
+            "title": "Building and Personal Property Coverage Form"
+          },
+          {
+            "form_number": "CA 00 01 11 20",
+            "title": "Business Auto Coverage Form"
+          },
+          {
+            "form_number": "CU 00 01 04 13",
+            "title": "Commercial Umbrella Coverage Form"
+          },
+          {
+            "form_number": "IL 00 17 11 98",
+            "title": "Common Policy Conditions"
+          },
+          {
+            "form_number": "TRIA 01 01 15",
+            "title": "Terrorism Risk Insurance Program Reauthorization Act Disclosure"
+          }
+        ],
+        "premium_summary": [
+          {
+            "description": "Policy Premium",
+            "amount": "$17,850.00"
+          },
+          {
+            "description": "Terrorism (TRIA)",
+            "amount": "$75.00"
+          },
+          {
+            "description": "Taxes and Fees",
+            "amount": "$715.00"
+          },
+          {
+            "description": "Total Premium",
+            "amount": "$18,640.00"
+          }
+        ],
+        "countersignature": "Marissa Ellison, Authorized Representative",
+        "countersignature_date": "03/01/2026",
+        "form_number": null,
+        "endorsement_title": null,
+        "endorsement_number": null,
+        "schedule_rows": null,
+        "provisions": null,
+        "additional_premium": null,
+        "change_description": null,
+        "coverages": null,
+        "total_premium": "$18,640.00",
+        "effective_date": "02/01/2026",
+        "expiration_date": "02/01/2027",
+        "nr_kind": null,
+        "nr_header_rows": null,
+        "nr_columns": null,
+        "nr_rows": null,
+        "unrelated_subtitle": null,
+        "unrelated_body": null
+      },
+      {
+        "title": "Named Insured Change Endorsement",
+        "certificate_holder": null,
+        "coverage_lines": null,
+        "description_of_operations": null,
+        "authorized_representative": null,
+        "certificate_number": null,
+        "revision_number": null,
+        "invoice_number": null,
+        "invoice_date": null,
+        "account_number": null,
+        "line_items": null,
+        "subtotal": null,
+        "taxes": null,
+        "fees": null,
+        "prior_balance": null,
+        "amount_due": null,
+        "billing_period": null,
+        "due_date": null,
+        "payment_methods": null,
+        "remit_to": null,
+        "coverage_parts": null,
+        "forms_schedule": null,
+        "premium_summary": null,
+        "countersignature": null,
+        "countersignature_date": null,
+        "form_number": "CP 72 10 11 20",
+        "endorsement_title": "Named Insured Change Endorsement",
+        "endorsement_number": "1",
+        "schedule_rows": [
+          {
+            "label": "Named Insured",
+            "value": "Coastal Property Management LLC d/b/a Coastal Retail Management"
+          },
+          {
+            "label": "Policy Number",
+            "value": "CPP-2214569"
+          },
+          {
+            "label": "Effective Date",
+            "value": "04/15/2026"
+          },
+          {
+            "label": "Change Location",
+            "value": "No change to locations scheduled under this endorsement"
+          }
+        ],
+        "provisions": [
+          "This eendosemen amends the Named Insured shown in the Declaations to read: Coastal Property Management LLC d/b/a Coastal Retail Manageement.",
+          "The insuranc afforded by this ppolicy applies only to tthose coverages and orms shown in the Declarations or added by endoor5ement, subbject to all terms, conditions, exclsions, and limitations of the policcyy.",
+          "If thiss endorsement changes any premium or ratingg basiss, the additinal premium or return premium shall 6e reflected at audit or by separate 6illing as applicable.",
+          "All other terms and condition oof this policy remain unchannged."
+        ],
+        "additional_premium": "$125.00",
+        "change_description": "UUpdates the named insured o Coatal Property Management LLC d/bb/a oaastal Retail anagement efffective 04/15/2026.",
+        "coverages": null,
+        "total_premium": null,
+        "effective_date": "04/15/2026",
+        "expiration_date": null,
+        "nr_kind": null,
+        "nr_header_rows": null,
+        "nr_columns": null,
+        "nr_rows": null,
+        "unrelated_subtitle": null,
+        "unrelated_body": null
+      },
+      {
+        "title": "Revised Commercial Package Policy Declarations",
+        "certificate_holder": null,
+        "coverage_lines": null,
+        "description_of_operations": null,
+        "authorized_representative": null,
+        "certificate_number": null,
+        "revision_number": null,
+        "invoice_number": null,
+        "invoice_date": null,
+        "account_number": null,
+        "line_items": null,
+        "subtotal": null,
+        "taxes": null,
+        "fees": null,
+        "prior_balance": null,
+        "amount_due": null,
+        "billing_period": null,
+        "due_date": null,
+        "payment_methods": null,
+        "remit_to": null,
+        "coverage_parts": [
+          {
+            "insurer_letter": "A",
+            "coverage_type": "Commercial General Liability",
+            "policy_number": "CPP-2214569",
+            "effective_date": "04/15/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": false,
+            "subro_waived": false,
+            "limits": [
+              {
+                "coverage": "Each Occurrence",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "General Aggregate",
+                "limit": "$2,000,000"
+              },
+              {
+                "coverage": "Products-Completed Operations Aggregate",
+                "limit": "$2,000,000"
+              },
+              {
+                "coverage": "Personal and Advertising Injury",
+                "limit": "$1,000,000"
+              }
+            ],
+            "premium": "$6,375"
+          },
+          {
+            "insurer_letter": "B",
+            "coverage_type": "Business Personal Property",
+            "policy_number": "CPP-2214569",
+            "effective_date": "04/15/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": false,
+            "subro_waived": false,
+            "limits": [
+              {
+                "coverage": "Business Personal Property Limit",
+                "limit": "$250,000"
+              },
+              {
+                "coverage": "Business Income and Extra Expense",
+                "limit": "$100,000"
+              }
+            ],
+            "premium": "$2,100"
+          },
+          {
+            "insurer_letter": "E",
+            "coverage_type": "Commercial Automobile Liability",
+            "policy_number": "CPP-2214569",
+            "effective_date": "04/15/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": false,
+            "subro_waived": false,
+            "limits": [
+              {
+                "coverage": "Combined Single Limit",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "Medical Payments",
+                "limit": "$5,000"
+              }
+            ],
+            "premium": "$3,985"
+          },
+          {
+            "insurer_letter": "D",
+            "coverage_type": "Commercial Umbrella Liability",
+            "policy_number": "CPP-2214569",
+            "effective_date": "04/15/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": false,
+            "subro_waived": false,
+            "limits": [
+              {
+                "coverage": "Each Occurrence",
+                "limit": "$5,000,000"
+              },
+              {
+                "coverage": "General Aggregate",
+                "limit": "$5,000,000"
+              }
+            ],
+            "premium": "$5,790"
+          }
+        ],
+        "forms_schedule": [
+          {
+            "form_number": "CPP 100 01 20",
+            "title": "Commercial Package Policy Declarations"
+          },
+          {
+            "form_number": "CG 00 01 04 13",
+            "title": "Commercial General Liability Coverage Form"
+          },
+          {
+            "form_number": "CP 00 10 10 12",
+            "title": "Building and Personal Property Coverage Form"
+          },
+          {
+            "form_number": "CA 00 01 11 20",
+            "title": "Business Auto Coverage Form"
+          },
+          {
+            "form_number": "CU 00 01 04 13",
+            "title": "Commercial Umbrella Coverage Form"
+          },
+          {
+            "form_number": "IL 00 17 11 98",
+            "title": "Common Policy Conditions"
+          },
+          {
+            "form_number": "TRIA 01 01 15",
+            "title": "Terrorism Risk Insurance Program Reauthorization Act Disclosure"
+          }
+        ],
+        "premium_summary": [
+          {
+            "description": "Policy Premium",
+            "amount": "$18,250.00"
+          },
+          {
+            "description": "Terrorism (TRIA)",
+            "amount": "$75.00"
+          },
+          {
+            "description": "Taxes and Fees",
+            "amount": "$715.00"
+          },
+          {
+            "description": "Total Premium",
+            "amount": "$19,040.00"
+          }
+        ],
+        "countersignature": "Marissa Ellison, Authorized Representative",
+        "countersignature_date": "04/15/2026",
+        "form_number": null,
+        "endorsement_title": null,
+        "endorsement_number": null,
+        "schedule_rows": null,
+        "provisions": null,
+        "additional_premium": null,
+        "change_description": null,
+        "coverages": null,
+        "total_premium": "$19,040.00",
+        "effective_date": "04/15/2026",
+        "expiration_date": "02/01/2027",
+        "nr_kind": null,
+        "nr_header_rows": null,
+        "nr_columns": null,
+        "nr_rows": null,
+        "unrelated_subtitle": null,
+        "unrelated_body": null
+      }
+    ]
+  }
+}

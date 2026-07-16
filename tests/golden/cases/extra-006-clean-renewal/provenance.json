@@ -1,0 +1,463 @@
+{
+  "case_id": "extra-006-clean-renewal",
+  "tier": "clean",
+  "seed": 100006,
+  "email_type": "renewal",
+  "attachments_mode": "on",
+  "max_docs_per_attachment": 2,
+  "max_attachments": 3,
+  "force_format": null,
+  "persona_index": 6,
+  "content_source": "llm",
+  "noise_manifest": null,
+  "raw_scenario": {
+    "shared": {
+      "named_insured": "Coastal Property Management LLC",
+      "policy_number": "CPP-2214569",
+      "insured_address": "500 N Westshore Blvd, Tampa, FL 33609",
+      "contact_name": "Hector Ramos",
+      "contact_email": "hramos@coastalpm.com",
+      "contact_phone": "813-555-0177",
+      "carrier_name": "Nationwide Mutual Insurance Company",
+      "effective_date": "2026-01-15",
+      "expiration_date": "2027-01-15",
+      "coverage_limits": [
+        {
+          "coverage": "Commercial General Liability Each Occurrence",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "General Aggregate",
+          "limit": "$2,000,000"
+        },
+        {
+          "coverage": "Products-Completed Operations Aggregate",
+          "limit": "$2,000,000"
+        },
+        {
+          "coverage": "Personal and Advertising Injury",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Damage to Premises Rented to You",
+          "limit": "$300,000"
+        },
+        {
+          "coverage": "Business Personal Property",
+          "limit": "$250,000"
+        },
+        {
+          "coverage": "Business Income and Extra Expense",
+          "limit": "$150,000"
+        },
+        {
+          "coverage": "Accounts Receivable",
+          "limit": "$50,000"
+        },
+        {
+          "coverage": "Employee Dishonesty",
+          "limit": "$100,000"
+        },
+        {
+          "coverage": "Commercial Umbrella Each Occurrence",
+          "limit": "$5,000,000"
+        },
+        {
+          "coverage": "Commercial Umbrella Aggregate",
+          "limit": "$5,000,000"
+        }
+      ],
+      "total_premium": "$18,750",
+      "producer": {
+        "agency": "Gulf Coast Insurance Group",
+        "address": "1201 E Kennedy Blvd, Suite 210, Tampa, FL 33602",
+        "contact_name": "Marissa Delgado",
+        "phone": "(813) 555-4410",
+        "fax": "(813) 555-4411",
+        "email": "submissions@gulfcoastig.com"
+      },
+      "insurers": [
+        {
+          "letter": "A",
+          "name": "Nationwide Mutual Insurance Company",
+          "naic": "23779"
+        },
+        {
+          "letter": "B",
+          "name": "Nationwide Affinity Insurance Company of America",
+          "naic": "26093"
+        },
+        {
+          "letter": "C",
+          "name": "Nationwide Property and Casualty Insurance Company",
+          "naic": "23760"
+        },
+        {
+          "letter": "D",
+          "name": "Nationwide General Insurance Company",
+          "naic": "10723"
+        },
+        {
+          "letter": "E",
+          "name": "Allied Property and Casualty Insurance Company",
+          "naic": "42579"
+        },
+        {
+          "letter": "F",
+          "name": "Nationwide Assurance Company",
+          "naic": "37469"
+        }
+      ],
+      "business_description": "Commercial real estate management (retail centers)",
+      "entity_type": "Limited Liability Company",
+      "fein": "83-2469187",
+      "naic_carrier": "23779"
+    },
+    "email": {
+      "subject": "Renewal Request: Coastal Property Management LLC Policy CPP-2214569",
+      "body": "Good afternoon,\n\nPlease issue the renewal quotation for Coastal Property Management LLC under policy CPP-2214569. The current term is nearing expiration, and we would like to renew coverage effective 01/15/2026 with no lapse in protection.\n\nPlease confirm any updated underwriting requirements and advise if you need additional information to finalize the renewal proposal.\n\nThank you,\nHector Ramos\nCoastal Property Management LLC",
+      "sender": "Hector Ramos <hramos@coastalpm.com>",
+      "recipient": "submissions@gulfcoastig.com"
+    },
+    "documents": [
+      {
+        "title": "Premium Invoice - Policy CPP-2214569 Renewal",
+        "certificate_holder": null,
+        "coverage_lines": null,
+        "description_of_operations": null,
+        "authorized_representative": null,
+        "certificate_number": null,
+        "revision_number": null,
+        "invoice_number": "INV-2026-01482",
+        "invoice_date": "12/18/2025",
+        "account_number": "CPP-2214569",
+        "line_items": [
+          {
+            "description": "Policy Premium",
+            "amount": "$17,900.00"
+          },
+          {
+            "description": "Terrorism (TRIA)",
+            "amount": "$180.00"
+          },
+          {
+            "description": "Florida Surplus Lines Tax",
+            "amount": "$447.50"
+          },
+          {
+            "description": "Broker Fee",
+            "amount": "$222.50"
+          },
+          {
+            "description": "Prior Balance",
+            "amount": "$0.00"
+          }
+        ],
+        "subtotal": "$17,900.00",
+        "taxes": "$447.50",
+        "fees": "$402.50",
+        "prior_balance": "$0.00",
+        "amount_due": "$18,750.00",
+        "billing_period": "01/15/2026 - 01/15/2027",
+        "due_date": "01/15/2026",
+        "payment_methods": "Check, ACH, or wire transfer",
+        "remit_to": "Nationwide Mutual Insurance Company, P.O. Box 182168, Columbus, OH 43218-2168",
+        "coverage_parts": null,
+        "forms_schedule": null,
+        "premium_summary": null,
+        "countersignature": null,
+        "countersignature_date": null,
+        "form_number": null,
+        "endorsement_title": null,
+        "endorsement_number": null,
+        "schedule_rows": null,
+        "provisions": null,
+        "additional_premium": null,
+        "change_description": null,
+        "coverages": null,
+        "total_premium": null,
+        "effective_date": null,
+        "expiration_date": null,
+        "nr_kind": null,
+        "nr_header_rows": null,
+        "nr_columns": null,
+        "nr_rows": null,
+        "unrelated_subtitle": null,
+        "unrelated_body": null
+      },
+      {
+        "title": "Commercial Property Endorsement - Additional Location",
+        "certificate_holder": null,
+        "coverage_lines": null,
+        "description_of_operations": null,
+        "authorized_representative": null,
+        "certificate_number": null,
+        "revision_number": null,
+        "invoice_number": null,
+        "invoice_date": null,
+        "account_number": null,
+        "line_items": null,
+        "subtotal": null,
+        "taxes": null,
+        "fees": null,
+        "prior_balance": null,
+        "amount_due": null,
+        "billing_period": null,
+        "due_date": null,
+        "payment_methods": null,
+        "remit_to": null,
+        "coverage_parts": null,
+        "forms_schedule": null,
+        "premium_summary": null,
+        "countersignature": null,
+        "countersignature_date": null,
+        "form_number": "CP 04 10 10 12",
+        "endorsement_title": "Additional Location Scheduled Property",
+        "endorsement_number": "CP-EL-0426",
+        "schedule_rows": [
+          {
+            "label": "Location No.",
+            "value": "2"
+          },
+          {
+            "label": "Premises Address",
+            "value": "6801 N Dale Mabry Hwy, Tampa, FL 33614"
+          },
+          {
+            "label": "Occupancy",
+            "value": "Vacant retail suite held for lease-up"
+          },
+          {
+            "label": "Building Coverage",
+            "value": "$750,000"
+          },
+          {
+            "label": "Business Personal Property Coverage",
+            "value": "$125,000"
+          },
+          {
+            "label": "Coinsurance",
+            "value": "80%"
+          }
+        ],
+        "provisions": [
+          "Paragraph 1. The Schedule of Locations is amended to add the premises designated above as Location No. 2, effective the date shown on this endorsement.",
+          "Paragraph 2. Subject to all terms, conditions, limitations, and exclusions of this policy, the added location is included for direct physical loss or damage as respects covered property described in the declarations.",
+          "Paragraph 3. The applicable deductible, valuation, and coinsurance provisions shown in the declarations apply separately to the scheduled location unless otherwise endorsed.",
+          "All other terms and conditions of this policy remain unchanged."
+        ],
+        "additional_premium": "$425.00",
+        "change_description": "Adds a scheduled retail premises location at 6801 N Dale Mabry Hwy, Tampa, FL 33614, with associated property limits.",
+        "coverages": null,
+        "total_premium": null,
+        "effective_date": "01/15/2026",
+        "expiration_date": null,
+        "nr_kind": null,
+        "nr_header_rows": null,
+        "nr_columns": null,
+        "nr_rows": null,
+        "unrelated_subtitle": null,
+        "unrelated_body": null
+      },
+      {
+        "title": "Policy Declarations - CPP-2214569",
+        "certificate_holder": null,
+        "coverage_lines": null,
+        "description_of_operations": null,
+        "authorized_representative": null,
+        "certificate_number": null,
+        "revision_number": null,
+        "invoice_number": null,
+        "invoice_date": null,
+        "account_number": null,
+        "line_items": null,
+        "subtotal": null,
+        "taxes": null,
+        "fees": null,
+        "prior_balance": null,
+        "amount_due": null,
+        "billing_period": null,
+        "due_date": null,
+        "payment_methods": null,
+        "remit_to": null,
+        "coverage_parts": [
+          {
+            "insurer_letter": "A",
+            "coverage_type": "Commercial General Liability",
+            "policy_number": "CPP-2214569",
+            "effective_date": "01/15/2026",
+            "expiration_date": "01/15/2027",
+            "addl_insured": false,
+            "subro_waived": false,
+            "limits": [
+              {
+                "coverage": "Each Occurrence",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "General Aggregate",
+                "limit": "$2,000,000"
+              },
+              {
+                "coverage": "Products-Completed Operations Aggregate",
+                "limit": "$2,000,000"
+              },
+              {
+                "coverage": "Personal and Advertising Injury",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "Damage to Premises Rented to You",
+                "limit": "$300,000"
+              }
+            ],
+            "premium": "$8,950.00"
+          },
+          {
+            "insurer_letter": "C",
+            "coverage_type": "Commercial Property",
+            "policy_number": "CPP-2214569",
+            "effective_date": "01/15/2026",
+            "expiration_date": "01/15/2027",
+            "addl_insured": false,
+            "subro_waived": false,
+            "limits": [
+              {
+                "coverage": "Building",
+                "limit": "$2,500,000"
+              },
+              {
+                "coverage": "Business Personal Property",
+                "limit": "$250,000"
+              },
+              {
+                "coverage": "Business Income and Extra Expense",
+                "limit": "$150,000"
+              },
+              {
+                "coverage": "Accounts Receivable",
+                "limit": "$50,000"
+              },
+              {
+                "coverage": "Equipment Breakdown",
+                "limit": "$25,000"
+              }
+            ],
+            "premium": "$4,625.00"
+          },
+          {
+            "insurer_letter": "D",
+            "coverage_type": "Commercial Umbrella Liability",
+            "policy_number": "CPP-2214569",
+            "effective_date": "01/15/2026",
+            "expiration_date": "01/15/2027",
+            "addl_insured": false,
+            "subro_waived": false,
+            "limits": [
+              {
+                "coverage": "Each Occurrence",
+                "limit": "$5,000,000"
+              },
+              {
+                "coverage": "General Aggregate",
+                "limit": "$5,000,000"
+              }
+            ],
+            "premium": "$2,950.00"
+          },
+          {
+            "insurer_letter": "E",
+            "coverage_type": "Employment Practices Liability",
+            "policy_number": "CPP-2214569",
+            "effective_date": "01/15/2026",
+            "expiration_date": "01/15/2027",
+            "addl_insured": false,
+            "subro_waived": false,
+            "limits": [
+              {
+                "coverage": "Each Claim",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "Policy Aggregate",
+                "limit": "$1,000,000"
+              }
+            ],
+            "premium": "$1,175.00"
+          }
+        ],
+        "forms_schedule": [
+          {
+            "form_number": "IL 00 17 11 98",
+            "title": "Common Policy Conditions"
+          },
+          {
+            "form_number": "CG 00 01 04 13",
+            "title": "Commercial General Liability Coverage Form"
+          },
+          {
+            "form_number": "CG 21 65 12 04",
+            "title": "Exclusion - Designated Professional Services"
+          },
+          {
+            "form_number": "CP 00 10 10 12",
+            "title": "Building and Personal Property Coverage Form"
+          },
+          {
+            "form_number": "CP 10 30 09 17",
+            "title": "Causes of Loss - Special Form"
+          },
+          {
+            "form_number": "CA 00 01 11 20",
+            "title": "Business Auto Coverage Form"
+          },
+          {
+            "form_number": "CU 00 01 04 13",
+            "title": "Commercial Umbrella Coverage Form"
+          },
+          {
+            "form_number": "NILS 24 01 01 23",
+            "title": "Florida Amendatory Endorsement"
+          }
+        ],
+        "premium_summary": [
+          {
+            "description": "Policy Premium",
+            "amount": "$17,700.00"
+          },
+          {
+            "description": "TRIA",
+            "amount": "$180.00"
+          },
+          {
+            "description": "Taxes and Fees",
+            "amount": "$870.00"
+          },
+          {
+            "description": "Total Premium",
+            "amount": "$18,750.00"
+          }
+        ],
+        "countersignature": "Marissa Delgado, Authorized Representative",
+        "countersignature_date": "12/18/2025",
+        "form_number": null,
+        "endorsement_title": null,
+        "endorsement_number": null,
+        "schedule_rows": null,
+        "provisions": null,
+        "additional_premium": null,
+        "change_description": null,
+        "coverages": null,
+        "total_premium": "$18,750.00",
+        "effective_date": "01/15/2026",
+        "expiration_date": "01/15/2027",
+        "nr_kind": null,
+        "nr_header_rows": null,
+        "nr_columns": null,
+        "nr_rows": null,
+        "unrelated_subtitle": null,
+        "unrelated_body": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,436 @@
+{
+  "case_id": "extra-018-clean-claim_fnol",
+  "tier": "clean",
+  "seed": 100018,
+  "email_type": "claim_fnol",
+  "attachments_mode": "on",
+  "max_docs_per_attachment": 2,
+  "max_attachments": 3,
+  "force_format": null,
+  "persona_index": 8,
+  "content_source": "llm",
+  "noise_manifest": null,
+  "raw_scenario": {
+    "shared": {
+      "named_insured": "Golden Gate Hospitality Group LLC",
+      "policy_number": "CPP-8830471",
+      "insured_address": "655 Montgomery St, San Francisco, CA 94111",
+      "contact_name": "Olivia Bennett",
+      "contact_email": "obennett@gghospitality.com",
+      "contact_phone": "(415) 555-0169",
+      "carrier_name": "Chubb Group",
+      "effective_date": "2025-08-01",
+      "expiration_date": "2026-08-01",
+      "coverage_limits": [
+        {
+          "coverage": "Commercial General Liability",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Automobile Liability",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Umbrella Liability",
+          "limit": "$5,000,000"
+        },
+        {
+          "coverage": "Workers Compensation",
+          "limit": "Statutory"
+        }
+      ],
+      "total_premium": "$84,750",
+      "producer": {
+        "agency": "Pacific Union Insurance Services",
+        "address": "425 Market St, Suite 1800, San Francisco, CA 94105",
+        "contact_name": "Marisol Chen",
+        "phone": "(415) 555-0198",
+        "fax": "(415) 555-0199",
+        "email": "submissions@pacunionins.com"
+      },
+      "insurers": [
+        {
+          "letter": "A",
+          "name": "Federal Insurance Company",
+          "naic": "20281"
+        },
+        {
+          "letter": "B",
+          "name": "Pacific Indemnity Company",
+          "naic": "20346"
+        },
+        {
+          "letter": "C",
+          "name": "Vigilant Insurance Company",
+          "naic": "20397"
+        },
+        {
+          "letter": "D",
+          "name": "Chubb Indemnity Insurance Company",
+          "naic": "12777"
+        },
+        {
+          "letter": "E",
+          "name": "ACE Property and Casualty Insurance Company",
+          "naic": "20699"
+        },
+        {
+          "letter": "F",
+          "name": "Chubb National Insurance Company",
+          "naic": "11160"
+        }
+      ],
+      "business_description": "Boutique hotel operator (3 properties)",
+      "entity_type": "Limited Liability Company",
+      "fein": "94-2874610",
+      "naic_carrier": "20281"
+    },
+    "email": {
+      "subject": "FNOL: Golden Gate Hospitality Group LLC | Policy CPP-8830471 | Guest Slip-and-Fall Incident",
+      "body": "Good afternoon,\n\nWe are providing first notice of loss for Golden Gate Hospitality Group LLC under policy CPP-8830471 with Chubb Group.\n\nAn incident occurred at one of our properties on 07/12/2026 involving a guest slip-and-fall in a common area. Please confirm claim setup, the assigned adjuster, and any immediate documentation you need from us.\n\nIf a requested effective date is needed for claim reporting purposes, please use 07/12/2026 as the incident date.\n\nThank you,\nOlivia Bennett\nGolden Gate Hospitality Group LLC",
+      "sender": "Olivia Bennett <obennett@gghospitality.com>",
+      "recipient": "claims@chubb.com"
+    },
+    "documents": [
+      {
+        "title": "Submission Cover Letter and Exposure Summary",
+        "certificate_holder": null,
+        "coverage_lines": null,
+        "description_of_operations": null,
+        "authorized_representative": null,
+        "certificate_number": null,
+        "revision_number": null,
+        "invoice_number": null,
+        "invoice_date": null,
+        "account_number": null,
+        "line_items": null,
+        "subtotal": null,
+        "taxes": null,
+        "fees": null,
+        "prior_balance": null,
+        "amount_due": null,
+        "billing_period": null,
+        "due_date": null,
+        "payment_methods": null,
+        "remit_to": null,
+        "coverage_parts": null,
+        "forms_schedule": null,
+        "premium_summary": null,
+        "countersignature": null,
+        "countersignature_date": null,
+        "form_number": null,
+        "endorsement_title": null,
+        "endorsement_number": null,
+        "schedule_rows": null,
+        "provisions": null,
+        "additional_premium": null,
+        "change_description": null,
+        "coverages": null,
+        "total_premium": null,
+        "effective_date": null,
+        "expiration_date": null,
+        "nr_kind": "Submission Cover Letter",
+        "nr_header_rows": [
+          {
+            "label": "Insured",
+            "value": "Golden Gate Hospitality Group LLC"
+          },
+          {
+            "label": "Policy No.",
+            "value": "CPP-8830471"
+          },
+          {
+            "label": "Producer",
+            "value": "Pacific Union Insurance Services"
+          },
+          {
+            "label": "Prepared For",
+            "value": "Chubb Group Underwriting"
+          },
+          {
+            "label": "Date",
+            "value": "07/15/2026"
+          }
+        ],
+        "nr_columns": [
+          "Location",
+          "Exposure",
+          "Notes"
+        ],
+        "nr_rows": [
+          {
+            "cells": [
+              "655 Montgomery St, San Francisco, CA",
+              "Boutique hotel operations",
+              "Primary downtown San Francisco property"
+            ]
+          },
+          {
+            "cells": [
+              "Union Square area property",
+              "Transient occupancy and concierge services",
+              "Higher foot traffic common areas"
+            ]
+          },
+          {
+            "cells": [
+              "Nob Hill area property",
+              "Restaurant and meeting space exposure",
+              "Liquor not requested"
+            ]
+          }
+        ],
+        "unrelated_subtitle": "Submission for renewal review and exposure synopsis",
+        "unrelated_body": "Please review the attached exposure summary for Golden Gate Hospitality Group LLC. This submission outlines current operating locations, occupancy profile, and underwriting notes for the renewal of policy CPP-8830471."
+      },
+      {
+        "title": "ACORD 25 Certificate of Liability Insurance",
+        "certificate_holder": "Bayside Event Center LLC",
+        "coverage_lines": [
+          {
+            "insurer_letter": "A",
+            "coverage_type": "Commercial General Liability",
+            "policy_number": "CPP-8830471",
+            "effective_date": "08/01/2025",
+            "expiration_date": "08/01/2026",
+            "addl_insured": true,
+            "subro_waived": true,
+            "limits": [
+              {
+                "coverage": "Each Occurrence",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "Damage to Rented Premises",
+                "limit": "$300,000"
+              },
+              {
+                "coverage": "Med Exp",
+                "limit": "$5,000"
+              },
+              {
+                "coverage": "Personal & Adv Injury",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "General Aggregate",
+                "limit": "$2,000,000"
+              },
+              {
+                "coverage": "Products-Comp/Op Agg",
+                "limit": "$2,000,000"
+              }
+            ],
+            "premium": null
+          },
+          {
+            "insurer_letter": "B",
+            "coverage_type": "Automobile Liability",
+            "policy_number": "CPP-8830471",
+            "effective_date": "08/01/2025",
+            "expiration_date": "08/01/2026",
+            "addl_insured": false,
+            "subro_waived": false,
+            "limits": [
+              {
+                "coverage": "Combined Single Limit",
+                "limit": "$1,000,000"
+              }
+            ],
+            "premium": null
+          },
+          {
+            "insurer_letter": "C",
+            "coverage_type": "Umbrella Liability",
+            "policy_number": "CPP-8830471",
+            "effective_date": "08/01/2025",
+            "expiration_date": "08/01/2026",
+            "addl_insured": true,
+            "subro_waived": true,
+            "limits": [
+              {
+                "coverage": "Each Occurrence",
+                "limit": "$5,000,000"
+              },
+              {
+                "coverage": "General Aggregate",
+                "limit": "$5,000,000"
+              }
+            ],
+            "premium": null
+          },
+          {
+            "insurer_letter": "D",
+            "coverage_type": "Workers Compensation",
+            "policy_number": "CPP-8830471",
+            "effective_date": "08/01/2025",
+            "expiration_date": "08/01/2026",
+            "addl_insured": false,
+            "subro_waived": false,
+            "limits": [
+              {
+                "coverage": "E.L. Each Accident",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "E.L. Disease-Ea Employee",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "E.L. Disease-Policy Limit",
+                "limit": "$1,000,000"
+              }
+            ],
+            "premium": null
+          }
+        ],
+        "description_of_operations": "Bayside Event Center LLC is included as certificate holder only. Additional insured applies where required by written contract and as respects ongoing and completed operations under CG 20 10 04 13 and CG 20 37 04 13. Waiver of subrogation applies where required by written contract per CG 24 04 05 09. Coverage is afforded subject to policy terms, conditions, and exclusions.",
+        "authorized_representative": "Marisol Chen, Senior Account Manager",
+        "certificate_number": "CERT-448271",
+        "revision_number": null,
+        "invoice_number": null,
+        "invoice_date": null,
+        "account_number": null,
+        "line_items": null,
+        "subtotal": null,
+        "taxes": null,
+        "fees": null,
+        "prior_balance": null,
+        "amount_due": null,
+        "billing_period": null,
+        "due_date": null,
+        "payment_methods": null,
+        "remit_to": null,
+        "coverage_parts": null,
+        "forms_schedule": null,
+        "premium_summary": null,
+        "countersignature": null,
+        "countersignature_date": null,
+        "form_number": "ACORD 25 (2016/03)",
+        "endorsement_title": null,
+        "endorsement_number": null,
+        "schedule_rows": null,
+        "provisions": null,
+        "additional_premium": null,
+        "change_description": null,
+        "coverages": null,
+        "total_premium": null,
+        "effective_date": null,
+        "expiration_date": null,
+        "nr_kind": null,
+        "nr_header_rows": null,
+        "nr_columns": null,
+        "nr_rows": null,
+        "unrelated_subtitle": null,
+        "unrelated_body": null
+      },
+      {
+        "title": "Loss Run Report Summary",
+        "certificate_holder": null,
+        "coverage_lines": null,
+        "description_of_operations": null,
+        "authorized_representative": null,
+        "certificate_number": null,
+        "revision_number": null,
+        "invoice_number": null,
+        "invoice_date": null,
+        "account_number": null,
+        "line_items": null,
+        "subtotal": null,
+        "taxes": null,
+        "fees": null,
+        "prior_balance": null,
+        "amount_due": null,
+        "billing_period": null,
+        "due_date": null,
+        "payment_methods": null,
+        "remit_to": null,
+        "coverage_parts": null,
+        "forms_schedule": null,
+        "premium_summary": null,
+        "countersignature": null,
+        "countersignature_date": null,
+        "form_number": null,
+        "endorsement_title": null,
+        "endorsement_number": null,
+        "schedule_rows": null,
+        "provisions": null,
+        "additional_premium": null,
+        "change_description": null,
+        "coverages": null,
+        "total_premium": null,
+        "effective_date": null,
+        "expiration_date": null,
+        "nr_kind": "Loss Run Report",
+        "nr_header_rows": [
+          {
+            "label": "Insured",
+            "value": "Golden Gate Hospitality Group LLC"
+          },
+          {
+            "label": "Policy No.",
+            "value": "CPP-8830471"
+          },
+          {
+            "label": "Valuation Date",
+            "value": "07/15/2026"
+          },
+          {
+            "label": "Prepared By",
+            "value": "Chubb Claims Operations"
+          },
+          {
+            "label": "Lines of Business",
+            "value": "Commercial Package Policy"
+          }
+        ],
+        "nr_columns": [
+          "Claim No.",
+          "Loss Date",
+          "LOB",
+          "Description",
+          "Status",
+          "Paid",
+          "Reserves"
+        ],
+        "nr_rows": [
+          {
+            "cells": [
+              "CLM-260712-01",
+              "07/12/2026",
+              "General Liability",
+              "Guest slip-and-fall in lobby common area",
+              "Open",
+              "$0",
+              "$12,500"
+            ]
+          },
+          {
+            "cells": [
+              "CLM-250914-02",
+              "09/14/2025",
+              "Property",
+              "Minor water intrusion at guest room corridor",
+              "Closed",
+              "$8,450",
+              "$0"
+            ]
+          },
+          {
+            "cells": [
+              "CLM-250128-03",
+              "01/28/2025",
+              "General Liability",
+              "Third-party allegation of foodborne illness",
+              "Closed",
+              "$4,125",
+              "$0"
+            ]
+          }
+        ],
+        "unrelated_subtitle": "Claims activity summary for underwriting review",
+        "unrelated_body": "This loss run report is provided for underwriting and account review purposes only. It summarizes reported losses on policy CPP-8830471 for Golden Gate Hospitality Group LLC as of the valuation date above."
+      }
+    ]
+  }
+}

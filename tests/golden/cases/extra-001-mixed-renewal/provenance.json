@@ -1,0 +1,285 @@
+{
+  "case_id": "extra-001-mixed-renewal",
+  "tier": "mixed",
+  "seed": 100001,
+  "email_type": "renewal",
+  "attachments_mode": "on",
+  "max_docs_per_attachment": 2,
+  "max_attachments": 3,
+  "force_format": null,
+  "persona_index": 0,
+  "content_source": "llm",
+  "noise_manifest": {
+    "email": {
+      "persona_index": 0,
+      "thread": true,
+      "signature": true,
+      "subject_style": null,
+      "multi_recipient": false,
+      "body_only": false,
+      "inconsistency": false,
+      "date_received": "2026-07-06T14:22:00+00:00"
+    },
+    "attachments": [
+      {
+        "filename": "Premium Invoice.pdf"
+      },
+      {
+        "filename": "scan6322.pdf"
+      }
+    ],
+    "docs": [
+      {
+        "delimiter_mode": "bold_caps",
+        "layout_variant": 1,
+        "watermark": "COPY",
+        "content_noise": false,
+        "content_noise_level": 0.15,
+        "is_scanned": false,
+        "render_format": "pdf"
+      },
+      {
+        "delimiter_mode": "plain",
+        "layout_variant": 1,
+        "watermark": null,
+        "content_noise": true,
+        "content_noise_level": 0.15,
+        "is_scanned": false,
+        "render_format": "pdf"
+      }
+    ],
+    "expected": {
+      "email_type_hard": true,
+      "per_attachment_collapse": [
+        false,
+        false
+      ],
+      "per_attachment_scanned": [
+        false,
+        false
+      ],
+      "per_attachment_expect_interrupt": [
+        false,
+        false
+      ]
+    }
+  },
+  "raw_scenario": {
+    "shared": {
+      "named_insured": "Riverside Manufacturing Co.",
+      "policy_number": "SBA-4471902",
+      "insured_address": "2200 Foundry Road, Cleveland, OH 44115",
+      "contact_name": "Karen Delgado",
+      "contact_email": "kdelgado@riversidemfg.com",
+      "contact_phone": "(216) 555-0173",
+      "carrier_name": "The Hartford",
+      "effective_date": "2026-01-01",
+      "expiration_date": "2027-01-01",
+      "coverage_limits": [
+        {
+          "coverage": "General Aggregate",
+          "limit": "$2,000,000"
+        },
+        {
+          "coverage": "Products-Completed Operations Aggregate",
+          "limit": "$2,000,000"
+        },
+        {
+          "coverage": "Personal and Advertising Injury",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Each Occurrence",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Damage to Premises Rented to You",
+          "limit": "$300,000"
+        }
+      ],
+      "total_premium": "$18,760",
+      "producer": {
+        "agency": "Great Lakes Insurance Advisors",
+        "address": "600 Superior Avenue East, Suite 900, Cleveland, OH 44114",
+        "contact_name": "Megan Whitaker",
+        "phone": "(216) 555-0148",
+        "fax": "(216) 555-0149",
+        "email": "submissions@greatlakesins.com"
+      },
+      "insurers": [
+        {
+          "letter": "A",
+          "name": "The Hartford",
+          "naic": "19682"
+        },
+        {
+          "letter": "B",
+          "name": "Hartford Fire Insurance Company",
+          "naic": "19682"
+        },
+        {
+          "letter": "C",
+          "name": "Hartford Casualty Insurance Company",
+          "naic": "29424"
+        },
+        {
+          "letter": "D",
+          "name": "Hartford Insurance Company of the Midwest",
+          "naic": "37478"
+        },
+        {
+          "letter": "E",
+          "name": "Hartford Underwriters Insurance Company",
+          "naic": "30104"
+        },
+        {
+          "letter": "F",
+          "name": "Twin City Fire Insurance Company",
+          "naic": "29459"
+        }
+      ],
+      "business_description": "Sheet-metal fabrication and industrial machining",
+      "entity_type": "Corporation",
+      "fein": "34-7182641",
+      "naic_carrier": "19682"
+    },
+    "email": {
+      "subject": "Re: Riverside Manufacturing Co. renewal request for policy SBA-4471902",
+      "body": "Good morning,\n\nWe are requesting renewal terms for Riverside Manufacturing Co. (policy SBA-4471902) ahead of the upcoming expiration. Please prepare the renewal quote with an effective date of 01/01/2027 and advise if you need any updated underwriting information.\n\nThank you,\nKaren Delgado\nRiverside Manufacturing Co.\n\nOn last Tuesday, Megan Whitaker <submissions@greatlakesins.com> wrote:\n> Thanks for sending this over \u2014 can you confirm the requested effective date and whether any additional insureds are needed?\n>\n> Regards,\n> Megan Whitaker\n\nKaren Delgado\nRiverside Manufacturing Co.\n\nCONFIDENTIALITY NOTICE: This message and any attachments are intended solely for the addressee and may contain confidential information.",
+      "sender": "Karen Delgado <kdelgado@riversidemfg.com>",
+      "recipient": "submissions@greatlakesins.com"
+    },
+    "documents": [
+      {
+        "title": "Premium Invoice - Riverside Manufacturing Co.",
+        "certificate_holder": null,
+        "coverage_lines": null,
+        "description_of_operations": null,
+        "authorized_representative": null,
+        "certificate_number": null,
+        "revision_number": null,
+        "invoice_number": "HRT-INV-2601187",
+        "invoice_date": "12/15/2026",
+        "account_number": "ACCT-4471902",
+        "line_items": [
+          {
+            "description": "Policy Premium",
+            "amount": "$18,250.00"
+          },
+          {
+            "description": "Terrorism (TRIA)",
+            "amount": "$185.00"
+          },
+          {
+            "description": "Ohio Surplus Lines Tax",
+            "amount": "$183.00"
+          },
+          {
+            "description": "Broker Fee",
+            "amount": "$120.00"
+          },
+          {
+            "description": "Prior Balance",
+            "amount": "$0.00"
+          }
+        ],
+        "subtotal": "$18,250.00",
+        "taxes": "$368.00",
+        "fees": "$120.00",
+        "prior_balance": "$0.00",
+        "amount_due": "$18,738.00",
+        "billing_period": "01/01/2027 - 01/01/2028",
+        "due_date": "01/15/2027",
+        "payment_methods": "Check, ACH, or wire transfer",
+        "remit_to": "The Hartford, P.O. Box 758824, Baltimore, MD 21275-8824",
+        "coverage_parts": null,
+        "forms_schedule": null,
+        "premium_summary": null,
+        "countersignature": null,
+        "countersignature_date": null,
+        "form_number": null,
+        "endorsement_title": null,
+        "endorsement_number": null,
+        "schedule_rows": null,
+        "provisions": null,
+        "additional_premium": null,
+        "change_description": null,
+        "coverages": null,
+        "total_premium": null,
+        "effective_date": null,
+        "expiration_date": null,
+        "nr_kind": null,
+        "nr_header_rows": null,
+        "nr_columns": null,
+        "nr_rows": null,
+        "unrelated_subtitle": null,
+        "unrelated_body": null
+      },
+      {
+        "title": "Renewal Premium Invoice - Riverside Manufacturing Co.",
+        "certificate_holder": null,
+        "coverage_lines": null,
+        "description_of_operations": null,
+        "authorized_representative": null,
+        "certificate_number": null,
+        "revision_number": null,
+        "invoice_number": "HRT-INV-2601188",
+        "invoice_date": "12/15/2026",
+        "account_number": "ACCT-4471902",
+        "line_items": [
+          {
+            "description": "Policy Premium",
+            "amount": "$18,250.00"
+          },
+          {
+            "description": "Terrorism (TRIA)",
+            "amount": "$185.00"
+          },
+          {
+            "description": "Ohio Premium Surcharge",
+            "amount": "$155.00"
+          },
+          {
+            "description": "Broker Fee",
+            "amount": "$120.00"
+          },
+          {
+            "description": "Prior Balance",
+            "amount": "$0.00"
+          }
+        ],
+        "subtotal": "$18,250.00",
+        "taxes": "$340.00",
+        "fees": "$120.00",
+        "prior_balance": "$0.00",
+        "amount_due": "$18,710.00",
+        "billing_period": "01/01/2027 - 01/01/2028",
+        "due_date": "01/15/2027",
+        "payment_methods": "Check, ACH, or wire transfer",
+        "remit_to": "The Hartford, P.O. Box 758824, Baltimore, MD 21275-824",
+        "coverage_parts": null,
+        "forms_schedule": null,
+        "premium_summary": null,
+        "countersignature": null,
+        "countersignature_date": null,
+        "form_number": null,
+        "endorsement_title": null,
+        "endorsement_number": null,
+        "schedule_rows": null,
+        "provisions": null,
+        "additional_premium": null,
+        "change_description": null,
+        "coverages": null,
+        "total_premium": null,
+        "effective_date": null,
+        "expiration_date": null,
+        "nr_kind": null,
+        "nr_header_rows": null,
+        "nr_columns": null,
+        "nr_rows": null,
+        "unrelated_subtitle": null,
+        "unrelated_body": null
+      }
+    ]
+  }
+}

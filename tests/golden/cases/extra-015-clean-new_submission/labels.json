@@ -1,0 +1,90 @@
+{
+  "case_id": "extra-015-clean-new_submission",
+  "tier": "clean",
+  "email": {
+    "email_type": "new_submission",
+    "email_type_hard": true,
+    "extraction": {
+      "named_insured": "Pinnacle Staffing Solutions Inc.",
+      "policy_number": null,
+      "requested_effective_date": "2026-01-15",
+      "requested_changes": "Quote/bind a new commercial package policy.",
+      "contact_name": "Danielle Foster",
+      "contact_phone": "(404) 555-0163"
+    }
+  },
+  "attachments": [
+    {
+      "filename": "attachment_1.pdf",
+      "render_format": "pdf",
+      "n_pages": 1,
+      "documents": [
+        {
+          "index": 0,
+          "doc_type": "insurance declaration",
+          "page_start": 0,
+          "page_end": 0,
+          "extraction": {
+            "named_insured": "Pinnacle Staffing Solutions Inc.",
+            "policy_number": "PPC-457219-01",
+            "coverages": {
+              "Commercial General Liability": "$7,850",
+              "Commercial Automobile Liability": "$2,940",
+              "Umbrella Liability": "$3,150",
+              "Workers Compensation": "$4,200"
+            },
+            "total_premium": 18940.0
+          }
+        }
+      ],
+      "boundary_page_offsets": [],
+      "n_documents": 1,
+      "expected_segment_types": [
+        "insurance declaration"
+      ],
+      "expected_collapse": false,
+      "expected_scanned": false,
+      "expected_interrupt": false
+    },
+    {
+      "filename": "attachment_2.pdf",
+      "render_format": "pdf",
+      "n_pages": 1,
+      "documents": [
+        {
+          "index": 0,
+          "doc_type": "certificate of insurance",
+          "page_start": 0,
+          "page_end": 0,
+          "extraction": {
+            "named_insured": "Pinnacle Staffing Solutions Inc.",
+            "policy_number": "PPC-457219-01",
+            "certificate_holder": "Miller Office Park LLC, 4000 Lenox Rd NE, Suite 900, Atlanta, GA 30326",
+            "effective_date": "2026-01-15",
+            "expiration_date": "2027-01-15",
+            "limits": {
+              "Each Occurrence": "$1,000,000",
+              "Damage to Rented Premises": "$300,000",
+              "Med Exp (Any one person)": "$5,000",
+              "Personal & Adv Injury": "$1,000,000",
+              "General Aggregate": "$2,000,000",
+              "Products-Comp/Op Agg": "$2,000,000",
+              "Combined Single Limit": "$1,000,000",
+              "E.L. Each Accident": "$1,000,000",
+              "E.L. Disease-Ea Employee": "$1,000,000",
+              "E.L. Disease-Policy Limit": "$1,000,000"
+            }
+          }
+        }
+      ],
+      "boundary_page_offsets": [],
+      "n_documents": 1,
+      "expected_segment_types": [
+        "certificate of insurance"
+      ],
+      "expected_collapse": false,
+      "expected_scanned": false,
+      "expected_interrupt": false
+    }
+  ]
+}

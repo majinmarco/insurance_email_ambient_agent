@@ -1,0 +1,231 @@
+{
+  "case_id": "extra-003-clean-claim_fnol",
+  "tier": "clean",
+  "seed": 100003,
+  "email_type": "claim_fnol",
+  "attachments_mode": "on",
+  "max_docs_per_attachment": 2,
+  "max_attachments": 3,
+  "force_format": null,
+  "persona_index": 3,
+  "content_source": "llm",
+  "noise_manifest": null,
+  "raw_scenario": {
+    "shared": {
+      "named_insured": "Evergreen Home Health Services LLC",
+      "policy_number": "HMP-3320815",
+      "insured_address": "1201 SW Fifth Ave, Portland, OR 97204",
+      "contact_name": "Priya Raman",
+      "contact_email": "praman@evergreenhh.com",
+      "contact_phone": "503-555-0159",
+      "carrier_name": "CNA Financial",
+      "effective_date": "2025-03-01",
+      "expiration_date": "2026-03-01",
+      "coverage_limits": [
+        {
+          "coverage": "General Aggregate",
+          "limit": "$2,000,000"
+        },
+        {
+          "coverage": "Each Occurrence",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Personal and Advertising Injury",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Medical Expense Limit",
+          "limit": "$10,000"
+        },
+        {
+          "coverage": "Hired and Non-Owned Auto Liability",
+          "limit": "$1,000,000"
+        }
+      ],
+      "total_premium": "$18,960",
+      "producer": {
+        "agency": "Cascade Professional Insurance",
+        "address": "1001 SW Broadway, Suite 1600, Portland, OR 97205",
+        "contact_name": "Alyssa Chen",
+        "phone": "503-222-4188",
+        "fax": "503-222-4190",
+        "email": "submissions@cascadepro.com"
+      },
+      "insurers": [
+        {
+          "letter": "A",
+          "name": "CNA Financial Corporation",
+          "naic": "21113"
+        },
+        {
+          "letter": "B",
+          "name": "Continental Casualty Company",
+          "naic": "20443"
+        },
+        {
+          "letter": "C",
+          "name": "American Casualty Company of Reading, Pennsylvania",
+          "naic": "20427"
+        },
+        {
+          "letter": "D",
+          "name": "Valley Forge Insurance Company",
+          "naic": "20508"
+        },
+        {
+          "letter": "E",
+          "name": "The Continental Insurance Company",
+          "naic": "35289"
+        },
+        {
+          "letter": "F",
+          "name": "National Fire Insurance Company of Hartford",
+          "naic": "20478"
+        }
+      ],
+      "business_description": "In-home nursing and personal care services",
+      "entity_type": "Limited Liability Company",
+      "fein": "92-1847635",
+      "naic_carrier": "21113"
+    },
+    "email": {
+      "subject": "First Notice of Loss \u2014 Evergreen Home Health Services LLC \u2014 Policy HMP-3320815",
+      "body": "Good morning,\n\nI am providing first notice of loss for Evergreen Home Health Services LLC under policy HMP-3320815.\n\nPlease note the incident occurred on 07/09/2025 at a client residence during a scheduled home visit and resulted in property damage and a reported injury allegation. We are requesting claim setup and acknowledgement, and please advise if any immediate loss documentation or a requested effective date for reporting needs to be confirmed.\n\nNamed insured: Evergreen Home Health Services LLC\nPolicy number: HMP-3320815\nContact: Priya Raman, praman@evergreenhh.com, 503-555-0159\n\nThank you,\nCascade Professional Insurance",
+      "sender": "Alyssa Chen <submissions@cascadepro.com>",
+      "recipient": "claims@cna.com"
+    },
+    "documents": [
+      {
+        "title": "Premium Invoice",
+        "certificate_holder": null,
+        "coverage_lines": null,
+        "description_of_operations": null,
+        "authorized_representative": null,
+        "certificate_number": null,
+        "revision_number": null,
+        "invoice_number": "INV-458731",
+        "invoice_date": "07/15/2025",
+        "account_number": "EHHS-3320815",
+        "line_items": [
+          {
+            "description": "Policy Premium",
+            "amount": "$18,250.00"
+          },
+          {
+            "description": "Terrorism (TRIA)",
+            "amount": "$145.00"
+          },
+          {
+            "description": "Oregon State Tax / Surcharge",
+            "amount": "$210.00"
+          },
+          {
+            "description": "Broker Fee",
+            "amount": "$275.00"
+          },
+          {
+            "description": "Prior Balance",
+            "amount": "$0.00"
+          }
+        ],
+        "subtotal": "$18,685.00",
+        "taxes": "$210.00",
+        "fees": "$420.00",
+        "prior_balance": "$0.00",
+        "amount_due": "$18,685.00",
+        "billing_period": "03/01/2025 - 03/01/2026",
+        "due_date": "08/14/2025",
+        "payment_methods": "Check, ACH, or credit card through the CNA insured billing portal.",
+        "remit_to": "CNA Financial, Lockbox Services, No. 78240, Chicago, IL 60673-8240",
+        "coverage_parts": null,
+        "forms_schedule": null,
+        "premium_summary": null,
+        "countersignature": null,
+        "countersignature_date": null,
+        "form_number": null,
+        "endorsement_title": null,
+        "endorsement_number": null,
+        "schedule_rows": null,
+        "provisions": null,
+        "additional_premium": null,
+        "change_description": null,
+        "coverages": null,
+        "total_premium": null,
+        "effective_date": null,
+        "expiration_date": null,
+        "nr_kind": null,
+        "nr_header_rows": null,
+        "nr_columns": null,
+        "nr_rows": null,
+        "unrelated_subtitle": null,
+        "unrelated_body": null
+      },
+      {
+        "title": "Premium Invoice",
+        "certificate_holder": null,
+        "coverage_lines": null,
+        "description_of_operations": null,
+        "authorized_representative": null,
+        "certificate_number": null,
+        "revision_number": null,
+        "invoice_number": "INV-458732",
+        "invoice_date": "08/15/2025",
+        "account_number": "EHHS-3320815",
+        "line_items": [
+          {
+            "description": "Policy Premium",
+            "amount": "$18,250.00"
+          },
+          {
+            "description": "Terrorism (TRIA)",
+            "amount": "$145.00"
+          },
+          {
+            "description": "Oregon State Tax / Surcharge",
+            "amount": "$210.00"
+          },
+          {
+            "description": "Broker Fee",
+            "amount": "$275.00"
+          },
+          {
+            "description": "Prior Balance",
+            "amount": "$0.00"
+          }
+        ],
+        "subtotal": "$18,685.00",
+        "taxes": "$210.00",
+        "fees": "$420.00",
+        "prior_balance": "$0.00",
+        "amount_due": "$18,685.00",
+        "billing_period": "03/01/2025 - 03/01/2026",
+        "due_date": "09/14/2025",
+        "payment_methods": "Check, ACH, or credit card through the CNA insured billing portal.",
+        "remit_to": "CNA Financial, Lockbox Services, No. 78240, Chicago, IL 60673-8240",
+        "coverage_parts": null,
+        "forms_schedule": null,
+        "premium_summary": null,
+        "countersignature": null,
+        "countersignature_date": null,
+        "form_number": null,
+        "endorsement_title": null,
+        "endorsement_number": null,
+        "schedule_rows": null,
+        "provisions": null,
+        "additional_premium": null,
+        "change_description": null,
+        "coverages": null,
+        "total_premium": null,
+        "effective_date": null,
+        "expiration_date": null,
+        "nr_kind": null,
+        "nr_header_rows": null,
+        "nr_columns": null,
+        "nr_rows": null,
+        "unrelated_subtitle": null,
+        "unrelated_body": null
+      }
+    ]
+  }
+}

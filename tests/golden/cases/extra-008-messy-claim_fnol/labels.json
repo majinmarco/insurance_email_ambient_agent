@@ -1,0 +1,164 @@
+{
+  "case_id": "extra-008-messy-claim_fnol",
+  "tier": "messy",
+  "email": {
+    "email_type": "claim_fnol",
+    "email_type_hard": false,
+    "extraction": {
+      "named_insured": "Lone Star Freight Systems LP",
+      "policy_number": "CA-9948120",
+      "requested_effective_date": null,
+      "requested_changes": "Report a new loss / open a claim.",
+      "contact_name": "Wade Carrington",
+      "contact_phone": "(214) 555-0191"
+    }
+  },
+  "attachments": [
+    {
+      "filename": "Scan_2791.pdf",
+      "render_format": "pdf",
+      "n_pages": 3,
+      "documents": [
+        {
+          "index": 0,
+          "doc_type": "unrelated or unclear document",
+          "page_start": 0,
+          "page_end": 0,
+          "extraction": null
+        },
+        {
+          "index": 1,
+          "doc_type": "certificate of insurance",
+          "page_start": 1,
+          "page_end": 1,
+          "extraction": {
+            "named_insured": "Lone Star Freight Systems LP",
+            "policy_number": "CA-9948120",
+            "certificate_holder": "Pioneer Distribution Centers, Inc. 2200 Market Street, Suite 60o, Kansas City, MO 64100",
+            "effective_date": "2026-02-01",
+            "expiration_date": "2027-02-01",
+            "limits": {
+              "Each Occurrence": "$1,000,000",
+              "Damage to Rented Premises": "$100,000",
+              "Med Exp": "$5,000",
+              "Personal & Adv Injury": "$1,000,000",
+              "General Aggregate": "$2,000,000",
+              "Products-Comp/Op Agg": "$2,000,000",
+              "Combined Single Limit": "$1,000,000",
+              "E.L. Each Accident": "$1,000,000",
+              "E.L. Disease-Ea Employee": "$1,000,000",
+              "E.L. Disease-Policy Limit": "$1,000,000"
+            }
+          }
+        },
+        {
+          "index": 2,
+          "doc_type": "unrelated or unclear document",
+          "page_start": 2,
+          "page_end": 2,
+          "extraction": null
+        }
+      ],
+      "boundary_page_offsets": [
+        1,
+        2
+      ],
+      "n_documents": 3,
+      "expected_segment_types": [
+        "certificate of insurance"
+      ],
+      "expected_collapse": true,
+      "expected_scanned": false,
+      "expected_interrupt": true
+    },
+    {
+      "filename": "Scan_1524.pdf",
+      "render_format": "pdf",
+      "n_pages": 3,
+      "documents": [
+        {
+          "index": 0,
+          "doc_type": "unrelated or unclear document",
+          "page_start": 0,
+          "page_end": 0,
+          "extraction": null
+        },
+        {
+          "index": 1,
+          "doc_type": "unrelated or unclear document",
+          "page_start": 1,
+          "page_end": 1,
+          "extraction": null
+        },
+        {
+          "index": 2,
+          "doc_type": "certificate of insurance",
+          "page_start": 2,
+          "page_end": 2,
+          "extraction": {
+            "named_insured": "Lone Star Freight Systems LP",
+            "policy_number": "CA-9948120",
+            "certificate_holder": "MidSouth Logistics Park, LLC 1010 Riverfront Drive, Memphis, TN 38103",
+            "effective_date": "2026-02-01",
+            "expiration_date": "2027-02-01",
+            "limits": {
+              "Each Occurrence": "$1,000,000",
+              "Damage to Rented Premises": "$100,000",
+              "Med Exp": "$5,000",
+              "Personal & Adv Injury": "$1,000,000",
+              "General Aggregate": "$2,000,000",
+              "Products-Comp/Op Agg": "$2,000,000",
+              "Combined Single Limit": "$1,000,000",
+              "E.L. Each Accident": "$1,000,000",
+              "E.L. Disease-Ea Employee": "$1,000,000",
+              "E.L. Disease-Policy Limit": "$1,000,000"
+            }
+          }
+        }
+      ],
+      "boundary_page_offsets": [
+        1,
+        2
+      ],
+      "n_documents": 3,
+      "expected_segment_types": [
+        "certificate of insurance"
+      ],
+      "expected_collapse": true,
+      "expected_scanned": false,
+      "expected_interrupt": true
+    },
+    {
+      "filename": "IMG_1983.pdf",
+      "render_format": "pdf",
+      "n_pages": 1,
+      "documents": [
+        {
+          "index": 0,
+          "doc_type": "insurance declaration",
+          "page_start": 0,
+          "page_end": 0,
+          "extraction": {
+            "named_insured": "Lone Star Freight Systems LP",
+            "policy_number": "CA-9948120",
+            "coverages": {
+              "Commercial Auto Liability": "$10,420",
+              "Motor Truck Cargo": "$2,680",
+              "Commercial General Liability": "$3,910",
+              "Umbrella Liability": "$1,030"
+            },
+            "total_premium": 18640.0
+          }
+        }
+      ],
+      "boundary_page_offsets": [],
+      "n_documents": 1,
+      "expected_segment_types": [
+        "insurance declaration"
+      ],
+      "expected_collapse": false,
+      "expected_scanned": false,
+      "expected_interrupt": false
+    }
+  ]
+}

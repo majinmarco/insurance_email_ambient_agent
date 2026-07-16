@@ -123,9 +123,10 @@ The set projects into a Label Studio import in `label_studio/`:
 
 - `label_studio/config.xml` (committed) — the project's labeling interface. Email intent +
   per-document type as single-choice controls; email/document extraction as editable JSON
-  blocks; **each document's rendered PDF shown inline** via a `<HyperText>` viewer; the
-  extracted text tucked in a collapsible panel. A `<Repeater>` handles the variable document
-  count. Paste it into *Project → Settings → Labeling Interface*.
+  blocks; **each document's rendered PDF shown inline** via the PDF.js-based `<Pdf>` tag
+  (with a `<HyperText>` fallback for the handful of HTML attachments); the extracted text
+  tucked in a collapsible panel. A `<Repeater>` handles the variable document count. Paste it
+  into *Project → Settings → Labeling Interface*.
 - `label_studio/tasks.json` (generated, git-ignored) — one task per case, current labels
   pre-loaded as `predictions` so you correct pre-annotations instead of labeling from scratch.
 
@@ -136,9 +137,12 @@ make golden-labelstudio          # = uv run python -m scripts.golden.label_studi
 ```
 
 It prints the one-time project setup (paste `config.xml`; add a **Local files** source =
-the printed document root; import `tasks.json`). Then every case shows its real PDF next to
-the labels — scanned cases show the image pages, so you can eyeball the source against the
-ground truth.
+the printed `_localfiles/golden_pdfs` sub-path — **not** the document root, which Label
+Studio refuses; import `tasks.json`). The Local Storage is what authorizes
+`/data/local-files/` to serve the files — **without it every PDF renders blank (404)**.
+Save the storage but do **not** *Save & Sync* (that would create one task per file). Then
+every case shows its real PDF next to the labels — scanned cases show the image pages, so
+you can eyeball the source against the ground truth.
 
 **Correcting & merging back.** Correct labels in the UI → *Export* as JSON → merge:
 
@@ -154,8 +158,9 @@ extraction); boundaries, page spans and `expected_*` flags are preserved.
 
 - `localfiles` — PDFs served from disk (`--serve` sets this up). Reliable rendering; tiny
   `tasks.json`. This is what the launcher uses.
-- `embed` — PDFs travel inside `tasks.json` as base64 `data:` URIs; zero setup, works on a
-  plain import, but Label Studio's HTML sanitizer may block it in some versions.
+- `embed` — PDFs travel inside `tasks.json` as base64 `data:` URIs fed straight to the
+  `<Pdf>` tag; zero server setup (no Local Storage needed), works on a plain import, at the
+  cost of a larger `tasks.json`.
 - `none` — text-only review (no PDF viewer).
 
 **Other commands:**

@@ -1,0 +1,251 @@
+{
+  "case_id": "extra-017-messy-endorsement",
+  "tier": "messy",
+  "seed": 100017,
+  "email_type": "endorsement",
+  "attachments_mode": "on",
+  "max_docs_per_attachment": 3,
+  "max_attachments": 3,
+  "force_format": null,
+  "persona_index": 7,
+  "content_source": "llm",
+  "noise_manifest": {
+    "email": {
+      "persona_index": 7,
+      "thread": false,
+      "signature": true,
+      "subject_style": "ticket",
+      "multi_recipient": true,
+      "body_only": false,
+      "inconsistency": true,
+      "date_received": "2026-07-07T15:34:00+00:00"
+    },
+    "attachments": [
+      {
+        "filename": "Loss Run Report.pdf.pdf"
+      }
+    ],
+    "docs": [
+      {
+        "delimiter_mode": "bold_caps",
+        "layout_variant": 1,
+        "watermark": null,
+        "content_noise": false,
+        "content_noise_level": 0.35,
+        "is_scanned": false,
+        "render_format": "pdf"
+      }
+    ],
+    "expected": {
+      "email_type_hard": false,
+      "per_attachment_collapse": [
+        false
+      ],
+      "per_attachment_scanned": [
+        false
+      ],
+      "per_attachment_expect_interrupt": [
+        true
+      ]
+    }
+  },
+  "raw_scenario": {
+    "shared": {
+      "named_insured": "Ironclad Security Services Inc.",
+      "policy_number": "GL-4471083",
+      "insured_address": "2801 N Central Ave, Phoenix, AZ 85004",
+      "contact_name": "Gloria Tran",
+      "contact_email": "gtran@ironcladsecurity.com",
+      "contact_phone": "(602) 555-0154",
+      "carrier_name": "Berkshire Hathaway GUARD",
+      "effective_date": "2025-03-01",
+      "expiration_date": "2026-03-01",
+      "coverage_limits": [
+        {
+          "coverage": "Each Occurrence",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "General Aggregate",
+          "limit": "$2,000,000"
+        },
+        {
+          "coverage": "Products-Completed Operations Aggregate",
+          "limit": "$2,000,000"
+        },
+        {
+          "coverage": "Personal and Advertising Injury",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Damage to Premises Rented to You",
+          "limit": "$300,000"
+        }
+      ],
+      "total_premium": "$18,740",
+      "producer": {
+        "agency": "Desert Sky Insurance Advisors",
+        "address": "2200 E Camelback Rd, Suite 230, Phoenix, AZ 85016",
+        "contact_name": "Megan Ruiz",
+        "phone": "(602) 555-0198",
+        "fax": "(602) 555-0199",
+        "email": "newbiz@desertskyins.com"
+      },
+      "insurers": [
+        {
+          "letter": "A",
+          "name": "Berkshire Hathaway GUARD Insurance Companies",
+          "naic": "20109"
+        },
+        {
+          "letter": "B",
+          "name": "National Union Fire Insurance Company of Pittsburgh, Pa.",
+          "naic": "19445"
+        },
+        {
+          "letter": "C",
+          "name": "Federal Insurance Company",
+          "naic": "20281"
+        },
+        {
+          "letter": "D",
+          "name": "Travelers Property Casualty Company of America",
+          "naic": "25674"
+        },
+        {
+          "letter": "E",
+          "name": "The Continental Insurance Company",
+          "naic": "35289"
+        },
+        {
+          "letter": "F",
+          "name": "Hartford Fire Insurance Company",
+          "naic": "19682"
+        }
+      ],
+      "business_description": "Contract security guard services",
+      "entity_type": "Corporation",
+      "fein": "86-2147093",
+      "naic_carrier": "20109"
+    },
+    "email": {
+      "subject": "GL-4471083 endorsement request for Ironclad Security Services Inc. [Ref# 80790]",
+      "body": "Good morning,\n\nPlease process an endorsement for Ironclad Security Services Inc. on policy GL-4471083. We are requesting a mid-term change effective 06/15/2025 to update the named insured to reflect the current legal entity name and to add an additional secured patrol location at 1450 W Thomas Rd, Phoenix, AZ 85013.\n\nPlease confirm any required supporting documentation and advise when the endorsement will be issued.\n\nThank you,\nGloria Tran\nIronclad Security Services Inc.\n\nNote: the policy number on the attachment may be off by a digit; the correct one ends in 9.\n\nSent from my iPhone",
+      "sender": "Megan Ruiz <newbiz@desertskyins.com>",
+      "recipient": "Gloria Tran <gtran@ironcladsecurity.com>, newbusiness@ironcladsecurity.com"
+    },
+    "documents": [
+      {
+        "title": "Ironclad Security Services Inc. - Submission Cover Letter",
+        "certificate_holder": null,
+        "coverage_lines": null,
+        "description_of_operations": null,
+        "authorized_representative": null,
+        "certificate_number": null,
+        "revision_number": null,
+        "invoice_number": null,
+        "invoice_date": null,
+        "account_number": null,
+        "line_items": null,
+        "subtotal": null,
+        "taxes": null,
+        "fees": null,
+        "prior_balance": null,
+        "amount_due": null,
+        "billing_period": null,
+        "due_date": null,
+        "payment_methods": null,
+        "remit_to": null,
+        "coverage_parts": null,
+        "forms_schedule": null,
+        "premium_summary": null,
+        "countersignature": null,
+        "countersignature_date": null,
+        "form_number": null,
+        "endorsement_title": null,
+        "endorsement_number": null,
+        "schedule_rows": null,
+        "provisions": null,
+        "additional_premium": null,
+        "change_description": null,
+        "coverages": null,
+        "total_premium": null,
+        "effective_date": null,
+        "expiration_date": null,
+        "nr_kind": "Submission Cover Letter",
+        "nr_header_rows": [
+          {
+            "label": "Insured",
+            "value": "Ironclad Security Services Inc."
+          },
+          {
+            "label": "Policy No.",
+            "value": "GL-4471083"
+          },
+          {
+            "label": "Carrier",
+            "value": "Berkshire Hathaway GUARD"
+          },
+          {
+            "label": "Producer",
+            "value": "Desert Sky Insurance Advisors"
+          },
+          {
+            "label": "Requested Effective Date",
+            "value": "06/15/2025"
+          },
+          {
+            "label": "Prepared By",
+            "value": "Megan Ruiz"
+          },
+          {
+            "label": "Contact",
+            "value": "Gloria Tran | (602) 555-0154 | gtran@ironcladsecurity.com"
+          }
+        ],
+        "nr_columns": [
+          "Item",
+          "Reference",
+          "Details",
+          "Action Required"
+        ],
+        "nr_rows": [
+          {
+            "cells": [
+              "1",
+              "Named Insured",
+              "Update legal entity name to current corporate name",
+              "Yes"
+            ]
+          },
+          {
+            "cells": [
+              "2",
+              "Location",
+              "Add secured patrol location at 1450 W Thomas Rd, Phoenix, AZ 85013",
+              "Yes"
+            ]
+          },
+          {
+            "cells": [
+              "3",
+              "Operations",
+              "Contract security guard services",
+              "No change"
+            ]
+          },
+          {
+            "cells": [
+              "4",
+              "Policy",
+              "Commercial General Liability - in force mid-term",
+              "Issue endorsement"
+            ]
+          }
+        ],
+        "unrelated_subtitle": "Broker submission summary for mid-term policy change",
+        "unrelated_body": "This package summarizes the requested account changes for underwriting review. It is not a certificate of insurance, invoice, declarations page, or endorsement form. Please review the insured details, requested effective date, and location change above before issuing revised terms."
+      }
+    ]
+  }
+}

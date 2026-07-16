@@ -1,0 +1,60 @@
+{
+  "case_id": "extra-007-mixed-endorsement",
+  "tier": "mixed",
+  "email": {
+    "email_type": "endorsement",
+    "email_type_hard": true,
+    "extraction": {
+      "named_insured": "Pinnacle Staffing Solutions Inc.",
+      "policy_number": "WC-5580372",
+      "requested_effective_date": "2026-03-01",
+      "requested_changes": "Endorse the in-force policy (mid-term change).",
+      "contact_name": "Danielle Foster",
+      "contact_phone": "(404) 555-0163"
+    }
+  },
+  "attachments": [
+    {
+      "filename": "Submission Packet.pdf",
+      "render_format": "pdf",
+      "n_pages": 2,
+      "documents": [
+        {
+          "index": 0,
+          "doc_type": "insurance endorsement",
+          "page_start": 0,
+          "page_end": 0,
+          "extraction": {
+            "named_insured": "Pinnacle Staffing Solutions Inc.",
+            "policy_number": "WC-5580372",
+            "change_description": "Updates the named insured and mailing address on the in-force policy effective 03/01/2026.",
+            "effective_date": "2026-03-01"
+          }
+        },
+        {
+          "index": 1,
+          "doc_type": "insurance endorsement",
+          "page_start": 1,
+          "page_end": 1,
+          "extraction": {
+            "named_insured": "Pinnacle Staffing Solutions Inc.",
+            "policy_number": "WC-5580372",
+            "change_description": "Administrative endorsement to update the insured name and mailing information effective 03/01/2026.",
+            "effective_date": "2026-03-01"
+          }
+        }
+      ],
+      "boundary_page_offsets": [
+        1
+      ],
+      "n_documents": 2,
+      "expected_segment_types": [
+        "insurance endorsement",
+        "insurance endorsement"
+      ],
+      "expected_collapse": false,
+      "expected_scanned": false,
+      "expected_interrupt": false
+    }
+  ]
+}

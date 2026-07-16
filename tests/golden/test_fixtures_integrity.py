@@ -131,7 +131,11 @@ def test_label_studio_roundtrip_is_lossless(case: GoldenCase) -> None:
 def test_label_studio_config_and_export_valid() -> None:
     config = ls.labeling_config()
     assert "<Repeater" in config and "email_type" in config
-    assert "<HyperText" in config and "doc_pdf_{{idx}}" in config  # per-document PDF viewer
+    # per-document viewer: <Pdf> for PDFs + <HyperText> fallback for HTML attachments
+    assert '<Pdf name="doc_pdf_{{idx}}"' in config
+    assert '<HyperText name="doc_html_{{idx}}"' in config
+    # text-only mode drops the viewer tags entirely
+    assert "<Pdf" not in ls.labeling_config(pdf_mode="none")
     for choice in ("new_submission", "renewal", "certificate of insurance"):
         assert choice in config
     # every task is JSON-serializable and carries derived pre-annotations
@@ -144,20 +148,27 @@ def test_label_studio_config_and_export_valid() -> None:
 
 
 @pytest.mark.parametrize("case", CASES, ids=CASE_IDS)
-def test_label_studio_pdf_embed_present_and_wellformed(case: GoldenCase) -> None:
-    """Every task document carries a rendered-PDF embed so a reviewer can eyeball the source
-    against the labels. localfiles URLs must be well-formed and point at the dumped path."""
+def test_label_studio_pdf_viewer_present_and_wellformed(case: GoldenCase) -> None:
+    """Every task document carries a rendered-source viewer value so a reviewer can eyeball
+    the source against the labels: PDFs go to the <Pdf> tag (a served-file URL or a data:
+    URI), HTML attachments to the <HyperText> fallback. Exactly one field is populated."""
+    # attachment_index -> render_format, to know which viewer field each document uses
+    fmt_by_ai = {ai: att.render_format for ai, att in enumerate(case.labels.attachments)}
     for mode in ("localfiles", "embed"):
         task = ls.case_to_task(case.input, case.labels.model_dump(), pdf_mode=mode)
         docs = task["data"]["documents"]
         assert len(docs) == sum(len(a.documents) for a in case.labels.attachments)
         for datum in docs:
-            embed = datum.get("pdf", "")
-            assert embed.startswith("<embed src=") and "width=" in embed
-            if mode == "localfiles":
-                assert f"/data/local-files/?d={ls.LOCALFILES_PREFIX}/{case.case_id}/" in embed
+            pdf, html = datum.get("pdf", ""), datum.get("html", "")
+            assert bool(pdf) != bool(html), "exactly one of pdf/html must be populated"
+            if fmt_by_ai[datum["attachment_index"]] == "html":
+                assert not pdf and html
+            elif mode == "localfiles":
+                # URL points at the dumped path and carries no embed markup
+                assert pdf.startswith(f"/data/local-files/?d={ls.LOCALFILES_PREFIX}/{case.case_id}/")
+                assert "<embed" not in pdf
             else:
-                assert "src=\"data:" in embed and ";base64," in embed
-    # 'none' mode omits the viewer entirely
+                assert pdf.startswith("data:application/pdf;base64,")
+    # 'none' mode omits the viewer fields entirely
     task_none = ls.case_to_task(case.input, case.labels.model_dump(), pdf_mode="none")
-    assert all("pdf" not in d for d in task_none["data"]["documents"])
+    assert all("pdf" not in d and "html" not in d for d in task_none["data"]["documents"])

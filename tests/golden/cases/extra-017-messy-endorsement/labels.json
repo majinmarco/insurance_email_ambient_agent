@@ -1,0 +1,38 @@
+{
+  "case_id": "extra-017-messy-endorsement",
+  "tier": "messy",
+  "email": {
+    "email_type": "endorsement",
+    "email_type_hard": false,
+    "extraction": {
+      "named_insured": "Ironclad Security Services Inc.",
+      "policy_number": "GL-4471083",
+      "requested_effective_date": "2025-03-01",
+      "requested_changes": "Endorse the in-force policy (mid-term change).",
+      "contact_name": "Gloria Tran",
+      "contact_phone": "(602) 555-0154"
+    }
+  },
+  "attachments": [
+    {
+      "filename": "Loss Run Report.pdf.pdf",
+      "render_format": "pdf",
+      "n_pages": 1,
+      "documents": [
+        {
+          "index": 0,
+          "doc_type": "unrelated or unclear document",
+          "page_start": 0,
+          "page_end": 0,
+          "extraction": null
+        }
+      ],
+      "boundary_page_offsets": [],
+      "n_documents": 1,
+      "expected_segment_types": [],
+      "expected_collapse": false,
+      "expected_scanned": false,
+      "expected_interrupt": true
+    }
+  ]
+}

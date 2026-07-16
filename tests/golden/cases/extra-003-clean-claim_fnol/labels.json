@@ -1,0 +1,76 @@
+{
+  "case_id": "extra-003-clean-claim_fnol",
+  "tier": "clean",
+  "email": {
+    "email_type": "claim_fnol",
+    "email_type_hard": true,
+    "extraction": {
+      "named_insured": "Evergreen Home Health Services LLC",
+      "policy_number": "HMP-3320815",
+      "requested_effective_date": null,
+      "requested_changes": "Report a new loss / open a claim.",
+      "contact_name": "Priya Raman",
+      "contact_phone": "503-555-0159"
+    }
+  },
+  "attachments": [
+    {
+      "filename": "attachment_1.pdf",
+      "render_format": "pdf",
+      "n_pages": 1,
+      "documents": [
+        {
+          "index": 0,
+          "doc_type": "insurance invoice",
+          "page_start": 0,
+          "page_end": 0,
+          "extraction": {
+            "named_insured": "Evergreen Home Health Services LLC",
+            "policy_number": "HMP-3320815",
+            "amount_due": 18685.0,
+            "billing_period": "03/01/2025 - 03/01/2026",
+            "policy_reference": "HMP-3320815",
+            "due_date": "2025-08-14"
+          }
+        }
+      ],
+      "boundary_page_offsets": [],
+      "n_documents": 1,
+      "expected_segment_types": [
+        "insurance invoice"
+      ],
+      "expected_collapse": false,
+      "expected_scanned": false,
+      "expected_interrupt": false
+    },
+    {
+      "filename": "attachment_2.pdf",
+      "render_format": "pdf",
+      "n_pages": 1,
+      "documents": [
+        {
+          "index": 0,
+          "doc_type": "insurance invoice",
+          "page_start": 0,
+          "page_end": 0,
+          "extraction": {
+            "named_insured": "Evergreen Home Health Services LLC",
+            "policy_number": "HMP-3320815",
+            "amount_due": 18685.0,
+            "billing_period": "03/01/2025 - 03/01/2026",
+            "policy_reference": "HMP-3320815",
+            "due_date": "2025-09-14"
+          }
+        }
+      ],
+      "boundary_page_offsets": [],
+      "n_documents": 1,
+      "expected_segment_types": [
+        "insurance invoice"
+      ],
+      "expected_collapse": false,
+      "expected_scanned": false,
+      "expected_interrupt": false
+    }
+  ]
+}

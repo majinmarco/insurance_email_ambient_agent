@@ -1,0 +1,114 @@
+{
+  "case_id": "extra-002-messy-endorsement",
+  "tier": "messy",
+  "email": {
+    "email_type": "endorsement",
+    "email_type_hard": true,
+    "extraction": {
+      "named_insured": "Coastal Property Management LLC",
+      "policy_number": "CPP-2214569",
+      "requested_effective_date": "2026-02-01",
+      "requested_changes": "Endorse the in-force policy (mid-term change).",
+      "contact_name": "Hector Ramos",
+      "contact_phone": "813-555-0177"
+    }
+  },
+  "attachments": [
+    {
+      "filename": "Policy Documents.pdf",
+      "render_format": "pdf",
+      "n_pages": 2,
+      "documents": [
+        {
+          "index": 0,
+          "doc_type": "insurance invoice",
+          "page_start": 0,
+          "page_end": 0,
+          "extraction": {
+            "named_insured": "Coastal Property Management LLC",
+            "policy_number": "CPP-2214569",
+            "amount_due": 18640.0,
+            "billing_period": "02/01/2026 - 02/01/2027",
+            "policy_reference": "CPP-2214569",
+            "due_date": "2026-03-31"
+          }
+        },
+        {
+          "index": 1,
+          "doc_type": "insurance declaration",
+          "page_start": 1,
+          "page_end": 1,
+          "extraction": {
+            "named_insured": "Coastal Property Management LLC",
+            "policy_number": "CPP-2214569",
+            "coverages": {
+              "Commercial General Liability": "$6,250",
+              "Business Personal Property": "$2,100",
+              "Commercial Automobile Liability": "$3,860",
+              "Commercial Umbrella Liability": "$5,640"
+            },
+            "total_premium": 18640.0
+          }
+        }
+      ],
+      "boundary_page_offsets": [
+        1
+      ],
+      "n_documents": 2,
+      "expected_segment_types": [
+        "insurance invoice",
+        "insurance declaration"
+      ],
+      "expected_collapse": true,
+      "expected_scanned": false,
+      "expected_interrupt": false
+    },
+    {
+      "filename": "scan4287.pdf",
+      "render_format": "pdf",
+      "n_pages": 2,
+      "documents": [
+        {
+          "index": 0,
+          "doc_type": "insurance endorsement",
+          "page_start": 0,
+          "page_end": 0,
+          "extraction": {
+            "named_insured": "Coastal Property Management LLC",
+            "policy_number": "CPP-2214569",
+            "change_description": "UUpdates the named insured o Coatal Property Management LLC d/bb/a oaastal Retail anagement efffective 04/15/2026.",
+            "effective_date": "2026-04-15"
+          }
+        },
+        {
+          "index": 1,
+          "doc_type": "insurance declaration",
+          "page_start": 1,
+          "page_end": 1,
+          "extraction": {
+            "named_insured": "Coastal Property Management LLC",
+            "policy_number": "CPP-2214569",
+            "coverages": {
+              "Commercial General Liability": "$6,375",
+              "Business Personal Property": "$2,100",
+              "Commercial Automobile Liability": "$3,985",
+              "Commercial Umbrella Liability": "$5,790"
+            },
+            "total_premium": 19040.0
+          }
+        }
+      ],
+      "boundary_page_offsets": [
+        1
+      ],
+      "n_documents": 2,
+      "expected_segment_types": [
+        "insurance endorsement",
+        "insurance declaration"
+      ],
+      "expected_collapse": true,
+      "expected_scanned": false,
+      "expected_interrupt": false
+    }
+  ]
+}

@@ -1,0 +1,853 @@
+{
+  "case_id": "extra-016-mixed-renewal",
+  "tier": "mixed",
+  "seed": 100016,
+  "email_type": "renewal",
+  "attachments_mode": "on",
+  "max_docs_per_attachment": 2,
+  "max_attachments": 3,
+  "force_format": null,
+  "persona_index": 3,
+  "content_source": "llm",
+  "noise_manifest": {
+    "email": {
+      "persona_index": 3,
+      "thread": true,
+      "signature": true,
+      "subject_style": null,
+      "multi_recipient": true,
+      "body_only": false,
+      "inconsistency": true,
+      "date_received": "2026-07-09T18:57:00+00:00"
+    },
+    "attachments": [
+      {
+        "filename": "Renewal Package.pdf"
+      },
+      {
+        "filename": "Submission Packet.pdf"
+      },
+      {
+        "filename": "IMG_5127.pdf"
+      }
+    ],
+    "docs": [
+      {
+        "delimiter_mode": "hash",
+        "layout_variant": 2,
+        "watermark": null,
+        "content_noise": false,
+        "content_noise_level": 0.15,
+        "is_scanned": false,
+        "render_format": "pdf"
+      },
+      {
+        "delimiter_mode": "hash",
+        "layout_variant": 1,
+        "watermark": null,
+        "content_noise": false,
+        "content_noise_level": 0.15,
+        "is_scanned": false,
+        "render_format": "pdf"
+      },
+      {
+        "delimiter_mode": "hash",
+        "layout_variant": 2,
+        "watermark": null,
+        "content_noise": false,
+        "content_noise_level": 0.15,
+        "is_scanned": false,
+        "render_format": "pdf"
+      },
+      {
+        "delimiter_mode": "hash",
+        "layout_variant": 0,
+        "watermark": null,
+        "content_noise": false,
+        "content_noise_level": 0.15,
+        "is_scanned": false,
+        "render_format": "pdf"
+      },
+      {
+        "delimiter_mode": "hash",
+        "layout_variant": 2,
+        "watermark": "SPECIMEN",
+        "content_noise": false,
+        "content_noise_level": 0.15,
+        "is_scanned": false,
+        "render_format": "pdf"
+      },
+      {
+        "delimiter_mode": "hash",
+        "layout_variant": 1,
+        "watermark": null,
+        "content_noise": false,
+        "content_noise_level": 0.15,
+        "is_scanned": false,
+        "render_format": "pdf"
+      }
+    ],
+    "expected": {
+      "email_type_hard": false,
+      "per_attachment_collapse": [
+        false,
+        false,
+        false
+      ],
+      "per_attachment_scanned": [
+        false,
+        false,
+        false
+      ],
+      "per_attachment_expect_interrupt": [
+        false,
+        false,
+        false
+      ]
+    }
+  },
+  "raw_scenario": {
+    "shared": {
+      "named_insured": "Evergreen Home Health Services LLC",
+      "policy_number": "HMP-3320815",
+      "insured_address": "1201 SW Fifth Ave, Portland, OR 97204",
+      "contact_name": "Priya Raman",
+      "contact_email": "praman@evergreenhh.com",
+      "contact_phone": "503-555-0159",
+      "carrier_name": "CNA Financial",
+      "effective_date": "2026-02-01",
+      "expiration_date": "2027-02-01",
+      "coverage_limits": [
+        {
+          "coverage": "Commercial General Liability",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Commercial Automobile Liability",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Umbrella Liability",
+          "limit": "$5,000,000"
+        },
+        {
+          "coverage": "Workers Compensation",
+          "limit": "Statutory"
+        }
+      ],
+      "total_premium": "$18,950",
+      "producer": {
+        "agency": "Cascade Professional Insurance",
+        "address": "805 SW Broadway, Suite 410, Portland, OR 97205",
+        "contact_name": "Megan Torres",
+        "phone": "503-555-0198",
+        "fax": "503-555-0199",
+        "email": "submissions@cascadepro.com"
+      },
+      "insurers": [
+        {
+          "letter": "A",
+          "name": "CNA Insurance Company",
+          "naic": "12612"
+        },
+        {
+          "letter": "B",
+          "name": "Continental Casualty Company",
+          "naic": "20443"
+        },
+        {
+          "letter": "C",
+          "name": "Transportation Insurance Company",
+          "naic": "31003"
+        },
+        {
+          "letter": "D",
+          "name": "Valley Forge Insurance Company",
+          "naic": "20508"
+        },
+        {
+          "letter": "E",
+          "name": "Western Surety Company",
+          "naic": "13188"
+        },
+        {
+          "letter": "F",
+          "name": "National Fire Insurance Company of Hartford",
+          "naic": "20478"
+        }
+      ],
+      "business_description": "In-home nursing and personal care services",
+      "entity_type": "Limited Liability Company",
+      "fein": "93-4182765",
+      "naic_carrier": "CNA Financial"
+    },
+    "email": {
+      "subject": "Re: Renewal quote request for Evergreen Home Health Services LLC - Policy HMP-3320815",
+      "body": "Good morning,\n\nPlease provide the renewal indication and updated quote for Evergreen Home Health Services LLC, policy HMP-3320815, as the current term is approaching expiration on 02/01/2027. We would like to renew with an effective date of 02/01/2027 and maintain the current program structure if available.\n\nPlease send the renewal declarations, certificates, and invoice details when ready.\n\nThank you,\nPriya Raman\nEvergreen Home Health Services LLC\n\nCorrection: the total premium should read slightly lower than the attached invoice; we're reconciling.\n\nOn Mon, Jul 6, 2026 at 9:14 AM, Megan Torres <submissions@cascadepro.com> wrote:\n> Received, thank you. We'll need the current loss runs before we can release terms.\n>\n> Regards,\n> Megan Torres\n\nPriya Raman\nEvergreen Home Health Services LLC\n\nCONFIDENTIALITY NOTICE: This message and any attachments are intended solely for the addressee and may contain confidential information.",
+      "sender": "Megan Torres's Assistant <assistant@evergreenhh.com> on behalf of Cascade Professional Insurance <submissions@cascadepro.com>",
+      "recipient": "Priya Raman <praman@evergreenhh.com>, newbusiness@evergreenhh.com"
+    },
+    "documents": [
+      {
+        "title": "Commercial Package Policy Declarations - Evergreen Home Health Services LLC",
+        "certificate_holder": null,
+        "coverage_lines": null,
+        "description_of_operations": null,
+        "authorized_representative": null,
+        "certificate_number": null,
+        "revision_number": null,
+        "invoice_number": null,
+        "invoice_date": null,
+        "account_number": null,
+        "line_items": null,
+        "subtotal": null,
+        "taxes": null,
+        "fees": null,
+        "prior_balance": null,
+        "amount_due": null,
+        "billing_period": null,
+        "due_date": null,
+        "payment_methods": null,
+        "remit_to": null,
+        "coverage_parts": [
+          {
+            "insurer_letter": "A",
+            "coverage_type": "Commercial General Liability",
+            "policy_number": "HMP-3320815",
+            "effective_date": null,
+            "expiration_date": null,
+            "addl_insured": null,
+            "subro_waived": null,
+            "limits": [
+              {
+                "coverage": "Each Occurrence",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "Damage to Rented Premises",
+                "limit": "$300,000"
+              },
+              {
+                "coverage": "Medical Expense (Any One Person)",
+                "limit": "$10,000"
+              },
+              {
+                "coverage": "Personal & Advertising Injury",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "General Aggregate",
+                "limit": "$2,000,000"
+              },
+              {
+                "coverage": "Products-Comp/Op Agg",
+                "limit": "$2,000,000"
+              }
+            ],
+            "premium": "$6,250"
+          },
+          {
+            "insurer_letter": "B",
+            "coverage_type": "Commercial Automobile Liability",
+            "policy_number": "HMP-3320815",
+            "effective_date": null,
+            "expiration_date": null,
+            "addl_insured": null,
+            "subro_waived": null,
+            "limits": [
+              {
+                "coverage": "Combined Single Limit",
+                "limit": "$1,000,000"
+              }
+            ],
+            "premium": "$5,400"
+          },
+          {
+            "insurer_letter": "C",
+            "coverage_type": "Umbrella Liability",
+            "policy_number": "HMP-3320815",
+            "effective_date": null,
+            "expiration_date": null,
+            "addl_insured": null,
+            "subro_waived": null,
+            "limits": [
+              {
+                "coverage": "Each Occurrence",
+                "limit": "$5,000,000"
+              },
+              {
+                "coverage": "General Aggregate",
+                "limit": "$5,000,000"
+              }
+            ],
+            "premium": "$3,150"
+          },
+          {
+            "insurer_letter": "D",
+            "coverage_type": "Workers Compensation",
+            "policy_number": "HMP-3320815",
+            "effective_date": null,
+            "expiration_date": null,
+            "addl_insured": null,
+            "subro_waived": null,
+            "limits": [
+              {
+                "coverage": "E.L. Each Accident",
+                "limit": "Statutory"
+              },
+              {
+                "coverage": "E.L. Disease-Ea Employee",
+                "limit": "$500,000"
+              },
+              {
+                "coverage": "E.L. Disease-Policy Limit",
+                "limit": "$500,000"
+              }
+            ],
+            "premium": "$3,100"
+          }
+        ],
+        "forms_schedule": [
+          {
+            "form_number": "CG 00 01 04 13",
+            "title": "Commercial General Liability Coverage Form"
+          },
+          {
+            "form_number": "CA 00 01 11 20",
+            "title": "Business Auto Coverage Form"
+          },
+          {
+            "form_number": "CU 00 01 10 11",
+            "title": "Commercial Umbrella Coverage Form"
+          },
+          {
+            "form_number": "WC 00 00 00 C",
+            "title": "Workers Compensation and Employers Liability Insurance Policy"
+          },
+          {
+            "form_number": "IL 00 17 11 98",
+            "title": "Common Policy Conditions"
+          },
+          {
+            "form_number": "IL 00 21 09 08",
+            "title": "Nuclear Energy Liability Exclusion Endorsement"
+          }
+        ],
+        "premium_summary": [
+          {
+            "description": "Policy Premium",
+            "amount": "$17,900"
+          },
+          {
+            "description": "Terrorism (TRIA)",
+            "amount": "$220"
+          },
+          {
+            "description": "Oregon Surplus Lines Tax",
+            "amount": "$678"
+          },
+          {
+            "description": "Policy Fee",
+            "amount": "$152"
+          }
+        ],
+        "countersignature": "Megan Torres",
+        "countersignature_date": "01/15/2026",
+        "form_number": null,
+        "endorsement_title": null,
+        "endorsement_number": null,
+        "schedule_rows": null,
+        "provisions": null,
+        "additional_premium": null,
+        "change_description": null,
+        "coverages": null,
+        "total_premium": "$18,950",
+        "effective_date": "02/01/2026",
+        "expiration_date": "02/01/2027",
+        "nr_kind": null,
+        "nr_header_rows": null,
+        "nr_columns": null,
+        "nr_rows": null,
+        "unrelated_subtitle": null,
+        "unrelated_body": null
+      },
+      {
+        "title": "ACORD 25 Certificate of Liability Insurance",
+        "certificate_holder": "Rose City Medical Center, Facilities Department, 2825 NE Columbia Blvd, Portland, OR 97211",
+        "coverage_lines": [
+          {
+            "insurer_letter": "A",
+            "coverage_type": "Commercial General Liability",
+            "policy_number": "HMP-3320815",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": true,
+            "subro_waived": true,
+            "limits": [
+              {
+                "coverage": "Each Occurrence",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "Damage to Rented Premises",
+                "limit": "$300,000"
+              },
+              {
+                "coverage": "Med Exp",
+                "limit": "$10,000"
+              },
+              {
+                "coverage": "Personal & Adv Injury",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "General Aggregate",
+                "limit": "$2,000,000"
+              },
+              {
+                "coverage": "Products-Comp/Op Agg",
+                "limit": "$2,000,000"
+              }
+            ],
+            "premium": null
+          },
+          {
+            "insurer_letter": "B",
+            "coverage_type": "Commercial Automobile Liability",
+            "policy_number": "HMP-3320815",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": true,
+            "subro_waived": true,
+            "limits": [
+              {
+                "coverage": "Combined Single Limit",
+                "limit": "$1,000,000"
+              }
+            ],
+            "premium": null
+          },
+          {
+            "insurer_letter": "C",
+            "coverage_type": "Umbrella Liability",
+            "policy_number": "HMP-3320815",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": true,
+            "subro_waived": true,
+            "limits": [
+              {
+                "coverage": "Each Occurrence",
+                "limit": "$5,000,000"
+              },
+              {
+                "coverage": "General Aggregate",
+                "limit": "$5,000,000"
+              }
+            ],
+            "premium": null
+          },
+          {
+            "insurer_letter": "D",
+            "coverage_type": "Workers Compensation",
+            "policy_number": "HMP-3320815",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": false,
+            "subro_waived": false,
+            "limits": [
+              {
+                "coverage": "E.L. Each Accident",
+                "limit": "$500,000"
+              },
+              {
+                "coverage": "E.L. Disease-Ea Employee",
+                "limit": "$500,000"
+              },
+              {
+                "coverage": "E.L. Disease-Policy Limit",
+                "limit": "$500,000"
+              }
+            ],
+            "premium": null
+          }
+        ],
+        "description_of_operations": "Evergreen Home Health Services LLC is named insured. Additional insured status applies where required by written contract, with primary and non-contributory wording and waiver of subrogation as evidenced by CG 20 10 04 13, CG 20 37 04 13, CA 04 44 05 21, and WC 04 03 06 10. Coverage shown is subject to the policy terms, conditions, exclusions, and endorsements.",
+        "authorized_representative": "Megan Torres",
+        "certificate_number": "CNA-COI-260201-0147",
+        "revision_number": null,
+        "invoice_number": null,
+        "invoice_date": null,
+        "account_number": null,
+        "line_items": null,
+        "subtotal": null,
+        "taxes": null,
+        "fees": null,
+        "prior_balance": null,
+        "amount_due": null,
+        "billing_period": null,
+        "due_date": null,
+        "payment_methods": null,
+        "remit_to": null,
+        "coverage_parts": null,
+        "forms_schedule": null,
+        "premium_summary": null,
+        "countersignature": null,
+        "countersignature_date": null,
+        "form_number": null,
+        "endorsement_title": null,
+        "endorsement_number": null,
+        "schedule_rows": null,
+        "provisions": null,
+        "additional_premium": null,
+        "change_description": null,
+        "coverages": null,
+        "total_premium": null,
+        "effective_date": null,
+        "expiration_date": null,
+        "nr_kind": null,
+        "nr_header_rows": null,
+        "nr_columns": null,
+        "nr_rows": null,
+        "unrelated_subtitle": null,
+        "unrelated_body": null
+      },
+      {
+        "title": "ACORD 25 Certificate of Liability Insurance",
+        "certificate_holder": "Northwest Senior Living, LLC, 4100 SE Powell Blvd, Portland, OR 97206",
+        "coverage_lines": [
+          {
+            "insurer_letter": "A",
+            "coverage_type": "Commercial General Liability",
+            "policy_number": "HMP-3320815",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": true,
+            "subro_waived": true,
+            "limits": [
+              {
+                "coverage": "Each Occurrence",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "Damage to Rented Premises",
+                "limit": "$300,000"
+              },
+              {
+                "coverage": "Med Exp",
+                "limit": "$10,000"
+              },
+              {
+                "coverage": "Personal & Adv Injury",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "General Aggregate",
+                "limit": "$2,000,000"
+              },
+              {
+                "coverage": "Products-Comp/Op Agg",
+                "limit": "$2,000,000"
+              }
+            ],
+            "premium": null
+          },
+          {
+            "insurer_letter": "B",
+            "coverage_type": "Commercial Automobile Liability",
+            "policy_number": "HMP-3320815",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": true,
+            "subro_waived": true,
+            "limits": [
+              {
+                "coverage": "Combined Single Limit",
+                "limit": "$1,000,000"
+              }
+            ],
+            "premium": null
+          },
+          {
+            "insurer_letter": "C",
+            "coverage_type": "Umbrella Liability",
+            "policy_number": "HMP-3320815",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": true,
+            "subro_waived": true,
+            "limits": [
+              {
+                "coverage": "Each Occurrence",
+                "limit": "$5,000,000"
+              },
+              {
+                "coverage": "General Aggregate",
+                "limit": "$5,000,000"
+              }
+            ],
+            "premium": null
+          },
+          {
+            "insurer_letter": "D",
+            "coverage_type": "Workers Compensation",
+            "policy_number": "HMP-3320815",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": false,
+            "subro_waived": false,
+            "limits": [
+              {
+                "coverage": "E.L. Each Accident",
+                "limit": "$500,000"
+              },
+              {
+                "coverage": "E.L. Disease-Ea Employee",
+                "limit": "$500,000"
+              },
+              {
+                "coverage": "E.L. Disease-Policy Limit",
+                "limit": "$500,000"
+              }
+            ],
+            "premium": null
+          }
+        ],
+        "description_of_operations": "Certificate issued for insured's home-health operations. Where required by written contract, additional insured, primary and non-contributory, and waiver of subrogation language applies via CG 20 10 04 13, CG 20 37 04 13, and WC 04 03 06 10. This certificate does not amend, extend, or alter the coverage afforded by the policies listed herein.",
+        "authorized_representative": "Megan Torres",
+        "certificate_number": "CNA-COI-260201-0152",
+        "revision_number": null,
+        "invoice_number": null,
+        "invoice_date": null,
+        "account_number": null,
+        "line_items": null,
+        "subtotal": null,
+        "taxes": null,
+        "fees": null,
+        "prior_balance": null,
+        "amount_due": null,
+        "billing_period": null,
+        "due_date": null,
+        "payment_methods": null,
+        "remit_to": null,
+        "coverage_parts": null,
+        "forms_schedule": null,
+        "premium_summary": null,
+        "countersignature": null,
+        "countersignature_date": null,
+        "form_number": null,
+        "endorsement_title": null,
+        "endorsement_number": null,
+        "schedule_rows": null,
+        "provisions": null,
+        "additional_premium": null,
+        "change_description": null,
+        "coverages": null,
+        "total_premium": null,
+        "effective_date": null,
+        "expiration_date": null,
+        "nr_kind": null,
+        "nr_header_rows": null,
+        "nr_columns": null,
+        "nr_rows": null,
+        "unrelated_subtitle": null,
+        "unrelated_body": null
+      },
+      {
+        "title": "Premium Invoice - Evergreen Home Health Services LLC",
+        "certificate_holder": null,
+        "coverage_lines": null,
+        "description_of_operations": null,
+        "authorized_representative": null,
+        "certificate_number": null,
+        "revision_number": null,
+        "invoice_number": "INV-260115-4412",
+        "invoice_date": "01/15/2026",
+        "account_number": "ACCT-881204",
+        "line_items": [
+          {
+            "description": "Policy Premium",
+            "amount": "$17,900"
+          },
+          {
+            "description": "Terrorism (TRIA)",
+            "amount": "$220"
+          },
+          {
+            "description": "Oregon Surplus Lines Tax",
+            "amount": "$678"
+          },
+          {
+            "description": "Broker Fee",
+            "amount": "$152"
+          },
+          {
+            "description": "Prior Balance",
+            "amount": "$0"
+          }
+        ],
+        "subtotal": "$17,900",
+        "taxes": "$678",
+        "fees": "$372",
+        "prior_balance": "$0",
+        "amount_due": "$18,950",
+        "billing_period": "02/01/2026 - 02/01/2027",
+        "due_date": "02/01/2026",
+        "payment_methods": "ACH, check, or wire transfer",
+        "remit_to": "CNA Financial, P.O. Box 94541, Chicago, IL 60694-4541",
+        "coverage_parts": null,
+        "forms_schedule": null,
+        "premium_summary": null,
+        "countersignature": null,
+        "countersignature_date": null,
+        "form_number": null,
+        "endorsement_title": null,
+        "endorsement_number": null,
+        "schedule_rows": null,
+        "provisions": null,
+        "additional_premium": null,
+        "change_description": null,
+        "coverages": null,
+        "total_premium": null,
+        "effective_date": null,
+        "expiration_date": null,
+        "nr_kind": null,
+        "nr_header_rows": null,
+        "nr_columns": null,
+        "nr_rows": null,
+        "unrelated_subtitle": null,
+        "unrelated_body": null
+      },
+      {
+        "title": "Premium Invoice - Renewal Installment Notice",
+        "certificate_holder": null,
+        "coverage_lines": null,
+        "description_of_operations": null,
+        "authorized_representative": null,
+        "certificate_number": null,
+        "revision_number": null,
+        "invoice_number": "INV-260115-4413",
+        "invoice_date": "01/15/2026",
+        "account_number": "ACCT-881204",
+        "line_items": [
+          {
+            "description": "Policy Premium",
+            "amount": "$17,900"
+          },
+          {
+            "description": "Terrorism (TRIA)",
+            "amount": "$220"
+          },
+          {
+            "description": "Oregon Surplus Lines Tax",
+            "amount": "$678"
+          },
+          {
+            "description": "Broker Fee",
+            "amount": "$152"
+          },
+          {
+            "description": "Prior Balance",
+            "amount": "$0"
+          }
+        ],
+        "subtotal": "$17,900",
+        "taxes": "$678",
+        "fees": "$372",
+        "prior_balance": "$0",
+        "amount_due": "$18,950",
+        "billing_period": "02/01/2026 - 02/01/2027",
+        "due_date": "02/01/2026",
+        "payment_methods": "ACH, check, or wire transfer",
+        "remit_to": "CNA Financial, P.O. Box 94541, Chicago, IL 60694-4541",
+        "coverage_parts": null,
+        "forms_schedule": null,
+        "premium_summary": null,
+        "countersignature": null,
+        "countersignature_date": null,
+        "form_number": null,
+        "endorsement_title": null,
+        "endorsement_number": null,
+        "schedule_rows": null,
+        "provisions": null,
+        "additional_premium": null,
+        "change_description": null,
+        "coverages": null,
+        "total_premium": null,
+        "effective_date": null,
+        "expiration_date": null,
+        "nr_kind": null,
+        "nr_header_rows": null,
+        "nr_columns": null,
+        "nr_rows": null,
+        "unrelated_subtitle": null,
+        "unrelated_body": null
+      },
+      {
+        "title": "Premium Invoice - Renewal Balance Summary",
+        "certificate_holder": null,
+        "coverage_lines": null,
+        "description_of_operations": null,
+        "authorized_representative": null,
+        "certificate_number": null,
+        "revision_number": null,
+        "invoice_number": "INV-260115-4414",
+        "invoice_date": "01/15/2026",
+        "account_number": "ACCT-881204",
+        "line_items": [
+          {
+            "description": "Policy Premium",
+            "amount": "$17,900"
+          },
+          {
+            "description": "Terrorism (TRIA)",
+            "amount": "$220"
+          },
+          {
+            "description": "Oregon Surplus Lines Tax",
+            "amount": "$678"
+          },
+          {
+            "description": "Broker Fee",
+            "amount": "$152"
+          },
+          {
+            "description": "Prior Balance",
+            "amount": "$0"
+          }
+        ],
+        "subtotal": "$17,900",
+        "taxes": "$678",
+        "fees": "$372",
+        "prior_balance": "$0",
+        "amount_due": "$18,950",
+        "billing_period": "02/01/2026 - 02/01/2027",
+        "due_date": "02/01/2026",
+        "payment_methods": "ACH, check, or wire transfer",
+        "remit_to": "CNA Financial, P.O. Box 94541, Chicago, IL 60694-4541",
+        "coverage_parts": null,
+        "forms_schedule": null,
+        "premium_summary": null,
+        "countersignature": null,
+        "countersignature_date": null,
+        "form_number": null,
+        "endorsement_title": null,
+        "endorsement_number": null,
+        "schedule_rows": null,
+        "provisions": null,
+        "additional_premium": null,
+        "change_description": null,
+        "coverages": null,
+        "total_premium": null,
+        "effective_date": null,
+        "expiration_date": null,
+        "nr_kind": null,
+        "nr_header_rows": null,
+        "nr_columns": null,
+        "nr_rows": null,
+        "unrelated_subtitle": null,
+        "unrelated_body": null
+      }
+    ]
+  }
+}

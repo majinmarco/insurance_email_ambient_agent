@@ -1,0 +1,1058 @@
+{
+  "case_id": "extra-008-messy-claim_fnol",
+  "tier": "messy",
+  "seed": 100008,
+  "email_type": "claim_fnol",
+  "attachments_mode": "on",
+  "max_docs_per_attachment": 3,
+  "max_attachments": 3,
+  "force_format": null,
+  "persona_index": 4,
+  "content_source": "llm",
+  "noise_manifest": {
+    "email": {
+      "persona_index": 4,
+      "thread": true,
+      "signature": false,
+      "subject_style": null,
+      "multi_recipient": true,
+      "body_only": false,
+      "inconsistency": true,
+      "date_received": "2026-06-24T18:06:00+00:00"
+    },
+    "attachments": [
+      {
+        "filename": "Scan_2791.pdf"
+      },
+      {
+        "filename": "Scan_1524.pdf"
+      },
+      {
+        "filename": "IMG_1983.pdf"
+      }
+    ],
+    "docs": [
+      {
+        "delimiter_mode": "plain",
+        "layout_variant": 2,
+        "watermark": null,
+        "content_noise": false,
+        "content_noise_level": 0.35,
+        "is_scanned": false,
+        "render_format": "pdf"
+      },
+      {
+        "delimiter_mode": "bold_caps",
+        "layout_variant": 0,
+        "watermark": "DUPLICATE",
+        "content_noise": true,
+        "content_noise_level": 0.35,
+        "is_scanned": false,
+        "render_format": "pdf"
+      },
+      {
+        "delimiter_mode": "bold_caps",
+        "layout_variant": 2,
+        "watermark": null,
+        "content_noise": false,
+        "content_noise_level": 0.35,
+        "is_scanned": false,
+        "render_format": "pdf"
+      },
+      {
+        "delimiter_mode": "bold_caps",
+        "layout_variant": 1,
+        "watermark": null,
+        "content_noise": false,
+        "content_noise_level": 0.35,
+        "is_scanned": false,
+        "render_format": "pdf"
+      },
+      {
+        "delimiter_mode": "bold_caps",
+        "layout_variant": 2,
+        "watermark": null,
+        "content_noise": false,
+        "content_noise_level": 0.35,
+        "is_scanned": false,
+        "render_format": "pdf"
+      },
+      {
+        "delimiter_mode": "bold_caps",
+        "layout_variant": 1,
+        "watermark": null,
+        "content_noise": false,
+        "content_noise_level": 0.35,
+        "is_scanned": false,
+        "render_format": "pdf"
+      },
+      {
+        "delimiter_mode": "plain",
+        "layout_variant": 1,
+        "watermark": null,
+        "content_noise": false,
+        "content_noise_level": 0.35,
+        "is_scanned": false,
+        "render_format": "pdf"
+      }
+    ],
+    "expected": {
+      "email_type_hard": false,
+      "per_attachment_collapse": [
+        true,
+        true,
+        false
+      ],
+      "per_attachment_scanned": [
+        false,
+        false,
+        false
+      ],
+      "per_attachment_expect_interrupt": [
+        true,
+        true,
+        false
+      ]
+    }
+  },
+  "raw_scenario": {
+    "shared": {
+      "named_insured": "Lone Star Freight Systems LP",
+      "policy_number": "CA-9948120",
+      "insured_address": "4500 Irving Blvd, Dallas, TX 75247",
+      "contact_name": "Wade Carrington",
+      "contact_email": "wcarrington@lonestarfreight.com",
+      "contact_phone": "(214) 555-0191",
+      "carrier_name": "Great West Casualty Company",
+      "effective_date": "2026-02-01",
+      "expiration_date": "2027-02-01",
+      "coverage_limits": [
+        {
+          "coverage": "Combined Single Limit",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Each Occurrence",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "General Aggregate",
+          "limit": "$2,000,000"
+        }
+      ],
+      "total_premium": "$18,640",
+      "producer": {
+        "agency": "Southwest Transportation Insurance",
+        "address": "8110 N Central Expy, Suite 1250, Dallas, TX 75206",
+        "contact_name": "Megan Alvarez",
+        "phone": "(214) 555-0148",
+        "fax": "(214) 555-0150",
+        "email": "trucking@swtransins.com"
+      },
+      "insurers": [
+        {
+          "letter": "A",
+          "name": "Great West Casualty Company",
+          "naic": "11371"
+        },
+        {
+          "letter": "B",
+          "name": "National Interstate Insurance Company",
+          "naic": "32620"
+        },
+        {
+          "letter": "C",
+          "name": "Old Republic Insurance Company",
+          "naic": "24139"
+        },
+        {
+          "letter": "D",
+          "name": "The Continental Insurance Company",
+          "naic": "35289"
+        },
+        {
+          "letter": "E",
+          "name": "Travelers Property Casualty Company of America",
+          "naic": "25674"
+        },
+        {
+          "letter": "F",
+          "name": "Sentry Select Insurance Company",
+          "naic": "21180"
+        }
+      ],
+      "business_description": "Regional less-than-truckload motor carrier",
+      "entity_type": "Limited Partnership",
+      "fein": "84-2165093",
+      "naic_carrier": "11371"
+    },
+    "email": {
+      "subject": "FW: First Notice of Loss \u2013 Lone Star Freight Systems LP \u2013 Policy CA-9948120",
+      "body": "Good morning,\n\nPlease accept this as a first notice of loss for Lone Star Freight Systems LP under policy CA-9948120 with Great West Casualty Company.\n\nThe insured reported a new claim involving tractor-trailer damage and attendant property loss occurring during operations on the policy period. Please open a claim file, confirm assignment of a claim number, and advise whether any additional documentation is needed. If there is a requested effective date for claim handling or incident reporting, please use the date of loss as reported by the insured and preserve the earliest notice date.\n\nNamed insured: Lone Star Freight Systems LP\nPolicy number: CA-9948120\nContact: Wade Carrington\nPhone: (214) 555-0191\nEmail: wcarrington@lonestarfreight.com\n\nThank you,\nSouthwest Transportation Insurance\n\nCorrection: the total premium should read slightly lower than the attached invoice; we're reconciling.\n\nOn Mon, Jul 6, 2026 at 9:14 AM, Megan Alvarez <trucking@swtransins.com> wrote:\n> Thanks for sending this over \u2014 can you confirm the requested effective date and whether any additional insureds are needed?\n>\n> Regards,\n> Megan Alvarez",
+      "sender": "Megan Alvarez's Assistant <assistant@greatwestcasualty.com> on behalf of Megan Alvarez <trucking@swtransins.com>",
+      "recipient": "claims@greatwestcasualty.com, underwriting@greatwestcasualty.com"
+    },
+    "documents": [
+      {
+        "title": "Loss Run Report \u2013 Lone Star Freight Systems LP",
+        "certificate_holder": null,
+        "coverage_lines": null,
+        "description_of_operations": null,
+        "authorized_representative": null,
+        "certificate_number": null,
+        "revision_number": null,
+        "invoice_number": null,
+        "invoice_date": null,
+        "account_number": null,
+        "line_items": null,
+        "subtotal": null,
+        "taxes": null,
+        "fees": null,
+        "prior_balance": null,
+        "amount_due": null,
+        "billing_period": null,
+        "due_date": null,
+        "payment_methods": null,
+        "remit_to": null,
+        "coverage_parts": null,
+        "forms_schedule": null,
+        "premium_summary": null,
+        "countersignature": null,
+        "countersignature_date": null,
+        "form_number": null,
+        "endorsement_title": null,
+        "endorsement_number": null,
+        "schedule_rows": null,
+        "provisions": null,
+        "additional_premium": null,
+        "change_description": null,
+        "coverages": null,
+        "total_premium": null,
+        "effective_date": null,
+        "expiration_date": null,
+        "nr_kind": "Loss Run Report",
+        "nr_header_rows": [
+          {
+            "label": "Insured",
+            "value": "Lone Star Freight Systems LP"
+          },
+          {
+            "label": "Policy No.",
+            "value": "CA-9948120"
+          },
+          {
+            "label": "Valuation Date",
+            "value": "02/01/2026"
+          },
+          {
+            "label": "Prepared By",
+            "value": "Southwest Transportation Insurance"
+          },
+          {
+            "label": "Carrier",
+            "value": "Great West Casualty Company"
+          }
+        ],
+        "nr_columns": [
+          "Claim No.",
+          "Date of Loss",
+          "Line of Business",
+          "Cause of Loss",
+          "Status",
+          "Paid",
+          "Outstanding Reserve"
+        ],
+        "nr_rows": [
+          {
+            "cells": [
+              "LSF-2026-001",
+              "03/14/2026",
+              "Auto Liability",
+              "Rear-end impact with tractor damage",
+              "Open",
+              "$12,480",
+              "$27,500"
+            ]
+          },
+          {
+            "cells": [
+              "LSF-2026-002",
+              "05/02/2026",
+              "Physical Damage",
+              "Backing loss at dock area",
+              "Closed",
+              "$4,860",
+              "$0"
+            ]
+          },
+          {
+            "cells": [
+              "LSF-2025-017",
+              "11/19/2025",
+              "Cargo",
+              "Water intrusion to freight",
+              "Closed",
+              "$8,225",
+              "$0"
+            ]
+          }
+        ],
+        "unrelated_subtitle": "Claims Summary Extract for Underwriting Review",
+        "unrelated_body": "This report is provided as an internal summary of reported losses and open reserve activity for the referenced account. It is not a certificate, invoice, declaration, or endorsement."
+      },
+      {
+        "title": "Certificate of Liability Insurance \u2013 Lone Star Freight Systems LP",
+        "certificate_holder": "Pioneer Distribution Centers, Inc. 2200 Market Street, Suite 60o, Kansas City, MO 64100",
+        "coverage_lines": [
+          {
+            "insurer_letter": "A",
+            "coverage_type": "Commercial General Liability",
+            "policy_number": "CA-9948120",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": true,
+            "subro_waived": true,
+            "limits": [
+              {
+                "coverage": "Each Occurrence",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "Damage to Rented Premises",
+                "limit": "$100,000"
+              },
+              {
+                "coverage": "Med Exp",
+                "limit": "$5,000"
+              },
+              {
+                "coverage": "Personal & Adv Injury",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "General Aggregate",
+                "limit": "$2,000,000"
+              },
+              {
+                "coverage": "Products-Comp/Op Agg",
+                "limit": "$2,000,000"
+              }
+            ],
+            "premium": null
+          },
+          {
+            "insurer_letter": "B",
+            "coverage_type": "Automobile Liability",
+            "policy_number": "CA-9948120",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": true,
+            "subro_waived": true,
+            "limits": [
+              {
+                "coverage": "Combined Single Limit",
+                "limit": "$1,000,000"
+              }
+            ],
+            "premium": null
+          },
+          {
+            "insurer_letter": "D",
+            "coverage_type": "Umbrella Liability",
+            "policy_number": "CA-9948120",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": true,
+            "subro_waived": true,
+            "limits": [
+              {
+                "coverage": "Each Occurrence",
+                "limit": "$5,000,000"
+              },
+              {
+                "coverage": "General Aggregate",
+                "limit": "$5,000,000"
+              }
+            ],
+            "premium": null
+          },
+          {
+            "insurer_letter": "E",
+            "coverage_type": "Workers Compensation",
+            "policy_number": "CA-9948120",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": false,
+            "subro_waived": false,
+            "limits": [
+              {
+                "coverage": "E.L. Each Accident",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "E.L. Disease-Ea Employee",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "E.L. Disease-Policy Limit",
+                "limit": "$1,000,000"
+              }
+            ],
+            "premium": null
+          }
+        ],
+        "description_of_operations": "Pioneer Distribut1on Centers, Inc. is listed as additional insured as respects ongoing operations only where required by written contract, with primary and non-contributory wording on a blanket basis subject t0 CG 20 10 004 13 and CG 220 337 04 13. Waiver of subrogation applies where required by writtn contract and evidenced by endosement. Automoobile liability i supported by CA 20 8 10 13; umbrella ffollows form whee applicable.",
+        "authorized_representative": "Megan Alvarez, Authorized Representative",
+        "certificate_number": "C-260214-1179",
+        "revision_number": null,
+        "invoice_number": null,
+        "invoice_date": null,
+        "account_number": null,
+        "line_items": null,
+        "subtotal": null,
+        "taxes": null,
+        "fees": null,
+        "prior_balance": null,
+        "amount_due": null,
+        "billing_period": null,
+        "due_date": null,
+        "payment_methods": null,
+        "remit_to": null,
+        "coverage_parts": null,
+        "forms_schedule": null,
+        "premium_summary": null,
+        "countersignature": null,
+        "countersignature_date": null,
+        "form_number": null,
+        "endorsement_title": null,
+        "endorsement_number": null,
+        "schedule_rows": null,
+        "provisions": null,
+        "additional_premium": null,
+        "change_description": null,
+        "coverages": null,
+        "total_premium": null,
+        "effective_date": null,
+        "expiration_date": null,
+        "nr_kind": null,
+        "nr_header_rows": null,
+        "nr_columns": null,
+        "nr_rows": null,
+        "unrelated_subtitle": null,
+        "unrelated_body": null
+      },
+      {
+        "title": "Submission Cover Letter \u2013 Lone Star Freight Systems LP",
+        "certificate_holder": null,
+        "coverage_lines": null,
+        "description_of_operations": null,
+        "authorized_representative": null,
+        "certificate_number": null,
+        "revision_number": null,
+        "invoice_number": null,
+        "invoice_date": null,
+        "account_number": null,
+        "line_items": null,
+        "subtotal": null,
+        "taxes": null,
+        "fees": null,
+        "prior_balance": null,
+        "amount_due": null,
+        "billing_period": null,
+        "due_date": null,
+        "payment_methods": null,
+        "remit_to": null,
+        "coverage_parts": null,
+        "forms_schedule": null,
+        "premium_summary": null,
+        "countersignature": null,
+        "countersignature_date": null,
+        "form_number": null,
+        "endorsement_title": null,
+        "endorsement_number": null,
+        "schedule_rows": null,
+        "provisions": null,
+        "additional_premium": null,
+        "change_description": null,
+        "coverages": null,
+        "total_premium": null,
+        "effective_date": null,
+        "expiration_date": null,
+        "nr_kind": "Submission Cover Letter",
+        "nr_header_rows": [
+          {
+            "label": "Insured",
+            "value": "Lone Star Freight Systems LP"
+          },
+          {
+            "label": "Policy No.",
+            "value": "CA-9948120"
+          },
+          {
+            "label": "Prepared By",
+            "value": "Southwest Transportation Insurance"
+          },
+          {
+            "label": "Date",
+            "value": "02/12/2026"
+          },
+          {
+            "label": "Carrier",
+            "value": "Great West Casualty Company"
+          }
+        ],
+        "nr_columns": [
+          "Item",
+          "Detail",
+          "Requested Action"
+        ],
+        "nr_rows": [
+          {
+            "cells": [
+              "Loss Notice",
+              "Rear-end impact involving a company tractor-trailer",
+              "Assign claim number and confirm adjuster"
+            ]
+          },
+          {
+            "cells": [
+              "Coverage Concern",
+              "Potential auto liability exposure with property damage",
+              "Review defense and indemnity obligations"
+            ]
+          },
+          {
+            "cells": [
+              "Supporting Documents",
+              "Driver statement, police report, photographs",
+              "Advise if any additional documentation is required"
+            ]
+          }
+        ],
+        "unrelated_subtitle": "Claim Notice Transmittal",
+        "unrelated_body": "Please review the enclosed loss information for the referenced policy and advise of the next steps for claim setup. This correspondence is intended as a submission cover letter and not as formal policy evidence."
+      },
+      {
+        "title": "Commercial Insurance Application \u2013 Lone Star Freight Systems LP",
+        "certificate_holder": null,
+        "coverage_lines": null,
+        "description_of_operations": null,
+        "authorized_representative": null,
+        "certificate_number": null,
+        "revision_number": null,
+        "invoice_number": null,
+        "invoice_date": null,
+        "account_number": null,
+        "line_items": null,
+        "subtotal": null,
+        "taxes": null,
+        "fees": null,
+        "prior_balance": null,
+        "amount_due": null,
+        "billing_period": null,
+        "due_date": null,
+        "payment_methods": null,
+        "remit_to": null,
+        "coverage_parts": null,
+        "forms_schedule": null,
+        "premium_summary": null,
+        "countersignature": null,
+        "countersignature_date": null,
+        "form_number": null,
+        "endorsement_title": null,
+        "endorsement_number": null,
+        "schedule_rows": null,
+        "provisions": null,
+        "additional_premium": null,
+        "change_description": null,
+        "coverages": null,
+        "total_premium": null,
+        "effective_date": null,
+        "expiration_date": null,
+        "nr_kind": "Commercial Insurance Application (ACORD 125)",
+        "nr_header_rows": [
+          {
+            "label": "Applicant",
+            "value": "Lone Star Freight Systems LP"
+          },
+          {
+            "label": "Policy No.",
+            "value": "CA-9948120"
+          },
+          {
+            "label": "Date Prepared",
+            "value": "02/10/2026"
+          },
+          {
+            "label": "Producer",
+            "value": "Southwest Transportation Insurance"
+          },
+          {
+            "label": "Class of Business",
+            "value": "Regional less-than-truckload motor carrier"
+          }
+        ],
+        "nr_columns": [
+          "Section",
+          "Question",
+          "Response"
+        ],
+        "nr_rows": [
+          {
+            "cells": [
+              "General Information",
+              "Entity Type",
+              "Limited Partnership"
+            ]
+          },
+          {
+            "cells": [
+              "Operations",
+              "Primary operations",
+              "Regional less-than-truckload motor carrier"
+            ]
+          },
+          {
+            "cells": [
+              "Exposure",
+              "Radius of operations",
+              "Interstate and intrastate within the South Central region"
+            ]
+          },
+          {
+            "cells": [
+              "Loss History",
+              "Prior losses in last 3 years",
+              "Three reported claims, two closed and one open"
+            ]
+          }
+        ],
+        "unrelated_subtitle": "New Business Submission Data",
+        "unrelated_body": "Application information is provided for underwriting review and is not a certificate, declaration page, invoice, or endorsement."
+      },
+      {
+        "title": "Statement of Values \u2013 Lone Star Freight Systems LP",
+        "certificate_holder": null,
+        "coverage_lines": null,
+        "description_of_operations": null,
+        "authorized_representative": null,
+        "certificate_number": null,
+        "revision_number": null,
+        "invoice_number": null,
+        "invoice_date": null,
+        "account_number": null,
+        "line_items": null,
+        "subtotal": null,
+        "taxes": null,
+        "fees": null,
+        "prior_balance": null,
+        "amount_due": null,
+        "billing_period": null,
+        "due_date": null,
+        "payment_methods": null,
+        "remit_to": null,
+        "coverage_parts": null,
+        "forms_schedule": null,
+        "premium_summary": null,
+        "countersignature": null,
+        "countersignature_date": null,
+        "form_number": null,
+        "endorsement_title": null,
+        "endorsement_number": null,
+        "schedule_rows": null,
+        "provisions": null,
+        "additional_premium": null,
+        "change_description": null,
+        "coverages": null,
+        "total_premium": null,
+        "effective_date": null,
+        "expiration_date": null,
+        "nr_kind": "Statement of Values",
+        "nr_header_rows": [
+          {
+            "label": "Insured",
+            "value": "Lone Star Freight Systems LP"
+          },
+          {
+            "label": "Policy No.",
+            "value": "CA-9948120"
+          },
+          {
+            "label": "Valuation Date",
+            "value": "02/01/2026"
+          },
+          {
+            "label": "Prepared By",
+            "value": "Southwest Transportation Insurance"
+          },
+          {
+            "label": "Carrier",
+            "value": "Great West Casualty Company"
+          }
+        ],
+        "nr_columns": [
+          "Location",
+          "Description",
+          "TIV",
+          "Construction",
+          "Protection Class"
+        ],
+        "nr_rows": [
+          {
+            "cells": [
+              "Dallas Terminal",
+              "Warehouse and dispatch office",
+              "$4,250,000",
+              "Non-combustible",
+              "4"
+            ]
+          },
+          {
+            "cells": [
+              "Fleet Yard",
+              "Parking, fueling island, and maintenance shed",
+              "$2,180,000",
+              "Frame and steel",
+              "5"
+            ]
+          },
+          {
+            "cells": [
+              "Offsite Equipment",
+              "Mobile communication and shop tools",
+              "$365,000",
+              "Various",
+              "N/A"
+            ]
+          }
+        ],
+        "unrelated_subtitle": "Property Schedule for Submission Review",
+        "unrelated_body": "This statement summarizes stated values for underwriting consideration and does not evidence coverage, modify policy terms, or serve as a declaration page."
+      },
+      {
+        "title": "Certificate of Liability Insurance \u2013 Lone Star Freight Systems LP",
+        "certificate_holder": "MidSouth Logistics Park, LLC 1010 Riverfront Drive, Memphis, TN 38103",
+        "coverage_lines": [
+          {
+            "insurer_letter": "A",
+            "coverage_type": "Commercial General Liability",
+            "policy_number": "CA-9948120",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": true,
+            "subro_waived": true,
+            "limits": [
+              {
+                "coverage": "Each Occurrence",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "Damage to Rented Premises",
+                "limit": "$100,000"
+              },
+              {
+                "coverage": "Med Exp",
+                "limit": "$5,000"
+              },
+              {
+                "coverage": "Personal & Adv Injury",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "General Aggregate",
+                "limit": "$2,000,000"
+              },
+              {
+                "coverage": "Products-Comp/Op Agg",
+                "limit": "$2,000,000"
+              }
+            ],
+            "premium": null
+          },
+          {
+            "insurer_letter": "B",
+            "coverage_type": "Automobile Liability",
+            "policy_number": "CA-9948120",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": true,
+            "subro_waived": true,
+            "limits": [
+              {
+                "coverage": "Combined Single Limit",
+                "limit": "$1,000,000"
+              }
+            ],
+            "premium": null
+          },
+          {
+            "insurer_letter": "D",
+            "coverage_type": "Umbrella Liability",
+            "policy_number": "CA-9948120",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": true,
+            "subro_waived": true,
+            "limits": [
+              {
+                "coverage": "Each Occurrence",
+                "limit": "$5,000,000"
+              },
+              {
+                "coverage": "General Aggregate",
+                "limit": "$5,000,000"
+              }
+            ],
+            "premium": null
+          },
+          {
+            "insurer_letter": "E",
+            "coverage_type": "Workers Compensation",
+            "policy_number": "CA-9948120",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": false,
+            "subro_waived": false,
+            "limits": [
+              {
+                "coverage": "E.L. Each Accident",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "E.L. Disease-Ea Employee",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "E.L. Disease-Policy Limit",
+                "limit": "$1,000,000"
+              }
+            ],
+            "premium": null
+          }
+        ],
+        "description_of_operations": "MidSouth Logistics Park, LLC is included as additional insured where required by written contract, subject to CG 20 10 04 13 and CG 20 37 04 13, with primary and non-contributory wording and waiver of subrogation where required. Automobile liability is endorsed by CA 20 48 10 13. Umbrella liability follows underlying coverage as respects covered auto and CGL exposures.",
+        "authorized_representative": "Megan Alvarez, Authorized Representative",
+        "certificate_number": "C-260214-1180",
+        "revision_number": null,
+        "invoice_number": null,
+        "invoice_date": null,
+        "account_number": null,
+        "line_items": null,
+        "subtotal": null,
+        "taxes": null,
+        "fees": null,
+        "prior_balance": null,
+        "amount_due": null,
+        "billing_period": null,
+        "due_date": null,
+        "payment_methods": null,
+        "remit_to": null,
+        "coverage_parts": null,
+        "forms_schedule": null,
+        "premium_summary": null,
+        "countersignature": null,
+        "countersignature_date": null,
+        "form_number": null,
+        "endorsement_title": null,
+        "endorsement_number": null,
+        "schedule_rows": null,
+        "provisions": null,
+        "additional_premium": null,
+        "change_description": null,
+        "coverages": null,
+        "total_premium": null,
+        "effective_date": null,
+        "expiration_date": null,
+        "nr_kind": null,
+        "nr_header_rows": null,
+        "nr_columns": null,
+        "nr_rows": null,
+        "unrelated_subtitle": null,
+        "unrelated_body": null
+      },
+      {
+        "title": "Policy Declarations \u2013 Commercial Auto and General Liability",
+        "certificate_holder": null,
+        "coverage_lines": null,
+        "description_of_operations": null,
+        "authorized_representative": null,
+        "certificate_number": null,
+        "revision_number": null,
+        "invoice_number": null,
+        "invoice_date": null,
+        "account_number": null,
+        "line_items": null,
+        "subtotal": null,
+        "taxes": null,
+        "fees": null,
+        "prior_balance": null,
+        "amount_due": null,
+        "billing_period": null,
+        "due_date": null,
+        "payment_methods": null,
+        "remit_to": null,
+        "coverage_parts": [
+          {
+            "insurer_letter": "A",
+            "coverage_type": "Commercial Auto Liability",
+            "policy_number": "CA-9948120",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": null,
+            "subro_waived": null,
+            "limits": [
+              {
+                "coverage": "Combined Single Limit",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "Medical Payments",
+                "limit": "$5,000"
+              },
+              {
+                "coverage": "Uninsured Motorists",
+                "limit": "$1,000,000"
+              }
+            ],
+            "premium": "$10,420"
+          },
+          {
+            "insurer_letter": "A",
+            "coverage_type": "Motor Truck Cargo",
+            "policy_number": "CA-9948120",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": null,
+            "subro_waived": null,
+            "limits": [
+              {
+                "coverage": "Per Conveyance",
+                "limit": "$250,000"
+              },
+              {
+                "coverage": "Deductible",
+                "limit": "$2,500"
+              }
+            ],
+            "premium": "$2,680"
+          },
+          {
+            "insurer_letter": "D",
+            "coverage_type": "Commercial General Liability",
+            "policy_number": "CA-9948120",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": null,
+            "subro_waived": null,
+            "limits": [
+              {
+                "coverage": "Each Occurrence",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "General Aggregate",
+                "limit": "$2,000,000"
+              },
+              {
+                "coverage": "Products-Comp/Op Agg",
+                "limit": "$2,000,000"
+              }
+            ],
+            "premium": "$3,910"
+          },
+          {
+            "insurer_letter": "E",
+            "coverage_type": "Umbrella Liability",
+            "policy_number": "CA-9948120",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": null,
+            "subro_waived": null,
+            "limits": [
+              {
+                "coverage": "Each Occurrence",
+                "limit": "$5,000,000"
+              },
+              {
+                "coverage": "Aggregate",
+                "limit": "$5,000,000"
+              }
+            ],
+            "premium": "$1,030"
+          }
+        ],
+        "forms_schedule": [
+          {
+            "form_number": "CA 00 01 11 20",
+            "title": "Business Auto Coverage Form"
+          },
+          {
+            "form_number": "CA 99 48 10 13",
+            "title": "Broadened Pollution Liability Coverage for Covered Autos"
+          },
+          {
+            "form_number": "CA 99 61 01 15",
+            "title": "Motor Truck Cargo Coverage Form"
+          },
+          {
+            "form_number": "CG 00 01 04 13",
+            "title": "Commercial General Liability Coverage Form"
+          },
+          {
+            "form_number": "CG 20 10 04 13",
+            "title": "Additional Insured - Owners, Lessees Or Contractors - Scheduled Person Or Organization"
+          },
+          {
+            "form_number": "CG 24 04 05 09",
+            "title": "Waiver of Transfer of Rights of Recovery Against Others to Us"
+          },
+          {
+            "form_number": "IL 00 17 11 98",
+            "title": "Common Policy Conditions"
+          },
+          {
+            "form_number": "CU 00 01 04 13",
+            "title": "Commercial Umbrella Coverage Form"
+          }
+        ],
+        "premium_summary": [
+          {
+            "description": "Policy Premium",
+            "amount": "$18,040"
+          },
+          {
+            "description": "Terrorism (TRIA)",
+            "amount": "$210"
+          },
+          {
+            "description": "State Tax",
+            "amount": "$245"
+          },
+          {
+            "description": "Policy Fee",
+            "amount": "$145"
+          }
+        ],
+        "countersignature": "Megan Alvarez, Licensed Producer",
+        "countersignature_date": "02/12/2026",
+        "form_number": null,
+        "endorsement_title": null,
+        "endorsement_number": null,
+        "schedule_rows": null,
+        "provisions": null,
+        "additional_premium": null,
+        "change_description": null,
+        "coverages": null,
+        "total_premium": "$18,640",
+        "effective_date": "02/01/2026",
+        "expiration_date": "02/01/2027",
+        "nr_kind": null,
+        "nr_header_rows": null,
+        "nr_columns": null,
+        "nr_rows": null,
+        "unrelated_subtitle": null,
+        "unrelated_body": null
+      }
+    ]
+  }
+}

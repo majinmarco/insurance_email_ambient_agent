@@ -1,0 +1,161 @@
+{
+  "case_id": "extra-010-mixed-new_submission",
+  "tier": "mixed",
+  "email": {
+    "email_type": "new_submission",
+    "email_type_hard": true,
+    "extraction": {
+      "named_insured": "Midwest AgriSupply Cooperative",
+      "policy_number": null,
+      "requested_effective_date": "2024-09-17",
+      "requested_changes": "Quote/bind a new commercial package policy.",
+      "contact_name": "Roger Halvorsen",
+      "contact_phone": "(515) 555-0182"
+    }
+  },
+  "attachments": [
+    {
+      "filename": "Renewal Package.pdf",
+      "render_format": "pdf",
+      "n_pages": 2,
+      "documents": [
+        {
+          "index": 0,
+          "doc_type": "insurance declaration",
+          "page_start": 0,
+          "page_end": 0,
+          "extraction": {
+            "named_insured": "Midwest AgriSupply Cooperative",
+            "policy_number": "NBR-AG-240917",
+            "coverages": {
+              "Commercial General Liability": "$12,450",
+              "Automobile Liability": "$8,920",
+              "Umbrella Liability": "$9,280",
+              "Workers Compensation": "$10,000"
+            },
+            "total_premium": 42860.0
+          }
+        },
+        {
+          "index": 1,
+          "doc_type": "insurance declaration",
+          "page_start": 1,
+          "page_end": 1,
+          "extraction": {
+            "named_insured": "Midwest AgriSupply Cooperative",
+            "policy_number": "NBR-AG-240917",
+            "coverages": {
+              "Commercial General Liability": "$12,450",
+              "Automobile Liability": "$8,920",
+              "Umbrella Liability": "$9,280",
+              "Workers Compensation": "$10,000"
+            },
+            "total_premium": 42860.0
+          }
+        }
+      ],
+      "boundary_page_offsets": [
+        1
+      ],
+      "n_documents": 2,
+      "expected_segment_types": [
+        "insurance declaration",
+        "insurance declaration"
+      ],
+      "expected_collapse": false,
+      "expected_scanned": false,
+      "expected_interrupt": false
+    },
+    {
+      "filename": "IMG_3004.pdf",
+      "render_format": "pdf",
+      "n_pages": 2,
+      "documents": [
+        {
+          "index": 0,
+          "doc_type": "certificate of insurance",
+          "page_start": 0,
+          "page_end": 0,
+          "extraction": {
+            "named_insured": "Midwest AgriSupply Cooperative",
+            "policy_number": "NBR-AG-240917",
+            "certificate_holder": "Iowa State University Facilities Planning and Management, 205 University Blvd, Ames, IA 50010",
+            "effective_date": "2024-09-17",
+            "expiration_date": "2025-09-17",
+            "limits": {
+              "Each Occurrence": "$1,000,000",
+              "Damage to Rented Premises": "$300,000",
+              "Medical Expense Limit": "$5,000",
+              "Personal & Advertising Injury": "$1,000,000",
+              "General Aggregate": "$2,000,000",
+              "Products-Completed Operations Aggregate": "$2,000,000",
+              "Combined Single Limit": "$1,000,000",
+              "Aggregate": "$5,000,000",
+              "E.L. Each Accident": "Statutory",
+              "E.L. Disease-Ea Employee": "$500,000",
+              "E.L. Disease-Policy Limit": "$500,000"
+            }
+          }
+        },
+        {
+          "index": 1,
+          "doc_type": "unrelated or unclear document",
+          "page_start": 1,
+          "page_end": 1,
+          "extraction": null
+        }
+      ],
+      "boundary_page_offsets": [
+        1
+      ],
+      "n_documents": 2,
+      "expected_segment_types": [
+        "certificate of insurance"
+      ],
+      "expected_collapse": false,
+      "expected_scanned": false,
+      "expected_interrupt": true
+    },
+    {
+      "filename": "scan0415.pdf",
+      "render_format": "pdf",
+      "n_pages": 1,
+      "documents": [
+        {
+          "index": 0,
+          "doc_type": "certificate of insurance",
+          "page_start": 0,
+          "page_end": 0,
+          "extraction": {
+            "named_insured": "Midwest AgriSupply Cooperative",
+            "policy_number": "NBR-AG-240917",
+            "certificate_holder": "Hawkeye Valley Grain, LLC, 900 South Bell Ave, Ames, IA 50010",
+            "effective_date": "2024-09-17",
+            "expiration_date": "2025-09-17",
+            "limits": {
+              "Each Occurrence": "$1,000,000",
+              "Damage to Rented Premises": "$300,000",
+              "Medical Expense Limit": "$5,000",
+              "Personal & Advertising Injury": "$1,000,000",
+              "General Aggregate": "$2,000,000",
+              "Products-Completed Operations Aggregate": "$2,000,000",
+              "Combined Single Limit": "$1,000,000",
+              "Aggregate": "$5,000,000",
+              "E.L. Each Accident": "Statutory",
+              "E.L. Disease-Ea Employee": "$500,000",
+              "E.L. Disease-Policy Limit": "$500,000"
+            }
+          }
+        }
+      ],
+      "boundary_page_offsets": [],
+      "n_documents": 1,
+      "expected_segment_types": [
+        "certificate of insurance"
+      ],
+      "expected_collapse": false,
+      "expected_scanned": false,
+      "expected_interrupt": false
+    }
+  ]
+}

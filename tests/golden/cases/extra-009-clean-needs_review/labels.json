@@ -1,0 +1,145 @@
+{
+  "case_id": "extra-009-clean-needs_review",
+  "tier": "clean",
+  "email": {
+    "email_type": "needs_review",
+    "email_type_hard": true,
+    "extraction": {
+      "named_insured": "Midwest AgriSupply Cooperative",
+      "policy_number": "FARM-1120934",
+      "requested_effective_date": null,
+      "requested_changes": null,
+      "contact_name": "Roger Halvorsen",
+      "contact_phone": "(515) 555-0182"
+    }
+  },
+  "attachments": [
+    {
+      "filename": "attachment_1.pdf",
+      "render_format": "pdf",
+      "n_pages": 1,
+      "documents": [
+        {
+          "index": 0,
+          "doc_type": "certificate of insurance",
+          "page_start": 0,
+          "page_end": 0,
+          "extraction": {
+            "named_insured": "Midwest AgriSupply Cooperative",
+            "policy_number": "FARM-1120934",
+            "certificate_holder": "Heartland Feed & Grain, LLC",
+            "effective_date": "2026-01-01",
+            "expiration_date": "2027-01-01",
+            "limits": {
+              "Each Occurrence": "$1,000,000",
+              "Damage to Rented Premises": "$300,000",
+              "Med Exp": "$5,000",
+              "Personal & Adv Injury": "$1,000,000",
+              "General Aggregate": "$2,000,000",
+              "Products-Comp/Op Agg": "$2,000,000",
+              "Combined Single Limit": "$1,000,000",
+              "E.L. Each Accident": "$1,000,000",
+              "E.L. Disease-Ea Employee": "$1,000,000",
+              "E.L. Disease-Policy Limit": "$1,000,000"
+            }
+          }
+        }
+      ],
+      "boundary_page_offsets": [],
+      "n_documents": 1,
+      "expected_segment_types": [
+        "certificate of insurance"
+      ],
+      "expected_collapse": false,
+      "expected_scanned": false,
+      "expected_interrupt": false
+    },
+    {
+      "filename": "attachment_2.pdf",
+      "render_format": "pdf",
+      "n_pages": 2,
+      "documents": [
+        {
+          "index": 0,
+          "doc_type": "insurance invoice",
+          "page_start": 0,
+          "page_end": 0,
+          "extraction": {
+            "named_insured": "Midwest AgriSupply Cooperative",
+            "policy_number": "FARM-1120934",
+            "amount_due": 48750.0,
+            "billing_period": "01/01/2026 - 01/01/2027",
+            "policy_reference": "FARM-1120934",
+            "due_date": "2026-01-15"
+          }
+        },
+        {
+          "index": 1,
+          "doc_type": "unrelated or unclear document",
+          "page_start": 1,
+          "page_end": 1,
+          "extraction": null
+        }
+      ],
+      "boundary_page_offsets": [
+        1
+      ],
+      "n_documents": 2,
+      "expected_segment_types": [
+        "insurance invoice"
+      ],
+      "expected_collapse": false,
+      "expected_scanned": false,
+      "expected_interrupt": false
+    },
+    {
+      "filename": "attachment_3.pdf",
+      "render_format": "pdf",
+      "n_pages": 2,
+      "documents": [
+        {
+          "index": 0,
+          "doc_type": "insurance invoice",
+          "page_start": 0,
+          "page_end": 0,
+          "extraction": {
+            "named_insured": "Midwest AgriSupply Cooperative",
+            "policy_number": "FARM-1120934",
+            "amount_due": 48750.0,
+            "billing_period": "01/01/2026 - 01/01/2027",
+            "policy_reference": "FARM-1120934",
+            "due_date": "2026-01-15"
+          }
+        },
+        {
+          "index": 1,
+          "doc_type": "insurance declaration",
+          "page_start": 1,
+          "page_end": 1,
+          "extraction": {
+            "named_insured": "Midwest AgriSupply Cooperative",
+            "policy_number": "FARM-1120934",
+            "coverages": {
+              "Commercial General Liability": "$16,250.00",
+              "Commercial Automobile Liability": "$8,900.00",
+              "Umbrella Liability": "$9,400.00",
+              "Workers Compensation": "$13,000.00"
+            },
+            "total_premium": 48750.0
+          }
+        }
+      ],
+      "boundary_page_offsets": [
+        1
+      ],
+      "n_documents": 2,
+      "expected_segment_types": [
+        "insurance invoice",
+        "insurance declaration"
+      ],
+      "expected_collapse": false,
+      "expected_scanned": false,
+      "expected_interrupt": false
+    }
+  ]
+}

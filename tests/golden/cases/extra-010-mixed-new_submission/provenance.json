@@ -1,0 +1,975 @@
+{
+  "case_id": "extra-010-mixed-new_submission",
+  "tier": "mixed",
+  "seed": 100010,
+  "email_type": "new_submission",
+  "attachments_mode": "on",
+  "max_docs_per_attachment": 2,
+  "max_attachments": 3,
+  "force_format": null,
+  "persona_index": 9,
+  "content_source": "llm",
+  "noise_manifest": {
+    "email": {
+      "persona_index": 9,
+      "thread": false,
+      "signature": true,
+      "subject_style": "empty",
+      "multi_recipient": true,
+      "body_only": false,
+      "inconsistency": false,
+      "date_received": "2026-07-07T15:28:00+00:00"
+    },
+    "attachments": [
+      {
+        "filename": "Renewal Package.pdf"
+      },
+      {
+        "filename": "IMG_3004.pdf"
+      },
+      {
+        "filename": "scan0415.pdf"
+      }
+    ],
+    "docs": [
+      {
+        "delimiter_mode": "hash",
+        "layout_variant": 0,
+        "watermark": "DUPLICATE",
+        "content_noise": false,
+        "content_noise_level": 0.15,
+        "is_scanned": false,
+        "render_format": "pdf"
+      },
+      {
+        "delimiter_mode": "hash",
+        "layout_variant": 0,
+        "watermark": "DUPLICATE",
+        "content_noise": false,
+        "content_noise_level": 0.15,
+        "is_scanned": false,
+        "render_format": "pdf"
+      },
+      {
+        "delimiter_mode": "hash",
+        "layout_variant": 1,
+        "watermark": null,
+        "content_noise": true,
+        "content_noise_level": 0.15,
+        "is_scanned": false,
+        "render_format": "pdf"
+      },
+      {
+        "delimiter_mode": "hash",
+        "layout_variant": 0,
+        "watermark": null,
+        "content_noise": false,
+        "content_noise_level": 0.15,
+        "is_scanned": false,
+        "render_format": "pdf"
+      },
+      {
+        "delimiter_mode": "bold_caps",
+        "layout_variant": 2,
+        "watermark": null,
+        "content_noise": false,
+        "content_noise_level": 0.15,
+        "is_scanned": false,
+        "render_format": "pdf"
+      }
+    ],
+    "expected": {
+      "email_type_hard": true,
+      "per_attachment_collapse": [
+        false,
+        false,
+        false
+      ],
+      "per_attachment_scanned": [
+        false,
+        false,
+        false
+      ],
+      "per_attachment_expect_interrupt": [
+        false,
+        true,
+        false
+      ]
+    }
+  },
+  "raw_scenario": {
+    "shared": {
+      "named_insured": "Midwest AgriSupply Cooperative",
+      "policy_number": "NBR-AG-240917",
+      "insured_address": "1750 NE Broadway Ave, Des Moines, IA 50313",
+      "contact_name": "Roger Halvorsen",
+      "contact_email": "rhalvorsen@midwestagri.coop",
+      "contact_phone": "(515) 555-0182",
+      "carrier_name": "Nationwide Agribusiness",
+      "effective_date": "2024-09-17",
+      "expiration_date": "2025-09-17",
+      "coverage_limits": [
+        {
+          "coverage": "Commercial General Liability",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Automobile Liability",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Umbrella Liability",
+          "limit": "$5,000,000"
+        },
+        {
+          "coverage": "Workers Compensation",
+          "limit": "Statutory"
+        }
+      ],
+      "total_premium": "$42,860",
+      "producer": {
+        "agency": "Prairie States Insurance Cooperative",
+        "address": "1200 Grand Ave, Suite 800, Des Moines, IA 50309",
+        "contact_name": "Marianne Keeler",
+        "phone": "(515) 555-4400",
+        "fax": "(515) 555-4401",
+        "email": "commercial@prairiestatesins.com"
+      },
+      "insurers": [
+        {
+          "letter": "A",
+          "name": "Nationwide Agribusiness Insurance Company",
+          "naic": "28223"
+        },
+        {
+          "letter": "B",
+          "name": "Allied Property and Casualty Insurance Company",
+          "naic": "42579"
+        },
+        {
+          "letter": "C",
+          "name": "Nationwide Mutual Insurance Company",
+          "naic": "23787"
+        },
+        {
+          "letter": "D",
+          "name": "Nationwide Mutual Fire Insurance Company",
+          "naic": "12000"
+        },
+        {
+          "letter": "E",
+          "name": "Wesco Insurance Company",
+          "naic": "10030"
+        },
+        {
+          "letter": "F",
+          "name": "Berkley Assurance Company",
+          "naic": "13070"
+        }
+      ],
+      "business_description": "Farm supply, grain handling, and agronomy services",
+      "entity_type": "Cooperative",
+      "fein": "42-1764893",
+      "naic_carrier": "28223"
+    },
+    "email": {
+      "subject": "",
+      "body": "Hi Underwriting Team,\n\nPlease quote and, if acceptable, bind coverage for Midwest AgriSupply Cooperative at 1750 NE Broadway Ave, Des Moines, IA 50313. This is a brand-new account with no prior policy number on file. Requested effective date is 09/17/2024.\n\nRisk summary: farm supply, grain handling, and agronomy services. Please review the attached submission materials and issue indications for Commercial General Liability, Automobile Liability, Umbrella Liability, and Workers Compensation.\n\nThank you,\nPrairie States Insurance Cooperative\n\nRoger Halvorsen\nMidwest AgriSupply Cooperative\n\nCONFIDENTIALITY NOTICE: This message and any attachments are intended solely for the addressee and may contain confidential information.",
+      "sender": "Marianne Keeler <commercial@prairiestatesins.com>",
+      "recipient": "Nationwide Agribusiness Underwriting, newbusiness@carrierintake.com"
+    },
+    "documents": [
+      {
+        "title": "Commercial Package Policy Declarations",
+        "certificate_holder": null,
+        "coverage_lines": null,
+        "description_of_operations": null,
+        "authorized_representative": null,
+        "certificate_number": null,
+        "revision_number": null,
+        "invoice_number": null,
+        "invoice_date": null,
+        "account_number": null,
+        "line_items": null,
+        "subtotal": null,
+        "taxes": null,
+        "fees": null,
+        "prior_balance": null,
+        "amount_due": null,
+        "billing_period": null,
+        "due_date": null,
+        "payment_methods": null,
+        "remit_to": null,
+        "coverage_parts": [
+          {
+            "insurer_letter": "A",
+            "coverage_type": "Commercial General Liability",
+            "policy_number": "NBR-AG-240917",
+            "effective_date": "09/17/2024",
+            "expiration_date": "09/17/2025",
+            "addl_insured": null,
+            "subro_waived": null,
+            "limits": [
+              {
+                "coverage": "Each Occurrence",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "Damage to Rented Premises",
+                "limit": "$300,000"
+              },
+              {
+                "coverage": "Medical Expense Limit",
+                "limit": "$5,000"
+              },
+              {
+                "coverage": "Personal & Advertising Injury",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "General Aggregate",
+                "limit": "$2,000,000"
+              },
+              {
+                "coverage": "Products-Completed Operations Aggregate",
+                "limit": "$2,000,000"
+              }
+            ],
+            "premium": "$12,450"
+          },
+          {
+            "insurer_letter": "B",
+            "coverage_type": "Automobile Liability",
+            "policy_number": "NBR-AG-240917",
+            "effective_date": "09/17/2024",
+            "expiration_date": "09/17/2025",
+            "addl_insured": null,
+            "subro_waived": null,
+            "limits": [
+              {
+                "coverage": "Combined Single Limit",
+                "limit": "$1,000,000"
+              }
+            ],
+            "premium": "$8,920"
+          },
+          {
+            "insurer_letter": "C",
+            "coverage_type": "Umbrella Liability",
+            "policy_number": "NBR-AG-240917",
+            "effective_date": "09/17/2024",
+            "expiration_date": "09/17/2025",
+            "addl_insured": null,
+            "subro_waived": null,
+            "limits": [
+              {
+                "coverage": "Each Occurrence",
+                "limit": "$5,000,000"
+              },
+              {
+                "coverage": "Aggregate",
+                "limit": "$5,000,000"
+              }
+            ],
+            "premium": "$9,280"
+          },
+          {
+            "insurer_letter": "A",
+            "coverage_type": "Workers Compensation",
+            "policy_number": "NBR-AG-240917",
+            "effective_date": "09/17/2024",
+            "expiration_date": "09/17/2025",
+            "addl_insured": null,
+            "subro_waived": null,
+            "limits": [
+              {
+                "coverage": "E.L. Each Accident",
+                "limit": "Statutory"
+              },
+              {
+                "coverage": "E.L. Disease-Ea Employee",
+                "limit": "$500,000"
+              },
+              {
+                "coverage": "E.L. Disease-Policy Limit",
+                "limit": "$500,000"
+              }
+            ],
+            "premium": "$10,000"
+          }
+        ],
+        "forms_schedule": [
+          {
+            "form_number": "CG 00 01 04 13",
+            "title": "Commercial General Liability Coverage Form"
+          },
+          {
+            "form_number": "CG 21 44 07 98",
+            "title": "Limitation of Coverage to Designated Premises or Project"
+          },
+          {
+            "form_number": "CG 20 10 04 13",
+            "title": "Additional Insured - Owners, Lessees or Contractors - Scheduled Person or Organization"
+          },
+          {
+            "form_number": "CA 00 01 11 20",
+            "title": "Business Auto Coverage Form"
+          },
+          {
+            "form_number": "CA 20 48 10 13",
+            "title": "Designated Insured Endorsement"
+          },
+          {
+            "form_number": "UM 00 01 01 15",
+            "title": "Commercial Umbrella Coverage Form"
+          },
+          {
+            "form_number": "WC 00 00 00 C",
+            "title": "Workers Compensation and Employers Liability Insurance Policy"
+          },
+          {
+            "form_number": "IL 00 17 11 98",
+            "title": "Common Policy Conditions"
+          },
+          {
+            "form_number": "IL 00 21 09 08",
+            "title": "Nuclear Energy Liability Exclusion Endorsement"
+          }
+        ],
+        "premium_summary": [
+          {
+            "description": "Policy Premium",
+            "amount": "$40,650"
+          },
+          {
+            "description": "TRIA",
+            "amount": "$410"
+          },
+          {
+            "description": "State Tax",
+            "amount": "$1,500"
+          },
+          {
+            "description": "Policy Fee",
+            "amount": "$300"
+          }
+        ],
+        "countersignature": "Marianne Keeler",
+        "countersignature_date": "09/10/2024",
+        "form_number": null,
+        "endorsement_title": null,
+        "endorsement_number": null,
+        "schedule_rows": null,
+        "provisions": null,
+        "additional_premium": null,
+        "change_description": null,
+        "coverages": null,
+        "total_premium": "$42,860",
+        "effective_date": "09/17/2024",
+        "expiration_date": "09/17/2025",
+        "nr_kind": null,
+        "nr_header_rows": null,
+        "nr_columns": null,
+        "nr_rows": null,
+        "unrelated_subtitle": null,
+        "unrelated_body": null
+      },
+      {
+        "title": "Commercial Package Policy Declarations",
+        "certificate_holder": null,
+        "coverage_lines": null,
+        "description_of_operations": null,
+        "authorized_representative": null,
+        "certificate_number": null,
+        "revision_number": null,
+        "invoice_number": null,
+        "invoice_date": null,
+        "account_number": null,
+        "line_items": null,
+        "subtotal": null,
+        "taxes": null,
+        "fees": null,
+        "prior_balance": null,
+        "amount_due": null,
+        "billing_period": null,
+        "due_date": null,
+        "payment_methods": null,
+        "remit_to": null,
+        "coverage_parts": [
+          {
+            "insurer_letter": "A",
+            "coverage_type": "Commercial General Liability",
+            "policy_number": "NBR-AG-240917",
+            "effective_date": "09/17/2024",
+            "expiration_date": "09/17/2025",
+            "addl_insured": null,
+            "subro_waived": null,
+            "limits": [
+              {
+                "coverage": "Each Occurrence",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "Damage to Rented Premises",
+                "limit": "$300,000"
+              },
+              {
+                "coverage": "Medical Expense Limit",
+                "limit": "$5,000"
+              },
+              {
+                "coverage": "Personal & Advertising Injury",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "General Aggregate",
+                "limit": "$2,000,000"
+              },
+              {
+                "coverage": "Products-Completed Operations Aggregate",
+                "limit": "$2,000,000"
+              }
+            ],
+            "premium": "$12,450"
+          },
+          {
+            "insurer_letter": "B",
+            "coverage_type": "Automobile Liability",
+            "policy_number": "NBR-AG-240917",
+            "effective_date": "09/17/2024",
+            "expiration_date": "09/17/2025",
+            "addl_insured": null,
+            "subro_waived": null,
+            "limits": [
+              {
+                "coverage": "Combined Single Limit",
+                "limit": "$1,000,000"
+              }
+            ],
+            "premium": "$8,920"
+          },
+          {
+            "insurer_letter": "C",
+            "coverage_type": "Umbrella Liability",
+            "policy_number": "NBR-AG-240917",
+            "effective_date": "09/17/2024",
+            "expiration_date": "09/17/2025",
+            "addl_insured": null,
+            "subro_waived": null,
+            "limits": [
+              {
+                "coverage": "Each Occurrence",
+                "limit": "$5,000,000"
+              },
+              {
+                "coverage": "Aggregate",
+                "limit": "$5,000,000"
+              }
+            ],
+            "premium": "$9,280"
+          },
+          {
+            "insurer_letter": "A",
+            "coverage_type": "Workers Compensation",
+            "policy_number": "NBR-AG-240917",
+            "effective_date": "09/17/2024",
+            "expiration_date": "09/17/2025",
+            "addl_insured": null,
+            "subro_waived": null,
+            "limits": [
+              {
+                "coverage": "E.L. Each Accident",
+                "limit": "Statutory"
+              },
+              {
+                "coverage": "E.L. Disease-Ea Employee",
+                "limit": "$500,000"
+              },
+              {
+                "coverage": "E.L. Disease-Policy Limit",
+                "limit": "$500,000"
+              }
+            ],
+            "premium": "$10,000"
+          }
+        ],
+        "forms_schedule": [
+          {
+            "form_number": "CG 00 01 04 13",
+            "title": "Commercial General Liability Coverage Form"
+          },
+          {
+            "form_number": "CG 21 44 07 98",
+            "title": "Limitation of Coverage to Designated Premises or Project"
+          },
+          {
+            "form_number": "CG 20 10 04 13",
+            "title": "Additional Insured - Owners, Lessees or Contractors - Scheduled Person or Organization"
+          },
+          {
+            "form_number": "CA 00 01 11 20",
+            "title": "Business Auto Coverage Form"
+          },
+          {
+            "form_number": "CA 20 48 10 13",
+            "title": "Designated Insured Endorsement"
+          },
+          {
+            "form_number": "UM 00 01 01 15",
+            "title": "Commercial Umbrella Coverage Form"
+          },
+          {
+            "form_number": "WC 00 00 00 C",
+            "title": "Workers Compensation and Employers Liability Insurance Policy"
+          },
+          {
+            "form_number": "IL 00 17 11 98",
+            "title": "Common Policy Conditions"
+          },
+          {
+            "form_number": "IL 00 21 09 08",
+            "title": "Nuclear Energy Liability Exclusion Endorsement"
+          }
+        ],
+        "premium_summary": [
+          {
+            "description": "Policy Premium",
+            "amount": "$40,650"
+          },
+          {
+            "description": "TRIA",
+            "amount": "$410"
+          },
+          {
+            "description": "State Tax",
+            "amount": "$1,500"
+          },
+          {
+            "description": "Policy Fee",
+            "amount": "$300"
+          }
+        ],
+        "countersignature": "Marianne Keeler",
+        "countersignature_date": "09/10/2024",
+        "form_number": null,
+        "endorsement_title": null,
+        "endorsement_number": null,
+        "schedule_rows": null,
+        "provisions": null,
+        "additional_premium": null,
+        "change_description": null,
+        "coverages": null,
+        "total_premium": "$42,860",
+        "effective_date": "09/17/2024",
+        "expiration_date": "09/17/2025",
+        "nr_kind": null,
+        "nr_header_rows": null,
+        "nr_columns": null,
+        "nr_rows": null,
+        "unrelated_subtitle": null,
+        "unrelated_body": null
+      },
+      {
+        "title": "Certificate of Liability Insurance",
+        "certificate_holder": "Iowa State University Facilities Planning and Management, 205 University Blvd, Ames, IA 50010",
+        "coverage_lines": [
+          {
+            "insurer_letter": "A",
+            "coverage_type": "Commercial General Liability",
+            "policy_number": "NBR-AG-240917",
+            "effective_date": "09/17/2024",
+            "expiration_date": "09/17/2025",
+            "addl_insured": true,
+            "subro_waived": true,
+            "limits": [
+              {
+                "coverage": "Each Occurrence",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "Damage to Rented Premises",
+                "limit": "$300,000"
+              },
+              {
+                "coverage": "Medical Expense Limit",
+                "limit": "$5,000"
+              },
+              {
+                "coverage": "Personal & Advertising Injury",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "General Aggregate",
+                "limit": "$2,000,000"
+              },
+              {
+                "coverage": "Products-Completed Operations Aggregate",
+                "limit": "$2,000,000"
+              }
+            ],
+            "premium": null
+          },
+          {
+            "insurer_letter": "B",
+            "coverage_type": "Automobile Liability",
+            "policy_number": "NBR-AG-240917",
+            "effective_date": "09/17/2024",
+            "expiration_date": "09/17/2025",
+            "addl_insured": true,
+            "subro_waived": true,
+            "limits": [
+              {
+                "coverage": "Combined Single Limit",
+                "limit": "$1,000,000"
+              }
+            ],
+            "premium": null
+          },
+          {
+            "insurer_letter": "C",
+            "coverage_type": "Umbrella Liability",
+            "policy_number": "NBR-AG-240917",
+            "effective_date": "09/17/2024",
+            "expiration_date": "09/17/2025",
+            "addl_insured": true,
+            "subro_waived": true,
+            "limits": [
+              {
+                "coverage": "Each Occurrence",
+                "limit": "$5,000,000"
+              },
+              {
+                "coverage": "Aggregate",
+                "limit": "$5,000,000"
+              }
+            ],
+            "premium": null
+          },
+          {
+            "insurer_letter": "A",
+            "coverage_type": "Workers Compensation",
+            "policy_number": "NBR-AG-240917",
+            "effective_date": "09/17/2024",
+            "expiration_date": "09/17/2025",
+            "addl_insured": false,
+            "subro_waived": false,
+            "limits": [
+              {
+                "coverage": "E.L. Each Accident",
+                "limit": "Statutory"
+              },
+              {
+                "coverage": "E.L. Disease-Ea Employee",
+                "limit": "$500,000"
+              },
+              {
+                "coverage": "E.L. Disease-Policy Limit",
+                "limit": "$500,000"
+              }
+            ],
+            "premium": null
+          }
+        ],
+        "description_of_operations": "Additional Insurred wwhere required by written contract, including CG 20 10 04 13 and CG 20 37 04 13 when applicabl; primary and non-contributory applies where required; waiver of subrogation applies when endorsed by CG 24 04 05 09, CA 04 44 10 13, and WC 04 o3 06 09.",
+        "authorized_representative": "Marianne Keeler",
+        "certificate_number": "COI-240917-01",
+        "revision_number": null,
+        "invoice_number": null,
+        "invoice_date": null,
+        "account_number": null,
+        "line_items": null,
+        "subtotal": null,
+        "taxes": null,
+        "fees": null,
+        "prior_balance": null,
+        "amount_due": null,
+        "billing_period": null,
+        "due_date": null,
+        "payment_methods": null,
+        "remit_to": null,
+        "coverage_parts": null,
+        "forms_schedule": null,
+        "premium_summary": null,
+        "countersignature": null,
+        "countersignature_date": null,
+        "form_number": null,
+        "endorsement_title": null,
+        "endorsement_number": null,
+        "schedule_rows": null,
+        "provisions": null,
+        "additional_premium": null,
+        "change_description": null,
+        "coverages": null,
+        "total_premium": null,
+        "effective_date": null,
+        "expiration_date": null,
+        "nr_kind": null,
+        "nr_header_rows": null,
+        "nr_columns": null,
+        "nr_rows": null,
+        "unrelated_subtitle": null,
+        "unrelated_body": null
+      },
+      {
+        "title": "Submission Cover Letter",
+        "certificate_holder": null,
+        "coverage_lines": null,
+        "description_of_operations": null,
+        "authorized_representative": null,
+        "certificate_number": null,
+        "revision_number": null,
+        "invoice_number": null,
+        "invoice_date": null,
+        "account_number": null,
+        "line_items": null,
+        "subtotal": null,
+        "taxes": null,
+        "fees": null,
+        "prior_balance": null,
+        "amount_due": null,
+        "billing_period": null,
+        "due_date": null,
+        "payment_methods": null,
+        "remit_to": null,
+        "coverage_parts": null,
+        "forms_schedule": null,
+        "premium_summary": null,
+        "countersignature": null,
+        "countersignature_date": null,
+        "form_number": null,
+        "endorsement_title": null,
+        "endorsement_number": null,
+        "schedule_rows": [
+          {
+            "label": "Insured",
+            "value": "Midwest AgriSupply Cooperative"
+          },
+          {
+            "label": "Policy No.",
+            "value": "NBR-AG-240917"
+          },
+          {
+            "label": "Valuation Date",
+            "value": "09/17/2024"
+          },
+          {
+            "label": "Prepared By",
+            "value": "Prairie States Insurance Cooperative"
+          },
+          {
+            "label": "Carrier",
+            "value": "Nationwide Agribusiness"
+          }
+        ],
+        "provisions": null,
+        "additional_premium": null,
+        "change_description": null,
+        "coverages": null,
+        "total_premium": null,
+        "effective_date": null,
+        "expiration_date": null,
+        "nr_kind": "Submission Cover Letter",
+        "nr_header_rows": [
+          {
+            "label": "Insured",
+            "value": "Midwest AgriSupply Cooperative"
+          },
+          {
+            "label": "Policy No.",
+            "value": "NBR-AG-240917"
+          },
+          {
+            "label": "Submission Date",
+            "value": "09/10/2024"
+          },
+          {
+            "label": "Requested Effective Date",
+            "value": "09/17/2024"
+          },
+          {
+            "label": "Prepared By",
+            "value": "Marianne Keeler, Prairie States Insurance Cooperative"
+          }
+        ],
+        "nr_columns": [
+          "Item",
+          "Description",
+          "Status"
+        ],
+        "nr_rows": [
+          {
+            "cells": [
+              "1",
+              "Commercial General Liability",
+              "Quoted"
+            ]
+          },
+          {
+            "cells": [
+              "2",
+              "Automobile Liability",
+              "Quoted"
+            ]
+          },
+          {
+            "cells": [
+              "3",
+              "Umbrella Liability",
+              "Quoted"
+            ]
+          },
+          {
+            "cells": [
+              "4",
+              "Workers Compensation",
+              "Quoted"
+            ]
+          }
+        ],
+        "unrelated_subtitle": "Nationwide Agribusiness \u2014 New Business Submission",
+        "unrelated_body": "Please review the attached loss-sensitive exposure summary and prepare indications for the new account. The submission is being forwarded for underwriting consideration only and is not intended as a certificate, declaration page, invoice, or endorsement."
+      },
+      {
+        "title": "Certificate of Liability Insurance",
+        "certificate_holder": "Hawkeye Valley Grain, LLC, 900 South Bell Ave, Ames, IA 50010",
+        "coverage_lines": [
+          {
+            "insurer_letter": "A",
+            "coverage_type": "Commercial General Liability",
+            "policy_number": "NBR-AG-240917",
+            "effective_date": "09/17/2024",
+            "expiration_date": "09/17/2025",
+            "addl_insured": true,
+            "subro_waived": true,
+            "limits": [
+              {
+                "coverage": "Each Occurrence",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "Damage to Rented Premises",
+                "limit": "$300,000"
+              },
+              {
+                "coverage": "Medical Expense Limit",
+                "limit": "$5,000"
+              },
+              {
+                "coverage": "Personal & Advertising Injury",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "General Aggregate",
+                "limit": "$2,000,000"
+              },
+              {
+                "coverage": "Products-Completed Operations Aggregate",
+                "limit": "$2,000,000"
+              }
+            ],
+            "premium": null
+          },
+          {
+            "insurer_letter": "B",
+            "coverage_type": "Automobile Liability",
+            "policy_number": "NBR-AG-240917",
+            "effective_date": "09/17/2024",
+            "expiration_date": "09/17/2025",
+            "addl_insured": true,
+            "subro_waived": true,
+            "limits": [
+              {
+                "coverage": "Combined Single Limit",
+                "limit": "$1,000,000"
+              }
+            ],
+            "premium": null
+          },
+          {
+            "insurer_letter": "C",
+            "coverage_type": "Umbrella Liability",
+            "policy_number": "NBR-AG-240917",
+            "effective_date": "09/17/2024",
+            "expiration_date": "09/17/2025",
+            "addl_insured": true,
+            "subro_waived": true,
+            "limits": [
+              {
+                "coverage": "Each Occurrence",
+                "limit": "$5,000,000"
+              },
+              {
+                "coverage": "Aggregate",
+                "limit": "$5,000,000"
+              }
+            ],
+            "premium": null
+          },
+          {
+            "insurer_letter": "A",
+            "coverage_type": "Workers Compensation",
+            "policy_number": "NBR-AG-240917",
+            "effective_date": "09/17/2024",
+            "expiration_date": "09/17/2025",
+            "addl_insured": false,
+            "subro_waived": false,
+            "limits": [
+              {
+                "coverage": "E.L. Each Accident",
+                "limit": "Statutory"
+              },
+              {
+                "coverage": "E.L. Disease-Ea Employee",
+                "limit": "$500,000"
+              },
+              {
+                "coverage": "E.L. Disease-Policy Limit",
+                "limit": "$500,000"
+              }
+            ],
+            "premium": null
+          }
+        ],
+        "description_of_operations": "Additional insured status as required by written contract; primary and non-contributory applies on CGL and umbrella where endorsed; waiver of subrogation applies when required by contract and endorsed by CG 24 04 05 09, CA 04 44 10 13, and WC 04 03 06 09.",
+        "authorized_representative": "Marianne Keeler",
+        "certificate_number": "COI-240917-02",
+        "revision_number": null,
+        "invoice_number": null,
+        "invoice_date": null,
+        "account_number": null,
+        "line_items": null,
+        "subtotal": null,
+        "taxes": null,
+        "fees": null,
+        "prior_balance": null,
+        "amount_due": null,
+        "billing_period": null,
+        "due_date": null,
+        "payment_methods": null,
+        "remit_to": null,
+        "coverage_parts": null,
+        "forms_schedule": null,
+        "premium_summary": null,
+        "countersignature": null,
+        "countersignature_date": null,
+        "form_number": null,
+        "endorsement_title": null,
+        "endorsement_number": null,
+        "schedule_rows": null,
+        "provisions": null,
+        "additional_premium": null,
+        "change_description": null,
+        "coverages": null,
+        "total_premium": null,
+        "effective_date": null,
+        "expiration_date": null,
+        "nr_kind": null,
+        "nr_header_rows": null,
+        "nr_columns": null,
+        "nr_rows": null,
+        "unrelated_subtitle": null,
+        "unrelated_body": null
+      }
+    ]
+  }
+}

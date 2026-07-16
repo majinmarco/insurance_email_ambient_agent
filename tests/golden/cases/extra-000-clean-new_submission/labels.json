@@ -1,0 +1,68 @@
+{
+  "case_id": "extra-000-clean-new_submission",
+  "tier": "clean",
+  "email": {
+    "email_type": "new_submission",
+    "email_type_hard": true,
+    "extraction": {
+      "named_insured": "Riverside Manufacturing Co.",
+      "policy_number": null,
+      "requested_effective_date": "2026-02-01",
+      "requested_changes": "Quote/bind a new commercial package policy.",
+      "contact_name": "Karen Delgado",
+      "contact_phone": "(216) 555-0173"
+    }
+  },
+  "attachments": [
+    {
+      "filename": "attachment_1.pdf",
+      "render_format": "pdf",
+      "n_pages": 2,
+      "documents": [
+        {
+          "index": 0,
+          "doc_type": "insurance invoice",
+          "page_start": 0,
+          "page_end": 0,
+          "extraction": {
+            "named_insured": "Riverside Manufacturing Co.",
+            "policy_number": "NB-7842196",
+            "amount_due": 18750.0,
+            "billing_period": "02/01/2026 - 02/01/2027",
+            "policy_reference": "NB-7842196",
+            "due_date": "2026-02-01"
+          }
+        },
+        {
+          "index": 1,
+          "doc_type": "insurance declaration",
+          "page_start": 1,
+          "page_end": 1,
+          "extraction": {
+            "named_insured": "Riverside Manufacturing Co.",
+            "policy_number": "NB-7842196",
+            "coverages": {
+              "Commercial General Liability": "$7,850",
+              "Business Personal Property": "$4,250",
+              "Commercial Automobile Liability": "$2,300",
+              "Umbrella Liability": "$2,150",
+              "Workers Compensation": "$1,900"
+            },
+            "total_premium": 18750.0
+          }
+        }
+      ],
+      "boundary_page_offsets": [
+        1
+      ],
+      "n_documents": 2,
+      "expected_segment_types": [
+        "insurance invoice",
+        "insurance declaration"
+      ],
+      "expected_collapse": false,
+      "expected_scanned": false,
+      "expected_interrupt": false
+    }
+  ]
+}

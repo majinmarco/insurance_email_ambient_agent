@@ -1,0 +1,54 @@
+{
+  "case_id": "extra-019-mixed-needs_review",
+  "tier": "mixed",
+  "email": {
+    "email_type": "needs_review",
+    "email_type_hard": true,
+    "extraction": {
+      "named_insured": "Evergreen Home Health Services LLC",
+      "policy_number": "HMP-3320815",
+      "requested_effective_date": null,
+      "requested_changes": null,
+      "contact_name": "Priya Raman",
+      "contact_phone": "(503) 555-0159"
+    }
+  },
+  "attachments": [
+    {
+      "filename": "Submission Packet.pdf",
+      "render_format": "pdf",
+      "n_pages": 2,
+      "documents": [
+        {
+          "index": 0,
+          "doc_type": "insurance endorsement",
+          "page_start": 0,
+          "page_end": 0,
+          "extraction": {
+            "named_insured": "Evergreen Home Health Services LLC",
+            "policy_number": "HMP-3320815",
+            "change_description": "Adds Rosewood Senior Living, Inc. as an additional insured for ongoing operations effective 01/15/2026.",
+            "effective_date": "2026-01-15"
+          }
+        },
+        {
+          "index": 1,
+          "doc_type": "unrelated or unclear document",
+          "page_start": 1,
+          "page_end": 1,
+          "extraction": null
+        }
+      ],
+      "boundary_page_offsets": [
+        1
+      ],
+      "n_documents": 2,
+      "expected_segment_types": [
+        "insurance endorsement"
+      ],
+      "expected_collapse": false,
+      "expected_scanned": false,
+      "expected_interrupt": true
+    }
+  ]
+}

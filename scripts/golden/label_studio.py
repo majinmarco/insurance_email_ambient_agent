@@ -49,33 +49,52 @@ DOC_CHOICES = [d.value for d in DocumentCategory]
 MODEL_VERSION = "golden-derived"
 _MAX_DOC_TEXT_CHARS = 6000  # keep tasks light; enough to judge type + key fields
 
-# PDF display modes for the rendered attachment viewer.
-#   localfiles — reference a served file URL (needs LABEL_STUDIO_LOCAL_FILES_SERVING_ENABLED);
-#                tiny task, robust rendering. The launcher (--serve) wires this up.
-#   embed      — self-contained base64 data: URI (zero setup, may be blocked by the sanitizer).
+# PDF display modes for the rendered attachment viewer (the <Pdf> / PDF.js tag).
+#   localfiles — served file URL (needs LOCAL_FILES_SERVING_ENABLED *and* a registered Local
+#                Storage covering the files); tiny tasks. The launcher (--serve) wires this up.
+#   embed      — self-contained base64 data: URI carried in the task (zero server setup).
 #   none       — no viewer field (text-only review).
 PDF_MODES = ("localfiles", "embed", "none")
 DEFAULT_PDF_MODE = "localfiles"
 #: Sub-path under LABEL_STUDIO_LOCAL_FILES_DOCUMENT_ROOT where --serve dumps the PDFs, and the
-#: prefix the localfiles ``?d=`` URLs point at. Keep the two in sync.
+#: prefix the localfiles ``?d=`` URLs point at. Keep the two in sync. This sub-path (not the
+#: document root itself) is what gets registered as the project's Local Storage.
 LOCALFILES_PREFIX = "golden_pdfs"
-#: Where --serve dumps the frozen attachments (== the Local Storage document root to register).
+#: LABEL_STUDIO_LOCAL_FILES_DOCUMENT_ROOT for --serve. The Local Storage registered in the UI
+#: must point at ``SERVE_DOC_ROOT / LOCALFILES_PREFIX`` — Label Studio rejects registering the
+#: document root itself.
 SERVE_DOC_ROOT = LS_DIR / "_localfiles"
-
-_MIME_BY_FORMAT = {"pdf": "application/pdf", "scanned_pdf": "application/pdf", "html": "text/html"}
 
 
 # --------------------------------------------------------------------------- #
 # Labeling interface (project config)
 # --------------------------------------------------------------------------- #
-def labeling_config() -> str:
+def labeling_config(pdf_mode: str = DEFAULT_PDF_MODE) -> str:
     """The Label Studio ``<View>`` labeling config matching the exported tasks.
 
     Uses a ``<Repeater>`` over ``$documents`` so a single static config handles a variable
-    number of documents per task.
+    number of documents per task. ``pdf_mode`` must match the mode the tasks were exported
+    with so the source-document viewer lines up with the data:
+
+    * ``localfiles`` / ``embed`` — render each document with the PDF.js-based ``<Pdf>`` tag
+      (from a served-file URL or a self-contained ``data:`` URI), with an inline
+      ``<HyperText>`` fallback for HTML attachments (which have no PDF form);
+    * ``none`` — no viewer (text-only review).
     """
     email_choices = "\n      ".join(f'<Choice value="{c}"/>' for c in EMAIL_CHOICES)
     doc_choices = "\n          ".join(f'<Choice value="{c}"/>' for c in DOC_CHOICES)
+    # Rendered-source viewer. Exactly one of $documents[i].pdf / .html is populated per
+    # document (see _document_viewer_fields): PDFs go to <Pdf>, HTML to <HyperText>. The
+    # <Pdf> tag fetches its URL, so localfiles mode needs Label Studio local-file serving
+    # (a registered Local Storage + LOCAL_FILES_SERVING_ENABLED) — the launcher wires this.
+    viewer = (
+        ""
+        if pdf_mode == "none"
+        else (
+            '<Pdf name="doc_pdf_{{idx}}" value="$documents[{{idx}}].pdf"/>\n'
+            '      <HyperText name="doc_html_{{idx}}" value="$documents[{{idx}}].html" inline="true"/>'
+        )
+    )
     return f"""<View>
   <Header value="$case_id  ·  tier: $tier"/>
 
@@ -99,9 +118,7 @@ def labeling_config() -> str:
     <View style="border:1px solid #dcdce3;border-radius:6px;padding:1em;margin-bottom:1em">
       <Text name="doc_file_{{{{idx}}}}" value="$documents[{{{{idx}}}}].filename"/>
       <Text name="doc_meta_{{{{idx}}}}" value="$documents[{{{{idx}}}}].meta"/>
-      <!-- Rendered source document (PDF/scanned image/HTML). inline HyperText renders the
-           embed HTML in $documents[i].pdf for both localfiles and base64 modes. -->
-      <HyperText name="doc_pdf_{{{{idx}}}}" value="$documents[{{{{idx}}}}].pdf" inline="true"/>
+      {viewer}
       <Collapse>
         <Panel value="Extracted text (what the graph sees)">
           <Text name="doc_text_{{{{idx}}}}" value="$documents[{{{{idx}}}}].text"/>
@@ -142,28 +159,32 @@ def _document_display_text(payload_email: dict, att_index: int, att_label: dict,
     return text[:_MAX_DOC_TEXT_CHARS]
 
 
-def _document_pdf_embed(
+def _document_viewer_fields(
     payload_email: dict, case_id: str, att_index: int, att_label: dict, doc_label: dict, pdf_mode: str
-) -> str:
-    """An ``<embed>`` HTML string that renders one document's attachment inside a Label Studio
-    ``<HyperText inline>`` viewer. Opens at the document's first page via ``#page=``.
+) -> tuple[str, str]:
+    """The ``(pdf, html)`` viewer values for one document — exactly one is non-empty.
 
-    * ``localfiles`` — src is a served-file URL (``/data/local-files/?d=…``); tiny, robust.
-    * ``embed`` — src is a self-contained ``data:`` URI carrying the frozen bytes.
+    PDFs (``pdf`` / ``scanned_pdf``) render in the PDF.js-based ``<Pdf>`` tag, which takes a
+    URL/URI (not embed markup):
+
+    * ``localfiles`` — a served-file URL (``/data/local-files/?d=…``); needs Label Studio
+      local-file serving (a registered Local Storage + ``LOCAL_FILES_SERVING_ENABLED``);
+    * ``embed`` — a self-contained ``data:`` URI carrying the frozen bytes (zero setup).
+
+    HTML attachments have no PDF form, so their markup is returned as ``html`` for an inline
+    ``<HyperText>`` fallback instead.
     """
     fmt = att_label["render_format"]
-    mime = _MIME_BY_FORMAT.get(fmt, "application/pdf")
-    page = doc_label["page_start"] + 1  # PDF viewers are 1-indexed
-    frag = f"#page={page}" if mime == "application/pdf" else ""
+    if fmt == "html":
+        raw = base64.b64decode(payload_email["attachments"][att_index]["content"])
+        return "", raw.decode("utf-8", "replace")
     if pdf_mode == "embed":
         b64 = payload_email["attachments"][att_index]["content"]  # already base64
-        src = f"data:{mime};base64,{b64}{frag}"
-    else:  # localfiles
-        from urllib.parse import quote
+        return f"data:application/pdf;base64,{b64}", ""
+    from urllib.parse import quote
 
-        rel = quote(f"{LOCALFILES_PREFIX}/{case_id}/{att_label['filename']}", safe="/")
-        src = f"/data/local-files/?d={rel}{frag}"
-    return f'<embed src="{src}" width="100%" height="700px" type="{mime}"/>'
+    rel = quote(f"{LOCALFILES_PREFIX}/{case_id}/{att_label['filename']}", safe="/")
+    return f"/data/local-files/?d={rel}", ""
 
 
 def _flat_documents(labels: dict) -> list[tuple[int, int, dict, dict]]:
@@ -214,7 +235,11 @@ def case_to_task(payload: dict, labels: dict, *, pdf_mode: str = DEFAULT_PDF_MOD
             "doc_index": di,
         }
         if pdf_mode != "none":
-            doc_datum["pdf"] = _document_pdf_embed(email, case_id, ai, att, doc, pdf_mode)
+            # Populate both viewer fields (exactly one is non-empty) so the Repeater's
+            # <Pdf>/<HyperText> tags always resolve their $documents[i].pdf / .html vars.
+            doc_datum["pdf"], doc_datum["html"] = _document_viewer_fields(
+                email, case_id, ai, att, doc, pdf_mode
+            )
         documents_data.append(doc_datum)
         result.append({
             "from_name": f"doc_type_{idx}", "to_name": f"doc_text_{idx}", "type": "choices",
@@ -318,7 +343,7 @@ def write_import_files(pdf_mode: str = DEFAULT_PDF_MODE) -> Path:
     pairs = _load_committed_pairs()
     tasks = export_tasks([(p, l) for _, p, l in pairs], pdf_mode=pdf_mode)
     (LS_DIR / "tasks.json").write_text(json.dumps(tasks, indent=2) + "\n")
-    (LS_DIR / "config.xml").write_text(labeling_config())
+    (LS_DIR / "config.xml").write_text(labeling_config(pdf_mode))
     return LS_DIR
 
 
@@ -361,8 +386,12 @@ def serve(pdf_mode: str = "localfiles") -> int:
     print(f"   2. Settings → Labeling Interface → Code → paste:\n        {config_path}")
     if pdf_mode == "localfiles":
         print("   3. Settings → Cloud Storage → Add Source Storage → Local files:")
-        print(f"        Absolute local path = {doc_root}")
-        print("        (Save — do NOT 'Save & Sync', which would create one task per file.)")
+        print(f"        Absolute local path = {doc_root / LOCALFILES_PREFIX}")
+        print("        (Use this sub-path, NOT the document root — Label Studio rejects")
+        print("         registering the serving root itself. Save — do NOT 'Save & Sync',")
+        print("         which would create one task per file.)")
+        print("        Without this storage, /data/local-files/ returns 404 and every PDF")
+        print("        renders blank — the <Pdf> viewer needs a registered Local Storage.")
     print(f"   4. Import → upload {tasks_path.name} (from {tasks_path.parent}).")
     print("\n Correct labels, then Export as JSON and run:")
     print("   uv run python -m scripts.golden.label_studio --reimport <export.json>")

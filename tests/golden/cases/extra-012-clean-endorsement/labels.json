@@ -1,0 +1,45 @@
+{
+  "case_id": "extra-012-clean-endorsement",
+  "tier": "clean",
+  "email": {
+    "email_type": "endorsement",
+    "email_type_hard": true,
+    "extraction": {
+      "named_insured": "Summit Ridge Construction Inc.",
+      "policy_number": "CPP-6612078",
+      "requested_effective_date": "2026-01-15",
+      "requested_changes": "Endorse the in-force policy (mid-term change).",
+      "contact_name": "Derek Olsson",
+      "contact_phone": "(303) 555-0188"
+    }
+  },
+  "attachments": [
+    {
+      "filename": "attachment_1.pdf",
+      "render_format": "pdf",
+      "n_pages": 1,
+      "documents": [
+        {
+          "index": 0,
+          "doc_type": "insurance endorsement",
+          "page_start": 0,
+          "page_end": 0,
+          "extraction": {
+            "named_insured": "Summit Ridge Construction Inc.",
+            "policy_number": "CPP-6612078",
+            "change_description": "Adds one scheduled company vehicle to the active policy effective 01/15/2026.",
+            "effective_date": "2026-01-15"
+          }
+        }
+      ],
+      "boundary_page_offsets": [],
+      "n_documents": 1,
+      "expected_segment_types": [
+        "insurance endorsement"
+      ],
+      "expected_collapse": false,
+      "expected_scanned": false,
+      "expected_interrupt": false
+    }
+  ]
+}

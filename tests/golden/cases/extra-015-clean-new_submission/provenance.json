@@ -1,0 +1,425 @@
+{
+  "case_id": "extra-015-clean-new_submission",
+  "tier": "clean",
+  "seed": 100015,
+  "email_type": "new_submission",
+  "attachments_mode": "on",
+  "max_docs_per_attachment": 2,
+  "max_attachments": 3,
+  "force_format": null,
+  "persona_index": 5,
+  "content_source": "llm",
+  "noise_manifest": null,
+  "raw_scenario": {
+    "shared": {
+      "named_insured": "Pinnacle Staffing Solutions Inc.",
+      "policy_number": "PPC-457219-01",
+      "insured_address": "303 Peachtree St NE, Atlanta, GA 30308",
+      "contact_name": "Danielle Foster",
+      "contact_email": "dfoster@pinnaclestaffing.com",
+      "contact_phone": "(404) 555-0163",
+      "carrier_name": "AmTrust Financial",
+      "effective_date": "2026-01-15",
+      "expiration_date": "2027-01-15",
+      "coverage_limits": [
+        {
+          "coverage": "Commercial General Liability",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Automobile Liability",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Umbrella Liability",
+          "limit": "$5,000,000"
+        },
+        {
+          "coverage": "Workers Compensation",
+          "limit": "Statutory"
+        }
+      ],
+      "total_premium": "$18,940",
+      "producer": {
+        "agency": "Peachtree Commercial Brokers",
+        "address": "1201 Peachtree St NE, Suite 1850, Atlanta, GA 30361",
+        "contact_name": "Marcus Ellison",
+        "phone": "(404) 555-0198",
+        "fax": "(404) 555-0199",
+        "email": "accounts@peachtreebrokers.com"
+      },
+      "insurers": [
+        {
+          "letter": "A",
+          "name": "AmTrust Insurance Company",
+          "naic": "10316"
+        },
+        {
+          "letter": "B",
+          "name": "AmTrust Specialty Insurance Company",
+          "naic": "15954"
+        },
+        {
+          "letter": "C",
+          "name": "Northlight Specialty Insurance Company",
+          "naic": "11695"
+        },
+        {
+          "letter": "D",
+          "name": "Technology Insurance Company, Inc.",
+          "naic": "42376"
+        },
+        {
+          "letter": "E",
+          "name": "Republic Fire and Casualty Insurance Company",
+          "naic": "22179"
+        },
+        {
+          "letter": "F",
+          "name": "Milwaukee Casualty Insurance Company",
+          "naic": "38601"
+        }
+      ],
+      "business_description": "Temporary clerical and light-industrial staffing",
+      "entity_type": "Corporation",
+      "fein": "27-4839126",
+      "naic_carrier": "10316"
+    },
+    "email": {
+      "subject": "New Submission Request \u2013 Pinnacle Staffing Solutions Inc. \u2013 Effective 01/15/2026",
+      "body": "Good morning,\n\nPlease quote and, if acceptable, bind coverage for our new account, Pinnacle Staffing Solutions Inc., effective 01/15/2026. This is a brand-new submission with no existing policy number.\n\nWe are requesting a full package for temporary clerical and light-industrial staffing operations at 303 Peachtree St NE, Atlanta, GA 30308. Please review and advise on any underwriting requirements, available terms, and target premium.\n\nThank you,\nDanielle Foster\nPinnacle Staffing Solutions Inc.",
+      "sender": "Marcus Ellison <accounts@peachtreebrokers.com>",
+      "recipient": "dfoster@pinnaclestaffing.com"
+    },
+    "documents": [
+      {
+        "title": "Commercial Package Declarations Page",
+        "certificate_holder": null,
+        "coverage_lines": null,
+        "description_of_operations": null,
+        "authorized_representative": null,
+        "certificate_number": null,
+        "revision_number": null,
+        "invoice_number": null,
+        "invoice_date": null,
+        "account_number": null,
+        "line_items": null,
+        "subtotal": null,
+        "taxes": null,
+        "fees": null,
+        "prior_balance": null,
+        "amount_due": null,
+        "billing_period": null,
+        "due_date": null,
+        "payment_methods": null,
+        "remit_to": null,
+        "coverage_parts": [
+          {
+            "insurer_letter": "A",
+            "coverage_type": "Commercial General Liability",
+            "policy_number": "PPC-457219-01",
+            "effective_date": "01/15/2026",
+            "expiration_date": "01/15/2027",
+            "addl_insured": null,
+            "subro_waived": null,
+            "limits": [
+              {
+                "coverage": "Each Occurrence",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "Damage to Rented Premises",
+                "limit": "$300,000"
+              },
+              {
+                "coverage": "Medical Expense",
+                "limit": "$5,000"
+              },
+              {
+                "coverage": "Personal & Advertising Injury",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "General Aggregate",
+                "limit": "$2,000,000"
+              },
+              {
+                "coverage": "Products-Comp/Op Aggregate",
+                "limit": "$2,000,000"
+              }
+            ],
+            "premium": "$7,850"
+          },
+          {
+            "insurer_letter": "D",
+            "coverage_type": "Commercial Automobile Liability",
+            "policy_number": "PPC-457219-01",
+            "effective_date": "01/15/2026",
+            "expiration_date": "01/15/2027",
+            "addl_insured": null,
+            "subro_waived": null,
+            "limits": [
+              {
+                "coverage": "Combined Single Limit",
+                "limit": "$1,000,000"
+              }
+            ],
+            "premium": "$2,940"
+          },
+          {
+            "insurer_letter": "B",
+            "coverage_type": "Umbrella Liability",
+            "policy_number": "PPC-457219-01",
+            "effective_date": "01/15/2026",
+            "expiration_date": "01/15/2027",
+            "addl_insured": null,
+            "subro_waived": null,
+            "limits": [
+              {
+                "coverage": "Each Occurrence",
+                "limit": "$5,000,000"
+              },
+              {
+                "coverage": "General Aggregate",
+                "limit": "$5,000,000"
+              }
+            ],
+            "premium": "$3,150"
+          },
+          {
+            "insurer_letter": "C",
+            "coverage_type": "Workers Compensation",
+            "policy_number": "PPC-457219-01",
+            "effective_date": "01/15/2026",
+            "expiration_date": "01/15/2027",
+            "addl_insured": null,
+            "subro_waived": null,
+            "limits": [
+              {
+                "coverage": "E.L. Each Accident",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "E.L. Disease - Ea Employee",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "E.L. Disease - Policy Limit",
+                "limit": "$1,000,000"
+              }
+            ],
+            "premium": "$4,200"
+          }
+        ],
+        "forms_schedule": [
+          {
+            "form_number": "IL 00 17 11 98",
+            "title": "Common Policy Conditions"
+          },
+          {
+            "form_number": "CG 00 01 04 13",
+            "title": "Commercial General Liability Coverage Form"
+          },
+          {
+            "form_number": "CG 21 44 07 98",
+            "title": "Exclusion - Fungi or Bacteria"
+          },
+          {
+            "form_number": "CA 00 01 11 20",
+            "title": "Business Auto Coverage Form"
+          },
+          {
+            "form_number": "CA 20 48 10 13",
+            "title": "Designated Insured Endorsement"
+          },
+          {
+            "form_number": "CU 00 01 04 13",
+            "title": "Commercial Umbrella Coverage Form"
+          },
+          {
+            "form_number": "WC 00 00 00 C",
+            "title": "Workers Compensation and Employers Liability Insurance Policy"
+          }
+        ],
+        "premium_summary": [
+          {
+            "description": "Policy Premium",
+            "amount": "$18,140"
+          },
+          {
+            "description": "Terrorism (TRIA)",
+            "amount": "$190"
+          },
+          {
+            "description": "Surplus Lines Tax",
+            "amount": "$420"
+          },
+          {
+            "description": "Policy Fee",
+            "amount": "$190"
+          }
+        ],
+        "countersignature": "Peachtree Commercial Brokers, by Marcus Ellison",
+        "countersignature_date": "01/10/2026",
+        "form_number": null,
+        "endorsement_title": null,
+        "endorsement_number": null,
+        "schedule_rows": null,
+        "provisions": null,
+        "additional_premium": null,
+        "change_description": null,
+        "coverages": null,
+        "total_premium": "$18,940",
+        "effective_date": "01/15/2026",
+        "expiration_date": "01/15/2027",
+        "nr_kind": null,
+        "nr_header_rows": null,
+        "nr_columns": null,
+        "nr_rows": null,
+        "unrelated_subtitle": null,
+        "unrelated_body": null
+      },
+      {
+        "title": "ACORD 25 Certificate of Liability Insurance",
+        "certificate_holder": "Miller Office Park LLC, 4000 Lenox Rd NE, Suite 900, Atlanta, GA 30326",
+        "coverage_lines": [
+          {
+            "insurer_letter": "A",
+            "coverage_type": "Commercial General Liability",
+            "policy_number": "PPC-457219-01",
+            "effective_date": "01/15/2026",
+            "expiration_date": "01/15/2027",
+            "addl_insured": true,
+            "subro_waived": true,
+            "limits": [
+              {
+                "coverage": "Each Occurrence",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "Damage to Rented Premises",
+                "limit": "$300,000"
+              },
+              {
+                "coverage": "Med Exp (Any one person)",
+                "limit": "$5,000"
+              },
+              {
+                "coverage": "Personal & Adv Injury",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "General Aggregate",
+                "limit": "$2,000,000"
+              },
+              {
+                "coverage": "Products-Comp/Op Agg",
+                "limit": "$2,000,000"
+              }
+            ],
+            "premium": null
+          },
+          {
+            "insurer_letter": "D",
+            "coverage_type": "Automobile Liability",
+            "policy_number": "PPC-457219-01",
+            "effective_date": "01/15/2026",
+            "expiration_date": "01/15/2027",
+            "addl_insured": true,
+            "subro_waived": true,
+            "limits": [
+              {
+                "coverage": "Combined Single Limit",
+                "limit": "$1,000,000"
+              }
+            ],
+            "premium": null
+          },
+          {
+            "insurer_letter": "B",
+            "coverage_type": "Umbrella Liability",
+            "policy_number": "PPC-457219-01",
+            "effective_date": "01/15/2026",
+            "expiration_date": "01/15/2027",
+            "addl_insured": true,
+            "subro_waived": true,
+            "limits": [
+              {
+                "coverage": "Each Occurrence",
+                "limit": "$5,000,000"
+              },
+              {
+                "coverage": "General Aggregate",
+                "limit": "$5,000,000"
+              }
+            ],
+            "premium": null
+          },
+          {
+            "insurer_letter": "C",
+            "coverage_type": "Workers Compensation",
+            "policy_number": "PPC-457219-01",
+            "effective_date": "01/15/2026",
+            "expiration_date": "01/15/2027",
+            "addl_insured": false,
+            "subro_waived": false,
+            "limits": [
+              {
+                "coverage": "E.L. Each Accident",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "E.L. Disease-Ea Employee",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "E.L. Disease-Policy Limit",
+                "limit": "$1,000,000"
+              }
+            ],
+            "premium": null
+          }
+        ],
+        "description_of_operations": "Pinnacle Staffing Solutions Inc. is named as additional insured where required by written contract as respects ongoing and completed operations for Commercial General Liability, Automobile Liability, and Umbrella Liability. Coverage is primary and non-contributory where required by written contract and includes waiver of subrogation where permitted by policy and endorsed as applicable. Additional insured, primary and non-contributory, and waiver of subrogation wording is evidenced by forms CG 20 10 04 13, CG 20 37 04 13, CA 20 48 10 13, and CU 21 19 07 98, as applicable.",
+        "authorized_representative": "Alyssa Grant, Authorized Representative",
+        "certificate_number": "COI-884217",
+        "revision_number": null,
+        "invoice_number": null,
+        "invoice_date": null,
+        "account_number": null,
+        "line_items": null,
+        "subtotal": null,
+        "taxes": null,
+        "fees": null,
+        "prior_balance": null,
+        "amount_due": null,
+        "billing_period": null,
+        "due_date": null,
+        "payment_methods": null,
+        "remit_to": null,
+        "coverage_parts": null,
+        "forms_schedule": null,
+        "premium_summary": null,
+        "countersignature": null,
+        "countersignature_date": null,
+        "form_number": null,
+        "endorsement_title": null,
+        "endorsement_number": null,
+        "schedule_rows": null,
+        "provisions": null,
+        "additional_premium": null,
+        "change_description": null,
+        "coverages": null,
+        "total_premium": null,
+        "effective_date": null,
+        "expiration_date": null,
+        "nr_kind": null,
+        "nr_header_rows": null,
+        "nr_columns": null,
+        "nr_rows": null,
+        "unrelated_subtitle": null,
+        "unrelated_body": null
+      }
+    ]
+  }
+}

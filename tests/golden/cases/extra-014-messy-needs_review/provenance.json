@@ -1,0 +1,381 @@
+{
+  "case_id": "extra-014-messy-needs_review",
+  "tier": "messy",
+  "seed": 100014,
+  "email_type": "needs_review",
+  "attachments_mode": "on",
+  "max_docs_per_attachment": 3,
+  "max_attachments": 3,
+  "force_format": null,
+  "persona_index": 2,
+  "content_source": "llm",
+  "noise_manifest": {
+    "email": {
+      "persona_index": 2,
+      "thread": true,
+      "signature": false,
+      "subject_style": null,
+      "multi_recipient": false,
+      "body_only": false,
+      "inconsistency": false,
+      "date_received": "2026-07-11T10:55:00+00:00"
+    },
+    "attachments": [
+      {
+        "filename": "Renewal Package.pdf"
+      }
+    ],
+    "docs": [
+      {
+        "delimiter_mode": "plain",
+        "layout_variant": 1,
+        "watermark": null,
+        "content_noise": false,
+        "content_noise_level": 0.35,
+        "is_scanned": false,
+        "render_format": "pdf"
+      },
+      {
+        "delimiter_mode": "bold_caps",
+        "layout_variant": 1,
+        "watermark": "SPECIMEN",
+        "content_noise": false,
+        "content_noise_level": 0.35,
+        "is_scanned": false,
+        "render_format": "pdf"
+      }
+    ],
+    "expected": {
+      "email_type_hard": true,
+      "per_attachment_collapse": [
+        true
+      ],
+      "per_attachment_scanned": [
+        false
+      ],
+      "per_attachment_expect_interrupt": [
+        true
+      ]
+    }
+  },
+  "raw_scenario": {
+    "shared": {
+      "named_insured": "Summit Ridge Construction Inc.",
+      "policy_number": "CPP-6612078",
+      "insured_address": "9400 E Arapahoe Rd, Centennial, CO 80112",
+      "contact_name": "Derek Olsson",
+      "contact_email": "dolsson@summitridgegc.com",
+      "contact_phone": "(303) 555-0188",
+      "carrier_name": "Travelers Indemnity Company",
+      "effective_date": "2026-01-01",
+      "expiration_date": "2027-01-01",
+      "coverage_limits": [
+        {
+          "coverage": "Commercial General Liability",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Automobile Liability",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Umbrella Liability",
+          "limit": "$5,000,000"
+        },
+        {
+          "coverage": "Workers Compensation",
+          "limit": "Statutory"
+        }
+      ],
+      "total_premium": "$48,625",
+      "producer": {
+        "agency": "Front Range Commercial Insurance",
+        "address": "1120 W Littleton Blvd, Suite 220, Littleton, CO 80120",
+        "contact_name": "Megan Hart",
+        "phone": "(303) 555-0144",
+        "fax": "(303) 555-0145",
+        "email": "newbusiness@frontrangeins.com"
+      },
+      "insurers": [
+        {
+          "letter": "A",
+          "name": "Travelers Indemnity Company",
+          "naic": "25658"
+        },
+        {
+          "letter": "B",
+          "name": "Travelers Casualty and Surety Company of America",
+          "naic": "19038"
+        },
+        {
+          "letter": "C",
+          "name": "Travelers Property Casualty Company of America",
+          "naic": "25674"
+        },
+        {
+          "letter": "D",
+          "name": "Travelers Personal Insurance Company",
+          "naic": "27998"
+        },
+        {
+          "letter": "E",
+          "name": "Travelers Casualty Insurance Company of America",
+          "naic": "19046"
+        },
+        {
+          "letter": "F",
+          "name": "The Standard Fire Insurance Company",
+          "naic": "19070"
+        }
+      ],
+      "business_description": "Commercial general contractor (ground-up)",
+      "entity_type": "Corporation",
+      "fein": "84-2167395",
+      "naic_carrier": "25658"
+    },
+    "email": {
+      "subject": "FW: Needs review: Summit Ridge Construction Inc. policy CPP-6612078",
+      "body": "Hi Team,\n\nPlease take a quick look at the attached items for Summit Ridge Construction Inc. under policy CPP-6612078. I\u2019m not sure whether the first attachment is just a submission packet or something that should be filed with the COI.\n\nThe certificate is requested for the upcoming project set to begin 01/01/2026. Please confirm whether the wording and holder information look acceptable before we send anything out.\n\nThank you,\nDerek\n\nOn Mon, Jul 6, 2026 at 9:14 AM, Megan Hart <newbusiness@frontrangeins.com> wrote:\n> Following up on the below \u2014 please advise on the outstanding items when you have a moment.\n>\n> Regards,\n> Megan Hart",
+      "sender": "Derek Olsson <dolsson@summitridgegc.com>",
+      "recipient": "Front Range Commercial Insurance <newbusiness@frontrangeins.com>"
+    },
+    "documents": [
+      {
+        "title": "Submission Cover Letter - Summit Ridge Construction Inc.",
+        "certificate_holder": null,
+        "coverage_lines": null,
+        "description_of_operations": null,
+        "authorized_representative": null,
+        "certificate_number": null,
+        "revision_number": null,
+        "invoice_number": null,
+        "invoice_date": null,
+        "account_number": null,
+        "line_items": null,
+        "subtotal": null,
+        "taxes": null,
+        "fees": null,
+        "prior_balance": null,
+        "amount_due": null,
+        "billing_period": null,
+        "due_date": null,
+        "payment_methods": null,
+        "remit_to": null,
+        "coverage_parts": null,
+        "forms_schedule": null,
+        "premium_summary": null,
+        "countersignature": null,
+        "countersignature_date": null,
+        "form_number": null,
+        "endorsement_title": null,
+        "endorsement_number": null,
+        "schedule_rows": null,
+        "provisions": null,
+        "additional_premium": null,
+        "change_description": null,
+        "coverages": null,
+        "total_premium": null,
+        "effective_date": null,
+        "expiration_date": null,
+        "nr_kind": "Submission Cover Letter",
+        "nr_header_rows": [
+          {
+            "label": "Insured",
+            "value": "Summit Ridge Construction Inc."
+          },
+          {
+            "label": "Policy No.",
+            "value": "CPP-6612078"
+          },
+          {
+            "label": "Producer",
+            "value": "Front Range Commercial Insurance"
+          },
+          {
+            "label": "Prepared For",
+            "value": "Travelers Indemnity Company"
+          },
+          {
+            "label": "Submission Date",
+            "value": "12/15/2025"
+          }
+        ],
+        "nr_columns": [
+          "Section",
+          "Description",
+          "Status",
+          "Notes"
+        ],
+        "nr_rows": [
+          {
+            "cells": [
+              "Account Overview",
+              "Commercial general contractor (ground-up) submission",
+              "Pending review",
+              "New business package assembled for placement and certificate issuance"
+            ]
+          },
+          {
+            "cells": [
+              "Requested Coverage",
+              "CGL / Auto / Umbrella / Workers Compensation",
+              "Quoted",
+              "Limit structure aligned to project and wrap-up requirements"
+            ]
+          },
+          {
+            "cells": [
+              "Documents Included",
+              "Application, supplemental schedules, certificate request",
+              "In process",
+              "Carrier wording and additional insured forms to be verified"
+            ]
+          }
+        ],
+        "unrelated_subtitle": "Broker submission packet for underwriting review",
+        "unrelated_body": "This packet summarizes the account details, requested limits, and document needs for Summit Ridge Construction Inc. It is intended to support underwriting review and certificate issuance, but it is not itself a declaration, invoice, endorsement, or certificate."
+      },
+      {
+        "title": "ACORD 25 Certificate of Liability Insurance - Summit Ridge Construction Inc.",
+        "certificate_holder": "Mile High Development Group LLC, 1700 Platte St, Denver, CO 80202",
+        "coverage_lines": [
+          {
+            "insurer_letter": "A",
+            "coverage_type": "Commercial General Liability",
+            "policy_number": "CPP-6612078",
+            "effective_date": "01/01/2026",
+            "expiration_date": "01/01/2027",
+            "addl_insured": true,
+            "subro_waived": true,
+            "limits": [
+              {
+                "coverage": "Each Occurrence",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "Damage to Rented Premises",
+                "limit": "$300,000"
+              },
+              {
+                "coverage": "Med Exp",
+                "limit": "$5,000"
+              },
+              {
+                "coverage": "Personal & Adv Injury",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "General Aggregate",
+                "limit": "$2,000,000"
+              },
+              {
+                "coverage": "Products-Comp/Op Agg",
+                "limit": "$2,000,000"
+              }
+            ],
+            "premium": null
+          },
+          {
+            "insurer_letter": "C",
+            "coverage_type": "Automobile Liability",
+            "policy_number": "CPP-6612078",
+            "effective_date": "01/01/2026",
+            "expiration_date": "01/01/2027",
+            "addl_insured": true,
+            "subro_waived": false,
+            "limits": [
+              {
+                "coverage": "Combined Single Limit",
+                "limit": "$1,000,000"
+              }
+            ],
+            "premium": null
+          },
+          {
+            "insurer_letter": "B",
+            "coverage_type": "Umbrella Liability",
+            "policy_number": "CPP-6612078",
+            "effective_date": "01/01/2026",
+            "expiration_date": "01/01/2027",
+            "addl_insured": true,
+            "subro_waived": false,
+            "limits": [
+              {
+                "coverage": "Each Occurrence",
+                "limit": "$5,000,000"
+              },
+              {
+                "coverage": "General Aggregate",
+                "limit": "$5,000,000"
+              }
+            ],
+            "premium": null
+          },
+          {
+            "insurer_letter": "F",
+            "coverage_type": "Workers Compensation",
+            "policy_number": "CPP-6612078",
+            "effective_date": "01/01/2026",
+            "expiration_date": "01/01/2027",
+            "addl_insured": false,
+            "subro_waived": true,
+            "limits": [
+              {
+                "coverage": "E.L. Each Accident",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "E.L. Disease-Ea Employee",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "E.L. Disease-Policy Limit",
+                "limit": "$1,000,000"
+              }
+            ],
+            "premium": null
+          }
+        ],
+        "description_of_operations": "Mile High Development Group LLC is included as additional insured with respect to ongoing and completed operations where required by written contract, subject to CG 20 10 04 13 and CG 20 37 04 13, and coverage is primary and non-contributory where applicable. Waiver of subrogation applies where required by written contract per CG 24 04 05 09 and WC 00 03 13.",
+        "authorized_representative": "Lisa Moreno, Authorized Representative",
+        "certificate_number": "COI-2026-0115",
+        "revision_number": "0",
+        "invoice_number": null,
+        "invoice_date": null,
+        "account_number": null,
+        "line_items": null,
+        "subtotal": null,
+        "taxes": null,
+        "fees": null,
+        "prior_balance": null,
+        "amount_due": null,
+        "billing_period": null,
+        "due_date": null,
+        "payment_methods": null,
+        "remit_to": null,
+        "coverage_parts": null,
+        "forms_schedule": null,
+        "premium_summary": null,
+        "countersignature": null,
+        "countersignature_date": null,
+        "form_number": "ACORD 25 (2016/03)",
+        "endorsement_title": null,
+        "endorsement_number": null,
+        "schedule_rows": null,
+        "provisions": null,
+        "additional_premium": null,
+        "change_description": null,
+        "coverages": null,
+        "total_premium": null,
+        "effective_date": "01/01/2026",
+        "expiration_date": "01/01/2027",
+        "nr_kind": null,
+        "nr_header_rows": null,
+        "nr_columns": null,
+        "nr_rows": null,
+        "unrelated_subtitle": null,
+        "unrelated_body": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "case_id": "extra-013-mixed-claim_fnol",
+  "tier": "mixed",
+  "email": {
+    "email_type": "claim_fnol",
+    "email_type_hard": true,
+    "extraction": {
+      "named_insured": "Midwest AgriSupply Cooperative",
+      "policy_number": "FARM-1120934",
+      "requested_effective_date": null,
+      "requested_changes": "Report a new loss / open a claim.",
+      "contact_name": "Roger Halvorsen",
+      "contact_phone": "(515) 555-0182"
+    }
+  },
+  "attachments": [
+    {
+      "filename": "scan4582.pdf",
+      "render_format": "pdf",
+      "n_pages": 2,
+      "documents": [
+        {
+          "index": 0,
+          "doc_type": "insurance endorsement",
+          "page_start": 0,
+          "page_end": 0,
+          "extraction": {
+            "named_insured": "Midwest AgriSupply Cooperative",
+            "policy_number": "FARM-1120934",
+            "change_description": "Adds newly acquired farm equipment to the Equipment Floater schedule effective 01/01/20026.",
+            "effective_date": "2026-01-01"
+          }
+        },
+        {
+          "index": 1,
+          "doc_type": "unrelated or unclear document",
+          "page_start": 1,
+          "page_end": 1,
+          "extraction": null
+        }
+      ],
+      "boundary_page_offsets": [
+        1
+      ],
+      "n_documents": 2,
+      "expected_segment_types": [
+        "insurance endorsement"
+      ],
+      "expected_collapse": false,
+      "expected_scanned": false,
+      "expected_interrupt": true
+    }
+  ]
+}

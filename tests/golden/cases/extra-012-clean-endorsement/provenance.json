@@ -1,0 +1,167 @@
+{
+  "case_id": "extra-012-clean-endorsement",
+  "tier": "clean",
+  "seed": 100012,
+  "email_type": "endorsement",
+  "attachments_mode": "on",
+  "max_docs_per_attachment": 2,
+  "max_attachments": 3,
+  "force_format": null,
+  "persona_index": 2,
+  "content_source": "llm",
+  "noise_manifest": null,
+  "raw_scenario": {
+    "shared": {
+      "named_insured": "Summit Ridge Construction Inc.",
+      "policy_number": "CPP-6612078",
+      "insured_address": "9400 E Arapahoe Rd, Centennial, CO 80112",
+      "contact_name": "Derek Olsson",
+      "contact_email": "dolsson@summitridgegc.com",
+      "contact_phone": "(303) 555-0188",
+      "carrier_name": "Travelers Indemnity Company",
+      "effective_date": "2026-01-15",
+      "expiration_date": "2027-01-15",
+      "coverage_limits": [
+        {
+          "coverage": "General Aggregate",
+          "limit": "$2,000,000"
+        },
+        {
+          "coverage": "Products-Completed Operations Aggregate",
+          "limit": "$2,000,000"
+        },
+        {
+          "coverage": "Personal and Advertising Injury",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Each Occurrence",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Damage to Premises Rented to You",
+          "limit": "$300,000"
+        }
+      ],
+      "total_premium": "$18,450",
+      "producer": {
+        "agency": "Front Range Commercial Insurance",
+        "address": "1515 W 64th Ave, Suite 250, Denver, CO 80221",
+        "contact_name": "Megan Hart, CIC",
+        "phone": "(303) 555-4410",
+        "fax": "(303) 555-4411",
+        "email": "newbusiness@frontrangeins.com"
+      },
+      "insurers": [
+        {
+          "letter": "A",
+          "name": "Travelers Indemnity Company",
+          "naic": "25658"
+        },
+        {
+          "letter": "B",
+          "name": "The Travelers Indemnity Company of America",
+          "naic": "25666"
+        },
+        {
+          "letter": "C",
+          "name": "Travelers Property Casualty Company of America",
+          "naic": "25674"
+        },
+        {
+          "letter": "D",
+          "name": "Travelers Casualty and Surety Company",
+          "naic": "19038"
+        },
+        {
+          "letter": "E",
+          "name": "Travelers Personal Insurance Company",
+          "naic": "25682"
+        },
+        {
+          "letter": "F",
+          "name": "Travelers Casualty Company of Connecticut",
+          "naic": "29696"
+        }
+      ],
+      "business_description": "Commercial general contractor (ground-up)",
+      "entity_type": "Corporation",
+      "fein": "84-2176395",
+      "naic_carrier": "25658"
+    },
+    "email": {
+      "subject": "Summit Ridge Construction Inc. | Policy CPP-6612078 | Mid-Term Endorsement Request Effective 01/15/2026",
+      "body": "Good morning,\n\nPlease process a mid-term endorsement for Summit Ridge Construction Inc. on policy CPP-6612078, effective 01/15/2026.\n\nRequested change: add the following scheduled vehicle to the policy:\n2025 Ford F-250 Super Duty, VIN 1FT8W2BT8SEC12345, used in construction operations and jobsite deliveries.\n\nPlease issue the endorsement and advise if any additional information is needed.\n\nThank you,\nDerek Olsson\nSummit Ridge Construction Inc.",
+      "sender": "Derek Olsson <dolsson@summitridgegc.com>",
+      "recipient": "Front Range Commercial Insurance <newbusiness@frontrangeins.com>"
+    },
+    "documents": [
+      {
+        "title": "Commercial Package Policy Endorsement",
+        "certificate_holder": null,
+        "coverage_lines": null,
+        "description_of_operations": null,
+        "authorized_representative": null,
+        "certificate_number": null,
+        "revision_number": null,
+        "invoice_number": null,
+        "invoice_date": null,
+        "account_number": null,
+        "line_items": null,
+        "subtotal": null,
+        "taxes": null,
+        "fees": null,
+        "prior_balance": null,
+        "amount_due": null,
+        "billing_period": null,
+        "due_date": null,
+        "payment_methods": null,
+        "remit_to": null,
+        "coverage_parts": null,
+        "forms_schedule": null,
+        "premium_summary": null,
+        "countersignature": null,
+        "countersignature_date": null,
+        "form_number": "CG 99 01 04 13",
+        "endorsement_title": "Scheduled Autos Endorsement",
+        "endorsement_number": "CG 99 01 04 13",
+        "schedule_rows": [
+          {
+            "label": "Named Insured",
+            "value": "Summit Ridge Construction Inc."
+          },
+          {
+            "label": "Policy Number",
+            "value": "CPP-6612078"
+          },
+          {
+            "label": "Change Effective Date",
+            "value": "01/15/2026"
+          },
+          {
+            "label": "Addition",
+            "value": "2025 Ford F-250 Super Duty; VIN 1FT8W2BT8SEC12345; use: construction operations and jobsite deliveries"
+          }
+        ],
+        "provisions": [
+          "The Schedule of Autos is amended to include the following newly acquired and/or scheduled auto as of the effective date shown above: 2025 Ford F-250 Super Duty, VIN 1FT8W2BT8SEC12345.",
+          "Item 4. Liability Coverage, Item 5. Medical Payments Coverage, and Item 6. Physical Damage Coverage are amended to apply to the added auto subject to the terms, conditions, and exclusions of the policy and any applicable state law.",
+          "Premium for this endorsement is based on the additional exposure shown in the schedule and is subject to audit, adjustment, and the policy's rating rules.",
+          "All other terms and conditions of this policy remain unchanged."
+        ],
+        "additional_premium": "$245",
+        "change_description": "Adds one scheduled company vehicle to the active policy effective 01/15/2026.",
+        "coverages": null,
+        "total_premium": null,
+        "effective_date": "01/15/2026",
+        "expiration_date": null,
+        "nr_kind": null,
+        "nr_header_rows": null,
+        "nr_columns": null,
+        "nr_rows": null,
+        "unrelated_subtitle": null,
+        "unrelated_body": null
+      }
+    ]
+  }
+}

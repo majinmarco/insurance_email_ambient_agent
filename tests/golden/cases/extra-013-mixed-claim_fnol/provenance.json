@@ -1,0 +1,342 @@
+{
+  "case_id": "extra-013-mixed-claim_fnol",
+  "tier": "mixed",
+  "seed": 100013,
+  "email_type": "claim_fnol",
+  "attachments_mode": "on",
+  "max_docs_per_attachment": 2,
+  "max_attachments": 3,
+  "force_format": null,
+  "persona_index": 9,
+  "content_source": "llm",
+  "noise_manifest": {
+    "email": {
+      "persona_index": 9,
+      "thread": false,
+      "signature": false,
+      "subject_style": null,
+      "multi_recipient": false,
+      "body_only": false,
+      "inconsistency": false,
+      "date_received": "2026-07-11T08:13:00+00:00"
+    },
+    "attachments": [
+      {
+        "filename": "scan4582.pdf"
+      }
+    ],
+    "docs": [
+      {
+        "delimiter_mode": "hash",
+        "layout_variant": 1,
+        "watermark": null,
+        "content_noise": true,
+        "content_noise_level": 0.15,
+        "is_scanned": false,
+        "render_format": "pdf"
+      },
+      {
+        "delimiter_mode": "hash",
+        "layout_variant": 0,
+        "watermark": null,
+        "content_noise": false,
+        "content_noise_level": 0.15,
+        "is_scanned": false,
+        "render_format": "pdf"
+      }
+    ],
+    "expected": {
+      "email_type_hard": true,
+      "per_attachment_collapse": [
+        false
+      ],
+      "per_attachment_scanned": [
+        false
+      ],
+      "per_attachment_expect_interrupt": [
+        true
+      ]
+    }
+  },
+  "raw_scenario": {
+    "shared": {
+      "named_insured": "Midwest AgriSupply Cooperative",
+      "policy_number": "FARM-1120934",
+      "insured_address": "1750 NE Broadway Ave, Des Moines, IA 50313",
+      "contact_name": "Roger Halvorsen",
+      "contact_email": "rhalvorsen@midwestagri.coop",
+      "contact_phone": "(515) 555-0182",
+      "carrier_name": "Nationwide Agribusiness",
+      "effective_date": "2026-01-01",
+      "expiration_date": "2027-01-01",
+      "coverage_limits": [
+        {
+          "coverage": "Commercial General Liability Each Occurrence",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Commercial General Liability General Aggregate",
+          "limit": "$2,000,000"
+        },
+        {
+          "coverage": "Business Personal Property Limit",
+          "limit": "$3,500,000"
+        },
+        {
+          "coverage": "Commercial Umbrella Liability Each Occurrence",
+          "limit": "$5,000,000"
+        },
+        {
+          "coverage": "Commercial Umbrella Liability Aggregate",
+          "limit": "$5,000,000"
+        },
+        {
+          "coverage": "Commercial Auto Liability Combined Single Limit",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Workers Compensation Employers Liability Each Accident",
+          "limit": "$1,000,000"
+        }
+      ],
+      "total_premium": "$48,760",
+      "producer": {
+        "agency": "Prairie States Insurance Cooperative",
+        "address": "2201 Grand Ave, Suite 400, Des Moines, IA 50312",
+        "contact_name": "Megan Laird",
+        "phone": "(515) 555-0148",
+        "fax": "(515) 555-0199",
+        "email": "commercial@prairiestatesins.com"
+      },
+      "insurers": [
+        {
+          "letter": "A",
+          "name": "Nationwide Agribusiness Insurance Company",
+          "naic": "23779"
+        },
+        {
+          "letter": "B",
+          "name": "Nationwide Mutual Insurance Company",
+          "naic": "23787"
+        },
+        {
+          "letter": "C",
+          "name": "Allied Property and Casualty Insurance Company",
+          "naic": "42579"
+        },
+        {
+          "letter": "D",
+          "name": "Nationwide Assurance Company",
+          "naic": "30160"
+        },
+        {
+          "letter": "E",
+          "name": "Farmland Mutual Insurance Company",
+          "naic": "13978"
+        },
+        {
+          "letter": "F",
+          "name": "Columbia Insurance Company",
+          "naic": "31127"
+        }
+      ],
+      "business_description": "Farm supply, grain handling, and agronomy services",
+      "entity_type": "Cooperative",
+      "fein": "42-1863047",
+      "naic_carrier": "23779"
+    },
+    "email": {
+      "subject": "FNOL Notice - Midwest AgriSupply Cooperative - Policy FARM-1120934",
+      "body": "Good morning,\n\nPlease accept this as a first notice of loss for Midwest AgriSupply Cooperative under policy FARM-1120934 with Nationwide Agribusiness.\n\nThe insured reported a new incident involving property damage at the Des Moines location. Please advise on claim assignment and any next steps, and confirm if you need photos, repair estimates, or a completed loss notice to support the file.\n\nIf there is a requested effective date for claim handling, please use the date of loss provided by the insured and open the file accordingly.\n\nThank you,\nPrairie States Insurance Cooperative",
+      "sender": "Megan Laird <commercial@prairiestatesins.com>",
+      "recipient": "claims@nationwide.com"
+    },
+    "documents": [
+      {
+        "title": "Policy Change Endorsement",
+        "certificate_holder": null,
+        "coverage_lines": null,
+        "description_of_operations": null,
+        "authorized_representative": null,
+        "certificate_number": null,
+        "revision_number": null,
+        "invoice_number": null,
+        "invoice_date": null,
+        "account_number": null,
+        "line_items": null,
+        "subtotal": null,
+        "taxes": null,
+        "fees": null,
+        "prior_balance": null,
+        "amount_due": null,
+        "billing_period": null,
+        "due_date": null,
+        "payment_methods": null,
+        "remit_to": null,
+        "coverage_parts": null,
+        "forms_schedule": null,
+        "premium_summary": null,
+        "countersignature": null,
+        "countersignature_date": null,
+        "form_number": "FARM 12 34 02 21",
+        "endorsement_title": "Equipmennt Floater Schedulee Change Endorsement",
+        "endorsement_number": "E-07",
+        "schedule_rows": [
+          {
+            "label": "Insured",
+            "value": "Midwest AgriSupply Cooperative"
+          },
+          {
+            "label": "Policy Number",
+            "value": "FARM-1120934"
+          },
+          {
+            "label": "Effective Date",
+            "value": "01/01/2026"
+          },
+          {
+            "label": "Added Item",
+            "value": "2024 John Deere 8370R Tractor, VIN/Serial No. 1RW8370RCRP123456"
+          },
+          {
+            "label": "Added Item",
+            "value": "2023 Brent 1196 Grain Cart, VIN/Serial No. B1196-23-77841"
+          }
+        ],
+        "provisions": [
+          "In consideration of the additional prmium shown below, the Equipment Floater Coverage Part is amended to include the scheduled property described above, subject to all terms, conditions, limitations, and exclusions of th p0licy.",
+          "The value of the schedued property shall be included in the applicable coverage limit nd subject to valuation at actual cash value unless otherwise endorsed.",
+          "Any deductible, coinsurance, or protective safeguard requiremen applicable to the covered property shall remain in full force and effect.",
+          "All other terms and conditions of this policy remain unchanged."
+        ],
+        "additional_premium": "$1,245",
+        "change_description": "Adds newly acquired farm equipment to the Equipment Floater schedule effective 01/01/20026.",
+        "coverages": null,
+        "total_premium": null,
+        "effective_date": "01/01/2026",
+        "expiration_date": null,
+        "nr_kind": null,
+        "nr_header_rows": null,
+        "nr_columns": null,
+        "nr_rows": null,
+        "unrelated_subtitle": null,
+        "unrelated_body": null
+      },
+      {
+        "title": "Loss Run Report - Midwest AgriSupply Cooperative",
+        "certificate_holder": null,
+        "coverage_lines": null,
+        "description_of_operations": null,
+        "authorized_representative": null,
+        "certificate_number": null,
+        "revision_number": null,
+        "invoice_number": null,
+        "invoice_date": null,
+        "account_number": null,
+        "line_items": null,
+        "subtotal": null,
+        "taxes": null,
+        "fees": null,
+        "prior_balance": null,
+        "amount_due": null,
+        "billing_period": null,
+        "due_date": null,
+        "payment_methods": null,
+        "remit_to": null,
+        "coverage_parts": null,
+        "forms_schedule": null,
+        "premium_summary": null,
+        "countersignature": null,
+        "countersignature_date": null,
+        "form_number": null,
+        "endorsement_title": null,
+        "endorsement_number": null,
+        "schedule_rows": null,
+        "provisions": null,
+        "additional_premium": null,
+        "change_description": null,
+        "coverages": null,
+        "total_premium": null,
+        "effective_date": null,
+        "expiration_date": null,
+        "nr_kind": "Loss Run Report",
+        "nr_header_rows": [
+          {
+            "label": "Insured",
+            "value": "Midwest AgriSupply Cooperative"
+          },
+          {
+            "label": "Policy No.",
+            "value": "FARM-1120934"
+          },
+          {
+            "label": "Carrier",
+            "value": "Nationwide Agribusiness"
+          },
+          {
+            "label": "Policy Term",
+            "value": "01/01/2026 to 01/01/2027"
+          },
+          {
+            "label": "Prepared By",
+            "value": "Prairie States Insurance Cooperative"
+          },
+          {
+            "label": "Valuation Date",
+            "value": "01/15/2026"
+          }
+        ],
+        "nr_columns": [
+          "Loss Date",
+          "Claim No.",
+          "Coverage",
+          "Description",
+          "Status",
+          "Paid",
+          "Reserve",
+          "Incurred"
+        ],
+        "nr_rows": [
+          {
+            "cells": [
+              "01/04/2026",
+              "NAI-CLM-260014",
+              "Property",
+              "Water damage from frozen line in shop area",
+              "Open",
+              "$4,200",
+              "$18,500",
+              "$22,700"
+            ]
+          },
+          {
+            "cells": [
+              "01/09/2026",
+              "NAI-CLM-260028",
+              "General Liability",
+              "Third-party slip and fall at agronomy counter",
+              "Open",
+              "$0",
+              "$7,500",
+              "$7,500"
+            ]
+          },
+          {
+            "cells": [
+              "12/18/2025",
+              "NAI-CLM-250191",
+              "Commercial Auto",
+              "Minor backing loss in yard near grain bins",
+              "Closed",
+              "$1,150",
+              "$0",
+              "$1,150"
+            ]
+          }
+        ],
+        "unrelated_subtitle": "Internal loss summary for underwriting and account review",
+        "unrelated_body": "This report reflects reported claims activity associated with Midwest AgriSupply Cooperative for the current policy term and prior term. It is provided for account review only and does not amend coverage, confirm insurance, or evidence placement."
+      }
+    ]
+  }
+}
