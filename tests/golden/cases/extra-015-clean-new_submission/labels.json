@@ -7,7 +7,7 @@
     "extraction": {
       "named_insured": "Pinnacle Staffing Solutions Inc.",
       "policy_number": null,
-      "requested_effective_date": "2026-01-15",
+      "requested_effective_date": "2026-08-01",
       "requested_changes": "Quote/bind a new commercial package policy.",
       "contact_name": "Danielle Foster",
       "contact_phone": "(404) 555-0163"
@@ -26,14 +26,14 @@
           "page_end": 0,
           "extraction": {
             "named_insured": "Pinnacle Staffing Solutions Inc.",
-            "policy_number": "PPC-457219-01",
+            "policy_number": "PNS-2478156-01",
             "coverages": {
-              "Commercial General Liability": "$7,850",
-              "Commercial Automobile Liability": "$2,940",
+              "Commercial General Liability": "$7,250",
+              "Business Auto Liability": "$4,600",
               "Umbrella Liability": "$3,150",
-              "Workers Compensation": "$4,200"
+              "Workers Compensation": "$2,100"
             },
-            "total_premium": 18940.0
+            "total_premium": 18740.0
           }
         }
       ],
@@ -58,14 +58,14 @@
           "page_end": 0,
           "extraction": {
             "named_insured": "Pinnacle Staffing Solutions Inc.",
-            "policy_number": "PPC-457219-01",
-            "certificate_holder": "Miller Office Park LLC, 4000 Lenox Rd NE, Suite 900, Atlanta, GA 30326",
-            "effective_date": "2026-01-15",
-            "expiration_date": "2027-01-15",
+            "policy_number": "PNS-2478156-01",
+            "certificate_holder": "Galleria Office Park LLC\n1200 Peachtree St NE, Suite 1800\nAtlanta, GA 30309",
+            "effective_date": "2026-08-01",
+            "expiration_date": "2027-08-01",
             "limits": {
               "Each Occurrence": "$1,000,000",
               "Damage to Rented Premises": "$300,000",
-              "Med Exp (Any one person)": "$5,000",
+              "Med Exp": "$5,000",
               "Personal & Adv Injury": "$1,000,000",
               "General Aggregate": "$2,000,000",
               "Products-Comp/Op Agg": "$2,000,000",

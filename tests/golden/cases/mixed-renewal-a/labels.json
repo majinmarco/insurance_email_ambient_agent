@@ -27,10 +27,10 @@
           "extraction": {
             "named_insured": "Summit Ridge Construction Inc.",
             "policy_number": "CPP-6612078",
-            "amount_due": 50844.0,
-            "billing_period": "08/01/2026 - 08/01/2027",
+            "amount_due": 18750.0,
+            "billing_period": "02/01/2026 - 02/01/2027",
             "policy_reference": "CPP-6612078",
-            "due_date": "2026-08-01"
+            "due_date": "2026-02-01"
           }
         },
         {
@@ -42,12 +42,12 @@
             "named_insured": "Summit Ridge Construction Inc.",
             "policy_number": "CPP-6612078",
             "coverages": {
-              "Commercial General Liability": "$28,400",
-              "Commercial Inland Marine": "$7,850",
-              "Commercial Automobile Liability": "$9,100",
-              "Umbrella Liability": "$3,400"
+              "Commercial General Liability": "$8,950",
+              "Commercial Property": "$4,600",
+              "Commercial Inland Marine": "$2,350",
+              "Commercial Umbrella Liability": "$2,850"
             },
-            "total_premium": 50844.0
+            "total_premium": 19485.0
           }
         }
       ],
@@ -83,10 +83,10 @@
           "extraction": {
             "named_insured": "Summit Ridge Construction Inc.",
             "policy_number": "CPP-6612078",
-            "amount_due": 50844.0,
-            "billing_period": "08/01/2026 - 08/01/2027",
+            "amount_due": 18750.0,
+            "billing_period": "02/01/2026 - 02/01/2027",
             "policy_reference": "CPP-6612078",
-            "due_date": "2026-08-15"
+            "due_date": "2026-02-01"
           }
         }
       ],

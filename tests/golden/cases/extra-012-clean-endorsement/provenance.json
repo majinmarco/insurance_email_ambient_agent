@@ -19,37 +19,41 @@
       "contact_email": "dolsson@summitridgegc.com",
       "contact_phone": "(303) 555-0188",
       "carrier_name": "Travelers Indemnity Company",
-      "effective_date": "2026-01-15",
-      "expiration_date": "2027-01-15",
+      "effective_date": "2026-02-01",
+      "expiration_date": "2027-02-01",
       "coverage_limits": [
         {
           "coverage": "General Aggregate",
           "limit": "$2,000,000"
         },
         {
-          "coverage": "Products-Completed Operations Aggregate",
-          "limit": "$2,000,000"
+          "coverage": "Each Occurrence",
+          "limit": "$1,000,000"
         },
         {
           "coverage": "Personal and Advertising Injury",
           "limit": "$1,000,000"
         },
         {
-          "coverage": "Each Occurrence",
-          "limit": "$1,000,000"
-        },
-        {
           "coverage": "Damage to Premises Rented to You",
           "limit": "$300,000"
+        },
+        {
+          "coverage": "Medical Expense Limit",
+          "limit": "$10,000"
+        },
+        {
+          "coverage": "Hired Auto Physical Damage",
+          "limit": "$50,000"
         }
       ],
       "total_premium": "$18,450",
       "producer": {
         "agency": "Front Range Commercial Insurance",
-        "address": "1515 W 64th Ave, Suite 250, Denver, CO 80221",
-        "contact_name": "Megan Hart, CIC",
-        "phone": "(303) 555-4410",
-        "fax": "(303) 555-4411",
+        "address": "1819 S. College Ave, Suite 200, Fort Collins, CO 80525",
+        "contact_name": "Megan Alvarez",
+        "phone": "(970) 555-0147",
+        "fax": "(970) 555-0148",
         "email": "newbusiness@frontrangeins.com"
       },
       "insurers": [
@@ -60,44 +64,44 @@
         },
         {
           "letter": "B",
-          "name": "The Travelers Indemnity Company of America",
-          "naic": "25666"
-        },
-        {
-          "letter": "C",
           "name": "Travelers Property Casualty Company of America",
           "naic": "25674"
         },
         {
+          "letter": "C",
+          "name": "The Travelers Indemnity Company of Connecticut",
+          "naic": "25682"
+        },
+        {
           "letter": "D",
           "name": "Travelers Casualty and Surety Company",
-          "naic": "19038"
+          "naic": "31194"
         },
         {
           "letter": "E",
           "name": "Travelers Personal Insurance Company",
-          "naic": "25682"
+          "naic": "36137"
         },
         {
           "letter": "F",
-          "name": "Travelers Casualty Company of Connecticut",
-          "naic": "29696"
+          "name": "The Charter Oak Fire Insurance Company",
+          "naic": "25615"
         }
       ],
       "business_description": "Commercial general contractor (ground-up)",
       "entity_type": "Corporation",
-      "fein": "84-2176395",
+      "fein": "84-2179641",
       "naic_carrier": "25658"
     },
     "email": {
-      "subject": "Summit Ridge Construction Inc. | Policy CPP-6612078 | Mid-Term Endorsement Request Effective 01/15/2026",
-      "body": "Good morning,\n\nPlease process a mid-term endorsement for Summit Ridge Construction Inc. on policy CPP-6612078, effective 01/15/2026.\n\nRequested change: add the following scheduled vehicle to the policy:\n2025 Ford F-250 Super Duty, VIN 1FT8W2BT8SEC12345, used in construction operations and jobsite deliveries.\n\nPlease issue the endorsement and advise if any additional information is needed.\n\nThank you,\nDerek Olsson\nSummit Ridge Construction Inc.",
+      "subject": "Summit Ridge Construction Inc. \u2014 Mid-term policy change request for CPP-6612078",
+      "body": "Good morning,\n\nPlease process an endorsement on behalf of Summit Ridge Construction Inc. under policy CPP-6612078. We are requesting a mid-term change effective 02/01/2026.\n\nRequested change: add a service vehicle to the commercial auto exposure and update the policy to reflect the revised operating schedule.\n\nPlease issue the endorsement and confirm once completed. If you need any supporting documentation, let me know.\n\nThank you,\nDerek Olsson",
       "sender": "Derek Olsson <dolsson@summitridgegc.com>",
-      "recipient": "Front Range Commercial Insurance <newbusiness@frontrangeins.com>"
+      "recipient": "newbusiness@frontrangeins.com"
     },
     "documents": [
       {
-        "title": "Commercial Package Policy Endorsement",
+        "title": "Policy Change Endorsement",
         "certificate_holder": null,
         "coverage_lines": null,
         "description_of_operations": null,
@@ -122,9 +126,9 @@
         "premium_summary": null,
         "countersignature": null,
         "countersignature_date": null,
-        "form_number": "CG 99 01 04 13",
-        "endorsement_title": "Scheduled Autos Endorsement",
-        "endorsement_number": "CG 99 01 04 13",
+        "form_number": "CA 02 46 11 20",
+        "endorsement_title": "Commercial Automobile Coverage Part \u2014 Change Endorsement",
+        "endorsement_number": "Endorsement No. 4",
         "schedule_rows": [
           {
             "label": "Named Insured",
@@ -135,25 +139,33 @@
             "value": "CPP-6612078"
           },
           {
-            "label": "Change Effective Date",
-            "value": "01/15/2026"
+            "label": "Effective Date",
+            "value": "02/01/2026"
           },
           {
-            "label": "Addition",
-            "value": "2025 Ford F-250 Super Duty; VIN 1FT8W2BT8SEC12345; use: construction operations and jobsite deliveries"
+            "label": "Change Item",
+            "value": "Add Vehicle: 2024 Ford F-150 XL, VIN 1FTFW1E50RKD12345, Garaged at 9400 E Arapahoe Rd, Centennial, CO 80112"
+          },
+          {
+            "label": "Coverage",
+            "value": "Business Auto Liability and Physical Damage"
+          },
+          {
+            "label": "Symbol",
+            "value": "Symbol 7 \u2014 Specifically Described Autos"
           }
         ],
         "provisions": [
-          "The Schedule of Autos is amended to include the following newly acquired and/or scheduled auto as of the effective date shown above: 2025 Ford F-250 Super Duty, VIN 1FT8W2BT8SEC12345.",
-          "Item 4. Liability Coverage, Item 5. Medical Payments Coverage, and Item 6. Physical Damage Coverage are amended to apply to the added auto subject to the terms, conditions, and exclusions of the policy and any applicable state law.",
-          "Premium for this endorsement is based on the additional exposure shown in the schedule and is subject to audit, adjustment, and the policy's rating rules.",
+          "Paragraph B.7. is amended to include the vehicle described in the Schedule above as a covered auto for purposes of Business Auto Liability when used in the course of the named insured's operations.",
+          "The Autos Covered By This Policy provision is amended to apply Physical Damage coverage to the specifically described auto shown in the Schedule above, subject to the terms, conditions, deductibles, and valuation basis applicable to such coverage.",
+          "The Schedule of Covered Autos You Own is amended to reflect the addition of the above vehicle effective on the endorsement date shown, and any premium adjustment required by this change shall be charged or returned in accordance with company rating rules.",
           "All other terms and conditions of this policy remain unchanged."
         ],
-        "additional_premium": "$245",
-        "change_description": "Adds one scheduled company vehicle to the active policy effective 01/15/2026.",
+        "additional_premium": "$186",
+        "change_description": "Adds one specifically described service vehicle to the policy effective 02/01/2026.",
         "coverages": null,
         "total_premium": null,
-        "effective_date": "01/15/2026",
+        "effective_date": "02/01/2026",
         "expiration_date": null,
         "nr_kind": null,
         "nr_header_rows": null,

@@ -28,13 +28,12 @@
             "named_insured": "Golden Gate Hospitality Group LLC",
             "policy_number": "CPP-8830471",
             "coverages": {
-              "Commercial Property": "$28,750",
-              "Commercial General Liability": "$19,400",
-              "Commercial Inland Marine": "$4,100",
-              "Workers Compensation": "$21,350",
-              "Umbrella Liability": "$10,250"
+              "Commercial Property": "$19,850",
+              "Commercial General Liability": "$8,425",
+              "Business Auto Liability": "$4,960",
+              "Umbrella Liability": "$7,990"
             },
-            "total_premium": 84650.0
+            "total_premium": 44275.0
           }
         }
       ],

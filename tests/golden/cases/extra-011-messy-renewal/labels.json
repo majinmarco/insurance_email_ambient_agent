@@ -27,10 +27,10 @@
           "extraction": {
             "named_insured": "Midwest AgriSupply Cooperative",
             "policy_number": "FARM-1120934",
-            "amount_due": 42860.0,
-            "billing_period": "01/01/2027 - 01/01/2028",
+            "amount_due": 48760.0,
+            "billing_period": "02/01/2027 - 02/01/2028",
             "policy_reference": "FARM-1120934",
-            "due_date": "2027-01-01"
+            "due_date": "2027-02-01"
           }
         }
       ],
@@ -56,17 +56,18 @@
           "extraction": {
             "named_insured": "Midwest AgriSupply Cooperative",
             "policy_number": "FARM-1120934",
-            "certificate_holder": "Prairie Milling LLC, 4100 Southridge Blvd, Ankeny, IA 50021",
-            "effective_date": "2026-01-01",
-            "expiration_date": "2027-01-01",
+            "certificate_holder": "Des Moines Grain Terminal, LLC, 901 SE Market St, Des Moines, IA 50315",
+            "effective_date": "2027-02-01",
+            "expiration_date": "2028-02-01",
             "limits": {
               "Each Occurrence": "$1,000,000",
               "Damage to Rented Premises": "$300,000",
-              "Med Exp": "$10,000",
+              "Med Exp": "$5,000",
               "Personal & Adv Injury": "$1,000,000",
               "General Aggregate": "$2,000,000",
               "Products-Comp/Op Agg": "$2,000,000",
               "Combined Single Limit": "$1,000,000",
+              "Aggregate": "$5,000,000",
               "E.L. Each Accident": "$1,000,000",
               "E.L. Disease-Ea Employee": "$1,000,000",
               "E.L. Disease-Policy Limit": "$1,000,000"
@@ -81,8 +82,8 @@
           "extraction": {
             "named_insured": "Midwest AgriSupply Cooperative",
             "policy_number": "FARM-1120934",
-            "amount_due": 42860.0,
-            "billing_period": "01/01/2027 - 01/01/2028",
+            "amount_due": 48760.0,
+            "billing_period": "02/01/2027 - 02/01/2028",
             "policy_reference": "FARM-1120934",
             "due_date": "2027-02-01"
           }
@@ -95,8 +96,8 @@
           "extraction": {
             "named_insured": "Midwest AgriSupply Cooperative",
             "policy_number": "FARM-1120934",
-            "change_description": "Adds a 2026 Ford F-3s0 Super Duty Crew Cab to the Business Auto schedule ffective 01/01/2027.",
-            "effective_date": "2027-01-01"
+            "change_description": "Adds Des Moies Grain Terminal, LLC as a scheduled additional insured for ongoing opraions at the specifid location.",
+            "effective_date": "2027-02-01"
           }
         }
       ],

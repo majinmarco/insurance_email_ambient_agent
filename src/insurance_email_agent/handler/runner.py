@@ -3,6 +3,7 @@ Executed by poller/webhook, calls graph
 """
 
 import os
+import mlflow
 from typing import Any
 
 from insurance_email_agent.schemas import Email, HumanResponse, EmailCategory, DocumentCategory
@@ -127,7 +128,7 @@ def _print_updates(chunk: dict) -> None:
         print(f"    · {node}: {keys}")
 
 
-def _drive_local(email: Email, response: HumanResponse, stream: bool) -> Any:
+def _drive_local(email: Email, response: HumanResponse, stream: bool, auto_resume: bool = True) -> Any:
     config = run_config(email)
     if not stream:
         result = graph.invoke({"email": email}, config=config)
@@ -157,14 +158,14 @@ def _drive_local(email: Email, response: HumanResponse, stream: bool) -> Any:
                 final = chunk
         if not pending:
             pending = {_interrupt_id(it): it for it in _pending_interrupts(final)}
-        if not pending or rounds >= MAX_RESUME_ROUNDS:
+        if not pending or not auto_resume or rounds >= MAX_RESUME_ROUNDS:
             return final
         rounds += 1
         print(f"    ↻ resolving {len(pending)} interrupt(s) (round {rounds})")
         stream_input = Command(resume={k: [response] for k in pending})
 
 
-def _drive_remote(email: Email, response: HumanResponse, stream: bool) -> Any:
+def _drive_remote(email: Email, response: HumanResponse, stream: bool, auto_resume: bool = True) -> Any:
     tid = email.get("id", str(uuid4()))
     client = make_client(URL)
     client.threads.create(thread_id=tid)
@@ -175,7 +176,7 @@ def _drive_remote(email: Email, response: HumanResponse, stream: bool) -> Any:
             tid, ASSISTANT_ID, input={"email": email}, raise_error=True
         )
         rounds = 0
-        while (pending := _pending_interrupts(result)) and rounds < MAX_RESUME_ROUNDS:
+        while auto_resume and (pending := _pending_interrupts(result)) and rounds < MAX_RESUME_ROUNDS:
             rounds += 1
             print(f"    ↻ resolving {len(pending)} interrupt(s) (round {rounds})")
             result = client.runs.wait(
@@ -207,7 +208,7 @@ def _drive_remote(email: Email, response: HumanResponse, stream: bool) -> Any:
         state = final or client.threads.get_state(tid).get("values")
         if not pending:
             pending = {_interrupt_id(it): it for it in _pending_interrupts(state)}
-        if not pending or rounds >= MAX_RESUME_ROUNDS:
+        if not pending or not auto_resume or rounds >= MAX_RESUME_ROUNDS:
             return state
         rounds += 1
         print(f"    ↻ resolving {len(pending)} interrupt(s) (round {rounds})")
@@ -220,24 +221,34 @@ def run(
     local: bool = True,
     stream: bool = False,
     review_response: HumanResponse | None = None,
+    auto_resume: bool = True,
 ) -> dict[str, Any]:
+
+    mlflow.langchain.autolog()
+
+    mlflow.set_tracking_uri(os.getenv("MLFLOW_TRACKING_URI", "http://localhost:5000"))
+    mlflow.set_experiment("insurance_email_agent")
+
     response = review_response or default_review_response()
     try:
         state = (
-            _drive_local(email, response, stream)
+            _drive_local(email, response, stream, auto_resume)
             if local
-            else _drive_remote(email, response, stream)
+            else _drive_remote(email, response, stream, auto_resume)
         )
         result = shape_results(state)
     except Exception as exc:
         print("Invocation failed!")
+        mlflow.log_metric("error", 1)
         sink.persist_exception([{"email_id": email.get("id"), "error": repr(exc)}])
         raise
 
     # Route needs-review outcomes to the exceptions/review queue; clean results
     # go to the normal data sink.
     if _needs_review(result):
+        mlflow.log_metric("needs_review", 1)
         sink.persist_exception([result])
     else:
+        mlflow.log_metric("clean", 1)
         sink.persist([result])
     return result

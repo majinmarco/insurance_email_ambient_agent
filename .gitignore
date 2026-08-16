@@ -16,3 +16,6 @@ __pycache__/
 # fixtures; tasks.json duplicates fixture bytes and can be regenerated on demand).
 tests/golden/label_studio/tasks.json
 tests/golden/label_studio/_localfiles/
+
+# mlflow artifacts
+mlartifacts

@@ -27,10 +27,10 @@
           "extraction": {
             "named_insured": "Evergreen Home Health Services LLC",
             "policy_number": "HMP-3320815",
-            "amount_due": 18475.0,
-            "billing_period": "09/01/2025 to 09/01/2026",
+            "amount_due": 18950.0,
+            "billing_period": "01/15/2027 - 01/15/2028",
             "policy_reference": "HMP-3320815",
-            "due_date": "2025-09-01"
+            "due_date": "2027-01-15"
           }
         },
         {
@@ -42,12 +42,12 @@
             "named_insured": "Evergreen Home Health Services LLC",
             "policy_number": "HMP-3320815",
             "coverages": {
-              "Commercial General Liability": "$6,200",
-              "Professional Liability": "$7,850",
-              "Business Personal Property": "$1,425",
-              "Commercial Umbrella Liability": "$2,800"
+              "Commercial General Liability": "$5,150",
+              "Professional Liability": "$6,400",
+              "Business Personal Property": "$1,850",
+              "Commercial Umbrella Liability": "$3,250"
             },
-            "total_premium": 18475.0
+            "total_premium": 17613.0
           }
         }
       ],
@@ -76,10 +76,10 @@
           "extraction": {
             "named_insured": "Evergreen Home Health Services LLC",
             "policy_number": "HMP-3320815",
-            "amount_due": 18505.0,
-            "billing_period": "10/01/2025 to 09/01/2026",
+            "amount_due": 18950.0,
+            "billing_period": "01/15/2027 - 01/15/2028",
             "policy_reference": "HMP-3320815",
-            "due_date": "2025-09-15"
+            "due_date": "2027-02-14"
           }
         }
       ],
@@ -105,10 +105,10 @@
           "extraction": {
             "named_insured": "Evergreen Home Health Services LLC",
             "policy_number": "HMP-3320815",
-            "amount_due": 18515.0,
-            "billing_period": "09/01/2025 to 09/01/2026",
+            "amount_due": 18950.0,
+            "billing_period": "01/15/2027 - 01/15/2028",
             "policy_reference": "HMP-3320815",
-            "due_date": "2025-09-01"
+            "due_date": "2027-03-15"
           }
         }
       ],

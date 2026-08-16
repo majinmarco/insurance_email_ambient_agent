@@ -28,12 +28,12 @@
             "named_insured": "Blue Harbor Restaurant Group LLC",
             "policy_number": "BOP-7789341",
             "coverages": {
-              "Commercial General Liability": "$7,250",
-              "Business Personal Property": "$4,180",
-              "Business Income and Extra Expense": "$2,760",
-              "Liquor Liability": "$2,950"
+              "Commercial General Liability": "$8,200",
+              "Business Personal Property": "$4,650",
+              "Business Income and Extra Expense": "$3,125",
+              "Equipment Breakdown": "$1,150"
             },
-            "total_premium": 18940.0
+            "total_premium": 17610.0
           }
         },
         {
@@ -44,10 +44,10 @@
           "extraction": {
             "named_insured": "Blue Harbor Restaurant Group LLC",
             "policy_number": "BOP-7789341",
-            "amount_due": 19125.0,
-            "billing_period": "02/01/2026 - 02/01/2027",
+            "amount_due": 18095.0,
+            "billing_period": "01/01/2026 - 01/01/2027",
             "policy_reference": "BOP-7789341",
-            "due_date": "2026-02-01"
+            "due_date": "2026-01-01"
           }
         }
       ],

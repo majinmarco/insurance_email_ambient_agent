@@ -19,8 +19,8 @@
       "contact_email": "rhalvorsen@midwestagri.coop",
       "contact_phone": "(515) 555-0182",
       "carrier_name": "Nationwide Agribusiness",
-      "effective_date": "2026-01-01",
-      "expiration_date": "2027-01-01",
+      "effective_date": "2026-02-01",
+      "expiration_date": "2027-02-01",
       "coverage_limits": [
         {
           "coverage": "Commercial General Liability",
@@ -42,17 +42,17 @@
       "total_premium": "$48,750",
       "producer": {
         "agency": "Prairie States Insurance Cooperative",
-        "address": "1200 Grand Ave, Suite 210, Des Moines, IA 50309",
-        "contact_name": "Megan L. Sutter, CIC",
-        "phone": "(515) 555-0440",
-        "fax": "(515) 555-0441",
+        "address": "4201 University Ave, Des Moines, IA 50311",
+        "contact_name": "Megan Whitaker",
+        "phone": "(515) 555-4028",
+        "fax": "(515) 555-4031",
         "email": "commercial@prairiestatesins.com"
       },
       "insurers": [
         {
           "letter": "A",
           "name": "Nationwide Agribusiness Insurance Company",
-          "naic": "25453"
+          "naic": "28223"
         },
         {
           "letter": "B",
@@ -61,34 +61,34 @@
         },
         {
           "letter": "C",
-          "name": "Nationwide Property and Casualty Insurance Company",
-          "naic": "37877"
+          "name": "Nationwide Assurance Company",
+          "naic": "26093"
         },
         {
           "letter": "D",
-          "name": "Nationwide General Insurance Company",
-          "naic": "25477"
+          "name": "Allied Property and Casualty Insurance Company",
+          "naic": "42579"
         },
         {
           "letter": "E",
-          "name": "Nationwide Assurance Company",
-          "naic": "42110"
+          "name": "Columbia Mutual Insurance Company",
+          "naic": "12536"
         },
         {
           "letter": "F",
-          "name": "Farmers Mutual Hail Insurance Company of Iowa",
-          "naic": "13810"
+          "name": "Nationwide General Insurance Company",
+          "naic": "23760"
         }
       ],
       "business_description": "Farm supply, grain handling, and agronomy services",
       "entity_type": "Cooperative",
-      "fein": "42-1864073",
-      "naic_carrier": "25453"
+      "fein": "42-3176098",
+      "naic_carrier": "28223"
     },
     "email": {
-      "subject": "Review requested: Midwest AgriSupply Cooperative policy paperwork for FARM-1120934",
-      "body": "Hello Roger,\n\nAttached are the current policy documents for Midwest AgriSupply Cooperative, policy number FARM-1120934, effective 01/01/2026 to 01/01/2027. Please review the certificate wording and the invoice details when you have a moment. If you were expecting any requested effective date changes or additional insured wording, send them over and I\u2019ll compare against the policy file.\n\nThanks,\nMegan",
-      "sender": "Megan L. Sutter <commercial@prairiestatesins.com>",
+      "subject": "Needs review: Midwest AgriSupply Cooperative policy items and invoice questions",
+      "body": "Hi Roger,\n\nI\u2019m forwarding a few items related to Midwest AgriSupply Cooperative under policy FARM-1120934 for your review. The packet includes the certificate, invoice, and declarations for the upcoming policy term effective 02/01/2026. One of the attachments is a general account document that may need a closer look because it doesn\u2019t read like a standard compliance form.\n\nPlease confirm whether you want the certificate holder wording updated and whether the invoice should be processed against the current billing account.\n\nThanks,\nMegan",
+      "sender": "Megan Whitaker <commercial@prairiestatesins.com>",
       "recipient": "Roger Halvorsen <rhalvorsen@midwestagri.coop>"
     },
     "documents": [
@@ -100,8 +100,8 @@
             "insurer_letter": "A",
             "coverage_type": "Commercial General Liability",
             "policy_number": "FARM-1120934",
-            "effective_date": "01/01/2026",
-            "expiration_date": "01/01/2027",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
             "addl_insured": true,
             "subro_waived": true,
             "limits": [
@@ -133,13 +133,13 @@
             "premium": null
           },
           {
-            "insurer_letter": "C",
+            "insurer_letter": "B",
             "coverage_type": "Automobile Liability",
             "policy_number": "FARM-1120934",
-            "effective_date": "01/01/2026",
-            "expiration_date": "01/01/2027",
-            "addl_insured": true,
-            "subro_waived": true,
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": false,
+            "subro_waived": false,
             "limits": [
               {
                 "coverage": "Combined Single Limit",
@@ -149,13 +149,13 @@
             "premium": null
           },
           {
-            "insurer_letter": "B",
+            "insurer_letter": "C",
             "coverage_type": "Umbrella Liability",
             "policy_number": "FARM-1120934",
-            "effective_date": "01/01/2026",
-            "expiration_date": "01/01/2027",
-            "addl_insured": true,
-            "subro_waived": true,
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": false,
+            "subro_waived": false,
             "limits": [
               {
                 "coverage": "Each Occurrence",
@@ -172,8 +172,8 @@
             "insurer_letter": "D",
             "coverage_type": "Workers Compensation",
             "policy_number": "FARM-1120934",
-            "effective_date": "01/01/2026",
-            "expiration_date": "01/01/2027",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
             "addl_insured": false,
             "subro_waived": true,
             "limits": [
@@ -193,9 +193,9 @@
             "premium": null
           }
         ],
-        "description_of_operations": "Midwest AgriSupply Cooperative, 1750 NE Broadway Ave, Des Moines, IA 50313. Additional insured status applies where required by written contract, subject to CG 20 10 04 13 and CG 20 37 04 13. Coverage is primary and non-contributory where required by written contract, subject to CG 20 01 04 13. Waiver of subrogation applies where required by written contract, subject to CG 24 04 05 09 and WC 00 03 13.",
-        "authorized_representative": "Megan L. Sutter, CIC",
-        "certificate_number": "COI-260104-7812",
+        "description_of_operations": "The certificate holder is named as additional insured with respect to Commercial General Liability as required by written contract. Coverage is primary and non-contributory where required by contract, and waiver of subrogation applies when provided by written contract, subject to policy terms and conditions. CG 20 10 04 13, CG 20 37 04 13, CG 24 04 05 09, and WC 00 03 13 may apply as scheduled or by endorsement.",
+        "authorized_representative": "Alicia Jensen, CIC",
+        "certificate_number": "COI-2026-01184",
         "revision_number": null,
         "invoice_number": null,
         "invoice_date": null,
@@ -234,47 +234,47 @@
         "unrelated_body": null
       },
       {
-        "title": "Premium Invoice No. INV-104882",
+        "title": "Premium Invoice No. 804771",
         "certificate_holder": null,
         "coverage_lines": null,
         "description_of_operations": null,
         "authorized_representative": null,
         "certificate_number": null,
         "revision_number": null,
-        "invoice_number": "INV-104882",
-        "invoice_date": "12/20/2025",
-        "account_number": "ACCT-1120934",
+        "invoice_number": "804771",
+        "invoice_date": "01/15/2026",
+        "account_number": "FARM-1120934",
         "line_items": [
           {
             "description": "Policy Premium",
-            "amount": "$47,500.00"
+            "amount": "$46,250.00"
           },
           {
             "description": "Terrorism (TRIA)",
-            "amount": "$85.00"
+            "amount": "$75.00"
           },
           {
-            "description": "State surplus lines tax and regulatory surcharge",
-            "amount": "$812.50"
+            "description": "State surplus lines tax / regulatory surcharge",
+            "amount": "$1,325.00"
           },
           {
             "description": "Broker Fee",
-            "amount": "$250.00"
+            "amount": "$950.00"
           },
           {
             "description": "Prior Balance",
-            "amount": "$102.50"
+            "amount": "$150.00"
           }
         ],
-        "subtotal": "$47,585.00",
-        "taxes": "$812.50",
-        "fees": "$250.00",
-        "prior_balance": "$102.50",
+        "subtotal": "$47,225.00",
+        "taxes": "$1,325.00",
+        "fees": "$1,025.00",
+        "prior_balance": "$150.00",
         "amount_due": "$48,750.00",
-        "billing_period": "01/01/2026 - 01/01/2027",
-        "due_date": "01/15/2026",
-        "payment_methods": "ACH, check, or bill pay through the agency portal",
-        "remit_to": "Prairie States Insurance Cooperative, Attn: Commercial Accounts, 1200 Grand Ave, Suite 210, Des Moines, IA 50309",
+        "billing_period": "02/01/2026 - 02/01/2027",
+        "due_date": "02/15/2026",
+        "payment_methods": "ACH, check, or wire transfer",
+        "remit_to": "Nationwide Agribusiness, P.O. Box 88056, Chicago, IL 60680-1056",
         "coverage_parts": null,
         "forms_schedule": null,
         "premium_summary": null,
@@ -299,7 +299,7 @@
         "unrelated_body": null
       },
       {
-        "title": "Commercial Insurance Application Reference Worksheet",
+        "title": "Loss Run Report for Policy FARM-1120934",
         "certificate_holder": null,
         "coverage_lines": null,
         "description_of_operations": null,
@@ -335,7 +335,7 @@
         "total_premium": null,
         "effective_date": null,
         "expiration_date": null,
-        "nr_kind": "Commercial Insurance Application (ACORD 125)",
+        "nr_kind": "Loss Run Report",
         "nr_header_rows": [
           {
             "label": "Insured",
@@ -346,103 +346,115 @@
             "value": "FARM-1120934"
           },
           {
+            "label": "Carrier",
+            "value": "Nationwide Agribusiness"
+          },
+          {
             "label": "Valuation Date",
-            "value": "01/01/2026"
+            "value": "01/15/2026"
           },
           {
             "label": "Prepared By",
             "value": "Prairie States Insurance Cooperative"
           },
           {
-            "label": "NAICS / Class Codes",
-            "value": "424910 / 493130 / 541940"
+            "label": "Reporting Period",
+            "value": "02/01/2025 to 01/15/2026"
           }
         ],
         "nr_columns": [
-          "Location",
-          "Description",
-          "Construction",
-          "Occupancy",
-          "Protection Class",
-          "Total Insured Value"
+          "Claim No.",
+          "Coverage",
+          "Loss Date",
+          "Reported",
+          "Status",
+          "Paid",
+          "Reserved",
+          "Incurred"
         ],
         "nr_rows": [
           {
             "cells": [
-              "1750 NE Broadway Ave, Des Moines, IA",
-              "Main office, warehousing, grain handling, and agronomy service facilities",
-              "Joisted masonry / frame",
-              "Farm supply and grain handling",
-              "4",
-              "$6,250,000"
+              "C-240118",
+              "Commercial General Liability",
+              "06/14/2025",
+              "06/17/2025",
+              "Open",
+              "$0",
+              "$7,500",
+              "$7,500"
             ]
           },
           {
             "cells": [
-              "East Yard, Des Moines, IA",
-              "Bulk fertilizer and seed storage, dry commodity bins",
-              "Noncombustible",
-              "Storage and distribution",
-              "4",
-              "$3,100,000"
+              "C-240229",
+              "Automobile Liability",
+              "09/03/2025",
+              "09/05/2025",
+              "Closed",
+              "$12,400",
+              "$0",
+              "$12,400"
             ]
           },
           {
             "cells": [
-              "Mobile Equipment / Service Vehicles",
-              "Custom application units and light service vehicles",
-              "N/A",
-              "Field service and delivery",
-              "N/A",
-              "$1,450,000"
+              "C-240311",
+              "Workers Compensation",
+              "11/21/2025",
+              "11/22/2025",
+              "Open",
+              "$3,250",
+              "$8,750",
+              "$12,000"
             ]
           }
         ],
-        "unrelated_subtitle": "Commercial lines submission worksheet for underwriting review",
-        "unrelated_body": "This worksheet summarizes exposure information, operations, and total insured values for rating and underwriting purposes. It is not a certificate, invoice, declaration page, or endorsement and should be routed to the account file for review."
+        "unrelated_subtitle": "Claims activity summary for underwriting review only",
+        "unrelated_body": "This report summarizes reported losses and outstanding reserves for the referenced policy term. It is provided for account review and does not amend coverage, evidence insurance, or serve as a declaration page."
       },
       {
-        "title": "Premium Invoice No. INV-104883",
+        "title": "Premium Invoice No. 804812",
         "certificate_holder": null,
         "coverage_lines": null,
         "description_of_operations": null,
         "authorized_representative": null,
         "certificate_number": null,
         "revision_number": null,
-        "invoice_number": "INV-104883",
-        "invoice_date": "12/20/2025",
-        "account_number": "ACCT-1120934",
+        "invoice_number": "804812",
+        "invoice_date": "02/15/2026",
+        "account_number": "FARM-1120934",
         "line_items": [
           {
             "description": "Policy Premium",
-            "amount": "$47,500.00"
+            "amount": "$46,250.00"
           },
           {
             "description": "Terrorism (TRIA)",
-            "amount": "$85.00"
+            "amount": "$75.00"
           },
           {
-            "description": "State surplus lines tax and regulatory surcharge",
-            "amount": "$812.50"
+            "description": "State surplus lines tax / regulatory surcharge",
+            "amount": "$1,325.00"
           },
           {
             "description": "Broker Fee",
-            "amount": "$250.00"
+            "amount": "$950.00"
           },
           {
             "description": "Prior Balance",
-            "amount": "$102.50"
+            "amount": "$150.00"
           }
         ],
-        "subtotal": "$47,585.00",
-        "taxes": "$812.50",
-        "fees": "$250.00",
-        "prior_balance": "$102.50",
+        "subtotal": "$47,225.00",
+        "taxes": "$1,325.00",
+        "fees": "$1,025.00",
+        "prior_balance": "$150.00",
         "amount_due": "$48,750.00",
-        "billing_period": "01/01/2026 - 01/01/2027",
-        "due_date": "01/15/2026",
-        "payment_methods": "ACH, check, or bill pay through the agency portal",
-        "remit_to": "Prairie States Insurance Cooperative, Attn: Commercial Accounts, 1200 Grand Ave, Suite 210, Des Moines, IA 50309",
+        "billing_period": "02/01/2026 - 02/01/2027",
+        "due_date": "03/01/2026",
+        "payment_methods": "ACH, check, or wire transfer",
+        "remit_to": "Nationwide Agribusiness, P.O. Box 88056, Chicago, IL 60680-1056",
         "coverage_parts": null,
         "forms_schedule": null,
         "premium_summary": null,
@@ -467,7 +479,7 @@
         "unrelated_body": null
       },
       {
-        "title": "Policy Declarations Page",
+        "title": "Commercial Package Declarations - Midwest AgriSupply Cooperative",
         "certificate_holder": null,
         "coverage_lines": null,
         "description_of_operations": null,
@@ -489,11 +501,11 @@
         "remit_to": null,
         "coverage_parts": [
           {
-            "insurer_letter": null,
+            "insurer_letter": "A",
             "coverage_type": "Commercial General Liability",
             "policy_number": "FARM-1120934",
-            "effective_date": null,
-            "expiration_date": null,
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
             "addl_insured": null,
             "subro_waived": null,
             "limits": [
@@ -522,14 +534,14 @@
                 "limit": "$2,000,000"
               }
             ],
-            "premium": "$16,250.00"
+            "premium": "$18,500.00"
           },
           {
-            "insurer_letter": null,
-            "coverage_type": "Commercial Automobile Liability",
+            "insurer_letter": "B",
+            "coverage_type": "Automobile Liability",
             "policy_number": "FARM-1120934",
-            "effective_date": null,
-            "expiration_date": null,
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
             "addl_insured": null,
             "subro_waived": null,
             "limits": [
@@ -538,14 +550,14 @@
                 "limit": "$1,000,000"
               }
             ],
-            "premium": "$8,900.00"
+            "premium": "$9,250.00"
           },
           {
-            "insurer_letter": null,
+            "insurer_letter": "C",
             "coverage_type": "Umbrella Liability",
             "policy_number": "FARM-1120934",
-            "effective_date": null,
-            "expiration_date": null,
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
             "addl_insured": null,
             "subro_waived": null,
             "limits": [
@@ -558,14 +570,14 @@
                 "limit": "$5,000,000"
               }
             ],
-            "premium": "$9,400.00"
+            "premium": "$11,000.00"
           },
           {
-            "insurer_letter": null,
+            "insurer_letter": "D",
             "coverage_type": "Workers Compensation",
             "policy_number": "FARM-1120934",
-            "effective_date": null,
-            "expiration_date": null,
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
             "addl_insured": null,
             "subro_waived": null,
             "limits": [
@@ -582,7 +594,7 @@
                 "limit": "$1,000,000"
               }
             ],
-            "premium": "$13,000.00"
+            "premium": "$8,000.00"
           }
         ],
         "forms_schedule": [
@@ -596,11 +608,7 @@
           },
           {
             "form_number": "CG 20 10 04 13",
-            "title": "Additional Insured - Owners, Lessees Or Contractors - Scheduled Person Or Organization"
-          },
-          {
-            "form_number": "CG 24 04 05 09",
-            "title": "Waiver Of Transfer Of Rights Of Recovery Against Others To Us"
+            "title": "Additional Insured - Owners, Lessees or Contractors - Scheduled Person or Organization"
           },
           {
             "form_number": "CA 00 01 11 20",
@@ -611,34 +619,34 @@
             "title": "Designated Insured Endorsement"
           },
           {
-            "form_number": "WC 00 00 00 A",
-            "title": "Workers Compensation And Employers Liability Insurance Policy"
+            "form_number": "WC 00 03 13",
+            "title": "Workers Compensation and Employers Liability Insurance Policy"
           },
           {
-            "form_number": "WC 00 03 13",
-            "title": "Waiver Of Our Right To Recover From Others Endorsement"
+            "form_number": "U 00 01 01 15",
+            "title": "Commercial Umbrella Liability Coverage Form"
           }
         ],
         "premium_summary": [
           {
             "description": "Policy Premium",
-            "amount": "$47,550.00"
+            "amount": "$46,750.00"
           },
           {
             "description": "Terrorism (TRIA)",
-            "amount": "$85.00"
+            "amount": "$75.00"
           },
           {
-            "description": "Taxes and Surcharges",
-            "amount": "$912.50"
+            "description": "Taxes and Fees",
+            "amount": "$1,925.00"
           },
           {
-            "description": "Fees",
-            "amount": "$202.50"
+            "description": "Total Premium",
+            "amount": "$48,750.00"
           }
         ],
-        "countersignature": "Megan L. Sutter, CIC",
-        "countersignature_date": "12/20/2025",
+        "countersignature": "Nationwide Agribusiness Authorized Representative",
+        "countersignature_date": "01/15/2026",
         "form_number": null,
         "endorsement_title": null,
         "endorsement_number": null,
@@ -648,8 +656,8 @@
         "change_description": null,
         "coverages": null,
         "total_premium": "$48,750.00",
-        "effective_date": "01/01/2026",
-        "expiration_date": "01/01/2027",
+        "effective_date": "02/01/2026",
+        "expiration_date": "02/01/2027",
         "nr_kind": null,
         "nr_header_rows": null,
         "nr_columns": null,

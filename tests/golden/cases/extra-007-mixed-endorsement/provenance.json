@@ -18,7 +18,7 @@
       "multi_recipient": false,
       "body_only": false,
       "inconsistency": false,
-      "date_received": "2026-07-06T11:36:00+00:00"
+      "date_received": "2026-07-07T11:36:00+00:00"
     },
     "attachments": [
       {
@@ -71,65 +71,73 @@
       "expiration_date": "2027-03-01",
       "coverage_limits": [
         {
-          "coverage": "Workers Compensation and Employers Liability",
-          "limit": "Statutory / $1,000,000 Each Accident / $1,000,000 Disease - Policy Limit / $1,000,000 Disease - Each Employee"
+          "coverage": "Each Accident",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Disease - Policy Limit",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Disease - Each Employee",
+          "limit": "$1,000,000"
         }
       ],
-      "total_premium": "$18,450",
+      "total_premium": "$18,460",
       "producer": {
         "agency": "Peachtree Commercial Brokers",
-        "address": "1201 W Peachtree St NW, Suite 2100, Atlanta, GA 30309",
-        "contact_name": "Megan Lawson",
-        "phone": "(404) 555-0148",
-        "fax": "(404) 555-0149",
+        "address": "999 Peachtree St NE, Suite 1400, Atlanta, GA 30309",
+        "contact_name": "Marcus Ellison",
+        "phone": "(404) 555-4820",
+        "fax": "(404) 555-4821",
         "email": "accounts@peachtreebrokers.com"
       },
       "insurers": [
         {
           "letter": "A",
           "name": "AmTrust Financial Services, Inc.",
-          "naic": "13684"
+          "naic": "42390"
         },
         {
           "letter": "B",
-          "name": "AmTrust Insurance Company of Kansas, Inc.",
-          "naic": "15954"
-        },
-        {
-          "letter": "C",
           "name": "Technology Insurance Company, Inc.",
           "naic": "42376"
         },
         {
+          "letter": "C",
+          "name": "Wesco Insurance Company",
+          "naic": "25011"
+        },
+        {
           "letter": "D",
-          "name": "AmTrust Specialty Insurance Company",
-          "naic": "44245"
+          "name": "FirstComp Insurance Company",
+          "naic": "13935"
         },
         {
           "letter": "E",
-          "name": "Carney Insurance Company",
-          "naic": "43087"
+          "name": "Security National Insurance Company",
+          "naic": "19429"
         },
         {
           "letter": "F",
-          "name": "Omni Indemnity Company",
-          "naic": "14190"
+          "name": "National Union Fire Insurance Company of Pittsburgh, Pa.",
+          "naic": "19445"
         }
       ],
       "business_description": "Temporary clerical and light-industrial staffing",
       "entity_type": "Corporation",
-      "fein": "58-2149067",
-      "naic_carrier": "13684"
+      "fein": "58-2147069",
+      "naic_carrier": "42390"
     },
     "email": {
-      "subject": "Re: Request for mid-term policy endorsement - WC-5580372",
-      "body": "Good morning,\n\nPlease process a mid-term endorsement for Pinnacle Staffing Solutions Inc., policy WC-5580372, effective 03/01/2026.\n\nRequested change: update the named insured to reflect the current corporate name and mailing details on file. If any additional wording or documentation is needed to issue the endorsement, please let us know.\n\nThank you,\nDanielle Foster\nPinnacle Staffing Solutions Inc.\n\nOn Jun 30, 2026, 4:02 PM, Megan Lawson <accounts@peachtreebrokers.com> wrote:\n> Received, thank you. We'll need the current loss runs before we can release terms.\n>\n> Regards,\n> Megan Lawson\n\nBest regards,\nDanielle Foster\nPinnacle Staffing Solutions Inc. | (404) 555-0163",
+      "subject": "Re: Request for mid-term policy change \u2013 Pinnacle Staffing Solutions Inc. WC-5580372",
+      "body": "Good morning,\n\nPlease process a mid-term endorsement for Pinnacle Staffing Solutions Inc. on policy WC-5580372, effective 03/15/2026.\n\nRequested change: update the named insured to Pinnacle Staffing Solutions Inc. and add the attached scheduled location/operations wording change to reflect current staffing operations.\n\nPlease confirm when the endorsement is issued and advise if any additional information is needed.\n\nThank you,\nDanielle Foster\nPinnacle Staffing Solutions Inc.\n\nOn Jun 30, 2026, 4:02 PM, Marcus Ellison <accounts@peachtreebrokers.com> wrote:\n> Received, thank you. We'll need the current loss runs before we can release terms.\n>\n> Regards,\n> Marcus Ellison\n\nBest regards,\nDanielle Foster\nPinnacle Staffing Solutions Inc. | (404) 555-0163",
       "sender": "Danielle Foster <dfoster@pinnaclestaffing.com>",
       "recipient": "accounts@peachtreebrokers.com"
     },
     "documents": [
       {
-        "title": "Commercial Policy Change Endorsement",
+        "title": "WORKERS COMPENSATION AND EMPLOYERS LIABILITY POLICY CHANGE ENDORSEMENT",
         "certificate_holder": null,
         "coverage_lines": null,
         "description_of_operations": null,
@@ -154,38 +162,38 @@
         "premium_summary": null,
         "countersignature": null,
         "countersignature_date": null,
-        "form_number": "WC 00 03 04 22",
-        "endorsement_title": "Named Insured and Mailing Address Change Endorsement",
-        "endorsement_number": "Endorsement No. 1",
+        "form_number": "WC 99 03 01 20",
+        "endorsement_title": "Policy Change Endorsement",
+        "endorsement_number": "Endorsement No. 3",
         "schedule_rows": [
           {
             "label": "Named Insured",
             "value": "Pinnacle Staffing Solutions Inc."
           },
           {
-            "label": "Mailing Address",
-            "value": "303 Peachtree St NE, Atlanta, GA 30308"
-          },
-          {
             "label": "Policy Number",
             "value": "WC-5580372"
           },
           {
-            "label": "Effective Date",
-            "value": "03/01/2026"
+            "label": "Effective Date of Endorsement",
+            "value": "03/15/2026"
+          },
+          {
+            "label": "Change Item",
+            "value": "Revise the named insured to reflect the correct corporate name and maintain all other policy information as issued."
           }
         ],
         "provisions": [
-          "Section 1, Named Insured, is amended to reflect the named insured shown in the Schedule above, replacing any prior insured name appearing in the declarations or endorsements.",
-          "The mailing address and correspondence address applicable to this policy are amended to the address shown in the Schedule above, and all notices, billing statements, and policy communications shall be sent accordingly.",
-          "This endorsement applies only to the policy period shown and does not alter the scope of coverage, classifications, premium basis, or limits of insurance except as specifically stated herein.",
+          "Item 1 of the Declarations is amended to show the Named Insured as Pinnacle Staffing Solutions Inc.",
+          "This endorsement applies only to the policy period shown in the Declarations and is effective 12:01 A.M. standard time on 03/15/2026.",
+          "The change described above shall not alter the scope of coverage, limits of liability, premium basis, or classifications except as specifically set forth in this endorsement.",
           "All other terms and conditions of this policy remain unchanged."
         ],
         "additional_premium": "$0",
-        "change_description": "Updates the named insured and mailing address on the in-force policy effective 03/01/2026.",
+        "change_description": "Correct the named insured on the active workers compensation policy effective 03/15/2026.",
         "coverages": null,
         "total_premium": null,
-        "effective_date": "03/01/2026",
+        "effective_date": "03/15/2026",
         "expiration_date": null,
         "nr_kind": null,
         "nr_header_rows": null,
@@ -195,7 +203,7 @@
         "unrelated_body": null
       },
       {
-        "title": "Workers Compensation Policy Change Endorsement",
+        "title": "WORKERS COMPENSATION AND EMPLOYERS LIABILITY POLICY CHANGE ENDORSEMENT",
         "certificate_holder": null,
         "coverage_lines": null,
         "description_of_operations": null,
@@ -220,38 +228,38 @@
         "premium_summary": null,
         "countersignature": null,
         "countersignature_date": null,
-        "form_number": "WC 00 04 04 22",
-        "endorsement_title": "Change in Mailing Information and Named Insured Endorsement",
-        "endorsement_number": "Endorsement No. 2",
+        "form_number": "WC 00 03 11 20",
+        "endorsement_title": "Policy Change Endorsement",
+        "endorsement_number": "Endorsement No. 4",
         "schedule_rows": [
           {
-            "label": "Named Insured",
-            "value": "Pinnacle Staffing Solutions Inc."
+            "label": "Class Code",
+            "value": "8810"
           },
           {
-            "label": "Policy Number",
-            "value": "WC-5580372"
+            "label": "Description",
+            "value": "Clerical Office Employees NOC"
           },
           {
-            "label": "Insured Mailing Address",
-            "value": "303 Peachtree St NE, Atlanta, GA 30308"
+            "label": "Change Item",
+            "value": "Add one temporary satellite office location used for recruiting and onboarding at 2500 Cumberland Pkwy SE, Suite 120, Atlanta, GA 30339."
           },
           {
-            "label": "Effective Date",
-            "value": "03/01/2026"
+            "label": "Payroll Basis",
+            "value": "Estimated annual payroll $96,000"
           }
         ],
         "provisions": [
-          "The policy declarations are amended to reflect the insured name and address shown in the Schedule above for all purposes of identification and correspondence.",
-          "This endorsement is administrative in nature and does not change the classification of operations, payroll allocation, or the coverages afforded by this policy.",
-          "If any prior references to the insured name or mailing address conflict with this endorsement, the information in the Schedule above shall control.",
+          "Item 3.C. of the Declarations is amended to include the additional location identified in the attached schedule for clerical and recruiting operations.",
+          "Premium for the additional exposure is based on the estimated payroll and classification shown above and is subject to audit at policy expiration.",
+          "The insured shall maintain separate and complete payroll records for the added location and make such records available for inspection upon request.",
           "All other terms and conditions of this policy remain unchanged."
         ],
-        "additional_premium": "$0",
-        "change_description": "Administrative endorsement to update the insured name and mailing information effective 03/01/2026.",
+        "additional_premium": "$384",
+        "change_description": "Add one additional Atlanta recruiting office location effective 03/15/2026.",
         "coverages": null,
         "total_premium": null,
-        "effective_date": "03/01/2026",
+        "effective_date": "03/15/2026",
         "expiration_date": null,
         "nr_kind": null,
         "nr_header_rows": null,

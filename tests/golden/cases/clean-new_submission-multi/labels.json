@@ -7,7 +7,7 @@
     "extraction": {
       "named_insured": "Pinnacle Staffing Solutions Inc.",
       "policy_number": null,
-      "requested_effective_date": "2026-02-01",
+      "requested_effective_date": "2026-08-01",
       "requested_changes": "Quote/bind a new commercial package policy.",
       "contact_name": "Danielle Foster",
       "contact_phone": "404-555-0163"
@@ -26,11 +26,11 @@
           "page_end": 0,
           "extraction": {
             "named_insured": "Pinnacle Staffing Solutions Inc.",
-            "policy_number": "PSI-240001",
-            "amount_due": 18750.0,
-            "billing_period": "02/01/2026 - 02/01/2027",
-            "policy_reference": "PSI-240001",
-            "due_date": "2026-02-01"
+            "policy_number": "PBI-AT-248771",
+            "amount_due": 24875.0,
+            "billing_period": "08/01/2026 - 08/01/2027",
+            "policy_reference": "PBI-AT-248771",
+            "due_date": "2026-08-01"
           }
         },
         {
@@ -40,11 +40,11 @@
           "page_end": 1,
           "extraction": {
             "named_insured": "Pinnacle Staffing Solutions Inc.",
-            "policy_number": "PSI-240001",
-            "amount_due": 18750.0,
-            "billing_period": "02/01/2026 - 02/01/2027",
-            "policy_reference": "PSI-240001",
-            "due_date": "2026-02-01"
+            "policy_number": "PBI-AT-248771",
+            "amount_due": 24875.0,
+            "billing_period": "08/01/2026 - 08/01/2027",
+            "policy_reference": "PBI-AT-248771",
+            "due_date": "2026-08-01"
           }
         },
         {
@@ -54,14 +54,14 @@
           "page_end": 2,
           "extraction": {
             "named_insured": "Pinnacle Staffing Solutions Inc.",
-            "policy_number": "PSI-240001",
+            "policy_number": "PBI-AT-248771",
             "coverages": {
-              "Commercial General Liability": "$6,250",
-              "Automobile Liability": "$4,100",
-              "Umbrella Liability": "$3,400",
-              "Workers Compensation": "$3,750"
+              "Commercial General Liability": "$8,750",
+              "Automobile Liability": "$4,850",
+              "Workers Compensation": "$6,400",
+              "Umbrella Liability": "$2,900"
             },
-            "total_premium": 18750.0
+            "total_premium": 24875.0
           }
         }
       ],
@@ -91,10 +91,10 @@
           "page_end": 0,
           "extraction": {
             "named_insured": "Pinnacle Staffing Solutions Inc.",
-            "policy_number": "PSI-240001",
-            "certificate_holder": "Georgia Tech Research Corporation, 926 Dalney St NW, Atlanta, GA 30332",
-            "effective_date": "2026-02-01",
-            "expiration_date": "2027-02-01",
+            "policy_number": "PBI-AT-248771",
+            "certificate_holder": "Atlanta Office Solutions, LLC 1000 Peachtree St NE, Suite 1200, Atlanta, GA 30309",
+            "effective_date": "2026-08-01",
+            "expiration_date": "2027-08-01",
             "limits": {
               "Each Occurrence": "$1,000,000",
               "Damage to Rented Premises": "$100,000",
@@ -116,11 +116,11 @@
           "page_end": 1,
           "extraction": {
             "named_insured": "Pinnacle Staffing Solutions Inc.",
-            "policy_number": "PSI-240001",
-            "amount_due": 18750.0,
-            "billing_period": "02/01/2026 - 02/01/2027",
-            "policy_reference": "PSI-240001",
-            "due_date": "2026-02-01"
+            "policy_number": "PBI-AT-248771",
+            "amount_due": 24875.0,
+            "billing_period": "08/01/2026 - 08/01/2027",
+            "policy_reference": "PBI-AT-248771",
+            "due_date": "2026-08-31"
           }
         },
         {
@@ -130,14 +130,14 @@
           "page_end": 2,
           "extraction": {
             "named_insured": "Pinnacle Staffing Solutions Inc.",
-            "policy_number": "PSI-240001",
+            "policy_number": "PBI-AT-248771",
             "coverages": {
-              "Commercial General Liability": "$6,250",
-              "Automobile Liability": "$4,100",
-              "Umbrella Liability": "$3,400",
-              "Workers Compensation": "$3,750"
+              "Commercial General Liability": "$8,750",
+              "Automobile Liability": "$4,850",
+              "Workers Compensation": "$6,400",
+              "Umbrella Liability": "$2,900"
             },
-            "total_premium": 18750.0
+            "total_premium": 24875.0
           }
         }
       ],

@@ -27,8 +27,8 @@
           "extraction": {
             "named_insured": "Lone Star Freight Systems LP",
             "policy_number": "CA-9948120",
-            "change_description": "Adds two scheduled tractors and one rated driver to the olicy effective 01/01/2026.",
-            "effective_date": "2026-01-01"
+            "change_description": "Adds one scheduled trator to the policy effective 02/15/2026.",
+            "effective_date": "2026-02-15"
           }
         },
         {
@@ -40,9 +40,9 @@
             "named_insured": "Lone Star Freight Systems LP",
             "policy_number": "CA-9948120",
             "coverages": {
-              "Business Auto Liability": "$11,200",
-              "Trailer Interchange": "$1,350",
-              "Motor Truck Cargo": "$4,850"
+              "Business Auto Liability": "$14,200",
+              "Motor Truck Cargo": "$2,850",
+              "Physical Damage - Comprehensive and Collision": "$1,390"
             },
             "total_premium": 18740.0
           }

@@ -27,8 +27,8 @@
           "extraction": {
             "named_insured": "Lone Star Freight Systems LP",
             "policy_number": "CA-9948120",
-            "change_description": "Adds two scheduled power units to the auto liability exposure effective 01/15/2026.",
-            "effective_date": "2026-01-15"
+            "change_description": "Adds two tractor units to the scheduled auto fleet effective 01/01/2026.",
+            "effective_date": "2026-01-01"
           }
         },
         {
@@ -39,13 +39,13 @@
           "extraction": {
             "named_insured": "Lone Star Freight Systems LP",
             "policy_number": "CA-9948120",
-            "certificate_holder": "Metro Distribution Center, LLC, 2800 Eastpoint Parkway, Fort Worth, TX 76155",
+            "certificate_holder": "North Texas Warehouse Services, Inc. 2601 DFW Way, Irving, TX 75063",
             "effective_date": "2026-01-01",
             "expiration_date": "2027-01-01",
             "limits": {
               "Each Occurrence": "$1,000,000",
               "Damage to Rented Premises": "$300,000",
-              "Med Exp": "$10,000",
+              "Med Exp": "$5,000",
               "Personal & Adv Injury": "$1,000,000",
               "General Aggregate": "$2,000,000",
               "Products-Comp/Op Agg": "$2,000,000",
@@ -83,12 +83,12 @@
             "named_insured": "Lone Star Freight Systems LP",
             "policy_number": "CA-9948120",
             "coverages": {
-              "Business Auto Liability": "$18,425",
-              "Motor Truck Cargo": "$4,150",
-              "Commercial General Liability": "$3,980",
-              "Workers Compensation and Employers Liability": "$4,285"
+              "Business Auto Coverage": "$98,600",
+              "Commercial General Liability": "$21,450",
+              "Umbrella Liability": "$18,200",
+              "Workers Compensation and Employers Liability": "$36,000"
             },
-            "total_premium": 31840.0
+            "total_premium": 178480.0
           }
         }
       ],
@@ -115,11 +115,12 @@
             "named_insured": "Lone Star Freight Systems LP",
             "policy_number": "CA-9948120",
             "coverages": {
-              "Commercial Umbrella Liability": "$9,400",
-              "Excess Follow Form Liability": "$2,650",
-              "Hired and Non-Owned Auto Liability": "$1,760"
+              "Business Auto Coverage": "$96,900",
+              "Commercial General Liability": "$22,100",
+              "Umbrella Liability": "$18,900",
+              "Workers Compensation and Employers Liability": "$35,500"
             },
-            "total_premium": 14190.0
+            "total_premium": 177560.0
           }
         },
         {

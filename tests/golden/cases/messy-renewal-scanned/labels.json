@@ -28,12 +28,12 @@
             "named_insured": "Riverside Manufacturing Co.",
             "policy_number": "SBA-4471902",
             "coverages": {
-              "Building and Business Personal Property": "$7,480",
-              "Commercial General Liability": "$4,620",
-              "Business Auto Liability": "$2,915",
-              "Workers Compensation": "$2,775"
+              "Commercial General Liability": "$12,450",
+              "Business Automobile Liability": "$8,300",
+              "Umbrella Liability": "$9,100",
+              "Workers Compensation": "$17,800"
             },
-            "total_premium": 18640.0
+            "total_premium": 48750.0
           }
         }
       ],

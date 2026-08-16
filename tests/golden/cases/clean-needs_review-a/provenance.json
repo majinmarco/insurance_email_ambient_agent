@@ -23,76 +23,72 @@
       "expiration_date": "2027-01-01",
       "coverage_limits": [
         {
-          "coverage": "Commercial General Liability Each Occurrence",
+          "coverage": "Commercial General Liability",
           "limit": "$1,000,000"
         },
         {
-          "coverage": "Commercial General Liability General Aggregate",
-          "limit": "$2,000,000"
-        },
-        {
-          "coverage": "Automobile Liability Combined Single Limit",
+          "coverage": "Automobile Liability",
           "limit": "$1,000,000"
         },
         {
-          "coverage": "Umbrella Liability Each Occurrence",
-          "limit": "$4,000,000"
+          "coverage": "Umbrella Liability",
+          "limit": "$5,000,000"
         },
         {
-          "coverage": "Workers Compensation Employers Liability Each Accident",
-          "limit": "$1,000,000"
+          "coverage": "Workers Compensation",
+          "limit": "Statutory"
         }
       ],
-      "total_premium": "$31,840",
+      "total_premium": "$184,760",
       "producer": {
         "agency": "Southwest Transportation Insurance",
-        "address": "1201 Elm Street, Suite 1800, Dallas, TX 75270",
-        "contact_name": "Megan Alvarez",
-        "phone": "(214) 555-4180",
-        "fax": "(214) 555-4181",
+        "address": "8201 N Stemmons Fwy, Suite 220, Dallas, TX 75247",
+        "contact_name": "Marisol Vega",
+        "phone": "(214) 555-0148",
+        "fax": "(214) 555-0149",
         "email": "trucking@swtransins.com"
       },
       "insurers": [
         {
           "letter": "A",
           "name": "Great West Casualty Company",
-          "naic": "11371"
+          "naic": "22101"
         },
         {
           "letter": "B",
           "name": "Old Republic Insurance Company",
-          "naic": "24139"
+          "naic": "24147"
         },
         {
           "letter": "C",
-          "name": "National Indemnity Company",
-          "naic": "20087"
+          "name": "Zurich American Insurance Company",
+          "naic": "16535"
         },
         {
           "letter": "D",
+          "name": "National Union Fire Insurance Company of Pittsburgh, PA",
+          "naic": "19445"
+        },
+        {
+          "letter": "E",
           "name": "Travelers Property Casualty Company of America",
           "naic": "25674"
         },
         {
-          "letter": "E",
-          "name": "Sentry Insurance a Mutual Company",
-          "naic": "24988"
-        },
-        {
           "letter": "F",
-          "name": "U.S. Specialty Insurance Company",
-          "naic": "29599"
+          "name": "Liberty Mutual Fire Insurance Company",
+          "naic": "23035"
         }
       ],
       "business_description": "Regional less-than-truckload motor carrier",
       "entity_type": "Limited Partnership",
-      "fein": "75-4189623",
-      "naic_carrier": "11371"
+      "fein": "84-2163947",
+      "naic_carrier": "22101"
     },
     "email": {
-      "subject": "Request for review: Lone Star Freight Systems LP policy CA-9948120 attachments",
-      "body": "Hi Wade,\n\nI\u2019m sending over the attached policy change endorsement, certificate of insurance, declaration pages, and a separate support document for Lone Star Freight Systems LP under policy CA-9948120. Please review the effective date and the wording on the certificate holder requirements, additional insured, primary and non-contributory, and waiver of subrogation language before we circulate anything further.\n\nIf you want, I can also reconcile the premiums and issue summary once you confirm the change details.\n\nThanks,\nMegan",
-      "sender": "Megan Alvarez <trucking@swtransins.com>",
+      "subject": "Re: Lone Star Freight Systems LP - Policy CA-9948120 - Review Request",
+      "body": "Hi Wade,\n\nI\u2019m sending over the updated materials for Lone Star Freight Systems LP, policy CA-9948120. Please review the attached endorsement, certificate, declarations pages, and the supporting loss run-style document when you have a chance.\n\nIf you want anything adjusted before we finalize, just let me know. The current effective date shown is 01/01/2026.\n\nThanks,\nMarisol",
+      "sender": "Marisol Vega <trucking@swtransins.com>",
       "recipient": "Wade Carrington <wcarrington@lonestarfreight.com>"
     },
     "documents": [
@@ -122,8 +118,8 @@
         "premium_summary": null,
         "countersignature": null,
         "countersignature_date": null,
-        "form_number": "GW-PE-CA-2026",
-        "endorsement_title": "Scheduled Vehicle Addition Endorsement",
+        "form_number": "CA 99 10 06 20",
+        "endorsement_title": "Commercial Automobile Amendment Endorsement",
         "endorsement_number": "Endorsement No. 4",
         "schedule_rows": [
           {
@@ -135,24 +131,28 @@
             "value": "CA-9948120"
           },
           {
-            "label": "Item 7. Schedule of Covered Autos",
-            "value": "Added 2024 Freightliner Cascadia, Unit No. 214, VIN 1FVHG5DV1RLJK2144, Garaged at Dallas terminal"
+            "label": "Effective Date",
+            "value": "01/01/2026"
           },
           {
-            "label": "Item 7. Schedule of Covered Autos",
-            "value": "Added 2023 Volvo VNL 860, Unit No. 217, VIN 4V4NC9EH9PN613217, Garaged at Fort Worth terminal"
+            "label": "Added Auto",
+            "value": "2024 Freightliner Cascadia, Unit No. 118, VIN 1FUJGEDV8RLNZ4812"
+          },
+          {
+            "label": "Added Auto",
+            "value": "2023 Volvo VNL 860, Unit No. 121, VIN 4V4NC9EH5PN645773"
           }
         ],
         "provisions": [
-          "The policy is amended to include the vehicle(s) shown in the schedule above as covered autos for Liability Coverage, Subject to all terms, exclusions, and conditions of the policy and any applicable auto form.",
-          "The Schedule of Covered Autos is revised effective 01/15/2026 at 12:01 A.M. local time at the insured's mailing address.",
-          "A premium charge applies for the additional exposure described in this endorsement and is payable in accordance with the terms of the policy."
+          "Paragraph 1. The Schedule of Covered Autos is amended to include the vehicles listed above, and the Policy is subject to the terms, exclusions, and conditions applicable to Covered Autos Liability Coverage.",
+          "Paragraph 2. The premium is adjusted accordingly for the addition of the scheduled power units shown above, effective 12:01 A.M. on the effective date stated in this endorsement.",
+          "Paragraph 3. This endorsement modifies insurance provided under the Business Auto Coverage Form and applies only with respect to the changes shown herein. All other terms and conditions of this policy remain unchanged."
         ],
-        "additional_premium": "$1,275",
-        "change_description": "Adds two scheduled power units to the auto liability exposure effective 01/15/2026.",
+        "additional_premium": "$2,480",
+        "change_description": "Adds two tractor units to the scheduled auto fleet effective 01/01/2026.",
         "coverages": null,
         "total_premium": null,
-        "effective_date": "01/15/2026",
+        "effective_date": "01/01/2026",
         "expiration_date": null,
         "nr_kind": null,
         "nr_header_rows": null,
@@ -162,8 +162,8 @@
         "unrelated_body": null
       },
       {
-        "title": "ACORD 25 Certificate of Liability Insurance",
-        "certificate_holder": "Metro Distribution Center, LLC, 2800 Eastpoint Parkway, Fort Worth, TX 76155",
+        "title": "Certificate of Liability Insurance",
+        "certificate_holder": "North Texas Warehouse Services, Inc. 2601 DFW Way, Irving, TX 75063",
         "coverage_lines": [
           {
             "insurer_letter": "A",
@@ -184,7 +184,7 @@
               },
               {
                 "coverage": "Med Exp",
-                "limit": "$10,000"
+                "limit": "$5,000"
               },
               {
                 "coverage": "Personal & Adv Injury",
@@ -218,7 +218,7 @@
             "premium": null
           },
           {
-            "insurer_letter": "B",
+            "insurer_letter": "C",
             "coverage_type": "Umbrella Liability",
             "policy_number": "CA-9948120",
             "effective_date": "01/01/2026",
@@ -228,13 +228,17 @@
             "limits": [
               {
                 "coverage": "Each Occurrence",
-                "limit": "$4,000,000"
+                "limit": "$5,000,000"
+              },
+              {
+                "coverage": "General Aggregate",
+                "limit": "$5,000,000"
               }
             ],
             "premium": null
           },
           {
-            "insurer_letter": "E",
+            "insurer_letter": "B",
             "coverage_type": "Workers Compensation",
             "policy_number": "CA-9948120",
             "effective_date": "01/01/2026",
@@ -258,9 +262,9 @@
             "premium": null
           }
         ],
-        "description_of_operations": "Metro Distribution Center, LLC is listed as additional insured as required by written contract with respect to the General Liability and Auto Liability coverages. Coverage afforded is subject to policy terms and conditions. Additional insured status applies where required by CG 20 10 04 13 and CG 20 37 04 13. Primary and non-contributory wording applies where required by CG 20 01 04 13. Waiver of subrogation applies where required by CG 24 04 05 09 and the applicable workers compensation endorsement.",
-        "authorized_representative": "Megan Alvarez, Authorized Representative",
-        "certificate_number": "CERT-2026-0148",
+        "description_of_operations": "North Texas Warehouse Services, Inc. is listed as certificate holder only. Commercial General Liability and Automobile Liability are endorsed by additional insured and waiver of subrogation where required by written contract per CG 20 10 04 13, CG 20 37 04 13, and CA 04 44 11 20. Coverage is primary and non-contributory when required by contract, subject to policy terms, conditions, and endorsements.",
+        "authorized_representative": "Marisol Vega",
+        "certificate_number": "CGW-2026-004918",
         "revision_number": null,
         "invoice_number": null,
         "invoice_date": null,
@@ -299,7 +303,7 @@
         "unrelated_body": null
       },
       {
-        "title": "Commercial Package Policy Declarations",
+        "title": "Commercial Package Declarations",
         "certificate_holder": null,
         "coverage_lines": null,
         "description_of_operations": null,
@@ -308,7 +312,7 @@
         "revision_number": null,
         "invoice_number": null,
         "invoice_date": null,
-        "account_number": null,
+        "account_number": "CA-9948120",
         "line_items": null,
         "subtotal": null,
         "taxes": null,
@@ -322,7 +326,7 @@
         "coverage_parts": [
           {
             "insurer_letter": "A",
-            "coverage_type": "Business Auto Liability",
+            "coverage_type": "Business Auto Coverage",
             "policy_number": "CA-9948120",
             "effective_date": "01/01/2026",
             "expiration_date": "01/01/2027",
@@ -332,32 +336,24 @@
               {
                 "coverage": "Combined Single Limit",
                 "limit": "$1,000,000"
+              },
+              {
+                "coverage": "Uninsured Motorists",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "Physical Damage - Comprehensive",
+                "limit": "ACV"
+              },
+              {
+                "coverage": "Physical Damage - Collision",
+                "limit": "ACV"
               }
             ],
-            "premium": "$18,425"
+            "premium": "$98,600"
           },
           {
             "insurer_letter": "A",
-            "coverage_type": "Motor Truck Cargo",
-            "policy_number": "CA-9948120",
-            "effective_date": "01/01/2026",
-            "expiration_date": "01/01/2027",
-            "addl_insured": null,
-            "subro_waived": null,
-            "limits": [
-              {
-                "coverage": "Limit Per Vehicle",
-                "limit": "$100,000"
-              },
-              {
-                "coverage": "Deductible",
-                "limit": "$2,500"
-              }
-            ],
-            "premium": "$4,150"
-          },
-          {
-            "insurer_letter": "B",
             "coverage_type": "Commercial General Liability",
             "policy_number": "CA-9948120",
             "effective_date": "01/01/2026",
@@ -370,14 +366,50 @@
                 "limit": "$1,000,000"
               },
               {
+                "coverage": "Damage to Rented Premises",
+                "limit": "$300,000"
+              },
+              {
+                "coverage": "Med Exp",
+                "limit": "$5,000"
+              },
+              {
+                "coverage": "Personal & Adv Injury",
+                "limit": "$1,000,000"
+              },
+              {
                 "coverage": "General Aggregate",
+                "limit": "$2,000,000"
+              },
+              {
+                "coverage": "Products-Comp/Op Agg",
                 "limit": "$2,000,000"
               }
             ],
-            "premium": "$3,980"
+            "premium": "$21,450"
           },
           {
-            "insurer_letter": "E",
+            "insurer_letter": "C",
+            "coverage_type": "Umbrella Liability",
+            "policy_number": "CA-9948120",
+            "effective_date": "01/01/2026",
+            "expiration_date": "01/01/2027",
+            "addl_insured": null,
+            "subro_waived": null,
+            "limits": [
+              {
+                "coverage": "Each Occurrence",
+                "limit": "$5,000,000"
+              },
+              {
+                "coverage": "Aggregate",
+                "limit": "$5,000,000"
+              }
+            ],
+            "premium": "$18,200"
+          },
+          {
+            "insurer_letter": "B",
             "coverage_type": "Workers Compensation and Employers Liability",
             "policy_number": "CA-9948120",
             "effective_date": "01/01/2026",
@@ -386,15 +418,19 @@
             "subro_waived": null,
             "limits": [
               {
-                "coverage": "Employers Liability Each Accident",
+                "coverage": "E.L. Each Accident",
                 "limit": "$1,000,000"
               },
               {
-                "coverage": "Employers Liability Disease-Policy Limit",
+                "coverage": "E.L. Disease-Ea Employee",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "E.L. Disease-Policy Limit",
                 "limit": "$1,000,000"
               }
             ],
-            "premium": "$4,285"
+            "premium": "$36,000"
           }
         ],
         "forms_schedule": [
@@ -403,20 +439,12 @@
             "title": "Business Auto Coverage Form"
           },
           {
-            "form_number": "CA 99 59 04 13",
-            "title": "Motor Truck Cargo Coverage Form"
+            "form_number": "CA 99 10 06 20",
+            "title": "Amendatory Endorsement"
           },
           {
             "form_number": "CG 00 01 04 13",
             "title": "Commercial General Liability Coverage Form"
-          },
-          {
-            "form_number": "WC 00 00 00 B",
-            "title": "Workers Compensation and Employers Liability Insurance Policy"
-          },
-          {
-            "form_number": "IL 00 17 11 98",
-            "title": "Common Policy Conditions"
           },
           {
             "form_number": "CG 20 10 04 13",
@@ -427,30 +455,38 @@
             "title": "Additional Insured - Owners, Lessees or Contractors - Completed Operations"
           },
           {
-            "form_number": "CG 24 04 05 09",
-            "title": "Waiver of Transfer of Rights of Recovery Against Others to Us"
+            "form_number": "IL 00 17 11 98",
+            "title": "Common Policy Conditions"
+          },
+          {
+            "form_number": "WC 00 00 00 B",
+            "title": "Workers Compensation and Employers Liability Insurance Policy"
+          },
+          {
+            "form_number": "CU 00 01 12 19",
+            "title": "Commercial Umbrella Coverage Form"
           }
         ],
         "premium_summary": [
           {
             "description": "Policy Premium",
-            "amount": "$30,840"
+            "amount": "$174,250"
           },
           {
-            "description": "TRIA",
-            "amount": "$220"
+            "description": "Terrorism (TRIA)",
+            "amount": "$1,850"
           },
           {
-            "description": "State Premium Tax",
-            "amount": "$540"
+            "description": "State Taxes",
+            "amount": "$1,960"
           },
           {
-            "description": "Policy Fee",
-            "amount": "$240"
+            "description": "Policy Fees",
+            "amount": "$420"
           }
         ],
-        "countersignature": "Megan Alvarez",
-        "countersignature_date": "01/01/2026",
+        "countersignature": "Marisol Vega",
+        "countersignature_date": "12/15/2025",
         "form_number": null,
         "endorsement_title": null,
         "endorsement_number": null,
@@ -459,7 +495,7 @@
         "additional_premium": null,
         "change_description": null,
         "coverages": null,
-        "total_premium": "$31,840",
+        "total_premium": "$178,480",
         "effective_date": "01/01/2026",
         "expiration_date": "01/01/2027",
         "nr_kind": null,
@@ -470,7 +506,7 @@
         "unrelated_body": null
       },
       {
-        "title": "Commercial Package Policy Declarations - Umbrella Layer",
+        "title": "Commercial Package Declarations",
         "certificate_holder": null,
         "coverage_lines": null,
         "description_of_operations": null,
@@ -479,7 +515,7 @@
         "revision_number": null,
         "invoice_number": null,
         "invoice_date": null,
-        "account_number": null,
+        "account_number": "CA-9948120",
         "line_items": null,
         "subtotal": null,
         "taxes": null,
@@ -492,48 +528,8 @@
         "remit_to": null,
         "coverage_parts": [
           {
-            "insurer_letter": "D",
-            "coverage_type": "Commercial Umbrella Liability",
-            "policy_number": "CA-9948120",
-            "effective_date": "01/01/2026",
-            "expiration_date": "01/01/2027",
-            "addl_insured": null,
-            "subro_waived": null,
-            "limits": [
-              {
-                "coverage": "Each Occurrence",
-                "limit": "$4,000,000"
-              },
-              {
-                "coverage": "General Aggregate",
-                "limit": "$4,000,000"
-              }
-            ],
-            "premium": "$9,400"
-          },
-          {
-            "insurer_letter": "C",
-            "coverage_type": "Excess Follow Form Liability",
-            "policy_number": "CA-9948120",
-            "effective_date": "01/01/2026",
-            "expiration_date": "01/01/2027",
-            "addl_insured": null,
-            "subro_waived": null,
-            "limits": [
-              {
-                "coverage": "Each Occurrence",
-                "limit": "$1,000,000"
-              },
-              {
-                "coverage": "Aggregate",
-                "limit": "$1,000,000"
-              }
-            ],
-            "premium": "$2,650"
-          },
-          {
-            "insurer_letter": "F",
-            "coverage_type": "Hired and Non-Owned Auto Liability",
+            "insurer_letter": "A",
+            "coverage_type": "Business Auto Coverage",
             "policy_number": "CA-9948120",
             "effective_date": "01/01/2026",
             "expiration_date": "01/01/2027",
@@ -543,53 +539,157 @@
               {
                 "coverage": "Combined Single Limit",
                 "limit": "$1,000,000"
+              },
+              {
+                "coverage": "Uninsured Motorists",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "Physical Damage - Comprehensive",
+                "limit": "ACV"
+              },
+              {
+                "coverage": "Physical Damage - Collision",
+                "limit": "ACV"
               }
             ],
-            "premium": "$1,760"
+            "premium": "$96,900"
+          },
+          {
+            "insurer_letter": "A",
+            "coverage_type": "Commercial General Liability",
+            "policy_number": "CA-9948120",
+            "effective_date": "01/01/2026",
+            "expiration_date": "01/01/2027",
+            "addl_insured": null,
+            "subro_waived": null,
+            "limits": [
+              {
+                "coverage": "Each Occurrence",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "Damage to Rented Premises",
+                "limit": "$300,000"
+              },
+              {
+                "coverage": "Med Exp",
+                "limit": "$5,000"
+              },
+              {
+                "coverage": "Personal & Adv Injury",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "General Aggregate",
+                "limit": "$2,000,000"
+              },
+              {
+                "coverage": "Products-Comp/Op Agg",
+                "limit": "$2,000,000"
+              }
+            ],
+            "premium": "$22,100"
+          },
+          {
+            "insurer_letter": "C",
+            "coverage_type": "Umbrella Liability",
+            "policy_number": "CA-9948120",
+            "effective_date": "01/01/2026",
+            "expiration_date": "01/01/2027",
+            "addl_insured": null,
+            "subro_waived": null,
+            "limits": [
+              {
+                "coverage": "Each Occurrence",
+                "limit": "$5,000,000"
+              },
+              {
+                "coverage": "Aggregate",
+                "limit": "$5,000,000"
+              }
+            ],
+            "premium": "$18,900"
+          },
+          {
+            "insurer_letter": "B",
+            "coverage_type": "Workers Compensation and Employers Liability",
+            "policy_number": "CA-9948120",
+            "effective_date": "01/01/2026",
+            "expiration_date": "01/01/2027",
+            "addl_insured": null,
+            "subro_waived": null,
+            "limits": [
+              {
+                "coverage": "E.L. Each Accident",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "E.L. Disease-Ea Employee",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "E.L. Disease-Policy Limit",
+                "limit": "$1,000,000"
+              }
+            ],
+            "premium": "$35,500"
           }
         ],
         "forms_schedule": [
           {
-            "form_number": "CU 00 01 04 13",
-            "title": "Commercial Umbrella Coverage Form"
+            "form_number": "CA 00 01 11 20",
+            "title": "Business Auto Coverage Form"
           },
           {
-            "form_number": "CU 21 01 04 13",
-            "title": "Schedule of Underlying Insurance"
+            "form_number": "CA 99 10 06 20",
+            "title": "Amendatory Endorsement"
           },
           {
-            "form_number": "CA 99 17 11 20",
-            "title": "Hired Auto and Non-Owned Auto Liability Endorsement"
+            "form_number": "CG 00 01 04 13",
+            "title": "Commercial General Liability Coverage Form"
+          },
+          {
+            "form_number": "CG 20 10 04 13",
+            "title": "Additional Insured - Owners, Lessees or Contractors - Scheduled Person or Organization"
+          },
+          {
+            "form_number": "CG 20 37 04 13",
+            "title": "Additional Insured - Owners, Lessees or Contractors - Completed Operations"
           },
           {
             "form_number": "IL 00 17 11 98",
             "title": "Common Policy Conditions"
           },
           {
-            "form_number": "CU 25 02 04 13",
-            "title": "Changes - Cancellation Provisions or Nonrenewal"
+            "form_number": "WC 00 00 00 B",
+            "title": "Workers Compensation and Employers Liability Insurance Policy"
+          },
+          {
+            "form_number": "CU 00 01 12 19",
+            "title": "Commercial Umbrella Coverage Form"
           }
         ],
         "premium_summary": [
           {
             "description": "Policy Premium",
-            "amount": "$13,810"
+            "amount": "$173,400"
           },
           {
-            "description": "TRIA",
-            "amount": "$95"
+            "description": "Terrorism (TRIA)",
+            "amount": "$1,800"
           },
           {
-            "description": "Taxes",
-            "amount": "$238"
+            "description": "State Taxes",
+            "amount": "$1,950"
           },
           {
-            "description": "Fees",
-            "amount": "$47"
+            "description": "Policy Fees",
+            "amount": "$410"
           }
         ],
-        "countersignature": "Megan Alvarez",
-        "countersignature_date": "01/01/2026",
+        "countersignature": "Marisol Vega",
+        "countersignature_date": "12/15/2025",
         "form_number": null,
         "endorsement_title": null,
         "endorsement_number": null,
@@ -598,7 +698,7 @@
         "additional_premium": null,
         "change_description": null,
         "coverages": null,
-        "total_premium": "$14,190",
+        "total_premium": "$177,560",
         "effective_date": "01/01/2026",
         "expiration_date": "01/01/2027",
         "nr_kind": null,
@@ -660,70 +760,75 @@
             "value": "Great West Casualty Company"
           },
           {
+            "label": "Valuation Date",
+            "value": "12/31/2025"
+          },
+          {
             "label": "Prepared By",
             "value": "Southwest Transportation Insurance"
           },
           {
-            "label": "Valuation Date",
-            "value": "06/30/2026"
-          },
-          {
-            "label": "Loss Run Period",
-            "value": "01/01/2026 to 06/30/2026"
+            "label": "Line of Business",
+            "value": "Commercial Auto / Liability / Umbrella / Workers Compensation"
           }
         ],
         "nr_columns": [
           "Claim No.",
-          "Line of Business",
           "Loss Date",
-          "Reported",
+          "Coverage",
           "Status",
+          "Paid",
+          "Outstanding",
           "Incurred"
         ],
         "nr_rows": [
           {
             "cells": [
-              "GW-2026-001",
-              "Auto Liability",
-              "02/14/2026",
-              "02/16/2026",
-              "Open",
+              "CA-24118",
+              "03/14/2024",
+              "Commercial Auto Liability",
+              "Closed",
+              "$18,450",
+              "$0",
               "$18,450"
             ]
           },
           {
             "cells": [
-              "GW-2026-002",
-              "Cargo",
-              "03/08/2026",
-              "03/09/2026",
+              "CA-25790",
+              "07/02/2024",
+              "Commercial Auto Physical Damage",
               "Closed",
-              "$4,200"
+              "$7,120",
+              "$0",
+              "$7,120"
             ]
           },
           {
             "cells": [
-              "GW-2026-003",
-              "General Liability",
-              "04/27/2026",
-              "04/29/2026",
-              "Open",
-              "$7,875"
-            ]
-          },
-          {
-            "cells": [
-              "GW-2026-004",
+              "CA-26231",
+              "10/19/2024",
               "Workers Compensation",
-              "05/19/2026",
-              "05/20/2026",
+              "Open",
+              "$9,860",
+              "$4,500",
+              "$14,360"
+            ]
+          },
+          {
+            "cells": [
+              "CA-27044",
+              "01/23/2025",
+              "Commercial General Liability",
               "Closed",
-              "$12,300"
+              "$0",
+              "$0",
+              "$0"
             ]
           }
         ],
-        "unrelated_subtitle": "Claims activity summary for underwriting and renewal review",
-        "unrelated_body": "This report summarizes reported losses and open claim activity for the referenced policy period. Reserve amounts and status are subject to change based on ongoing adjustment and defense activity."
+        "unrelated_subtitle": "Claim activity summary for underwriting review only",
+        "unrelated_body": "This report reflects selected claim activity as of the valuation date shown above. It is provided for account review and is not a certificate of insurance, declaration page, invoice, or endorsement."
       }
     ]
   }

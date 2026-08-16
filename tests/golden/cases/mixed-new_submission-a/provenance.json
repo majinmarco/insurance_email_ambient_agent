@@ -18,7 +18,7 @@
       "multi_recipient": true,
       "body_only": false,
       "inconsistency": false,
-      "date_received": "2026-07-12T17:55:00+00:00"
+      "date_received": "2026-07-13T17:55:00+00:00"
     },
     "attachments": [
       {
@@ -61,22 +61,26 @@
   "raw_scenario": {
     "shared": {
       "named_insured": "Riverside Manufacturing Co.",
-      "policy_number": null,
+      "policy_number": "NEW-QUOTE-2026-0017",
       "insured_address": "2200 Foundry Road, Cleveland, OH 44115",
       "contact_name": "Karen Delgado",
       "contact_email": "kdelgado@riversidemfg.com",
       "contact_phone": "(216) 555-0173",
       "carrier_name": "The Hartford",
-      "effective_date": "2026-02-01",
-      "expiration_date": "2027-02-01",
+      "effective_date": "2026-08-01",
+      "expiration_date": "2027-08-01",
       "coverage_limits": [
         {
           "coverage": "Commercial General Liability",
           "limit": "$1,000,000"
         },
         {
+          "coverage": "Business Income",
+          "limit": "$500,000"
+        },
+        {
           "coverage": "Business Personal Property",
-          "limit": "$1,250,000"
+          "limit": "$1,200,000"
         },
         {
           "coverage": "Commercial Automobile Liability",
@@ -91,61 +95,61 @@
           "limit": "$5,000,000"
         }
       ],
-      "total_premium": "$48,625",
+      "total_premium": "$48,965",
       "producer": {
         "agency": "Great Lakes Insurance Advisors",
-        "address": "1200 Superior Avenue, Suite 1450, Cleveland, OH 44114",
-        "contact_name": "Mia Thompson",
-        "phone": "(216) 555-0148",
-        "fax": "(216) 555-0199",
+        "address": "1111 Superior Avenue, Suite 900, Cleveland, OH 44114",
+        "contact_name": "Michael Trent",
+        "phone": "(216) 555-0198",
+        "fax": "(216) 555-0144",
         "email": "submissions@greatlakesins.com"
       },
       "insurers": [
         {
           "letter": "A",
-          "name": "The Hartford",
-          "naic": "00914"
-        },
-        {
-          "letter": "B",
           "name": "Hartford Fire Insurance Company",
           "naic": "19682"
         },
         {
-          "letter": "C",
+          "letter": "B",
           "name": "Hartford Casualty Insurance Company",
           "naic": "29424"
         },
         {
-          "letter": "D",
-          "name": "Hartford Insurance Company of the Midwest",
-          "naic": "37478"
-        },
-        {
-          "letter": "E",
+          "letter": "C",
           "name": "Twin City Fire Insurance Company",
           "naic": "29459"
         },
         {
-          "letter": "F",
+          "letter": "D",
           "name": "Hartford Accident and Indemnity Company",
           "naic": "22357"
+        },
+        {
+          "letter": "E",
+          "name": "Hartford Underwriters Insurance Company",
+          "naic": "30104"
+        },
+        {
+          "letter": "F",
+          "name": "Hartford Lloyd's Insurance Company",
+          "naic": "38264"
         }
       ],
       "business_description": "Sheet-metal fabrication and industrial machining",
       "entity_type": "Corporation",
-      "fein": "31-2456789",
-      "naic_carrier": "00914"
+      "fein": "31-7845621",
+      "naic_carrier": "19682"
     },
     "email": {
-      "subject": "[URGENT] Submission Request \u2014 Riverside Manufacturing Co. \u2014 New Business Property/Casualty Quote",
-      "body": "Good morning,\n\nPlease accept this new business submission for Riverside Manufacturing Co. for a quote and, if terms are acceptable, bind coverage effective 02/01/2026. This is a brand-new account with no existing policy number.\n\nNamed insured: Riverside Manufacturing Co.\nAddress: 2200 Foundry Road, Cleveland, OH 44115\nBusiness: Sheet-metal fabrication and industrial machining\n\nPlease review the attached underwriting information and issue indications for the requested effective date. Karen Delgado is the primary contact at kdelgado@riversidemfg.com / (216) 555-0173.\n\nThank you,\nGreat Lakes Insurance Advisors\n\nSent from my iPhone",
-      "sender": "Mia Thompson <submissions@greatlakesins.com>",
-      "recipient": "newbusiness@thehartford.com, newbusiness@thehartford.com"
+      "subject": "[URGENT] New Submission Request \u2013 Riverside Manufacturing Co. \u2013 Effective 08/01/2026",
+      "body": "Good morning,\n\nPlease submit a new business quote and, if acceptable, bind coverage for Riverside Manufacturing Co. for a requested effective date of 08/01/2026.\n\nNamed insured: Riverside Manufacturing Co.\nAddress: 2200 Foundry Road, Cleveland, OH 44115\nContact: Karen Delgado | kdelgado@riversidemfg.com | (216) 555-0173\n\nThis is a brand-new account with no existing policy number. Please review the attached application materials and issue indications for the package coverages requested.\n\nThank you,\nGreat Lakes Insurance Advisors\n\nSent from my iPhone",
+      "sender": "Michael Trent <submissions@greatlakesins.com>",
+      "recipient": "Underwriting Team, The Hartford, newbusiness@carrierintake.com"
     },
     "documents": [
       {
-        "title": "Riverside Manufacturing Co. Commercial Package Declarations",
+        "title": "Commercial Package Policy Declarations",
         "certificate_holder": null,
         "coverage_lines": null,
         "description_of_operations": null,
@@ -169,14 +173,26 @@
           {
             "insurer_letter": "A",
             "coverage_type": "Commercial General Liability",
-            "policy_number": null,
-            "effective_date": "02/01/2026",
-            "expiration_date": "02/01/2027",
+            "policy_number": "NEW-QUOTE-2026-0017",
+            "effective_date": "08/01/2026",
+            "expiration_date": "08/01/2027",
             "addl_insured": false,
             "subro_waived": false,
             "limits": [
               {
                 "coverage": "Each Occurrence",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "Damage to Premises Rented to You",
+                "limit": "$300,000"
+              },
+              {
+                "coverage": "Medical Expense Limit",
+                "limit": "$5,000"
+              },
+              {
+                "coverage": "Personal and Advertising Injury",
                 "limit": "$1,000,000"
               },
               {
@@ -186,44 +202,60 @@
               {
                 "coverage": "Products-Completed Operations Aggregate",
                 "limit": "$2,000,000"
-              },
-              {
-                "coverage": "Personal and Advertising Injury",
-                "limit": "$1,000,000"
-              },
-              {
-                "coverage": "Damage to Premises Rented to You",
-                "limit": "$300,000"
               }
             ],
             "premium": "$12,450"
           },
           {
-            "insurer_letter": "A",
+            "insurer_letter": "B",
             "coverage_type": "Business Personal Property",
-            "policy_number": null,
-            "effective_date": "02/01/2026",
-            "expiration_date": "02/01/2027",
+            "policy_number": "NEW-QUOTE-2026-0017",
+            "effective_date": "08/01/2026",
+            "expiration_date": "08/01/2027",
             "addl_insured": false,
             "subro_waived": false,
             "limits": [
               {
-                "coverage": "Blanket Limit",
-                "limit": "$1,250,000"
+                "coverage": "Business Personal Property Limit",
+                "limit": "$1,200,000"
               },
               {
-                "coverage": "Deductible",
-                "limit": "$5,000"
+                "coverage": "Personal Property of Others",
+                "limit": "$100,000"
+              },
+              {
+                "coverage": "Valuation",
+                "limit": "Replacement Cost"
               }
             ],
-            "premium": "$8,760"
+            "premium": "$6,875"
           },
           {
-            "insurer_letter": "A",
+            "insurer_letter": "C",
+            "coverage_type": "Business Income",
+            "policy_number": "NEW-QUOTE-2026-0017",
+            "effective_date": "08/01/2026",
+            "expiration_date": "08/01/2027",
+            "addl_insured": false,
+            "subro_waived": false,
+            "limits": [
+              {
+                "coverage": "Business Income Limit",
+                "limit": "$500,000"
+              },
+              {
+                "coverage": "Extended Business Income",
+                "limit": "12 Months"
+              }
+            ],
+            "premium": "$2,220"
+          },
+          {
+            "insurer_letter": "D",
             "coverage_type": "Commercial Automobile Liability",
-            "policy_number": null,
-            "effective_date": "02/01/2026",
-            "expiration_date": "02/01/2027",
+            "policy_number": "NEW-QUOTE-2026-0017",
+            "effective_date": "08/01/2026",
+            "expiration_date": "08/01/2027",
             "addl_insured": false,
             "subro_waived": false,
             "limits": [
@@ -234,40 +266,48 @@
               {
                 "coverage": "Medical Payments",
                 "limit": "$5,000"
+              },
+              {
+                "coverage": "Uninsured Motorists",
+                "limit": "$1,000,000"
               }
             ],
-            "premium": "$11,840"
+            "premium": "$5,640"
           },
           {
-            "insurer_letter": "A",
+            "insurer_letter": "E",
             "coverage_type": "Workers Compensation",
-            "policy_number": null,
-            "effective_date": "02/01/2026",
-            "expiration_date": "02/01/2027",
+            "policy_number": "NEW-QUOTE-2026-0017",
+            "effective_date": "08/01/2026",
+            "expiration_date": "08/01/2027",
             "addl_insured": false,
             "subro_waived": false,
             "limits": [
               {
-                "coverage": "Bodily Injury by Accident",
+                "coverage": "Part One - Workers Compensation",
                 "limit": "Statutory"
               },
               {
-                "coverage": "Bodily Injury by Disease - Each Employee",
-                "limit": "Statutory"
+                "coverage": "Part Two - Employers Liability Each Accident",
+                "limit": "$1,000,000"
               },
               {
-                "coverage": "Bodily Injury by Disease - Policy Limit",
-                "limit": "Statutory"
+                "coverage": "Part Two - Employers Liability Disease - Policy Limit",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "Part Two - Employers Liability Disease - Each Employee",
+                "limit": "$1,000,000"
               }
             ],
-            "premium": "$9,925"
+            "premium": "$14,980"
           },
           {
-            "insurer_letter": "A",
+            "insurer_letter": "F",
             "coverage_type": "Umbrella Liability",
-            "policy_number": null,
-            "effective_date": "02/01/2026",
-            "expiration_date": "02/01/2027",
+            "policy_number": "NEW-QUOTE-2026-0017",
+            "effective_date": "08/01/2026",
+            "expiration_date": "08/01/2027",
             "addl_insured": false,
             "subro_waived": false,
             "limits": [
@@ -278,23 +318,31 @@
               {
                 "coverage": "Aggregate",
                 "limit": "$5,000,000"
+              },
+              {
+                "coverage": "Self-Insured Retention",
+                "limit": "$10,000"
               }
             ],
-            "premium": "$3,650"
+            "premium": "$6,800"
           }
         ],
         "forms_schedule": [
+          {
+            "form_number": "C00100413",
+            "title": "Commercial General Liability Coverage Form"
+          },
           {
             "form_number": "CG 00 01 04 13",
             "title": "Commercial General Liability Coverage Form"
           },
           {
-            "form_number": "CG 00 20 04 13",
-            "title": "Additional Insured - Owners, Lessees or Contractors - Scheduled Person or Organization"
+            "form_number": "CG 21 01 09 15",
+            "title": "Exclusion - Access or Disclosure of Confidential or Personal Information and Data-Related Liability"
           },
           {
-            "form_number": "CP 00 10 10 12",
-            "title": "Building and Personal Property Coverage Form"
+            "form_number": "CG 20 10 04 13",
+            "title": "Additional Insured - Owners, Lessees or Contractors - Scheduled Person or Organization"
           },
           {
             "form_number": "CA 00 01 11 20",
@@ -305,38 +353,66 @@
             "title": "Designated Insured Endorsement"
           },
           {
-            "form_number": "WC 00 00 00 A",
-            "title": "Workers Compensation and Employers Liability Insurance Policy"
+            "form_number": "CP 00 10 10 12",
+            "title": "Building and Personal Property Coverage Form"
           },
           {
-            "form_number": "CU 00 01 01 15",
-            "title": "Commercial Umbrella Liability Coverage Form"
+            "form_number": "CP 00 30 10 12",
+            "title": "Business Income (and Extra Expense) Coverage Form"
           },
           {
             "form_number": "IL 00 17 11 98",
             "title": "Common Policy Conditions"
+          },
+          {
+            "form_number": "WC 00 00 00 C",
+            "title": "Workers Compensation and Employers Liability Insurance Policy"
+          },
+          {
+            "form_number": "CU 00 01 11 85",
+            "title": "Commercial Umbrella Coverage Form"
           }
         ],
         "premium_summary": [
           {
-            "description": "Policy Premium",
-            "amount": "$46,625"
+            "description": "Commercial General Liability Premium",
+            "amount": "$12,450"
+          },
+          {
+            "description": "Business Personal Property Premium",
+            "amount": "$6,875"
+          },
+          {
+            "description": "Business Income Premium",
+            "amount": "$2,220"
+          },
+          {
+            "description": "Commercial Automobile Liability Premium",
+            "amount": "$5,640"
+          },
+          {
+            "description": "Workers Compensation Premium",
+            "amount": "$14,980"
+          },
+          {
+            "description": "Umbrella Liability Premium",
+            "amount": "$6,800"
           },
           {
             "description": "Terrorism (TRIA)",
-            "amount": "$825"
+            "amount": "$460"
           },
           {
-            "description": "Ohio Surplus Lines Tax",
-            "amount": "$1,025"
+            "description": "State Taxes and Surcharges",
+            "amount": "$315"
           },
           {
-            "description": "Policy Fee",
-            "amount": "$150"
+            "description": "Policy Fees",
+            "amount": "$225"
           }
         ],
-        "countersignature": "Hartford Countersign Office",
-        "countersignature_date": "01/14/2026",
+        "countersignature": "Hartford Service Center",
+        "countersignature_date": "07/22/2026",
         "form_number": null,
         "endorsement_title": null,
         "endorsement_number": null,
@@ -345,9 +421,9 @@
         "additional_premium": null,
         "change_description": null,
         "coverages": null,
-        "total_premium": "$48,625",
-        "effective_date": "02/01/2026",
-        "expiration_date": "02/01/2027",
+        "total_premium": "$49,965",
+        "effective_date": "08/01/2026",
+        "expiration_date": "08/01/2027",
         "nr_kind": null,
         "nr_header_rows": null,
         "nr_columns": null,
@@ -356,47 +432,47 @@
         "unrelated_body": null
       },
       {
-        "title": "Riverside Manufacturing Co. Premium Invoice",
+        "title": "Premium Invoice",
         "certificate_holder": null,
         "coverage_lines": null,
         "description_of_operations": null,
         "authorized_representative": null,
         "certificate_number": null,
         "revision_number": null,
-        "invoice_number": "INV-2026-014782",
-        "invoice_date": "01/14/2026",
-        "account_number": "ACCT-884203",
+        "invoice_number": "INV-2026-88314",
+        "invoice_date": "07/22/2026",
+        "account_number": "ACCT-104882",
         "line_items": [
           {
             "description": "Policy Premium",
-            "amount": "$46,625"
+            "amount": "$49,965"
           },
           {
             "description": "Terrorism/TRIA",
-            "amount": "$825"
+            "amount": "$460"
           },
           {
-            "description": "Ohio Surplus Lines Tax",
-            "amount": "$1,025"
+            "description": "Ohio Premium Tax and Surcharge",
+            "amount": "$315"
           },
           {
             "description": "Broker Fee",
-            "amount": "$150"
+            "amount": "$225"
           },
           {
             "description": "Prior Balance",
             "amount": "$0"
           }
         ],
-        "subtotal": "$47,600",
-        "taxes": "$1,025",
-        "fees": "$150",
+        "subtotal": "$50,965",
+        "taxes": "$315",
+        "fees": "$225",
         "prior_balance": "$0",
-        "amount_due": "$48,775",
-        "billing_period": "02/01/2026 to 02/01/2027",
-        "due_date": "02/01/2026",
+        "amount_due": "$50,965",
+        "billing_period": "08/01/2026 - 08/01/2027",
+        "due_date": "08/15/2026",
         "payment_methods": "AC, check, or wire transfer",
-        "remit_to": "The Hartford, P.O. B0x 660917, Dallas, TX 75266-0917",
+        "remit_to": "The Hartford, P.O. B0x 1110, Hartford, CT 06143-1110",
         "coverage_parts": null,
         "forms_schedule": null,
         "premium_summary": null,

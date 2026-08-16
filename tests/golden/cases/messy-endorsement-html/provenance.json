@@ -18,7 +18,7 @@
       "multi_recipient": true,
       "body_only": false,
       "inconsistency": false,
-      "date_received": "2026-06-24T12:03:00+00:00"
+      "date_received": "2026-06-25T12:03:00+00:00"
     },
     "attachments": [
       {
@@ -62,49 +62,45 @@
       "expiration_date": "2027-02-15",
       "coverage_limits": [
         {
-          "coverage": "Each Occurrence",
+          "coverage": "Commercial General Liability Each Occurrence",
           "limit": "$1,000,000"
         },
         {
-          "coverage": "General Aggregate",
+          "coverage": "Commercial General Liability General Aggregate",
           "limit": "$2,000,000"
         },
         {
-          "coverage": "Personal and Advertising Injury",
+          "coverage": "Business Personal Property",
+          "limit": "$250,000"
+        },
+        {
+          "coverage": "Commercial Automobile Liability Combined Single Limit",
           "limit": "$1,000,000"
         },
         {
-          "coverage": "Damage to Premises Rented to You",
-          "limit": "$300,000"
-        },
-        {
-          "coverage": "Medical Expense Limit",
-          "limit": "$5,000"
-        },
-        {
-          "coverage": "Combined Single Limit",
-          "limit": "$1,000,000"
+          "coverage": "Umbrella Liability Each Occurrence",
+          "limit": "$5,000,000"
         }
       ],
-      "total_premium": "$18,740",
+      "total_premium": "$18,460",
       "producer": {
         "agency": "Gulf Coast Insurance Group",
-        "address": "1001 S Dale Mabry Hwy, Suite 300, Tampa, FL 33629",
-        "contact_name": "Marissa Cole",
-        "phone": "(813) 555-0842",
-        "fax": "(813) 555-0843",
+        "address": "1001 E Kennedy Blvd, Suite 220, Tampa, FL 33602",
+        "contact_name": "Megan Ellis",
+        "phone": "(813) 555-0199",
+        "fax": "(813) 555-0198",
         "email": "submissions@gulfcoastig.com"
       },
       "insurers": [
         {
           "letter": "A",
           "name": "Nationwide Mutual Insurance Company",
-          "naic": "23787"
+          "naic": "23779"
         },
         {
           "letter": "B",
           "name": "Nationwide Property and Casualty Insurance Company",
-          "naic": "37877"
+          "naic": "23760"
         },
         {
           "letter": "C",
@@ -113,34 +109,34 @@
         },
         {
           "letter": "D",
-          "name": "Nationwide General Insurance Company",
+          "name": "Nationwide Insurance Company of America",
           "naic": "25453"
         },
         {
           "letter": "E",
-          "name": "Allied Property and Casualty Insurance Company",
-          "naic": "42579"
+          "name": "Nationwide General Insurance Company",
+          "naic": "11770"
         },
         {
           "letter": "F",
-          "name": "Farmland Mutual Insurance Company",
-          "naic": "13897"
+          "name": "Nationwide Assurance Company",
+          "naic": "06107"
         }
       ],
       "business_description": "Commercial real estate management (retail centers)",
       "entity_type": "Limited Liability Company",
-      "fein": "47-2861943",
-      "naic_carrier": "23787"
+      "fein": "59-2847631",
+      "naic_carrier": "23779"
     },
     "email": {
-      "subject": "Fwd: Request for mid-term endorsement to CPP-2214569 for Coastal Property Management LLC",
-      "body": "Good morning,\n\nPlease process the attached mid-term endorsement for Coastal Property Management LLC, policy number CPP-2214569, effective 02/15/2026.\n\nRequested change: add one owned service vehicle to the policy schedule effective 02/15/2026, with the corresponding coverage and premium adjustment reflected on the endorsement.\n\nPlease confirm once the endorsement has been issued and advise if you need any additional information to complete the transaction.\n\nThank you,\nHector Ramos\nCoastal Property Management LLC\n\nOn last Tuesday, Marissa Cole <submissions@gulfcoastig.com> wrote:\n> Thanks for sending this over \u2014 can you confirm the requested effective date and whether any additional insureds are needed?\n>\n> Regards,\n> Marissa Cole\n\n--\nHector Ramos\nCoastal Property Management LLC\n(813) 555-0177",
-      "sender": "Marissa Cole <submissions@gulfcoastig.com>",
-      "recipient": "Hector Ramos <hramos@coastalpm.com>, submissions@coastalpm.com"
+      "subject": "Fwd: Request for mid-term endorsement for Coastal Property Management LLC - Policy CPP-2214569",
+      "body": "Good morning,\n\nPlease issue a mid-term policy change endorsement for Coastal Property Management LLC, policy number CPP-2214569, effective 02/15/2026.\n\nRequested changes:\n- Add the additional insured location at 2201 S Dale Mabry Hwy, Tampa, FL 33629\n- Update the named insured mailing address to reflect the insured\u2019s current office location, if required\n- Confirm no change to the current liability limits unless additional underwriting is needed\n\nPlease advise if any supplemental information is needed to process the endorsement.\n\nThank you,\nHector Ramos\nCoastal Property Management LLC\n\nOn last Tuesday, Megan Ellis <submissions@gulfcoastig.com> wrote:\n> Thanks for sending this over \u2014 can you confirm the requested effective date and whether any additional insureds are needed?\n>\n> Regards,\n> Megan Ellis\n\n--\nHector Ramos\nCoastal Property Management LLC\n(813) 555-0177",
+      "sender": "Hector Ramos <hramos@coastalpm.com>",
+      "recipient": "submissions@gulfcoastig.com, submissions@gulfcoastig.com"
     },
     "documents": [
       {
-        "title": "Policy Change Endorsement",
+        "title": "Policy Change Endorsement - Coastal Property Management LLC",
         "certificate_holder": null,
         "coverage_lines": null,
         "description_of_operations": null,
@@ -165,9 +161,9 @@
         "premium_summary": null,
         "countersignature": null,
         "countersignature_date": null,
-        "form_number": "CP 04 17 06 15",
-        "endorsement_title": "Business Auto Coverage Form \u2014 Schedule Change Endorsement",
-        "endorsement_number": "CP 04 17",
+        "form_number": "CP 04 55 09 17",
+        "endorsement_title": "Policy Change Endorsement",
+        "endorsement_number": "1",
         "schedule_rows": [
           {
             "label": "Named Insured",
@@ -178,30 +174,26 @@
             "value": "CPP-2214569"
           },
           {
-            "label": "Effective Date",
+            "label": "Change Effective Date",
             "value": "02/15/2026"
           },
           {
-            "label": "Vehicle Added",
-            "value": "2022 Ford F-150 XL; VIN 1FTMF1CB2NKE12345; Unit No. 5; Garage Location: 500 N Westshore Blvd, Tampa, FL 33609"
+            "label": "Change Type",
+            "value": "Add additional insured premises at 2201 S Dale Mabry Hwy, Tampa, FL 33629"
           },
           {
-            "label": "Coverage",
-            "value": "Symbol 7 - Specifically Described Autos; Liability Coverage"
-          },
-          {
-            "label": "Premium Impact",
-            "value": "Additional premium $275"
+            "label": "Other Information",
+            "value": "All other premises and classifications remain as previously endorsed."
           }
         ],
         "provisions": [
-          "Schedule of Covered Autos is amended to include the vehicle described below, subject to the declarations and all other terms, conditions, exclusions and endorsements of the policy.",
-          "The following vehicle is added as a covered auto under this policy effective 02/15/2026: 2022 Ford F-150 XL, VIN 1FTMF1CB2NKE12345, Unit No. 5, garaged at 500 N Westshore Blvd, Tampa, FL 33609.",
-          "If applicable, premium for this change is based upon the addition of the vehicle and related exposure and is due and payable in accordance with the policy billing terms.",
+          "It is agreed that the Schedule of Locations is amended to include the premises at 2201 S Dale Mabry Hwy, Tampa, FL 33629, effective 12:01 A.M. on the change effective date shown in the Schedule.",
+          "The Limits of Insurance and all other terms and conditions applicable to the policy are not increased or otherwise altered by this endorsement, except as specifically stated herein.",
+          "Any premium adjustment resulting from this change shall be calculated by the Company in accordance with its manual rules and rates and shall be payable by the Named Insured upon invoice.",
           "All other terms and conditions of this policy remain unchanged."
         ],
-        "additional_premium": "$275",
-        "change_description": "Adds one owned service vehicle to the Business Auto schedule effective 02/15/2026.",
+        "additional_premium": "$245",
+        "change_description": "Adds an additional insured premises location effective 02/15/2026.",
         "coverages": null,
         "total_premium": null,
         "effective_date": "02/15/2026",

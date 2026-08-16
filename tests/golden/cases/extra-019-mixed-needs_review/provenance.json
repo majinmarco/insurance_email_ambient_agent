@@ -18,7 +18,7 @@
       "multi_recipient": false,
       "body_only": false,
       "inconsistency": false,
-      "date_received": "2026-07-09T16:20:00+00:00"
+      "date_received": "2026-07-10T16:20:00+00:00"
     },
     "attachments": [
       {
@@ -67,8 +67,8 @@
       "contact_email": "praman@evergreenhh.com",
       "contact_phone": "(503) 555-0159",
       "carrier_name": "CNA Financial",
-      "effective_date": "2026-01-01",
-      "expiration_date": "2027-01-01",
+      "effective_date": "2026-02-01",
+      "expiration_date": "2027-02-01",
       "coverage_limits": [
         {
           "coverage": "General Aggregate",
@@ -83,54 +83,62 @@
           "limit": "$1,000,000"
         },
         {
-          "coverage": "Damage to Premises Rented to You",
-          "limit": "$300,000"
+          "coverage": "Products-Completed Operations Aggregate",
+          "limit": "$2,000,000"
         },
         {
           "coverage": "Medical Expense Limit",
           "limit": "$10,000"
         },
         {
-          "coverage": "Employees Benefits Liability",
+          "coverage": "Combined Single Limit",
           "limit": "$1,000,000"
         },
         {
-          "coverage": "Professional Liability Aggregate",
-          "limit": "$2,000,000"
-        },
-        {
-          "coverage": "Each Claim",
+          "coverage": "Hired and Non-Owned Auto Liability",
           "limit": "$1,000,000"
         },
         {
-          "coverage": "Umbrella Liability Aggregate",
-          "limit": "$5,000,000"
+          "coverage": "Each Accident",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Employer's Liability Each Accident",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Employer's Liability Disease - Policy Limit",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Employer's Liability Disease - Each Employee",
+          "limit": "$1,000,000"
         }
       ],
       "total_premium": "$18,450",
       "producer": {
         "agency": "Cascade Professional Insurance",
-        "address": "1211 SW 5th Ave, Suite 2200, Portland, OR 97204",
-        "contact_name": "Megan Hart",
-        "phone": "(503) 555-0194",
-        "fax": "(503) 555-0195",
+        "address": "900 SW 5th Ave, Suite 1800, Portland, OR 97204",
+        "contact_name": "Megan Holt",
+        "phone": "(503) 555-0198",
+        "fax": "(503) 555-0199",
         "email": "submissions@cascadepro.com"
       },
       "insurers": [
         {
           "letter": "A",
-          "name": "CNA Insurance Company",
-          "naic": "26395"
-        },
-        {
-          "letter": "B",
           "name": "Continental Casualty Company",
           "naic": "20443"
         },
         {
+          "letter": "B",
+          "name": "CNA Insurance Company",
+          "naic": "12664"
+        },
+        {
           "letter": "C",
-          "name": "Transportation Insurance Company",
-          "naic": "20494"
+          "name": "National Fire Insurance Company of Hartford",
+          "naic": "20478"
         },
         {
           "letter": "D",
@@ -144,24 +152,24 @@
         },
         {
           "letter": "F",
-          "name": "Western Surety Company",
-          "naic": "13188"
+          "name": "CNA Surety Company",
+          "naic": "23787"
         }
       ],
       "business_description": "In-home nursing and personal care services",
       "entity_type": "Limited Liability Company",
-      "fein": "93-4187621",
-      "naic_carrier": "26395"
+      "fein": "93-4187265",
+      "naic_carrier": "20443"
     },
     "email": {
-      "subject": "Review requested: Evergreen Home Health Services LLC policy endorsement and supporting submission item [Ref# 60388]",
-      "body": "Hi Priya,\n\nAttached is a policy change endorsement for Evergreen Home Health Services LLC, policy HMP-3320815, along with a separate structured submission item for review. The endorsement reflects an additional insured contract and related wording change effective 01/15/2026.\n\nPlease review both items and let us know if you need any revisions or additional supporting information.\n\nBest,\nMegan\n\nSent from my iPhone",
-      "sender": "Megan Hart <submissions@cascadepro.com>",
+      "subject": "Review requested for Evergreen Home Health Services LLC policy endorsement and attachment [Ref# 60388]",
+      "body": "Hi Priya,\n\nPlease review the attached policy change endorsement for Evergreen Home Health Services LLC, policy HMP-3320815, along with the supporting attachment. The endorsement is intended to add a scheduled location update effective 02/15/2026.\n\nI\u2019m sending this over for review because the backup document is not a standard certificate or declarations page and I want to make sure it is routed correctly before we finalize anything.\n\nThanks,\nMegan\n\nSent from my iPhone",
+      "sender": "Megan Holt <submissions@cascadepro.com>",
       "recipient": "Priya Raman <praman@evergreenhh.com>"
     },
     "documents": [
       {
-        "title": "Policy Change Endorsement",
+        "title": "ENDORSEMENT - POLICY CHANGE",
         "certificate_holder": null,
         "coverage_lines": null,
         "description_of_operations": null,
@@ -186,9 +194,9 @@
         "premium_summary": null,
         "countersignature": null,
         "countersignature_date": null,
-        "form_number": "CG 20 10 04 13",
-        "endorsement_title": "Addit1onal Insured \u2014 Owners, Lessees or Contractors \u2014 Scheduled Person or Organization",
-        "endorsement_number": "ED-07",
+        "form_number": "IL 12 10 02 15",
+        "endorsement_title": "Polic Change Endorsement",
+        "endorsement_number": "CNA-PE-0048",
         "schedule_rows": [
           {
             "label": "Named Insured",
@@ -199,29 +207,29 @@
             "value": "HMP-3320815"
           },
           {
-            "label": "Additional Insured",
-            "value": "Rosewood Senior Living, Inc."
+            "label": "Additional Insured Location",
+            "value": "1280 SE Division St, Suite 240, Portland, OR 97202"
           },
           {
-            "label": "Project or Operations",
-            "value": "In-home care services agreement at 4100 NE 125th Ave, Portland, OR 97230"
+            "label": "Location Description",
+            "value": "Satellite care coordination office"
           },
           {
             "label": "Effective Date",
-            "value": "01/15/2026"
+            "value": "02/15/2026"
           }
         ],
         "provisions": [
-          "This endorsement modifies insurance provided under the following: Commercial General Liability Coverage Part.",
-          "SECTION II \u2014 WHO IS AN INSURED is amended to include as an additional insured the person or organization shown in the Schhedule, but only with respect to liability for bodily injury, property damage, or personal and advertising injurry caused, in whole or in part, by your acts or omissions or the acts or omissions of those acting on your behalf in the performance of our ongoing operations for the additional insred.",
-          "The insurance afforded to th addtional insured does not apply to bodily injury or property damage arising out of the rendering of, or the failure to render, any professional health care services, nor does it apply to liability assumed by the additional insured under any contract 0r agreement unless such liability would have attached in the absence of suh contract or agreement.",
-          "All other terms and conditions of this policy remain unchannged."
+          "Item 3. Schedule of Locations is amended to add the location shown in the Schedule Rows above, subject to all terms, conditions, and exclusions of the policy.",
+          "This endorsement applies only with respect to operations conducted at the additional insured location described herein and does not extend coverage to any otherr premises not specifically described.",
+          "If any premium adjustment is due as a result of this change, it shall be payyable by the named insured upon billing by the company.",
+          "All other terms and conditions of this policy remain unchanged."
         ],
-        "additional_premium": "$250.00",
-        "change_description": "Adds Rosewood Senior Living, Inc. as an additional insured for ongoing operations effective 01/15/2026.",
+        "additional_premium": "$245.00",
+        "change_description": "Adds one satellite care coordination office location effective 02/15/2026.",
         "coverages": null,
         "total_premium": null,
-        "effective_date": "01/15/2026",
+        "effective_date": "02/15/2026",
         "expiration_date": null,
         "nr_kind": null,
         "nr_header_rows": null,
@@ -231,7 +239,7 @@
         "unrelated_body": null
       },
       {
-        "title": "Statement of Values - Schedule A",
+        "title": "LOSS RUN REPORT",
         "certificate_holder": null,
         "coverage_lines": null,
         "description_of_operations": null,
@@ -267,7 +275,7 @@
         "total_premium": null,
         "effective_date": null,
         "expiration_date": null,
-        "nr_kind": "Statement of Values",
+        "nr_kind": "Loss Run Report",
         "nr_header_rows": [
           {
             "label": "Insured",
@@ -278,60 +286,72 @@
             "value": "HMP-3320815"
           },
           {
-            "label": "Valuation Date",
-            "value": "01/01/2026"
+            "label": "Carrier",
+            "value": "CNA Financial"
+          },
+          {
+            "label": "Policy Term",
+            "value": "02/01/2026 to 02/01/2027"
           },
           {
             "label": "Prepared By",
             "value": "Cascade Professional Insurance"
           },
           {
-            "label": "Location Count",
-            "value": "3"
+            "label": "Valuation Date",
+            "value": "01/31/2026"
           }
         ],
         "nr_columns": [
-          "Location",
-          "Address",
-          "Occupancy",
-          "Building Value",
-          "Business Personal Property",
-          "Total Insured Value"
+          "Claim No.",
+          "Loss Date",
+          "Line of Business",
+          "Status",
+          "Cause of Loss",
+          "Paid",
+          "Reserved",
+          "Incurred"
         ],
         "nr_rows": [
           {
             "cells": [
-              "01",
-              "1201 SW Fifth Ave, Portland, OR 97204",
-              "Administrative office and scheduling",
-              "$0",
-              "$42,500",
-              "$42,500"
+              "CLM-2026-001",
+              "06/14/2026",
+              "Commercial General Liability",
+              "Open",
+              "Slip and fall",
+              "$3,250",
+              "$7,500",
+              "$10,750"
             ]
           },
           {
             "cells": [
-              "02",
-              "Portland Metro Service Territory",
-              "Mobile in-home patient care operations",
+              "CLM-2026-002",
+              "09/03/2026",
+              "Workers Compensation",
+              "Closed",
+              "Needlestick exposure",
+              "$1,480",
               "$0",
-              "$18,000",
-              "$18,000"
+              "$1,480"
             ]
           },
           {
             "cells": [
-              "03",
-              "Warehouse and supply storage - Portland, OR",
-              "Medical supplies and records storage",
-              "$0",
-              "$27,500",
-              "$27,500"
+              "CLM-2026-003",
+              "11/22/2026",
+              "Commercial Auto Liability",
+              "Open",
+              "Backing accident",
+              "$6,900",
+              "$12,000",
+              "$18,900"
             ]
           }
         ],
-        "unrelated_subtitle": "Submission reference for property values only; not a declarations page",
-        "unrelated_body": "The following values are provided for underwriting review and scheduling purposes. Coverage terms, premiums, and endorsements are subject to carrier approval and final policy wording."
+        "unrelated_subtitle": "Claim activity summary for underwriting and renewal review",
+        "unrelated_body": "This report summarizes reported claims activity for the referenced policy term and is provided for loss analysis purposes only. It is not a certificate of insurance, invoice, declarations page, or endorsement."
       }
     ]
   }

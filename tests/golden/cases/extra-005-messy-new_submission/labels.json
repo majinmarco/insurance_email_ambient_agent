@@ -26,9 +26,9 @@
           "page_end": 0,
           "extraction": {
             "named_insured": "Evergreen Home Health Services LLC",
-            "policy_number": "CNA HCP 4827619",
-            "change_description": "Adds an additional insured and updates the named insured mailing information effective at inception.",
-            "effective_date": "2026-08-01"
+            "policy_number": "CNA-HHC-274918",
+            "change_description": "Adds scheduled additional location and covered auto, with contractual additional insured and waiver language.",
+            "effective_date": "2026-01-01"
           }
         },
         {
@@ -38,14 +38,14 @@
           "page_end": 1,
           "extraction": {
             "named_insured": "Evergreen Home Health Services LLC",
-            "policy_number": "CNA HCP 4827619",
+            "policy_number": "CNA-HHC-274918",
             "coverages": {
-              "Commercial General Liability": "$6,200",
-              "Business Auto Liability": "$3,150",
-              "Umbrella Liability": "$4,500",
-              "Workers Compensation": "$4,000"
+              "Commercial General Liability": "$7,840",
+              "Automobile Liability": "$2,460",
+              "Umbrella Liability": "$3,950",
+              "Workers Compensation": "$3,575"
             },
-            "total_premium": 18450.0
+            "total_premium": 18640.0
           }
         }
       ],
@@ -73,18 +73,19 @@
           "page_end": 0,
           "extraction": {
             "named_insured": "Evergreen Home Health Services LLC",
-            "policy_number": "CNA HCP 4827619",
-            "certificate_holder": "Rosew0od Senir Living, LLC 4550 NE Glisan St, Potland, OR 97213",
-            "effective_date": "2026-08-01",
-            "expiration_date": "2027-08-01",
+            "policy_number": "CNA-HHC-274918",
+            "certificate_holder": "Harboview Seior Living, LLC 88 Market Street, uite 400, Portlad, OR 97201",
+            "effective_date": "2026-01-01",
+            "expiration_date": "2027-01-01",
             "limits": {
               "Each Occurrence": "$1,000,000",
-              "Damage to Rented Premises": "$100,000",
-              "Med Exp (Any One Person)": "$5,000",
-              "Personal & Adv Injury": "$1,000,000",
+              "Damage to Rented Premises": "$300,000",
+              "Medical Expense (Any One Person)": "$5,000",
+              "Personal & Advertising Injury": "$1,000,000",
               "General Aggregate": "$2,000,000",
-              "Products-Comp/Op Agg": "$2,000,000",
+              "Products-Completed Operations Aggregate": "$2,000,000",
               "Combined Single Limit": "$1,000,000",
+              "Each Occurrence / Aggregate": "$5,000,000",
               "E.L. Each Accident": "$1,000,000",
               "E.L. Disease-Ea Employee": "$1,000,000",
               "E.L. Disease-Policy Limit": "$1,000,000"
@@ -113,18 +114,19 @@
           "page_end": 0,
           "extraction": {
             "named_insured": "Evergreen Home Health Services LLC",
-            "policy_number": "CNA HCP 4827619",
-            "certificate_holder": "NNorthwest Medical Group, P.C. 2100 SW Jefferson St, Suite 300, ortland, OR 97201",
-            "effective_date": "2026-08-01",
-            "expiration_date": "2027-08-01",
+            "policy_number": "CNA-HHC-274918",
+            "certificate_holder": "RRiverbend Medical Plaza Owners Association 4100 SE Hawtorne Blvd, Portland, OR 97214",
+            "effective_date": "2026-01-01",
+            "expiration_date": "2027-01-01",
             "limits": {
               "Each Occurrence": "$1,000,000",
-              "Damage to Rented Premises": "$100,000",
-              "Med Exp (Any One Person)": "$5,000",
-              "Personal & Adv Injury": "$1,000,000",
+              "Damage to Rented Premises": "$300,000",
+              "Medical Expense (Any One Person)": "$5,000",
+              "Personal & Advertising Injury": "$1,000,000",
               "General Aggregate": "$2,000,000",
-              "Products-Comp/Op Agg": "$2,000,000",
+              "Products-Completed Operations Aggregate": "$2,000,000",
               "Combined Single Limit": "$1,000,000",
+              "Each Occurrence / Aggregate": "$5,000,000",
               "E.L. Each Accident": "$1,000,000",
               "E.L. Disease-Ea Employee": "$1,000,000",
               "E.L. Disease-Policy Limit": "$1,000,000"
@@ -138,18 +140,19 @@
           "page_end": 1,
           "extraction": {
             "named_insured": "Evergreen Home Health Services LLC",
-            "policy_number": "CNA HCP 4827619",
-            "certificate_holder": "Willamette Property Management, LLC 10000 Broadway, Suite 1200, Poortland, OR 972o5",
-            "effective_date": "2026-08-01",
-            "expiration_date": "2027-08-01",
+            "policy_number": "CNA-HHC-274918",
+            "certificate_holder": "Rose City Property Group, Inc. 1555 NW Glissan Street, Portland, OR 977209",
+            "effective_date": "2026-01-01",
+            "expiration_date": "2027-01-01",
             "limits": {
               "Each Occurrence": "$1,000,000",
-              "Damage to Rented Premises": "$100,000",
-              "Med Exp (Any One Person)": "$5,000",
-              "Personal & Adv Injury": "$1,000,000",
+              "Damage to Rented Premises": "$300,000",
+              "Medical Expense (Any One Person)": "$5,000",
+              "Personal & Advertising Injury": "$1,000,000",
               "General Aggregate": "$2,000,000",
-              "Products-Comp/Op Agg": "$2,000,000",
+              "Products-Completed Operations Aggregate": "$2,000,000",
               "Combined Single Limit": "$1,000,000",
+              "Each Occurrence / Aggregate": "$5,000,000",
               "E.L. Each Accident": "$1,000,000",
               "E.L. Disease-Ea Employee": "$1,000,000",
               "E.L. Disease-Policy Limit": "$1,000,000"

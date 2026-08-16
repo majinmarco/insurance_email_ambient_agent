@@ -19,77 +19,49 @@
       "contact_email": "kdelgado@riversidemfg.com",
       "contact_phone": "(216) 555-0173",
       "carrier_name": "The Hartford",
-      "effective_date": "2025-07-15",
-      "expiration_date": "2026-07-15",
+      "effective_date": "2025-08-01",
+      "expiration_date": "2026-08-01",
       "coverage_limits": [
-        {
-          "coverage": "General Aggregate",
-          "limit": "$2,000,000"
-        },
         {
           "coverage": "Each Occurrence",
           "limit": "$1,000,000"
         },
         {
-          "coverage": "Personal and Advertising Injury",
-          "limit": "$1,000,000"
+          "coverage": "General Aggregate",
+          "limit": "$2,000,000"
         },
         {
           "coverage": "Products-Completed Operations Aggregate",
           "limit": "$2,000,000"
         },
         {
+          "coverage": "Personal and Advertising Injury",
+          "limit": "$1,000,000"
+        },
+        {
           "coverage": "Damage to Premises Rented to You",
           "limit": "$300,000"
-        },
-        {
-          "coverage": "Medical Expense (Any One Person)",
-          "limit": "$5,000"
-        },
-        {
-          "coverage": "Combined Single Limit",
-          "limit": "$1,000,000"
-        },
-        {
-          "coverage": "Auto Liability Combined Single Limit",
-          "limit": "$1,000,000"
-        },
-        {
-          "coverage": "Employers Liability - Each Accident",
-          "limit": "$1,000,000"
-        },
-        {
-          "coverage": "Employers Liability - Disease Each Employee",
-          "limit": "$1,000,000"
-        },
-        {
-          "coverage": "Employers Liability - Disease Policy Limit",
-          "limit": "$1,000,000"
-        },
-        {
-          "coverage": "Umbrella Each Occurrence",
-          "limit": "$5,000,000"
         }
       ],
-      "total_premium": "$18,750",
+      "total_premium": "$28,450",
       "producer": {
         "agency": "Great Lakes Insurance Advisors",
-        "address": "1350 W. 9th Street, Suite 410, Cleveland, OH 44113",
-        "contact_name": "Megan Holt",
+        "address": "4100 Lakeside Avenue, Suite 620, Cleveland, OH 44114",
+        "contact_name": "Megan Ross",
         "phone": "(216) 555-0148",
-        "fax": "(216) 555-0199",
+        "fax": "(216) 555-0150",
         "email": "submissions@greatlakesins.com"
       },
       "insurers": [
         {
           "letter": "A",
-          "name": "The Hartford",
+          "name": "Hartford Fire Insurance Company",
           "naic": "19682"
         },
         {
           "letter": "B",
-          "name": "Hartford Fire Insurance Company",
-          "naic": "19682"
+          "name": "Trumbull Insurance Company",
+          "naic": "27120"
         },
         {
           "letter": "C",
@@ -98,8 +70,8 @@
         },
         {
           "letter": "D",
-          "name": "Hartford Underwriters Insurance Company",
-          "naic": "30104"
+          "name": "Hartford Accident and Indemnity Company",
+          "naic": "22357"
         },
         {
           "letter": "E",
@@ -108,20 +80,20 @@
         },
         {
           "letter": "F",
-          "name": "Hartford Accident and Indemnity Company",
-          "naic": "22357"
+          "name": "Navigators Insurance Company",
+          "naic": "42307"
         }
       ],
       "business_description": "Sheet-metal fabrication and industrial machining",
       "entity_type": "Corporation",
-      "fein": "31-2847190",
+      "fein": "34-2189076",
       "naic_carrier": "19682"
     },
     "email": {
-      "subject": "FNOL Notice - Riverside Manufacturing Co. / Policy SBA-4471902",
-      "body": "Karen,\n\nPlease treat this as first notice of loss for Riverside Manufacturing Co. under policy SBA-4471902 with The Hartford.\n\nWe are reporting a new claim involving damage that occurred on the insured premises at 2200 Foundry Road, Cleveland, OH 44115. Please confirm claim setup and advise the claim number, assigned adjuster, and any documentation needed to support the loss.\n\nIf you need a requested loss date or additional incident details, reply and we will provide them immediately.\n\nThank you,\nGreat Lakes Insurance Advisors",
-      "sender": "Megan Holt <submissions@greatlakesins.com>",
-      "recipient": "Karen Delgado <kdelgado@riversidemfg.com>"
+      "subject": "First Notice of Loss \u2013 Riverside Manufacturing Co. Policy SBA-4471902",
+      "body": "Good morning,\n\nPlease accept this first notice of loss for Riverside Manufacturing Co. under policy SBA-4471902 issued by The Hartford.\n\nLoss details:\n- Insured: Riverside Manufacturing Co.\n- Location: 2200 Foundry Road, Cleveland, OH 44115\n- Contact: Karen Delgado, (216) 555-0173, kdelgado@riversidemfg.com\n- Requested effective date of loss: 08/14/2025\n\nA forklift struck a pallet rack in the west warehouse, causing visible damage to racking and several stored finished parts. No injuries have been reported at this time. Please advise the claim number, adjuster assignment, and any immediate documentation you need from the insured.\n\nThank you,\nMegan Ross\nGreat Lakes Insurance Advisors",
+      "sender": "Megan Ross <submissions@greatlakesins.com>",
+      "recipient": "claims@thehartford.com"
     },
     "documents": []
   }

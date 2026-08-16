@@ -18,7 +18,7 @@
       "multi_recipient": true,
       "body_only": false,
       "inconsistency": false,
-      "date_received": "2026-06-26T10:18:00+00:00"
+      "date_received": "2026-06-27T10:18:00+00:00"
     },
     "attachments": [
       {
@@ -97,11 +97,11 @@
       "contact_email": "praman@evergreenhh.com",
       "contact_phone": "(503) 555-0159",
       "carrier_name": "CNA Financial",
-      "effective_date": "2025-09-01",
-      "expiration_date": "2026-09-01",
+      "effective_date": "2026-01-15",
+      "expiration_date": "2027-01-15",
       "coverage_limits": [
         {
-          "coverage": "Commercial General Liability",
+          "coverage": "General Liability Each Occurrence",
           "limit": "$1,000,000"
         },
         {
@@ -109,69 +109,73 @@
           "limit": "$2,000,000"
         },
         {
-          "coverage": "Professional Liability",
+          "coverage": "Professional Liability Each Claim",
           "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Professional Liability Aggregate",
+          "limit": "$3,000,000"
         },
         {
           "coverage": "Business Personal Property",
           "limit": "$250,000"
         },
         {
-          "coverage": "Commercial Umbrella Liability",
+          "coverage": "Commercial Umbrella Each Occurrence",
           "limit": "$2,000,000"
         }
       ],
-      "total_premium": "$18,475",
+      "total_premium": "$18,950",
       "producer": {
         "agency": "Cascade Professional Insurance",
-        "address": "900 SW 5th Ave, Suite 2200, Portland, OR 97204",
-        "contact_name": "Mia Chen",
+        "address": "1000 SW Broadway, Suite 1920, Portland, OR 97205",
+        "contact_name": "Maya Chen",
         "phone": "(503) 555-0198",
-        "fax": "(503) 555-0118",
+        "fax": "(503) 555-0199",
         "email": "submissions@cascadepro.com"
       },
       "insurers": [
         {
           "letter": "A",
-          "name": "CNA Insurance Company",
-          "naic": "26247"
-        },
-        {
-          "letter": "B",
-          "name": "Valley Forge Insurance Company",
-          "naic": "20508"
-        },
-        {
-          "letter": "C",
           "name": "Continental Casualty Company",
           "naic": "20443"
         },
         {
-          "letter": "D",
+          "letter": "B",
+          "name": "The Continental Insurance Company",
+          "naic": "35289"
+        },
+        {
+          "letter": "C",
           "name": "Transportation Insurance Company",
           "naic": "20494"
         },
         {
+          "letter": "D",
+          "name": "Valley Forge Insurance Company",
+          "naic": "20508"
+        },
+        {
           "letter": "E",
-          "name": "American Casualty Company of Reading, Pennsylvania",
-          "naic": "20427"
+          "name": "CNA Insurance Company",
+          "naic": "12632"
         },
         {
           "letter": "F",
-          "name": "The Continental Insurance Company",
-          "naic": "35289"
+          "name": "National Fire Insurance Company of Hartford",
+          "naic": "20478"
         }
       ],
       "business_description": "In-home nursing and personal care services",
       "entity_type": "Limited Liability Company",
-      "fein": "93-4187621",
-      "naic_carrier": "26247"
+      "fein": "93-4827610",
+      "naic_carrier": "20443"
     },
     "email": {
-      "subject": "RE: RE: Renewal quote request for Evergreen Home Health Services LLC - Policy HMP-3320815 [Ref# 16495]",
-      "body": "Good morning,\n\nPlease prepare the renewal quote and updated declarations for Evergreen Home Health Services LLC, policy HMP-3320815, which is nearing expiration on 09/01/2026. We would like to renew on an effective date of 09/01/2026 with no lapse in coverage, and please confirm any underwriting items needed to complete the renewal review.\n\nThank you,\nPriya Raman\nEvergreen Home Health Services LLC\n\nOn last Tuesday, Mia Chen <submissions@cascadepro.com> wrote:\n> Following up on the below \u2014 please advise on the outstanding items when you have a moment.\n>\n> Regards,\n> Mia Chen\n\nSent from my iPhone",
-      "sender": "Mia Chen <submissions@cascadepro.com>",
-      "recipient": "praman@evergreenhh.com, submissions@evergreenhh.com"
+      "subject": "RE: RE: Evergreen Home Health Services LLC renewal quote request for Policy HMP-3320815 [Ref# 16495]",
+      "body": "Hi Priya,\n\nWe are requesting the renewal quote for Evergreen Home Health Services LLC, policy HMP-3320815, which is nearing expiration on 01/15/2027. Please confirm renewal terms and issue the renewal package effective 01/15/2027.\n\nThank you,\nCascade Professional Insurance\n\nOn last Tuesday, Maya Chen <submissions@cascadepro.com> wrote:\n> Following up on the below \u2014 please advise on the outstanding items when you have a moment.\n>\n> Regards,\n> Maya Chen\n\nSent from my iPhone",
+      "sender": "Maya Chen <submissions@cascadepro.com>",
+      "recipient": "Priya Raman <praman@evergreenhh.com>, submissions@evergreenhh.com"
     },
     "documents": [
       {
@@ -182,40 +186,40 @@
         "authorized_representative": null,
         "certificate_number": null,
         "revision_number": null,
-        "invoice_number": "INV-250901-1184",
-        "invoice_date": "08/12/2025",
-        "account_number": "EHHS-3320815",
+        "invoice_number": "INV-780214",
+        "invoice_date": "12/15/2026",
+        "account_number": "ACCT-3320815",
         "line_items": [
           {
             "description": "Policy Premium",
-            "amount": "$17,250.00"
+            "amount": "$18,250.00"
           },
           {
             "description": "Terrorism (TRIA)",
-            "amount": "$185.00"
+            "amount": "$175.00"
           },
           {
-            "description": "Oregon Premium Tax / Surcharge",
-            "amount": "$690.00"
+            "description": "Oregon premium tax and surcharge",
+            "amount": "$438.00"
           },
           {
             "description": "Broker Fee",
-            "amount": "$350.00"
+            "amount": "$87.00"
           },
           {
             "description": "Prior Balance",
             "amount": "$0.00"
           }
         ],
-        "subtotal": "$17,435.00",
-        "taxes": "$690.00",
-        "fees": "$535.00",
+        "subtotal": "$18,425.00",
+        "taxes": "$438.00",
+        "fees": "$87.00",
         "prior_balance": "$0.00",
-        "amount_due": "$18,475.00",
-        "billing_period": "09/01/2025 to 09/01/2026",
-        "due_date": "09/01/2025",
-        "payment_methods": "Check, ACHH, or credit card through the insured portal",
-        "remit_to": "CNA Financial, P.O. Box 6314, Carol Stream, I1 60197-6314",
+        "amount_due": "$18,950.00",
+        "billing_period": "01/15/2027 - 01/15/2028",
+        "due_date": "01/15/2027",
+        "payment_methods": "Check, ACHH, or wire transfer",
+        "remit_to": "CNA Financial, P.O. Box 742731, Cincinnati, OH 45274-2731",
         "coverage_parts": null,
         "forms_schedule": null,
         "premium_summary": null,
@@ -240,7 +244,7 @@
         "unrelated_body": null
       },
       {
-        "title": "Commercial Package Policy Declarations",
+        "title": "Commercial Package Declarations",
         "certificate_holder": null,
         "coverage_lines": null,
         "description_of_operations": null,
@@ -265,78 +269,82 @@
             "insurer_letter": "A",
             "coverage_type": "Commercial General Liability",
             "policy_number": "HMP-3320815",
-            "effective_date": null,
-            "expiration_date": null,
-            "addl_insured": null,
-            "subro_waived": null,
+            "effective_date": "01/15/2026",
+            "expiration_date": "01/15/2027",
+            "addl_insured": false,
+            "subro_waived": false,
             "limits": [
               {
                 "coverage": "Each Occurrence",
                 "limit": "$1,000,000"
+              },
+              {
+                "coverage": "General Aggregate",
+                "limit": "$2,000,000"
               },
               {
                 "coverage": "Personal and Advertising Injury",
                 "limit": "$1,000,000"
               },
               {
-                "coverage": "General Aggregate",
-                "limit": "$2,000,000"
-              },
-              {
-                "coverage": "Products-Completed Operations Aggregate",
+                "coverage": "Products/Completed Operations Aggregate",
                 "limit": "$2,000,000"
               }
             ],
-            "premium": "$6,200"
+            "premium": "$5,150"
           },
           {
-            "insurer_letter": "C",
+            "insurer_letter": "B",
             "coverage_type": "Professional Liability",
             "policy_number": "HMP-3320815",
-            "effective_date": null,
-            "expiration_date": null,
-            "addl_insured": null,
-            "subro_waived": null,
+            "effective_date": "01/15/2026",
+            "expiration_date": "01/15/2027",
+            "addl_insured": false,
+            "subro_waived": false,
             "limits": [
               {
                 "coverage": "Each Claim",
                 "limit": "$1,000,000"
               },
               {
-                "coverage": "Aggregate",
-                "limit": "$1,000,000"
+                "coverage": "Policy Aggregate",
+                "limit": "$3,000,000"
               }
             ],
-            "premium": "$7,850"
+            "premium": "$6,400"
           },
           {
-            "insurer_letter": "F",
+            "insurer_letter": "C",
             "coverage_type": "Business Personal Property",
             "policy_number": "HMP-3320815",
-            "effective_date": null,
-            "expiration_date": null,
-            "addl_insured": null,
-            "subro_waived": null,
+            "effective_date": "01/15/2026",
+            "expiration_date": "01/15/2027",
+            "addl_insured": false,
+            "subro_waived": false,
             "limits": [
               {
-                "coverage": "Blanket Building and Personal Property",
+                "coverage": "Building",
+                "limit": "$0"
+              },
+              {
+                "coverage": "Business Personal Property",
                 "limit": "$250,000"
               },
               {
-                "coverage": "Business Income",
+                "coverage": "Loss Of Income",
                 "limit": "$100,000"
               }
             ],
-            "premium": "$1,425"
+            "premium": "$1,850"
           },
           {
-            "insurer_letter": "B",
+            "insurer_letter": "D",
             "coverage_type": "Commercial Umbrella Liability",
             "policy_number": "HMP-3320815",
-            "effective_date": null,
-            "expiration_date": null,
-            "addl_insured": null,
-            "subro_waived": null,
+            "effective_date": "01/15/2026",
+            "expiration_date": "01/15/2027",
+            "addl_insured": false,
+            "subro_waived": false,
             "limits": [
               {
                 "coverage": "Each Occurrence",
@@ -347,55 +355,63 @@
                 "limit": "$2,000,000"
               }
             ],
-            "premium": "$2,800"
+            "premium": "$3,250"
           }
         ],
         "forms_schedule": [
           {
-            "form_number": "IL 00 17 11 98",
-            "title": "Common Policy Conditions"
-          },
-          {
             "form_number": "CG 00 01 04 13",
             "title": "Commercial General Liability Coverage Form"
+          },
+          {
+            "form_number": "CG 00 33 04 13",
+            "title": "Nurse Staffing and Home Health Services Endorsement"
           },
           {
             "form_number": "CG 20 10 04 13",
             "title": "Additional Insured - Owners, Lessees Or Contractors - Scheduled Person Or Organization"
           },
           {
-            "form_number": "CG 24 26 04 13",
-            "title": "Amendment Of Insured Contract Definition"
+            "form_number": "IL 00 17 11 98",
+            "title": "Common Policy Conditions"
+          },
+          {
+            "form_number": "CP 00 10 10 12",
+            "title": "Building And Personal Property Coverage Form"
+          },
+          {
+            "form_number": "CP 00 30 10 12",
+            "title": "Causes Of Loss - Special Form"
           },
           {
             "form_number": "CA 00 01 11 20",
             "title": "Business Auto Coverage Form"
           },
           {
-            "form_number": "CP 00 10 10 12",
-            "title": "Building And Personal Property Coverage Form"
+            "form_number": "CU 00 01 11 17",
+            "title": "Commercial Umbrella Coverage Form"
           }
         ],
         "premium_summary": [
           {
             "description": "Policy Premium",
-            "amount": "$18,275.00"
+            "amount": "$16,650.00"
           },
           {
             "description": "Terrorism (TRIA)",
-            "amount": "$185.00"
+            "amount": "$175.00"
           },
           {
             "description": "Taxes and Fees",
-            "amount": "$15.00"
+            "amount": "$788.00"
           },
           {
             "description": "Total Premium",
-            "amount": "$18,475.00"
+            "amount": "$17,613.00"
           }
         ],
-        "countersignature": "CNA Financial Authorized Representative",
-        "countersignature_date": "08/12/2025",
+        "countersignature": "Maya Chen, Authorized Representative",
+        "countersignature_date": "12/15/2026",
         "form_number": null,
         "endorsement_title": null,
         "endorsement_number": null,
@@ -404,9 +420,9 @@
         "additional_premium": null,
         "change_description": null,
         "coverages": null,
-        "total_premium": "$18,475.00",
-        "effective_date": "09/01/2025",
-        "expiration_date": "09/01/2026",
+        "total_premium": "$17,613.00",
+        "effective_date": "01/15/2026",
+        "expiration_date": "01/15/2027",
         "nr_kind": null,
         "nr_header_rows": null,
         "nr_columns": null,
@@ -415,47 +431,47 @@
         "unrelated_body": null
       },
       {
-        "title": "Premium Invoice - Renewal Installment",
+        "title": "Premium Invoice - Renewal Installment 2",
         "certificate_holder": null,
         "coverage_lines": null,
         "description_of_operations": null,
         "authorized_representative": null,
         "certificate_number": null,
         "revision_number": null,
-        "invoice_number": "INV-250902-2047",
-        "invoice_date": "08/12/2025",
-        "account_number": "EHHS-3320815",
+        "invoice_number": "INV-780215",
+        "invoice_date": "01/15/2027",
+        "account_number": "ACCT-3320815",
         "line_items": [
           {
             "description": "Policy Premium",
-            "amount": "$17,120.00"
+            "amount": "$18,250.00"
           },
           {
             "description": "Terrorism (TRIA)",
-            "amount": "$180.00"
+            "amount": "$175.00"
           },
           {
-            "description": "Oregon Premium Tax / Surcharge",
-            "amount": "$675.00"
+            "description": "Oregon premium tax and surcharge",
+            "amount": "$438.00"
           },
           {
             "description": "Broker Fee",
-            "amount": "$350.00"
+            "amount": "$87.00"
           },
           {
             "description": "Prior Balance",
             "amount": "$0.00"
           }
         ],
-        "subtotal": "$17,300.00",
-        "taxes": "$675.00",
-        "fees": "$530.00",
+        "subtotal": "$18,425.00",
+        "taxes": "$438.00",
+        "fees": "$87.00",
         "prior_balance": "$0.00",
-        "amount_due": "$18,505.00",
-        "billing_period": "10/01/2025 to 09/01/2026",
-        "due_date": "09/15/2025",
-        "payment_methods": "Check or ACH",
-        "remit_to": "CNA Financial, P.O. Box 6314, Carol Stream, IL 60197-6314",
+        "amount_due": "$18,950.00",
+        "billing_period": "01/15/2027 - 01/15/2028",
+        "due_date": "02/14/2027",
+        "payment_methods": "Check, ACH, or wire transfer",
+        "remit_to": "CNA Financial, P.O. Box 742731, Cincinnati, OH 45274-2731",
         "coverage_parts": null,
         "forms_schedule": null,
         "premium_summary": null,
@@ -480,47 +496,47 @@
         "unrelated_body": null
       },
       {
-        "title": "Premium Invoice - Renewal Deposit",
+        "title": "Premium Invoice - Renewal Installment 3",
         "certificate_holder": null,
         "coverage_lines": null,
         "description_of_operations": null,
         "authorized_representative": null,
         "certificate_number": null,
         "revision_number": null,
-        "invoice_number": "INV-250903-3391",
-        "invoice_date": "08/12/2025",
-        "account_number": "EHHS-3320815",
+        "invoice_number": "INV-780216",
+        "invoice_date": "02/15/2027",
+        "account_number": "ACCT-3320815",
         "line_items": [
           {
             "description": "Policy Premium",
-            "amount": "$17,100.00"
+            "amount": "$18,250.00"
           },
           {
             "description": "Terrorism (TRIA)",
-            "amount": "$190.00"
+            "amount": "$175.00"
           },
           {
-            "description": "State Assessment / Surcharge",
-            "amount": "$685.00"
+            "description": "Oregon premium tax and surcharge",
+            "amount": "$438.00"
           },
           {
             "description": "Broker Fee",
-            "amount": "$350.00"
+            "amount": "$87.00"
           },
           {
             "description": "Prior Balance",
             "amount": "$0.00"
           }
         ],
-        "subtotal": "$17,290.00",
-        "taxes": "$685.00",
-        "fees": "$540.00",
+        "subtotal": "$18,425.00",
+        "taxes": "$438.00",
+        "fees": "$87.00",
         "prior_balance": "$0.00",
-        "amount_due": "$18,515.00",
-        "billing_period": "09/01/2025 to 09/01/2026",
-        "due_date": "09/01/2025",
+        "amount_due": "$18,950.00",
+        "billing_period": "01/15/2027 - 01/15/2028",
+        "due_date": "03/15/2027",
         "payment_methods": "Check, ACH, o wire transfer",
-        "remit_to": "CNA inancial, P.O. Box 6314, Carol Stream, IL 601997-6314",
+        "remit_to": "CNA inancial, P.O. Box 742731, Cincinnati, OH 452274-2731",
         "coverage_parts": null,
         "forms_schedule": null,
         "premium_summary": null,

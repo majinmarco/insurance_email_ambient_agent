@@ -7,7 +7,7 @@
     "extraction": {
       "named_insured": "Riverside Manufacturing Co.",
       "policy_number": null,
-      "requested_effective_date": "2026-02-01",
+      "requested_effective_date": "2026-03-01",
       "requested_changes": "Quote/bind a new commercial package policy.",
       "contact_name": "Karen Delgado",
       "contact_phone": "(216) 555-0173"
@@ -26,11 +26,11 @@
           "page_end": 0,
           "extraction": {
             "named_insured": "Riverside Manufacturing Co.",
-            "policy_number": "NB-7842196",
+            "policy_number": "RMC-2026-004812",
             "amount_due": 18750.0,
-            "billing_period": "02/01/2026 - 02/01/2027",
-            "policy_reference": "NB-7842196",
-            "due_date": "2026-02-01"
+            "billing_period": "03/01/2026 to 03/01/2027",
+            "policy_reference": "RMC-2026-004812",
+            "due_date": "2026-03-15"
           }
         },
         {
@@ -40,13 +40,12 @@
           "page_end": 1,
           "extraction": {
             "named_insured": "Riverside Manufacturing Co.",
-            "policy_number": "NB-7842196",
+            "policy_number": "RMC-2026-004812",
             "coverages": {
-              "Commercial General Liability": "$7,850",
-              "Business Personal Property": "$4,250",
-              "Commercial Automobile Liability": "$2,300",
-              "Umbrella Liability": "$2,150",
-              "Workers Compensation": "$1,900"
+              "Commercial General Liability": "$6,900",
+              "Business Auto Liability": "$4,250",
+              "Workers Compensation and Employers Liability": "$3,850",
+              "Commercial Umbrella Liability": "$2,450"
             },
             "total_premium": 18750.0
           }

@@ -27,10 +27,10 @@
           "extraction": {
             "named_insured": "Midwest AgriSupply Cooperative",
             "policy_number": "FARM-1120934",
-            "amount_due": 42412.0,
-            "billing_period": "01/01/2027 - 01/01/2028",
+            "amount_due": 24860.0,
+            "billing_period": "01/15/2026 - 01/15/2027",
             "policy_reference": "FARM-1120934",
-            "due_date": "2027-01-01"
+            "due_date": "2026-01-10"
           }
         },
         {
@@ -41,9 +41,9 @@
           "extraction": {
             "named_insured": "Midwest AgriSupply Cooperative",
             "policy_number": "FARM-1120934",
-            "certificate_holder": "Heartland Grain Terminal, LLC, 2210 River Road, Council Bluffs, IA 51501",
-            "effective_date": "2027-01-01",
-            "expiration_date": "2028-01-01",
+            "certificate_holder": "Heartland Feed & Grain, LLC",
+            "effective_date": "2026-01-15",
+            "expiration_date": "2027-01-15",
             "limits": {
               "Each Occurrence": "$1,000,000",
               "Damage to Rented Premises": "$300,000",
@@ -52,6 +52,7 @@
               "General Aggregate": "$2,000,000",
               "Products-Comp/Op Agg": "$2,000,000",
               "Combined Single Limit": "$1,000,000",
+              "Aggregate": "$5,000,000",
               "E.L. Each Accident": "$1,000,000",
               "E.L. Disease-Ea Employee": "$1,000,000",
               "E.L. Disease-Policy Limit": "$1,000,000"
@@ -84,10 +85,10 @@
           "extraction": {
             "named_insured": "Midwest AgriSupply Cooperative",
             "policy_number": "FARM-1120934",
-            "amount_due": 42664.0,
-            "billing_period": "01/01/2027 - 01/01/2028",
+            "amount_due": 24860.0,
+            "billing_period": "01/15/2026 - 01/15/2027",
             "policy_reference": "FARM-1120934",
-            "due_date": "2027-01-01"
+            "due_date": "2026-01-15"
           }
         },
         {
@@ -98,10 +99,10 @@
           "extraction": {
             "named_insured": "Midwest AgriSupply Cooperative",
             "policy_number": "FARM-1120934",
-            "amount_due": 42152.0,
-            "billing_period": "01/01/2027 - 01/01/2028",
+            "amount_due": 24860.0,
+            "billing_period": "01/15/2026 - 01/15/2027",
             "policy_reference": "FARM-1120934",
-            "due_date": "2027-01-01"
+            "due_date": "2026-02-14"
           }
         },
         {
@@ -112,9 +113,9 @@
           "extraction": {
             "named_insured": "Midwest AgriSupply Cooperative",
             "policy_number": "FARM-1120934",
-            "certificate_holder": "Praiie View Feed Mill, Inc., 89o0 Commeerce arkwa, nkeny, IA 50021",
-            "effective_date": "2027-01-01",
-            "expiration_date": "2028-01-01",
+            "certificate_holder": "Iowa rain Warehouse, Inc.",
+            "effective_date": "2026-01-15",
+            "expiration_date": "2027-01-15",
             "limits": {
               "Each Occurrence": "$1,000,000",
               "Damage to Rented Premises": "$300,000",
@@ -123,6 +124,7 @@
               "General Aggregate": "$2,000,000",
               "Products-Comp/Op Agg": "$2,000,000",
               "Combined Single Limit": "$1,000,000",
+              "Aggregate": "$5,000,000",
               "E.L. Each Accident": "$1,000,000",
               "E.L. Disease-Ea Employee": "$1,000,000",
               "E.L. Disease-Policy Limit": "$1,000,000"
@@ -157,10 +159,10 @@
           "extraction": {
             "named_insured": "Midwest AgriSupply Cooperative",
             "policy_number": "FARM-1120934",
-            "amount_due": 42483.0,
-            "billing_period": "01/01/2027 - 01/01/2028",
+            "amount_due": 24860.0,
+            "billing_period": "01/15/2026 - 01/15/2027",
             "policy_reference": "FARM-1120934",
-            "due_date": "2027-01-01"
+            "due_date": "2026-02-20"
           }
         }
       ],

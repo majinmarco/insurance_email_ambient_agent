@@ -18,7 +18,7 @@
       "multi_recipient": false,
       "body_only": false,
       "inconsistency": false,
-      "date_received": "2026-06-27T15:09:00+00:00"
+      "date_received": "2026-06-28T15:09:00+00:00"
     },
     "attachments": [
       {
@@ -91,8 +91,8 @@
       "contact_email": "rhalvorsen@midwestagri.coop",
       "contact_phone": "(515) 555-0182",
       "carrier_name": "Nationwide Agribusiness",
-      "effective_date": "2026-01-01",
-      "expiration_date": "2027-01-01",
+      "effective_date": "2026-02-01",
+      "expiration_date": "2027-02-01",
       "coverage_limits": [
         {
           "coverage": "Commercial General Liability",
@@ -111,13 +111,13 @@
           "limit": "Statutory"
         }
       ],
-      "total_premium": "$42,860",
+      "total_premium": "$48,760",
       "producer": {
         "agency": "Prairie States Insurance Cooperative",
-        "address": "2200 Grand Ave, Suite 410, Des Moines, IA 50312",
-        "contact_name": "Commercial Lines Service Team",
-        "phone": "(515) 555-0440",
-        "fax": "(515) 555-0441",
+        "address": "4200 Corporate Woods Dr, Suite 300, Overland Park, KS 66211",
+        "contact_name": "Commercial Lines Desk",
+        "phone": "(913) 555-0148",
+        "fax": "(913) 555-0199",
         "email": "commercial@prairiestatesins.com"
       },
       "insurers": [
@@ -128,84 +128,84 @@
         },
         {
           "letter": "B",
-          "name": "Nationwide Property and Casualty Insurance Company",
-          "naic": "37877"
-        },
-        {
-          "letter": "C",
-          "name": "Allied Property & Casualty Insurance Company",
+          "name": "Allied Property and Casualty Insurance Company",
           "naic": "42579"
         },
         {
+          "letter": "C",
+          "name": "Travelers Property Casualty Company of America",
+          "naic": "25674"
+        },
+        {
           "letter": "D",
-          "name": "James River Insurance Company",
-          "naic": "12203"
+          "name": "West Bend Mutual Insurance Company",
+          "naic": "15350"
         },
         {
           "letter": "E",
-          "name": "Great Divide Insurance Company",
-          "naic": "25224"
+          "name": "Auto-Owners Insurance Company",
+          "naic": "18988"
         },
         {
           "letter": "F",
-          "name": "Westfield National Insurance Company",
-          "naic": "24112"
+          "name": "Employers Mutual Casualty Company",
+          "naic": "21415"
         }
       ],
       "business_description": "Farm supply, grain handling, and agronomy services",
       "entity_type": "Cooperative",
-      "fein": "36-4829175",
+      "fein": "42-3187649",
       "naic_carrier": "28223"
     },
     "email": {
       "subject": "RE: Renewal quote request for Midwest AgriSupply Cooperative policy FARM-1120934",
-      "body": "Good morning,\n\nWe are requesting renewal terms for Midwest AgriSupply Cooperative under policy FARM-1120934 ahead of the 01/01/2027 expiration. Please provide the renewal indication and updated premium as soon as available.\n\nIf a direct-billed renewal invoice is being prepared, please ensure the effective date remains 01/01/2027 and that all coverages continue without interruption.\n\nThank you,\nRoger Halvorsen\n\nOn Mon, Jul 6, 2026 at 9:14 AM, Commercial Lines Service Team <commercial@prairiestatesins.com> wrote:\n> Thanks for sending this over \u2014 can you confirm the requested effective date and whether any additional insureds are needed?\n>\n> Regards,\n> Commercial Lines Service Team\n\n--\nRoger Halvorsen\nMidwest AgriSupply Cooperative\n(515) 555-0182",
+      "body": "Good morning,\n\nWe are writing regarding the upcoming renewal of Midwest AgriSupply Cooperative's policy FARM-1120934, which is scheduled to expire on 02/01/2027. Please provide the renewal quotation and confirm whether the current program can be renewed effective 02/01/2027 with the existing coverages and limits.\n\nIf any updated underwriting information is needed for the renewal, please let us know and we will provide it promptly.\n\nThank you,\nRoger Halvorsen\nMidwest AgriSupply Cooperative\n\nOn Mon, Jul 6, 2026 at 9:14 AM, Commercial Lines Desk <commercial@prairiestatesins.com> wrote:\n> Thanks for sending this over \u2014 can you confirm the requested effective date and whether any additional insureds are needed?\n>\n> Regards,\n> Commercial Lines Desk\n\n--\nRoger Halvorsen\nMidwest AgriSupply Cooperative\n(515) 555-0182",
       "sender": "Roger Halvorsen <rhalvorsen@midwestagri.coop>",
       "recipient": "commercial@prairiestatesins.com"
     },
     "documents": [
       {
-        "title": "Premium Invoice - Midwest AgriSupply Cooperative",
+        "title": "Midwest AgriSupply Cooperative Premium Invoice",
         "certificate_holder": null,
         "coverage_lines": null,
         "description_of_operations": null,
         "authorized_representative": null,
         "certificate_number": null,
         "revision_number": null,
-        "invoice_number": "INV-2601187",
-        "invoice_date": "12/15/2026",
-        "account_number": "ACCT-774209",
+        "invoice_number": "INV-2027-0148",
+        "invoice_date": "01/05/2027",
+        "account_number": "ACCT-1120934",
         "line_items": [
           {
             "description": "Policy Premium",
-            "amount": "$40,500.00"
+            "amount": "$46,250.00"
           },
           {
             "description": "Terrorism (TRIA)",
-            "amount": "$210.00"
+            "amount": "$325.00"
           },
           {
-            "description": "Iowa premium tax and surcharge",
-            "amount": "$1,050.00"
+            "description": "State Tax",
+            "amount": "$1,112.00"
           },
           {
             "description": "Broker Fee",
-            "amount": "$475.00"
+            "amount": "$1,073.00"
           },
           {
             "description": "Prior Balance",
-            "amount": "$625.00"
+            "amount": "$0.00"
           }
         ],
-        "subtotal": "$40,710.00",
-        "taxes": "$1,050.00",
-        "fees": "$1,100.00",
-        "prior_balance": "$625.00",
-        "amount_due": "$42,860.00",
-        "billing_period": "01/01/2027 - 01/01/2028",
-        "due_date": "01/01/2027",
-        "payment_methods": "ACH, check, or wire trasfer",
-        "remit_to": "Nationwide Agrbusiness, P.O. Box 732593, Dallas, TX 75373-2593",
+        "subtotal": "$46,575.00",
+        "taxes": "$1,437.00",
+        "fees": "$1,073.00",
+        "prior_balance": "$0.00",
+        "amount_due": "$48,760.00",
+        "billing_period": "02/01/2027 - 02/01/2028",
+        "due_date": "02/01/2027",
+        "payment_methods": "ACH, wire transfer, or heck",
+        "remit_to": "Nationwide Agrbusiness, P.O. Box 9332, Des Moines, IA 50306-9332.",
         "coverage_parts": null,
         "forms_schedule": null,
         "premium_summary": null,
@@ -231,14 +231,14 @@
       },
       {
         "title": "ACORD 25 Certificate of Liability Insurance",
-        "certificate_holder": "Prairie Milling LLC, 4100 Southridge Blvd, Ankeny, IA 50021",
+        "certificate_holder": "Des Moines Grain Terminal, LLC, 901 SE Market St, Des Moines, IA 50315",
         "coverage_lines": [
           {
             "insurer_letter": "A",
             "coverage_type": "Commercial General Liability",
             "policy_number": "FARM-1120934",
-            "effective_date": "01/01/2026",
-            "expiration_date": "01/01/2027",
+            "effective_date": "02/01/2027",
+            "expiration_date": "02/01/2028",
             "addl_insured": true,
             "subro_waived": true,
             "limits": [
@@ -252,7 +252,7 @@
               },
               {
                 "coverage": "Med Exp",
-                "limit": "$10,000"
+                "limit": "$5,000"
               },
               {
                 "coverage": "Personal & Adv Injury",
@@ -273,8 +273,8 @@
             "insurer_letter": "B",
             "coverage_type": "Automobile Liability",
             "policy_number": "FARM-1120934",
-            "effective_date": "01/01/2026",
-            "expiration_date": "01/01/2027",
+            "effective_date": "02/01/2027",
+            "expiration_date": "02/01/2028",
             "addl_insured": true,
             "subro_waived": true,
             "limits": [
@@ -289,8 +289,8 @@
             "insurer_letter": "C",
             "coverage_type": "Umbrella Liability",
             "policy_number": "FARM-1120934",
-            "effective_date": "01/01/2026",
-            "expiration_date": "01/01/2027",
+            "effective_date": "02/01/2027",
+            "expiration_date": "02/01/2028",
             "addl_insured": true,
             "subro_waived": true,
             "limits": [
@@ -299,7 +299,7 @@
                 "limit": "$5,000,000"
               },
               {
-                "coverage": "General Aggregate",
+                "coverage": "Aggregate",
                 "limit": "$5,000,000"
               }
             ],
@@ -309,8 +309,8 @@
             "insurer_letter": "D",
             "coverage_type": "Workers Compensation",
             "policy_number": "FARM-1120934",
-            "effective_date": "01/01/2026",
-            "expiration_date": "01/01/2027",
+            "effective_date": "02/01/2027",
+            "expiration_date": "02/01/2028",
             "addl_insured": false,
             "subro_waived": true,
             "limits": [
@@ -330,9 +330,9 @@
             "premium": null
           }
         ],
-        "description_of_operations": "Prairie Milling LLC is included as additional insured as respects ongoing and completed operations, where required by written contract, with primary and non-contributory coverage afforded on a blanket basis and waiver of subrogation applicable where required. CGL endorsed by CG 20 10 04 13 and CG 24 04 05 09; Auto additional insured status where required by written contract; waiver of subrogation as provided by policy endorsement. This certificate confers no rights upon the certificate holder and does not amend, extend or alter the coverage afforded by the policies listed herein.",
-        "authorized_representative": "Megan Dorsey, Commercial Lines Account Manager",
-        "certificate_number": "CERT-882146",
+        "description_of_operations": "Described operations include farm supply, grain handling, and agronomy services. Additional insured status applies where required by written contract. Coverage is primary and non-contributory where required by CG 20 10 04 13 and CG 20 37 04 13, and waiver of subrogation applies where required by written contract and endorsed by CG 24 04 04 13 and WC 00 03 13.",
+        "authorized_representative": "Megan L. Ward",
+        "certificate_number": "CERT-2027-00841",
         "revision_number": null,
         "invoice_number": null,
         "invoice_date": null,
@@ -371,47 +371,47 @@
         "unrelated_body": null
       },
       {
-        "title": "Premium Invoice - Midwest AgriSupply Cooperative Renewal",
+        "title": "Midwest AgriSupply Cooperative Premium Invoice",
         "certificate_holder": null,
         "coverage_lines": null,
         "description_of_operations": null,
         "authorized_representative": null,
         "certificate_number": null,
         "revision_number": null,
-        "invoice_number": "INV-2601224",
-        "invoice_date": "01/02/2027",
-        "account_number": "ACCT-774209",
+        "invoice_number": "INV-2027-0196",
+        "invoice_date": "01/18/2027",
+        "account_number": "ACCT-1120934",
         "line_items": [
           {
             "description": "Policy Premium",
-            "amount": "$40,500.00"
+            "amount": "$46,250.00"
           },
           {
             "description": "Terrorism (TRIA)",
-            "amount": "$210.00"
+            "amount": "$325.00"
           },
           {
-            "description": "Iowa premium tax and surcharge",
-            "amount": "$1,050.00"
+            "description": "State Surcharge",
+            "amount": "$1,112.00"
           },
           {
             "description": "Broker Fee",
-            "amount": "$475.00"
+            "amount": "$1,073.00"
           },
           {
             "description": "Prior Balance",
-            "amount": "$625.00"
+            "amount": "$0.00"
           }
         ],
-        "subtotal": "$40,710.00",
-        "taxes": "$1,050.00",
-        "fees": "$1,100.00",
-        "prior_balance": "$625.00",
-        "amount_due": "$42,860.00",
-        "billing_period": "01/01/2027 - 01/01/2028",
+        "subtotal": "$46,575.00",
+        "taxes": "$1,112.00",
+        "fees": "$1,073.00",
+        "prior_balance": "$0.00",
+        "amount_due": "$48,760.00",
+        "billing_period": "02/01/2027 - 02/01/2028",
         "due_date": "02/01/2027",
-        "payment_methods": "ACH, check, or wire transfer",
-        "remit_to": "Nationwide Agribusiness, P.O. Box 732593, Dallas, TX 75373-2593",
+        "payment_methods": "Online payment, ACH, wire transfer, or check",
+        "remit_to": "Nationwide Agribusiness, P.O. Box 9332, Des Moines, IA 50306-9332.",
         "coverage_parts": null,
         "forms_schedule": null,
         "premium_summary": null,
@@ -436,7 +436,7 @@
         "unrelated_body": null
       },
       {
-        "title": "Policy Change Endorsement - Scheduled Auto Addition",
+        "title": "Nationwide Agribusiness Policy Change Endorsement",
         "certificate_holder": null,
         "coverage_lines": null,
         "description_of_operations": null,
@@ -461,34 +461,42 @@
         "premium_summary": null,
         "countersignature": null,
         "countersignature_date": null,
-        "form_number": "CA 04 67 11 20",
-        "endorsement_title": "Schedled Auto Endorsemnt",
-        "endorsement_number": "END-014",
+        "form_number": "CG 20 10 04 13",
+        "endorsement_title": "Addit1onal Insured - Ownes, Lessees or Contracors - Scheduled Person or Organization",
+        "endorsement_number": "E-1120934-07",
         "schedule_rows": [
           {
-            "label": "Vehicle Added",
-            "value": "2026 Ford F-350 Super Duty Crew Cab, VIN 1FT8W3BT0NEC45812, Unit No. 14"
+            "label": "Named Insured",
+            "value": "Midwest AgriSupply Cooperative"
           },
           {
-            "label": "Garaging Location",
-            "value": "1750 NE Broadway Ave, Des Moines, IA 50313"
+            "label": "Policy Number",
+            "value": "FARM-1120934"
           },
           {
-            "label": "Effective Date",
-            "value": "01/01/2027"
+            "label": "Scheduled Additional Insured",
+            "value": "Des Moines Grain Terminal, LLC"
+          },
+          {
+            "label": "Location",
+            "value": "901 SE Market St, Des Moines, IA 50315"
+          },
+          {
+            "label": "Additional Premium",
+            "value": "$275.00"
           }
         ],
         "provisions": [
-          "This endorsement amends the policy to include the vhile described in the 5chedule above as a covered auto under the Business Auto Coverage Form.",
-          "The premium for thi endorsement is inreased b the Additional Premium shown above and 1s fully earned as of the effective date shown.",
-          "Any reference in the policy to the scheduled autos is amendd to include the vehicle described herein, subject to a1l terms, coditions, exclusions, and ndorsements of the policy.",
-          "All other terms and conditions of this policy remain unchanged."
+          "Section II - Who Is An Insured is amended to include as an additional insured the erson or organizaion show in the Schedule, but only with respect to 1iability for \"bodily injury\", \"property damage\" or \"personal and advertising injury\" caused, in whole or in pat, by your acts or omissions or the acts or omissions of tose actin on your behalf in the perormance of your ongoing operations.",
+          "This insurance applies as primary and non-contributory to th additional insured where required by written contract, and only to th extent ermitted by law.",
+          "A waive of subogation appliies in favor o the scheduled additional insured where required by written contract and where endorsed on the policy.",
+          "All theer terms and conditions of this policy reemain unchanged."
         ],
-        "additional_premium": "$125.00",
-        "change_description": "Adds a 2026 Ford F-3s0 Super Duty Crew Cab to the Business Auto schedule ffective 01/01/2027.",
+        "additional_premium": "$275.00",
+        "change_description": "Adds Des Moies Grain Terminal, LLC as a scheduled additional insured for ongoing opraions at the specifid location.",
         "coverages": null,
         "total_premium": null,
-        "effective_date": "01/01/2027",
+        "effective_date": "02/01/2027",
         "expiration_date": null,
         "nr_kind": null,
         "nr_header_rows": null,

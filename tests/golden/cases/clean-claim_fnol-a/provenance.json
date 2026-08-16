@@ -19,68 +19,40 @@
       "contact_email": "praman@evergreenhh.com",
       "contact_phone": "(503) 555-0159",
       "carrier_name": "CNA Financial",
-      "effective_date": "2026-01-01",
-      "expiration_date": "2027-01-01",
+      "effective_date": "2026-02-01",
+      "expiration_date": "2027-02-01",
       "coverage_limits": [
         {
-          "coverage": "Each Occurrence",
+          "coverage": "Commercial General Liability",
           "limit": "$1,000,000"
         },
         {
-          "coverage": "General Aggregate",
-          "limit": "$3,000,000"
+          "coverage": "Business Personal Property",
+          "limit": "$250,000"
         },
         {
-          "coverage": "Personal and Advertising Injury",
+          "coverage": "Professional Liability",
           "limit": "$1,000,000"
         },
         {
-          "coverage": "Products/Completed Operations Aggregate",
-          "limit": "$3,000,000"
-        },
-        {
-          "coverage": "Damage to Premises Rented to You",
-          "limit": "$300,000"
-        },
-        {
-          "coverage": "Business Auto Liability Combined Single Limit",
-          "limit": "$1,000,000"
-        },
-        {
-          "coverage": "Employer's Liability - Each Accident",
-          "limit": "$1,000,000"
-        },
-        {
-          "coverage": "Employer's Liability - Disease - Each Employee",
-          "limit": "$1,000,000"
-        },
-        {
-          "coverage": "Employer's Liability - Disease - Policy Limit",
-          "limit": "$1,000,000"
-        },
-        {
-          "coverage": "Each Occurrence",
-          "limit": "$1,000,000"
-        },
-        {
-          "coverage": "Aggregate",
-          "limit": "$1,000,000"
+          "coverage": "Commercial Umbrella Liability",
+          "limit": "$2,000,000"
         }
       ],
-      "total_premium": "$18,650",
+      "total_premium": "$18,760",
       "producer": {
         "agency": "Cascade Professional Insurance",
-        "address": "1000 SW Broadway, Suite 2200, Portland, OR 97205",
-        "contact_name": "Megan Ellis",
-        "phone": "(503) 555-0218",
-        "fax": "(503) 555-0219",
+        "address": "1000 SW Broadway, Suite 1800, Portland, OR 97205",
+        "contact_name": "Megan Alvarez",
+        "phone": "(503) 555-0128",
+        "fax": "(503) 555-0199",
         "email": "submissions@cascadepro.com"
       },
       "insurers": [
         {
           "letter": "A",
           "name": "CNA Insurance Company",
-          "naic": "20700"
+          "naic": "12620"
         },
         {
           "letter": "B",
@@ -89,18 +61,18 @@
         },
         {
           "letter": "C",
-          "name": "American Casualty Company of Reading, Pennsylvania",
-          "naic": "20427"
+          "name": "Valley Forge Insurance Company",
+          "naic": "20508"
         },
         {
           "letter": "D",
-          "name": "Transportation Insurance Company",
-          "naic": "20494"
+          "name": "Western Surety Company",
+          "naic": "13188"
         },
         {
           "letter": "E",
-          "name": "Valley Forge Insurance Company",
-          "naic": "20508"
+          "name": "Transportation Insurance Company",
+          "naic": "20494"
         },
         {
           "letter": "F",
@@ -110,18 +82,18 @@
       ],
       "business_description": "In-home nursing and personal care services",
       "entity_type": "Limited Liability Company",
-      "fein": "93-4872165",
-      "naic_carrier": "20700"
+      "fein": "93-4182765",
+      "naic_carrier": "12620"
     },
     "email": {
-      "subject": "First Notice of Loss - Evergreen Home Health Services LLC - Policy HMP-3320815",
-      "body": "Good morning,\n\nPlease accept this as the first notice of loss for Evergreen Home Health Services LLC under policy HMP-3320815 with CNA Financial.\n\nPlease log the reported incident and advise the claim number, assigned adjuster, and any additional documentation needed. The insured requests that the loss be recorded effective immediately based on the incident reported today.\n\nNamed insured: Evergreen Home Health Services LLC\nContact: Priya Raman\nPhone: (503) 555-0159\nEmail: praman@evergreenhh.com\n\nThank you,\nCascade Professional Insurance\n",
-      "sender": "Megan Ellis <submissions@cascadepro.com>",
-      "recipient": "Claims Intake <claims@cna.com>"
+      "subject": "FNOL - Evergreen Home Health Services LLC - Policy HMP-3320815",
+      "body": "Good afternoon,\n\nPlease accept this email as the first notice of loss for Evergreen Home Health Services LLC under policy HMP-3320815.\n\nThe insured reported an incident involving property damage and a client injury at the Portland office location. We are requesting claim setup and confirmation of any next steps, including any forms or documentation required.\n\nInsured: Evergreen Home Health Services LLC\nPolicy Number: HMP-3320815\nLoss Date: 07/12/2026\nRequested Effective Date for claim reporting: 07/12/2026\n\nPlease acknowledge receipt and advise the assigned claim number when available.\n\nThank you,\nCascade Professional Insurance",
+      "sender": "Megan Alvarez <submissions@cascadepro.com>",
+      "recipient": "claims@cna.com"
     },
     "documents": [
       {
-        "title": "Commercial Package Policy Declarations Page",
+        "title": "Commercial Package Policy Declarations - Evergreen Home Health Services LLC",
         "certificate_holder": null,
         "coverage_lines": null,
         "description_of_operations": null,
@@ -146,161 +118,169 @@
             "insurer_letter": "A",
             "coverage_type": "Commercial General Liability",
             "policy_number": "HMP-3320815",
-            "effective_date": "01/01/2026",
-            "expiration_date": "01/01/2027",
-            "addl_insured": null,
-            "subro_waived": null,
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": false,
+            "subro_waived": false,
             "limits": [
               {
                 "coverage": "Each Occurrence",
                 "limit": "$1,000,000"
               },
               {
-                "coverage": "General Aggregate",
-                "limit": "$3,000,000"
+                "coverage": "Damage to Premises Rented to You",
+                "limit": "$300,000"
+              },
+              {
+                "coverage": "Medical Expense Limit",
+                "limit": "$10,000"
               },
               {
                 "coverage": "Personal and Advertising Injury",
                 "limit": "$1,000,000"
               },
               {
-                "coverage": "Products/Completed Operations Aggregate",
-                "limit": "$3,000,000"
-              },
-              {
-                "coverage": "Damage to Premises Rented to You",
-                "limit": "$300,000"
+                "coverage": "General Aggregate",
+                "limit": "$2,000,000"
               }
             ],
-            "premium": "$7,250"
+            "premium": "$4,850"
           },
           {
             "insurer_letter": "B",
-            "coverage_type": "Business Automobile Liability",
+            "coverage_type": "Business Personal Property",
             "policy_number": "HMP-3320815",
-            "effective_date": "01/01/2026",
-            "expiration_date": "01/01/2027",
-            "addl_insured": null,
-            "subro_waived": null,
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": false,
+            "subro_waived": false,
             "limits": [
               {
-                "coverage": "Combined Single Limit",
-                "limit": "$1,000,000"
+                "coverage": "Blanket Limit - Business Personal Property",
+                "limit": "$250,000"
+              },
+              {
+                "coverage": "Valuation",
+                "limit": "Replacement Cost"
+              },
+              {
+                "coverage": "Deductible",
+                "limit": "$1,000"
               }
             ],
-            "premium": "$4,150"
+            "premium": "$2,120"
           },
           {
             "insurer_letter": "C",
-            "coverage_type": "Workers Compensation",
+            "coverage_type": "Professional Liability",
             "policy_number": "HMP-3320815",
-            "effective_date": "01/01/2026",
-            "expiration_date": "01/01/2027",
-            "addl_insured": null,
-            "subro_waived": null,
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": false,
+            "subro_waived": false,
             "limits": [
               {
-                "coverage": "Employer's Liability - Each Accident",
+                "coverage": "Each Claim",
                 "limit": "$1,000,000"
               },
               {
-                "coverage": "Employer's Liability - Disease - Each Employee",
-                "limit": "$1,000,000"
+                "coverage": "Annual Aggregate",
+                "limit": "$3,000,000"
               },
               {
-                "coverage": "Employer's Liability - Disease - Policy Limit",
-                "limit": "$1,000,000"
+                "coverage": "Deductible",
+                "limit": "$2,500"
               }
             ],
-            "premium": "$6,100"
+            "premium": "$6,980"
           },
           {
             "insurer_letter": "D",
             "coverage_type": "Commercial Umbrella Liability",
             "policy_number": "HMP-3320815",
-            "effective_date": "01/01/2026",
-            "expiration_date": "01/01/2027",
-            "addl_insured": null,
-            "subro_waived": null,
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
+            "addl_insured": false,
+            "subro_waived": false,
             "limits": [
               {
                 "coverage": "Each Occurrence",
-                "limit": "$1,000,000"
+                "limit": "$2,000,000"
               },
               {
-                "coverage": "Aggregate",
-                "limit": "$1,000,000"
+                "coverage": "General Aggregate",
+                "limit": "$2,000,000"
               }
             ],
-            "premium": "$1,150"
+            "premium": "$2,990"
           }
         ],
         "forms_schedule": [
+          {
+            "form_number": "IL 00 17 11 98",
+            "title": "Common Policy Conditions"
+          },
           {
             "form_number": "CG 00 01 04 13",
             "title": "Commercial General Liability Coverage Form"
           },
           {
+            "form_number": "CG 21 49 09 99",
+            "title": "Amendment of Insured Contract Definition"
+          },
+          {
             "form_number": "CG 20 10 04 13",
-            "title": "Additional Insured - Owners, Lessees or Contractors - Scheduled Person or Organization"
+            "title": "Additional Insured - Owners, Lessees Or Contractors - Scheduled Person Or Organization"
           },
           {
-            "form_number": "CA 00 01 11 20",
-            "title": "Business Auto Coverage Form"
+            "form_number": "CP 00 10 10 12",
+            "title": "Building And Personal Property Coverage Form"
           },
           {
-            "form_number": "CA 20 48 10 13",
-            "title": "Designated Insured Endorsement"
+            "form_number": "CP 00 90 07 88",
+            "title": "Commercial Property Conditions"
           },
           {
-            "form_number": "WC 00 00 00 B",
-            "title": "Workers Compensation and Employers Liability Insurance Policy"
-          },
-          {
-            "form_number": "WC 42 03 04 A",
-            "title": "Medical Services and First Aid Reimbursement Endorsement"
-          },
-          {
-            "form_number": "CU 00 01 01 15",
+            "form_number": "CM 00 01 10 11",
             "title": "Commercial Umbrella Coverage Form"
           },
           {
-            "form_number": "IL 00 17 11 98",
-            "title": "Common Policy Conditions"
+            "form_number": "CM 20 01 10 11",
+            "title": "Commercial Umbrella Declarations"
           }
         ],
         "premium_summary": [
           {
-            "description": "Commercial General Liability",
-            "amount": "$7,250.00"
+            "description": "Commercial General Liability Premium",
+            "amount": "$4,850.00"
           },
           {
-            "description": "Business Automobile Liability",
-            "amount": "$4,150.00"
+            "description": "Business Personal Property Premium",
+            "amount": "$2,120.00"
           },
           {
-            "description": "Workers Compensation",
-            "amount": "$6,100.00"
+            "description": "Professional Liability Premium",
+            "amount": "$6,980.00"
           },
           {
-            "description": "Commercial Umbrella Liability",
-            "amount": "$1,150.00"
+            "description": "Commercial Umbrella Liability Premium",
+            "amount": "$2,990.00"
           },
           {
-            "description": "TRIA",
-            "amount": "$45.00"
+            "description": "Terrorism (TRIA)",
+            "amount": "$295.00"
           },
           {
-            "description": "Policy Tax",
-            "amount": "$55.00"
+            "description": "State Tax",
+            "amount": "$365.00"
           },
           {
-            "description": "Surplus Lines Stamp Fee",
-            "amount": "$0.00"
+            "description": "Policy Fee",
+            "amount": "$110.00"
           }
         ],
-        "countersignature": "CNA Service Center",
-        "countersignature_date": "12/12/2025",
+        "countersignature": "Megan Alvarez",
+        "countersignature_date": "01/15/2026",
         "form_number": null,
         "endorsement_title": null,
         "endorsement_number": null,
@@ -309,9 +289,9 @@
         "additional_premium": null,
         "change_description": null,
         "coverages": null,
-        "total_premium": "$18,650.00",
-        "effective_date": "01/01/2026",
-        "expiration_date": "01/01/2027",
+        "total_premium": "$18,710.00",
+        "effective_date": "02/01/2026",
+        "expiration_date": "02/01/2027",
         "nr_kind": null,
         "nr_header_rows": null,
         "nr_columns": null,

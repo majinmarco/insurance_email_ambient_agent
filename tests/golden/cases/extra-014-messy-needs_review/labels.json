@@ -34,9 +34,9 @@
           "extraction": {
             "named_insured": "Summit Ridge Construction Inc.",
             "policy_number": "CPP-6612078",
-            "certificate_holder": "Mile High Development Group LLC, 1700 Platte St, Denver, CO 80202",
-            "effective_date": "2026-01-01",
-            "expiration_date": "2027-01-01",
+            "certificate_holder": "Platte Valley Development Group LLC, 11700 E Independence Dr, Suite 450, Englewood, CO 80112",
+            "effective_date": "2025-08-01",
+            "expiration_date": "2026-08-01",
             "limits": {
               "Each Occurrence": "$1,000,000",
               "Damage to Rented Premises": "$300,000",
@@ -45,6 +45,7 @@
               "General Aggregate": "$2,000,000",
               "Products-Comp/Op Agg": "$2,000,000",
               "Combined Single Limit": "$1,000,000",
+              "Aggregate": "$5,000,000",
               "E.L. Each Accident": "$1,000,000",
               "E.L. Disease-Ea Employee": "$1,000,000",
               "E.L. Disease-Policy Limit": "$1,000,000"

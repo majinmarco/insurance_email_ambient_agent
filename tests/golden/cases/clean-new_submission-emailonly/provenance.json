@@ -23,31 +23,7 @@
       "expiration_date": "2027-08-01",
       "coverage_limits": [
         {
-          "coverage": "Each Occurrence",
-          "limit": "$1,000,000"
-        },
-        {
-          "coverage": "General Aggregate",
-          "limit": "$2,000,000"
-        },
-        {
-          "coverage": "Products-Completed Operations Aggregate",
-          "limit": "$2,000,000"
-        },
-        {
-          "coverage": "Personal and Advertising Injury",
-          "limit": "$1,000,000"
-        },
-        {
-          "coverage": "Damage to Premises Rented to You",
-          "limit": "$300,000"
-        },
-        {
-          "coverage": "Medical Expense Limit",
-          "limit": "$10,000"
-        },
-        {
-          "coverage": "Combined Single Limit",
+          "coverage": "Commercial General Liability",
           "limit": "$1,000,000"
         },
         {
@@ -55,73 +31,69 @@
           "limit": "$250,000"
         },
         {
-          "coverage": "Business Income and Extra Expense",
-          "limit": "$150,000"
-        },
-        {
-          "coverage": "Each Accident",
+          "coverage": "Professional Liability",
           "limit": "$1,000,000"
         },
         {
-          "coverage": "Disease - Each Employee",
+          "coverage": "Commercial Auto Liability",
           "limit": "$1,000,000"
         },
         {
-          "coverage": "Disease - Policy Limit",
-          "limit": "$1,000,000"
+          "coverage": "Umbrella Liability",
+          "limit": "$2,000,000"
         }
       ],
       "total_premium": "$18,450",
       "producer": {
         "agency": "Cascade Professional Insurance",
-        "address": "1000 SW Broadway, Suite 1800, Portland, OR 97205",
-        "contact_name": "Megan Torres",
-        "phone": "(503) 555-0198",
-        "fax": "(503) 555-0199",
+        "address": "1211 SW Fifth Ave, Suite 800, Portland, OR 97204",
+        "contact_name": "Megan Lawson",
+        "phone": "(503) 555-0188",
+        "fax": "(503) 555-0189",
         "email": "submissions@cascadepro.com"
       },
       "insurers": [
         {
           "letter": "A",
           "name": "CNA Insurance Company",
-          "naic": "12655"
+          "naic": "12612"
         },
         {
           "letter": "B",
-          "name": "Continental Casualty Company",
-          "naic": "20443"
-        },
-        {
-          "letter": "C",
           "name": "The Continental Insurance Company",
           "naic": "35289"
         },
         {
+          "letter": "C",
+          "name": "Continental Casualty Company",
+          "naic": "20443"
+        },
+        {
           "letter": "D",
-          "name": "Transportation Insurance Company",
-          "naic": "20494"
+          "name": "Continental Indemnity Company",
+          "naic": "28258"
         },
         {
           "letter": "E",
-          "name": "Valley Forge Insurance Company",
-          "naic": "20508"
+          "name": "Continental Heritage Insurance Company",
+          "naic": "39527"
         },
         {
           "letter": "F",
-          "name": "National Fire Insurance Company of Hartford",
-          "naic": "20478"
+          "name": "Transportation Insurance Company",
+          "naic": "20494"
         }
       ],
       "business_description": "In-home nursing and personal care services",
       "entity_type": "Limited Liability Company",
-      "fein": "93-4187625",
-      "naic_carrier": "CNA Financial"
+      "fein": "84-3729156",
+      "naic_carrier": "12612"
     },
     "email": {
-      "subject": "New business submission for Evergreen Home Health Services LLC - effective 08/01/2026",
-      "body": "Good morning,\n\nPlease quote and bind, if acceptable, the new business account for Evergreen Home Health Services LLC located at 1201 SW Fifth Ave, Portland, OR 97204.\n\nRequested effective date is 08/01/2026. This is a brand-new submission with no prior policy number.\n\nNamed insured contact is Priya Raman, praman@evergreenhh.com, (503) 555-0159.\n\nPlease advise on appetite, any underwriting questions, and issuance requirements.\n\nThank you,\nCascade Professional Insurance\nSubmissions Team",
-      "sender": "Megan Torres <submissions@cascadepro.com>",
-      "recipient": "praman@evergreenhh.com"
+      "subject": "New Submission Request \u2014 Evergreen Home Health Services LLC",
+      "body": "Good morning,\n\nPlease quote and bind coverage for Evergreen Home Health Services LLC, a new account for in-home nursing and personal care services at 1201 SW Fifth Ave, Portland, OR 97204.\n\nRequested effective date: 08/01/2026.\n\nThis is a brand-new submission with no existing policy number. Please let me know if you need any additional information to move the account forward.\n\nThank you,\nMegan Lawson\nCascade Professional Insurance\nsubmissions@cascadepro.com",
+      "sender": "Megan Lawson <submissions@cascadepro.com>",
+      "recipient": "Priya Raman <praman@evergreenhh.com>"
     },
     "documents": []
   }

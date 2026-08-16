@@ -19,141 +19,129 @@
       "contact_email": "hramos@coastalpm.com",
       "contact_phone": "(813) 555-0177",
       "carrier_name": "Nationwide Mutual Insurance Company",
-      "effective_date": "2025-08-15",
-      "expiration_date": "2026-08-15",
+      "effective_date": "2026-02-01",
+      "expiration_date": "2027-02-01",
       "coverage_limits": [
         {
           "coverage": "Commercial General Liability",
-          "limit": "$1,000,000"
+          "limit": "$1,000,000 Each Occurrence"
         },
         {
-          "coverage": "Damage to Rented Premises",
-          "limit": "$300,000"
+          "coverage": "Commercial General Liability",
+          "limit": "$2,000,000 General Aggregate"
         },
         {
-          "coverage": "Medical Expense",
-          "limit": "$5,000"
+          "coverage": "Commercial Automobile Liability",
+          "limit": "$1,000,000 Combined Single Limit"
         },
         {
-          "coverage": "Personal & Advertising Injury",
-          "limit": "$1,000,000"
-        },
-        {
-          "coverage": "General Aggregate",
-          "limit": "$2,000,000"
-        },
-        {
-          "coverage": "Products-Completed Operations Aggregate",
-          "limit": "$2,000,000"
-        },
-        {
-          "coverage": "Automobile Liability",
-          "limit": "$1,000,000"
-        },
-        {
-          "coverage": "Umbrella Liability",
-          "limit": "$5,000,000"
+          "coverage": "Commercial Umbrella Liability",
+          "limit": "$5,000,000 Each Occurrence"
         },
         {
           "coverage": "Workers Compensation",
-          "limit": "$1,000,000"
+          "limit": "Statutory"
+        },
+        {
+          "coverage": "Employers Liability",
+          "limit": "$1,000,000 Each Accident / $1,000,000 Disease Policy Limit"
         }
       ],
-      "total_premium": "$18,940",
+      "total_premium": "$18,640",
       "producer": {
         "agency": "Gulf Coast Insurance Group",
-        "address": "101 E Kennedy Blvd, Suite 2400, Tampa, FL 33602",
-        "contact_name": "Megan Lawson",
-        "phone": "(813) 555-0199",
-        "fax": "(813) 555-0198",
+        "address": "1001 N Westshore Blvd, Suite 610, Tampa, FL 33607",
+        "contact_name": "Marisa Delgado",
+        "phone": "(813) 555-0198",
+        "fax": "(813) 555-0199",
         "email": "submissions@gulfcoastig.com"
       },
       "insurers": [
         {
           "letter": "A",
           "name": "Nationwide Mutual Insurance Company",
-          "naic": "23779"
+          "naic": "23787"
         },
         {
           "letter": "B",
           "name": "Nationwide Property and Casualty Insurance Company",
-          "naic": "37877"
+          "naic": "23728"
         },
         {
           "letter": "C",
+          "name": "Nationwide General Insurance Company",
+          "naic": "23760"
+        },
+        {
+          "letter": "D",
+          "name": "Nationwide Assurance Company",
+          "naic": "25453"
+        },
+        {
+          "letter": "E",
           "name": "Nationwide Affinity Insurance Company of America",
           "naic": "26093"
         },
         {
-          "letter": "D",
-          "name": "Nationwide General Insurance Company",
-          "naic": "29424"
-        },
-        {
-          "letter": "E",
-          "name": "Nationwide Assurance Company",
-          "naic": "10948"
-        },
-        {
           "letter": "F",
-          "name": "Nationwide Agribusiness Insurance Company",
-          "naic": "31194"
+          "name": "Allied Property and Casualty Insurance Company",
+          "naic": "42579"
         }
       ],
-      "business_description": "Commercial real estate management (retail centers)",
+      "business_description": "Commercial real estate management of retail centers and associated common area operations",
       "entity_type": "Limited Liability Company",
-      "fein": "82-4173695",
-      "naic_carrier": "23779"
+      "fein": "59-3847210",
+      "naic_carrier": "23787"
     },
     "email": {
-      "subject": "Renewal Request \u2013 Coastal Property Management LLC, Policy CPP-2214569",
-      "body": "Good morning,\n\nPlease prepare the renewal quotation for Coastal Property Management LLC, policy CPP-2214569, expiring 08/15/2026. We would like to renew on the requested effective date of 08/15/2026 with the current coverage structure maintained, subject to any underwriting changes you may require.\n\nPlease send the renewal terms, updated premium, and any documents needed to bind coverage.\n\nThank you,\nHector Ramos\nCoastal Property Management LLC",
-      "sender": "Hector Ramos <hramos@coastalpm.com>",
-      "recipient": "submissions@gulfcoastig.com"
+      "subject": "Renewal Request \u2013 Coastal Property Management LLC Policy CPP-2214569",
+      "body": "Good morning,\n\nPlease prepare the renewal quote for Coastal Property Management LLC, policy CPP-2214569, which is nearing expiration on 02/01/2027. We would like to renew coverage effective 02/01/2027 with no interruption in protection.\n\nPlease confirm the renewal terms, premium, and any underwriting items needed to bind. If certificates or updated documents are available, please send them over as well.\n\nThank you,\nHector Ramos\nCoastal Property Management LLC",
+      "sender": "Marisa Delgado <submissions@gulfcoastig.com>",
+      "recipient": "Hector Ramos <hramos@coastalpm.com>"
     },
     "documents": [
       {
-        "title": "Premium Invoice",
+        "title": "Nationwide Mutual Insurance Company Premium Invoice",
         "certificate_holder": null,
         "coverage_lines": null,
         "description_of_operations": null,
         "authorized_representative": null,
         "certificate_number": null,
         "revision_number": null,
-        "invoice_number": "INV-2026-0815-01",
-        "invoice_date": "07/15/2026",
-        "account_number": "ACCT-2214569",
+        "invoice_number": "INV-2027-0148",
+        "invoice_date": "01/05/2027",
+        "account_number": "ACP-2214569",
         "line_items": [
           {
             "description": "Policy Premium",
-            "amount": "$18,200.00"
+            "amount": "$17,850.00"
           },
           {
             "description": "Terrorism (TRIA)",
             "amount": "$145.00"
           },
           {
-            "description": "State Tax / Surcharge",
-            "amount": "$385.00"
+            "description": "Florida Insurance Premium Tax",
+            "amount": "$567.00"
           },
           {
             "description": "Broker Fee",
-            "amount": "$210.00"
+            "amount": "$78.00"
           },
           {
             "description": "Prior Balance",
             "amount": "$0.00"
           }
         ],
-        "subtotal": "$18,345.00",
-        "taxes": "$385.00",
-        "fees": "$355.00",
+        "subtotal": "$17,995.00",
+        "taxes": "$567.00",
+        "fees": "$223.00",
         "prior_balance": "$0.00",
-        "amount_due": "$18,940.00",
-        "billing_period": "08/15/2026 to 08/15/2027",
-        "due_date": "08/15/2026",
-        "payment_methods": "Remit by ACH, check, or wire transfer",
-        "remit_to": "Gulf Coast Insurance Group, P.O. Box 49210, Tampa, FL 33649-9210, Attn: Premium Accounting",
+        "amount_due": "$18,785.00",
+        "billing_period": "02/01/2027 - 02/01/2028",
+        "due_date": "02/01/2027",
+        "payment_methods": "Mail check, ACH, or pay online at nwm.com/payments",
+        "remit_to": "Nationwide Mutual Insurance Company, P.O. Box 89405, Cleveland, OH 44101-6405",
         "coverage_parts": null,
         "forms_schedule": null,
         "premium_summary": null,
@@ -179,14 +167,14 @@
       },
       {
         "title": "ACORD 25 Certificate of Liability Insurance",
-        "certificate_holder": "Bay Harbor Retail Center, LLC, 1201 N Dale Mabry Hwy, Tampa, FL 33607",
+        "certificate_holder": "Riverview Holdings, LLC 1201 E. Kennedy Blvd., Suite 220, Tampa, FL 33602",
         "coverage_lines": [
           {
             "insurer_letter": "A",
             "coverage_type": "Commercial General Liability",
             "policy_number": "CPP-2214569",
-            "effective_date": "08/15/2025",
-            "expiration_date": "08/15/2026",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
             "addl_insured": true,
             "subro_waived": true,
             "limits": [
@@ -218,11 +206,11 @@
             "premium": null
           },
           {
-            "insurer_letter": "A",
+            "insurer_letter": "B",
             "coverage_type": "Automobile Liability",
             "policy_number": "CPP-2214569",
-            "effective_date": "08/15/2025",
-            "expiration_date": "08/15/2026",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
             "addl_insured": true,
             "subro_waived": true,
             "limits": [
@@ -234,31 +222,27 @@
             "premium": null
           },
           {
-            "insurer_letter": "A",
+            "insurer_letter": "C",
             "coverage_type": "Umbrella Liability",
             "policy_number": "CPP-2214569",
-            "effective_date": "08/15/2025",
-            "expiration_date": "08/15/2026",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
             "addl_insured": true,
             "subro_waived": true,
             "limits": [
               {
                 "coverage": "Each Occurrence",
                 "limit": "$5,000,000"
-              },
-              {
-                "coverage": "General Aggregate",
-                "limit": "$5,000,000"
               }
             ],
             "premium": null
           },
           {
-            "insurer_letter": "A",
+            "insurer_letter": "D",
             "coverage_type": "Workers Compensation",
             "policy_number": "CPP-2214569",
-            "effective_date": "08/15/2025",
-            "expiration_date": "08/15/2026",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
             "addl_insured": false,
             "subro_waived": true,
             "limits": [
@@ -278,9 +262,9 @@
             "premium": null
           }
         ],
-        "description_of_operations": "Bay Harbor Retail Center, LLC is included as additional insured as respects liability arising out of Coastal Property Management LLC's ongoing operations. Coverage is primary and non-contributory where required by written contract, subject to CG 20 10 04 13 and CG 20 37 04 13. Waiver of subrogation applies where endorsed by form WC 00 03 13 and CG 24 04 05 09. ACORD 25 (2016/03) used for certificate format reference only.",
-        "authorized_representative": "Megan Lawson, Authorized Representative",
-        "certificate_number": "COI-2026-0741",
+        "description_of_operations": "Riverview Holdings, LLC is named as additional insured with respect to ongoing and completed operations where required by written contract. Coverage is primary and non-contributory where required by written contract. Waiver of subrogation applies where required by written contract and as evidenced by forms CG 20 10 04 13, CG 20 37 04 13, CG 24 04 05 09, and WC 00 03 13.",
+        "authorized_representative": "Marisa Delgado",
+        "certificate_number": "COI-784512",
         "revision_number": null,
         "invoice_number": null,
         "invoice_date": null,
@@ -319,47 +303,47 @@
         "unrelated_body": null
       },
       {
-        "title": "Premium Invoice",
+        "title": "Nationwide Mutual Insurance Company Premium Invoice",
         "certificate_holder": null,
         "coverage_lines": null,
         "description_of_operations": null,
         "authorized_representative": null,
         "certificate_number": null,
         "revision_number": null,
-        "invoice_number": "INV-2026-0815-02",
-        "invoice_date": "07/18/2026",
-        "account_number": "ACCT-2214569",
+        "invoice_number": "INV-2027-0149",
+        "invoice_date": "01/12/2027",
+        "account_number": "ACP-2214569",
         "line_items": [
           {
             "description": "Policy Premium",
-            "amount": "$18,200.00"
+            "amount": "$17,850.00"
           },
           {
             "description": "Terrorism (TRIA)",
             "amount": "$145.00"
           },
           {
-            "description": "State Tax / Surcharge",
-            "amount": "$385.00"
+            "description": "Florida Insurance Premium Tax",
+            "amount": "$567.00"
           },
           {
             "description": "Broker Fee",
-            "amount": "$210.00"
+            "amount": "$78.00"
           },
           {
             "description": "Prior Balance",
             "amount": "$0.00"
           }
         ],
-        "subtotal": "$18,345.00",
-        "taxes": "$385.00",
-        "fees": "$355.00",
+        "subtotal": "$17,995.00",
+        "taxes": "$567.00",
+        "fees": "$223.00",
         "prior_balance": "$0.00",
-        "amount_due": "$18,940.00",
-        "billing_period": "08/15/2026 to 08/15/2027",
-        "due_date": "08/15/2026",
-        "payment_methods": "Remit by ACH, check, or wire transfer",
-        "remit_to": "Nationwide Mutual Insurance Company, P.O. Box 182824, Columbus, OH 43218-2824",
+        "amount_due": "$18,785.00",
+        "billing_period": "02/01/2027 - 02/01/2028",
+        "due_date": "02/01/2027",
+        "payment_methods": "Mail check, ACH, or pay online at nwm.com/payments",
+        "remit_to": "Nationwide Mutual Insurance Company, P.O. Box 89405, Cleveland, OH 44101-6405",
         "coverage_parts": null,
         "forms_schedule": null,
         "premium_summary": null,
@@ -384,47 +368,47 @@
         "unrelated_body": null
       },
       {
-        "title": "Premium Invoice",
+        "title": "Nationwide Mutual Insurance Company Premium Invoice",
         "certificate_holder": null,
         "coverage_lines": null,
         "description_of_operations": null,
         "authorized_representative": null,
         "certificate_number": null,
         "revision_number": null,
-        "invoice_number": "INV-2026-0815-03",
-        "invoice_date": "07/22/2026",
-        "account_number": "ACCT-2214569",
+        "invoice_number": "INV-2027-0150",
+        "invoice_date": "01/20/2027",
+        "account_number": "ACP-2214569",
         "line_items": [
           {
             "description": "Policy Premium",
-            "amount": "$18,200.00"
+            "amount": "$17,850.00"
           },
           {
             "description": "Terrorism (TRIA)",
             "amount": "$145.00"
           },
           {
-            "description": "State Tax / Surcharge",
-            "amount": "$385.00"
+            "description": "Florida Insurance Premium Tax",
+            "amount": "$567.00"
           },
           {
             "description": "Broker Fee",
-            "amount": "$210.00"
+            "amount": "$78.00"
           },
           {
             "description": "Prior Balance",
             "amount": "$0.00"
           }
         ],
-        "subtotal": "$18,345.00",
-        "taxes": "$385.00",
-        "fees": "$355.00",
+        "subtotal": "$17,995.00",
+        "taxes": "$567.00",
+        "fees": "$223.00",
         "prior_balance": "$0.00",
-        "amount_due": "$18,940.00",
-        "billing_period": "08/15/2026 to 08/15/2027",
-        "due_date": "08/15/2026",
-        "payment_methods": "Remit by ACH, check, or wire transfer",
-        "remit_to": "Nationwide Mutual Insurance Company, P.O. Box 182824, Columbus, OH 43218-2824",
+        "amount_due": "$18,785.00",
+        "billing_period": "02/01/2027 - 02/01/2028",
+        "due_date": "02/01/2027",
+        "payment_methods": "Mail check, ACH, or pay online at nwm.com/payments",
+        "remit_to": "Nationwide Mutual Insurance Company, P.O. Box 89405, Cleveland, OH 44101-6405",
         "coverage_parts": null,
         "forms_schedule": null,
         "premium_summary": null,
@@ -450,14 +434,14 @@
       },
       {
         "title": "ACORD 25 Certificate of Liability Insurance",
-        "certificate_holder": "Westshore Business Association, 2202 N Westshore Blvd, Tampa, FL 33607",
+        "certificate_holder": "Bayfront Retail Center, LLC 400 S. Dale Mabry Hwy, Tampa, FL 33609",
         "coverage_lines": [
           {
             "insurer_letter": "A",
             "coverage_type": "Commercial General Liability",
             "policy_number": "CPP-2214569",
-            "effective_date": "08/15/2025",
-            "expiration_date": "08/15/2026",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
             "addl_insured": true,
             "subro_waived": true,
             "limits": [
@@ -489,11 +473,11 @@
             "premium": null
           },
           {
-            "insurer_letter": "A",
+            "insurer_letter": "B",
             "coverage_type": "Automobile Liability",
             "policy_number": "CPP-2214569",
-            "effective_date": "08/15/2025",
-            "expiration_date": "08/15/2026",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
             "addl_insured": true,
             "subro_waived": true,
             "limits": [
@@ -505,31 +489,27 @@
             "premium": null
           },
           {
-            "insurer_letter": "A",
+            "insurer_letter": "C",
             "coverage_type": "Umbrella Liability",
             "policy_number": "CPP-2214569",
-            "effective_date": "08/15/2025",
-            "expiration_date": "08/15/2026",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
             "addl_insured": true,
             "subro_waived": true,
             "limits": [
               {
                 "coverage": "Each Occurrence",
                 "limit": "$5,000,000"
-              },
-              {
-                "coverage": "General Aggregate",
-                "limit": "$5,000,000"
               }
             ],
             "premium": null
           },
           {
-            "insurer_letter": "A",
+            "insurer_letter": "D",
             "coverage_type": "Workers Compensation",
             "policy_number": "CPP-2214569",
-            "effective_date": "08/15/2025",
-            "expiration_date": "08/15/2026",
+            "effective_date": "02/01/2026",
+            "expiration_date": "02/01/2027",
             "addl_insured": false,
             "subro_waived": true,
             "limits": [
@@ -549,9 +529,9 @@
             "premium": null
           }
         ],
-        "description_of_operations": "Westshore Business Association is named as additional insured with respect to Coastal Property Management LLC's ongoing operations where required by written contract. Coverage is primary and non-contributory and includes waiver of subrogation where endorsed. Refer to CG 20 10 04 13, CG 20 37 04 13, CG 24 04 05 09, and WC 00 03 13. ACORD 25 (2016/03) used for certificate format reference only.",
-        "authorized_representative": "Megan Lawson, Authorized Representative",
-        "certificate_number": "COI-2026-0742",
+        "description_of_operations": "Bayfront Retail Center, LLC is included as additional insured as required by written contract. Coverage is primary and non-contributory where required by written contract. Waiver of subrogation applies where required by written contract and as evidenced by forms CG 20 10 04 13, CG 20 37 04 13, CG 24 04 05 09, and WC 00 03 13.",
+        "authorized_representative": "Marisa Delgado",
+        "certificate_number": "COI-784913",
         "revision_number": null,
         "invoice_number": null,
         "invoice_date": null,
@@ -590,47 +570,47 @@
         "unrelated_body": null
       },
       {
-        "title": "Premium Invoice",
+        "title": "Nationwide Mutual Insurance Company Premium Invoice",
         "certificate_holder": null,
         "coverage_lines": null,
         "description_of_operations": null,
         "authorized_representative": null,
         "certificate_number": null,
         "revision_number": null,
-        "invoice_number": "INV-2026-0815-04",
-        "invoice_date": "07/25/2026",
-        "account_number": "ACCT-2214569",
+        "invoice_number": "INV-2027-0151",
+        "invoice_date": "01/28/2027",
+        "account_number": "ACP-2214569",
         "line_items": [
           {
             "description": "Policy Premium",
-            "amount": "$18,200.00"
+            "amount": "$17,850.00"
           },
           {
             "description": "Terrorism (TRIA)",
             "amount": "$145.00"
           },
           {
-            "description": "State Tax / Surcharge",
-            "amount": "$385.00"
+            "description": "Florida Insurance Premium Tax",
+            "amount": "$567.00"
           },
           {
             "description": "Broker Fee",
-            "amount": "$210.00"
+            "amount": "$78.00"
           },
           {
             "description": "Prior Balance",
             "amount": "$0.00"
           }
         ],
-        "subtotal": "$18,345.00",
-        "taxes": "$385.00",
-        "fees": "$355.00",
+        "subtotal": "$17,995.00",
+        "taxes": "$567.00",
+        "fees": "$223.00",
         "prior_balance": "$0.00",
-        "amount_due": "$18,940.00",
-        "billing_period": "08/15/2026 to 08/15/2027",
-        "due_date": "08/15/2026",
-        "payment_methods": "Remit by ACH, check, or wire transfer",
-        "remit_to": "Gulf Coast Insurance Group, P.O. Box 49210, Tampa, FL 33649-9210, Attn: Premium Accounting",
+        "amount_due": "$18,785.00",
+        "billing_period": "02/01/2027 - 02/01/2028",
+        "due_date": "02/01/2027",
+        "payment_methods": "Mail check, ACH, or pay online at nwm.com/payments",
+        "remit_to": "Nationwide Mutual Insurance Company, P.O. Box 89405, Cleveland, OH 44101-6405",
         "coverage_parts": null,
         "forms_schedule": null,
         "premium_summary": null,

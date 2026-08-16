@@ -10,7 +10,7 @@
       "requested_effective_date": null,
       "requested_changes": "Report a new loss / open a claim.",
       "contact_name": "Olivia Bennett",
-      "contact_phone": "(415) 555-0169"
+      "contact_phone": "415-555-0169"
     }
   },
   "attachments": [
@@ -27,9 +27,9 @@
           "extraction": {
             "named_insured": "Golden Gate Hospitality Group LLC",
             "policy_number": "CPP-8830471",
-            "certificate_holder": "Bayside Development Partners LP",
-            "effective_date": "2026-03-01",
-            "expiration_date": "2027-03-01",
+            "certificate_holder": "Bayline Property Management, Inc. 200 Mission St, Suite 1200, San Francisco, CA 94105",
+            "effective_date": "2025-09-01",
+            "expiration_date": "2026-09-01",
             "limits": {
               "Each Occurrence": "$1,000,000",
               "Damage to Rented Premises": "$300,000",
@@ -38,7 +38,6 @@
               "General Aggregate": "$2,000,000",
               "Products-Comp/Op Agg": "$2,000,000",
               "Combined Single Limit": "$1,000,000",
-              "Aggregate": "$5,000,000",
               "E.L. Each Accident": "$1,000,000",
               "E.L. Disease-Ea Employee": "$1,000,000",
               "E.L. Disease-Policy Limit": "$1,000,000"

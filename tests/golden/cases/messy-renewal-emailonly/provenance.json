@@ -18,7 +18,7 @@
       "multi_recipient": true,
       "body_only": false,
       "inconsistency": false,
-      "date_received": "2026-07-13T16:38:00+00:00"
+      "date_received": "2026-07-14T16:38:00+00:00"
     },
     "attachments": [],
     "docs": [],
@@ -38,13 +38,9 @@
       "contact_email": "dolsson@summitridgegc.com",
       "contact_phone": "(303) 555-0188",
       "carrier_name": "Travelers Indemnity Company",
-      "effective_date": "2025-08-01",
-      "expiration_date": "2026-08-01",
+      "effective_date": "2025-09-01",
+      "expiration_date": "2026-09-01",
       "coverage_limits": [
-        {
-          "coverage": "Commercial General Liability",
-          "limit": "$1,000,000"
-        },
         {
           "coverage": "General Aggregate",
           "limit": "$2,000,000"
@@ -54,35 +50,23 @@
           "limit": "$2,000,000"
         },
         {
+          "coverage": "Each Occurrence",
+          "limit": "$1,000,000"
+        },
+        {
           "coverage": "Personal and Advertising Injury",
           "limit": "$1,000,000"
         },
         {
-          "coverage": "Damage to Premises Rented to You",
+          "coverage": "Damage to Rented Premises",
           "limit": "$300,000"
-        },
-        {
-          "coverage": "Workers Compensation",
-          "limit": "Statutory"
-        },
-        {
-          "coverage": "Employers Liability Each Accident",
-          "limit": "$1,000,000"
-        },
-        {
-          "coverage": "Automobile Liability Combined Single Limit",
-          "limit": "$1,000,000"
-        },
-        {
-          "coverage": "Umbrella Liability Each Occurrence",
-          "limit": "$5,000,000"
         }
       ],
-      "total_premium": "$48,750",
+      "total_premium": "$18,750",
       "producer": {
         "agency": "Front Range Commercial Insurance",
-        "address": "1501 Wynkoop St, Suite 250, Denver, CO 80202",
-        "contact_name": "Maya Chen",
+        "address": "1200 S Colorado Blvd, Suite 700, Denver, CO 80222",
+        "contact_name": "Megan Hart",
         "phone": "(303) 555-0144",
         "fax": "(303) 555-0145",
         "email": "newbusiness@frontrangeins.com"
@@ -90,45 +74,45 @@
       "insurers": [
         {
           "letter": "A",
-          "name": "Travelers Indemnity Company",
-          "naic": "25658"
-        },
-        {
-          "letter": "B",
-          "name": "Travelers Casualty and Surety Company of America",
-          "naic": "31194"
-        },
-        {
-          "letter": "C",
           "name": "Travelers Property Casualty Company of America",
           "naic": "25674"
         },
         {
+          "letter": "B",
+          "name": "Travelers Indemnity Company",
+          "naic": "25178"
+        },
+        {
+          "letter": "C",
+          "name": "Travelers Indemnity Company of Connecticut",
+          "naic": "25682"
+        },
+        {
           "letter": "D",
-          "name": "The Charter Oak Fire Insurance Company",
-          "naic": "25615"
+          "name": "Travelers Casualty and Surety Company",
+          "naic": "31194"
         },
         {
           "letter": "E",
-          "name": "The Phoenix Insurance Company",
-          "naic": "25623"
+          "name": "Travelers Casualty Company of America",
+          "naic": "19038"
         },
         {
           "letter": "F",
           "name": "Travelers Personal Insurance Company",
-          "naic": "27120"
+          "naic": "38130"
         }
       ],
-      "business_description": "Commercial general contractor; ground-up construction, tenant improvements, and site work",
+      "business_description": "Commercial general contractor specializing in ground-up construction, tenant improvements, and site development",
       "entity_type": "Corporation",
-      "fein": "84-2164937",
-      "naic_carrier": "25658"
+      "fein": "84-2167395",
+      "naic_carrier": "25178"
     },
     "email": {
-      "subject": "Re: Renewal quote request for Summit Ridge Construction Inc. \u2014 Policy CPP-6612078",
-      "body": "Good morning Maya,\n\nPlease prepare the renewal quote for Summit Ridge Construction Inc. (policy CPP-6612078) ahead of the upcoming expiration date. The account is a commercial general contractor handling ground-up construction, tenant improvements, and site work at 9400 E Arapahoe Rd, Centennial, CO 80112.\n\nIf possible, please keep the renewal effective date at 08/01/2025 and let us know if you need any updated underwriting information from Derek Olsson.\n\nThank you,\nDerek Olsson\nSummit Ridge Construction Inc.\n\nOn Wed, Jul 1, 2026 11:47 AM, Maya Chen <newbusiness@frontrangeins.com> wrote:\n> Thanks for sending this over \u2014 can you confirm the requested effective date and whether any additional insureds are needed?\n>\n> Regards,\n> Maya Chen",
+      "subject": "Re: Renewal Request - Summit Ridge Construction Inc. Policy CPP-6612078",
+      "body": "Hi Megan,\n\nPlease proceed with the renewal review for Summit Ridge Construction Inc., policy CPP-6612078, which is approaching expiration on 09/01/2026. We would like to renew coverage effective 09/01/2026 with no lapse in protection.\n\nPlease send over the renewal quote, updated terms, and any underwriting questions you may have. Let us know if you need loss runs, updated payroll or revenue figures, or project schedule details.\n\nThank you,\nDerek Olsson\nSummit Ridge Construction Inc.\n\nOn Wed, Jul 1, 2026 11:47 AM, Megan Hart <newbusiness@frontrangeins.com> wrote:\n> Thanks for sending this over \u2014 can you confirm the requested effective date and whether any additional insureds are needed?\n>\n> Regards,\n> Megan Hart",
       "sender": "Derek Olsson <dolsson@summitridgegc.com>",
-      "recipient": "Maya Chen <newbusiness@frontrangeins.com>, newbusiness@frontrangeins.com"
+      "recipient": "Megan Hart <newbusiness@frontrangeins.com>, newbusiness@frontrangeins.com"
     },
     "documents": []
   }

@@ -18,7 +18,7 @@
       "multi_recipient": false,
       "body_only": true,
       "inconsistency": false,
-      "date_received": "2026-07-06T11:16:00+00:00"
+      "date_received": "2026-07-07T11:16:00+00:00"
     },
     "attachments": [
       {
@@ -100,14 +100,14 @@
   "raw_scenario": {
     "shared": {
       "named_insured": "Evergreen Home Health Services LLC",
-      "policy_number": "CNA HCP 4827619",
+      "policy_number": "CNA-HHC-274918",
       "insured_address": "1201 SW Fifth Ave, Portland, OR 97204",
       "contact_name": "Priya Raman",
       "contact_email": "praman@evergreenhh.com",
       "contact_phone": "(503) 555-0159",
       "carrier_name": "CNA Financial",
-      "effective_date": "2026-08-01",
-      "expiration_date": "2027-08-01",
+      "effective_date": "2026-01-01",
+      "expiration_date": "2027-01-01",
       "coverage_limits": [
         {
           "coverage": "Commercial General Liability - Each Occurrence",
@@ -118,73 +118,77 @@
           "limit": "$2,000,000"
         },
         {
-          "coverage": "Business Auto - Combined Single Limit",
+          "coverage": "Automobile Liability - Combined Single Limit",
           "limit": "$1,000,000"
         },
         {
-          "coverage": "Umbrella Liability - Each Occurrence",
-          "limit": "$2,000,000"
+          "coverage": "Umbrella Liability - Each Occurrence / Aggregate",
+          "limit": "$5,000,000"
         },
         {
           "coverage": "Workers Compensation - E.L. Each Accident",
           "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Workers Compensation - E.L. Disease-Policy Limit",
+          "limit": "$1,000,000"
         }
       ],
-      "total_premium": "$18,450",
+      "total_premium": "$18,640",
       "producer": {
         "agency": "Cascade Professional Insurance",
-        "address": "900 SW 5th Ave, Suite 1900, Portland, OR 97204",
-        "contact_name": "Megan Ortiz",
-        "phone": "(503) 555-0288",
-        "fax": "(503) 555-0289",
+        "address": "520 SW Yamhill St, Suite 900, Portland, OR 97204",
+        "contact_name": "Marissa Cole",
+        "phone": "(503) 555-0842",
+        "fax": "(503) 555-0843",
         "email": "submissions@cascadepro.com"
       },
       "insurers": [
         {
           "letter": "A",
           "name": "CNA Insurance Company",
-          "naic": "12632"
+          "naic": "21903"
         },
         {
           "letter": "B",
-          "name": "The Continental Insurance Company",
-          "naic": "35289"
-        },
-        {
-          "letter": "C",
           "name": "Continental Casualty Company",
           "naic": "20443"
         },
         {
-          "letter": "D",
+          "letter": "C",
           "name": "Transportation Insurance Company",
           "naic": "20494"
         },
         {
+          "letter": "D",
+          "name": "Valley Forge Insurance Company",
+          "naic": "20508"
+        },
+        {
           "letter": "E",
-          "name": "American Casualty Company of Reading, Pennsylvania",
-          "naic": "20427"
+          "name": "The Continental Insurance Company",
+          "naic": "35289"
         },
         {
           "letter": "F",
-          "name": "Valley Forge Insurance Company",
-          "naic": "20508"
+          "name": "American Casualty Company of Reading, Pennsylvania",
+          "naic": "20427"
         }
       ],
       "business_description": "In-home nursing and personal care services",
       "entity_type": "Limited Liability Company",
-      "fein": "93-4172861",
-      "naic_carrier": "12632"
+      "fein": "92-6147385",
+      "naic_carrier": "21849"
     },
     "email": {
       "subject": "",
       "body": "Attached.\n\nSent from my iPhone",
-      "sender": "Megan Ortiz <submissions@cascadepro.com>",
-      "recipient": "Underwriting Submissions"
+      "sender": "Marissa Cole <submissions@cascadepro.com>",
+      "recipient": "underwriting@cna.com"
     },
     "documents": [
       {
-        "title": "CNA Policy Change Endorsement",
+        "title": "Policy Change Endorsement - Evergreen Home Health Services LLC",
         "certificate_holder": null,
         "coverage_lines": null,
         "description_of_operations": null,
@@ -209,42 +213,38 @@
         "premium_summary": null,
         "countersignature": null,
         "countersignature_date": null,
-        "form_number": "CNA-PCE-01 08 26",
-        "endorsement_title": "Policy Change Endorsement - Named Insured and Additional Insured Amendment",
-        "endorsement_number": "Endorsement No. 1",
+        "form_number": "CG 99 01 11 20",
+        "endorsement_title": "Policy Change Endorsement",
+        "endorsement_number": "1",
         "schedule_rows": [
           {
             "label": "Named Insured",
             "value": "Evergreen Home Health Services LLC"
           },
           {
-            "label": "Mailing Address",
+            "label": "Location Address",
             "value": "1201 SW Fifth Ave, Portland, OR 97204"
           },
           {
-            "label": "Additional Insured",
-            "value": "Portland Care Partners, Inc."
+            "label": "Additional Location",
+            "value": "3110 NE Broadway, Portland, OR 97232"
           },
           {
-            "label": "Location of Operations",
-            "value": "Multnomah County, Oregon"
-          },
-          {
-            "label": "Class Description",
-            "value": "In-home nursing and personal care services"
+            "label": "Covered Auto",
+            "value": "2024 Ford Transit Connect, VIN NM0GE9E22R0154876"
           }
         ],
         "provisions": [
-          "It is agreed that the Named Insured shown in the Declarations is amended to read Evergreen Home Health Services LLC, and all references to Named Insured in the policy shall be construed accordingly.",
-          "With respect to the additional insured shown in the schedule, coverage is amended to include ongoing and completed operations where required by written contract, subject to the terms, conditions, exclusions, and endorsements of this policy.",
-          "Where required by written contract, the insurance afforded by this policy shall be primary and non-contributory with respect to the additional insured, and any other insurance maintained by such additional insured shall be excess and not contributory.",
-          "A waiver of subrogation applies in favor of the additional insured only to the extent required by a written contract and as respects the operations described therein. All other terms and conditions of this policy remain unchanged."
+          "Section II - Who Is An Insured is amended to include the additional insured shown in the schedule when required by written contract, but only with respect to liability arising out of the named insured's ongoing operations.",
+          "The Additional Insured - Owners, Lessees or Contractors endorsement CG 20 10 04 13 applies where required by contract and provides coverage on a primary and non-contributory basis to the extent permitted by law.",
+          "Waiver of Transfer of Rights of Recovery Against Others to Us CG 24 04 05 09 applies where required by written contract, but only as respects operations performed under that contract.",
+          "All other terms and conditions of this policy remain unchanged."
         ],
-        "additional_premium": "$250",
-        "change_description": "Adds an additional insured and updates the named insured mailing information effective at inception.",
+        "additional_premium": "$425",
+        "change_description": "Adds scheduled additional location and covered auto, with contractual additional insured and waiver language.",
         "coverages": null,
         "total_premium": null,
-        "effective_date": "2026-08-01",
+        "effective_date": "01/01/2026",
         "expiration_date": null,
         "nr_kind": null,
         "nr_header_rows": null,
@@ -254,7 +254,7 @@
         "unrelated_body": null
       },
       {
-        "title": "Commercial Package Policy Declarations",
+        "title": "Commercial Package Policy Declarations - Evergreen Home Health Services LLC",
         "certificate_holder": null,
         "coverage_lines": null,
         "description_of_operations": null,
@@ -263,7 +263,7 @@
         "revision_number": null,
         "invoice_number": null,
         "invoice_date": null,
-        "account_number": null,
+        "account_number": "A1209876",
         "line_items": null,
         "subtotal": null,
         "taxes": null,
@@ -278,11 +278,11 @@
           {
             "insurer_letter": "A",
             "coverage_type": "Commercial General Liability",
-            "policy_number": "CNA HCP 4827619",
-            "effective_date": "08/01/2026",
-            "expiration_date": "08/01/2027",
-            "addl_insured": false,
-            "subro_waived": false,
+            "policy_number": "CNA-HHC-274918",
+            "effective_date": null,
+            "expiration_date": null,
+            "addl_insured": null,
+            "subro_waived": null,
             "limits": [
               {
                 "coverage": "Each Occurrence",
@@ -290,7 +290,7 @@
               },
               {
                 "coverage": "Damage to Rented Premises",
-                "limit": "$100,000"
+                "limit": "$300,000"
               },
               {
                 "coverage": "Medical Expense (Any One Person)",
@@ -309,59 +309,55 @@
                 "limit": "$2,000,000"
               }
             ],
-            "premium": "$6,200"
+            "premium": "$7,840"
           },
           {
-            "insurer_letter": "D",
-            "coverage_type": "Business Auto Liability",
-            "policy_number": "CNA HCP 4827619",
-            "effective_date": "08/01/2026",
-            "expiration_date": "08/01/2027",
-            "addl_insured": false,
-            "subro_waived": false,
+            "insurer_letter": "B",
+            "coverage_type": "Automobile Liability",
+            "policy_number": "CNA-HHC-274918",
+            "effective_date": null,
+            "expiration_date": null,
+            "addl_insured": null,
+            "subro_waived": null,
             "limits": [
               {
                 "coverage": "Combined Single Limit",
                 "limit": "$1,000,000"
               }
             ],
-            "premium": "$3,150"
+            "premium": "$2,460"
+          },
+          {
+            "insurer_letter": "D",
+            "coverage_type": "Umbrella Liability",
+            "policy_number": "CNA-HHC-274918",
+            "effective_date": null,
+            "expiration_date": null,
+            "addl_insured": null,
+            "subro_waived": null,
+            "limits": [
+              {
+                "coverage": "Each Occurrence / Aggregate",
+                "limit": "$5,000,000"
+              }
+            ],
+            "premium": "$3,950"
           },
           {
             "insurer_letter": "C",
-            "coverage_type": "Umbrella Liability",
-            "policy_number": "CNA HCP 4827619",
-            "effective_date": "08/01/2026",
-            "expiration_date": "08/01/2027",
-            "addl_insured": false,
-            "subro_waived": false,
-            "limits": [
-              {
-                "coverage": "Each Occurrence",
-                "limit": "$2,000,000"
-              },
-              {
-                "coverage": "General Aggregate",
-                "limit": "$2,000,000"
-              }
-            ],
-            "premium": "$4,500"
-          },
-          {
-            "insurer_letter": "E",
             "coverage_type": "Workers Compensation",
-            "policy_number": "CNA HCP 4827619",
-            "effective_date": "08/01/2026",
-            "expiration_date": "08/01/2027",
-            "addl_insured": false,
-            "subro_waived": false,
+            "policy_number": "CNA-HHC-274918",
+            "effective_date": null,
+            "expiration_date": null,
+            "addl_insured": null,
+            "subro_waived": null,
             "limits": [
               {
                 "coverage": "E.L. Each Accident",
                 "limit": "$1,000,000"
               },
               {
-                "coverage": "E.L. Disease - Ea Employee",
+                "coverage": "E.L. Disease - Each Employee",
                 "limit": "$1,000,000"
               },
               {
@@ -369,7 +365,7 @@
                 "limit": "$1,000,000"
               }
             ],
-            "premium": "$4,000"
+            "premium": "$3,575"
           }
         ],
         "forms_schedule": [
@@ -378,15 +374,27 @@
             "title": "Commercial General Liability Coverage Form"
           },
           {
+            "form_number": "CG 20 10 04 13",
+            "title": "Additional Insured - Owners, Lessees or Contractors"
+          },
+          {
+            "form_number": "CG 24 04 05 09",
+            "title": "Waiver of Transfer of Rights of Recovery Against Others to Us"
+          },
+          {
             "form_number": "CA 00 01 11 20",
             "title": "Business Auto Coverage Form"
           },
           {
-            "form_number": "CU 00 01 01 15",
-            "title": "Commercial Umbrella Coverage Form"
+            "form_number": "CA 20 48 10 13",
+            "title": "Designated Insured"
           },
           {
-            "form_number": "WC 00 00 00 A",
+            "form_number": "UM 00 01 01 20",
+            "title": "Commercial Umbrella Liability Coverage Form"
+          },
+          {
+            "form_number": "WC 00 00 00 B",
             "title": "Workers Compensation and Employers Liability Insurance Policy"
           },
           {
@@ -397,23 +405,27 @@
         "premium_summary": [
           {
             "description": "Policy Premium",
-            "amount": "$17,850"
+            "amount": "$17,825"
           },
           {
-            "description": "TRIA",
-            "amount": "$120"
+            "description": "Terrorism (TRIA)",
+            "amount": "$145"
           },
           {
-            "description": "State Premium Tax",
-            "amount": "$280"
+            "description": "State Tax",
+            "amount": "$96"
           },
           {
-            "description": "Policy Fees",
-            "amount": "$200"
+            "description": "Surplus Lines / Filing Fee",
+            "amount": "$30"
+          },
+          {
+            "description": "Broker Fee",
+            "amount": "$0"
           }
         ],
-        "countersignature": "Megan Ortiz, Authorized Representative",
-        "countersignature_date": "08/01/2026",
+        "countersignature": "Marissa Cole",
+        "countersignature_date": "12/12/2025",
         "form_number": null,
         "endorsement_title": null,
         "endorsement_number": null,
@@ -422,9 +434,9 @@
         "additional_premium": null,
         "change_description": null,
         "coverages": null,
-        "total_premium": "$18,450",
-        "effective_date": "08/01/2026",
-        "expiration_date": "08/01/2027",
+        "total_premium": "$18,640",
+        "effective_date": "01/01/2026",
+        "expiration_date": "01/01/2027",
         "nr_kind": null,
         "nr_header_rows": null,
         "nr_columns": null,
@@ -433,15 +445,15 @@
         "unrelated_body": null
       },
       {
-        "title": "ACORD 25 Certificate of Liability Insurance",
-        "certificate_holder": "Rosew0od Senir Living, LLC 4550 NE Glisan St, Potland, OR 97213",
+        "title": "ACORD 25 Certificate of Liability Insurance - Harborview Senior Living",
+        "certificate_holder": "Harboview Seior Living, LLC 88 Market Street, uite 400, Portlad, OR 97201",
         "coverage_lines": [
           {
             "insurer_letter": "A",
             "coverage_type": "Commercial General Liability",
-            "policy_number": "CNA HCP 4827619",
-            "effective_date": "08/01/2026",
-            "expiration_date": "08/01/2027",
+            "policy_number": "CNA-HHC-274918",
+            "effective_date": "01/01/2026",
+            "expiration_date": "01/01/2027",
             "addl_insured": true,
             "subro_waived": true,
             "limits": [
@@ -451,14 +463,14 @@
               },
               {
                 "coverage": "Damage to Rented Premises",
-                "limit": "$100,000"
+                "limit": "$300,000"
               },
               {
-                "coverage": "Med Exp (Any One Person)",
+                "coverage": "Medical Expense (Any One Person)",
                 "limit": "$5,000"
               },
               {
-                "coverage": "Personal & Adv Injury",
+                "coverage": "Personal & Advertising Injury",
                 "limit": "$1,000,000"
               },
               {
@@ -466,18 +478,18 @@
                 "limit": "$2,000,000"
               },
               {
-                "coverage": "Products-Comp/Op Agg",
+                "coverage": "Products-Completed Operations Aggregate",
                 "limit": "$2,000,000"
               }
             ],
             "premium": null
           },
           {
-            "insurer_letter": "D",
+            "insurer_letter": "B",
             "coverage_type": "Automobile Liability",
-            "policy_number": "CNA HCP 4827619",
-            "effective_date": "08/01/2026",
-            "expiration_date": "08/01/2027",
+            "policy_number": "CNA-HHC-274918",
+            "effective_date": "01/01/2026",
+            "expiration_date": "01/01/2027",
             "addl_insured": true,
             "subro_waived": true,
             "limits": [
@@ -489,31 +501,27 @@
             "premium": null
           },
           {
-            "insurer_letter": "C",
+            "insurer_letter": "D",
             "coverage_type": "Umbrella Liability",
-            "policy_number": "CNA HCP 4827619",
-            "effective_date": "08/01/2026",
-            "expiration_date": "08/01/2027",
+            "policy_number": "CNA-HHC-274918",
+            "effective_date": "01/01/2026",
+            "expiration_date": "01/01/2027",
             "addl_insured": true,
             "subro_waived": true,
             "limits": [
               {
-                "coverage": "Each Occurrence",
-                "limit": "$2,000,000"
-              },
-              {
-                "coverage": "General Aggregate",
-                "limit": "$2,000,000"
+                "coverage": "Each Occurrence / Aggregate",
+                "limit": "$5,000,000"
               }
             ],
             "premium": null
           },
           {
-            "insurer_letter": "E",
+            "insurer_letter": "C",
             "coverage_type": "Workers Compensation",
-            "policy_number": "CNA HCP 4827619",
-            "effective_date": "08/01/2026",
-            "expiration_date": "08/01/2027",
+            "policy_number": "CNA-HHC-274918",
+            "effective_date": "01/01/2026",
+            "expiration_date": "01/01/2027",
             "addl_insured": false,
             "subro_waived": true,
             "limits": [
@@ -533,9 +541,9 @@
             "premium": null
           }
         ],
-        "description_of_operations": "Rsewood Senior Living, LLC is included as additioal insured with respect to ongoing and completed operations where required by written contract. Coverage is primary and non-contributory where required by contract and applies subject to the olicy povisio5 and endorsements, including CG 20 10 04 13, C 20 37 04 13, CA 20 48 10 20, and WC 00 03 13.",
-        "authorized_representative": "Megn Orti",
-        "certificate_number": "CNA-COI-774219-01",
+        "description_of_operations": "Harborview Senior Living, LLC is inclued as additional insured with respect to ongoing operations where required by written contract. Commercial General Liability additional insured coverage applies per CG 20 10 04 13 and CG 20 37 4 13 whee applible. Coverage is primary and non-contribut0ry where required by written contract. aiver f 5ubr0gation applies where required by written contract and is evidenced bby CG 24 04 05 09 and WC 00 03 13.",
+        "authorized_representative": "Marissa Cole",
+        "certificate_number": "CERT-8401251",
         "revision_number": null,
         "invoice_number": null,
         "invoice_date": null,
@@ -574,15 +582,15 @@
         "unrelated_body": null
       },
       {
-        "title": "ACORD 25 Certificate of Liability Insurance",
-        "certificate_holder": "NNorthwest Medical Group, P.C. 2100 SW Jefferson St, Suite 300, ortland, OR 97201",
+        "title": "ACORD 25 Certificate of Liability Insurance - Riverbend Medical Plaza",
+        "certificate_holder": "RRiverbend Medical Plaza Owners Association 4100 SE Hawtorne Blvd, Portland, OR 97214",
         "coverage_lines": [
           {
             "insurer_letter": "A",
             "coverage_type": "Commercial General Liability",
-            "policy_number": "CNA HCP 4827619",
-            "effective_date": "08/01/2026",
-            "expiration_date": "08/01/2027",
+            "policy_number": "CNA-HHC-274918",
+            "effective_date": "01/01/2026",
+            "expiration_date": "01/01/2027",
             "addl_insured": true,
             "subro_waived": true,
             "limits": [
@@ -592,14 +600,14 @@
               },
               {
                 "coverage": "Damage to Rented Premises",
-                "limit": "$100,000"
+                "limit": "$300,000"
               },
               {
-                "coverage": "Med Exp (Any One Person)",
+                "coverage": "Medical Expense (Any One Person)",
                 "limit": "$5,000"
               },
               {
-                "coverage": "Personal & Adv Injury",
+                "coverage": "Personal & Advertising Injury",
                 "limit": "$1,000,000"
               },
               {
@@ -607,18 +615,18 @@
                 "limit": "$2,000,000"
               },
               {
-                "coverage": "Products-Comp/Op Agg",
+                "coverage": "Products-Completed Operations Aggregate",
                 "limit": "$2,000,000"
               }
             ],
             "premium": null
           },
           {
-            "insurer_letter": "D",
+            "insurer_letter": "B",
             "coverage_type": "Automobile Liability",
-            "policy_number": "CNA HCP 4827619",
-            "effective_date": "08/01/2026",
-            "expiration_date": "08/01/2027",
+            "policy_number": "CNA-HHC-274918",
+            "effective_date": "01/01/2026",
+            "expiration_date": "01/01/2027",
             "addl_insured": true,
             "subro_waived": true,
             "limits": [
@@ -630,31 +638,27 @@
             "premium": null
           },
           {
-            "insurer_letter": "C",
+            "insurer_letter": "D",
             "coverage_type": "Umbrella Liability",
-            "policy_number": "CNA HCP 4827619",
-            "effective_date": "08/01/2026",
-            "expiration_date": "08/01/2027",
+            "policy_number": "CNA-HHC-274918",
+            "effective_date": "01/01/2026",
+            "expiration_date": "01/01/2027",
             "addl_insured": true,
             "subro_waived": true,
             "limits": [
               {
-                "coverage": "Each Occurrence",
-                "limit": "$2,000,000"
-              },
-              {
-                "coverage": "General Aggregate",
-                "limit": "$2,000,000"
+                "coverage": "Each Occurrence / Aggregate",
+                "limit": "$5,000,000"
               }
             ],
             "premium": null
           },
           {
-            "insurer_letter": "E",
+            "insurer_letter": "C",
             "coverage_type": "Workers Compensation",
-            "policy_number": "CNA HCP 4827619",
-            "effective_date": "08/01/2026",
-            "expiration_date": "08/01/2027",
+            "policy_number": "CNA-HHC-274918",
+            "effective_date": "01/01/2026",
+            "expiration_date": "01/01/2027",
             "addl_insured": false,
             "subro_waived": true,
             "limits": [
@@ -674,9 +678,9 @@
             "premium": null
           }
         ],
-        "description_of_operations": "Northwest Medical Group, P.C. is included as additionnal insured where required by written contract. Coverage is primary and non-cotributory where requuired by ccontracct and applies subjct to endorsements CG 20 10 04 13, CG 20 37 04 13, CA 20 48 10 20, andd WC 00 03 13.",
-        "authorized_representative": "Megan Ortiz",
-        "certificate_number": "CNA-COI-774219-02",
+        "description_of_operations": "Riverbend Medical Plaza Owners Associaation is named as additional insured with respect to liability arising out of he named insured's opeerationss. Primarry and non-contribuory wording applies where required by contract. Waiver of ssubrogation applies as respectss CG 20 10 04 13, CG 20 37 04 113, CG 24 04 0 09, annd C 00 03 13.",
+        "authorized_representative": "Marissa Cole",
+        "certificate_number": "CERT-8401252",
         "revision_number": null,
         "invoice_number": null,
         "invoice_date": null,
@@ -715,15 +719,15 @@
         "unrelated_body": null
       },
       {
-        "title": "ACORD 25 Certificate of Liability Insurance",
-        "certificate_holder": "Willamette Property Management, LLC 10000 Broadway, Suite 1200, Poortland, OR 972o5",
+        "title": "ACORD 25 Certificate of Liability Insurance - Rose City Property Group",
+        "certificate_holder": "Rose City Property Group, Inc. 1555 NW Glissan Street, Portland, OR 977209",
         "coverage_lines": [
           {
             "insurer_letter": "A",
             "coverage_type": "Commercial General Liability",
-            "policy_number": "CNA HCP 4827619",
-            "effective_date": "08/01/2026",
-            "expiration_date": "08/01/2027",
+            "policy_number": "CNA-HHC-274918",
+            "effective_date": "01/01/2026",
+            "expiration_date": "01/01/2027",
             "addl_insured": true,
             "subro_waived": true,
             "limits": [
@@ -733,14 +737,14 @@
               },
               {
                 "coverage": "Damage to Rented Premises",
-                "limit": "$100,000"
+                "limit": "$300,000"
               },
               {
-                "coverage": "Med Exp (Any One Person)",
+                "coverage": "Medical Expense (Any One Person)",
                 "limit": "$5,000"
               },
               {
-                "coverage": "Personal & Adv Injury",
+                "coverage": "Personal & Advertising Injury",
                 "limit": "$1,000,000"
               },
               {
@@ -748,18 +752,18 @@
                 "limit": "$2,000,000"
               },
               {
-                "coverage": "Products-Comp/Op Agg",
+                "coverage": "Products-Completed Operations Aggregate",
                 "limit": "$2,000,000"
               }
             ],
             "premium": null
           },
           {
-            "insurer_letter": "D",
+            "insurer_letter": "B",
             "coverage_type": "Automobile Liability",
-            "policy_number": "CNA HCP 4827619",
-            "effective_date": "08/01/2026",
-            "expiration_date": "08/01/2027",
+            "policy_number": "CNA-HHC-274918",
+            "effective_date": "01/01/2026",
+            "expiration_date": "01/01/2027",
             "addl_insured": true,
             "subro_waived": true,
             "limits": [
@@ -771,31 +775,27 @@
             "premium": null
           },
           {
-            "insurer_letter": "C",
+            "insurer_letter": "D",
             "coverage_type": "Umbrella Liability",
-            "policy_number": "CNA HCP 4827619",
-            "effective_date": "08/01/2026",
-            "expiration_date": "08/01/2027",
+            "policy_number": "CNA-HHC-274918",
+            "effective_date": "01/01/2026",
+            "expiration_date": "01/01/2027",
             "addl_insured": true,
             "subro_waived": true,
             "limits": [
               {
-                "coverage": "Each Occurrence",
-                "limit": "$2,000,000"
-              },
-              {
-                "coverage": "General Aggregate",
-                "limit": "$2,000,000"
+                "coverage": "Each Occurrence / Aggregate",
+                "limit": "$5,000,000"
               }
             ],
             "premium": null
           },
           {
-            "insurer_letter": "E",
+            "insurer_letter": "C",
             "coverage_type": "Workers Compensation",
-            "policy_number": "CNA HCP 4827619",
-            "effective_date": "08/01/2026",
-            "expiration_date": "08/01/2027",
+            "policy_number": "CNA-HHC-274918",
+            "effective_date": "01/01/2026",
+            "expiration_date": "01/01/2027",
             "addl_insured": false,
             "subro_waived": true,
             "limits": [
@@ -815,9 +815,9 @@
             "premium": null
           }
         ],
-        "description_of_operations": "Wilamette Property Mnagement, 1LC is iincluded as additional insured with respect to premises and ongoing operations where require by written contract. Coverage i primary and non-contributory where required by contract and applies subject to endorsements CG 20 10 04 13, CG 20 37 04 13, CA 20 48 10 20, and WC 00 03 13.",
-        "authorized_representative": "Megan Ortiiz",
-        "certificate_number": "CNA-COI-774219-03",
+        "description_of_operations": "Rose City roprty Group, Inc. is incuded as aditionnal insured where required by contract for ongoing and completed operations as applicable. Covrage is primary and non-contribtory to the extent required by written agreement. Waiver of subrogation applies where endorsed by CG 24 04 05 09 and WC 00 03 13.",
+        "authorized_representative": "Marissa Cole",
+        "certificate_number": "CERT-8401253",
         "revision_number": null,
         "invoice_number": null,
         "invoice_date": null,

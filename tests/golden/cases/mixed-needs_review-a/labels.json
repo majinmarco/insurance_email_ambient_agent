@@ -34,8 +34,8 @@
           "extraction": {
             "named_insured": "Riverside Manufacturing Co.",
             "policy_number": "SBA-4471902",
-            "change_description": "Add 2025 Freightliner Cascadia (VIN 3AKJHHDR9PSNL1234) as a scheduled Covered Auto; Combined Single Limit $1,000,000 each accident.",
-            "effective_date": "2026-08-15"
+            "change_description": "Adds blanket additional insured status and waiver of subrogation for scheduled contractual requirements.",
+            "effective_date": "2026-01-01"
           }
         }
       ],
@@ -63,10 +63,10 @@
           "extraction": {
             "named_insured": "Riverside Manufacturing Co.",
             "policy_number": "SBA-4471902",
-            "amount_due": 19194.38,
-            "billing_period": "2026-08-01 to 2027-08-01",
+            "amount_due": 19083.0,
+            "billing_period": "01/01/2026 - 01/01/2027",
             "policy_reference": "SBA-4471902",
-            "due_date": "2026-07-25"
+            "due_date": "2026-01-15"
           }
         },
         {

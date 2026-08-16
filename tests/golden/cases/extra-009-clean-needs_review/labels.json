@@ -28,8 +28,8 @@
             "named_insured": "Midwest AgriSupply Cooperative",
             "policy_number": "FARM-1120934",
             "certificate_holder": "Heartland Feed & Grain, LLC",
-            "effective_date": "2026-01-01",
-            "expiration_date": "2027-01-01",
+            "effective_date": "2026-02-01",
+            "expiration_date": "2027-02-01",
             "limits": {
               "Each Occurrence": "$1,000,000",
               "Damage to Rented Premises": "$300,000",
@@ -68,9 +68,9 @@
             "named_insured": "Midwest AgriSupply Cooperative",
             "policy_number": "FARM-1120934",
             "amount_due": 48750.0,
-            "billing_period": "01/01/2026 - 01/01/2027",
+            "billing_period": "02/01/2026 - 02/01/2027",
             "policy_reference": "FARM-1120934",
-            "due_date": "2026-01-15"
+            "due_date": "2026-02-15"
           }
         },
         {
@@ -106,9 +106,9 @@
             "named_insured": "Midwest AgriSupply Cooperative",
             "policy_number": "FARM-1120934",
             "amount_due": 48750.0,
-            "billing_period": "01/01/2026 - 01/01/2027",
+            "billing_period": "02/01/2026 - 02/01/2027",
             "policy_reference": "FARM-1120934",
-            "due_date": "2026-01-15"
+            "due_date": "2026-03-01"
           }
         },
         {
@@ -120,10 +120,10 @@
             "named_insured": "Midwest AgriSupply Cooperative",
             "policy_number": "FARM-1120934",
             "coverages": {
-              "Commercial General Liability": "$16,250.00",
-              "Commercial Automobile Liability": "$8,900.00",
-              "Umbrella Liability": "$9,400.00",
-              "Workers Compensation": "$13,000.00"
+              "Commercial General Liability": "$18,500.00",
+              "Automobile Liability": "$9,250.00",
+              "Umbrella Liability": "$11,000.00",
+              "Workers Compensation": "$8,000.00"
             },
             "total_premium": 48750.0
           }

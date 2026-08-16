@@ -18,7 +18,7 @@
       "multi_recipient": false,
       "body_only": false,
       "inconsistency": false,
-      "date_received": "2026-07-11T08:13:00+00:00"
+      "date_received": "2026-07-12T08:13:00+00:00"
     },
     "attachments": [
       {
@@ -83,77 +83,69 @@
           "limit": "$3,500,000"
         },
         {
-          "coverage": "Commercial Umbrella Liability Each Occurrence",
-          "limit": "$5,000,000"
+          "coverage": "Inland Marine Equipment Limit",
+          "limit": "$750,000"
         },
         {
-          "coverage": "Commercial Umbrella Liability Aggregate",
-          "limit": "$5,000,000"
-        },
-        {
-          "coverage": "Commercial Auto Liability Combined Single Limit",
-          "limit": "$1,000,000"
-        },
-        {
-          "coverage": "Workers Compensation Employers Liability Each Accident",
+          "coverage": "Commercial Automobile Liability Combined Single Limit",
           "limit": "$1,000,000"
         }
       ],
-      "total_premium": "$48,760",
+      "total_premium": "$68,450",
       "producer": {
         "agency": "Prairie States Insurance Cooperative",
-        "address": "2201 Grand Ave, Suite 400, Des Moines, IA 50312",
-        "contact_name": "Megan Laird",
-        "phone": "(515) 555-0148",
-        "fax": "(515) 555-0199",
+        "address": "420 Court Avenue, Suite 215, Des Moines, IA 50309",
+        "contact_name": "Elena Mercer",
+        "phone": "(515) 555-4400",
+        "fax": "(515) 555-4401",
         "email": "commercial@prairiestatesins.com"
       },
       "insurers": [
         {
           "letter": "A",
           "name": "Nationwide Agribusiness Insurance Company",
-          "naic": "23779"
+          "naic": "23787"
         },
         {
           "letter": "B",
           "name": "Nationwide Mutual Insurance Company",
-          "naic": "23787"
+          "naic": "23779"
         },
         {
           "letter": "C",
-          "name": "Allied Property and Casualty Insurance Company",
-          "naic": "42579"
+          "name": "Farmland Mutual Insurance Company",
+          "naic": "22292"
         },
         {
           "letter": "D",
-          "name": "Nationwide Assurance Company",
-          "naic": "30160"
+          "name": "Property and Casualty Insurance Company of Hartford",
+          "naic": "34690"
         },
         {
           "letter": "E",
-          "name": "Farmland Mutual Insurance Company",
-          "naic": "13978"
+          "name": "United States Fire Insurance Company",
+          "naic": "21113"
         },
         {
           "letter": "F",
-          "name": "Columbia Insurance Company",
-          "naic": "31127"
+          "name": "Travelers Property Casualty Company of America",
+          "naic": "25674"
         }
       ],
       "business_description": "Farm supply, grain handling, and agronomy services",
       "entity_type": "Cooperative",
-      "fein": "42-1863047",
-      "naic_carrier": "23779"
+      "fein": "42-7184936",
+      "naic_carrier": "23787"
     },
     "email": {
-      "subject": "FNOL Notice - Midwest AgriSupply Cooperative - Policy FARM-1120934",
-      "body": "Good morning,\n\nPlease accept this as a first notice of loss for Midwest AgriSupply Cooperative under policy FARM-1120934 with Nationwide Agribusiness.\n\nThe insured reported a new incident involving property damage at the Des Moines location. Please advise on claim assignment and any next steps, and confirm if you need photos, repair estimates, or a completed loss notice to support the file.\n\nIf there is a requested effective date for claim handling, please use the date of loss provided by the insured and open the file accordingly.\n\nThank you,\nPrairie States Insurance Cooperative",
-      "sender": "Megan Laird <commercial@prairiestatesins.com>",
-      "recipient": "claims@nationwide.com"
+      "subject": "FNOL Notice for Midwest AgriSupply Cooperative - Policy FARM-1120934",
+      "body": "Please accept this first notice of loss for Midwest AgriSupply Cooperative under policy FARM-1120934.\n\nLoss details are being reported promptly so a claim can be established and adjusted without delay. Please acknowledge receipt and advise the assigned claim number and any immediate documentation you need from the insured.\n\nIf you need to contact the insured directly, please reach out to Roger Halvorsen at (515) 555-0182 or rhalvorsen@midwestagri.coop.\n\nThank you for your assistance.",
+      "sender": "Elena Mercer <commercial@prairiestatesins.com>",
+      "recipient": "claims@nationwideagribusiness.com"
     },
     "documents": [
       {
-        "title": "Policy Change Endorsement",
+        "title": "ENDORSEMENT - Policy Change Endorsement",
         "certificate_holder": null,
         "coverage_lines": null,
         "description_of_operations": null,
@@ -178,12 +170,12 @@
         "premium_summary": null,
         "countersignature": null,
         "countersignature_date": null,
-        "form_number": "FARM 12 34 02 21",
-        "endorsement_title": "Equipmennt Floater Schedulee Change Endorsement",
-        "endorsement_number": "E-07",
+        "form_number": "FARM 27 01 11 20",
+        "endorsement_title": "Farm Propperty Schedule Channge Endorsement",
+        "endorsement_number": "E-004",
         "schedule_rows": [
           {
-            "label": "Insured",
+            "label": "Named Insured",
             "value": "Midwest AgriSupply Cooperative"
           },
           {
@@ -191,29 +183,29 @@
             "value": "FARM-1120934"
           },
           {
-            "label": "Effective Date",
-            "value": "01/01/2026"
+            "label": "Location",
+            "value": "1750 NE Broadway Ave, Des Moines, IA 50313"
           },
           {
-            "label": "Added Item",
-            "value": "2024 John Deere 8370R Tractor, VIN/Serial No. 1RW8370RCRP123456"
+            "label": "Item Added",
+            "value": "2025 John Deere X9 1100 Combine, Serial No. 1H0X9110LTM080421"
           },
           {
-            "label": "Added Item",
-            "value": "2023 Brent 1196 Grain Cart, VIN/Serial No. B1196-23-77841"
+            "label": "Scheduled Amount",
+            "value": "$685,000"
           }
         ],
         "provisions": [
-          "In consideration of the additional prmium shown below, the Equipment Floater Coverage Part is amended to include the scheduled property described above, subject to all terms, conditions, limitations, and exclusions of th p0licy.",
-          "The value of the schedued property shall be included in the applicable coverage limit nd subject to valuation at actual cash value unless otherwise endorsed.",
-          "Any deductible, coinsurance, or protective safeguard requiremen applicable to the covered property shall remain in full force and effect.",
-          "All other terms and conditions of this policy remain unchanged."
+          "It is agrreed that the Declarations is amended to iclude the property item described in the attached schedule, effective on the date shown in this endorsement.",
+          "The Coverage Form applies to the scheduled property subject to all terms, c0nitions, limitations, and excusions of the policy, except as specifically modified by this enorsement.",
+          "Any premium shown is fully earned from the effective date of this endorsement and forms part of the total policy premium.",
+          "All othe terms and conditions of this policy remain unchanged."
         ],
         "additional_premium": "$1,245",
-        "change_description": "Adds newly acquired farm equipment to the Equipment Floater schedule effective 01/01/20026.",
+        "change_description": "Adds one scheduled farm equipment item to the property schedule effective 01/15/2026.",
         "coverages": null,
         "total_premium": null,
-        "effective_date": "01/01/2026",
+        "effective_date": "01/15/2026",
         "expiration_date": null,
         "nr_kind": null,
         "nr_header_rows": null,
@@ -274,68 +266,72 @@
             "value": "Nationwide Agribusiness"
           },
           {
-            "label": "Policy Term",
-            "value": "01/01/2026 to 01/01/2027"
+            "label": "Valuation Date",
+            "value": "01/15/2026"
           },
           {
             "label": "Prepared By",
             "value": "Prairie States Insurance Cooperative"
-          },
-          {
-            "label": "Valuation Date",
-            "value": "01/15/2026"
           }
         ],
         "nr_columns": [
-          "Loss Date",
           "Claim No.",
-          "Coverage",
-          "Description",
+          "Loss Date",
+          "Reported Date",
+          "Line of Coverage",
+          "Cause of Loss",
+          "Location",
           "Status",
           "Paid",
-          "Reserve",
+          "Reserves",
           "Incurred"
         ],
         "nr_rows": [
           {
             "cells": [
-              "01/04/2026",
-              "NAI-CLM-260014",
-              "Property",
-              "Water damage from frozen line in shop area",
+              "CLM-240118-01",
+              "01/12/2026",
+              "01/13/2026",
+              "Commercial Property",
+              "Wind damage to commodity shed roof",
+              "1750 NE Broadway Ave, Des Moines, IA 50313",
               "Open",
-              "$4,200",
+              "$0",
               "$18,500",
-              "$22,700"
+              "$18,500"
             ]
           },
           {
             "cells": [
-              "01/09/2026",
-              "NAI-CLM-260028",
-              "General Liability",
-              "Third-party slip and fall at agronomy counter",
-              "Open",
-              "$0",
-              "$7,500",
-              "$7,500"
-            ]
-          },
-          {
-            "cells": [
-              "12/18/2025",
-              "NAI-CLM-250191",
-              "Commercial Auto",
-              "Minor backing loss in yard near grain bins",
+              "CLM-240118-02",
+              "11/03/2025",
+              "11/04/2025",
+              "Commercial General Liability",
+              "Premises slip and fall allegation",
+              "1750 NE Broadway Ave, Des Moines, IA 50313",
               "Closed",
-              "$1,150",
+              "$6,250",
               "$0",
-              "$1,150"
+              "$6,250"
+            ]
+          },
+          {
+            "cells": [
+              "CLM-240118-03",
+              "07/22/2025",
+              "07/23/2025",
+              "Commercial Auto",
+              "Backing loss involving service truck",
+              "Off-site grain delivery route",
+              "Closed",
+              "$12,840",
+              "$0",
+              "$12,840"
             ]
           }
         ],
-        "unrelated_subtitle": "Internal loss summary for underwriting and account review",
-        "unrelated_body": "This report reflects reported claims activity associated with Midwest AgriSupply Cooperative for the current policy term and prior term. It is provided for account review only and does not amend coverage, confirm insurance, or evidence placement."
+        "unrelated_subtitle": "Claims experience summary prepared for underwriting review only",
+        "unrelated_body": "This report summarizes reported losses associated with the insured account as of the valuation date shown above. Figures are provided for informational purposes and may be subject to adjustment upon final claim settlement."
       }
     ]
   }

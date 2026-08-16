@@ -26,8 +26,8 @@
           "page_end": 0,
           "extraction": {
             "named_insured": "Riverside Manufacturing Co.",
-            "policy_number": null,
-            "change_description": "Adds the Cleveland facility and scheduled CNC press brake equipment to the policy.",
+            "policy_number": "HCP-4729816-00",
+            "change_description": "Adds two specified pieces of equipment to the property schedule effective 08/01/2026.",
             "effective_date": "2026-08-01"
           }
         }
@@ -53,14 +53,14 @@
           "page_end": 0,
           "extraction": {
             "named_insured": "Riverside Manufacturing Co.",
-            "policy_number": null,
+            "policy_number": "HCP-4729816-00",
             "coverages": {
-              "Commercial General Liability": "$6,450",
-              "Business Auto": "$4,380",
-              "Workers Compensation and Employers Liability": "$5,890",
-              "Umbrella Liability": "$1,540"
+              "Commercial General Liability": "$4,850",
+              "Commercial Property": "$6,125",
+              "Commercial Automobile Liability": "$3,275",
+              "Commercial Umbrella Liability": "$2,950"
             },
-            "total_premium": 18960.0
+            "total_premium": 18450.0
           }
         },
         {
@@ -70,13 +70,14 @@
           "page_end": 1,
           "extraction": {
             "named_insured": "Riverside Manufacturing Co.",
-            "policy_number": null,
+            "policy_number": "HCP-4729816-00",
             "coverages": {
-              "Building and Personal Property": "$5,120",
-              "Equipment Breakdown": "$1,080",
-              "Inland Marine - Contractor's Equipment": "$760"
+              "Commercial General Liability": "$4,850",
+              "Commercial Property": "$6,125",
+              "Commercial Automobile Liability": "$3,275",
+              "Commercial Umbrella Liability": "$2,950"
             },
-            "total_premium": 7260.0
+            "total_premium": 18450.0
           }
         }
       ],
@@ -104,13 +105,14 @@
           "page_end": 0,
           "extraction": {
             "named_insured": "Riverside Manufacturing Co.",
-            "policy_number": null,
+            "policy_number": "HCP-4729816-00",
             "coverages": {
-              "Installation Floater": "$1,260",
-              "Tools and Equipment": "$540",
-              "Motor Truck Cargo": "$440"
+              "Commercial General Liability": "$4,850",
+              "Commercial Property": "$6,125",
+              "Excess Liability": "$4,125",
+              "Workers Compensation and Employers Liability": "$3,350"
             },
-            "total_premium": 2360.0
+            "total_premium": 18630.0
           }
         }
       ],

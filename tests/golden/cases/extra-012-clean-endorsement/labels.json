@@ -7,7 +7,7 @@
     "extraction": {
       "named_insured": "Summit Ridge Construction Inc.",
       "policy_number": "CPP-6612078",
-      "requested_effective_date": "2026-01-15",
+      "requested_effective_date": "2026-02-01",
       "requested_changes": "Endorse the in-force policy (mid-term change).",
       "contact_name": "Derek Olsson",
       "contact_phone": "(303) 555-0188"
@@ -27,8 +27,8 @@
           "extraction": {
             "named_insured": "Summit Ridge Construction Inc.",
             "policy_number": "CPP-6612078",
-            "change_description": "Adds one scheduled company vehicle to the active policy effective 01/15/2026.",
-            "effective_date": "2026-01-15"
+            "change_description": "Adds one specifically described service vehicle to the policy effective 02/01/2026.",
+            "effective_date": "2026-02-01"
           }
         }
       ],

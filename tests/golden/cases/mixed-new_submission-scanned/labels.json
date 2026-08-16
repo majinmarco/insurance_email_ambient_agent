@@ -7,7 +7,7 @@
     "extraction": {
       "named_insured": "Summit Ridge Construction Inc.",
       "policy_number": null,
-      "requested_effective_date": "2026-08-01",
+      "requested_effective_date": "2024-07-18",
       "requested_changes": "Quote/bind a new commercial package policy.",
       "contact_name": "Derek Olsson",
       "contact_phone": "(303) 555-0188"
@@ -26,10 +26,10 @@
           "page_end": 3,
           "extraction": {
             "named_insured": "Summit Ridge Construction Inc.",
-            "policy_number": "TRV-CGC-4829167-01",
-            "certificate_holder": "Project Owners Alliance, LLC\n2001 Market St, Suite 1800\nPhiladelphia, PA 19103",
-            "effective_date": "2026-08-01",
-            "expiration_date": "2027-08-01",
+            "policy_number": "BRN-240718-01",
+            "certificate_holder": "Mile High Development Group, LLC 1201 17th St, Suite 1800, Denver, CO 80202",
+            "effective_date": "2024-07-18",
+            "expiration_date": "2025-07-18",
             "limits": {
               "Each Occurrence": "$1,000,000",
               "Damage to Rented Premises": "$300,000",

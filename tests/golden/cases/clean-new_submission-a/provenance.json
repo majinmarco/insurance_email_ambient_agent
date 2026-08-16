@@ -13,7 +13,7 @@
   "raw_scenario": {
     "shared": {
       "named_insured": "Riverside Manufacturing Co.",
-      "policy_number": null,
+      "policy_number": "HCP-4729816-00",
       "insured_address": "2200 Foundry Road, Cleveland, OH 44115",
       "contact_name": "Karen Delgado",
       "contact_email": "kdelgado@riversidemfg.com",
@@ -39,52 +39,40 @@
           "limit": "$1,000,000"
         },
         {
-          "coverage": "Damage to Premises Rented to You",
+          "coverage": "Fire Damage Legal Liability",
           "limit": "$300,000"
         },
         {
           "coverage": "Medical Expense Limit",
-          "limit": "$5,000"
+          "limit": "$10,000"
         },
         {
           "coverage": "Combined Single Limit",
           "limit": "$1,000,000"
         },
         {
-          "coverage": "Business Auto Each Accident",
-          "limit": "$1,000,000"
+          "coverage": "Business Personal Property",
+          "limit": "$1,250,000"
         },
         {
-          "coverage": "Each Employee",
-          "limit": "$1,000,000"
-        },
-        {
-          "coverage": "Disease - Policy Limit",
-          "limit": "$1,000,000"
-        },
-        {
-          "coverage": "Disease - Each Employee",
-          "limit": "$1,000,000"
-        },
-        {
-          "coverage": "Each Occurrence",
+          "coverage": "Commercial Umbrella Limit",
           "limit": "$5,000,000"
         }
       ],
-      "total_premium": "$18,960",
+      "total_premium": "$18,450",
       "producer": {
         "agency": "Great Lakes Insurance Advisors",
-        "address": "1420 W. 25th Street, Suite 410, Cleveland, OH 44113",
-        "contact_name": "Megan Hart",
-        "phone": "(216) 555-0198",
-        "fax": "(216) 555-0199",
+        "address": "1300 W. 3rd Street, Suite 420, Cleveland, OH 44113",
+        "contact_name": "Megan Holt",
+        "phone": "(216) 555-0148",
+        "fax": "(216) 555-0149",
         "email": "submissions@greatlakesins.com"
       },
       "insurers": [
         {
           "letter": "A",
           "name": "The Hartford",
-          "naic": "19682"
+          "naic": "11631"
         },
         {
           "letter": "B",
@@ -93,39 +81,39 @@
         },
         {
           "letter": "C",
-          "name": "Hartford Casualty Insurance Company",
-          "naic": "29424"
+          "name": "Trumbull Insurance Company",
+          "naic": "27120"
         },
         {
           "letter": "D",
-          "name": "Hartford Accident & Indemnity Company",
-          "naic": "22357"
+          "name": "Twin City Fire Insurance Company",
+          "naic": "29459"
         },
         {
           "letter": "E",
-          "name": "Hartford Underwriters Insurance Company",
-          "naic": "30104"
+          "name": "Navigators Insurance Company",
+          "naic": "42307"
         },
         {
           "letter": "F",
-          "name": "Hartford Steam Boiler Inspection and Insurance Company",
-          "naic": "26247"
+          "name": "Hartford Accident and Indemnity Company",
+          "naic": "22357"
         }
       ],
       "business_description": "Sheet-metal fabrication and industrial machining",
       "entity_type": "Corporation",
-      "fein": "31-2847716",
-      "naic_carrier": "19682"
+      "fein": "31-4827605",
+      "naic_carrier": "11631"
     },
     "email": {
-      "subject": "Riverside Manufacturing Co. - New Submission Request for Quote/Bind",
-      "body": "Good morning,\n\nPlease find attached our new submission for Riverside Manufacturing Co. at 2200 Foundry Road, Cleveland, OH 44115, requesting quotation and, if acceptable, bind for a brand-new commercial package with The Hartford. The requested effective date is 08/01/2026.\n\nNamed insured: Riverside Manufacturing Co.\nContact: Karen Delgado | (216) 555-0173 | kdelgado@riversidemfg.com\nProducer: Great Lakes Insurance Advisors\n\nWe appreciate your review and will forward any supplemental underwriting items promptly.\n\nBest regards,\nGreat Lakes Insurance Advisors",
-      "sender": "Megan Hart <submissions@greatlakesins.com>",
-      "recipient": "Underwriting Desk <newbusiness@thehartford.com>"
+      "subject": "New submission for Riverside Manufacturing Co. - quotation and bind request",
+      "body": "Good morning,\n\nPlease find enclosed our new submission for Riverside Manufacturing Co. for a policy effective 08/01/2026. This is a brand-new account with no existing policy number. Kindly review the application, proposed declarations, and endorsement package and advise on quote and bind availability.\n\nNamed insured: Riverside Manufacturing Co.\nLocation: 2200 Foundry Road, Cleveland, OH 44115\nContact: Karen Delgado | kdelgado@riversidemfg.com | (216) 555-0173\nProducer: Great Lakes Insurance Advisors\nCarrier: The Hartford\n\nRequested effective date: 08/01/2026\n\nThank you, and please let us know if any additional underwriting information is needed.",
+      "sender": "Megan Holt <submissions@greatlakesins.com>",
+      "recipient": "underwriting@thehartford.com"
     },
     "documents": [
       {
-        "title": "Policy Change Endorsement",
+        "title": "Policy Change Endorsement - Scheduled Equipment",
         "certificate_holder": null,
         "coverage_lines": null,
         "description_of_operations": null,
@@ -150,39 +138,27 @@
         "premium_summary": null,
         "countersignature": null,
         "countersignature_date": null,
-        "form_number": "CG 01 12 11 15",
-        "endorsement_title": "Amendment of Schedule of Operations and Equipment",
-        "endorsement_number": "HO-001",
+        "form_number": "HW 04 82 06 19",
+        "endorsement_title": "Scheduled Equipment Endorsement",
+        "endorsement_number": "Endorsement No. 1",
         "schedule_rows": [
           {
-            "label": "Named Insured",
-            "value": "Riverside Manufacturing Co."
+            "label": "Item 1",
+            "value": "2019 Haas VF-4SS Vertical Machining Center; Serial No. HV4-19-77421; Location: 2200 Foundry Road, Cleveland, OH 44115; Value: $285,000"
           },
           {
-            "label": "Effective Date",
-            "value": "08/01/2026"
-          },
-          {
-            "label": "Added Location",
-            "value": "2200 Foundry Road, Cleveland, OH 44115"
-          },
-          {
-            "label": "Added Equipment",
-            "value": "CNC press brake, 250-ton; Serial No. RB-250-0618"
-          },
-          {
-            "label": "Additional Premium",
-            "value": "$420.00"
+            "label": "Item 2",
+            "value": "2021 Lincoln Electric Power Wave S500; Serial No. LE-S500-21874; Location: 2200 Foundry Road, Cleveland, OH 44115; Value: $48,500"
           }
         ],
         "provisions": [
-          "This endorsement amends the policy to include the additional location shown in the schedule above, subject to all terms, conditions, exclusions, and limitations of the policy.",
-          "Coverage for the scheduled equipment is provided only while such equipment is owned by the Named Insured and used in the ordinary course of operations at the insured premises or elsewhere as permitted by the policy.",
-          "The premium for this endorsement is based on the information provided by or on behalf of the Named Insured and is subject to audit, inspection, and any adjustment required by the policy.",
+          "SECTION I - COVERED PROPERTY is amended to include the scheduled equipment described in the Schedule above, subject to the terms, conditions, exclusions, and valuation provisions of the policy.",
+          "The Limits of Insurance, deductible, and premium applicable to the scheduled equipment shall be as shown in the Schedule or declarations and apply only at the scheduled location.",
+          "This endorsement does not broaden or restrict coverage except as specifically stated herein; all other property coverage terms remain subject to the policy form.",
           "All other terms and conditions of this policy remain unchanged."
         ],
-        "additional_premium": "$420.00",
-        "change_description": "Adds the Cleveland facility and scheduled CNC press brake equipment to the policy.",
+        "additional_premium": "$425",
+        "change_description": "Adds two specified pieces of equipment to the property schedule effective 08/01/2026.",
         "coverages": null,
         "total_premium": null,
         "effective_date": "08/01/2026",
@@ -195,7 +171,7 @@
         "unrelated_body": null
       },
       {
-        "title": "Commercial Package Policy Declarations",
+        "title": "Commercial Package Policy Declarations - Riverside Manufacturing Co.",
         "certificate_holder": null,
         "coverage_lines": null,
         "description_of_operations": null,
@@ -219,11 +195,11 @@
           {
             "insurer_letter": "A",
             "coverage_type": "Commercial General Liability",
-            "policy_number": "45 CP 880512",
+            "policy_number": "HCP-4729816-00",
             "effective_date": "08/01/2026",
             "expiration_date": "08/01/2027",
-            "addl_insured": null,
-            "subro_waived": null,
+            "addl_insured": false,
+            "subro_waived": false,
             "limits": [
               {
                 "coverage": "Each Occurrence",
@@ -242,85 +218,105 @@
                 "limit": "$1,000,000"
               },
               {
-                "coverage": "Damage to Premises Rented to You",
+                "coverage": "Fire Damage Legal Liability",
                 "limit": "$300,000"
               },
               {
                 "coverage": "Medical Expense Limit",
-                "limit": "$5,000"
+                "limit": "$10,000"
               }
             ],
-            "premium": "$6,450"
+            "premium": "$4,850"
           },
           {
             "insurer_letter": "B",
-            "coverage_type": "Business Auto",
-            "policy_number": "45 CA 880512",
+            "coverage_type": "Commercial Property",
+            "policy_number": "HCP-4729816-00",
             "effective_date": "08/01/2026",
             "expiration_date": "08/01/2027",
-            "addl_insured": null,
-            "subro_waived": null,
+            "addl_insured": false,
+            "subro_waived": false,
+            "limits": [
+              {
+                "coverage": "Building",
+                "limit": "$2,500,000"
+              },
+              {
+                "coverage": "Business Personal Property",
+                "limit": "$1,250,000"
+              },
+              {
+                "coverage": "Business Income Including Extra Expense",
+                "limit": "$750,000"
+              }
+            ],
+            "premium": "$6,125"
+          },
+          {
+            "insurer_letter": "C",
+            "coverage_type": "Commercial Automobile Liability",
+            "policy_number": "HCP-4729816-00",
+            "effective_date": "08/01/2026",
+            "expiration_date": "08/01/2027",
+            "addl_insured": false,
+            "subro_waived": false,
             "limits": [
               {
                 "coverage": "Combined Single Limit",
                 "limit": "$1,000,000"
-              }
-            ],
-            "premium": "$4,380"
-          },
-          {
-            "insurer_letter": "C",
-            "coverage_type": "Workers Compensation and Employers Liability",
-            "policy_number": "45 WC 880512",
-            "effective_date": "08/01/2026",
-            "expiration_date": "08/01/2027",
-            "addl_insured": null,
-            "subro_waived": null,
-            "limits": [
-              {
-                "coverage": "Each Accident",
-                "limit": "$1,000,000"
               },
               {
-                "coverage": "Disease - Policy Limit",
-                "limit": "$1,000,000"
+                "coverage": "Medical Payments",
+                "limit": "$5,000"
               },
               {
-                "coverage": "Disease - Each Employee",
+                "coverage": "Uninsured Motorists",
                 "limit": "$1,000,000"
               }
             ],
-            "premium": "$5,890"
+            "premium": "$3,275"
           },
           {
             "insurer_letter": "D",
-            "coverage_type": "Umbrella Liability",
-            "policy_number": "45 UM 880512",
+            "coverage_type": "Commercial Umbrella Liability",
+            "policy_number": "HCP-4729816-00",
             "effective_date": "08/01/2026",
             "expiration_date": "08/01/2027",
-            "addl_insured": null,
-            "subro_waived": null,
+            "addl_insured": false,
+            "subro_waived": false,
             "limits": [
               {
                 "coverage": "Each Occurrence",
                 "limit": "$5,000,000"
+              },
+              {
+                "coverage": "Aggregate",
+                "limit": "$5,000,000"
               }
             ],
-            "premium": "$1,540"
+            "premium": "$2,950"
           }
         ],
         "forms_schedule": [
           {
-            "form_number": "CG 00 01 04 13",
+            "form_number": "CGL 00 01 04 13",
             "title": "Commercial General Liability Coverage Form"
+          },
+          {
+            "form_number": "CP 00 10 10 12",
+            "title": "Building and Personal Property Coverage Form"
+          },
+          {
+            "form_number": "CP 00 30 10 12",
+            "title": "Business Income (and Extra Expense) Coverage Form"
           },
           {
             "form_number": "CA 00 01 11 20",
             "title": "Business Auto Coverage Form"
           },
           {
-            "form_number": "WC 00 00 00 A",
-            "title": "Workers Compensation and Employers Liability Insurance Policy"
+            "form_number": "CA 20 48 02 99",
+            "title": "Designated Automobile Coverage Endorsement"
           },
           {
             "form_number": "CU 00 01 04 13",
@@ -331,34 +327,30 @@
             "title": "Common Policy Conditions"
           },
           {
-            "form_number": "CG 20 10 04 13",
-            "title": "Additional Insured - Owners, Lessees or Contractors - Scheduled Person or Organization"
-          },
-          {
-            "form_number": "CG 20 37 04 13",
-            "title": "Additional Insured - Owners, Lessees or Contractors - Completed Operations"
+            "form_number": "IL 00 03 10 00",
+            "title": "Schedule of Forms and Endorsements"
           }
         ],
         "premium_summary": [
           {
             "description": "Policy Premium",
-            "amount": "$18,260"
+            "amount": "$17,200"
           },
           {
             "description": "Terrorism (TRIA)",
             "amount": "$180"
           },
           {
-            "description": "Ohio Surplus/State Tax",
-            "amount": "$320"
+            "description": "Ohio Surplus Lines Tax",
+            "amount": "$640"
           },
           {
             "description": "Policy Fee",
-            "amount": "$200"
+            "amount": "$430"
           }
         ],
-        "countersignature": "The Hartford",
-        "countersignature_date": "07/15/2026",
+        "countersignature": "Digitally countersigned by The Hartford Underwriting Services",
+        "countersignature_date": "07/18/2026",
         "form_number": null,
         "endorsement_title": null,
         "endorsement_number": null,
@@ -367,7 +359,7 @@
         "additional_premium": null,
         "change_description": null,
         "coverages": null,
-        "total_premium": "$18,960",
+        "total_premium": "$18,450",
         "effective_date": "08/01/2026",
         "expiration_date": "08/01/2027",
         "nr_kind": null,
@@ -378,7 +370,7 @@
         "unrelated_body": null
       },
       {
-        "title": "Commercial Property Declarations",
+        "title": "Commercial Package Policy Declarations - Riverside Manufacturing Co.",
         "certificate_holder": null,
         "coverage_lines": null,
         "description_of_operations": null,
@@ -401,107 +393,163 @@
         "coverage_parts": [
           {
             "insurer_letter": "A",
-            "coverage_type": "Building and Personal Property",
-            "policy_number": "45 CP 880512",
+            "coverage_type": "Commercial General Liability",
+            "policy_number": "HCP-4729816-00",
             "effective_date": "08/01/2026",
             "expiration_date": "08/01/2027",
-            "addl_insured": null,
-            "subro_waived": null,
+            "addl_insured": false,
+            "subro_waived": false,
             "limits": [
               {
-                "coverage": "Building Limit",
-                "limit": "$3,500,000"
+                "coverage": "Each Occurrence",
+                "limit": "$1,000,000"
               },
               {
-                "coverage": "Business Personal Property Limit",
-                "limit": "$1,750,000"
+                "coverage": "General Aggregate",
+                "limit": "$2,000,000"
               },
               {
-                "coverage": "Business Income",
+                "coverage": "Products-Completed Operations Aggregate",
+                "limit": "$2,000,000"
+              },
+              {
+                "coverage": "Personal and Advertising Injury",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "Fire Damage Legal Liability",
+                "limit": "$300,000"
+              },
+              {
+                "coverage": "Medical Expense Limit",
+                "limit": "$10,000"
+              }
+            ],
+            "premium": "$4,850"
+          },
+          {
+            "insurer_letter": "B",
+            "coverage_type": "Commercial Property",
+            "policy_number": "HCP-4729816-00",
+            "effective_date": "08/01/2026",
+            "expiration_date": "08/01/2027",
+            "addl_insured": false,
+            "subro_waived": false,
+            "limits": [
+              {
+                "coverage": "Building",
+                "limit": "$2,500,000"
+              },
+              {
+                "coverage": "Business Personal Property",
+                "limit": "$1,250,000"
+              },
+              {
+                "coverage": "Business Income Including Extra Expense",
+                "limit": "$750,000"
+              }
+            ],
+            "premium": "$6,125"
+          },
+          {
+            "insurer_letter": "C",
+            "coverage_type": "Commercial Automobile Liability",
+            "policy_number": "HCP-4729816-00",
+            "effective_date": "08/01/2026",
+            "expiration_date": "08/01/2027",
+            "addl_insured": false,
+            "subro_waived": false,
+            "limits": [
+              {
+                "coverage": "Combined Single Limit",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "Medical Payments",
+                "limit": "$5,000"
+              },
+              {
+                "coverage": "Uninsured Motorists",
                 "limit": "$1,000,000"
               }
             ],
-            "premium": "$5,120"
+            "premium": "$3,275"
           },
           {
-            "insurer_letter": "A",
-            "coverage_type": "Equipment Breakdown",
-            "policy_number": "45 EB 880512",
+            "insurer_letter": "D",
+            "coverage_type": "Commercial Umbrella Liability",
+            "policy_number": "HCP-4729816-00",
             "effective_date": "08/01/2026",
             "expiration_date": "08/01/2027",
-            "addl_insured": null,
-            "subro_waived": null,
+            "addl_insured": false,
+            "subro_waived": false,
             "limits": [
               {
-                "coverage": "Equipment Breakdown Limit",
-                "limit": "$2,000,000"
-              }
-            ],
-            "premium": "$1,080"
-          },
-          {
-            "insurer_letter": "A",
-            "coverage_type": "Inland Marine - Contractor's Equipment",
-            "policy_number": "45 IM 880512",
-            "effective_date": "08/01/2026",
-            "expiration_date": "08/01/2027",
-            "addl_insured": null,
-            "subro_waived": null,
-            "limits": [
+                "coverage": "Each Occurrence",
+                "limit": "$5,000,000"
+              },
               {
-                "coverage": "Scheduled Equipment Limit",
-                "limit": "$500,000"
+                "coverage": "Aggregate",
+                "limit": "$5,000,000"
               }
             ],
-            "premium": "$760"
+            "premium": "$2,950"
           }
         ],
         "forms_schedule": [
+          {
+            "form_number": "CGL 00 01 04 13",
+            "title": "Commercial General Liability Coverage Form"
+          },
           {
             "form_number": "CP 00 10 10 12",
             "title": "Building and Personal Property Coverage Form"
           },
           {
             "form_number": "CP 00 30 10 12",
-            "title": "Business Income (And Extra Expense) Coverage Form"
+            "title": "Business Income (and Extra Expense) Coverage Form"
           },
           {
-            "form_number": "CP 10 30 06 07",
-            "title": "Causes of Loss - Special Form"
+            "form_number": "CA 00 01 11 20",
+            "title": "Business Auto Coverage Form"
           },
           {
-            "form_number": "CP 10 20 06 07",
-            "title": "Building and Personal Property Coverage Extension"
+            "form_number": "CA 20 48 02 99",
+            "title": "Designated Automobile Coverage Endorsement"
           },
           {
-            "form_number": "CP 12 18 10 12",
-            "title": "Business Income Report/Worksheet"
+            "form_number": "CU 00 01 04 13",
+            "title": "Commercial Umbrella Coverage Form"
           },
           {
-            "form_number": "CP 00 90 07 88",
-            "title": "Commercial Property Conditions"
+            "form_number": "IL 00 17 11 98",
+            "title": "Common Policy Conditions"
+          },
+          {
+            "form_number": "IL 00 03 10 00",
+            "title": "Schedule of Forms and Endorsements"
           }
         ],
         "premium_summary": [
           {
-            "description": "Property Premium",
-            "amount": "$6,960"
+            "description": "Policy Premium",
+            "amount": "$17,200"
           },
           {
             "description": "Terrorism (TRIA)",
-            "amount": "$105"
+            "amount": "$180"
           },
           {
-            "description": "Taxes",
-            "amount": "$120"
+            "description": "Ohio Surplus Lines Tax",
+            "amount": "$640"
           },
           {
-            "description": "Fees",
-            "amount": "$75"
+            "description": "Policy Fee",
+            "amount": "$430"
           }
         ],
-        "countersignature": "The Hartford",
-        "countersignature_date": "07/15/2026",
+        "countersignature": "Digitally countersigned by The Hartford Underwriting Services",
+        "countersignature_date": "07/18/2026",
         "form_number": null,
         "endorsement_title": null,
         "endorsement_number": null,
@@ -510,7 +558,7 @@
         "additional_premium": null,
         "change_description": null,
         "coverages": null,
-        "total_premium": "$7,260",
+        "total_premium": "$18,450",
         "effective_date": "08/01/2026",
         "expiration_date": "08/01/2027",
         "nr_kind": null,
@@ -521,7 +569,7 @@
         "unrelated_body": null
       },
       {
-        "title": "Commercial Inland Marine Declarations",
+        "title": "Commercial Package Policy Declarations - Riverside Manufacturing Co.",
         "certificate_holder": null,
         "coverage_lines": null,
         "description_of_operations": null,
@@ -543,104 +591,164 @@
         "remit_to": null,
         "coverage_parts": [
           {
-            "insurer_letter": "E",
-            "coverage_type": "Installation Floater",
-            "policy_number": "45 IM 880512",
+            "insurer_letter": "A",
+            "coverage_type": "Commercial General Liability",
+            "policy_number": "HCP-4729816-00",
             "effective_date": "08/01/2026",
             "expiration_date": "08/01/2027",
-            "addl_insured": null,
-            "subro_waived": null,
+            "addl_insured": false,
+            "subro_waived": false,
             "limits": [
               {
-                "coverage": "Limit of Insurance",
+                "coverage": "Each Occurrence",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "General Aggregate",
+                "limit": "$2,000,000"
+              },
+              {
+                "coverage": "Products-Completed Operations Aggregate",
+                "limit": "$2,000,000"
+              },
+              {
+                "coverage": "Personal and Advertising Injury",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "Fire Damage Legal Liability",
+                "limit": "$300,000"
+              },
+              {
+                "coverage": "Medical Expense Limit",
+                "limit": "$10,000"
+              }
+            ],
+            "premium": "$4,850"
+          },
+          {
+            "insurer_letter": "B",
+            "coverage_type": "Commercial Property",
+            "policy_number": "HCP-4729816-00",
+            "effective_date": "08/01/2026",
+            "expiration_date": "08/01/2027",
+            "addl_insured": false,
+            "subro_waived": false,
+            "limits": [
+              {
+                "coverage": "Building",
+                "limit": "$2,500,000"
+              },
+              {
+                "coverage": "Business Personal Property",
+                "limit": "$1,250,000"
+              },
+              {
+                "coverage": "Business Income Including Extra Expense",
                 "limit": "$750,000"
               }
             ],
-            "premium": "$1,260"
+            "premium": "$6,125"
+          },
+          {
+            "insurer_letter": "E",
+            "coverage_type": "Excess Liability",
+            "policy_number": "HCP-4729816-00",
+            "effective_date": "08/01/2026",
+            "expiration_date": "08/01/2027",
+            "addl_insured": false,
+            "subro_waived": false,
+            "limits": [
+              {
+                "coverage": "Each Occurrence",
+                "limit": "$10,000,000"
+              },
+              {
+                "coverage": "Aggregate",
+                "limit": "$10,000,000"
+              }
+            ],
+            "premium": "$4,125"
           },
           {
             "insurer_letter": "F",
-            "coverage_type": "Tools and Equipment",
-            "policy_number": "45 IM 880513",
+            "coverage_type": "Workers Compensation and Employers Liability",
+            "policy_number": "HCP-4729816-00",
             "effective_date": "08/01/2026",
             "expiration_date": "08/01/2027",
-            "addl_insured": null,
-            "subro_waived": null,
+            "addl_insured": false,
+            "subro_waived": false,
             "limits": [
               {
-                "coverage": "Limit of Insurance",
-                "limit": "$250,000"
-              }
-            ],
-            "premium": "$540"
-          },
-          {
-            "insurer_letter": "A",
-            "coverage_type": "Motor Truck Cargo",
-            "policy_number": "45 IM 880514",
-            "effective_date": "08/01/2026",
-            "expiration_date": "08/01/2027",
-            "addl_insured": null,
-            "subro_waived": null,
-            "limits": [
-              {
-                "coverage": "Limit per Conveyance",
-                "limit": "$100,000"
+                "coverage": "Part One - Workers Compensation",
+                "limit": "Statutory"
               },
               {
-                "coverage": "Limit Any One Loss",
-                "limit": "$250,000"
+                "coverage": "Part Two - Employers Liability Each Accident",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "Part Two - Employers Liability Disease - Each Employee",
+                "limit": "$1,000,000"
+              },
+              {
+                "coverage": "Part Two - Employers Liability Disease - Policy Limit",
+                "limit": "$1,000,000"
               }
             ],
-            "premium": "$440"
+            "premium": "$3,350"
           }
         ],
         "forms_schedule": [
           {
-            "form_number": "CA 00 01 11 20",
-            "title": "Business Auto Coverage Form"
+            "form_number": "WC 00 00 00 B",
+            "title": "Workers Compensation and Employers Liability Insurance Policy"
           },
           {
-            "form_number": "CM 00 01 07 13",
-            "title": "Motor Carrier Coverage Form"
+            "form_number": "CGL 00 01 04 13",
+            "title": "Commercial General Liability Coverage Form"
           },
           {
-            "form_number": "IM 00 03 09 17",
-            "title": "Installation Floater Coverage Form"
+            "form_number": "CP 00 10 10 12",
+            "title": "Building and Personal Property Coverage Form"
           },
           {
-            "form_number": "IM 00 10 06 07",
-            "title": "Tools and Equipment Floater Coverage Form"
-          },
-          {
-            "form_number": "IM 00 33 07 13",
-            "title": "Motor Truck Cargo Coverage Form"
+            "form_number": "CU 00 01 04 13",
+            "title": "Commercial Umbrella Coverage Form"
           },
           {
             "form_number": "IL 00 17 11 98",
             "title": "Common Policy Conditions"
+          },
+          {
+            "form_number": "IL 00 03 10 00",
+            "title": "Schedule of Forms and Endorsements"
+          },
+          {
+            "form_number": "TRIA 2020",
+            "title": "Terrorism Risk Insurance Program Reauthorization Act Disclosure"
           }
         ],
         "premium_summary": [
           {
-            "description": "Inland Marine Premium",
-            "amount": "$2,240"
+            "description": "Policy Premium",
+            "amount": "$18,450"
           },
           {
             "description": "Terrorism (TRIA)",
-            "amount": "$40"
+            "amount": "$180"
           },
           {
-            "description": "State Filing Fee",
-            "amount": "$20"
+            "description": "State Premium Tax",
+            "amount": "$0"
           },
           {
-            "description": "Broker Fee",
-            "amount": "$60"
+            "description": "Policy Fee",
+            "amount": "$0"
           }
         ],
-        "countersignature": "The Hartford",
-        "countersignature_date": "07/15/2026",
+        "countersignature": "Digitally countersigned by The Hartford Underwriting Services",
+        "countersignature_date": "07/18/2026",
         "form_number": null,
         "endorsement_title": null,
         "endorsement_number": null,
@@ -649,7 +757,7 @@
         "additional_premium": null,
         "change_description": null,
         "coverages": null,
-        "total_premium": "$2,360",
+        "total_premium": "$18,630",
         "effective_date": "08/01/2026",
         "expiration_date": "08/01/2027",
         "nr_kind": null,

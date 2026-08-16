@@ -1,11 +1,11 @@
 {
   "email": {
     "id": "clean-claim_fnol-emailonly",
-    "subject": "FNOL Notice - Riverside Manufacturing Co. / Policy SBA-4471902",
-    "date_received": "2026-07-15T01:49:20.384579+00:00",
-    "body": "Karen,\n\nPlease treat this as first notice of loss for Riverside Manufacturing Co. under policy SBA-4471902 with The Hartford.\n\nWe are reporting a new claim involving damage that occurred on the insured premises at 2200 Foundry Road, Cleveland, OH 44115. Please confirm claim setup and advise the claim number, assigned adjuster, and any documentation needed to support the loss.\n\nIf you need a requested loss date or additional incident details, reply and we will provide them immediately.\n\nThank you,\nGreat Lakes Insurance Advisors",
-    "sender": "Megan Holt <submissions@greatlakesins.com>",
-    "recipient": "Karen Delgado <kdelgado@riversidemfg.com>",
+    "subject": "First Notice of Loss \u2013 Riverside Manufacturing Co. Policy SBA-4471902",
+    "date_received": "2026-07-16T15:39:51.357403+00:00",
+    "body": "Good morning,\n\nPlease accept this first notice of loss for Riverside Manufacturing Co. under policy SBA-4471902 issued by The Hartford.\n\nLoss details:\n- Insured: Riverside Manufacturing Co.\n- Location: 2200 Foundry Road, Cleveland, OH 44115\n- Contact: Karen Delgado, (216) 555-0173, kdelgado@riversidemfg.com\n- Requested effective date of loss: 08/14/2025\n\nA forklift struck a pallet rack in the west warehouse, causing visible damage to racking and several stored finished parts. No injuries have been reported at this time. Please advise the claim number, adjuster assignment, and any immediate documentation you need from the insured.\n\nThank you,\nMegan Ross\nGreat Lakes Insurance Advisors",
+    "sender": "Megan Ross <submissions@greatlakesins.com>",
+    "recipient": "claims@thehartford.com",
     "attachments": []
   }
 }

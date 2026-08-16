@@ -10,7 +10,7 @@
       "requested_effective_date": null,
       "requested_changes": "Report a new loss / open a claim.",
       "contact_name": "Wade Carrington",
-      "contact_phone": "(214) 555-0191"
+      "contact_phone": "214-555-0191"
     }
   },
   "attachments": [
@@ -34,17 +34,18 @@
           "extraction": {
             "named_insured": "Lone Star Freight Systems LP",
             "policy_number": "CA-9948120",
-            "certificate_holder": "Pioneer Distribution Centers, Inc. 2200 Market Street, Suite 60o, Kansas City, MO 64100",
-            "effective_date": "2026-02-01",
-            "expiration_date": "2027-02-01",
+            "certificate_holder": "Metro Logistics Centers, LLC",
+            "effective_date": "2026-03-15",
+            "expiration_date": "2027-03-15",
             "limits": {
               "Each Occurrence": "$1,000,000",
-              "Damage to Rented Premises": "$100,000",
+              "Damage to Rented Premises": "$300,000",
               "Med Exp": "$5,000",
               "Personal & Adv Injury": "$1,000,000",
               "General Aggregate": "$2,000,000",
               "Products-Comp/Op Agg": "$2,000,000",
               "Combined Single Limit": "$1,000,000",
+              "Aggregate": "$5,000,000",
               "E.L. Each Accident": "$1,000,000",
               "E.L. Disease-Ea Employee": "$1,000,000",
               "E.L. Disease-Policy Limit": "$1,000,000"
@@ -98,21 +99,10 @@
           "extraction": {
             "named_insured": "Lone Star Freight Systems LP",
             "policy_number": "CA-9948120",
-            "certificate_holder": "MidSouth Logistics Park, LLC 1010 Riverfront Drive, Memphis, TN 38103",
-            "effective_date": "2026-02-01",
-            "expiration_date": "2027-02-01",
-            "limits": {
-              "Each Occurrence": "$1,000,000",
-              "Damage to Rented Premises": "$100,000",
-              "Med Exp": "$5,000",
-              "Personal & Adv Injury": "$1,000,000",
-              "General Aggregate": "$2,000,000",
-              "Products-Comp/Op Agg": "$2,000,000",
-              "Combined Single Limit": "$1,000,000",
-              "E.L. Each Accident": "$1,000,000",
-              "E.L. Disease-Ea Employee": "$1,000,000",
-              "E.L. Disease-Policy Limit": "$1,000,000"
-            }
+            "certificate_holder": null,
+            "effective_date": "2026-03-15",
+            "expiration_date": "2027-03-15",
+            "limits": {}
           }
         }
       ],
@@ -142,12 +132,12 @@
             "named_insured": "Lone Star Freight Systems LP",
             "policy_number": "CA-9948120",
             "coverages": {
-              "Commercial Auto Liability": "$10,420",
-              "Motor Truck Cargo": "$2,680",
-              "Commercial General Liability": "$3,910",
-              "Umbrella Liability": "$1,030"
+              "Auto Liability": "$21,450",
+              "Commercial General Liability": "$6,300",
+              "Umbrella Liability": "$13,250",
+              "Workers Compensation": "$7,250"
             },
-            "total_premium": 18640.0
+            "total_premium": 48750.0
           }
         }
       ],

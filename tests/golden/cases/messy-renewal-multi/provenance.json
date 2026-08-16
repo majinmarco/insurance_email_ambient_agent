@@ -18,7 +18,7 @@
       "multi_recipient": true,
       "body_only": false,
       "inconsistency": true,
-      "date_received": "2026-07-13T12:25:00+00:00"
+      "date_received": "2026-07-14T12:25:00+00:00"
     },
     "attachments": [
       {
@@ -115,15 +115,15 @@
       "contact_email": "rhalvorsen@midwestagri.coop",
       "contact_phone": "(515) 555-0182",
       "carrier_name": "Nationwide Agribusiness",
-      "effective_date": "2026-01-01",
-      "expiration_date": "2027-01-01",
+      "effective_date": "2026-01-15",
+      "expiration_date": "2027-01-15",
       "coverage_limits": [
         {
           "coverage": "Commercial General Liability",
           "limit": "$1,000,000"
         },
         {
-          "coverage": "Automobile Liability",
+          "coverage": "Business Auto Liability",
           "limit": "$1,000,000"
         },
         {
@@ -135,101 +135,101 @@
           "limit": "Statutory"
         }
       ],
-      "total_premium": "$42,850",
+      "total_premium": "$24,860",
       "producer": {
         "agency": "Prairie States Insurance Cooperative",
-        "address": "1401 Grand Ave, Suite 420, Des Moines, IA 50309",
-        "contact_name": "Elena Martinez",
-        "phone": "(515) 555-2244",
-        "fax": "(515) 555-2245",
+        "address": "1225 Grand Ave, Suite 410, Des Moines, IA 50309",
+        "contact_name": "Marissa Klein",
+        "phone": "(515) 555-0448",
+        "fax": "(515) 555-0449",
         "email": "commercial@prairiestatesins.com"
       },
       "insurers": [
         {
           "letter": "A",
           "name": "Nationwide Agribusiness Insurance Company",
-          "naic": "29742"
+          "naic": "23779"
         },
         {
           "letter": "B",
-          "name": "Allied Property & Casualty Insurance Company",
-          "naic": "42579"
-        },
-        {
-          "letter": "C",
           "name": "Nationwide Mutual Insurance Company",
           "naic": "23787"
         },
         {
-          "letter": "D",
+          "letter": "C",
           "name": "Nationwide Assurance Company",
-          "naic": "26093"
+          "naic": "10723"
+        },
+        {
+          "letter": "D",
+          "name": "Allied Property & Casualty Insurance Company",
+          "naic": "42579"
         },
         {
           "letter": "E",
-          "name": "Nationwide General Insurance Company",
-          "naic": "25453"
+          "name": "Depositors Insurance Company",
+          "naic": "42587"
         },
         {
           "letter": "F",
-          "name": "Nationwide Indemnity Company",
-          "naic": "23779"
+          "name": "Farmland Mutual Insurance Company",
+          "naic": "25850"
         }
       ],
-      "business_description": "Farm supply, grain handling, and agronomy services",
+      "business_description": "Farm supply, grain handling, and agronomy services including seed, fertilizer, crop protection products, grain storage, and on-site crop consulting",
       "entity_type": "Cooperative",
-      "fein": "42-6158391",
-      "naic_carrier": "29742"
+      "fein": "42-1876395",
+      "naic_carrier": "23779"
     },
     "email": {
-      "subject": "RE: RE: Renewal request for Midwest AgriSupply Cooperative policy FARM-1120934",
-      "body": "Good afternoon,\n\nPlease provide the renewal quote for Midwest AgriSupply Cooperative, policy FARM-1120934, expiring 01/01/2027. We intend to renew coverage with Nationwide Agribusiness and would like the renewal effective date to be 01/01/2027.\n\nPlease include updated premium, invoice details, and any forms or endorsements expected at renewal. If you need any additional underwriting information, let me know.\n\nThank you,\nRoger Halvorsen\n\nNote: the policy number on the attachment may be off by a digit; the correct one ends in 9.\n\nOn last Tuesday, Elena Martinez <commercial@prairiestatesins.com> wrote:\n> Thanks for sending this over \u2014 can you confirm the requested effective date and whether any additional insureds are needed?\n>\n> Regards,\n> Elena Martinez",
-      "sender": "Elena Martinez's Assistant <assistant@midwestagri.coop> on behalf of Prairie States Insurance Cooperative <commercial@prairiestatesins.com>",
+      "subject": "RE: RE: Midwest AgriSupply Cooperative renewal quote request - Policy FARM-1120934",
+      "body": "Good morning,\n\nWe are preparing for the renewal of Midwest AgriSupply Cooperative's policy FARM-1120934 with Nationwide Agribusiness. Please confirm renewal pricing and issue any renewal paperwork with an effective date of 01/15/2026.\n\nWe would also appreciate updated certificates reflecting our current liability structure for the upcoming term. If you need any underwriting items from us, please let us know.\n\nThank you,\nRoger Halvorsen\n\nNote: the policy number on the attachment may be off by a digit; the correct one ends in 9.\n\nOn last Tuesday, Marissa Klein <commercial@prairiestatesins.com> wrote:\n> Thanks for sending this over \u2014 can you confirm the requested effective date and whether any additional insureds are needed?\n>\n> Regards,\n> Marissa Klein",
+      "sender": "Marissa Klein's Assistant <assistant@midwestagri.coop> on behalf of Prairie States Insurance Cooperative <commercial@prairiestatesins.com>",
       "recipient": "Roger Halvorsen <rhalvorsen@midwestagri.coop>, underwriting@midwestagri.coop"
     },
     "documents": [
       {
-        "title": "Nationwide Agribusiness Premium Invoice No. INV-784201",
+        "title": "Premium Invoice - Midwest AgriSupply Cooperative",
         "certificate_holder": null,
         "coverage_lines": null,
         "description_of_operations": null,
         "authorized_representative": null,
         "certificate_number": null,
         "revision_number": null,
-        "invoice_number": "INV-784201",
-        "invoice_date": "12/10/2026",
-        "account_number": "AC-552198",
+        "invoice_number": "INV-2026-0148",
+        "invoice_date": "12/18/2025",
+        "account_number": "ACCT-441208",
         "line_items": [
           {
             "description": "Policy Premium",
-            "amount": "$38,950.00"
+            "amount": "$23,500.00"
           },
           {
             "description": "Terrorism (TRIA)",
-            "amount": "$240.00"
+            "amount": "$145.00"
           },
           {
-            "description": "Iowa surplus lines / premium tax",
-            "amount": "$1,872.00"
+            "description": "Iowa surplus lines tax / state surcharge",
+            "amount": "$785.00"
           },
           {
             "description": "Broker Fee",
-            "amount": "$1,350.00"
+            "amount": "$250.00"
           },
           {
             "description": "Prior Balance",
-            "amount": "$0.00"
+            "amount": "$180.00"
           }
         ],
-        "subtotal": "$39,190.00",
-        "taxes": "$1,872.00",
-        "fees": "$1,350.00",
-        "prior_balance": "$0.00",
-        "amount_due": "$42,412.00",
-        "billing_period": "01/01/2027 - 01/01/2028",
-        "due_date": "01/01/2027",
-        "payment_methods": "Mail check payable to Nationwide Agibusiness; ACH available trough roducer; do not remit cash",
-        "remit_to": "Natiowide Agribusinness, P.O. Bo 2908, Des Moines, IA 50316-2908",
+        "subtotal": "$24,860.00",
+        "taxes": "$785.00",
+        "fees": "$395.00",
+        "prior_balance": "$180.00",
+        "amount_due": "$24,860.00",
+        "billing_period": "01/15/2026 - 01/15/2027",
+        "due_date": "01/10/2026",
+        "payment_methods": "ACH, check, or wire transfer",
+        "remit_to": "Nationwie Agribusiness, Lockbox 913, Des Mines, IA 50309-9123",
         "coverage_parts": null,
         "forms_schedule": null,
         "premium_summary": null,
@@ -255,14 +255,14 @@
       },
       {
         "title": "ACORD 25 Certificate of Liability Insurance",
-        "certificate_holder": "Heartland Grain Terminal, LLC, 2210 River Road, Council Bluffs, IA 51501",
+        "certificate_holder": "Heartland Feed & Grain, LLC",
         "coverage_lines": [
           {
             "insurer_letter": "A",
             "coverage_type": "Commercial General Liability",
             "policy_number": "FARM-1120934",
-            "effective_date": "01/01/2027",
-            "expiration_date": "01/01/2028",
+            "effective_date": "01/15/2026",
+            "expiration_date": "01/15/2027",
             "addl_insured": true,
             "subro_waived": true,
             "limits": [
@@ -294,11 +294,11 @@
             "premium": null
           },
           {
-            "insurer_letter": "A",
+            "insurer_letter": "B",
             "coverage_type": "Automobile Liability",
             "policy_number": "FARM-1120934",
-            "effective_date": "01/01/2027",
-            "expiration_date": "01/01/2028",
+            "effective_date": "01/15/2026",
+            "expiration_date": "01/15/2027",
             "addl_insured": true,
             "subro_waived": true,
             "limits": [
@@ -310,27 +310,31 @@
             "premium": null
           },
           {
-            "insurer_letter": "A",
+            "insurer_letter": "C",
             "coverage_type": "Umbrella Liability",
             "policy_number": "FARM-1120934",
-            "effective_date": "01/01/2027",
-            "expiration_date": "01/01/2028",
+            "effective_date": "01/15/2026",
+            "expiration_date": "01/15/2027",
             "addl_insured": true,
             "subro_waived": true,
             "limits": [
               {
                 "coverage": "Each Occurrence",
                 "limit": "$5,000,000"
+              },
+              {
+                "coverage": "Aggregate",
+                "limit": "$5,000,000"
               }
             ],
             "premium": null
           },
           {
-            "insurer_letter": "A",
+            "insurer_letter": "D",
             "coverage_type": "Workers Compensation",
             "policy_number": "FARM-1120934",
-            "effective_date": "01/01/2027",
-            "expiration_date": "01/01/2028",
+            "effective_date": "01/15/2026",
+            "expiration_date": "01/15/2027",
             "addl_insured": false,
             "subro_waived": true,
             "limits": [
@@ -350,9 +354,9 @@
             "premium": null
           }
         ],
-        "description_of_operations": "Heartland Grain Terminal, LLC is included as additional insured where required by written contract, with coverage afforded on a primary and non-contributory basis as respects the General Liability coverage only. Waiver of Subrogation applies where required by written contract and subject to the policy terms and conditions. CG 20 10 04 13, CG 20 37 04 13, and CG 24 04 05 09 are cited for additional insured and waiver of subrogation, as applicable.",
-        "authorized_representative": "Lisa M. Conrad, Authorized Representative",
-        "certificate_number": "COI-771204",
+        "description_of_operations": "Heartland Feed & Grain, LLC is included as additional insured with respect to ongoing and completed operations where required by written contract, as respects Commercial General Liability and Automobile Liability. Coverage is primary and non-contributory where required by written contract. Waiver of subrogation applies where required by written contract. This certificate is issued subject to the policy terms and conditions. See CG 20 10 04 13, CG 20 37 04 13, CG 24 04 05 09, and WC 00 03 13.",
+        "authorized_representative": "Marissa Klein, Authorized Representative",
+        "certificate_number": "CERT-2026-00391",
         "revision_number": null,
         "invoice_number": null,
         "invoice_date": null,
@@ -391,47 +395,47 @@
         "unrelated_body": null
       },
       {
-        "title": "Nationwide Agribusiness Premium Invoice No. INV-784202",
+        "title": "Premium Invoice - Midwest AgriSupply Cooperative",
         "certificate_holder": null,
         "coverage_lines": null,
         "description_of_operations": null,
         "authorized_representative": null,
         "certificate_number": null,
         "revision_number": null,
-        "invoice_number": "INV-784202",
-        "invoice_date": "12/10/2026",
-        "account_number": "AC-552198",
+        "invoice_number": "INV-2026-0149",
+        "invoice_date": "01/02/2026",
+        "account_number": "ACCT-441208",
         "line_items": [
           {
             "description": "Policy Premium",
-            "amount": "$39,180.00"
+            "amount": "$23,500.00"
           },
           {
             "description": "Terrorism (TRIA)",
-            "amount": "$245.00"
+            "amount": "$145.00"
           },
           {
-            "description": "Iowa premium tax",
-            "amount": "$1,889.00"
+            "description": "Iowa surplus lines tax / state surcharge",
+            "amount": "$785.00"
           },
           {
             "description": "Broker Fee",
-            "amount": "$1,350.00"
+            "amount": "$250.00"
           },
           {
             "description": "Prior Balance",
-            "amount": "$0.00"
+            "amount": "$180.00"
           }
         ],
-        "subtotal": "$39,425.00",
-        "taxes": "$1,889.00",
-        "fees": "$1,350.00",
-        "prior_balance": "$0.00",
-        "amount_due": "$42,664.00",
-        "billing_period": "01/01/2027 - 01/01/2028",
-        "due_date": "01/01/2027",
-        "payment_methods": "Mail check payable to Nationwide Agribusiness; ACH available through producer; do not remit cash",
-        "remit_to": "Nationwide Agribusiness, P.O. Box 2908, Des Moines, IA 50316-2908",
+        "subtotal": "$24,860.00",
+        "taxes": "$785.00",
+        "fees": "$395.00",
+        "prior_balance": "$180.00",
+        "amount_due": "$24,860.00",
+        "billing_period": "01/15/2026 - 01/15/2027",
+        "due_date": "01/15/2026",
+        "payment_methods": "ACH, check, or wire transfer",
+        "remit_to": "Nationwide Agribusiness, Lockbox 9123, Des Moines, IA 50309-9123",
         "coverage_parts": null,
         "forms_schedule": null,
         "premium_summary": null,
@@ -456,47 +460,47 @@
         "unrelated_body": null
       },
       {
-        "title": "Nationwide Agribusiness Premium Invoice No. INV-784203",
+        "title": "Premium Invoice - Midwest AgriSupply Cooperative",
         "certificate_holder": null,
         "coverage_lines": null,
         "description_of_operations": null,
         "authorized_representative": null,
         "certificate_number": null,
         "revision_number": null,
-        "invoice_number": "INV-784203",
-        "invoice_date": "12/10/2026",
-        "account_number": "AC-552198",
+        "invoice_number": "INV-2026-0150",
+        "invoice_date": "01/15/2026",
+        "account_number": "ACCT-441208",
         "line_items": [
           {
             "description": "Policy Premium",
-            "amount": "$38,700.00"
+            "amount": "$23,500.00"
           },
           {
             "description": "Terrorism (TRIA)",
-            "amount": "$238.00"
+            "amount": "$145.00"
           },
           {
-            "description": "Iowa surplus lines / premium tax",
-            "amount": "$1,864.00"
+            "description": "Iowa surplus lines tax / state surcharge",
+            "amount": "$785.00"
           },
           {
             "description": "Broker Fee",
-            "amount": "$1,350.00"
+            "amount": "$250.00"
           },
           {
             "description": "Prior Balance",
-            "amount": "$0.00"
+            "amount": "$180.00"
           }
         ],
-        "subtotal": "$38,938.00",
-        "taxes": "$1,864.00",
-        "fees": "$1,350.00",
-        "prior_balance": "$0.00",
-        "amount_due": "$42,152.00",
-        "billing_period": "01/01/2027 - 01/01/2028",
-        "due_date": "01/01/2027",
-        "payment_methods": "Mail check pyable to Nationwide Agribusiness; ACH available through producer; do not remit cash",
-        "remit_to": "Nationwide Agribusinness, P.O. Box 2908, De5 Moines, IA 50316-2908",
+        "subtotal": "$24,860.00",
+        "taxes": "$785.00",
+        "fees": "$395.00",
+        "prior_balance": "$180.00",
+        "amount_due": "$24,860.00",
+        "billing_period": "01/15/2026 - 01/15/2027",
+        "due_date": "02/14/2026",
+        "payment_methods": "ACH, check, or ire transfer",
+        "remit_to": "Nationwide Agribusiness, Lockbox 9123, Des Moines, IA 50309-9123",
         "coverage_parts": null,
         "forms_schedule": null,
         "premium_summary": null,
@@ -522,14 +526,14 @@
       },
       {
         "title": "ACORD 25 Certificate of Liability Insurance",
-        "certificate_holder": "Praiie View Feed Mill, Inc., 89o0 Commeerce arkwa, nkeny, IA 50021",
+        "certificate_holder": "Iowa rain Warehouse, Inc.",
         "coverage_lines": [
           {
             "insurer_letter": "A",
             "coverage_type": "Commercial General Liability",
             "policy_number": "FARM-1120934",
-            "effective_date": "01/01/2027",
-            "expiration_date": "01/01/2028",
+            "effective_date": "01/15/2026",
+            "expiration_date": "01/15/2027",
             "addl_insured": true,
             "subro_waived": true,
             "limits": [
@@ -561,11 +565,11 @@
             "premium": null
           },
           {
-            "insurer_letter": "A",
+            "insurer_letter": "B",
             "coverage_type": "Automobile Liability",
             "policy_number": "FARM-1120934",
-            "effective_date": "01/01/2027",
-            "expiration_date": "01/01/2028",
+            "effective_date": "01/15/2026",
+            "expiration_date": "01/15/2027",
             "addl_insured": true,
             "subro_waived": true,
             "limits": [
@@ -577,27 +581,31 @@
             "premium": null
           },
           {
-            "insurer_letter": "A",
+            "insurer_letter": "C",
             "coverage_type": "Umbrella Liability",
             "policy_number": "FARM-1120934",
-            "effective_date": "01/01/2027",
-            "expiration_date": "01/01/2028",
+            "effective_date": "01/15/2026",
+            "expiration_date": "01/15/2027",
             "addl_insured": true,
             "subro_waived": true,
             "limits": [
               {
                 "coverage": "Each Occurrence",
                 "limit": "$5,000,000"
+              },
+              {
+                "coverage": "Aggregate",
+                "limit": "$5,000,000"
               }
             ],
             "premium": null
           },
           {
-            "insurer_letter": "A",
+            "insurer_letter": "D",
             "coverage_type": "Workers Compensation",
             "policy_number": "FARM-1120934",
-            "effective_date": "01/01/2027",
-            "expiration_date": "01/01/2028",
+            "effective_date": "01/15/2026",
+            "expiration_date": "01/15/2027",
             "addl_insured": false,
             "subro_waived": true,
             "limits": [
@@ -617,9 +625,9 @@
             "premium": null
           }
         ],
-        "description_of_operations": "Pra1rie View Feed Miill, Inc. is included as additional insured where required by writen contract, with coverage afforded on a pimary and non-contributory basis s respect5 thhe General Liblity coverage only. Waiver of Subr0gttion applies where required bby written contract and subjet to the pollicy terms and conditions. CGG 20 1o 04 13, CG 20 37 04 13, and CG 24 04 05 099 are cited for add1tioal insured and waiver of subrogation, as applicable.",
-        "authorized_representative": "Lisa M. Conrad, Authorized Representative",
-        "certificate_number": "COI-771205",
+        "description_of_operations": "Iow Grain WWareouse, I. is shown as certif1cate holder onlly. Where required by written contract, additional insured stats applies to ongoing and completed operat1ons for Commercial General Liabi1ity and Auommobile Liabiiy; coverage is primary and non-conti6uutory and waiver of subrogatiion applies as required. See CG 0 10 04 13, CGG 20 37 04 13, and CG 24 04 05 09.",
+        "authorized_representative": "Maaris5a Klein, Authorized Representattive",
+        "certificate_number": "CERT-2026-00392",
         "revision_number": null,
         "invoice_number": null,
         "invoice_date": null,
@@ -658,47 +666,47 @@
         "unrelated_body": null
       },
       {
-        "title": "Nationwide Agribusiness Premium Invoice No. INV-784204",
+        "title": "Premium Invoice - Midwest AgriSupply Cooperative",
         "certificate_holder": null,
         "coverage_lines": null,
         "description_of_operations": null,
         "authorized_representative": null,
         "certificate_number": null,
         "revision_number": null,
-        "invoice_number": "INV-784204",
-        "invoice_date": "12/10/2026",
-        "account_number": "AC-552198",
+        "invoice_number": "INV-2026-0151",
+        "invoice_date": "01/20/2026",
+        "account_number": "ACCT-441208",
         "line_items": [
           {
             "description": "Policy Premium",
-            "amount": "$39,010.00"
+            "amount": "$23,500.00"
           },
           {
             "description": "Terrorism (TRIA)",
-            "amount": "$242.00"
+            "amount": "$145.00"
           },
           {
-            "description": "Iowa premium surcharge",
-            "amount": "$1,881.00"
+            "description": "Iowa surplus lines tax / state surcharge",
+            "amount": "$785.00"
           },
           {
             "description": "Broker Fee",
-            "amount": "$1,350.00"
+            "amount": "$250.00"
           },
           {
             "description": "Prior Balance",
-            "amount": "$0.00"
+            "amount": "$180.00"
           }
         ],
-        "subtotal": "$39,252.00",
-        "taxes": "$1,881.00",
-        "fees": "$1,350.00",
-        "prior_balance": "$0.00",
-        "amount_due": "$42,483.00",
-        "billing_period": "01/01/2027 - 01/01/2028",
-        "due_date": "01/01/2027",
-        "payment_methods": "Mail check payyable to Nationwide Agibusiness; ACH avaiilable throough producer; do not reiit cash",
-        "remit_to": "Nationwwide Agribusinss, P.O. Box 2908, Des Moines, IA 50316-2908",
+        "subtotal": "$24,860.00",
+        "taxes": "$785.00",
+        "fees": "$395.00",
+        "prior_balance": "$180.00",
+        "amount_due": "$24,860.00",
+        "billing_period": "01/15/2026 - 01/15/2027",
+        "due_date": "02/20/2026",
+        "payment_methods": "ACH, check, or wiire transfer",
+        "remit_to": "Nationwie Agribusiness, Locckbox 9123, DDes Moines, IA 50309-912",
         "coverage_parts": null,
         "forms_schedule": null,
         "premium_summary": null,

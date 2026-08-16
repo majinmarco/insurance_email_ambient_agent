@@ -18,7 +18,7 @@
       "multi_recipient": true,
       "body_only": true,
       "inconsistency": false,
-      "date_received": "2026-07-02T09:26:00+00:00"
+      "date_received": "2026-07-03T09:26:00+00:00"
     },
     "attachments": [
       {
@@ -85,14 +85,14 @@
   "raw_scenario": {
     "shared": {
       "named_insured": "Summit Ridge Construction Inc.",
-      "policy_number": "No.",
+      "policy_number": "BRN-482719-01",
       "insured_address": "9400 E Arapahoe Rd, Centennial, CO 80112",
       "contact_name": "Derek Olsson",
       "contact_email": "dolsson@summitridgegc.com",
       "contact_phone": "(303) 555-0188",
       "carrier_name": "Travelers Indemnity Company",
-      "effective_date": "2026-02-01",
-      "expiration_date": "2027-02-01",
+      "effective_date": "2026-08-01",
+      "expiration_date": "2027-08-01",
       "coverage_limits": [
         {
           "coverage": "Commercial General Liability",
@@ -111,13 +111,13 @@
           "limit": "Statutory"
         }
       ],
-      "total_premium": "$42,580",
+      "total_premium": "$28,940",
       "producer": {
         "agency": "Front Range Commercial Insurance",
-        "address": "1345 Market St, Suite 210, Denver, CO 80202",
-        "contact_name": "New Business Desk",
-        "phone": "(303) 555-4420",
-        "fax": "(303) 555-4421",
+        "address": "1550 W. Littleton Blvd, Suite 210, Littleton, CO 80120",
+        "contact_name": "Megan Keller",
+        "phone": "(720) 555-0147",
+        "fax": "(720) 555-0148",
         "email": "newbusiness@frontrangeins.com"
       },
       "insurers": [
@@ -133,39 +133,39 @@
         },
         {
           "letter": "C",
-          "name": "Travelers Casualty and Surety Company",
-          "naic": "19038"
+          "name": "Travelers Personal Insurance Company",
+          "naic": "25666"
         },
         {
           "letter": "D",
-          "name": "Travelers Casualty Insurance Company of America",
-          "naic": "25682"
+          "name": "The Travelers Indemnity Company of America",
+          "naic": "25135"
         },
         {
           "letter": "E",
-          "name": "The Travelers Indemnity Company of Connecticut",
-          "naic": "39640"
+          "name": "Travelers Casualty and Surety Company",
+          "naic": "31194"
         },
         {
           "letter": "F",
-          "name": "Travelers Personal Security Insurance Company",
-          "naic": "36161"
+          "name": "The Charter Oak Fire Insurance Company",
+          "naic": "25615"
         }
       ],
       "business_description": "Commercial general contractor (ground-up)",
       "entity_type": "Corporation",
-      "fein": "84-2163907",
+      "fein": "84-2167395",
       "naic_carrier": "25658"
     },
     "email": {
       "subject": "",
-      "body": "Attached.\n\nOn Mon, Jul 6, 2026 at 9:14 AM, New Business Desk <newbusiness@frontrangeins.com> wrote:\n> Received, thank you. We'll need the current loss runs before we can release terms.\n>\n> Regards,\n> New Business Desk",
-      "sender": "New Business Desk's Assistant <assistant@summitridgegc.com> on behalf of New Business Desk <newbusiness@frontrangeins.com>",
-      "recipient": "dolsson@summitridgegc.com, underwriting@summitridgegc.com"
+      "body": "Attached.\n\nOn Mon, Jul 6, 2026 at 9:14 AM, Megan Keller <newbusiness@frontrangeins.com> wrote:\n> Received, thank you. We'll need the current loss runs before we can release terms.\n>\n> Regards,\n> Megan Keller",
+      "sender": "Megan Keller's Assistant <assistant@carrierintake.com> on behalf of Megan Keller <newbusiness@frontrangeins.com>",
+      "recipient": "Travelers Indemnity Company New Business Underwriting, underwriting@carrierintake.com"
     },
     "documents": [
       {
-        "title": "Commercial Package Policy Declarations",
+        "title": "Commercial Insurance Declarations Page",
         "certificate_holder": null,
         "coverage_lines": null,
         "description_of_operations": null,
@@ -174,7 +174,7 @@
         "revision_number": null,
         "invoice_number": null,
         "invoice_date": null,
-        "account_number": null,
+        "account_number": "BRN-482719-01",
         "line_items": null,
         "subtotal": null,
         "taxes": null,
@@ -189,9 +189,9 @@
           {
             "insurer_letter": "A",
             "coverage_type": "Commercial General Liability",
-            "policy_number": "No.",
-            "effective_date": "02/01/2026",
-            "expiration_date": "02/01/2027",
+            "policy_number": "BRN-482719-01",
+            "effective_date": "08/01/2026",
+            "expiration_date": "08/01/2027",
             "addl_insured": null,
             "subro_waived": null,
             "limits": [
@@ -200,12 +200,12 @@
                 "limit": "$1,000,000"
               },
               {
-                "coverage": "Damage to Rented Premises",
-                "limit": "$100,000"
+                "coverage": "Damage To Rented Premises",
+                "limit": "$300,000"
               },
               {
                 "coverage": "Medical Expense",
-                "limit": "$5,000"
+                "limit": "$10,000"
               },
               {
                 "coverage": "Personal & Advertising Injury",
@@ -220,14 +220,14 @@
                 "limit": "$2,000,000"
               }
             ],
-            "premium": "$14,250"
+            "premium": "$12,480"
           },
           {
-            "insurer_letter": "A",
+            "insurer_letter": "B",
             "coverage_type": "Commercial Automobile Liability",
-            "policy_number": "No.",
-            "effective_date": "02/01/2026",
-            "expiration_date": "02/01/2027",
+            "policy_number": "BRN-482719-01",
+            "effective_date": "08/01/2026",
+            "expiration_date": "08/01/2027",
             "addl_insured": null,
             "subro_waived": null,
             "limits": [
@@ -236,14 +236,14 @@
                 "limit": "$1,000,000"
               }
             ],
-            "premium": "$7,880"
+            "premium": "$4,860"
           },
           {
-            "insurer_letter": "A",
+            "insurer_letter": "E",
             "coverage_type": "Umbrella Liability",
-            "policy_number": "No.",
-            "effective_date": "02/01/2026",
-            "expiration_date": "02/01/2027",
+            "policy_number": "BRN-482719-01",
+            "effective_date": "08/01/2026",
+            "expiration_date": "08/01/2027",
             "addl_insured": null,
             "subro_waived": null,
             "limits": [
@@ -256,14 +256,14 @@
                 "limit": "$5,000,000"
               }
             ],
-            "premium": "$8,960"
+            "premium": "$6,950"
           },
           {
-            "insurer_letter": "A",
+            "insurer_letter": "F",
             "coverage_type": "Workers Compensation",
-            "policy_number": "No.",
-            "effective_date": "02/01/2026",
-            "expiration_date": "02/01/2027",
+            "policy_number": "BRN-482719-01",
+            "effective_date": "08/01/2026",
+            "expiration_date": "08/01/2027",
             "addl_insured": null,
             "subro_waived": null,
             "limits": [
@@ -272,7 +272,7 @@
                 "limit": "$1,000,000"
               },
               {
-                "coverage": "E.L. Disease - Ea Employee",
+                "coverage": "E.L. Disease - Each Employee",
                 "limit": "$1,000,000"
               },
               {
@@ -280,7 +280,7 @@
                 "limit": "$1,000,000"
               }
             ],
-            "premium": "$9,900"
+            "premium": "$3,050"
           }
         ],
         "forms_schedule": [
@@ -289,42 +289,54 @@
             "title": "Commercial General Liability Coverage Form"
           },
           {
-            "form_number": "CG 00 17 11 85",
-            "title": "General Liability Coverage Form - Occurrence"
+            "form_number": "CG 21 47 12 19",
+            "title": "Employment-Related Practices Exclusion"
           },
           {
             "form_number": "CA 00 01 11 20",
             "title": "Business Auto Coverage Form"
           },
           {
-            "form_number": "CA 20 48 03 06",
-            "title": "Designated Uninsured Motor Vehicle Coverage"
+            "form_number": "CA 99 48 11 20",
+            "title": "Designated Insured Endorsement"
           },
           {
-            "form_number": "WC 00 00 00 B",
-            "title": "Workers Compensation and Employers Liability Insurance Policy"
-          },
-          {
-            "form_number": "U 00 01 01 20",
+            "form_number": "UMB 01 01 01 18",
             "title": "Commercial Umbrella Liability Coverage Form"
+          },
+          {
+            "form_number": "WC 00 00 00 C",
+            "title": "Workers Compensation and Employers Liability Insurance Policy"
           },
           {
             "form_number": "IL 00 17 11 98",
             "title": "Common Policy Conditions"
           },
           {
-            "form_number": "CG 20 10 04 13",
-            "title": "Additional Insured - Owners, Lessees or Contractors - Scheduled Person or Organization"
+            "form_number": "IL 00 21 09 08",
+            "title": "Colorado Changes - Cancellation and Nonrenewal"
           }
         ],
         "premium_summary": [
           {
-            "description": "Package Policy Premium",
-            "amount": "$41,0"
+            "description": "Policy Premium",
+            "amount": "$27,340"
+          },
+          {
+            "description": "Terrorism (TRIA)",
+            "amount": "$1,100"
+          },
+          {
+            "description": "Taxes",
+            "amount": "$320"
+          },
+          {
+            "description": "Fees",
+            "amount": "$180"
           }
         ],
-        "countersignature": "Travelers Indemnity Company by Front Range Commercial Insurance, Authorized Representative",
-        "countersignature_date": "01/15/2026",
+        "countersignature": "Travelers Indemnity Company Authorized Representative",
+        "countersignature_date": "07/15/2026",
         "form_number": null,
         "endorsement_title": null,
         "endorsement_number": null,
@@ -333,9 +345,9 @@
         "additional_premium": null,
         "change_description": null,
         "coverages": null,
-        "total_premium": "$42,580",
-        "effective_date": "02/01/2026",
-        "expiration_date": "02/01/2027",
+        "total_premium": "$28,940",
+        "effective_date": "08/01/2026",
+        "expiration_date": "08/01/2027",
         "nr_kind": null,
         "nr_header_rows": null,
         "nr_columns": null,
@@ -344,7 +356,7 @@
         "unrelated_body": null
       },
       {
-        "title": "Commercial Package Policy Declarations",
+        "title": "Commercial Insurance Declarations Page - Replacement Copy",
         "certificate_holder": null,
         "coverage_lines": null,
         "description_of_operations": null,
@@ -353,7 +365,7 @@
         "revision_number": null,
         "invoice_number": null,
         "invoice_date": null,
-        "account_number": null,
+        "account_number": "BRN-482719-01",
         "line_items": null,
         "subtotal": null,
         "taxes": null,
@@ -368,9 +380,9 @@
           {
             "insurer_letter": "A",
             "coverage_type": "Commercial General Liability",
-            "policy_number": "No.",
-            "effective_date": "02/01/2026",
-            "expiration_date": "02/01/2027",
+            "policy_number": "BRN-482719-01",
+            "effective_date": "08/01/2026",
+            "expiration_date": "08/01/2027",
             "addl_insured": null,
             "subro_waived": null,
             "limits": [
@@ -379,12 +391,12 @@
                 "limit": "$1,000,000"
               },
               {
-                "coverage": "Damage to Rented Premises",
-                "limit": "$100,000"
+                "coverage": "Damage To Rented Premises",
+                "limit": "$300,000"
               },
               {
                 "coverage": "Medical Expense",
-                "limit": "$5,000"
+                "limit": "$10,000"
               },
               {
                 "coverage": "Personal & Advertising Injury",
@@ -399,14 +411,14 @@
                 "limit": "$2,000,000"
               }
             ],
-            "premium": "$14,250"
+            "premium": "$12,480"
           },
           {
-            "insurer_letter": "A",
+            "insurer_letter": "B",
             "coverage_type": "Commercial Automobile Liability",
-            "policy_number": "No.",
-            "effective_date": "02/01/2026",
-            "expiration_date": "02/01/2027",
+            "policy_number": "BRN-482719-01",
+            "effective_date": "08/01/2026",
+            "expiration_date": "08/01/2027",
             "addl_insured": null,
             "subro_waived": null,
             "limits": [
@@ -415,14 +427,14 @@
                 "limit": "$1,000,000"
               }
             ],
-            "premium": "$7,880"
+            "premium": "$4,860"
           },
           {
-            "insurer_letter": "A",
+            "insurer_letter": "E",
             "coverage_type": "Umbrella Liability",
-            "policy_number": "No.",
-            "effective_date": "02/01/2026",
-            "expiration_date": "02/01/2027",
+            "policy_number": "BRN-482719-01",
+            "effective_date": "08/01/2026",
+            "expiration_date": "08/01/2027",
             "addl_insured": null,
             "subro_waived": null,
             "limits": [
@@ -435,14 +447,14 @@
                 "limit": "$5,000,000"
               }
             ],
-            "premium": "$8,960"
+            "premium": "$6,950"
           },
           {
-            "insurer_letter": "A",
+            "insurer_letter": "F",
             "coverage_type": "Workers Compensation",
-            "policy_number": "No.",
-            "effective_date": "02/01/2026",
-            "expiration_date": "02/01/2027",
+            "policy_number": "BRN-482719-01",
+            "effective_date": "08/01/2026",
+            "expiration_date": "08/01/2027",
             "addl_insured": null,
             "subro_waived": null,
             "limits": [
@@ -451,7 +463,7 @@
                 "limit": "$1,000,000"
               },
               {
-                "coverage": "E.L. Disease - Ea Employee",
+                "coverage": "E.L. Disease - Each Employee",
                 "limit": "$1,000,000"
               },
               {
@@ -459,7 +471,7 @@
                 "limit": "$1,000,000"
               }
             ],
-            "premium": "$9,900"
+            "premium": "$3,050"
           }
         ],
         "forms_schedule": [
@@ -468,42 +480,54 @@
             "title": "Commercial General Liability Coverage Form"
           },
           {
-            "form_number": "CG 00 17 11 85",
-            "title": "General Liability Coverage Form - Occurrence"
+            "form_number": "CG 21 47 12 19",
+            "title": "Employment-Related Practices Exclusion"
           },
           {
             "form_number": "CA 00 01 11 20",
             "title": "Business Auto Coverage Form"
           },
           {
-            "form_number": "CA 20 48 03 06",
-            "title": "Designated Uninsured Motor Vehicle Coverage"
+            "form_number": "CA 99 48 11 20",
+            "title": "Designated Insured Endorsement"
           },
           {
-            "form_number": "WC 00 00 00 B",
-            "title": "Workers Compensation and Employers Liability Insurance Policy"
-          },
-          {
-            "form_number": "U 00 01 01 20",
+            "form_number": "UMB 01 01 01 18",
             "title": "Commercial Umbrella Liability Coverage Form"
+          },
+          {
+            "form_number": "WC 00 00 00 C",
+            "title": "Workers Compensation and Employers Liability Insurance Policy"
           },
           {
             "form_number": "IL 00 17 11 98",
             "title": "Common Policy Conditions"
           },
           {
-            "form_number": "CG 20 10 04 13",
-            "title": "Additional Insured - Owners, Lessees or Contractors - Scheduled Person or Organization"
+            "form_number": "IL 00 21 09 08",
+            "title": "Colorado Changes - Cancellation and Nonrenewal"
           }
         ],
         "premium_summary": [
           {
-            "description": "Package Policy Premium",
-            "amount": "$41,0"
+            "description": "Policy Premium",
+            "amount": "$27,340"
+          },
+          {
+            "description": "Terrorism (TRIA)",
+            "amount": "$1,100"
+          },
+          {
+            "description": "Taxes",
+            "amount": "$320"
+          },
+          {
+            "description": "Fees",
+            "amount": "$180"
           }
         ],
-        "countersignature": "Travelers Indemnity Company by Front Range Commercial Insurance, Authorized Representative",
-        "countersignature_date": "01/15/2026",
+        "countersignature": "Travelers Indemnity Company Authorized Representative",
+        "countersignature_date": "07/15/2026",
         "form_number": null,
         "endorsement_title": null,
         "endorsement_number": null,
@@ -512,9 +536,9 @@
         "additional_premium": null,
         "change_description": null,
         "coverages": null,
-        "total_premium": "$42,580",
-        "effective_date": "02/01/2026",
-        "expiration_date": "02/01/2027",
+        "total_premium": "$28,940",
+        "effective_date": "08/01/2026",
+        "expiration_date": "08/01/2027",
         "nr_kind": null,
         "nr_header_rows": null,
         "nr_columns": null,
@@ -524,14 +548,14 @@
       },
       {
         "title": "ACORD 25 Certificate of Liability Insurance",
-        "certificate_holder": "Parker Development Group LLC, 1550 Wewata St, Suite 40o, Denver, CO 8022",
+        "certificate_holder": "Summit Ridge Development LLC, 2200 S Broaway, Denver, C0 80210",
         "coverage_lines": [
           {
             "insurer_letter": "A",
             "coverage_type": "Commercial General Liability",
-            "policy_number": "No.",
-            "effective_date": "02/01/2026",
-            "expiration_date": "02/01/2027",
+            "policy_number": "BRN-482719-01",
+            "effective_date": "08/01/2026",
+            "expiration_date": "08/01/2027",
             "addl_insured": true,
             "subro_waived": true,
             "limits": [
@@ -540,12 +564,12 @@
                 "limit": "$1,000,000"
               },
               {
-                "coverage": "Damage to Rented Premises",
-                "limit": "$100,000"
+                "coverage": "Damage To Rented Premises",
+                "limit": "$300,000"
               },
               {
                 "coverage": "Medical Expense",
-                "limit": "$5,000"
+                "limit": "$10,000"
               },
               {
                 "coverage": "Personal & Advertising Injury",
@@ -563,12 +587,12 @@
             "premium": null
           },
           {
-            "insurer_letter": "A",
+            "insurer_letter": "B",
             "coverage_type": "Automobile Liability",
-            "policy_number": "No.",
-            "effective_date": "02/01/2026",
-            "expiration_date": "02/01/2027",
-            "addl_insured": false,
+            "policy_number": "BRN-482719-01",
+            "effective_date": "08/01/2026",
+            "expiration_date": "08/01/2027",
+            "addl_insured": true,
             "subro_waived": true,
             "limits": [
               {
@@ -579,13 +603,13 @@
             "premium": null
           },
           {
-            "insurer_letter": "A",
+            "insurer_letter": "E",
             "coverage_type": "Umbrella Liability",
-            "policy_number": "No.",
-            "effective_date": "02/01/2026",
-            "expiration_date": "02/01/2027",
-            "addl_insured": false,
-            "subro_waived": false,
+            "policy_number": "BRN-482719-01",
+            "effective_date": "08/01/2026",
+            "expiration_date": "08/01/2027",
+            "addl_insured": true,
+            "subro_waived": true,
             "limits": [
               {
                 "coverage": "Each Occurrence",
@@ -599,11 +623,11 @@
             "premium": null
           },
           {
-            "insurer_letter": "A",
+            "insurer_letter": "F",
             "coverage_type": "Workers Compensation",
-            "policy_number": "No.",
-            "effective_date": "02/01/2026",
-            "expiration_date": "02/01/2027",
+            "policy_number": "BRN-482719-01",
+            "effective_date": "08/01/2026",
+            "expiration_date": "08/01/2027",
             "addl_insured": false,
             "subro_waived": false,
             "limits": [
@@ -623,9 +647,9 @@
             "premium": null
           }
         ],
-        "description_of_operations": "Parker Development Group LLLC is included as additionaal innsured as required by written contract with respect o oongoing and completed operations onl where required by and pursuant too CG 20 10 04 133 nd C 20 37 04 13, subject to the polic termms and onditions. Coverage is primary and non-contributory here required by written contract. aiver of subrogation applies where required by written ccontract and where endosd by CG 24 04 05 09 and/or CA 04 44 12 19 as applicable.",
-        "authorized_representative": "Megan A. Torres, CIC",
-        "certificate_number": "TRV-COI-260215-0147",
+        "description_of_operations": "Summit idge Construction Inc. is inclluded as an additional insuuredd where required by written contract on Commercial Gneeral Liability and Automobile Liabilty. Coverage is primary and non-conntributory wwere equired by written contract. Wiverr of surogation applies where required by written contrac and as evidenced by endorsement foms CG 20 10 04 13, CG 20 37 04 13, CA 20 48 10 13, and WC 00 03 13.",
+        "authorized_representative": "Megann Keller, Commercial Lins ccount Manager",
+        "certificate_number": "C-7264189",
         "revision_number": null,
         "invoice_number": null,
         "invoice_date": null,
@@ -664,7 +688,7 @@
         "unrelated_body": null
       },
       {
-        "title": "Commercial Auto Endorsement",
+        "title": "Commercial General Liability Endorsement",
         "certificate_holder": null,
         "coverage_lines": null,
         "description_of_operations": null,
@@ -689,38 +713,38 @@
         "premium_summary": null,
         "countersignature": null,
         "countersignature_date": null,
-        "form_number": "CA 20 48 03 06",
-        "endorsement_title": "Designatd Uninsured Motor Vehiclle Coverage",
-        "endorsement_number": "TRV-CA-014",
+        "form_number": "CG 20 10 04 13",
+        "endorsement_title": "Additionl Insured - Owners, Lesseess or Contractors - Scheduled Person o Organization",
+        "endorsement_number": "CGX-0413-02",
         "schedule_rows": [
           {
-            "label": "Vehicle Added",
-            "value": "2024 Ford F-350 XL Crew Cab 4x4"
+            "label": "Named Insured",
+            "value": "Summit Ridge Construction Inc."
           },
           {
-            "label": "VIN",
-            "value": "1FT8W3BT9RED12345"
+            "label": "Scheduled Person or Organization",
+            "value": "Summit Ridge Development LLC"
           },
           {
-            "label": "Garaging Location",
-            "value": "9400 E Arapahoe Rd, Centennial, CO 80112"
+            "label": "Location/Project",
+            "value": "2200 S Broadway, Denver, CO 80210 - mixed-use podium project"
           },
           {
-            "label": "Use",
-            "value": "Contractor use - service and material hauling"
+            "label": "Policy Number",
+            "value": "BRN-482719-01"
           }
         ],
         "provisions": [
-          "Section II - Liabil1ty Coverage is amended to include the designated vehicle described in the Declaration5 and Schedule of Covered Auos You Own.",
-          "The Schedule of Covred Autos is amended to addd the following vehicle as a covered auto f0r Liability Coverage only, subject to all terms, coonditions, limitations and exclusions of the policy.",
-          "Premiuum for this endorsement is additinal to the poliy premium and is fully earned upon inception of the endorsement.",
-          "All 0ther term5 and conditions of this olicy remain changed."
+          "SECTION II - WHO IS AN INSURED is amended to include as a additional insured the peson or organization shown in he Schedule, but only withh respect to liability for bodily injury, pr0perty damage or personal and advertising injuryy caused, in whole or in part, by your acts or omissions or the accts or omissions of those acting o your behalf in he performance of your ongoing operations for the additional insued.",
+          "The insrance afforded to the aditional insed is limited to ongoing operations perfrmed for that addiional insured and applies nly to the extent required by written contract or agreement executed prior to the loss.",
+          "his insurance is primary and non-cotributry ith respect to any other vald and collectible insurance available to the aditinal insred when reequired by written contract or agrement.",
+          "All oher tems and conditions of this policy remain unchanged."
         ],
-        "additional_premium": "$285",
-        "change_description": "Adds one designated comercial vehicle t0 the auto schedule effective 02/01/2026.",
+        "additional_premium": "$350",
+        "change_description": "Ads Summit Ridge Development LLC as an additional insured or the specified project location.",
         "coverages": null,
         "total_premium": null,
-        "effective_date": "02/01/2026",
+        "effective_date": "08/01/2026",
         "expiration_date": null,
         "nr_kind": null,
         "nr_header_rows": null,

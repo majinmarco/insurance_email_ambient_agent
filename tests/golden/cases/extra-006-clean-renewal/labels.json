@@ -10,7 +10,7 @@
       "requested_effective_date": null,
       "requested_changes": "Prepare a renewal quote for the expiring policy.",
       "contact_name": "Hector Ramos",
-      "contact_phone": "813-555-0177"
+      "contact_phone": "(813) 555-0177"
     }
   },
   "attachments": [
@@ -27,10 +27,10 @@
           "extraction": {
             "named_insured": "Coastal Property Management LLC",
             "policy_number": "CPP-2214569",
-            "amount_due": 18750.0,
-            "billing_period": "01/15/2026 - 01/15/2027",
+            "amount_due": 18945.0,
+            "billing_period": "01/01/2027 - 01/01/2028",
             "policy_reference": "CPP-2214569",
-            "due_date": "2026-01-15"
+            "due_date": "2027-01-01"
           }
         }
       ],
@@ -56,8 +56,8 @@
           "extraction": {
             "named_insured": "Coastal Property Management LLC",
             "policy_number": "CPP-2214569",
-            "change_description": "Adds a scheduled retail premises location at 6801 N Dale Mabry Hwy, Tampa, FL 33614, with associated property limits.",
-            "effective_date": "2026-01-15"
+            "change_description": "Adds scheduled tenant improvement coverage for the Westshore Retail Center location effective on renewal.",
+            "effective_date": "2027-01-01"
           }
         }
       ],
@@ -84,12 +84,12 @@
             "named_insured": "Coastal Property Management LLC",
             "policy_number": "CPP-2214569",
             "coverages": {
-              "Commercial General Liability": "$8,950.00",
-              "Commercial Property": "$4,625.00",
-              "Commercial Umbrella Liability": "$2,950.00",
-              "Employment Practices Liability": "$1,175.00"
+              "Commercial General Liability": "$6,850",
+              "Business Personal Property": "$4,120",
+              "Commercial Umbrella Liability": "$2,980",
+              "Hired and Non-Owned Auto Liability": "$1,650"
             },
-            "total_premium": 18750.0
+            "total_premium": 18945.0
           }
         }
       ],

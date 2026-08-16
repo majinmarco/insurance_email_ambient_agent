@@ -18,7 +18,7 @@
       "multi_recipient": true,
       "body_only": true,
       "inconsistency": false,
-      "date_received": "2026-07-11T13:52:00+00:00"
+      "date_received": "2026-07-12T13:52:00+00:00"
     },
     "attachments": [
       {
@@ -58,37 +58,37 @@
       "contact_email": "rhalvorsen@midwestagri.coop",
       "contact_phone": "(515) 555-0182",
       "carrier_name": "Nationwide Agribusiness",
-      "effective_date": "2026-03-01",
-      "expiration_date": "2027-03-01",
+      "effective_date": "2025-04-01",
+      "expiration_date": "2026-04-01",
       "coverage_limits": [
         {
-          "coverage": "Commercial General Liability",
+          "coverage": "Commercial General Liability - Each Occurrence",
           "limit": "$1,000,000"
         },
         {
-          "coverage": "Business Personal Property",
-          "limit": "$2,500,000"
+          "coverage": "Commercial General Liability - General Aggregate",
+          "limit": "$2,000,000"
         },
         {
-          "coverage": "Commercial Auto Liability",
+          "coverage": "Business Auto Liability - Combined Single Limit",
           "limit": "$1,000,000"
         },
         {
-          "coverage": "Umbrella Liability",
+          "coverage": "Umbrella Liability - Each Occurrence",
           "limit": "$5,000,000"
         },
         {
-          "coverage": "Workers Compensation",
-          "limit": "Statutory"
+          "coverage": "Workers Compensation - Each Accident",
+          "limit": "$1,000,000"
         }
       ],
-      "total_premium": "$48,750",
+      "total_premium": "$84,750",
       "producer": {
         "agency": "Prairie States Insurance Cooperative",
-        "address": "1201 Grand Avenue, Suite 210, Des Moines, IA 50309",
-        "contact_name": "Commercial Lines Team",
-        "phone": "(515) 555-0248",
-        "fax": "(515) 555-0249",
+        "address": "2501 Grand Ave, Suite 410, Des Moines, IA 50312",
+        "contact_name": "Elena Martinez",
+        "phone": "(515) 555-4420",
+        "fax": "(515) 555-4421",
         "email": "commercial@prairiestatesins.com"
       },
       "insurers": [
@@ -99,44 +99,44 @@
         },
         {
           "letter": "B",
-          "name": "Allied Property & Casualty Insurance Company",
-          "naic": "42579"
+          "name": "Farmland Mutual Insurance Company",
+          "naic": "22145"
         },
         {
           "letter": "C",
-          "name": "Nationwide Mutual Insurance Company",
-          "naic": "23787"
+          "name": "Insurance Company of the Midwest",
+          "naic": "14589"
         },
         {
           "letter": "D",
-          "name": "Cincinnati Insurance Company",
-          "naic": "76236"
+          "name": "Great Plains Indemnity Company",
+          "naic": "33844"
         },
         {
           "letter": "E",
-          "name": "Westfield Insurance Company",
-          "naic": "24112"
+          "name": "AgriSure Casualty Company",
+          "naic": "41267"
         },
         {
           "letter": "F",
-          "name": "Acadia Insurance Company",
-          "naic": "31325"
+          "name": "Heartland Specialty Insurance Company",
+          "naic": "50891"
         }
       ],
-      "business_description": "Farm supply, grain handling, and agronomy services",
+      "business_description": "Farm supply, grain handling, and agronomy services including fertilizer storage, seed sales, and custom application support",
       "entity_type": "Cooperative",
-      "fein": "47-2864913",
+      "fein": "47-2861934",
       "naic_carrier": "28223"
     },
     "email": {
-      "subject": "Re: Request for mid-term endorsement: Midwest AgriSupply Cooperative - Policy FARM-1120934 [Ref# 87794]",
-      "body": "Please see attached \u2014 thanks.\n\nOn Wed, Jul 1, 2026 11:47 AM, Commercial Lines Team <commercial@prairiestatesins.com> wrote:\n> Received, thank you. We'll need the current loss runs before we can release terms.\n>\n> Regards,\n> Commercial Lines Team\n\nRoger Halvorsen\nMidwest AgriSupply Cooperative\n\nCONFIDENTIALITY NOTICE: This message and any attachments are intended solely for the addressee and may contain confidential information.",
-      "sender": "Roger Halvorsen <rhalvorsen@midwestagri.coop>",
-      "recipient": "commercial@prairiestatesins.com, newbusiness@prairiestatesins.com"
+      "subject": "Re: Request for mid-term endorsement \u2013 Midwest AgriSupply Cooperative, Policy FARM-1120934 [Ref# 87794]",
+      "body": "Please see attached \u2014 thanks.\n\nOn Wed, Jul 1, 2026 11:47 AM, Elena Martinez <commercial@prairiestatesins.com> wrote:\n> Received, thank you. We'll need the current loss runs before we can release terms.\n>\n> Regards,\n> Elena Martinez\n\nRoger Halvorsen\nMidwest AgriSupply Cooperative\n\nCONFIDENTIALITY NOTICE: This message and any attachments are intended solely for the addressee and may contain confidential information.",
+      "sender": "Prairie States Insurance Cooperative <commercial@prairiestatesins.com>",
+      "recipient": "Roger Halvorsen <rhalvorsen@midwestagri.coop>, newbusiness@midwestagri.coop"
     },
     "documents": [
       {
-        "title": "Submission Cover Letter - Mid-Term Change Request",
+        "title": "Submission Cover Letter",
         "certificate_holder": null,
         "coverage_lines": null,
         "description_of_operations": null,
@@ -187,56 +187,62 @@
             "value": "Nationwide Agribusiness"
           },
           {
-            "label": "Requested Effective Date",
-            "value": "04/15/2026"
-          },
-          {
             "label": "Prepared By",
             "value": "Prairie States Insurance Cooperative"
           },
           {
-            "label": "Prepared For",
+            "label": "Contact",
             "value": "Roger Halvorsen"
+          },
+          {
+            "label": "Requested Effective Date",
+            "value": "05/15/2025"
           }
         ],
         "nr_columns": [
-          "Line No.",
-          "Item",
-          "Current Status",
-          "Requested Change",
-          "Remarks"
+          "Reference",
+          "Details",
+          "Status"
         ],
         "nr_rows": [
           {
             "cells": [
-              "1",
-              "Commercial auto schedule",
-              "In force",
-              "Add 2025 Ford F-550 delivery truck, VIN 1FD0W5HT3SED12345",
-              "Vehicle to be garaged at 1750 NE Broadway Ave, Des Moines, IA 50313"
+              "Account review",
+              "Mid-term policy change request received for endorsement processing",
+              "Open"
             ]
           },
           {
             "cells": [
-              "2",
-              "Agronomy operations location",
-              "In force",
-              "Update location description",
-              "Confirm service and storage use at west lot entrance"
+              "Location schedule",
+              "Add grain handling location at 4120 SE Vandalia Dr, Des Moines, IA 50320",
+              "Pending underwriting"
             ]
           },
           {
             "cells": [
-              "3",
+              "Auto schedule",
+              "Add 2025 Freightliner M2-106 service truck, VIN 1FVACXDT5NHJK4412",
+              "Pending underwriting"
+            ]
+          },
+          {
+            "cells": [
+              "Limits review",
+              "Increase Umbrella Liability from $5,000,000 to $7,000,000",
+              "Pending approval"
+            ]
+          },
+          {
+            "cells": [
               "Named insured",
-              "In force",
-              "No change requested",
-              "Maintain Midwest AgriSupply Cooperative as named insured"
+              "Update to Midwest AgriSupply Cooperative d/b/a Midwest AgriSupply",
+              "Pending endorsement"
             ]
           }
         ],
-        "unrelated_subtitle": "Mid-Term Change Submission for Review",
-        "unrelated_body": "Please review the enclosed change request summary for the in-force commercial package issued to Midwest AgriSupply Cooperative. This submission is being provided to document the requested mid-term updates and to support underwriting review prior to endorsement issuance."
+        "unrelated_subtitle": "Submission reference for underwriting review only",
+        "unrelated_body": "Please review the enclosed change request and advise of any supplemental exposures, valuation details, or vehicle schedule information needed to complete the mid-term endorsement. This communication is for submission tracking and should not be construed as a certificate, declaration, invoice, or endorsement."
       }
     ]
   }

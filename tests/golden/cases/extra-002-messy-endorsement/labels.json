@@ -7,10 +7,10 @@
     "extraction": {
       "named_insured": "Coastal Property Management LLC",
       "policy_number": "CPP-2214569",
-      "requested_effective_date": "2026-02-01",
+      "requested_effective_date": "2025-04-01",
       "requested_changes": "Endorse the in-force policy (mid-term change).",
       "contact_name": "Hector Ramos",
-      "contact_phone": "813-555-0177"
+      "contact_phone": "(813) 555-0177"
     }
   },
   "attachments": [
@@ -27,10 +27,10 @@
           "extraction": {
             "named_insured": "Coastal Property Management LLC",
             "policy_number": "CPP-2214569",
-            "amount_due": 18640.0,
-            "billing_period": "02/01/2026 - 02/01/2027",
+            "amount_due": 18513.0,
+            "billing_period": "04/01/2025 - 04/01/2026",
             "policy_reference": "CPP-2214569",
-            "due_date": "2026-03-31"
+            "due_date": "2025-07-01"
           }
         },
         {
@@ -42,12 +42,12 @@
             "named_insured": "Coastal Property Management LLC",
             "policy_number": "CPP-2214569",
             "coverages": {
-              "Commercial General Liability": "$6,250",
-              "Business Personal Property": "$2,100",
-              "Commercial Automobile Liability": "$3,860",
-              "Commercial Umbrella Liability": "$5,640"
+              "Commercial General Liability": "$4,850",
+              "Property - Building and Business Personal Property": "$7,420",
+              "Business Auto Liability": "$1,680",
+              "Umbrella Liability": "$2,900"
             },
-            "total_premium": 18640.0
+            "total_premium": 17960.0
           }
         }
       ],
@@ -76,8 +76,8 @@
           "extraction": {
             "named_insured": "Coastal Property Management LLC",
             "policy_number": "CPP-2214569",
-            "change_description": "UUpdates the named insured o Coatal Property Management LLC d/bb/a oaastal Retail anagement efffective 04/15/2026.",
-            "effective_date": "2026-04-15"
+            "change_description": "Updates thhe ammed insured ad adds one scheeduled managed retail-ccentr locaion effective 07/15/2025.",
+            "effective_date": "2025-07-15"
           }
         },
         {
@@ -89,12 +89,12 @@
             "named_insured": "Coastal Property Management LLC",
             "policy_number": "CPP-2214569",
             "coverages": {
-              "Commercial General Liability": "$6,375",
-              "Business Personal Property": "$2,100",
-              "Commercial Automobile Liability": "$3,985",
-              "Commercial Umbrella Liability": "$5,790"
+              "Commercial General Liability": "$4,850",
+              "Property - Building and Business Personal Property": "$7,620",
+              "Business Auto Liability": "$1,680",
+              "Umbrella Liability": "$2,900"
             },
-            "total_premium": 19040.0
+            "total_premium": 18160.0
           }
         }
       ],

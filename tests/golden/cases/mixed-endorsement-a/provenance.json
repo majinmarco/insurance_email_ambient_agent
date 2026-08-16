@@ -18,7 +18,7 @@
       "multi_recipient": false,
       "body_only": false,
       "inconsistency": true,
-      "date_received": "2026-06-25T08:10:00+00:00"
+      "date_received": "2026-06-26T08:10:00+00:00"
     },
     "attachments": [
       {
@@ -58,8 +58,8 @@
       "contact_email": "kdelgado@riversidemfg.com",
       "contact_phone": "(216) 555-0173",
       "carrier_name": "The Hartford",
-      "effective_date": "2026-03-01",
-      "expiration_date": "2027-03-01",
+      "effective_date": "2026-02-01",
+      "expiration_date": "2027-02-01",
       "coverage_limits": [
         {
           "coverage": "General Aggregate",
@@ -80,38 +80,22 @@
         {
           "coverage": "Damage to Premises Rented to You",
           "limit": "$300,000"
-        },
-        {
-          "coverage": "Medical Expense Limit",
-          "limit": "$10,000"
-        },
-        {
-          "coverage": "Combined Single Limit",
-          "limit": "$1,000,000"
-        },
-        {
-          "coverage": "Business Personal Property",
-          "limit": "$850,000"
-        },
-        {
-          "coverage": "Actual Cash Value",
-          "limit": "$850,000"
         }
       ],
-      "total_premium": "$18,475",
+      "total_premium": "$18,750",
       "producer": {
         "agency": "Great Lakes Insurance Advisors",
-        "address": "1500 West Third Street, Suite 420, Cleveland, OH 44113",
-        "contact_name": "Jordan Ellis",
-        "phone": "(216) 555-0198",
-        "fax": "(216) 555-0199",
+        "address": "1200 Superior Avenue, Suite 1800, Cleveland, OH 44114",
+        "contact_name": "Alyssa Mercer",
+        "phone": "(216) 555-0148",
+        "fax": "(216) 555-0149",
         "email": "submissions@greatlakesins.com"
       },
       "insurers": [
         {
           "letter": "A",
           "name": "The Hartford",
-          "naic": "29424"
+          "naic": "19682"
         },
         {
           "letter": "B",
@@ -125,74 +109,74 @@
         },
         {
           "letter": "D",
-          "name": "Hartford Accident and Indemnity Company",
-          "naic": "22357"
+          "name": "Hartford Underwriters Insurance Company",
+          "naic": "30104"
         },
         {
           "letter": "E",
-          "name": "Twin City Fire Insurance Company",
-          "naic": "29459"
+          "name": "Trumbull Insurance Company",
+          "naic": "27120"
         },
         {
           "letter": "F",
-          "name": "Hartford Underwriters Insurance Company",
-          "naic": "30104"
+          "name": "Tudor Insurance Company",
+          "naic": "13242"
         }
       ],
       "business_description": "Sheet-metal fabrication and industrial machining",
       "entity_type": "Corporation",
-      "fein": "34-8129476",
-      "naic_carrier": "29424"
+      "fein": "34-2187645",
+      "naic_carrier": "19682"
     },
     "email": {
-      "subject": "Fwd: Endorsement request for Riverside Manufacturing Co. policy SBA-4471902",
-      "body": "Good morning,\n\nPlease process an endorsement on Riverside Manufacturing Co. policy SBA-4471902 effective 03/15/2026. We need to add a newly leased production location at 2875 Independence Road, Cleveland, OH 44131, and increase the Business Personal Property limit to reflect the added machinery and inventory at that site.\n\nPlease confirm once the endorsement has been issued and advise if any additional information is needed.\n\nThank you,\nKaren Delgado\nRiverside Manufacturing Co.\n\nCorrection: the total premium should read slightly lower than the attached invoice; we're reconciling.\n\nOn Wed, Jul 1, 2026 11:47 AM, Jordan Ellis <submissions@greatlakesins.com> wrote:\n> Received, thank you. We'll need the current loss runs before we can release terms.\n>\n> Regards,\n> Jordan Ellis",
+      "subject": "Fwd: Request for Mid-Term Endorsement - Riverside Manufacturing Co. Policy SBA-4471902",
+      "body": "Good morning,\n\nPlease submit a mid-term endorsement request for Riverside Manufacturing Co. on policy SBA-4471902 effective 06/15/2026.\n\nRequested change: add a recently acquired CNC machining center location at 2840 Victory Parkway, Cleveland, OH 44114, update the policy schedule to reflect the additional premises, and confirm any required premium adjustment.\n\nPlease let me know if you need any supplemental information or forms to process the endorsement.\n\nThank you,\nKaren Delgado\n\nCorrection: the total premium should read slightly lower than the attached invoice; we're reconciling.\n\nOn Wed, Jul 1, 2026 11:47 AM, Alyssa Mercer <submissions@greatlakesins.com> wrote:\n> Received, thank you. We'll need the current loss runs before we can release terms.\n>\n> Regards,\n> Alyssa Mercer",
       "sender": "Karen Delgado <kdelgado@riversidemfg.com>",
-      "recipient": "submissions@greatlakesins.com"
+      "recipient": "Alyssa Mercer <submissions@greatlakesins.com>"
     },
     "documents": [
       {
-        "title": "Premium Invoice",
+        "title": "Premium Invoice - Riverside Manufacturing Co. - Policy SBA-4471902",
         "certificate_holder": null,
         "coverage_lines": null,
         "description_of_operations": null,
         "authorized_representative": null,
         "certificate_number": null,
         "revision_number": null,
-        "invoice_number": "INV-2603174",
-        "invoice_date": "03/01/2026",
-        "account_number": "ACCT-441902",
+        "invoice_number": "INV-684219",
+        "invoice_date": "06/18/2026",
+        "account_number": "AC-4471902",
         "line_items": [
           {
             "description": "Policy Premium",
-            "amount": "$17,250.00"
+            "amount": "$2,100.00"
           },
           {
             "description": "Terrorism (TRIA)",
-            "amount": "$165.00"
+            "amount": "$45.00"
           },
           {
-            "description": "Ohio Surplus Lines Tax and Surcharge",
-            "amount": "$742.50"
+            "description": "Ohio Surplus Lines Tax",
+            "amount": "$63.50"
           },
           {
             "description": "Broker Fee",
-            "amount": "$250.00"
+            "amount": "$150.00"
           },
           {
             "description": "Prior Balance",
             "amount": "$0.00"
           }
         ],
-        "subtotal": "$17,415.00",
-        "taxes": "$742.50",
-        "fees": "$250.00",
+        "subtotal": "$2,145.00",
+        "taxes": "$63.50",
+        "fees": "$150.00",
         "prior_balance": "$0.00",
-        "amount_due": "$18,407.50",
-        "billing_period": "03/01/2026 - 03/01/2027",
-        "due_date": "03/15/2026",
-        "payment_methods": "ACH, check, or credit card through the insured portal",
-        "remit_to": "The Hrtford, P.O. Box 660605, Dallas, TX 75266-0605",
+        "amount_due": "$2,358.50",
+        "billing_period": "06/15/2026 - 02/01/2027",
+        "due_date": "07/18/2026",
+        "payment_methods": "ACH, check, or wire transfer",
+        "remit_to": "Great Lakes Insurance Advisos, Lockbox 4471902, P.O. Box 740000, Cincinnati, OH 45274-0001",
         "coverage_parts": null,
         "forms_schedule": null,
         "premium_summary": null,

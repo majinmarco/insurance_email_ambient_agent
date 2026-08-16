@@ -18,7 +18,7 @@
       "multi_recipient": true,
       "body_only": false,
       "inconsistency": false,
-      "date_received": "2026-07-07T15:28:00+00:00"
+      "date_received": "2026-07-08T15:28:00+00:00"
     },
     "attachments": [
       {
@@ -100,14 +100,14 @@
   "raw_scenario": {
     "shared": {
       "named_insured": "Midwest AgriSupply Cooperative",
-      "policy_number": "NBR-AG-240917",
+      "policy_number": "NCB-4829176-00",
       "insured_address": "1750 NE Broadway Ave, Des Moines, IA 50313",
       "contact_name": "Roger Halvorsen",
       "contact_email": "rhalvorsen@midwestagri.coop",
       "contact_phone": "(515) 555-0182",
       "carrier_name": "Nationwide Agribusiness",
-      "effective_date": "2024-09-17",
-      "expiration_date": "2025-09-17",
+      "effective_date": "2026-01-01",
+      "expiration_date": "2027-01-01",
       "coverage_limits": [
         {
           "coverage": "Commercial General Liability",
@@ -126,57 +126,57 @@
           "limit": "Statutory"
         }
       ],
-      "total_premium": "$42,860",
+      "total_premium": "$48,760",
       "producer": {
         "agency": "Prairie States Insurance Cooperative",
-        "address": "1200 Grand Ave, Suite 800, Des Moines, IA 50309",
-        "contact_name": "Marianne Keeler",
-        "phone": "(515) 555-4400",
-        "fax": "(515) 555-4401",
+        "address": "4201 Westown Pkwy, Suite 210, West Des Moines, IA 50266",
+        "contact_name": "Megan L. Whitaker, CPCU",
+        "phone": "(515) 555-0418",
+        "fax": "(515) 555-0419",
         "email": "commercial@prairiestatesins.com"
       },
       "insurers": [
         {
           "letter": "A",
-          "name": "Nationwide Agribusiness Insurance Company",
-          "naic": "28223"
-        },
-        {
-          "letter": "B",
-          "name": "Allied Property and Casualty Insurance Company",
-          "naic": "42579"
-        },
-        {
-          "letter": "C",
           "name": "Nationwide Mutual Insurance Company",
           "naic": "23787"
         },
         {
+          "letter": "B",
+          "name": "Nationwide Agribusiness Insurance Company",
+          "naic": "28223"
+        },
+        {
+          "letter": "C",
+          "name": "Nationwide Assurance Company",
+          "naic": "10723"
+        },
+        {
           "letter": "D",
-          "name": "Nationwide Mutual Fire Insurance Company",
-          "naic": "12000"
+          "name": "Farmland Mutual Insurance Company",
+          "naic": "13935"
         },
         {
           "letter": "E",
-          "name": "Wesco Insurance Company",
-          "naic": "10030"
+          "name": "American Family Connect Property and Casualty Insurance Company",
+          "naic": "23450"
         },
         {
           "letter": "F",
-          "name": "Berkley Assurance Company",
-          "naic": "13070"
+          "name": "Depositors Insurance Company",
+          "naic": "21105"
         }
       ],
       "business_description": "Farm supply, grain handling, and agronomy services",
       "entity_type": "Cooperative",
-      "fein": "42-1764893",
+      "fein": "42-1867345",
       "naic_carrier": "28223"
     },
     "email": {
       "subject": "",
-      "body": "Hi Underwriting Team,\n\nPlease quote and, if acceptable, bind coverage for Midwest AgriSupply Cooperative at 1750 NE Broadway Ave, Des Moines, IA 50313. This is a brand-new account with no prior policy number on file. Requested effective date is 09/17/2024.\n\nRisk summary: farm supply, grain handling, and agronomy services. Please review the attached submission materials and issue indications for Commercial General Liability, Automobile Liability, Umbrella Liability, and Workers Compensation.\n\nThank you,\nPrairie States Insurance Cooperative\n\nRoger Halvorsen\nMidwest AgriSupply Cooperative\n\nCONFIDENTIALITY NOTICE: This message and any attachments are intended solely for the addressee and may contain confidential information.",
-      "sender": "Marianne Keeler <commercial@prairiestatesins.com>",
-      "recipient": "Nationwide Agribusiness Underwriting, newbusiness@carrierintake.com"
+      "body": "Good morning,\n\nPlease quote and prepare to bind the new commercial package for Midwest AgriSupply Cooperative at 1750 NE Broadway Ave, Des Moines, IA 50313, effective 01/01/2026.\n\nThis is a brand-new account with no existing policy number. The insured is a Cooperative engaged in farm supply, grain handling, and agronomy services. Please review for CGL, Auto, Umbrella, and Workers Compensation with the requested program limits attached.\n\nIf terms are acceptable, we would appreciate a bind indication and issuance instructions for the new policy.\n\nThank you,\nPrairie States Insurance Cooperative\n\nRoger Halvorsen\nMidwest AgriSupply Cooperative\n\nCONFIDENTIALITY NOTICE: This message and any attachments are intended solely for the addressee and may contain confidential information.",
+      "sender": "Megan L. Whitaker <commercial@prairiestatesins.com>",
+      "recipient": "Roger Halvorsen <rhalvorsen@midwestagri.coop>, newbusiness@midwestagri.coop"
     },
     "documents": [
       {
@@ -189,7 +189,7 @@
         "revision_number": null,
         "invoice_number": null,
         "invoice_date": null,
-        "account_number": null,
+        "account_number": "ACCT-771204",
         "line_items": null,
         "subtotal": null,
         "taxes": null,
@@ -202,11 +202,11 @@
         "remit_to": null,
         "coverage_parts": [
           {
-            "insurer_letter": "A",
+            "insurer_letter": "B",
             "coverage_type": "Commercial General Liability",
-            "policy_number": "NBR-AG-240917",
-            "effective_date": "09/17/2024",
-            "expiration_date": "09/17/2025",
+            "policy_number": "NCB-4829176-00",
+            "effective_date": "01/01/2026",
+            "expiration_date": "01/01/2027",
             "addl_insured": null,
             "subro_waived": null,
             "limits": [
@@ -235,14 +235,14 @@
                 "limit": "$2,000,000"
               }
             ],
-            "premium": "$12,450"
+            "premium": "$18,940"
           },
           {
             "insurer_letter": "B",
-            "coverage_type": "Automobile Liability",
-            "policy_number": "NBR-AG-240917",
-            "effective_date": "09/17/2024",
-            "expiration_date": "09/17/2025",
+            "coverage_type": "Commercial Automobile Liability",
+            "policy_number": "NCB-4829176-00",
+            "effective_date": "01/01/2026",
+            "expiration_date": "01/01/2027",
             "addl_insured": null,
             "subro_waived": null,
             "limits": [
@@ -251,14 +251,14 @@
                 "limit": "$1,000,000"
               }
             ],
-            "premium": "$8,920"
+            "premium": "$9,840"
           },
           {
-            "insurer_letter": "C",
-            "coverage_type": "Umbrella Liability",
-            "policy_number": "NBR-AG-240917",
-            "effective_date": "09/17/2024",
-            "expiration_date": "09/17/2025",
+            "insurer_letter": "B",
+            "coverage_type": "Commercial Umbrella Liability",
+            "policy_number": "NCB-4829176-00",
+            "effective_date": "01/01/2026",
+            "expiration_date": "01/01/2027",
             "addl_insured": null,
             "subro_waived": null,
             "limits": [
@@ -271,45 +271,53 @@
                 "limit": "$5,000,000"
               }
             ],
-            "premium": "$9,280"
+            "premium": "$11,660"
           },
           {
-            "insurer_letter": "A",
-            "coverage_type": "Workers Compensation",
-            "policy_number": "NBR-AG-240917",
-            "effective_date": "09/17/2024",
-            "expiration_date": "09/17/2025",
+            "insurer_letter": "B",
+            "coverage_type": "Workers Compensation and Employers Liability",
+            "policy_number": "NCB-4829176-00",
+            "effective_date": "01/01/2026",
+            "expiration_date": "01/01/2027",
             "addl_insured": null,
             "subro_waived": null,
             "limits": [
               {
                 "coverage": "E.L. Each Accident",
-                "limit": "Statutory"
+                "limit": "$1,000,000"
               },
               {
                 "coverage": "E.L. Disease-Ea Employee",
-                "limit": "$500,000"
+                "limit": "$1,000,000"
               },
               {
                 "coverage": "E.L. Disease-Policy Limit",
-                "limit": "$500,000"
+                "limit": "$1,000,000"
               }
             ],
-            "premium": "$10,000"
+            "premium": "$4,880"
           }
         ],
         "forms_schedule": [
+          {
+            "form_number": "IL 00 17 11 98",
+            "title": "Common Policy Conditions"
+          },
+          {
+            "form_number": "IL 00 21 09 08",
+            "title": "Nuclear Energy Liability Exclusion Endorsement"
+          },
           {
             "form_number": "CG 00 01 04 13",
             "title": "Commercial General Liability Coverage Form"
           },
           {
-            "form_number": "CG 21 44 07 98",
-            "title": "Limitation of Coverage to Designated Premises or Project"
+            "form_number": "CG 20 10 04 13",
+            "title": "Additional Insured - Owners, Lessees Or Contractors - Scheduled Person Or Organization"
           },
           {
-            "form_number": "CG 20 10 04 13",
-            "title": "Additional Insured - Owners, Lessees or Contractors - Scheduled Person or Organization"
+            "form_number": "CG 20 37 04 13",
+            "title": "Additional Insured - Owners, Lessees Or Contractors - Completed Operations"
           },
           {
             "form_number": "CA 00 01 11 20",
@@ -320,42 +328,46 @@
             "title": "Designated Insured Endorsement"
           },
           {
-            "form_number": "UM 00 01 01 15",
+            "form_number": "CA 99 17 11 20",
+            "title": "Broadened Coverage - Mobile Equipment as Auto"
+          },
+          {
+            "form_number": "CU 00 01 04 13",
             "title": "Commercial Umbrella Coverage Form"
           },
           {
-            "form_number": "WC 00 00 00 C",
+            "form_number": "WC 00 00 00 A",
             "title": "Workers Compensation and Employers Liability Insurance Policy"
           },
           {
-            "form_number": "IL 00 17 11 98",
-            "title": "Common Policy Conditions"
+            "form_number": "WC 42 03 04 B",
+            "title": "Premium Discount Schedule"
           },
           {
-            "form_number": "IL 00 21 09 08",
-            "title": "Nuclear Energy Liability Exclusion Endorsement"
+            "form_number": "TRIA-2025",
+            "title": "Terrorism Risk Insurance Program Disclosure"
           }
         ],
         "premium_summary": [
           {
             "description": "Policy Premium",
-            "amount": "$40,650"
+            "amount": "$45,320"
           },
           {
-            "description": "TRIA",
-            "amount": "$410"
+            "description": "Terrorism (TRIA)",
+            "amount": "$125"
           },
           {
-            "description": "State Tax",
-            "amount": "$1,500"
+            "description": "State Premium Tax",
+            "amount": "$2,755"
           },
           {
             "description": "Policy Fee",
-            "amount": "$300"
+            "amount": "$560"
           }
         ],
-        "countersignature": "Marianne Keeler",
-        "countersignature_date": "09/10/2024",
+        "countersignature": "Nationwide Agribusiness Insurance Company",
+        "countersignature_date": "12/15/2025",
         "form_number": null,
         "endorsement_title": null,
         "endorsement_number": null,
@@ -364,9 +376,9 @@
         "additional_premium": null,
         "change_description": null,
         "coverages": null,
-        "total_premium": "$42,860",
-        "effective_date": "09/17/2024",
-        "expiration_date": "09/17/2025",
+        "total_premium": "$48,760",
+        "effective_date": "01/01/2026",
+        "expiration_date": "01/01/2027",
         "nr_kind": null,
         "nr_header_rows": null,
         "nr_columns": null,
@@ -384,7 +396,7 @@
         "revision_number": null,
         "invoice_number": null,
         "invoice_date": null,
-        "account_number": null,
+        "account_number": "ACCT-771204",
         "line_items": null,
         "subtotal": null,
         "taxes": null,
@@ -397,11 +409,11 @@
         "remit_to": null,
         "coverage_parts": [
           {
-            "insurer_letter": "A",
+            "insurer_letter": "B",
             "coverage_type": "Commercial General Liability",
-            "policy_number": "NBR-AG-240917",
-            "effective_date": "09/17/2024",
-            "expiration_date": "09/17/2025",
+            "policy_number": "NCB-4829176-00",
+            "effective_date": "01/01/2026",
+            "expiration_date": "01/01/2027",
             "addl_insured": null,
             "subro_waived": null,
             "limits": [
@@ -430,14 +442,14 @@
                 "limit": "$2,000,000"
               }
             ],
-            "premium": "$12,450"
+            "premium": "$18,940"
           },
           {
             "insurer_letter": "B",
-            "coverage_type": "Automobile Liability",
-            "policy_number": "NBR-AG-240917",
-            "effective_date": "09/17/2024",
-            "expiration_date": "09/17/2025",
+            "coverage_type": "Commercial Automobile Liability",
+            "policy_number": "NCB-4829176-00",
+            "effective_date": "01/01/2026",
+            "expiration_date": "01/01/2027",
             "addl_insured": null,
             "subro_waived": null,
             "limits": [
@@ -446,14 +458,14 @@
                 "limit": "$1,000,000"
               }
             ],
-            "premium": "$8,920"
+            "premium": "$9,840"
           },
           {
-            "insurer_letter": "C",
-            "coverage_type": "Umbrella Liability",
-            "policy_number": "NBR-AG-240917",
-            "effective_date": "09/17/2024",
-            "expiration_date": "09/17/2025",
+            "insurer_letter": "B",
+            "coverage_type": "Commercial Umbrella Liability",
+            "policy_number": "NCB-4829176-00",
+            "effective_date": "01/01/2026",
+            "expiration_date": "01/01/2027",
             "addl_insured": null,
             "subro_waived": null,
             "limits": [
@@ -466,45 +478,53 @@
                 "limit": "$5,000,000"
               }
             ],
-            "premium": "$9,280"
+            "premium": "$11,660"
           },
           {
-            "insurer_letter": "A",
-            "coverage_type": "Workers Compensation",
-            "policy_number": "NBR-AG-240917",
-            "effective_date": "09/17/2024",
-            "expiration_date": "09/17/2025",
+            "insurer_letter": "B",
+            "coverage_type": "Workers Compensation and Employers Liability",
+            "policy_number": "NCB-4829176-00",
+            "effective_date": "01/01/2026",
+            "expiration_date": "01/01/2027",
             "addl_insured": null,
             "subro_waived": null,
             "limits": [
               {
                 "coverage": "E.L. Each Accident",
-                "limit": "Statutory"
+                "limit": "$1,000,000"
               },
               {
                 "coverage": "E.L. Disease-Ea Employee",
-                "limit": "$500,000"
+                "limit": "$1,000,000"
               },
               {
                 "coverage": "E.L. Disease-Policy Limit",
-                "limit": "$500,000"
+                "limit": "$1,000,000"
               }
             ],
-            "premium": "$10,000"
+            "premium": "$4,880"
           }
         ],
         "forms_schedule": [
+          {
+            "form_number": "IL 00 17 11 98",
+            "title": "Common Policy Conditions"
+          },
+          {
+            "form_number": "IL 00 21 09 08",
+            "title": "Nuclear Energy Liability Exclusion Endorsement"
+          },
           {
             "form_number": "CG 00 01 04 13",
             "title": "Commercial General Liability Coverage Form"
           },
           {
-            "form_number": "CG 21 44 07 98",
-            "title": "Limitation of Coverage to Designated Premises or Project"
+            "form_number": "CG 20 10 04 13",
+            "title": "Additional Insured - Owners, Lessees Or Contractors - Scheduled Person Or Organization"
           },
           {
-            "form_number": "CG 20 10 04 13",
-            "title": "Additional Insured - Owners, Lessees or Contractors - Scheduled Person or Organization"
+            "form_number": "CG 20 37 04 13",
+            "title": "Additional Insured - Owners, Lessees Or Contractors - Completed Operations"
           },
           {
             "form_number": "CA 00 01 11 20",
@@ -515,42 +535,46 @@
             "title": "Designated Insured Endorsement"
           },
           {
-            "form_number": "UM 00 01 01 15",
+            "form_number": "CA 99 17 11 20",
+            "title": "Broadened Coverage - Mobile Equipment as Auto"
+          },
+          {
+            "form_number": "CU 00 01 04 13",
             "title": "Commercial Umbrella Coverage Form"
           },
           {
-            "form_number": "WC 00 00 00 C",
+            "form_number": "WC 00 00 00 A",
             "title": "Workers Compensation and Employers Liability Insurance Policy"
           },
           {
-            "form_number": "IL 00 17 11 98",
-            "title": "Common Policy Conditions"
+            "form_number": "WC 42 03 04 B",
+            "title": "Premium Discount Schedule"
           },
           {
-            "form_number": "IL 00 21 09 08",
-            "title": "Nuclear Energy Liability Exclusion Endorsement"
+            "form_number": "TRIA-2025",
+            "title": "Terrorism Risk Insurance Program Disclosure"
           }
         ],
         "premium_summary": [
           {
             "description": "Policy Premium",
-            "amount": "$40,650"
+            "amount": "$45,320"
           },
           {
-            "description": "TRIA",
-            "amount": "$410"
+            "description": "Terrorism (TRIA)",
+            "amount": "$125"
           },
           {
-            "description": "State Tax",
-            "amount": "$1,500"
+            "description": "State Premium Tax",
+            "amount": "$2,755"
           },
           {
             "description": "Policy Fee",
-            "amount": "$300"
+            "amount": "$560"
           }
         ],
-        "countersignature": "Marianne Keeler",
-        "countersignature_date": "09/10/2024",
+        "countersignature": "Nationwide Agribusiness Insurance Company",
+        "countersignature_date": "12/15/2025",
         "form_number": null,
         "endorsement_title": null,
         "endorsement_number": null,
@@ -559,9 +583,9 @@
         "additional_premium": null,
         "change_description": null,
         "coverages": null,
-        "total_premium": "$42,860",
-        "effective_date": "09/17/2024",
-        "expiration_date": "09/17/2025",
+        "total_premium": "$48,760",
+        "effective_date": "01/01/2026",
+        "expiration_date": "01/01/2027",
         "nr_kind": null,
         "nr_header_rows": null,
         "nr_columns": null,
@@ -570,15 +594,15 @@
         "unrelated_body": null
       },
       {
-        "title": "Certificate of Liability Insurance",
-        "certificate_holder": "Iowa State University Facilities Planning and Management, 205 University Blvd, Ames, IA 50010",
+        "title": "ACORD 25 Certificate of Liability Insurance",
+        "certificate_holder": "Valley Grain Terminal, LLC 900 E 14th St, Des Moines, IA 50316",
         "coverage_lines": [
           {
-            "insurer_letter": "A",
+            "insurer_letter": "B",
             "coverage_type": "Commercial General Liability",
-            "policy_number": "NBR-AG-240917",
-            "effective_date": "09/17/2024",
-            "expiration_date": "09/17/2025",
+            "policy_number": "NCB-4829176-00",
+            "effective_date": "01/01/2026",
+            "expiration_date": "01/01/2027",
             "addl_insured": true,
             "subro_waived": true,
             "limits": [
@@ -591,11 +615,11 @@
                 "limit": "$300,000"
               },
               {
-                "coverage": "Medical Expense Limit",
+                "coverage": "Medical Exp",
                 "limit": "$5,000"
               },
               {
-                "coverage": "Personal & Advertising Injury",
+                "coverage": "Personal & Adv Injury",
                 "limit": "$1,000,000"
               },
               {
@@ -603,7 +627,7 @@
                 "limit": "$2,000,000"
               },
               {
-                "coverage": "Products-Completed Operations Aggregate",
+                "coverage": "Products-Comp/Op Agg",
                 "limit": "$2,000,000"
               }
             ],
@@ -612,9 +636,9 @@
           {
             "insurer_letter": "B",
             "coverage_type": "Automobile Liability",
-            "policy_number": "NBR-AG-240917",
-            "effective_date": "09/17/2024",
-            "expiration_date": "09/17/2025",
+            "policy_number": "NCB-4829176-00",
+            "effective_date": "01/01/2026",
+            "expiration_date": "01/01/2027",
             "addl_insured": true,
             "subro_waived": true,
             "limits": [
@@ -626,11 +650,11 @@
             "premium": null
           },
           {
-            "insurer_letter": "C",
+            "insurer_letter": "B",
             "coverage_type": "Umbrella Liability",
-            "policy_number": "NBR-AG-240917",
-            "effective_date": "09/17/2024",
-            "expiration_date": "09/17/2025",
+            "policy_number": "NCB-4829176-00",
+            "effective_date": "01/01/2026",
+            "expiration_date": "01/01/2027",
             "addl_insured": true,
             "subro_waived": true,
             "limits": [
@@ -646,33 +670,33 @@
             "premium": null
           },
           {
-            "insurer_letter": "A",
+            "insurer_letter": "B",
             "coverage_type": "Workers Compensation",
-            "policy_number": "NBR-AG-240917",
-            "effective_date": "09/17/2024",
-            "expiration_date": "09/17/2025",
+            "policy_number": "NCB-4829176-00",
+            "effective_date": "01/01/2026",
+            "expiration_date": "01/01/2027",
             "addl_insured": false,
             "subro_waived": false,
             "limits": [
               {
                 "coverage": "E.L. Each Accident",
-                "limit": "Statutory"
+                "limit": "$1,000,000"
               },
               {
                 "coverage": "E.L. Disease-Ea Employee",
-                "limit": "$500,000"
+                "limit": "$1,000,000"
               },
               {
                 "coverage": "E.L. Disease-Policy Limit",
-                "limit": "$500,000"
+                "limit": "$1,000,000"
               }
             ],
             "premium": null
           }
         ],
-        "description_of_operations": "Additional Insurred wwhere required by written contract, including CG 20 10 04 13 and CG 20 37 04 13 when applicabl; primary and non-contributory applies where required; waiver of subrogation applies when endorsed by CG 24 04 05 09, CA 04 44 10 13, and WC 04 o3 06 09.",
-        "authorized_representative": "Marianne Keeler",
-        "certificate_number": "COI-240917-01",
+        "description_of_operations": "Valey Grain Terminal, LLC is included as additional innsurred with respect to ongoing and completed operations where required by written contract, 5ubject to the terms and conditions of CG 20 10 04 13 and CG 20 37 04 13. Coverage is primary and non-contributory where required and waiver o subrogation applies where permitted by endorsement and written contract. Ubrella follows form where applicable.",
+        "authorized_representative": "Megan 1. Whitakerr, CPCU",
+        "certificate_number": "CERT-904381",
         "revision_number": null,
         "invoice_number": null,
         "invoice_date": null,
@@ -739,28 +763,7 @@
         "form_number": null,
         "endorsement_title": null,
         "endorsement_number": null,
-        "schedule_rows": [
-          {
-            "label": "Insured",
-            "value": "Midwest AgriSupply Cooperative"
-          },
-          {
-            "label": "Policy No.",
-            "value": "NBR-AG-240917"
-          },
-          {
-            "label": "Valuation Date",
-            "value": "09/17/2024"
-          },
-          {
-            "label": "Prepared By",
-            "value": "Prairie States Insurance Cooperative"
-          },
-          {
-            "label": "Carrier",
-            "value": "Nationwide Agribusiness"
-          }
-        ],
+        "schedule_rows": null,
         "provisions": null,
         "additional_premium": null,
         "change_description": null,
@@ -776,69 +779,66 @@
           },
           {
             "label": "Policy No.",
-            "value": "NBR-AG-240917"
+            "value": "NCB-4829176-00"
           },
           {
-            "label": "Submission Date",
-            "value": "09/10/2024"
-          },
-          {
-            "label": "Requested Effective Date",
-            "value": "09/17/2024"
+            "label": "Effective Date",
+            "value": "01/01/2026"
           },
           {
             "label": "Prepared By",
-            "value": "Marianne Keeler, Prairie States Insurance Cooperative"
+            "value": "Prairie States Insurance Cooperative"
+          },
+          {
+            "label": "Producer Contact",
+            "value": "Megan L. Whitaker, CPCU"
+          },
+          {
+            "label": "Subject",
+            "value": "New business submission for commercial package quote"
           }
         ],
         "nr_columns": [
-          "Item",
-          "Description",
-          "Status"
+          "Exposure",
+          "Details",
+          "Notes"
         ],
         "nr_rows": [
           {
             "cells": [
-              "1",
-              "Commercial General Liability",
-              "Quoted"
+              "Operations",
+              "Farm supply, grain handling, and agronomy services",
+              "Three locations, including bulk fertilizer storage and retail agronomy counter"
             ]
           },
           {
             "cells": [
-              "2",
-              "Automobile Liability",
-              "Quoted"
+              "Requested Lines",
+              "CGL, Auto, Umbrella, Workers Compensation",
+              "Requesting indication to quote and bind at inception"
             ]
           },
           {
             "cells": [
-              "3",
-              "Umbrella Liability",
-              "Quoted"
-            ]
-          },
-          {
-            "cells": [
-              "4",
-              "Workers Compensation",
-              "Quoted"
+              "Loss Control",
+              "Driver review, forklift training, and storage segregation",
+              "Awaiting final schedule and vehicle list"
             ]
           }
         ],
-        "unrelated_subtitle": "Nationwide Agribusiness \u2014 New Business Submission",
-        "unrelated_body": "Please review the attached loss-sensitive exposure summary and prepare indications for the new account. The submission is being forwarded for underwriting consideration only and is not intended as a certificate, declaration page, invoice, or endorsement."
+        "unrelated_subtitle": "Re: Midwest AgriSupply Cooperative - New Business Commercial Package Submission",
+        "unrelated_body": "Please find attached the new account submission for Midwest AgriSupply Cooperative. This package is being presented for quote only at this stage, with requested inception on 01/01/2026. The insured details, operations, and requested lines are summarized below for underwriting review."
       },
       {
-        "title": "Certificate of Liability Insurance",
-        "certificate_holder": "Hawkeye Valley Grain, LLC, 900 South Bell Ave, Ames, IA 50010",
+        "title": "ACORD 25 Certificate of Liability Insurance",
+        "certificate_holder": "Heartland Cooperative Services, Inc. 1111 Locust St, Ames, IA 50010",
         "coverage_lines": [
           {
-            "insurer_letter": "A",
+            "insurer_letter": "B",
             "coverage_type": "Commercial General Liability",
-            "policy_number": "NBR-AG-240917",
-            "effective_date": "09/17/2024",
-            "expiration_date": "09/17/2025",
+            "policy_number": "NCB-4829176-00",
+            "effective_date": "01/01/2026",
+            "expiration_date": "01/01/2027",
             "addl_insured": true,
             "subro_waived": true,
             "limits": [
@@ -851,11 +851,11 @@
                 "limit": "$300,000"
               },
               {
-                "coverage": "Medical Expense Limit",
+                "coverage": "Medical Exp",
                 "limit": "$5,000"
               },
               {
-                "coverage": "Personal & Advertising Injury",
+                "coverage": "Personal & Adv Injury",
                 "limit": "$1,000,000"
               },
               {
@@ -863,7 +863,7 @@
                 "limit": "$2,000,000"
               },
               {
-                "coverage": "Products-Completed Operations Aggregate",
+                "coverage": "Products-Comp/Op Agg",
                 "limit": "$2,000,000"
               }
             ],
@@ -872,9 +872,9 @@
           {
             "insurer_letter": "B",
             "coverage_type": "Automobile Liability",
-            "policy_number": "NBR-AG-240917",
-            "effective_date": "09/17/2024",
-            "expiration_date": "09/17/2025",
+            "policy_number": "NCB-4829176-00",
+            "effective_date": "01/01/2026",
+            "expiration_date": "01/01/2027",
             "addl_insured": true,
             "subro_waived": true,
             "limits": [
@@ -886,11 +886,11 @@
             "premium": null
           },
           {
-            "insurer_letter": "C",
+            "insurer_letter": "B",
             "coverage_type": "Umbrella Liability",
-            "policy_number": "NBR-AG-240917",
-            "effective_date": "09/17/2024",
-            "expiration_date": "09/17/2025",
+            "policy_number": "NCB-4829176-00",
+            "effective_date": "01/01/2026",
+            "expiration_date": "01/01/2027",
             "addl_insured": true,
             "subro_waived": true,
             "limits": [
@@ -906,33 +906,33 @@
             "premium": null
           },
           {
-            "insurer_letter": "A",
+            "insurer_letter": "B",
             "coverage_type": "Workers Compensation",
-            "policy_number": "NBR-AG-240917",
-            "effective_date": "09/17/2024",
-            "expiration_date": "09/17/2025",
+            "policy_number": "NCB-4829176-00",
+            "effective_date": "01/01/2026",
+            "expiration_date": "01/01/2027",
             "addl_insured": false,
             "subro_waived": false,
             "limits": [
               {
                 "coverage": "E.L. Each Accident",
-                "limit": "Statutory"
+                "limit": "$1,000,000"
               },
               {
                 "coverage": "E.L. Disease-Ea Employee",
-                "limit": "$500,000"
+                "limit": "$1,000,000"
               },
               {
                 "coverage": "E.L. Disease-Policy Limit",
-                "limit": "$500,000"
+                "limit": "$1,000,000"
               }
             ],
             "premium": null
           }
         ],
-        "description_of_operations": "Additional insured status as required by written contract; primary and non-contributory applies on CGL and umbrella where endorsed; waiver of subrogation applies when required by contract and endorsed by CG 24 04 05 09, CA 04 44 10 13, and WC 04 03 06 09.",
-        "authorized_representative": "Marianne Keeler",
-        "certificate_number": "COI-240917-02",
+        "description_of_operations": "Heartland Cooperative Services, Inc. is named as additional insured where required by written contract, subject to CG 20 10 04 13 and CG 20 37 04 13. Primary and non-contributory wording applies where required and waiver of subrogation applies when endorsed and permitted by contract. Umbrella liability follows underlying scheduled coverage.",
+        "authorized_representative": "Megan L. Whitaker, CPCU",
+        "certificate_number": "CERT-904382",
         "revision_number": null,
         "invoice_number": null,
         "invoice_date": null,

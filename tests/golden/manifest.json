@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "builder_git_sha": "81a20c49b06a595a54bc5260243d1977d5a15310",
+  "builder_git_sha": "547160f29c591da572d5c5955fb30dec339f4ce7",
   "content_source": "llm",
   "n_cases": 50,
   "email_categories": [
@@ -234,7 +234,7 @@
         "pdf",
         "pdf"
       ],
-      "content_source": "fallback",
+      "content_source": "llm",
       "dir": "cases/mixed-needs_review-a"
     },
     {

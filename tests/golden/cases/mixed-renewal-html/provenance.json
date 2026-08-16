@@ -18,7 +18,7 @@
       "multi_recipient": false,
       "body_only": false,
       "inconsistency": false,
-      "date_received": "2026-07-10T12:51:00+00:00"
+      "date_received": "2026-07-11T12:51:00+00:00"
     },
     "attachments": [
       {
@@ -58,45 +58,33 @@
       "contact_email": "obennett@gghospitality.com",
       "contact_phone": "(415) 555-0169",
       "carrier_name": "Chubb Group",
-      "effective_date": "2024-10-01",
-      "expiration_date": "2025-10-01",
+      "effective_date": "2026-01-01",
+      "expiration_date": "2027-01-01",
       "coverage_limits": [
         {
-          "coverage": "Commercial Property Building Limit",
-          "limit": "$18,500,000"
+          "coverage": "Commercial General Liability",
+          "limit": "$1,000,000"
         },
         {
-          "coverage": "Business Personal Property Limit",
-          "limit": "$2,500,000"
+          "coverage": "Business Personal Property",
+          "limit": "$3,500,000"
         },
         {
-          "coverage": "Business Income and Extra Expense Limit",
+          "coverage": "Business Income and Extra Expense",
           "limit": "$1,500,000"
         },
         {
-          "coverage": "Commercial General Liability Each Occurrence",
-          "limit": "$1,000,000"
-        },
-        {
-          "coverage": "Commercial General Liability General Aggregate",
-          "limit": "$2,000,000"
-        },
-        {
-          "coverage": "Hired and Non-Owned Auto Liability Combined Single Limit",
-          "limit": "$1,000,000"
-        },
-        {
-          "coverage": "Umbrella Liability Each Occurrence / Aggregate",
+          "coverage": "Umbrella Liability",
           "limit": "$5,000,000"
         }
       ],
-      "total_premium": "$84,650",
+      "total_premium": "$48,275",
       "producer": {
         "agency": "Pacific Union Insurance Services",
-        "address": "455 Market St, Suite 1200, San Francisco, CA 94105",
-        "contact_name": "Daniel Mercer",
-        "phone": "(415) 555-0198",
-        "fax": "(415) 555-0199",
+        "address": "425 California St, Suite 1200, San Francisco, CA 94104",
+        "contact_name": "Maya Chen",
+        "phone": "(415) 555-0188",
+        "fax": "(415) 555-0190",
         "email": "submissions@pacunionins.com"
       },
       "insurers": [
@@ -112,39 +100,39 @@
         },
         {
           "letter": "C",
-          "name": "Pacific Indemnity Company",
-          "naic": "10046"
-        },
-        {
-          "letter": "D",
           "name": "Great Northern Insurance Company",
           "naic": "20303"
         },
         {
+          "letter": "D",
+          "name": "Pacific Indemnity Company",
+          "naic": "20346"
+        },
+        {
           "letter": "E",
-          "name": "ACE American Insurance Company",
-          "naic": "22667"
+          "name": "Chubb National Insurance Company",
+          "naic": "10052"
         },
         {
           "letter": "F",
-          "name": "Westchester Fire Insurance Company",
-          "naic": "10030"
+          "name": "Vigilant Insurance Company",
+          "naic": "20397"
         }
       ],
-      "business_description": "Boutique hotel operator (3 properties)",
+      "business_description": "Boutique hotel operator with 3 properties",
       "entity_type": "Limited Liability Company",
-      "fein": "94-2871635",
+      "fein": "94-3187426",
       "naic_carrier": "20281"
     },
     "email": {
-      "subject": "Renewal Request: Golden Gate Hospitality Group LLC Policy CPP-8830471",
-      "body": "Good morning,\n\nPlease prepare the renewal quote and bound declarations for Golden Gate Hospitality Group LLC, policy CPP-8830471, currently scheduled to expire on 10/01/2025. We are looking to renew coverage effective 10/01/2025 with no anticipated changes to the three-property boutique hotel operation at 655 Montgomery St, San Francisco.\n\nPlease confirm any updated pricing, forms, and required underwriting items at your earliest convenience.\n\nThank you,\nOlivia Bennett\nGolden Gate Hospitality Group LLC",
+      "subject": "Renewal quote request for Golden Gate Hospitality Group LLC - Policy CPP-8830471",
+      "body": "Hi Maya,\n\nPlease provide the renewal quote and updated declarations for Golden Gate Hospitality Group LLC as the current policy CPP-8830471 approaches expiration. We would like to renew coverage effective 01/01/2026 with no lapse in protection.\n\nPlease confirm any changes to forms, limits, or premium at your earliest convenience.\n\nThank you,\nOlivia Bennett\nGolden Gate Hospitality Group LLC",
       "sender": "Olivia Bennett <obennett@gghospitality.com>",
-      "recipient": "submissions@pacunionins.com"
+      "recipient": "Maya Chen <submissions@pacunionins.com>"
     },
     "documents": [
       {
-        "title": "Commercial Package Policy Declarations",
+        "title": "Commercial Package Policy Declarations - Golden Gate Hospitality Group LLC",
         "certificate_holder": null,
         "coverage_lines": null,
         "description_of_operations": null,
@@ -169,32 +157,36 @@
             "insurer_letter": "A",
             "coverage_type": "Commercial Property",
             "policy_number": "CPP-8830471",
-            "effective_date": "10/01/2024",
-            "expiration_date": "10/01/2025",
+            "effective_date": "01/01/2026",
+            "expiration_date": "01/01/2027",
             "addl_insured": null,
             "subro_waived": null,
             "limits": [
               {
-                "coverage": "Building Limit",
-                "limit": "$18,500,000"
+                "coverage": "Building",
+                "limit": "$12,500,000"
               },
               {
-                "coverage": "Business Personal Property Limit",
-                "limit": "$2,500,000"
+                "coverage": "Business Personal Property",
+                "limit": "$3,500,000"
               },
               {
-                "coverage": "Business Income and Extra Expense Limit",
+                "coverage": "Business Income and Extra Expense",
                 "limit": "$1,500,000"
+              },
+              {
+                "coverage": "Deductible",
+                "limit": "$25,000"
               }
             ],
-            "premium": "$28,750"
+            "premium": "$19,850"
           },
           {
-            "insurer_letter": "A",
+            "insurer_letter": "B",
             "coverage_type": "Commercial General Liability",
             "policy_number": "CPP-8830471",
-            "effective_date": "10/01/2024",
-            "expiration_date": "10/01/2025",
+            "effective_date": "01/01/2026",
+            "expiration_date": "01/01/2027",
             "addl_insured": null,
             "subro_waived": null,
             "limits": [
@@ -215,54 +207,30 @@
                 "limit": "$1,000,000"
               }
             ],
-            "premium": "$19,400"
+            "premium": "$8,425"
           },
           {
-            "insurer_letter": "B",
-            "coverage_type": "Commercial Inland Marine",
+            "insurer_letter": "C",
+            "coverage_type": "Business Auto Liability",
             "policy_number": "CPP-8830471",
-            "effective_date": "10/01/2024",
-            "expiration_date": "10/01/2025",
+            "effective_date": "01/01/2026",
+            "expiration_date": "01/01/2027",
             "addl_insured": null,
             "subro_waived": null,
             "limits": [
               {
-                "coverage": "Scheduled Property Limit",
-                "limit": "$250,000"
-              }
-            ],
-            "premium": "$4,100"
-          },
-          {
-            "insurer_letter": "E",
-            "coverage_type": "Workers Compensation",
-            "policy_number": "CPP-8830471",
-            "effective_date": "10/01/2024",
-            "expiration_date": "10/01/2025",
-            "addl_insured": null,
-            "subro_waived": null,
-            "limits": [
-              {
-                "coverage": "Each Accident",
-                "limit": "$1,000,000"
-              },
-              {
-                "coverage": "Disease - Policy Limit",
-                "limit": "$1,000,000"
-              },
-              {
-                "coverage": "Disease - Each Employee",
+                "coverage": "Combined Single Limit",
                 "limit": "$1,000,000"
               }
             ],
-            "premium": "$21,350"
+            "premium": "$4,960"
           },
           {
-            "insurer_letter": "F",
+            "insurer_letter": "D",
             "coverage_type": "Umbrella Liability",
             "policy_number": "CPP-8830471",
-            "effective_date": "10/01/2024",
-            "expiration_date": "10/01/2025",
+            "effective_date": "01/01/2026",
+            "expiration_date": "01/01/2027",
             "addl_insured": null,
             "subro_waived": null,
             "limits": [
@@ -275,10 +243,18 @@
                 "limit": "$5,000,000"
               }
             ],
-            "premium": "$10,250"
+            "premium": "$7,990"
           }
         ],
         "forms_schedule": [
+          {
+            "form_number": "IL 00 17 11 98",
+            "title": "Common Policy Conditions"
+          },
+          {
+            "form_number": "IL 00 21 09 08",
+            "title": "Nuclear Energy Liability Exclusion Endorsement"
+          },
           {
             "form_number": "CP 00 10 10 12",
             "title": "Building and Personal Property Coverage Form"
@@ -296,58 +272,58 @@
             "title": "Commercial General Liability Coverage Form"
           },
           {
-            "form_number": "CG 21 49 09 17",
-            "title": "Restrictive Amendment - Liquor Liability Exclusion"
+            "form_number": "CG 00 09 04 13",
+            "title": "Commercial General Liability Conditions"
           },
           {
             "form_number": "CA 00 01 11 20",
             "title": "Business Auto Coverage Form"
           },
           {
-            "form_number": "WC 00 00 00 A",
-            "title": "Workers Compensation and Employers Liability Insurance Policy"
+            "form_number": "CA 20 48 10 13",
+            "title": "Employee Hired Autos Coverage - CA 20 48"
           },
           {
-            "form_number": "CU 00 01 12 07",
-            "title": "Commercial Umbrella Liability Coverage Form"
+            "form_number": "CU 00 01 01 16",
+            "title": "Commercial Umbrella Coverage Form"
+          },
+          {
+            "form_number": "CU 00 02 01 16",
+            "title": "Commercial Umbrella Conditions"
           }
         ],
         "premium_summary": [
           {
-            "description": "Property Coverage Premium",
-            "amount": "$28,750"
+            "description": "Commercial Property",
+            "amount": "$19,850"
           },
           {
-            "description": "General Liability Premium",
-            "amount": "$19,400"
+            "description": "Commercial General Liability",
+            "amount": "$8,425"
           },
           {
-            "description": "Inland Marine Premium",
-            "amount": "$4,100"
+            "description": "Business Auto Liability",
+            "amount": "$4,960"
           },
           {
-            "description": "Workers Compensation Premium",
-            "amount": "$21,350"
-          },
-          {
-            "description": "Umbrella Liability Premium",
-            "amount": "$10,250"
+            "description": "Umbrella Liability",
+            "amount": "$7,990"
           },
           {
             "description": "TRIA",
-            "amount": "$475"
+            "amount": "$1,145"
           },
           {
-            "description": "State Taxes",
-            "amount": "$225"
+            "description": "State Surplus Lines Tax",
+            "amount": "$1,602"
           },
           {
             "description": "Policy Fee",
-            "amount": "$100"
+            "amount": "$303"
           }
         ],
-        "countersignature": "Chubb Group Authorized Representative",
-        "countersignature_date": "09/18/2024",
+        "countersignature": "Maya Chen, Authorized Representative",
+        "countersignature_date": "12/10/2025",
         "form_number": null,
         "endorsement_title": null,
         "endorsement_number": null,
@@ -356,9 +332,9 @@
         "additional_premium": null,
         "change_description": null,
         "coverages": null,
-        "total_premium": "$84,650",
-        "effective_date": "10/01/2024",
-        "expiration_date": "10/01/2025",
+        "total_premium": "$44,275",
+        "effective_date": "01/01/2026",
+        "expiration_date": "01/01/2027",
         "nr_kind": null,
         "nr_header_rows": null,
         "nr_columns": null,

@@ -7,7 +7,7 @@
     "extraction": {
       "named_insured": "Riverside Manufacturing Co.",
       "policy_number": null,
-      "requested_effective_date": "2026-02-01",
+      "requested_effective_date": "2026-08-01",
       "requested_changes": "Quote/bind a new commercial package policy.",
       "contact_name": "Karen Delgado",
       "contact_phone": "(216) 555-0173"
@@ -17,43 +17,44 @@
     {
       "filename": "Scan_6088.pdf",
       "render_format": "pdf",
-      "n_pages": 2,
+      "n_pages": 3,
       "documents": [
         {
           "index": 0,
           "doc_type": "insurance declaration",
           "page_start": 0,
-          "page_end": 0,
+          "page_end": 1,
           "extraction": {
             "named_insured": "Riverside Manufacturing Co.",
-            "policy_number": null,
+            "policy_number": "NEW-QUOTE-2026-0017",
             "coverages": {
               "Commercial General Liability": "$12,450",
-              "Business Personal Property": "$8,760",
-              "Commercial Automobile Liability": "$11,840",
-              "Workers Compensation": "$9,925",
-              "Umbrella Liability": "$3,650"
+              "Business Personal Property": "$6,875",
+              "Business Income": "$2,220",
+              "Commercial Automobile Liability": "$5,640",
+              "Workers Compensation": "$14,980",
+              "Umbrella Liability": "$6,800"
             },
-            "total_premium": 48625.0
+            "total_premium": 49965.0
           }
         },
         {
           "index": 1,
           "doc_type": "insurance invoice",
-          "page_start": 1,
-          "page_end": 1,
+          "page_start": 2,
+          "page_end": 2,
           "extraction": {
             "named_insured": "Riverside Manufacturing Co.",
-            "policy_number": null,
-            "amount_due": 48775.0,
-            "billing_period": "02/01/2026 to 02/01/2027",
-            "policy_reference": null,
-            "due_date": "2026-02-01"
+            "policy_number": "NEW-QUOTE-2026-0017",
+            "amount_due": 50965.0,
+            "billing_period": "08/01/2026 - 08/01/2027",
+            "policy_reference": "NEW-QUOTE-2026-0017",
+            "due_date": "2026-08-15"
           }
         }
       ],
       "boundary_page_offsets": [
-        1
+        2
       ],
       "n_documents": 2,
       "expected_segment_types": [

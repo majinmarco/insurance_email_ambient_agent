@@ -18,7 +18,7 @@
       "multi_recipient": false,
       "body_only": false,
       "inconsistency": false,
-      "date_received": "2026-07-05T10:00:00+00:00"
+      "date_received": "2026-07-06T10:00:00+00:00"
     },
     "attachments": [
       {
@@ -52,14 +52,14 @@
   "raw_scenario": {
     "shared": {
       "named_insured": "Summit Ridge Construction Inc.",
-      "policy_number": "TRV-CGC-4829167-01",
+      "policy_number": "BRN-240718-01",
       "insured_address": "9400 E Arapahoe Rd, Centennial, CO 80112",
       "contact_name": "Derek Olsson",
       "contact_email": "dolsson@summitridgegc.com",
       "contact_phone": "(303) 555-0188",
       "carrier_name": "Travelers Indemnity Company",
-      "effective_date": "2026-08-01",
-      "expiration_date": "2027-08-01",
+      "effective_date": "2024-07-18",
+      "expiration_date": "2025-07-18",
       "coverage_limits": [
         {
           "coverage": "Commercial General Liability",
@@ -78,20 +78,20 @@
           "limit": "Statutory"
         }
       ],
-      "total_premium": "$18,450",
+      "total_premium": "$48,750",
       "producer": {
         "agency": "Front Range Commercial Insurance",
-        "address": "1550 S Broadway, Suite 250, Denver, CO 80210",
-        "contact_name": "Megan Rios",
-        "phone": "(303) 555-4420",
-        "fax": "(303) 555-4421",
+        "address": "1120 Lincoln St, Suite 1400, Denver, CO 80203",
+        "contact_name": "Megan Whitaker",
+        "phone": "(303) 555-4410",
+        "fax": "(303) 555-4411",
         "email": "newbusiness@frontrangeins.com"
       },
       "insurers": [
         {
           "letter": "A",
           "name": "Travelers Indemnity Company",
-          "naic": "25658"
+          "naic": "25682"
         },
         {
           "letter": "B",
@@ -100,47 +100,47 @@
         },
         {
           "letter": "C",
-          "name": "Travelers Casualty Company of Connecticut",
-          "naic": "25038"
+          "name": "Travelers Casualty Company of America",
+          "naic": "31194"
         },
         {
           "letter": "D",
-          "name": "Travelers Casualty and Surety Company",
-          "naic": "19038"
+          "name": "The Travelers Indemnity Company of Connecticut",
+          "naic": "25666"
         },
         {
           "letter": "E",
           "name": "Travelers Personal Insurance Company",
-          "naic": "36170"
+          "naic": "38130"
         },
         {
           "letter": "F",
-          "name": "Travelers Excess and Surplus Lines Company",
-          "naic": "25054"
+          "name": "Travelers Casualty and Surety Company",
+          "naic": "19038"
         }
       ],
       "business_description": "Commercial general contractor (ground-up)",
       "entity_type": "Corporation",
-      "fein": "84-2167395",
-      "naic_carrier": "25658"
+      "fein": "84-2176943",
+      "naic_carrier": "25682"
     },
     "email": {
-      "subject": "New submission request for Summit Ridge Construction Inc. effective 08/01/2026",
-      "body": "Good morning,\n\nPlease submit this new business account for quote and possible bind for Summit Ridge Construction Inc., a commercial general contractor (ground-up) located at 9400 E Arapahoe Rd, Centennial, CO 80112.\n\nRequested effective date is 08/01/2026. This is a brand-new policy with no existing policy number.\n\nInsured contact:\nDerek Olsson\nDolsson@summitridgegc.com\n(303) 555-0188\n\nPlease provide indications for the package and issue the ACORD certificate once bound.\n\nThank you,\nFront Range Commercial Insurance",
-      "sender": "Megan Rios <newbusiness@frontrangeins.com>",
-      "recipient": "Underwriting <underwriting@travelers.com>"
+      "subject": "New submission: Summit Ridge Construction Inc. - Travelers Indemnity Company",
+      "body": "Good morning,\n\nPlease find attached our new submission for Summit Ridge Construction Inc. for Travelers Indemnity Company.\n\nNamed insured: Summit Ridge Construction Inc.\nRequested effective date: 07/18/2024\nEntity: Corporation\nOperations: Commercial general contractor (ground-up)\n\nPlease quote and advise on bind status for the following lines:\n- Commercial General Liability\n- Automobile Liability\n- Umbrella Liability\n- Workers Compensation\n\nThis is a brand-new account with no existing policy number. The requested policy number for the submission package is BRN-240718-01.\n\nPlease let us know if you need any additional underwriting information.\n\nThank you,\nFront Range Commercial Insurance",
+      "sender": "Megan Whitaker <newbusiness@frontrangeins.com>",
+      "recipient": "Travelers Indemnity Company"
     },
     "documents": [
       {
         "title": "ACORD 25 Certificate of Liability Insurance",
-        "certificate_holder": "Project Owners Alliance, LLC\n2001 Market St, Suite 1800\nPhiladelphia, PA 19103",
+        "certificate_holder": "Mile High Development Group, LLC 1201 17th St, Suite 1800, Denver, CO 80202",
         "coverage_lines": [
           {
             "insurer_letter": "A",
             "coverage_type": "Commercial General Liability",
-            "policy_number": "TRV-CGC-4829167-01",
-            "effective_date": "08/01/2026",
-            "expiration_date": "08/01/2027",
+            "policy_number": "BRN-240718-01",
+            "effective_date": "07/18/2024",
+            "expiration_date": "07/18/2025",
             "addl_insured": true,
             "subro_waived": true,
             "limits": [
@@ -174,9 +174,9 @@
           {
             "insurer_letter": "B",
             "coverage_type": "Automobile Liability",
-            "policy_number": "TRV-CGC-4829167-01",
-            "effective_date": "08/01/2026",
-            "expiration_date": "08/01/2027",
+            "policy_number": "BRN-240718-01",
+            "effective_date": "07/18/2024",
+            "expiration_date": "07/18/2025",
             "addl_insured": true,
             "subro_waived": true,
             "limits": [
@@ -190,9 +190,9 @@
           {
             "insurer_letter": "C",
             "coverage_type": "Umbrella Liability",
-            "policy_number": "TRV-CGC-4829167-01",
-            "effective_date": "08/01/2026",
-            "expiration_date": "08/01/2027",
+            "policy_number": "BRN-240718-01",
+            "effective_date": "07/18/2024",
+            "expiration_date": "07/18/2025",
             "addl_insured": true,
             "subro_waived": true,
             "limits": [
@@ -210,9 +210,9 @@
           {
             "insurer_letter": "D",
             "coverage_type": "Workers Compensation",
-            "policy_number": "TRV-CGC-4829167-01",
-            "effective_date": "08/01/2026",
-            "expiration_date": "08/01/2027",
+            "policy_number": "BRN-240718-01",
+            "effective_date": "07/18/2024",
+            "expiration_date": "07/18/2025",
             "addl_insured": false,
             "subro_waived": true,
             "limits": [
@@ -232,9 +232,9 @@
             "premium": null
           }
         ],
-        "description_of_operations": "Certifiate holdr is iincluded as additional insured where required by writtten contract per CG 20 10 04 13 and CG 20 37 04 13. Coverage is primary and non-contributory where required by written contract per CG 20 01 04 13. Waiver of subrogation applies where required by written cotract for ommercial General Liabilityy, Auomobile Liability, and Workers Compensation per CG 24 04 05 09 and applicable state endorsement. Umbrella follows form.",
-        "authorized_representative": "Megan ios, Commercial Liness Broker",
-        "certificate_number": "COI-TRV-260801-001",
+        "description_of_operations": "Certificate hlder is l1stedd as additional insured with respect to ongoing and commpleted operations where required by written contract, subject to form CG 20 10 04 13 and CG 20 37 04 13. Primary and non-contributory wording applies where required by written contract. Waiver of subrogtion apples where required by written cconract, subject to CG 24 04 05 09 and applicable workers compensation endorsement. ACORD 25 (2016/03) issued as evidence of coverag only; this certificatte confers no rights and does not amend, extend, or aalter the coverage afforded by the policies referenced herein.",
+        "authorized_representative": "Megan Whitaker",
+        "certificate_number": "COI-240718-0179",
         "revision_number": "0",
         "invoice_number": null,
         "invoice_date": null,

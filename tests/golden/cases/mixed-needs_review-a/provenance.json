@@ -8,7 +8,7 @@
   "max_attachments": 3,
   "force_format": null,
   "persona_index": 0,
-  "content_source": "fallback",
+  "content_source": "llm",
   "noise_manifest": {
     "email": {
       "persona_index": 0,
@@ -18,7 +18,7 @@
       "multi_recipient": false,
       "body_only": false,
       "inconsistency": false,
-      "date_received": "2026-06-29T14:17:00+00:00"
+      "date_received": "2026-06-30T14:17:00+00:00"
     },
     "attachments": [
       {
@@ -91,62 +91,97 @@
       "contact_email": "kdelgado@riversidemfg.com",
       "contact_phone": "(216) 555-0173",
       "carrier_name": "The Hartford",
-      "effective_date": "2026-09-01",
-      "expiration_date": "2027-09-01",
+      "effective_date": "2026-01-01",
+      "expiration_date": "2027-01-01",
       "coverage_limits": [
         {
-          "coverage": "General Liability - Each Occurrence",
+          "coverage": "Commercial General Liability",
           "limit": "$1,000,000"
         },
         {
-          "coverage": "General Liability - General Aggregate",
-          "limit": "$2,000,000"
+          "coverage": "Business Personal Property",
+          "limit": "$2,500,000"
         },
         {
-          "coverage": "Automobile Liability - Combined Single Limit",
+          "coverage": "Commercial Property Deductible",
+          "limit": "$5,000"
+        },
+        {
+          "coverage": "Workers Compensation",
+          "limit": "Statutory"
+        },
+        {
+          "coverage": "Employers Liability Each Accident",
           "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Employers Liability Disease - Policy Limit",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Employers Liability Disease - Each Employee",
+          "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Commercial Umbrella Liability",
+          "limit": "$5,000,000"
         }
       ],
-      "total_premium": "$42,300",
+      "total_premium": "$18,940",
       "producer": {
         "agency": "Great Lakes Insurance Advisors",
-        "address": "410 Euclid Ave, Suite 900, Cleveland, OH 44114",
-        "contact_name": "Tom Bransford",
-        "phone": "(216) 555-0110",
-        "fax": null,
+        "address": "777 Erieview Plaza, Suite 1600, Cleveland, OH 44114",
+        "contact_name": "Megan Harlow",
+        "phone": "(216) 555-8400",
+        "fax": "(216) 555-8401",
         "email": "submissions@greatlakesins.com"
       },
       "insurers": [
         {
           "letter": "A",
-          "name": "Hartford Fire Insurance Company",
+          "name": "The Hartford",
           "naic": "19682"
         },
         {
           "letter": "B",
-          "name": "Twin City Fire Insurance Company",
-          "naic": "29459"
+          "name": "Hartford Fire Insurance Company",
+          "naic": "19631"
         },
         {
           "letter": "C",
-          "name": "Ohio Casualty Insurance Company",
-          "naic": "24074"
+          "name": "Hartford Casualty Insurance Company",
+          "naic": "29424"
+        },
+        {
+          "letter": "D",
+          "name": "Hartford Accident and Indemnity Company",
+          "naic": "22357"
+        },
+        {
+          "letter": "E",
+          "name": "Hartford Insurance Company of the Midwest",
+          "naic": "37478"
+        },
+        {
+          "letter": "F",
+          "name": "Twin City Fire Insurance Company",
+          "naic": "29459"
         }
       ],
       "business_description": "Sheet-metal fabrication and industrial machining",
       "entity_type": "Corporation",
-      "fein": "34-2918765",
+      "fein": "34-7829156",
       "naic_carrier": "19682"
     },
     "email": {
-      "subject": "FW: Following up \u2014 Riverside Manufacturing Co. account, plus a couple questions",
-      "body": "Hey \u2014 circling back on the Riverside Manufacturing Co. account. Also, did last month's endorsement get issued, and can you confirm our current billing balance? Attaching a doc, not sure it's the right one.\n\nKaren Delgado\n\nOn Wed, Jul 1, 2026 11:47 AM, Tom Bransford <submissions@greatlakesins.com> wrote:\n> Received, thank you. We'll need the current loss runs before we can release terms.\n>\n> Regards,\n> Tom Bransford",
-      "sender": "Karen Delgado <kdelgado@riversidemfg.com>",
-      "recipient": "submissions@greatlakesins.com"
+      "subject": "FW: Riverside Manufacturing Co. - Review request for policy SBA-4471902",
+      "body": "Good morning,\n\nPlease review the attached items for Riverside Manufacturing Co. on policy SBA-4471902. We received a mixed package that includes an endorsement, an invoice, and two insurance-adjacent supporting documents. One item references the upcoming renewal effective 01/01/2026, but the overall packet is a bit ambiguous and may need manual review.\n\nIf anything needs to be corrected before binding or issuance, please let me know.\n\nThank you,\nMegan\n\nOn Wed, Jul 1, 2026 11:47 AM, Megan Harlow <submissions@greatlakesins.com> wrote:\n> Received, thank you. We'll need the current loss runs before we can release terms.\n>\n> Regards,\n> Megan Harlow",
+      "sender": "Megan Harlow <submissions@greatlakesins.com>",
+      "recipient": "Karen Delgado <kdelgado@riversidemfg.com>"
     },
     "documents": [
       {
-        "title": "Loss Run Report",
+        "title": "Riverside Manufacturing Co. - Loss Run Report",
         "certificate_holder": null,
         "coverage_lines": null,
         "description_of_operations": null,
@@ -193,73 +228,71 @@
             "value": "SBA-4471902"
           },
           {
-            "label": "Line of Business",
-            "value": "Commercial Auto / General Liability"
-          },
-          {
             "label": "Valuation Date",
-            "value": "06/30/2026"
+            "value": "12/15/2025"
           },
           {
             "label": "Prepared By",
             "value": "Great Lakes Insurance Advisors"
+          },
+          {
+            "label": "Carrier",
+            "value": "The Hartford"
           }
         ],
         "nr_columns": [
-          "Date of Loss",
           "Claim No.",
-          "Description",
+          "Loss Date",
+          "Coverage",
+          "Cause of Loss",
+          "Status",
           "Paid",
-          "Reserve",
-          "Status"
+          "Reserved",
+          "Incurred"
         ],
         "nr_rows": [
           {
             "cells": [
-              "03/14/2025",
-              "CLM-2025-00417",
-              "Rear-end collision, unit 12",
-              "$8,420",
+              "GL-2024-001",
+              "03/18/2024",
+              "Commercial General Liability",
+              "Slip and fall in receiving area",
+              "Closed",
+              "$12,450",
               "$0",
-              "Closed"
+              "$12,450"
             ]
           },
           {
             "cells": [
-              "07/22/2025",
-              "CLM-2025-01188",
-              "Cargo water damage in transit",
-              "$14,900",
-              "$5,000",
-              "Open"
+              "WC-2024-014",
+              "08/07/2024",
+              "Workers Compensation",
+              "Left hand laceration at press brake",
+              "Open",
+              "$4,880",
+              "$7,250",
+              "$12,130"
             ]
           },
           {
             "cells": [
-              "11/03/2025",
-              "CLM-2025-02043",
-              "Slip-and-fall, loading dock",
-              "$2,150",
+              "CP-2025-003",
+              "11/22/2025",
+              "Commercial Property",
+              "Forklift impact to roll-up door",
+              "Closed",
+              "$18,300",
               "$0",
-              "Closed"
-            ]
-          },
-          {
-            "cells": [
-              "02/09/2026",
-              "CLM-2026-00231",
-              "Windshield / glass, unit 7",
-              "$640",
-              "$0",
-              "Closed"
+              "$18,300"
             ]
           }
         ],
-        "unrelated_subtitle": "Claims Experience \u2014 Valued as of 06/30/2026",
-        "unrelated_body": "The following loss experience is provided for underwriting and renewal review. Amounts reflect incurred losses (paid plus reserves) as of the valuation date and are subject to change as open claims develop. This report is not a bill, a policy, or confirmation of coverage."
+        "unrelated_subtitle": "Claims History Summary - For Underwriting Review Only",
+        "unrelated_body": "This report summarizes reported losses and outstanding reserves for the named insured. It is provided for account review, renewal discussion, and underwriting file support only and is not a certificate of insurance or declaration page."
       },
       {
-        "title": "Policy Change Endorsement",
+        "title": "CG 02 24 04 13 - Blanket Additional Insured and Waiver of Subrogation Endorsement",
         "certificate_holder": null,
         "coverage_lines": null,
         "description_of_operations": null,
@@ -284,53 +317,37 @@
         "premium_summary": null,
         "countersignature": null,
         "countersignature_date": null,
-        "form_number": "G-140148-A",
-        "endorsement_title": "Additional Scheduled Auto \u2014 Amendment of Covered Autos",
-        "endorsement_number": "1",
+        "form_number": "CG 02 24 04 13",
+        "endorsement_title": "Blanket Additional Insured and Waiver of Subrogation Endorsement",
+        "endorsement_number": "End. 3",
         "schedule_rows": [
           {
-            "label": "Year",
-            "value": "2025"
+            "label": "Named Insured",
+            "value": "Riverside Manufacturing Co."
           },
           {
-            "label": "Make & Model",
-            "value": "Freightliner Cascadia"
+            "label": "Policy Number",
+            "value": "SBA-4471902"
           },
           {
-            "label": "VIN",
-            "value": "3AKJHHDR9PSNL1234"
+            "label": "Effective Date",
+            "value": "01/01/2026"
           },
           {
-            "label": "Gross Vehicle Weight",
-            "value": "80,000 lbs"
-          },
-          {
-            "label": "Radius of Operation",
-            "value": "500+ miles"
-          },
-          {
-            "label": "Cost New",
-            "value": "$185,000"
-          },
-          {
-            "label": "Garaging Location",
-            "value": "1450 Harbor Blvd, Oakland, CA 94607"
-          },
-          {
-            "label": "Coverages",
-            "value": "Liability; Physical Damage (Comp & Collision)"
+            "label": "Applicable Coverage",
+            "value": "Commercial General Liability"
           }
         ],
         "provisions": [
-          "In consideration of the premium charged, it is hereby agreed and understood that the vehicle described in the Schedule above is added as a Covered Auto under the Business Auto Coverage Form (CA 00 01 11 20), effective on the endorsement effective date shown above.",
-          "The Combined Single Limit for Bodily Injury and Property Damage Liability applicable to the added Covered Auto is $1,000,000 each accident. Physical Damage coverage applies with a $1,000 Comprehensive deductible and a $2,500 Collision deductible.",
-          "Item Three (Schedule of Covered Autos You Own) of the Business Auto Declarations is amended to include the vehicle described herein, resulting in the additional premium shown below, calculated pro-rata for the remainder of the policy period."
+          "SECTION II - WHO IS AN INSURED is amended to include as an additional insured any person or organization for whom you are performing operations when you and such person or organization have agreed in writing in a contract or agreement that such person or organization be added as an additional insured.",
+          "With respect to the insurance afforded to these additional insureds, the Company waives any right of recovery it may have against such person or organization because of payments the Company makes for injury or damage arising out of your ongoing operations performed for that additional insured.",
+          "This endorsement applies only to liability arising out of the named insured's ongoing operations and shall not enlarge the limits of insurance set forth in the policy. All other terms and conditions of this policy remain unchanged."
         ],
-        "additional_premium": "$1,240.00",
-        "change_description": "Add 2025 Freightliner Cascadia (VIN 3AKJHHDR9PSNL1234) as a scheduled Covered Auto; Combined Single Limit $1,000,000 each accident.",
+        "additional_premium": "$250",
+        "change_description": "Adds blanket additional insured status and waiver of subrogation for scheduled contractual requirements.",
         "coverages": null,
         "total_premium": null,
-        "effective_date": "2026-08-15",
+        "effective_date": "01/01/2026",
         "expiration_date": null,
         "nr_kind": null,
         "nr_header_rows": null,
@@ -340,47 +357,51 @@
         "unrelated_body": null
       },
       {
-        "title": "Premium Invoice",
+        "title": "Riverside Manufacturing Co. - Premium Invoice",
         "certificate_holder": null,
         "coverage_lines": null,
         "description_of_operations": null,
         "authorized_representative": null,
         "certificate_number": null,
         "revision_number": null,
-        "invoice_number": "INV-2026-88417",
-        "invoice_date": "2026-07-10",
-        "account_number": "ACCT-NGL-0142",
+        "invoice_number": "INV-2601047",
+        "invoice_date": "12/15/2025",
+        "account_number": "ACCT-884271",
         "line_items": [
           {
             "description": "Policy Premium",
-            "amount": "$18,750.00"
+            "amount": "$17,800"
           },
           {
-            "description": "Terrorism Risk Insurance (TRIA)",
-            "amount": "$185.00"
+            "description": "Terrorism (TRIA)",
+            "amount": "$85"
           },
           {
-            "description": "CA State Surcharge",
-            "amount": "$9.38"
+            "description": "Ohio Surplus Lines Tax",
+            "amount": "$712"
+          },
+          {
+            "description": "Stamping Fee",
+            "amount": "$143"
           },
           {
             "description": "Broker Fee",
-            "amount": "$250.00"
+            "amount": "$200"
           },
           {
             "description": "Prior Balance",
-            "amount": "$0.00"
+            "amount": "$0"
           }
         ],
-        "subtotal": "$18,935.00",
-        "taxes": "$9.38",
-        "fees": "$250.00",
-        "prior_balance": "$0.00",
-        "amount_due": "$19,194.38",
-        "billing_period": "2026-08-01 to 2027-08-01",
-        "due_date": "2026-07-25",
-        "payment_methods": "Payable to Continental Casualty Company. Pay by check, ACH, or online at billpay.cna.com. Please reference the invoice and policy number on all payments.",
-        "remit_to": "Continental Casualty Company\nPO Box 74007619\nChicago, IL 60674-7619",
+        "subtotal": "$17,885",
+        "taxes": "$855",
+        "fees": "$343",
+        "prior_balance": "$0",
+        "amount_due": "$19,083",
+        "billing_period": "01/01/2026 - 01/01/2027",
+        "due_date": "01/15/2026",
+        "payment_methods": "ACH, check, or wire transfer",
+        "remit_to": "The Hartford, P.O. Box 660307, Dallas, TX 75266-0307",
         "coverage_parts": null,
         "forms_schedule": null,
         "premium_summary": null,
@@ -405,7 +426,7 @@
         "unrelated_body": null
       },
       {
-        "title": "Loss Run Report",
+        "title": "Riverside Manufacturing Co. - Statement of Values",
         "certificate_holder": null,
         "coverage_lines": null,
         "description_of_operations": null,
@@ -441,7 +462,7 @@
         "total_premium": null,
         "effective_date": null,
         "expiration_date": null,
-        "nr_kind": "Loss Run Report",
+        "nr_kind": "Statement of Values",
         "nr_header_rows": [
           {
             "label": "Insured",
@@ -452,70 +473,60 @@
             "value": "SBA-4471902"
           },
           {
-            "label": "Line of Business",
-            "value": "Commercial Auto / General Liability"
-          },
-          {
             "label": "Valuation Date",
-            "value": "06/30/2026"
+            "value": "12/01/2025"
           },
           {
             "label": "Prepared By",
             "value": "Great Lakes Insurance Advisors"
+          },
+          {
+            "label": "Location",
+            "value": "2200 Foundry Road, Cleveland, OH 44115"
           }
         ],
         "nr_columns": [
-          "Date of Loss",
-          "Claim No.",
-          "Description",
-          "Paid",
-          "Reserve",
-          "Status"
+          "Location",
+          "Building Limit",
+          "Business Personal Property Limit",
+          "Stock Limit",
+          "Coinsurance",
+          "Protection Class"
         ],
         "nr_rows": [
           {
             "cells": [
-              "03/14/2025",
-              "CLM-2025-00417",
-              "Rear-end collision, unit 12",
-              "$8,420",
-              "$0",
-              "Closed"
+              "Main Plant",
+              "$2,500,000",
+              "$1,800,000",
+              "$650,000",
+              "90%",
+              "3"
             ]
           },
           {
             "cells": [
-              "07/22/2025",
-              "CLM-2025-01188",
-              "Cargo water damage in transit",
-              "$14,900",
-              "$5,000",
-              "Open"
+              "Tooling Annex",
+              "$750,000",
+              "$550,000",
+              "$0",
+              "90%",
+              "3"
             ]
           },
           {
             "cells": [
-              "11/03/2025",
-              "CLM-2025-02043",
-              "Slip-and-fall, loading dock",
-              "$2,150",
-              "$0",
-              "Closed"
-            ]
-          },
-          {
-            "cells": [
-              "02/09/2026",
-              "CLM-2026-00231",
-              "Windshield / glass, unit 7",
-              "$640",
-              "$0",
-              "Closed"
+              "Warehouse",
+              "$1,200,000",
+              "$150,000",
+              "$300,000",
+              "90%",
+              "3"
             ]
           }
         ],
-        "unrelated_subtitle": "Claims Experience \u2014 Valued as of 06/30/2026",
-        "unrelated_body": "The following loss experience is provided for underwriting and renewal review. Amounts reflect incurred losses (paid plus reserves) as of the valuation date and are subject to change as open claims develop. This report is not a bill, a policy, or confirmation of coverage."
+        "unrelated_subtitle": "Property Valuation Worksheet - Not a Binder, Declaration, or Certificate",
+        "unrelated_body": "This statement is submitted for property underwriting and premium indication purposes. Values reflect reported replacement cost estimates and are subject to carrier review, inspection, and final acceptance."
       }
     ]
   }

@@ -17,10 +17,10 @@
       "insured_address": "1201 SW Fifth Ave, Portland, OR 97204",
       "contact_name": "Priya Raman",
       "contact_email": "praman@evergreenhh.com",
-      "contact_phone": "503-555-0159",
+      "contact_phone": "(503) 555-0159",
       "carrier_name": "CNA Financial",
-      "effective_date": "2025-03-01",
-      "expiration_date": "2026-03-01",
+      "effective_date": "2025-08-01",
+      "expiration_date": "2026-08-01",
       "coverage_limits": [
         {
           "coverage": "General Aggregate",
@@ -35,109 +35,117 @@
           "limit": "$1,000,000"
         },
         {
+          "coverage": "Damage to Premises Rented to You",
+          "limit": "$300,000"
+        },
+        {
           "coverage": "Medical Expense Limit",
           "limit": "$10,000"
         },
         {
-          "coverage": "Hired and Non-Owned Auto Liability",
+          "coverage": "Business Auto Liability Combined Single Limit",
           "limit": "$1,000,000"
+        },
+        {
+          "coverage": "Umbrella Liability Each Occurrence",
+          "limit": "$5,000,000"
         }
       ],
-      "total_premium": "$18,960",
+      "total_premium": "$18,950",
       "producer": {
         "agency": "Cascade Professional Insurance",
-        "address": "1001 SW Broadway, Suite 1600, Portland, OR 97205",
-        "contact_name": "Alyssa Chen",
-        "phone": "503-222-4188",
-        "fax": "503-222-4190",
+        "address": "2175 NW Raleigh St, Suite 410, Portland, OR 97210",
+        "contact_name": "Megan Ellis",
+        "phone": "(503) 555-0128",
+        "fax": "(503) 555-0131",
         "email": "submissions@cascadepro.com"
       },
       "insurers": [
         {
           "letter": "A",
-          "name": "CNA Financial Corporation",
-          "naic": "21113"
-        },
-        {
-          "letter": "B",
           "name": "Continental Casualty Company",
           "naic": "20443"
         },
         {
-          "letter": "C",
-          "name": "American Casualty Company of Reading, Pennsylvania",
-          "naic": "20427"
+          "letter": "B",
+          "name": "Transportation Insurance Company",
+          "naic": "20494"
         },
         {
-          "letter": "D",
+          "letter": "C",
           "name": "Valley Forge Insurance Company",
           "naic": "20508"
         },
         {
+          "letter": "D",
+          "name": "National Fire Insurance Company of Hartford",
+          "naic": "20478"
+        },
+        {
           "letter": "E",
-          "name": "The Continental Insurance Company",
-          "naic": "35289"
+          "name": "CNA Insurance Company",
+          "naic": "12603"
         },
         {
           "letter": "F",
-          "name": "National Fire Insurance Company of Hartford",
-          "naic": "20478"
+          "name": "Western Surety Company",
+          "naic": "13188"
         }
       ],
       "business_description": "In-home nursing and personal care services",
       "entity_type": "Limited Liability Company",
-      "fein": "92-1847635",
-      "naic_carrier": "21113"
+      "fein": "93-4817265",
+      "naic_carrier": "20443"
     },
     "email": {
-      "subject": "First Notice of Loss \u2014 Evergreen Home Health Services LLC \u2014 Policy HMP-3320815",
-      "body": "Good morning,\n\nI am providing first notice of loss for Evergreen Home Health Services LLC under policy HMP-3320815.\n\nPlease note the incident occurred on 07/09/2025 at a client residence during a scheduled home visit and resulted in property damage and a reported injury allegation. We are requesting claim setup and acknowledgement, and please advise if any immediate loss documentation or a requested effective date for reporting needs to be confirmed.\n\nNamed insured: Evergreen Home Health Services LLC\nPolicy number: HMP-3320815\nContact: Priya Raman, praman@evergreenhh.com, 503-555-0159\n\nThank you,\nCascade Professional Insurance",
-      "sender": "Alyssa Chen <submissions@cascadepro.com>",
+      "subject": "First Notice of Loss for Evergreen Home Health Services LLC - Policy HMP-3320815",
+      "body": "Good morning,\n\nPlease accept this as the first notice of loss for Evergreen Home Health Services LLC, policy HMP-3320815 with CNA Financial.\n\nThe insured reported an incident involving property damage and a patient fall at a client residence during a scheduled home care visit. Please open a claim and advise the assigned claim number, adjuster contact, and any documentation needed to proceed. If a report date or requested effective date is required, please use the date of the incident as the effective date of loss.\n\nNamed insured: Evergreen Home Health Services LLC\nPolicy number: HMP-3320815\nContact: Priya Raman\nPhone: (503) 555-0159\nEmail: praman@evergreenhh.com\n\nThank you,\nCascade Professional Insurance",
+      "sender": "Megan Ellis <submissions@cascadepro.com>",
       "recipient": "claims@cna.com"
     },
     "documents": [
       {
-        "title": "Premium Invoice",
+        "title": "Premium Invoice - Evergreen Home Health Services LLC",
         "certificate_holder": null,
         "coverage_lines": null,
         "description_of_operations": null,
         "authorized_representative": null,
         "certificate_number": null,
         "revision_number": null,
-        "invoice_number": "INV-458731",
-        "invoice_date": "07/15/2025",
-        "account_number": "EHHS-3320815",
+        "invoice_number": "INV-2508127",
+        "invoice_date": "08/12/2025",
+        "account_number": "ACCT-448210",
         "line_items": [
           {
             "description": "Policy Premium",
-            "amount": "$18,250.00"
+            "amount": "$17,625.00"
           },
           {
             "description": "Terrorism (TRIA)",
-            "amount": "$145.00"
+            "amount": "$225.00"
           },
           {
-            "description": "Oregon State Tax / Surcharge",
-            "amount": "$210.00"
+            "description": "Oregon State Surplus Lines Tax",
+            "amount": "$612.50"
           },
           {
             "description": "Broker Fee",
-            "amount": "$275.00"
+            "amount": "$487.50"
           },
           {
             "description": "Prior Balance",
             "amount": "$0.00"
           }
         ],
-        "subtotal": "$18,685.00",
-        "taxes": "$210.00",
-        "fees": "$420.00",
+        "subtotal": "$17,850.00",
+        "taxes": "$612.50",
+        "fees": "$487.50",
         "prior_balance": "$0.00",
-        "amount_due": "$18,685.00",
-        "billing_period": "03/01/2025 - 03/01/2026",
-        "due_date": "08/14/2025",
-        "payment_methods": "Check, ACH, or credit card through the CNA insured billing portal.",
-        "remit_to": "CNA Financial, Lockbox Services, No. 78240, Chicago, IL 60673-8240",
+        "amount_due": "$18,950.00",
+        "billing_period": "08/01/2025 - 08/01/2026",
+        "due_date": "09/11/2025",
+        "payment_methods": "Check, ACH, Wire Transfer",
+        "remit_to": "Cascade Professional Insurance, 2175 NW Raleigh St, Suite 410, Portland, OR 97210",
         "coverage_parts": null,
         "forms_schedule": null,
         "premium_summary": null,
@@ -162,47 +170,47 @@
         "unrelated_body": null
       },
       {
-        "title": "Premium Invoice",
+        "title": "Premium Invoice - Evergreen Home Health Services LLC",
         "certificate_holder": null,
         "coverage_lines": null,
         "description_of_operations": null,
         "authorized_representative": null,
         "certificate_number": null,
         "revision_number": null,
-        "invoice_number": "INV-458732",
-        "invoice_date": "08/15/2025",
-        "account_number": "EHHS-3320815",
+        "invoice_number": "INV-2508134",
+        "invoice_date": "08/13/2025",
+        "account_number": "ACCT-448210",
         "line_items": [
           {
             "description": "Policy Premium",
-            "amount": "$18,250.00"
+            "amount": "$17,625.00"
           },
           {
             "description": "Terrorism (TRIA)",
-            "amount": "$145.00"
+            "amount": "$225.00"
           },
           {
-            "description": "Oregon State Tax / Surcharge",
-            "amount": "$210.00"
+            "description": "Oregon State Surplus Lines Tax",
+            "amount": "$612.50"
           },
           {
             "description": "Broker Fee",
-            "amount": "$275.00"
+            "amount": "$487.50"
           },
           {
             "description": "Prior Balance",
             "amount": "$0.00"
           }
         ],
-        "subtotal": "$18,685.00",
-        "taxes": "$210.00",
-        "fees": "$420.00",
+        "subtotal": "$17,850.00",
+        "taxes": "$612.50",
+        "fees": "$487.50",
         "prior_balance": "$0.00",
-        "amount_due": "$18,685.00",
-        "billing_period": "03/01/2025 - 03/01/2026",
-        "due_date": "09/14/2025",
-        "payment_methods": "Check, ACH, or credit card through the CNA insured billing portal.",
-        "remit_to": "CNA Financial, Lockbox Services, No. 78240, Chicago, IL 60673-8240",
+        "amount_due": "$18,950.00",
+        "billing_period": "08/01/2025 - 08/01/2026",
+        "due_date": "09/11/2025",
+        "payment_methods": "Check, ACH, Wire Transfer",
+        "remit_to": "Cascade Professional Insurance, 2175 NW Raleigh St, Suite 410, Portland, OR 97210",
         "coverage_parts": null,
         "forms_schedule": null,
         "premium_summary": null,

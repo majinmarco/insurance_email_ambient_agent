@@ -35,12 +35,11 @@
             "named_insured": "Summit Ridge Construction Inc.",
             "policy_number": "CPP-6612078",
             "coverages": {
-              "Commercial General Liability": "$14,850",
-              "Commercial Umbrella Liability": "$6,400",
-              "Commercial Automobile Liability": "$4,200",
-              "Workers Compensation and Employers Liability": "$2,000"
+              "Commercial General Liability": "$14,280",
+              "Commercial Automobile Liability": "$4,910",
+              "Workers Compensation and Employers Liability": "$5,670"
             },
-            "total_premium": 28450.0
+            "total_premium": 25363.0
           }
         }
       ],

@@ -28,12 +28,12 @@
             "named_insured": "Evergreen Home Health Services LLC",
             "policy_number": "HMP-3320815",
             "coverages": {
-              "Commercial General Liability": "$7,250",
-              "Business Automobile Liability": "$4,150",
-              "Workers Compensation": "$6,100",
-              "Commercial Umbrella Liability": "$1,150"
+              "Commercial General Liability": "$4,850",
+              "Business Personal Property": "$2,120",
+              "Professional Liability": "$6,980",
+              "Commercial Umbrella Liability": "$2,990"
             },
-            "total_premium": 18650.0
+            "total_premium": 18710.0
           }
         }
       ],

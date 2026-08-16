@@ -10,7 +10,7 @@
       "requested_effective_date": null,
       "requested_changes": "Report a new loss / open a claim.",
       "contact_name": "Priya Raman",
-      "contact_phone": "503-555-0159"
+      "contact_phone": "(503) 555-0159"
     }
   },
   "attachments": [
@@ -27,10 +27,10 @@
           "extraction": {
             "named_insured": "Evergreen Home Health Services LLC",
             "policy_number": "HMP-3320815",
-            "amount_due": 18685.0,
-            "billing_period": "03/01/2025 - 03/01/2026",
+            "amount_due": 18950.0,
+            "billing_period": "08/01/2025 - 08/01/2026",
             "policy_reference": "HMP-3320815",
-            "due_date": "2025-08-14"
+            "due_date": "2025-09-11"
           }
         }
       ],
@@ -56,10 +56,10 @@
           "extraction": {
             "named_insured": "Evergreen Home Health Services LLC",
             "policy_number": "HMP-3320815",
-            "amount_due": 18685.0,
-            "billing_period": "03/01/2025 - 03/01/2026",
+            "amount_due": 18950.0,
+            "billing_period": "08/01/2025 - 08/01/2026",
             "policy_reference": "HMP-3320815",
-            "due_date": "2025-09-14"
+            "due_date": "2025-09-11"
           }
         }
       ],

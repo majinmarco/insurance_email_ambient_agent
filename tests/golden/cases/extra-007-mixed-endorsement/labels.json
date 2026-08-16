@@ -27,8 +27,8 @@
           "extraction": {
             "named_insured": "Pinnacle Staffing Solutions Inc.",
             "policy_number": "WC-5580372",
-            "change_description": "Updates the named insured and mailing address on the in-force policy effective 03/01/2026.",
-            "effective_date": "2026-03-01"
+            "change_description": "Correct the named insured on the active workers compensation policy effective 03/15/2026.",
+            "effective_date": "2026-03-15"
           }
         },
         {
@@ -39,8 +39,8 @@
           "extraction": {
             "named_insured": "Pinnacle Staffing Solutions Inc.",
             "policy_number": "WC-5580372",
-            "change_description": "Administrative endorsement to update the insured name and mailing information effective 03/01/2026.",
-            "effective_date": "2026-03-01"
+            "change_description": "Add one additional Atlanta recruiting office location effective 03/15/2026.",
+            "effective_date": "2026-03-15"
           }
         }
       ],

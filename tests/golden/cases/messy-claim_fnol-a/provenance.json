@@ -18,7 +18,7 @@
       "multi_recipient": true,
       "body_only": false,
       "inconsistency": false,
-      "date_received": "2026-06-28T09:33:00+00:00"
+      "date_received": "2026-06-29T09:33:00+00:00"
     },
     "attachments": [
       {
@@ -56,35 +56,39 @@
       "insured_address": "655 Montgomery St, San Francisco, CA 94111",
       "contact_name": "Olivia Bennett",
       "contact_email": "obennett@gghospitality.com",
-      "contact_phone": "(415) 555-0169",
+      "contact_phone": "415-555-0169",
       "carrier_name": "Chubb Group",
-      "effective_date": "2026-03-01",
-      "expiration_date": "2027-03-01",
+      "effective_date": "2025-09-01",
+      "expiration_date": "2026-09-01",
       "coverage_limits": [
         {
           "coverage": "Commercial General Liability",
-          "limit": "$1,000,000"
+          "limit": "$1,000,000 Each Occurrence"
+        },
+        {
+          "coverage": "Commercial General Liability",
+          "limit": "$2,000,000 General Aggregate"
         },
         {
           "coverage": "Automobile Liability",
-          "limit": "$1,000,000"
+          "limit": "$1,000,000 Combined Single Limit"
         },
         {
           "coverage": "Umbrella Liability",
-          "limit": "$5,000,000"
+          "limit": "$5,000,000 Each Occurrence"
         },
         {
           "coverage": "Workers Compensation",
           "limit": "Statutory"
         }
       ],
-      "total_premium": "$48,725",
+      "total_premium": "$48,250",
       "producer": {
         "agency": "Pacific Union Insurance Services",
-        "address": "100 California St, Suite 700, San Francisco, CA 94111",
-        "contact_name": "Marisol Chen",
-        "phone": "(415) 555-0288",
-        "fax": "(415) 555-0299",
+        "address": "1 California St, Suite 1800, San Francisco, CA 94111",
+        "contact_name": "Maya Chen",
+        "phone": "(415) 555-0192",
+        "fax": "(415) 555-0193",
         "email": "submissions@pacunionins.com"
       },
       "insurers": [
@@ -95,52 +99,52 @@
         },
         {
           "letter": "B",
-          "name": "Vigilant Insurance Company",
-          "naic": "20397"
+          "name": "Pacific Employers Insurance Company",
+          "naic": "00278"
         },
         {
           "letter": "C",
-          "name": "Chubb Indemnity Insurance Company",
-          "naic": "12777"
+          "name": "ACE Property and Casualty Insurance Company",
+          "naic": "20699"
         },
         {
           "letter": "D",
-          "name": "Chubb National Insurance Company",
-          "naic": "10003"
+          "name": "Indemnity Insurance Company of North America",
+          "naic": "43575"
         },
         {
           "letter": "E",
-          "name": "Chubb Custom Insurance Company",
-          "naic": "44792"
+          "name": "Illinois National Insurance Company",
+          "naic": "23817"
         },
         {
           "letter": "F",
-          "name": "Westchester Fire Insurance Company",
-          "naic": "13188"
+          "name": "Chubb National Insurance Company",
+          "naic": "10052"
         }
       ],
-      "business_description": "Boutique hotel operator (3 properties)",
+      "business_description": "Boutique hotel operator with 3 properties",
       "entity_type": "Limited Liability Company",
-      "fein": "94-3821746",
+      "fein": "91-2847361",
       "naic_carrier": "20281"
     },
     "email": {
-      "subject": "URGENT: FNOL Notice - Golden Gate Hospitality Group LLC / Policy CPP-8830471",
-      "body": "Good morning,\n\nPlease accept this email as first notice of loss for Golden Gate Hospitality Group LLC under policy CPP-8830471 with Chubb Group.\n\nIncident details:\n- Date of loss: 02/27/2026\n- Location: 655 Montgomery St, San Francisco, CA 94111\n- Reported issue: Water intrusion from a sprinkler line rupture affecting guest-room flooring and corridor finishes on the 7th floor\n- Claimant/contacts: Olivia Bennett, (415) 555-0169, obennett@gghospitality.com\n\nPlease confirm receipt and advise the claim number and any next steps. If a requested effective date is needed for handling, please use 02/27/2026 as the loss effective date.\n\nThank you,\nMarisol Chen\nPacific Union Insurance Services",
-      "sender": "Marisol Chen <submissions@pacunionins.com>",
-      "recipient": "claims@chubb.com, accounts@chubb.com"
+      "subject": "URGENT: FNOL: Golden Gate Hospitality Group LLC / Policy CPP-8830471 / Water Damage at 655 Montgomery St",
+      "body": "Good morning,\n\nPlease accept this first notice of loss for Golden Gate Hospitality Group LLC under policy CPP-8830471.\n\nLoss details reported by the insured:\n- Location: 655 Montgomery St, San Francisco, CA 94111\n- Date of loss: 07/14/2026\n- Reported cause: Sudden water discharge from a third-floor guest-room supply line\n- Reported damage: Ceiling staining, wall damage, and impacted corridor flooring\n- Current status: Area isolated; vendor has been engaged for emergency mitigation\n\nPlease confirm claim assignment and advise the next steps for inspection and documentation. If a requested effective date is needed for the file, please use 07/14/2026 as the loss effective date.\n\nThank you,\nMaya Chen\nPacific Union Insurance Services",
+      "sender": "Maya Chen <submissions@pacunionins.com>",
+      "recipient": "Olivia Bennett <obennett@gghospitality.com>, accounts@gghospitality.com"
     },
     "documents": [
       {
         "title": "ACORD 25 Certificate of Liability Insurance",
-        "certificate_holder": "Bayside Development Partners LP",
+        "certificate_holder": "Bayline Property Management, Inc. 200 Mission St, Suite 1200, San Francisco, CA 94105",
         "coverage_lines": [
           {
             "insurer_letter": "A",
             "coverage_type": "Commercial General Liability",
             "policy_number": "CPP-8830471",
-            "effective_date": "03/01/2026",
-            "expiration_date": "03/01/2027",
+            "effective_date": "09/01/2025",
+            "expiration_date": "09/01/2026",
             "addl_insured": true,
             "subro_waived": true,
             "limits": [
@@ -175,8 +179,8 @@
             "insurer_letter": "B",
             "coverage_type": "Automobile Liability",
             "policy_number": "CPP-8830471",
-            "effective_date": "03/01/2026",
-            "expiration_date": "03/01/2027",
+            "effective_date": "09/01/2025",
+            "expiration_date": "09/01/2026",
             "addl_insured": false,
             "subro_waived": false,
             "limits": [
@@ -188,33 +192,29 @@
             "premium": null
           },
           {
-            "insurer_letter": "E",
+            "insurer_letter": "C",
             "coverage_type": "Umbrella Liability",
             "policy_number": "CPP-8830471",
-            "effective_date": "03/01/2026",
-            "expiration_date": "03/01/2027",
+            "effective_date": "09/01/2025",
+            "expiration_date": "09/01/2026",
             "addl_insured": true,
             "subro_waived": true,
             "limits": [
               {
                 "coverage": "Each Occurrence",
                 "limit": "$5,000,000"
-              },
-              {
-                "coverage": "Aggregate",
-                "limit": "$5,000,000"
               }
             ],
             "premium": null
           },
           {
-            "insurer_letter": "F",
+            "insurer_letter": "D",
             "coverage_type": "Workers Compensation",
             "policy_number": "CPP-8830471",
-            "effective_date": "03/01/2026",
-            "expiration_date": "03/01/2027",
+            "effective_date": "09/01/2025",
+            "expiration_date": "09/01/2026",
             "addl_insured": false,
-            "subro_waived": false,
+            "subro_waived": true,
             "limits": [
               {
                 "coverage": "E.L. Each Accident",
@@ -232,9 +232,9 @@
             "premium": null
           }
         ],
-        "description_of_operations": "Bayside Development Partners LP is named as certificate holder only. Commercial General Liability is written on a primary and non-contributory basis as respects CG 20 10 04 13 and CG 20 37 04 13 where required, with waiver of subrogation applying per CG 24 04 05 09. Additional insured status and waiver of subrogation are provided only where endorsed by policy form. This certificate is issued as a matter of information only and confers no rights upon the certificate holder.",
-        "authorized_representative": "Marisol Chen, Senior Account Manager",
-        "certificate_number": "CC-7483921",
+        "description_of_operations": "Golden Gate Hospitality Group LLC operates three boutique hotel properties in San Francisco, California. Certificate holder is included as Additional Insured with respect to Commercial General Liability where required by written contract, subject to policy terms and conditions. Coverage includes primary and non-contributory wording and waiver of subrogation as required by written contract, subject to endorsement forms CG 20 10 04 13, CG 20 37 04 13, and CG 24 04 05 09. Workers Compensation waiver of subrogation applies where permitted by law. This certificate is issued as a matter of information only and confers no rights upon the certificate holder.",
+        "authorized_representative": "Maya Chen, Senior Account Manager",
+        "certificate_number": "CHB-COI-7712049",
         "revision_number": "01",
         "invoice_number": null,
         "invoice_date": null,

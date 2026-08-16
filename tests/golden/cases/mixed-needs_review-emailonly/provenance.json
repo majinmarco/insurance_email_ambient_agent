@@ -18,7 +18,7 @@
       "multi_recipient": false,
       "body_only": false,
       "inconsistency": false,
-      "date_received": "2026-07-10T07:42:00+00:00"
+      "date_received": "2026-07-11T07:42:00+00:00"
     },
     "attachments": [],
     "docs": [],
@@ -38,11 +38,11 @@
       "contact_email": "praman@evergreenhh.com",
       "contact_phone": "(503) 555-0159",
       "carrier_name": "CNA Financial",
-      "effective_date": "2026-02-01",
-      "expiration_date": "2027-02-01",
+      "effective_date": "2026-01-01",
+      "expiration_date": "2027-01-01",
       "coverage_limits": [
         {
-          "coverage": "Commercial General Liability",
+          "coverage": "Each Occurrence",
           "limit": "$1,000,000"
         },
         {
@@ -50,23 +50,23 @@
           "limit": "$2,000,000"
         },
         {
-          "coverage": "Professional Liability",
+          "coverage": "Personal and Advertising Injury",
           "limit": "$1,000,000"
         },
         {
-          "coverage": "Umbrella Liability",
-          "limit": "$5,000,000"
+          "coverage": "Products-Completed Operations Aggregate",
+          "limit": "$2,000,000"
         },
         {
-          "coverage": "Workers Compensation",
-          "limit": "Statutory"
+          "coverage": "Damage to Premises Rented to You",
+          "limit": "$300,000"
         }
       ],
       "total_premium": "$18,750",
       "producer": {
         "agency": "Cascade Professional Insurance",
-        "address": "410 SW Washington St, Suite 600, Portland, OR 97204",
-        "contact_name": "Morgan Lee",
+        "address": "6550 SW Macadam Ave, Suite 180, Portland, OR 97239",
+        "contact_name": "Megan Laird",
         "phone": "(503) 555-0198",
         "fax": "(503) 555-0199",
         "email": "submissions@cascadepro.com"
@@ -74,28 +74,28 @@
       "insurers": [
         {
           "letter": "A",
-          "name": "CNA Financial",
-          "naic": "80808"
-        },
-        {
-          "letter": "B",
           "name": "Continental Casualty Company",
           "naic": "20443"
         },
         {
+          "letter": "B",
+          "name": "Transamerica Premier Life Insurance Company",
+          "naic": "66281"
+        },
+        {
           "letter": "C",
-          "name": "The Continental Insurance Company",
-          "naic": "35289"
+          "name": "American Casualty Company of Reading, Pennsylvania",
+          "naic": "20427"
         },
         {
           "letter": "D",
-          "name": "CNA Insurance Company",
-          "naic": "27855"
+          "name": "National Fire Insurance Company of Hartford",
+          "naic": "20478"
         },
         {
           "letter": "E",
-          "name": "Transportation Insurance Company",
-          "naic": "20494"
+          "name": "CNA Insurance Company",
+          "naic": "12632"
         },
         {
           "letter": "F",
@@ -105,13 +105,13 @@
       ],
       "business_description": "In-home nursing and personal care services",
       "entity_type": "Limited Liability Company",
-      "fein": "92-7845610",
-      "naic_carrier": "80808"
+      "fein": "93-2147685",
+      "naic_carrier": "12632"
     },
     "email": {
-      "subject": "Review requested for Evergreen Home Health Services LLC policy HMP-3320815 [Ref# 62873]",
-      "body": "Hi Priya,\n\nWe received a note tied to Evergreen Home Health Services LLC and policy HMP-3320815, but it is not clear whether this should be treated as a certificate update, endorsement request, or billing item. Could you please review and confirm the intended handling?\n\nIf there is a requested effective date or specific change, please include that in your reply.\n\nThank you,\nCascade Professional Insurance\n\nBest regards,\nPriya Raman\nEvergreen Home Health Services LLC | (503) 555-0159",
-      "sender": "Morgan Lee <submissions@cascadepro.com>",
+      "subject": "Needs review: Evergreen Home Health Services LLC / HMP-3320815 [Ref# 62873]",
+      "body": "Hi Priya,\n\nI\u2019m forwarding a note regarding Evergreen Home Health Services LLC, policy HMP-3320815, for review. The request references a possible change effective 01/01/2026, but the details are a little unclear and may need confirmation before anything is issued.\n\nPlease take a look when you have a moment and let me know how you\u2019d like to proceed.\n\nBest,\nMegan\n\nBest regards,\nPriya Raman\nEvergreen Home Health Services LLC | (503) 555-0159",
+      "sender": "Megan Laird <submissions@cascadepro.com>",
       "recipient": "praman@evergreenhh.com"
     },
     "documents": []

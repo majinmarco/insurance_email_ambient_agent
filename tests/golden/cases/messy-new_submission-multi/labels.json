@@ -26,11 +26,11 @@
           "page_end": 0,
           "extraction": {
             "named_insured": "Coastal Property Management LLC",
-            "policy_number": "CPM-2026-1001",
-            "amount_due": 18745.0,
-            "billing_period": "02/01/2026 to 02/01/2027",
-            "policy_reference": "CPM-2026-1001",
-            "due_date": "2026-02-15"
+            "policy_number": "CPM-2026-10428",
+            "amount_due": 18950.0,
+            "billing_period": "03/01/2026 - 03/01/2027",
+            "policy_reference": "CPM-2026-10428",
+            "due_date": "2026-03-15"
           }
         },
         {
@@ -40,11 +40,11 @@
           "page_end": 1,
           "extraction": {
             "named_insured": "Coastal Property Management LLC",
-            "policy_number": "CPM-2026-1001",
-            "amount_due": 18745.0,
-            "billing_period": "02/01/2026 to 02/01/2027",
-            "policy_reference": "CPM-2026-1001",
-            "due_date": "2026-02-15"
+            "policy_number": "CPM-2026-10428",
+            "amount_due": 18950.0,
+            "billing_period": "03/01/2026 - 03/01/2027",
+            "policy_reference": "CPM-2026-10428",
+            "due_date": "2026-03-15"
           }
         },
         {
@@ -54,14 +54,14 @@
           "page_end": 2,
           "extraction": {
             "named_insured": "Coastal Property Management LLC",
-            "policy_number": "CPM-2026-1001",
+            "policy_number": "CPM-2026-10428",
             "coverages": {
-              "Commercial General Liability": "$6,250",
-              "Business Auto Liability": "$3,450",
-              "Umbrella Liability": "$2,100",
-              "Workers Compensation": "$5,150"
+              "Commercial General Liability": "$7,850",
+              "Commercial Automobile Liability": "$2,100",
+              "Umbrella Liability": "$3,400",
+              "Workers Compensation": "$5,200"
             },
-            "total_premium": 18745.0
+            "total_premium": 18950.0
           }
         }
       ],
@@ -91,10 +91,10 @@
           "page_end": 0,
           "extraction": {
             "named_insured": "Coastal Property Management LLC",
-            "policy_number": "CPM-2026-1001",
-            "certificate_holder": "Bayview Retal Center, LLC 1101 S. Dale Mabry Hwy, Suite 200, Tampa, FL 62",
-            "effective_date": "2026-02-01",
-            "expiration_date": "2027-02-01",
+            "policy_number": "CPM-2026-10428",
+            "certificate_holder": "Bayview Retal Center LLC, 1200 Kennedy Blvd, Tampa, FL 33602",
+            "effective_date": "2026-03-01",
+            "expiration_date": "2027-03-01",
             "limits": {
               "Each Occurrence": "$1,000,000",
               "Damage to Rented Premises": "$300,000",
@@ -103,6 +103,7 @@
               "General Aggregate": "$2,000,000",
               "Products-Comp/Op Agg": "$2,000,000",
               "Combined Single Limit": "$1,000,000",
+              "Each Occurrence / Aggregate": "$5,000,000",
               "E.L. Each Accident": "$1,000,000",
               "E.L. Disease-Ea Employee": "$1,000,000",
               "E.L. Disease-Policy Limit": "$1,000,000"
@@ -116,11 +117,11 @@
           "page_end": 1,
           "extraction": {
             "named_insured": "Coastal Property Management LLC",
-            "policy_number": "CPM-2026-1001",
-            "amount_due": 18745.0,
-            "billing_period": "02/01/2026 to 02/01/2027",
-            "policy_reference": "CPM-2026-1001",
-            "due_date": "2026-02-15"
+            "policy_number": "CPM-2026-10428",
+            "amount_due": 18950.0,
+            "billing_period": "03/01/2026 - 03/01/2027",
+            "policy_reference": "CPM-2026-10428",
+            "due_date": "2026-03-15"
           }
         },
         {
@@ -130,14 +131,14 @@
           "page_end": 2,
           "extraction": {
             "named_insured": "Coastal Property Management LLC",
-            "policy_number": "CPM-2026-1001",
+            "policy_number": "CPM-2026-10428",
             "coverages": {
-              "Commercial General Liability": "$6,250",
-              "Business Auto Liability": "$3,450",
-              "Umbrella Liability": "$2,100",
-              "Workers Compensation": "$5,150"
+              "Commercial General Liability": "$7,850",
+              "Commercial Automobile Liability": "$2,100",
+              "Umbrella Liability": "$3,400",
+              "Workers Compensation": "$5,200"
             },
-            "total_premium": 18745.0
+            "total_premium": 18950.0
           }
         }
       ],

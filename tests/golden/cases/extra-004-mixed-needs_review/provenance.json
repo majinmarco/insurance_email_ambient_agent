@@ -18,7 +18,7 @@
       "multi_recipient": true,
       "body_only": false,
       "inconsistency": false,
-      "date_received": "2026-07-13T17:43:00+00:00"
+      "date_received": "2026-07-14T17:43:00+00:00"
     },
     "attachments": [
       {
@@ -75,92 +75,84 @@
           "limit": "$2,000,000"
         },
         {
-          "coverage": "Products-Completed Operations Aggregate",
-          "limit": "$2,000,000"
+          "coverage": "Each Occurrence",
+          "limit": "$1,000,000"
         },
         {
           "coverage": "Personal and Advertising Injury",
           "limit": "$1,000,000"
         },
         {
-          "coverage": "Each Occurrence",
-          "limit": "$1,000,000"
+          "coverage": "Damage to Premises Rented to You",
+          "limit": "$300,000"
         },
         {
-          "coverage": "Fire Damage (Any One Fire)",
-          "limit": "$100,000"
-        },
-        {
-          "coverage": "Medical Expense (Any One Person)",
+          "coverage": "Medical Expense Limit",
           "limit": "$5,000"
         },
         {
-          "coverage": "Combined Single Limit - Any Auto",
+          "coverage": "Each Accident",
           "limit": "$1,000,000"
         },
         {
-          "coverage": "Each Accident - Employers Liability",
+          "coverage": "Disease - Each Employee",
           "limit": "$1,000,000"
         },
         {
-          "coverage": "Each Employee - Employers Liability",
+          "coverage": "Disease - Policy Limit",
           "limit": "$1,000,000"
-        },
-        {
-          "coverage": "Policy Aggregate - Umbrella",
-          "limit": "$5,000,000"
         }
       ],
-      "total_premium": "$28,450",
+      "total_premium": "$24,860",
       "producer": {
         "agency": "Front Range Commercial Insurance",
-        "address": "1550 Market St, Suite 305, Denver, CO 80202",
-        "contact_name": "Megan Hart",
-        "phone": "(303) 555-0144",
-        "fax": "(303) 555-0145",
+        "address": "1550 Market St, Suite 410, Denver, CO 80202",
+        "contact_name": "Jordan McAllister",
+        "phone": "(303) 555-4400",
+        "fax": "(303) 555-4401",
         "email": "newbusiness@frontrangeins.com"
       },
       "insurers": [
         {
           "letter": "A",
           "name": "Travelers Indemnity Company",
-          "naic": "25682"
+          "naic": "25658"
         },
         {
           "letter": "B",
+          "name": "The Travelers Indemnity Company of Connecticut",
+          "naic": "25682"
+        },
+        {
+          "letter": "C",
           "name": "Travelers Property Casualty Company of America",
           "naic": "25674"
         },
         {
-          "letter": "C",
-          "name": "The Travelers Home and Marine Insurance Company",
-          "naic": "27120"
-        },
-        {
           "letter": "D",
-          "name": "Hartford Fire Insurance Company",
-          "naic": "19682"
+          "name": "Travelers Casualty and Surety Company",
+          "naic": "19038"
         },
         {
           "letter": "E",
-          "name": "Lloyds of London",
-          "naic": "0"
+          "name": "The Charter Oak Fire Insurance Company",
+          "naic": "25615"
         },
         {
           "letter": "F",
-          "name": "Certain Underwriters at Lloyd's, London",
-          "naic": "00000"
+          "name": "Travelers Casualty Insurance Company of America",
+          "naic": "19046"
         }
       ],
       "business_description": "Commercial general contractor (ground-up)",
       "entity_type": "Corporation",
-      "fein": "84-2165093",
-      "naic_carrier": "25682"
+      "fein": "84-2197763",
+      "naic_carrier": "25658"
     },
     "email": {
-      "subject": "Review needed: Summit Ridge Construction Inc. renewal package for CPP-6612078",
-      "body": "Hi Derek,\n\nI\u2019m sending over the Summit Ridge Construction Inc. renewal package for policy CPP-6612078 for a quick review. The attachment set includes the declarations and a supporting underwriting document that I\u2019d like you to check for any corrections before we finalize.\n\nIf you see anything that needs to be adjusted, especially related to the effective date of 01/01/2026 or the coverage terms, please let me know.\n\nThanks,\nMegan",
-      "sender": "Megan Hart <newbusiness@frontrangeins.com>",
+      "subject": "Summit Ridge Construction Inc. \u2014 policy review and declaration page for CPP-6612078",
+      "body": "Hi Derek,\n\nI\u2019m forwarding the draft policy documents for Summit Ridge Construction Inc. on policy CPP-6612078 with Travelers Indemnity Company. Please review the attached materials and confirm they match the intended effective date of 01/01/2026.\n\nOne attachment is a coverage-related report for underwriting review, and the other is the declarations page. If anything looks off, especially limits, forms, or premium allocation, please let me know and I\u2019ll coordinate corrections with the carrier.\n\nThanks,\nJordan",
+      "sender": "Jordan McAllister <newbusiness@frontrangeins.com>",
       "recipient": "Derek Olsson <dolsson@summitridgegc.com>, submissions@summitridgegc.com"
     },
     "documents": [
@@ -217,74 +209,70 @@
           },
           {
             "label": "Valuation Date",
-            "value": "12/31/2026"
+            "value": "12/31/2025"
           },
           {
             "label": "Prepared By",
             "value": "Front Range Commercial Insurance"
-          },
-          {
-            "label": "Prepared For",
-            "value": "Derek Olsson"
           }
         ],
         "nr_columns": [
           "Claim No.",
-          "Coverage",
+          "Policy Period",
+          "Line of Business",
           "Date of Loss",
-          "Reported",
           "Status",
-          "Paid Indemnity",
-          "Paid Expense",
+          "Indemnity Paid",
+          "Expense Paid",
           "Reserve",
-          "Cause of Loss"
+          "Loss Description"
         ],
         "nr_rows": [
           {
             "cells": [
-              "SRC-001",
-              "General Liability",
-              "03/14/2026",
-              "03/15/2026",
-              "Closed",
-              "$12,450",
-              "$3,980",
-              "$0",
-              "Water intrusion at remodel site"
+              "TRV-GL-240118",
+              "01/01/2025 - 01/01/2026",
+              "Commercial General Liability",
+              "08/14/2025",
+              "Open",
+              "$12,500",
+              "$3,420",
+              "$18,000",
+              "Trip and fall at jobsite perimeter"
             ]
           },
           {
             "cells": [
-              "SRC-002",
-              "General Liability",
-              "06/22/2026",
-              "06/23/2026",
+              "TRV-AUTO-240229",
+              "01/01/2025 - 01/01/2026",
+              "Commercial Auto Liability",
+              "10/03/2025",
+              "Closed",
+              "$4,800",
+              "$1,105",
+              "$0",
+              "Backing loss involving pickup and trailer"
+            ]
+          },
+          {
+            "cells": [
+              "TRV-WC-240311",
+              "01/01/2025 - 01/01/2026",
+              "Workers Compensation",
+              "11/19/2025",
               "Open",
               "$0",
-              "$1,120",
-              "$18,500",
-              "Trip and fall allegation"
-            ]
-          },
-          {
-            "cells": [
-              "SRC-003",
-              "Auto Liability",
-              "09/08/2026",
-              "09/09/2026",
-              "Closed",
-              "$7,200",
-              "$1,410",
-              "$0",
-              "Backing loss at jobsite"
+              "$2,760",
+              "$27,500",
+              "Hand injury during material handling"
             ]
           }
         ],
-        "unrelated_subtitle": "Loss Experience Summary for underwriting review only",
-        "unrelated_body": "This report summarizes reported claims activity for the current policy period and prior open items noted in the carrier file. It is provided for account review and should be verified against carrier claim notes, reserves, and final closure information."
+        "unrelated_subtitle": "Internal loss history summary for underwriting review only",
+        "unrelated_body": "This report summarizes reported claims activity, paid amounts, and outstanding reserves for the referenced insured. It is provided for review of account history and should not be construed as evidence of coverage, a certificate, a declaration page, or an endorsement."
       },
       {
-        "title": "Commercial General Liability Declaration Page",
+        "title": "Commercial Package Policy Declarations - Summit Ridge Construction Inc.",
         "certificate_holder": null,
         "coverage_lines": null,
         "description_of_operations": null,
@@ -293,7 +281,7 @@
         "revision_number": null,
         "invoice_number": null,
         "invoice_date": null,
-        "account_number": "CPP-6612078",
+        "account_number": null,
         "line_items": null,
         "subtotal": null,
         "taxes": null,
@@ -315,47 +303,31 @@
             "subro_waived": null,
             "limits": [
               {
+                "coverage": "General Aggregate",
+                "limit": "$2,000,000"
+              },
+              {
+                "coverage": "Products - Completed Operations Aggregate",
+                "limit": "$2,000,000"
+              },
+              {
+                "coverage": "Personal and Advertising Injury",
+                "limit": "$1,000,000"
+              },
+              {
                 "coverage": "Each Occurrence",
                 "limit": "$1,000,000"
               },
               {
                 "coverage": "Damage to Premises Rented to You",
-                "limit": "$100,000"
+                "limit": "$300,000"
               },
               {
-                "coverage": "Medical Expense (Any One Person)",
+                "coverage": "Medical Expense Limit",
                 "limit": "$5,000"
-              },
-              {
-                "coverage": "General Aggregate",
-                "limit": "$2,000,000"
-              },
-              {
-                "coverage": "Products-Completed Operations Aggregate",
-                "limit": "$2,000,000"
               }
             ],
-            "premium": "$14,850"
-          },
-          {
-            "insurer_letter": "B",
-            "coverage_type": "Commercial Umbrella Liability",
-            "policy_number": "CPP-6612078",
-            "effective_date": "01/01/2026",
-            "expiration_date": "01/01/2027",
-            "addl_insured": null,
-            "subro_waived": null,
-            "limits": [
-              {
-                "coverage": "Each Occurrence",
-                "limit": "$5,000,000"
-              },
-              {
-                "coverage": "General Aggregate",
-                "limit": "$5,000,000"
-              }
-            ],
-            "premium": "$6,400"
+            "premium": "$14,280"
           },
           {
             "insurer_letter": "C",
@@ -371,10 +343,10 @@
                 "limit": "$1,000,000"
               }
             ],
-            "premium": "$4,200"
+            "premium": "$4,910"
           },
           {
-            "insurer_letter": "D",
+            "insurer_letter": "F",
             "coverage_type": "Workers Compensation and Employers Liability",
             "policy_number": "CPP-6612078",
             "effective_date": "01/01/2026",
@@ -395,75 +367,67 @@
                 "limit": "$1,000,000"
               }
             ],
-            "premium": "$2,000"
+            "premium": "$5,670"
           }
         ],
         "forms_schedule": [
           {
-            "form_number": "CG 00 01 04 13",
-            "title": "Commercial General Liability Coverage Form"
-          },
-          {
-            "form_number": "CG 21 09 06 15",
-            "title": "Exclusion - Designated Work"
-          },
-          {
-            "form_number": "CA 00 01 11 20",
-            "title": "Business Auto Coverage Form"
-          },
-          {
-            "form_number": "CA 20 48 10 13",
-            "title": "Designated Work Vehicle Endorsement"
-          },
-          {
-            "form_number": "WC 00 00 00 B",
-            "title": "Workers Compensation and Employers Liability Insurance Policy"
-          },
-          {
             "form_number": "IL 00 17 11 98",
             "title": "Common Policy Conditions"
+          },
+          {
+            "form_number": "IL 00 21 09 08",
+            "title": "Colorado Changes - Cancellation and Nonrenewal"
+          },
+          {
+            "form_number": "CG 00 01 04 13",
+            "title": "Commercial General Liability Coverage Form"
           },
           {
             "form_number": "CG 20 10 04 13",
             "title": "Additional Insured - Owners, Lessees Or Contractors - Scheduled Person Or Organization"
           },
           {
-            "form_number": "CG 24 26 04 13",
-            "title": "Waiver of Transfer of Rights of Recovery Against Others To Us"
+            "form_number": "CA 00 01 11 20",
+            "title": "Business Auto Coverage Form"
+          },
+          {
+            "form_number": "WC 00 00 00 A",
+            "title": "Workers Compensation And Employers Liability Insurance Policy"
+          },
+          {
+            "form_number": "CG 21 47 12 19",
+            "title": "Colorado Construction Operations Exclusion Amendment"
           }
         ],
         "premium_summary": [
           {
             "description": "Commercial General Liability",
-            "amount": "$14,850"
-          },
-          {
-            "description": "Commercial Umbrella Liability",
-            "amount": "$6,400"
+            "amount": "$14,280"
           },
           {
             "description": "Commercial Automobile Liability",
-            "amount": "$4,200"
+            "amount": "$4,910"
           },
           {
             "description": "Workers Compensation and Employers Liability",
-            "amount": "$2,000"
+            "amount": "$5,670"
           },
           {
             "description": "Terrorism (TRIA)",
-            "amount": "$175"
+            "amount": "$120"
+          },
+          {
+            "description": "State Premium Tax",
+            "amount": "$298"
           },
           {
             "description": "Policy Fee",
-            "amount": "$225"
-          },
-          {
-            "description": "State Tax",
-            "amount": "$600"
+            "amount": "$85"
           }
         ],
-        "countersignature": "Travelers Indemnity Company, by Maria Chen, Authorized Representative",
-        "countersignature_date": "01/01/2026",
+        "countersignature": "Travelers Indemnity Company Authorized Representative",
+        "countersignature_date": "12/18/2025",
         "form_number": null,
         "endorsement_title": null,
         "endorsement_number": null,
@@ -472,7 +436,7 @@
         "additional_premium": null,
         "change_description": null,
         "coverages": null,
-        "total_premium": "$28,450",
+        "total_premium": "$25,363",
         "effective_date": "01/01/2026",
         "expiration_date": "01/01/2027",
         "nr_kind": null,

@@ -10,7 +10,7 @@
       "requested_effective_date": null,
       "requested_changes": "Prepare a renewal quote for the expiring policy.",
       "contact_name": "Priya Raman",
-      "contact_phone": "503-555-0159"
+      "contact_phone": "(503) 555-0159"
     }
   },
   "attachments": [
@@ -28,12 +28,12 @@
             "named_insured": "Evergreen Home Health Services LLC",
             "policy_number": "HMP-3320815",
             "coverages": {
-              "Commercial General Liability": "$6,250",
-              "Commercial Automobile Liability": "$5,400",
-              "Umbrella Liability": "$3,150",
-              "Workers Compensation": "$3,100"
+              "Commercial General Liability": "$7,250",
+              "Business Auto Liability": "$4,860",
+              "Umbrella Liability": "$3,915",
+              "Workers Compensation": "$2,740"
             },
-            "total_premium": 18950.0
+            "total_premium": 19158.0
           }
         },
         {
@@ -44,20 +44,20 @@
           "extraction": {
             "named_insured": "Evergreen Home Health Services LLC",
             "policy_number": "HMP-3320815",
-            "certificate_holder": "Rose City Medical Center, Facilities Department, 2825 NE Columbia Blvd, Portland, OR 97211",
-            "effective_date": "2026-02-01",
-            "expiration_date": "2027-02-01",
+            "certificate_holder": "Willamette Medical Supply Co., 4550 NE Martin Luther King Jr Blvd, Portland, OR 97211",
+            "effective_date": "2026-01-15",
+            "expiration_date": "2027-01-15",
             "limits": {
               "Each Occurrence": "$1,000,000",
-              "Damage to Rented Premises": "$300,000",
-              "Med Exp": "$10,000",
+              "Damage to Rented Premises": "$100,000",
+              "Medical Exp": "$5,000",
               "Personal & Adv Injury": "$1,000,000",
               "General Aggregate": "$2,000,000",
               "Products-Comp/Op Agg": "$2,000,000",
               "Combined Single Limit": "$1,000,000",
-              "E.L. Each Accident": "$500,000",
-              "E.L. Disease-Ea Employee": "$500,000",
-              "E.L. Disease-Policy Limit": "$500,000"
+              "E.L. Each Accident": "$1,000,000",
+              "E.L. Disease-Ea Employee": "$1,000,000",
+              "E.L. Disease-Policy Limit": "$1,000,000"
             }
           }
         }
@@ -87,20 +87,20 @@
           "extraction": {
             "named_insured": "Evergreen Home Health Services LLC",
             "policy_number": "HMP-3320815",
-            "certificate_holder": "Northwest Senior Living, LLC, 4100 SE Powell Blvd, Portland, OR 97206",
-            "effective_date": "2026-02-01",
-            "expiration_date": "2027-02-01",
+            "certificate_holder": "Westside Senior Living LLC, 800 NW 6th Ave, Portland, OR 97209",
+            "effective_date": "2026-01-15",
+            "expiration_date": "2027-01-15",
             "limits": {
               "Each Occurrence": "$1,000,000",
-              "Damage to Rented Premises": "$300,000",
-              "Med Exp": "$10,000",
+              "Damage to Rented Premises": "$100,000",
+              "Medical Exp": "$5,000",
               "Personal & Adv Injury": "$1,000,000",
               "General Aggregate": "$2,000,000",
               "Products-Comp/Op Agg": "$2,000,000",
               "Combined Single Limit": "$1,000,000",
-              "E.L. Each Accident": "$500,000",
-              "E.L. Disease-Ea Employee": "$500,000",
-              "E.L. Disease-Policy Limit": "$500,000"
+              "E.L. Each Accident": "$1,000,000",
+              "E.L. Disease-Ea Employee": "$1,000,000",
+              "E.L. Disease-Policy Limit": "$1,000,000"
             }
           }
         },
@@ -112,10 +112,10 @@
           "extraction": {
             "named_insured": "Evergreen Home Health Services LLC",
             "policy_number": "HMP-3320815",
-            "amount_due": 18950.0,
-            "billing_period": "02/01/2026 - 02/01/2027",
+            "amount_due": 19158.0,
+            "billing_period": "01/15/2026 - 01/15/2027",
             "policy_reference": "HMP-3320815",
-            "due_date": "2026-02-01"
+            "due_date": "2026-01-15"
           }
         }
       ],
@@ -144,10 +144,10 @@
           "extraction": {
             "named_insured": "Evergreen Home Health Services LLC",
             "policy_number": "HMP-3320815",
-            "amount_due": 18950.0,
-            "billing_period": "02/01/2026 - 02/01/2027",
+            "amount_due": 19158.0,
+            "billing_period": "01/15/2026 - 01/15/2027",
             "policy_reference": "HMP-3320815",
-            "due_date": "2026-02-01"
+            "due_date": "2026-01-15"
           }
         },
         {
@@ -158,10 +158,10 @@
           "extraction": {
             "named_insured": "Evergreen Home Health Services LLC",
             "policy_number": "HMP-3320815",
-            "amount_due": 18950.0,
-            "billing_period": "02/01/2026 - 02/01/2027",
+            "amount_due": 19158.0,
+            "billing_period": "01/15/2026 - 01/15/2027",
             "policy_reference": "HMP-3320815",
-            "due_date": "2026-02-01"
+            "due_date": "2026-01-15"
           }
         }
       ],

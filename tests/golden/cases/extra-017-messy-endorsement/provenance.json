@@ -18,7 +18,7 @@
       "multi_recipient": true,
       "body_only": false,
       "inconsistency": true,
-      "date_received": "2026-07-07T15:34:00+00:00"
+      "date_received": "2026-07-08T15:34:00+00:00"
     },
     "attachments": [
       {
@@ -82,61 +82,61 @@
           "limit": "$300,000"
         }
       ],
-      "total_premium": "$18,740",
+      "total_premium": "$18,450",
       "producer": {
         "agency": "Desert Sky Insurance Advisors",
-        "address": "2200 E Camelback Rd, Suite 230, Phoenix, AZ 85016",
-        "contact_name": "Megan Ruiz",
-        "phone": "(602) 555-0198",
-        "fax": "(602) 555-0199",
+        "address": "1201 E Washington St, Suite 140, Phoenix, AZ 85034",
+        "contact_name": "Maya Patel",
+        "phone": "(602) 555-0199",
+        "fax": "(602) 555-0198",
         "email": "newbiz@desertskyins.com"
       },
       "insurers": [
         {
           "letter": "A",
           "name": "Berkshire Hathaway GUARD Insurance Companies",
-          "naic": "20109"
+          "naic": "10885"
         },
         {
           "letter": "B",
-          "name": "National Union Fire Insurance Company of Pittsburgh, Pa.",
-          "naic": "19445"
+          "name": "National Liability & Fire Insurance Company",
+          "naic": "32620"
         },
         {
           "letter": "C",
-          "name": "Federal Insurance Company",
-          "naic": "20281"
+          "name": "Continental Western Insurance Company",
+          "naic": "37206"
         },
         {
           "letter": "D",
-          "name": "Travelers Property Casualty Company of America",
-          "naic": "25674"
+          "name": "Consolidated Financial Insurance Company",
+          "naic": "10815"
         },
         {
           "letter": "E",
-          "name": "The Continental Insurance Company",
-          "naic": "35289"
+          "name": "Gateway Insurance Company",
+          "naic": "24139"
         },
         {
           "letter": "F",
-          "name": "Hartford Fire Insurance Company",
-          "naic": "19682"
+          "name": "Illinois National Insurance Co.",
+          "naic": "23825"
         }
       ],
       "business_description": "Contract security guard services",
       "entity_type": "Corporation",
-      "fein": "86-2147093",
-      "naic_carrier": "20109"
+      "fein": "86-2149073",
+      "naic_carrier": "10885"
     },
     "email": {
-      "subject": "GL-4471083 endorsement request for Ironclad Security Services Inc. [Ref# 80790]",
-      "body": "Good morning,\n\nPlease process an endorsement for Ironclad Security Services Inc. on policy GL-4471083. We are requesting a mid-term change effective 06/15/2025 to update the named insured to reflect the current legal entity name and to add an additional secured patrol location at 1450 W Thomas Rd, Phoenix, AZ 85013.\n\nPlease confirm any required supporting documentation and advise when the endorsement will be issued.\n\nThank you,\nGloria Tran\nIronclad Security Services Inc.\n\nNote: the policy number on the attachment may be off by a digit; the correct one ends in 9.\n\nSent from my iPhone",
-      "sender": "Megan Ruiz <newbiz@desertskyins.com>",
-      "recipient": "Gloria Tran <gtran@ironcladsecurity.com>, newbusiness@ironcladsecurity.com"
+      "subject": "Request to endorse GL-4471083 effective 04/15/2025 [Ref# 80790]",
+      "body": "Good morning,\n\nPlease process a mid-term endorsement on the Berkshire Hathaway GUARD policy for Ironclad Security Services Inc., policy GL-4471083, effective 04/15/2025. The insured is requesting an updated named insured format to reflect the current corporate name, along with a review of any corresponding policy wording needed to keep the declarations and endorsements aligned.\n\nPlease advise if you need a signed request or any supporting paperwork.\n\nThank you,\nGloria Tran\nIronclad Security Services Inc.\n\nNote: the policy number on the attachment may be off by a digit; the correct one ends in 9.\n\nSent from my iPhone",
+      "sender": "Gloria Tran <gtran@ironcladsecurity.com>",
+      "recipient": "newbiz@desertskyins.com, newbusiness@desertskyins.com"
     },
     "documents": [
       {
-        "title": "Ironclad Security Services Inc. - Submission Cover Letter",
+        "title": "Submission Cover Letter",
         "certificate_holder": null,
         "coverage_lines": null,
         "description_of_operations": null,
@@ -187,64 +187,55 @@
             "value": "Berkshire Hathaway GUARD"
           },
           {
-            "label": "Producer",
-            "value": "Desert Sky Insurance Advisors"
-          },
-          {
-            "label": "Requested Effective Date",
-            "value": "06/15/2025"
+            "label": "Prepared For",
+            "value": "Gloria Tran"
           },
           {
             "label": "Prepared By",
-            "value": "Megan Ruiz"
+            "value": "Desert Sky Insurance Advisors"
           },
           {
-            "label": "Contact",
-            "value": "Gloria Tran | (602) 555-0154 | gtran@ironcladsecurity.com"
+            "label": "Date",
+            "value": "03/14/2025"
           }
         ],
         "nr_columns": [
-          "Item",
           "Reference",
           "Details",
-          "Action Required"
+          "Status"
         ],
         "nr_rows": [
           {
             "cells": [
-              "1",
-              "Named Insured",
-              "Update legal entity name to current corporate name",
-              "Yes"
+              "Account",
+              "Commercial general liability for contract security guard services at 2801 N Central Ave, Phoenix, AZ 85004",
+              "Bound"
             ]
           },
           {
             "cells": [
-              "2",
-              "Location",
-              "Add secured patrol location at 1450 W Thomas Rd, Phoenix, AZ 85013",
-              "Yes"
+              "Requested Action",
+              "Mid-term endorsement to update named insured wording and confirm declarations consistency",
+              "Pending carrier review"
             ]
           },
           {
             "cells": [
-              "3",
-              "Operations",
-              "Contract security guard services",
-              "No change"
+              "Effective Date",
+              "04/15/2025",
+              "Requested"
             ]
           },
           {
             "cells": [
-              "4",
-              "Policy",
-              "Commercial General Liability - in force mid-term",
-              "Issue endorsement"
+              "Remarks",
+              "Supporting policy information and underwriting notes enclosed for review",
+              "For follow-up"
             ]
           }
         ],
-        "unrelated_subtitle": "Broker submission summary for mid-term policy change",
-        "unrelated_body": "This package summarizes the requested account changes for underwriting review. It is not a certificate of insurance, invoice, declarations page, or endorsement form. Please review the insured details, requested effective date, and location change above before issuing revised terms."
+        "unrelated_subtitle": "Broker submission package for mid-term policy change review",
+        "unrelated_body": "Please review the enclosed submission materials for the current in-force general liability policy. The insured is seeking a mid-term endorsement, and the underwriting file should be updated to reflect the requested named insured wording change and any related policy administration notes."
       }
     ]
   }

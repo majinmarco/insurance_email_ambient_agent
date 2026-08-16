@@ -7,7 +7,7 @@
     "extraction": {
       "named_insured": "Summit Ridge Construction Inc.",
       "policy_number": "CPP-6612078",
-      "requested_effective_date": "2025-08-01",
+      "requested_effective_date": "2026-01-15",
       "requested_changes": "Endorse the in-force policy (mid-term change).",
       "contact_name": "Derek Olsson",
       "contact_phone": "(303) 555-0188"
@@ -35,11 +35,12 @@
             "named_insured": "Summit Ridge Construction Inc.",
             "policy_number": "CPP-6612078",
             "coverages": {
-              "Commercial General Liability": "$21,450",
-              "Business Auto Liability": "$9,875",
-              "Umbrella Liability": "$7,950"
+              "Commercial General Liability": "$18,900",
+              "Business Auto Liability": "$12,600",
+              "Umbrella Liability": "$9,150",
+              "Workers Compensation": "$7,100"
             },
-            "total_premium": 40730.0
+            "total_premium": 48750.0
           }
         }
       ],
@@ -68,9 +69,12 @@
             "named_insured": "Summit Ridge Construction Inc.",
             "policy_number": "CPP-6612078",
             "coverages": {
-              "Workers Compensation": "$8,150"
+              "Commercial General Liability": "$20,400",
+              "Business Auto Liability": "$11,850",
+              "Umbrella Liability": "$10,050",
+              "Workers Compensation": "$6,950"
             },
-            "total_premium": 8885.0
+            "total_premium": 50200.0
           }
         }
       ],
@@ -97,10 +101,12 @@
             "named_insured": "Summit Ridge Construction Inc.",
             "policy_number": "CPP-6612078",
             "coverages": {
-              "Contractors Equipment": "$5,320",
-              "Blanket Property Floater": "$3,420"
+              "Commercial General Liability": "$19,350",
+              "Business Auto Liability": "$13,050",
+              "Umbrella Liability": "$9,600",
+              "Workers Compensation": "$7,250"
             },
-            "total_premium": 9039.0
+            "total_premium": 50250.0
           }
         }
       ],

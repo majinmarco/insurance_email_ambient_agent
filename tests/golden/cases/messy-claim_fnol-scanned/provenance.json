@@ -18,7 +18,7 @@
       "multi_recipient": false,
       "body_only": false,
       "inconsistency": true,
-      "date_received": "2026-06-26T16:34:00+00:00"
+      "date_received": "2026-06-27T16:34:00+00:00"
     },
     "attachments": [
       {
@@ -58,8 +58,8 @@
       "contact_email": "dolsson@summitridgegc.com",
       "contact_phone": "(303) 555-0188",
       "carrier_name": "Travelers Indemnity Company",
-      "effective_date": "2026-01-15",
-      "expiration_date": "2027-01-15",
+      "effective_date": "2025-01-01",
+      "expiration_date": "2026-01-01",
       "coverage_limits": [
         {
           "coverage": "Commercial General Liability",
@@ -74,56 +74,56 @@
           "limit": "$5,000,000"
         }
       ],
-      "total_premium": "$18,450",
+      "total_premium": "$24,860",
       "producer": {
         "agency": "Front Range Commercial Insurance",
-        "address": "400 S. Colorado Blvd., Suite 720, Denver, CO 80246",
+        "address": "1625 California St, Suite 450, Denver, CO 80202",
         "contact_name": "New Business Desk",
-        "phone": "(303) 555-1048",
-        "fax": "(303) 555-1049",
+        "phone": "(303) 555-0199",
+        "fax": "(303) 555-0118",
         "email": "newbusiness@frontrangeins.com"
       },
       "insurers": [
         {
           "letter": "A",
           "name": "Travelers Indemnity Company",
-          "naic": "25658"
+          "naic": "25674"
         },
         {
           "letter": "B",
+          "name": "Travelers Property Casualty Company of America",
+          "naic": "25666"
+        },
+        {
+          "letter": "C",
+          "name": "The Phoenix Insurance Company",
+          "naic": "25623"
+        },
+        {
+          "letter": "D",
+          "name": "Travelers Casualty Insurance Company of America",
+          "naic": "25143"
+        },
+        {
+          "letter": "E",
           "name": "Travelers Casualty and Surety Company",
           "naic": "19038"
         },
         {
-          "letter": "C",
-          "name": "Travelers Property Casualty Company of America",
-          "naic": "25674"
-        },
-        {
-          "letter": "D",
-          "name": "The Charter Oak Fire Insurance Company",
-          "naic": "25615"
-        },
-        {
-          "letter": "E",
-          "name": "Phoenix Insurance Company",
-          "naic": "25623"
-        },
-        {
           "letter": "F",
-          "name": "Travelers Indemnity Company of Connecticut",
-          "naic": "25682"
+          "name": "The Standard Fire Insurance Company",
+          "naic": "19704"
         }
       ],
       "business_description": "Commercial general contractor (ground-up)",
       "entity_type": "Corporation",
-      "fein": "84-2198765",
-      "naic_carrier": "25658"
+      "fein": "84-2167394",
+      "naic_carrier": "25674"
     },
     "email": {
       "subject": "",
-      "body": "Good morning,\n\nPlease accept this as the first notice of loss for Summit Ridge Construction Inc. under policy CPP-6612078.\n\nReported incident: water intrusion and resulting interior damage discovered at a project site while work was in progress. Please advise on claim assignment, any immediate next steps, and whether you need photos, site address, or preliminary estimates. The loss is being reported as soon as practicable after discovery.\n\nNamed insured: Summit Ridge Construction Inc.\nPolicy number: CPP-6612078\nRequested effective date for claim handling: 01/15/2026\n\nThank you,\nDerek Olsson\nSummit Ridge Construction Inc.\n\nNote: the policy number on the attachment may be off by a digit; the correct one ends in 9.",
-      "sender": "Derek Olsson <dolsson@summitridgegc.com>",
+      "body": "Good afternoon,\n\nI\u2019m submitting a first notice of loss for Summit Ridge Construction Inc. under policy CPP-6612078 with Travelers Indemnity Company.\n\nReported loss details:\n- Date of loss: 07/15/2025\n- Time of loss: Approximately 2:20 PM\n- Location: 9400 E Arapahoe Rd, Centennial, CO 80112\n- Reported incident: A subcontractor vehicle backed into a client\u2019s parked SUV in the project staging area, causing rear bumper and liftgate damage. No reported bodily injury at this time.\n\nPlease open a claim and advise the claim number and any next steps. Derek Olsson is the primary contact for the insured and can be reached at (303) 555-0188 or dolsson@summitridgegc.com.\n\nThank you,\nFront Range Commercial Insurance\n\nNote: the policy number on the attachment may be off by a digit; the correct one ends in 9.",
+      "sender": "Megan Pierce <newbusiness@frontrangeins.com>",
       "recipient": "claims@travelers.com"
     },
     "documents": [
@@ -153,14 +153,18 @@
             "insurer_letter": "A",
             "coverage_type": "Commercial General Liability",
             "policy_number": "CPP-6612078",
-            "effective_date": "01/15/2026",
-            "expiration_date": "01/15/2027",
-            "addl_insured": null,
-            "subro_waived": null,
+            "effective_date": "01/01/2025",
+            "expiration_date": "01/01/2026",
+            "addl_insured": false,
+            "subro_waived": false,
             "limits": [
               {
                 "coverage": "Each Occurrence",
                 "limit": "$1,000,000"
+              },
+              {
+                "coverage": "Damage To Rented Premises",
+                "limit": "$300,000"
               },
               {
                 "coverage": "Personal and Advertising Injury",
@@ -173,38 +177,34 @@
               {
                 "coverage": "Products-Completed Operations Aggregate",
                 "limit": "$2,000,000"
-              },
-              {
-                "coverage": "Damage To Premises Rented To You",
-                "limit": "$300,000"
               }
             ],
-            "premium": "$9,875"
+            "premium": "$11,250"
           },
           {
             "insurer_letter": "A",
             "coverage_type": "Business Auto Liability",
             "policy_number": "CPP-6612078",
-            "effective_date": "01/15/2026",
-            "expiration_date": "01/15/2027",
-            "addl_insured": null,
-            "subro_waived": null,
+            "effective_date": "01/01/2025",
+            "expiration_date": "01/01/2026",
+            "addl_insured": false,
+            "subro_waived": false,
             "limits": [
               {
                 "coverage": "Combined Single Limit",
                 "limit": "$1,000,000"
               }
             ],
-            "premium": "$3,125"
+            "premium": "$4,860"
           },
           {
             "insurer_letter": "A",
             "coverage_type": "Umbrella Liability",
             "policy_number": "CPP-6612078",
-            "effective_date": "01/15/2026",
-            "expiration_date": "01/15/2027",
-            "addl_insured": null,
-            "subro_waived": null,
+            "effective_date": "01/01/2025",
+            "expiration_date": "01/01/2026",
+            "addl_insured": false,
+            "subro_waived": false,
             "limits": [
               {
                 "coverage": "Each Occurrence",
@@ -215,25 +215,41 @@
                 "limit": "$5,000,000"
               }
             ],
-            "premium": "$4,400"
+            "premium": "$6,950"
           }
         ],
         "forms_schedule": [
           {
-            "form_number": "CP 00 10 10 12",
-            "title": "Building and Personal Property Coverage Form"
-          },
-          {
             "form_number": "CG 00 01 04 13",
             "title": "Commercial General Liability Coverage Form"
+          },
+          {
+            "form_number": "CG 21 44 05 09",
+            "title": "Exclusion - Fungi, Bacteria and Viruses"
+          },
+          {
+            "form_number": "CG 24 26 04 13",
+            "title": "Amendment of Insured Contract Definition"
           },
           {
             "form_number": "CA 00 01 11 20",
             "title": "Business Auto Coverage Form"
           },
           {
-            "form_number": "CU 00 01 04 13",
-            "title": "Commercial Umbrella Coverage Form"
+            "form_number": "CA 20 48 10 13",
+            "title": "Designated Insured Endorsement"
+          },
+          {
+            "form_number": "CA 99 48 10 13",
+            "title": "Hired Auto and Non-Owned Auto Liability Endorsement"
+          },
+          {
+            "form_number": "CU 00 01 12 04",
+            "title": "Commercial Umbrella Liability Coverage Form"
+          },
+          {
+            "form_number": "CU 21 17 01 15",
+            "title": "Schedule of Underlying Insurance"
           },
           {
             "form_number": "IL 00 17 11 98",
@@ -243,31 +259,31 @@
         "premium_summary": [
           {
             "description": "Commercial General Liability",
-            "amount": "$9,875"
+            "amount": "$11,250.00"
           },
           {
             "description": "Business Auto Liability",
-            "amount": "$3,125"
+            "amount": "$4,860.00"
           },
           {
             "description": "Umbrella Liability",
-            "amount": "$4,400"
+            "amount": "$6,950.00"
           },
           {
             "description": "Terrorism (TRIA)",
-            "amount": "$210"
+            "amount": "$325.00"
           },
           {
-            "description": "Colorado Premium Tax",
-            "amount": "$403"
+            "description": "State Premium Tax",
+            "amount": "$1,125.00"
           },
           {
             "description": "Policy Fee",
-            "amount": "$75"
+            "amount": "$350.00"
           }
         ],
-        "countersignature": "Travelers Indemnity Company, By Authorized Representative",
-        "countersignature_date": "01/10/2026",
+        "countersignature": "Travelers Indemnity Company, Authorized Representative",
+        "countersignature_date": "12/18/2024",
         "form_number": null,
         "endorsement_title": null,
         "endorsement_number": null,
@@ -276,9 +292,9 @@
         "additional_premium": null,
         "change_description": null,
         "coverages": null,
-        "total_premium": "$18,450",
-        "effective_date": "01/15/2026",
-        "expiration_date": "01/15/2027",
+        "total_premium": "$24,860",
+        "effective_date": "01/01/2025",
+        "expiration_date": "01/01/2026",
         "nr_kind": null,
         "nr_header_rows": null,
         "nr_columns": null,

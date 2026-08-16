@@ -27,10 +27,10 @@
           "extraction": {
             "named_insured": "Coastal Property Management LLC",
             "policy_number": "CPP-2214569",
-            "amount_due": 18940.0,
-            "billing_period": "08/15/2026 to 08/15/2027",
+            "amount_due": 18785.0,
+            "billing_period": "02/01/2027 - 02/01/2028",
             "policy_reference": "CPP-2214569",
-            "due_date": "2026-08-15"
+            "due_date": "2027-02-01"
           }
         },
         {
@@ -41,9 +41,9 @@
           "extraction": {
             "named_insured": "Coastal Property Management LLC",
             "policy_number": "CPP-2214569",
-            "certificate_holder": "Bay Harbor Retail Center, LLC, 1201 N Dale Mabry Hwy, Tampa, FL 33607",
-            "effective_date": "2025-08-15",
-            "expiration_date": "2026-08-15",
+            "certificate_holder": "Riverview Holdings, LLC 1201 E. Kennedy Blvd., Suite 220, Tampa, FL 33602",
+            "effective_date": "2026-02-01",
+            "expiration_date": "2027-02-01",
             "limits": {
               "Each Occurrence": "$1,000,000",
               "Damage to Rented Premises": "$300,000",
@@ -84,10 +84,10 @@
           "extraction": {
             "named_insured": "Coastal Property Management LLC",
             "policy_number": "CPP-2214569",
-            "amount_due": 18940.0,
-            "billing_period": "08/15/2026 to 08/15/2027",
+            "amount_due": 18785.0,
+            "billing_period": "02/01/2027 - 02/01/2028",
             "policy_reference": "CPP-2214569",
-            "due_date": "2026-08-15"
+            "due_date": "2027-02-01"
           }
         },
         {
@@ -98,10 +98,10 @@
           "extraction": {
             "named_insured": "Coastal Property Management LLC",
             "policy_number": "CPP-2214569",
-            "amount_due": 18940.0,
-            "billing_period": "08/15/2026 to 08/15/2027",
+            "amount_due": 18785.0,
+            "billing_period": "02/01/2027 - 02/01/2028",
             "policy_reference": "CPP-2214569",
-            "due_date": "2026-08-15"
+            "due_date": "2027-02-01"
           }
         },
         {
@@ -112,9 +112,9 @@
           "extraction": {
             "named_insured": "Coastal Property Management LLC",
             "policy_number": "CPP-2214569",
-            "certificate_holder": "Westshore Business Association, 2202 N Westshore Blvd, Tampa, FL 33607",
-            "effective_date": "2025-08-15",
-            "expiration_date": "2026-08-15",
+            "certificate_holder": "Bayfront Retail Center, LLC 400 S. Dale Mabry Hwy, Tampa, FL 33609",
+            "effective_date": "2026-02-01",
+            "expiration_date": "2027-02-01",
             "limits": {
               "Each Occurrence": "$1,000,000",
               "Damage to Rented Premises": "$300,000",
@@ -157,10 +157,10 @@
           "extraction": {
             "named_insured": "Coastal Property Management LLC",
             "policy_number": "CPP-2214569",
-            "amount_due": 18940.0,
-            "billing_period": "08/15/2026 to 08/15/2027",
+            "amount_due": 18785.0,
+            "billing_period": "02/01/2027 - 02/01/2028",
             "policy_reference": "CPP-2214569",
-            "due_date": "2026-08-15"
+            "due_date": "2027-02-01"
           }
         }
       ],

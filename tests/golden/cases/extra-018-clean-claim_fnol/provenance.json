@@ -27,22 +27,18 @@
           "limit": "$1,000,000"
         },
         {
-          "coverage": "Automobile Liability",
-          "limit": "$1,000,000"
+          "coverage": "Commercial Property",
+          "limit": "$12,500,000"
         },
         {
-          "coverage": "Umbrella Liability",
-          "limit": "$5,000,000"
-        },
-        {
-          "coverage": "Workers Compensation",
-          "limit": "Statutory"
+          "coverage": "Business Income and Extra Expense",
+          "limit": "$2,000,000"
         }
       ],
-      "total_premium": "$84,750",
+      "total_premium": "$184,750",
       "producer": {
         "agency": "Pacific Union Insurance Services",
-        "address": "425 Market St, Suite 1800, San Francisco, CA 94105",
+        "address": "2000 Sutter St, Suite 310, San Francisco, CA 94115",
         "contact_name": "Marisol Chen",
         "phone": "(415) 555-0198",
         "fax": "(415) 555-0199",
@@ -56,44 +52,44 @@
         },
         {
           "letter": "B",
+          "name": "Chubb Insurance Company of New Jersey",
+          "naic": "12777"
+        },
+        {
+          "letter": "C",
+          "name": "Great Northern Insurance Company",
+          "naic": "20303"
+        },
+        {
+          "letter": "D",
           "name": "Pacific Indemnity Company",
           "naic": "20346"
         },
         {
-          "letter": "C",
-          "name": "Vigilant Insurance Company",
-          "naic": "20397"
-        },
-        {
-          "letter": "D",
-          "name": "Chubb Indemnity Insurance Company",
-          "naic": "12777"
-        },
-        {
           "letter": "E",
-          "name": "ACE Property and Casualty Insurance Company",
-          "naic": "20699"
+          "name": "Westchester Fire Insurance Company",
+          "naic": "21121"
         },
         {
           "letter": "F",
-          "name": "Chubb National Insurance Company",
-          "naic": "11160"
+          "name": "ACE American Insurance Company",
+          "naic": "22667"
         }
       ],
       "business_description": "Boutique hotel operator (3 properties)",
       "entity_type": "Limited Liability Company",
-      "fein": "94-2874610",
+      "fein": "91-2847613",
       "naic_carrier": "20281"
     },
     "email": {
-      "subject": "FNOL: Golden Gate Hospitality Group LLC | Policy CPP-8830471 | Guest Slip-and-Fall Incident",
-      "body": "Good afternoon,\n\nWe are providing first notice of loss for Golden Gate Hospitality Group LLC under policy CPP-8830471 with Chubb Group.\n\nAn incident occurred at one of our properties on 07/12/2026 involving a guest slip-and-fall in a common area. Please confirm claim setup, the assigned adjuster, and any immediate documentation you need from us.\n\nIf a requested effective date is needed for claim reporting purposes, please use 07/12/2026 as the incident date.\n\nThank you,\nOlivia Bennett\nGolden Gate Hospitality Group LLC",
+      "subject": "FNOL Notice - Golden Gate Hospitality Group LLC / Policy CPP-8830471",
+      "body": "Good morning,\n\nPlease accept this as first notice of loss for Golden Gate Hospitality Group LLC under policy CPP-8830471 with Chubb Group.\n\nIncident summary: a guest bathroom supply line ruptured at one of the properties, causing water damage to the guest room and adjacent corridor flooring. The loss was discovered on 08/12/2025 and mitigation was started immediately. Please advise if you need any additional claim forms, photos, or reserve information.\n\nRequested effective date for claim handling: 08/12/2025.\n\nThank you,\nOlivia Bennett\nGolden Gate Hospitality Group LLC",
       "sender": "Olivia Bennett <obennett@gghospitality.com>",
       "recipient": "claims@chubb.com"
     },
     "documents": [
       {
-        "title": "Submission Cover Letter and Exposure Summary",
+        "title": "Submission Cover Letter - Golden Gate Hospitality Group LLC",
         "certificate_holder": null,
         "coverage_lines": null,
         "description_of_operations": null,
@@ -140,52 +136,60 @@
             "value": "CPP-8830471"
           },
           {
-            "label": "Producer",
+            "label": "Insured Address",
+            "value": "655 Montgomery St, San Francisco, CA 94111"
+          },
+          {
+            "label": "Prepared By",
             "value": "Pacific Union Insurance Services"
           },
           {
-            "label": "Prepared For",
-            "value": "Chubb Group Underwriting"
+            "label": "Contact",
+            "value": "Olivia Bennett"
           },
           {
             "label": "Date",
-            "value": "07/15/2026"
+            "value": "08/12/2025"
           }
         ],
         "nr_columns": [
-          "Location",
-          "Exposure",
-          "Notes"
+          "Item",
+          "Description",
+          "Current Status",
+          "Requested Action"
         ],
         "nr_rows": [
           {
             "cells": [
-              "655 Montgomery St, San Francisco, CA",
-              "Boutique hotel operations",
-              "Primary downtown San Francisco property"
+              "1",
+              "Property loss at one of three hotel locations",
+              "Water intrusion from burst supply line",
+              "Open new claim file and coordinate adjuster contact"
             ]
           },
           {
             "cells": [
-              "Union Square area property",
-              "Transient occupancy and concierge services",
-              "Higher foot traffic common areas"
+              "2",
+              "Mitigation",
+              "Extraction and drying in progress",
+              "Confirm carrier assignment and claim number"
             ]
           },
           {
             "cells": [
-              "Nob Hill area property",
-              "Restaurant and meeting space exposure",
-              "Liquor not requested"
+              "3",
+              "Documentation",
+              "Photos and vendor estimate pending",
+              "Advise on required supplemental documentation"
             ]
           }
         ],
-        "unrelated_subtitle": "Submission for renewal review and exposure synopsis",
-        "unrelated_body": "Please review the attached exposure summary for Golden Gate Hospitality Group LLC. This submission outlines current operating locations, occupancy profile, and underwriting notes for the renewal of policy CPP-8830471."
+        "unrelated_subtitle": "Submission for claim handling review - Water damage loss at San Francisco hotel location",
+        "unrelated_body": "This cover letter transmits the initial loss information for a new property damage claim. It is intended to summarize the incident and direct the file to claims handling for assignment, acknowledgements, and next steps."
       },
       {
-        "title": "ACORD 25 Certificate of Liability Insurance",
-        "certificate_holder": "Bayside Event Center LLC",
+        "title": "ACORD 25 Certificate of Liability Insurance - Golden Gate Hospitality Group LLC",
+        "certificate_holder": "Union Square Hospitality Trust, LLC 1 Market Plaza, San Francisco, CA 94105",
         "coverage_lines": [
           {
             "insurer_letter": "A",
@@ -284,9 +288,9 @@
             "premium": null
           }
         ],
-        "description_of_operations": "Bayside Event Center LLC is included as certificate holder only. Additional insured applies where required by written contract and as respects ongoing and completed operations under CG 20 10 04 13 and CG 20 37 04 13. Waiver of subrogation applies where required by written contract per CG 24 04 05 09. Coverage is afforded subject to policy terms, conditions, and exclusions.",
-        "authorized_representative": "Marisol Chen, Senior Account Manager",
-        "certificate_number": "CERT-448271",
+        "description_of_operations": "The certificate holder is named as additional insured where required by written contract with respect to ongoing and completed operations only. Primary and non-contributory wording applies where required by contract. Waiver of subrogation applies where permitted by policy and endorsed forms, including CG 20 10 04 13, CG 20 37 04 13, CG 20 33 04 13, and WC 00 03 13. This certificate is issued as a matter of information only and confers no rights upon the certificate holder.",
+        "authorized_representative": "Maria Lopez, Authorized Representative",
+        "certificate_number": "C-884217",
         "revision_number": null,
         "invoice_number": null,
         "invoice_date": null,
@@ -306,7 +310,7 @@
         "premium_summary": null,
         "countersignature": null,
         "countersignature_date": null,
-        "form_number": "ACORD 25 (2016/03)",
+        "form_number": null,
         "endorsement_title": null,
         "endorsement_number": null,
         "schedule_rows": null,
@@ -325,7 +329,7 @@
         "unrelated_body": null
       },
       {
-        "title": "Loss Run Report Summary",
+        "title": "Loss Run Report - Golden Gate Hospitality Group LLC",
         "certificate_holder": null,
         "coverage_lines": null,
         "description_of_operations": null,
@@ -372,64 +376,72 @@
             "value": "CPP-8830471"
           },
           {
+            "label": "Carrier",
+            "value": "Chubb Group"
+          },
+          {
             "label": "Valuation Date",
-            "value": "07/15/2026"
+            "value": "08/12/2025"
           },
           {
             "label": "Prepared By",
-            "value": "Chubb Claims Operations"
+            "value": "Claims Services Unit"
           },
           {
-            "label": "Lines of Business",
-            "value": "Commercial Package Policy"
+            "label": "Location",
+            "value": "San Francisco, CA"
           }
         ],
         "nr_columns": [
-          "Claim No.",
           "Loss Date",
-          "LOB",
-          "Description",
+          "Claim No.",
+          "Location",
+          "Line of Business",
+          "Cause of Loss",
           "Status",
           "Paid",
-          "Reserves"
+          "Outstanding Reserve"
         ],
         "nr_rows": [
           {
             "cells": [
-              "CLM-260712-01",
-              "07/12/2026",
-              "General Liability",
-              "Guest slip-and-fall in lobby common area",
+              "08/12/2025",
+              "CLM-250812-01",
+              "655 Montgomery St, San Francisco, CA",
+              "Commercial Property",
+              "Water damage from burst supply line",
               "Open",
               "$0",
-              "$12,500"
+              "$24,500"
             ]
           },
           {
             "cells": [
-              "CLM-250914-02",
-              "09/14/2025",
-              "Property",
-              "Minor water intrusion at guest room corridor",
+              "03/18/2025",
+              "CLM-250318-02",
+              "Pier 39 Hotel",
+              "Commercial Property",
+              "Slip and fall allegation",
               "Closed",
-              "$8,450",
+              "$18,250",
               "$0"
             ]
           },
           {
             "cells": [
-              "CLM-250128-03",
-              "01/28/2025",
-              "General Liability",
-              "Third-party allegation of foodborne illness",
+              "11/04/2024",
+              "CLM-241104-03",
+              "Union Square Property",
+              "Commercial General Liability",
+              "Minor kitchen smoke event",
               "Closed",
-              "$4,125",
+              "$6,800",
               "$0"
             ]
           }
         ],
-        "unrelated_subtitle": "Claims activity summary for underwriting review",
-        "unrelated_body": "This loss run report is provided for underwriting and account review purposes only. It summarizes reported losses on policy CPP-8830471 for Golden Gate Hospitality Group LLC as of the valuation date above."
+        "unrelated_subtitle": "Historical claims activity report for underwriting and claims review",
+        "unrelated_body": "The following loss run summary is provided for internal review and claim trending purposes. It is not a certificate, invoice, declaration page, or endorsement, and should be treated as a claim history document for the account."
       }
     ]
   }
